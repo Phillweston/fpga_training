@@ -1,0 +1,15 @@
+|check_bin
+sys_clk => flag~reg0.CLK
+sys_clk => current_state~1.DATAIN
+sys_rst_n => flag~reg0.ACLR
+sys_rst_n => current_state~3.DATAIN
+in_flow => next_state.s1.DATAB
+in_flow => Selector1.IN3
+in_flow => next_state.s3.DATAB
+in_flow => Selector1.IN4
+in_flow => next_state.s4.DATAB
+in_flow => Selector0.IN1
+in_flow => Selector1.IN1
+flag << flag~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

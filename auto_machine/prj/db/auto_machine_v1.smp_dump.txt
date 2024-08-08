@@ -1,0 +1,11 @@
+
+State Machine - |auto_machine_v3|current_state
+Name current_state.clear current_state.s30 current_state.s25 current_state.s20 current_state.s15 current_state.s10 current_state.s05 current_state.s00 
+current_state.s00 0 0 0 0 0 0 0 0 
+current_state.s05 0 0 0 0 0 0 1 1 
+current_state.s10 0 0 0 0 0 1 0 1 
+current_state.s15 0 0 0 0 1 0 0 1 
+current_state.s20 0 0 0 1 0 0 0 1 
+current_state.s25 0 0 1 0 0 0 0 1 
+current_state.s30 0 1 0 0 0 0 0 1 
+current_state.clear 1 0 0 0 0 0 0 1 

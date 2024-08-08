@@ -1,0 +1,360 @@
+|add_16
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+a[4] => a[4].IN1
+a[5] => a[5].IN1
+a[6] => a[6].IN1
+a[7] => a[7].IN1
+a[8] => a[8].IN1
+a[9] => a[9].IN1
+a[10] => a[10].IN1
+a[11] => a[11].IN1
+a[12] => a[12].IN1
+a[13] => a[13].IN1
+a[14] => a[14].IN1
+a[15] => a[15].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+b[4] => b[4].IN1
+b[5] => b[5].IN1
+b[6] => b[6].IN1
+b[7] => b[7].IN1
+b[8] => b[8].IN1
+b[9] => b[9].IN1
+b[10] => b[10].IN1
+b[11] => b[11].IN1
+b[12] => b[12].IN1
+b[13] => b[13].IN1
+b[14] => b[14].IN1
+b[15] => b[15].IN1
+ci[0] => ci[0].IN1
+ci[1] => ~NO_FANOUT~
+ci[2] => ~NO_FANOUT~
+ci[3] => ~NO_FANOUT~
+ci[4] => ~NO_FANOUT~
+ci[5] => ~NO_FANOUT~
+ci[6] => ~NO_FANOUT~
+ci[7] => ~NO_FANOUT~
+ci[8] => ~NO_FANOUT~
+ci[9] => ~NO_FANOUT~
+ci[10] => ~NO_FANOUT~
+ci[11] => ~NO_FANOUT~
+ci[12] => ~NO_FANOUT~
+ci[13] => ~NO_FANOUT~
+ci[14] => ~NO_FANOUT~
+ci[15] => ~NO_FANOUT~
+sum[0] <= add_4:add_4_inst1.sum
+sum[1] <= add_4:add_4_inst1.sum
+sum[2] <= add_4:add_4_inst1.sum
+sum[3] <= add_4:add_4_inst1.sum
+sum[4] <= add_4:add_4_inst2.sum
+sum[5] <= add_4:add_4_inst2.sum
+sum[6] <= add_4:add_4_inst2.sum
+sum[7] <= add_4:add_4_inst2.sum
+sum[8] <= add_4:add_4_inst3.sum
+sum[9] <= add_4:add_4_inst3.sum
+sum[10] <= add_4:add_4_inst3.sum
+sum[11] <= add_4:add_4_inst3.sum
+sum[12] <= add_4:add_4_inst4.sum
+sum[13] <= add_4:add_4_inst4.sum
+sum[14] <= add_4:add_4_inst4.sum
+sum[15] <= add_4:add_4_inst4.sum
+co <= add_4:add_4_inst4.co
+
+
+|add_16|add_4:add_4_inst1
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+ci => ci.IN1
+sum[0] <= full_adder:full_adder_inst1.sum
+sum[1] <= full_adder:full_adder_inst2.sum
+sum[2] <= full_adder:full_adder_inst3.sum
+sum[3] <= full_adder:full_adder_inst4.sum
+co <= full_adder:full_adder_inst4.carry
+
+
+|add_16|add_4:add_4_inst1|full_adder:full_adder_inst1
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+cin => sum.IN1
+cin => carry.IN1
+cin => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_16|add_4:add_4_inst1|full_adder:full_adder_inst2
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+cin => sum.IN1
+cin => carry.IN1
+cin => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_16|add_4:add_4_inst1|full_adder:full_adder_inst3
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+cin => sum.IN1
+cin => carry.IN1
+cin => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_16|add_4:add_4_inst1|full_adder:full_adder_inst4
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+cin => sum.IN1
+cin => carry.IN1
+cin => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_16|add_4:add_4_inst2
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+ci => ci.IN1
+sum[0] <= full_adder:full_adder_inst1.sum
+sum[1] <= full_adder:full_adder_inst2.sum
+sum[2] <= full_adder:full_adder_inst3.sum
+sum[3] <= full_adder:full_adder_inst4.sum
+co <= full_adder:full_adder_inst4.carry
+
+
+|add_16|add_4:add_4_inst2|full_adder:full_adder_inst1
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+cin => sum.IN1
+cin => carry.IN1
+cin => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_16|add_4:add_4_inst2|full_adder:full_adder_inst2
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+cin => sum.IN1
+cin => carry.IN1
+cin => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_16|add_4:add_4_inst2|full_adder:full_adder_inst3
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+cin => sum.IN1
+cin => carry.IN1
+cin => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_16|add_4:add_4_inst2|full_adder:full_adder_inst4
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+cin => sum.IN1
+cin => carry.IN1
+cin => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_16|add_4:add_4_inst3
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+ci => ci.IN1
+sum[0] <= full_adder:full_adder_inst1.sum
+sum[1] <= full_adder:full_adder_inst2.sum
+sum[2] <= full_adder:full_adder_inst3.sum
+sum[3] <= full_adder:full_adder_inst4.sum
+co <= full_adder:full_adder_inst4.carry
+
+
+|add_16|add_4:add_4_inst3|full_adder:full_adder_inst1
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+cin => sum.IN1
+cin => carry.IN1
+cin => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_16|add_4:add_4_inst3|full_adder:full_adder_inst2
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+cin => sum.IN1
+cin => carry.IN1
+cin => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_16|add_4:add_4_inst3|full_adder:full_adder_inst3
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+cin => sum.IN1
+cin => carry.IN1
+cin => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_16|add_4:add_4_inst3|full_adder:full_adder_inst4
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+cin => sum.IN1
+cin => carry.IN1
+cin => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_16|add_4:add_4_inst4
+a[0] => a[0].IN1
+a[1] => a[1].IN1
+a[2] => a[2].IN1
+a[3] => a[3].IN1
+b[0] => b[0].IN1
+b[1] => b[1].IN1
+b[2] => b[2].IN1
+b[3] => b[3].IN1
+ci => ci.IN1
+sum[0] <= full_adder:full_adder_inst1.sum
+sum[1] <= full_adder:full_adder_inst2.sum
+sum[2] <= full_adder:full_adder_inst3.sum
+sum[3] <= full_adder:full_adder_inst4.sum
+co <= full_adder:full_adder_inst4.carry
+
+
+|add_16|add_4:add_4_inst4|full_adder:full_adder_inst1
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+cin => sum.IN1
+cin => carry.IN1
+cin => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_16|add_4:add_4_inst4|full_adder:full_adder_inst2
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+cin => sum.IN1
+cin => carry.IN1
+cin => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_16|add_4:add_4_inst4|full_adder:full_adder_inst3
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+cin => sum.IN1
+cin => carry.IN1
+cin => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|add_16|add_4:add_4_inst4|full_adder:full_adder_inst4
+a => sum.IN0
+a => carry.IN0
+a => carry.IN0
+b => sum.IN1
+b => carry.IN1
+b => carry.IN0
+cin => sum.IN1
+cin => carry.IN1
+cin => carry.IN1
+sum <= sum.DB_MAX_OUTPUT_PORT_TYPE
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,22 @@
+|cmp_seq
+sys_clk => cnt2[0].CLK
+sys_clk => cnt2[1].CLK
+sys_clk => cnt2[2].CLK
+sys_clk => cnt2[3].CLK
+sys_clk => flag1.CLK
+sys_clk => cnt1[0].CLK
+sys_clk => cnt1[1].CLK
+sys_clk => cnt1[2].CLK
+sys_clk => cnt1[3].CLK
+sys_rst_n => flag1.ACLR
+sys_rst_n => cnt1[0].ACLR
+sys_rst_n => cnt1[1].ACLR
+sys_rst_n => cnt1[2].ACLR
+sys_rst_n => cnt1[3].ACLR
+sys_rst_n => cnt2[0].ACLR
+sys_rst_n => cnt2[1].ACLR
+sys_rst_n => cnt2[2].ACLR
+sys_rst_n => cnt2[3].ACLR
+valid <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+

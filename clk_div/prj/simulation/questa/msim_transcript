@@ -1,0 +1,467 @@
+# Reading pref.tcl
+# //  ModelSim SE-64 2020.4 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do clk_div_5_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap work rtl_work 
+# Copying C:/modeltech64_2020.4/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/clk_div/rtl {D:/git-repository/fpga_training/clk_div/rtl/clk_div_5_delay.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:52:04 on Aug 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/clk_div/rtl" D:/git-repository/fpga_training/clk_div/rtl/clk_div_5_delay.v 
+# -- Compiling module clk_div_5_delay
+# 
+# Top level modules:
+# 	clk_div_5_delay
+# End time: 18:52:04 on Aug 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/clk_div/rtl {D:/git-repository/fpga_training/clk_div/rtl/clk_div_dec.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:52:04 on Aug 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/clk_div/rtl" D:/git-repository/fpga_training/clk_div/rtl/clk_div_dec.v 
+# -- Compiling module clk_div_dec
+# 
+# Top level modules:
+# 	clk_div_dec
+# End time: 18:52:04 on Aug 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/clk_div/rtl {D:/git-repository/fpga_training/clk_div/rtl/clk_div_5.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:52:04 on Aug 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/clk_div/rtl" D:/git-repository/fpga_training/clk_div/rtl/clk_div_5.v 
+# -- Compiling module clk_div_5
+# 
+# Top level modules:
+# 	clk_div_5
+# End time: 18:52:04 on Aug 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/clk_div/prj/../sim {D:/git-repository/fpga_training/clk_div/prj/../sim/clk_div_dec_tb.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:52:04 on Aug 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/clk_div/prj/../sim" D:/git-repository/fpga_training/clk_div/prj/../sim/clk_div_dec_tb.v 
+# -- Compiling module clk_div_dec_tb
+# 
+# Top level modules:
+# 	clk_div_dec_tb
+# End time: 18:52:04 on Aug 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  clk_div_dec_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=""+acc"" clk_div_dec_tb 
+# Start time: 18:52:04 on Aug 02,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/prj/../sim/clk_div_dec_tb.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/prj/../sim/clk_div_dec_tb.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/prj/../sim/clk_div_dec_tb.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/prj/../sim/clk_div_dec_tb.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/prj/../sim/clk_div_dec_tb.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_hssi_ver' at "cycloneiv_hssi_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_hssi_ver' at "cycloneiv_hssi_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_hssi_ver' at "cycloneiv_hssi_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/prj/../sim/clk_div_dec_tb.v(1): (vopt-2669) Unable to find library 'cycloneiv_hssi_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_pcie_hip_ver' at "cycloneiv_pcie_hip_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_pcie_hip_ver' at "cycloneiv_pcie_hip_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_pcie_hip_ver' at "cycloneiv_pcie_hip_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/prj/../sim/clk_div_dec_tb.v(1): (vopt-2669) Unable to find library 'cycloneiv_pcie_hip_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_ver' at "cycloneiv_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_ver' at "cycloneiv_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_ver' at "cycloneiv_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/prj/../sim/clk_div_dec_tb.v(1): (vopt-2669) Unable to find library 'cycloneiv_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/rtl/clk_div_dec.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/rtl/clk_div_dec.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/rtl/clk_div_dec.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/rtl/clk_div_dec.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/rtl/clk_div_dec.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_hssi_ver' at "cycloneiv_hssi_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_hssi_ver' at "cycloneiv_hssi_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_hssi_ver' at "cycloneiv_hssi_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/rtl/clk_div_dec.v(1): (vopt-2669) Unable to find library 'cycloneiv_hssi_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_pcie_hip_ver' at "cycloneiv_pcie_hip_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_pcie_hip_ver' at "cycloneiv_pcie_hip_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_pcie_hip_ver' at "cycloneiv_pcie_hip_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/rtl/clk_div_dec.v(1): (vopt-2669) Unable to find library 'cycloneiv_pcie_hip_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_ver' at "cycloneiv_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_ver' at "cycloneiv_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_ver' at "cycloneiv_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/rtl/clk_div_dec.v(1): (vopt-2669) Unable to find library 'cycloneiv_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/rtl/clk_div_5.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/rtl/clk_div_5.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/rtl/clk_div_5.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/rtl/clk_div_5.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/rtl/clk_div_5.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_hssi_ver' at "cycloneiv_hssi_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_hssi_ver' at "cycloneiv_hssi_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_hssi_ver' at "cycloneiv_hssi_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/rtl/clk_div_5.v(1): (vopt-2669) Unable to find library 'cycloneiv_hssi_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_pcie_hip_ver' at "cycloneiv_pcie_hip_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_pcie_hip_ver' at "cycloneiv_pcie_hip_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_pcie_hip_ver' at "cycloneiv_pcie_hip_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/rtl/clk_div_5.v(1): (vopt-2669) Unable to find library 'cycloneiv_pcie_hip_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_ver' at "cycloneiv_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_ver' at "cycloneiv_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneiv_ver' at "cycloneiv_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/clk_div/rtl/clk_div_5.v(1): (vopt-2669) Unable to find library 'cycloneiv_ver'.
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=72, Warnings=24.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./clk_div_5_run_msim_rtl_verilog.do PAUSED at line 14
+vsim work.clk_div_dec_tb
+# vsim work.clk_div_dec_tb 
+# Start time: 18:52:04 on Aug 02,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.clk_div_dec_tb(fast)
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/clk_div/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/sim/clk_div_dec_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:52:43 on Aug 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/clk_div/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/sim/clk_div_dec_tb.v 
+# -- Compiling module clk_div_dec_tb
+# 
+# Top level modules:
+# 	clk_div_dec_tb
+# End time: 18:52:43 on Aug 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/clk_div/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_dec.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:52:45 on Aug 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/clk_div/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_dec.v 
+# -- Compiling module clk_div_dec
+# 
+# Top level modules:
+# 	clk_div_dec
+# End time: 18:52:45 on Aug 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/clk_div/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_5_delay.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:52:47 on Aug 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/clk_div/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_5_delay.v 
+# -- Compiling module clk_div_5_delay
+# 
+# Top level modules:
+# 	clk_div_5_delay
+# End time: 18:52:47 on Aug 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/clk_div/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_5.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:52:48 on Aug 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/clk_div/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_5.v 
+# -- Compiling module clk_div_5
+# 
+# Top level modules:
+# 	clk_div_5
+# End time: 18:52:48 on Aug 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.clk_div_dec_tb
+# End time: 18:52:52 on Aug 02,2024, Elapsed time: 0:00:48
+# Errors: 72, Warnings: 24
+# vsim -voptargs="+acc" work.clk_div_dec_tb 
+# Start time: 18:52:53 on Aug 02,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.clk_div_dec_tb(fast)
+# Loading work.clk_div_dec(fast)
+# Loading work.clk_div_5(fast)
+# Loading work.clk_div_5_delay(fast)
+add wave -position end  sim:/clk_div_dec_tb/uut/sys_clk
+add wave -position end  sim:/clk_div_dec_tb/uut/sys_rst_n
+add wave -position end  sim:/clk_div_dec_tb/uut/clk_out_dec
+add wave -position end  sim:/clk_div_dec_tb/uut/clk_out1
+add wave -position end  sim:/clk_div_dec_tb/uut/clk_out2
+add wave -position end  sim:/clk_div_dec_tb/uut/clk2_out1
+add wave -position end  sim:/clk_div_dec_tb/uut/clk2_out2
+add wave -position end  sim:/clk_div_dec_tb/uut/clk_div_dec1
+add wave -position end  sim:/clk_div_dec_tb/uut/clk_div_dec2
+add wave -position end  sim:/clk_div_dec_tb/uut/shift_reg
+run
+# ** Note: $finish    : D:/git-repository/fpga_training/clk_div/sim/clk_div_dec_tb.v(18)
+#    Time: 1040100 ps  Iteration: 0  Instance: /clk_div_dec_tb
+# 1
+# Break in Module clk_div_dec_tb at D:/git-repository/fpga_training/clk_div/sim/clk_div_dec_tb.v line 18
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/clk_div/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/sim/clk_div_dec_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:57:54 on Aug 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/clk_div/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/sim/clk_div_dec_tb.v 
+# -- Compiling module clk_div_dec_tb
+# 
+# Top level modules:
+# 	clk_div_dec_tb
+# End time: 18:57:54 on Aug 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/clk_div/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_dec.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:57:56 on Aug 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/clk_div/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_dec.v 
+# -- Compiling module clk_div_dec
+# 
+# Top level modules:
+# 	clk_div_dec
+# End time: 18:57:56 on Aug 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/clk_div/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_5_delay.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:57:58 on Aug 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/clk_div/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_5_delay.v 
+# -- Compiling module clk_div_5_delay
+# 
+# Top level modules:
+# 	clk_div_5_delay
+# End time: 18:57:58 on Aug 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/clk_div/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_5.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:57:59 on Aug 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/clk_div/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_5.v 
+# -- Compiling module clk_div_5
+# 
+# Top level modules:
+# 	clk_div_5
+# End time: 18:57:59 on Aug 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.clk_div_dec_tb(fast)
+# Loading work.clk_div_dec(fast)
+# Loading work.clk_div_5(fast)
+# Loading work.clk_div_5_delay(fast)
+run
+# ** Note: $finish    : D:/git-repository/fpga_training/clk_div/sim/clk_div_dec_tb.v(18)
+#    Time: 1040100 ps  Iteration: 0  Instance: /clk_div_dec_tb
+# 1
+# Break in Module clk_div_dec_tb at D:/git-repository/fpga_training/clk_div/sim/clk_div_dec_tb.v line 18
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/clk_div/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_5.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 19:01:59 on Aug 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/clk_div/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_5.v 
+# -- Compiling module clk_div_5
+# 
+# Top level modules:
+# 	clk_div_5
+# End time: 19:01:59 on Aug 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/clk_div/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_5_delay.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 19:02:01 on Aug 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/clk_div/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_5_delay.v 
+# -- Compiling module clk_div_5_delay
+# 
+# Top level modules:
+# 	clk_div_5_delay
+# End time: 19:02:01 on Aug 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/clk_div/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_dec.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 19:02:02 on Aug 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/clk_div/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_dec.v 
+# -- Compiling module clk_div_dec
+# 
+# Top level modules:
+# 	clk_div_dec
+# End time: 19:02:02 on Aug 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/clk_div/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/sim/clk_div_dec_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 19:02:04 on Aug 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/clk_div/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/sim/clk_div_dec_tb.v 
+# -- Compiling module clk_div_dec_tb
+# 
+# Top level modules:
+# 	clk_div_dec_tb
+# End time: 19:02:04 on Aug 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.clk_div_dec_tb(fast)
+# Loading work.clk_div_dec(fast)
+# Loading work.clk_div_5(fast)
+# Loading work.clk_div_5_delay(fast)
+run
+# ** Note: $finish    : D:/git-repository/fpga_training/clk_div/sim/clk_div_dec_tb.v(18)
+#    Time: 1040100 ps  Iteration: 0  Instance: /clk_div_dec_tb
+# 1
+# Break in Module clk_div_dec_tb at D:/git-repository/fpga_training/clk_div/sim/clk_div_dec_tb.v line 18
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/clk_div/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/sim/clk_div_dec_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 19:13:21 on Aug 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/clk_div/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/sim/clk_div_dec_tb.v 
+# -- Compiling module clk_div_dec_tb
+# 
+# Top level modules:
+# 	clk_div_dec_tb
+# End time: 19:13:21 on Aug 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/clk_div/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_dec.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 19:13:23 on Aug 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/clk_div/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_dec.v 
+# -- Compiling module clk_div_dec
+# 
+# Top level modules:
+# 	clk_div_dec
+# End time: 19:13:23 on Aug 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/clk_div/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_5_delay.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 19:13:24 on Aug 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/clk_div/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_5_delay.v 
+# -- Compiling module clk_div_5_delay
+# 
+# Top level modules:
+# 	clk_div_5_delay
+# End time: 19:13:25 on Aug 02,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/clk_div/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_5.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 19:13:26 on Aug 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/clk_div/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/clk_div/rtl/clk_div_5.v 
+# -- Compiling module clk_div_5
+# 
+# Top level modules:
+# 	clk_div_5
+# End time: 19:13:26 on Aug 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.clk_div_dec_tb(fast)
+# Loading work.clk_div_dec(fast)
+# Loading work.clk_div_5(fast)
+run
+# ** Note: $finish    : D:/git-repository/fpga_training/clk_div/sim/clk_div_dec_tb.v(18)
+#    Time: 1040100 ps  Iteration: 0  Instance: /clk_div_dec_tb
+# 1
+# Break in Module clk_div_dec_tb at D:/git-repository/fpga_training/clk_div/sim/clk_div_dec_tb.v line 18

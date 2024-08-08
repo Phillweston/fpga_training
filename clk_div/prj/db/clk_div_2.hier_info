@@ -1,0 +1,6 @@
+|clk_div_10
+sys_clk => ~NO_FANOUT~
+sys_rst_n => ~NO_FANOUT~
+clk_div_10 << <GND>
+
+

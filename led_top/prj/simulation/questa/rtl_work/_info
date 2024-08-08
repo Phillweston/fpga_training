@@ -1,0 +1,150 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/git-repository/fpga_training/led_top/prj/simulation/questa
+T_opt
+!s110 1722926139
+V?HGPLhoi8A0YYKB`V4Me42
+Z1 04 10 4 work led_top_tb fast 0
+=2-00d861e3bc76-66b1c43b-3a-e620
+o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;2020.4;71
+R0
+T_opt1
+!s110 1722929344
+VQ1T?dlVT>CWe>IUOac9ch1
+R1
+=11-00d861e3bc76-66b1d0c0-a3-f8dc
+o-quiet -auto_acc_if_foreign -work work +acc
+R2
+n@_opt1
+R3
+vbreath_led
+!s110 1722928346
+!i10b 1
+!s100 H?XlMJPSJM19JLbzL^J0X0
+Z4 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I<MMkZZMCIUCT[jHQdUb5n3
+R0
+w1722928221
+8D:/git-repository/fpga_training/led_top/rtl/breath_led.v
+FD:/git-repository/fpga_training/led_top/rtl/breath_led.v
+!i122 10
+L0 1 65
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2020.4;71
+r1
+!s85 0
+31
+!s108 1722928346.000000
+!s107 D:/git-repository/fpga_training/led_top/rtl/breath_led.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/led_top/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/led_top/rtl/breath_led.v|
+!i113 0
+Z7 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/led_top/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vclk_div
+Z9 !s110 1722926126
+!i10b 1
+!s100 ^ji@C`UM4NILmblXANO>U2
+R4
+I;N;omG8Mi@Ik8JQh1QZ1h3
+R0
+w1722907901
+8D:/git-repository/fpga_training/led_top/rtl/clk_div.v
+FD:/git-repository/fpga_training/led_top/rtl/clk_div.v
+!i122 3
+L0 1 21
+R5
+R6
+r1
+!s85 0
+31
+Z10 !s108 1722926126.000000
+!s107 D:/git-repository/fpga_training/led_top/rtl/clk_div.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/led_top/rtl|D:/git-repository/fpga_training/led_top/rtl/clk_div.v|
+!i113 0
+R7
+R8
+R2
+vflash_led
+R9
+!i10b 1
+!s100 Z`foNYCDz[>>fmaR?9dDA3
+R4
+Ik80:^hB8bYm?4W_8YoB1S0
+R0
+w1722908431
+8D:/git-repository/fpga_training/led_top/rtl/flash_led.v
+FD:/git-repository/fpga_training/led_top/rtl/flash_led.v
+!i122 2
+L0 1 12
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 D:/git-repository/fpga_training/led_top/rtl/flash_led.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/led_top/rtl|D:/git-repository/fpga_training/led_top/rtl/flash_led.v|
+!i113 0
+R7
+R8
+R2
+vled_top
+R9
+!i10b 1
+!s100 0CRN]01JIG58]^ZAdFEkX3
+R4
+IG^0ahlT[3[Eh79Oj7ekHQ0
+R0
+w1722908278
+8D:/git-repository/fpga_training/led_top/rtl/led_top.v
+FD:/git-repository/fpga_training/led_top/rtl/led_top.v
+!i122 1
+L0 1 38
+R5
+R6
+r1
+!s85 0
+31
+R10
+!s107 D:/git-repository/fpga_training/led_top/rtl/led_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/led_top/rtl|D:/git-repository/fpga_training/led_top/rtl/led_top.v|
+!i113 0
+R7
+R8
+R2
+vled_top_tb
+!s110 1722929339
+!i10b 1
+!s100 Nk07Qoi>g7Ahz?:?Udj[Q3
+R4
+Izm02Ja2VBaiEH^mCLJVT93
+R0
+w1722929211
+8D:/git-repository/fpga_training/led_top/sim/led_top_tb.v
+FD:/git-repository/fpga_training/led_top/sim/led_top_tb.v
+!i122 12
+L0 3 30
+R5
+R6
+r1
+!s85 0
+31
+!s108 1722929339.000000
+!s107 D:/git-repository/fpga_training/led_top/sim/led_top_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/led_top/prj/../sim|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/led_top/sim/led_top_tb.v|
+!i113 0
+R7
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/led_top/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2

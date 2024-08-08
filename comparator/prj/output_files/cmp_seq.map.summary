@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Aug  4 17:19:23 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : cmp_seq
+Top-level Entity Name : cmp_seq
+Family : Cyclone IV E
+Total logic elements : 12
+    Total combinational functions : 12
+    Dedicated logic registers : 9
+Total registers : 9
+Total pins : 3
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

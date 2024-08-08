@@ -1,0 +1,78 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/git-repository/fpga_training/auto_machine/prj/simulation/questa
+T_opt
+!s110 1723084432
+V8KfzJ8[Fai?3d7lz[^7>M1
+Z1 04 18 4 work auto_machine_v3_tb fast 0
+=1-00d861e3bc76-66b42e8f-39a-9ac4
+o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;2020.4;71
+R0
+T_opt1
+!s110 1723084734
+VUNe`VOaFjCH?o5YMQ:ZB;1
+R1
+=1-00d861e3bc76-66b42fbd-26d-3c84
+o-quiet -auto_acc_if_foreign -work work +acc
+R2
+n@_opt1
+R3
+vauto_machine_v3
+!s110 1723084727
+!i10b 1
+!s100 aaagH18[2T`3?nF0l=A1V3
+Z4 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ID1@XC_b[Ghc0J:m<e<NA81
+R0
+w1723084708
+8D:/git-repository/fpga_training/auto_machine/rtl/auto_machine_v3.v
+FD:/git-repository/fpga_training/auto_machine/rtl/auto_machine_v3.v
+!i122 4
+L0 1 111
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2020.4;71
+r1
+!s85 0
+31
+!s108 1723084727.000000
+!s107 D:/git-repository/fpga_training/auto_machine/rtl/auto_machine_v3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/auto_machine/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/auto_machine/rtl/auto_machine_v3.v|
+!i113 0
+Z7 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/auto_machine/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vauto_machine_v3_tb
+!s110 1723084724
+!i10b 1
+!s100 nmc?nS2S@f3kk@9EmH4F<0
+R4
+IW7ADO>TN<e6@1CjB6fQbg3
+R0
+w1723084120
+8D:/git-repository/fpga_training/auto_machine/sim/auto_machine_v3_tb.v
+FD:/git-repository/fpga_training/auto_machine/sim/auto_machine_v3_tb.v
+!i122 3
+L0 3 64
+R5
+R6
+r1
+!s85 0
+31
+!s108 1723084724.000000
+!s107 D:/git-repository/fpga_training/auto_machine/sim/auto_machine_v3_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/auto_machine/prj/../sim|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/auto_machine/sim/auto_machine_v3_tb.v|
+!i113 0
+R7
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/auto_machine/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2

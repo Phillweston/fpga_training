@@ -1,0 +1,20 @@
+|auto_machine_v3
+sys_clk => change~reg0.CLK
+sys_clk => drink~reg0.CLK
+sys_clk => current_state~1.DATAIN
+sys_rst_n => change~reg0.ACLR
+sys_rst_n => drink~reg0.ACLR
+sys_rst_n => current_state~3.DATAIN
+one_rmb => next_state.OUTPUTSELECT
+one_rmb => next_state.OUTPUTSELECT
+one_rmb => Selector2.IN4
+one_rmb => Selector3.IN4
+one_rmb => Selector4.IN4
+one_rmb => Selector5.IN3
+one_rmb => next_state.s30.DATAB
+one_rmb_half => next_state.DATAA
+one_rmb_half => next_state.DATAA
+drink <= drink~reg0.DB_MAX_OUTPUT_PORT_TYPE
+change <= change~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

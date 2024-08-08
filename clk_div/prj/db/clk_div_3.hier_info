@@ -1,0 +1,18 @@
+|clk_div_3
+sys_clk => cnt_1[0].CLK
+sys_clk => cnt_1[1].CLK
+sys_clk => clk_out1~reg0.CLK
+sys_clk => cnt_2[0].CLK
+sys_clk => cnt_2[1].CLK
+sys_clk => clk_out2~reg0.CLK
+sys_rst_n => cnt_1[0].ACLR
+sys_rst_n => cnt_1[1].ACLR
+sys_rst_n => clk_out1~reg0.ACLR
+sys_rst_n => cnt_2[0].ACLR
+sys_rst_n => cnt_2[1].ACLR
+sys_rst_n => clk_out2~reg0.ACLR
+clk_out1 <= clk_out1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_out2 <= clk_out2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_out <= clk_out.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,126 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/git-repository/fpga_training/clk_div/prj/simulation/questa
+T_opt
+!s110 1722595948
+Vag=kS[OTYKVXie5WDbfbP1
+Z1 04 14 4 work clk_div_dec_tb fast 0
+=2-00d861e3bc76-66acba6c-1d6-2c88
+o-quiet -auto_acc_if_foreign -work work
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;2020.4;71
+R0
+T_opt1
+!s110 1722597225
+VKjE@da0CMGZJ4YN0R_3AI3
+R1
+=4-00d861e3bc76-66acbf68-398-3028
+o-quiet -auto_acc_if_foreign -work work +acc
+R2
+n@_opt1
+R3
+vclk_div_5
+!s110 1722597206
+!i10b 1
+!s100 D;oG_MEDmf6mmIdCZjG;I0
+Z4 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I8XF4l]=f17PjHL7]SNUBA1
+R0
+w1722593299
+8D:/git-repository/fpga_training/clk_div/rtl/clk_div_5.v
+FD:/git-repository/fpga_training/clk_div/rtl/clk_div_5.v
+!i122 19
+Z5 L0 1 32
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2020.4;71
+r1
+!s85 0
+31
+!s108 1722597206.000000
+!s107 D:/git-repository/fpga_training/clk_div/rtl/clk_div_5.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/clk_div/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/clk_div/rtl/clk_div_5.v|
+!i113 0
+Z8 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/clk_div/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vclk_div_5_delay
+!s110 1722597204
+!i10b 1
+!s100 RL5hLDjbi_2A>RJNdZ4;21
+R4
+I9=Z[@g_QjnzIgd>]QaJ:T0
+R0
+w1722596509
+8D:/git-repository/fpga_training/clk_div/rtl/clk_div_5_delay.v
+FD:/git-repository/fpga_training/clk_div/rtl/clk_div_5_delay.v
+!i122 18
+R5
+R6
+R7
+r1
+!s85 0
+31
+!s108 1722597204.000000
+!s107 D:/git-repository/fpga_training/clk_div/rtl/clk_div_5_delay.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/clk_div/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/clk_div/rtl/clk_div_5_delay.v|
+!i113 0
+R8
+R9
+R2
+vclk_div_dec
+!s110 1722597203
+!i10b 1
+!s100 baBBdFYO<b>WTN`SV4J3@2
+R4
+IegUoKU4[m?<=<MNnjBeig3
+R0
+w1722597192
+8D:/git-repository/fpga_training/clk_div/rtl/clk_div_dec.v
+FD:/git-repository/fpga_training/clk_div/rtl/clk_div_dec.v
+!i122 17
+L0 1 41
+R6
+R7
+r1
+!s85 0
+31
+!s108 1722597203.000000
+!s107 D:/git-repository/fpga_training/clk_div/rtl/clk_div_dec.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/clk_div/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/clk_div/rtl/clk_div_dec.v|
+!i113 0
+R8
+R9
+R2
+vclk_div_dec_tb
+!s110 1722597201
+!i10b 1
+!s100 PJ]ZQ<g2blSC[=An?E<NP1
+R4
+IHFjkhA=9AVP97kka`l>8<2
+R0
+w1722594547
+8D:/git-repository/fpga_training/clk_div/sim/clk_div_dec_tb.v
+FD:/git-repository/fpga_training/clk_div/sim/clk_div_dec_tb.v
+!i122 16
+L0 3 22
+R6
+R7
+r1
+!s85 0
+31
+!s108 1722597201.000000
+!s107 D:/git-repository/fpga_training/clk_div/sim/clk_div_dec_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/clk_div/prj/../sim|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/clk_div/sim/clk_div_dec_tb.v|
+!i113 0
+R8
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/clk_div/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
