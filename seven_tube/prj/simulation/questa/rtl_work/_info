@@ -1,0 +1,140 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/git-repository/fpga_training/seven_tube/prj/simulation/questa
+T_opt
+!s110 1723427520
+VTNiN=N79mRmIjHc`A58Xd0
+04 19 4 work seven_tube_shift_tb fast 0
+=1-00d861e3bc76-66b96abf-38c-bac0
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vclk_div_2khz
+Z2 !s110 1723426958
+!i10b 1
+!s100 gWb1@0NzJnfYDI1W<kN_i0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I4iD7ZzjURfT:3eCQzzL0D2
+R0
+w1723186335
+8D:/git-repository/fpga_training/seven_tube/rtl/clk_div_2khz.v
+FD:/git-repository/fpga_training/seven_tube/rtl/clk_div_2khz.v
+!i122 3
+L0 1 20
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z6 !s108 1723426958.000000
+!s107 D:/git-repository/fpga_training/seven_tube/rtl/clk_div_2khz.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/seven_tube/rtl|D:/git-repository/fpga_training/seven_tube/rtl/clk_div_2khz.v|
+!i113 0
+Z7 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/seven_tube/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vseg_ctrl_shift
+R2
+!i10b 1
+!s100 =]U@4dkQ^BWIQi@Z=c^z23
+R3
+IYkz;?9KiANLhbKz=>BhHo1
+R0
+w1723426353
+8D:/git-repository/fpga_training/seven_tube/rtl/seg_ctrl_shift.v
+FD:/git-repository/fpga_training/seven_tube/rtl/seg_ctrl_shift.v
+!i122 2
+L0 1 102
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/git-repository/fpga_training/seven_tube/rtl/seg_ctrl_shift.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/seven_tube/rtl|D:/git-repository/fpga_training/seven_tube/rtl/seg_ctrl_shift.v|
+!i113 0
+R7
+R8
+R1
+vseven_tube_shift
+R2
+!i10b 1
+!s100 aoEMW72=n`Wd1VGKZa4g@0
+R3
+I;1k1JWFoOQa[0zejhi6bL2
+R0
+w1723426369
+8D:/git-repository/fpga_training/seven_tube/rtl/seven_tube_shift.v
+FD:/git-repository/fpga_training/seven_tube/rtl/seven_tube_shift.v
+!i122 1
+L0 2 35
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/git-repository/fpga_training/seven_tube/rtl/seven_tube_shift.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/seven_tube/rtl|D:/git-repository/fpga_training/seven_tube/rtl/seven_tube_shift.v|
+!i113 0
+R7
+R8
+R1
+vseven_tube_shift_tb
+!s110 1723427511
+!i10b 1
+!s100 D3j:P37QYH5M^AU9`<9Af3
+R3
+ISFEzHQ0_nSCQAe60n=Ti91
+R0
+w1723427498
+8D:/git-repository/fpga_training/seven_tube/sim/seven_tube_shift_tb.v
+FD:/git-repository/fpga_training/seven_tube/sim/seven_tube_shift_tb.v
+!i122 7
+L0 3 25
+R4
+R5
+r1
+!s85 0
+31
+!s108 1723427511.000000
+!s107 D:/git-repository/fpga_training/seven_tube/sim/seven_tube_shift_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/seven_tube/prj/../sim|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/seven_tube/sim/seven_tube_shift_tb.v|
+!i113 0
+R7
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/seven_tube/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vshift_data
+R2
+!i10b 1
+!s100 Bik1Fl7=PcbWKLT`KfEMe2
+R3
+IV_mROdI?7;=KTEi[Oo=:40
+R0
+w1723426852
+8D:/git-repository/fpga_training/seven_tube/rtl/shift_data.v
+FD:/git-repository/fpga_training/seven_tube/rtl/shift_data.v
+!i122 0
+L0 1 29
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/git-repository/fpga_training/seven_tube/rtl/shift_data.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/seven_tube/rtl|D:/git-repository/fpga_training/seven_tube/rtl/shift_data.v|
+!i113 0
+R7
+R8
+R1

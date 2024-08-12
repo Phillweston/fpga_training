@@ -198,3 +198,7 @@ restart
 # ** Note: (vopt-143) Recognized 1 FSM in module "check_characters(fast)".
 # Loading work.check_characters_tb(fast)
 # Loading work.check_characters(fast)
+run
+run
+# End time: 17:35:18 on Aug 08,2024, Elapsed time: 0:19:58
+# Errors: 0, Warnings: 0

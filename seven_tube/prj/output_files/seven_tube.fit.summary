@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Aug 12 09:41:31 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : seven_tube
+Top-level Entity Name : seven_tube_shift
+Family : Cyclone IV E
+Device : EP4CE10F17C8
+Timing Models : Final
+Total logic elements : 118 / 10,320 ( 1 % )
+    Total combinational functions : 112 / 10,320 ( 1 % )
+    Dedicated logic registers : 78 / 10,320 ( < 1 % )
+Total registers : 78
+Total pins : 13 / 180 ( 7 % )
+Total virtual pins : 0
+Total memory bits : 0 / 423,936 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )
