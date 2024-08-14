@@ -1,0 +1,602 @@
+# Reading pref.tcl
+# //  ModelSim SE-64 2020.4 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do key_lcd_cnt_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap work rtl_work 
+# Copying C:/modeltech64_2020.4/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl {D:/git-repository/fpga_training/key_lcd_cnt/rtl/seven_tube.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:14:43 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl" D:/git-repository/fpga_training/key_lcd_cnt/rtl/seven_tube.v 
+# -- Compiling module seven_tube
+# 
+# Top level modules:
+# 	seven_tube
+# End time: 16:14:43 on Aug 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl {D:/git-repository/fpga_training/key_lcd_cnt/rtl/seg_ctrl.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:14:43 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl" D:/git-repository/fpga_training/key_lcd_cnt/rtl/seg_ctrl.v 
+# -- Compiling module seg_ctrl
+# 
+# Top level modules:
+# 	seg_ctrl
+# End time: 16:14:43 on Aug 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl {D:/git-repository/fpga_training/key_lcd_cnt/rtl/pulse_cnt.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:14:43 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl" D:/git-repository/fpga_training/key_lcd_cnt/rtl/pulse_cnt.v 
+# -- Compiling module pulse_cnt
+# 
+# Top level modules:
+# 	pulse_cnt
+# End time: 16:14:44 on Aug 14,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl {D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_lcd_cnt.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:14:44 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl" D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_lcd_cnt.v 
+# -- Compiling module key_lcd_cnt
+# 
+# Top level modules:
+# 	key_lcd_cnt
+# End time: 16:14:44 on Aug 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl {D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_filter.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:14:44 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl" D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_filter.v 
+# -- Compiling module key_filter
+# 
+# Top level modules:
+# 	key_filter
+# End time: 16:14:44 on Aug 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl {D:/git-repository/fpga_training/key_lcd_cnt/rtl/clk_div_2khz.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:14:44 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl" D:/git-repository/fpga_training/key_lcd_cnt/rtl/clk_div_2khz.v 
+# -- Compiling module clk_div_2khz
+# 
+# Top level modules:
+# 	clk_div_2khz
+# End time: 16:14:44 on Aug 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/key_lcd_cnt/prj/../sim {D:/git-repository/fpga_training/key_lcd_cnt/prj/../sim/key_lcd_cnt_tb.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:14:44 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/key_lcd_cnt/prj/../sim" D:/git-repository/fpga_training/key_lcd_cnt/prj/../sim/key_lcd_cnt_tb.v 
+# -- Compiling module key_lcd_cnt_tb
+# 
+# Top level modules:
+# 	key_lcd_cnt_tb
+# End time: 16:14:44 on Aug 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  key_lcd_cnt_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" key_lcd_cnt_tb 
+# Start time: 16:14:44 on Aug 14,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/prj/../sim/key_lcd_cnt_tb.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/prj/../sim/key_lcd_cnt_tb.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/prj/../sim/key_lcd_cnt_tb.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/prj/../sim/key_lcd_cnt_tb.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/prj/../sim/key_lcd_cnt_tb.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/prj/../sim/key_lcd_cnt_tb.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_lcd_cnt.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_lcd_cnt.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_lcd_cnt.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_lcd_cnt.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_lcd_cnt.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_lcd_cnt.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/seven_tube.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/seven_tube.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/seven_tube.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/seven_tube.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/seven_tube.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/seven_tube.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/clk_div_2khz.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/clk_div_2khz.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/clk_div_2khz.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/clk_div_2khz.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/clk_div_2khz.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/clk_div_2khz.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/seg_ctrl.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/seg_ctrl.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/seg_ctrl.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/seg_ctrl.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/seg_ctrl.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/seg_ctrl.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_filter.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_filter.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_filter.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_filter.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_filter.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_filter.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=108, Warnings=36.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./key_lcd_cnt_run_msim_rtl_verilog.do PAUSED at line 17
+vsim -voptargs=+acc work.key_lcd_cnt_tb
+# vsim -voptargs="+acc" work.key_lcd_cnt_tb 
+# Start time: 16:14:44 on Aug 14,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.key_lcd_cnt_tb(fast)
+# Loading work.key_lcd_cnt(fast)
+# Loading work.seven_tube(fast)
+# Loading work.clk_div_2khz(fast)
+# Loading work.seg_ctrl(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/sys_clk
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/sys_rst_n
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/key_in
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/sel
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/seg
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/key_out
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/cnt_data
+run
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/key_lcd_cnt/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/key_lcd_cnt/sim/key_lcd_cnt_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:16:24 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/key_lcd_cnt/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/key_lcd_cnt/sim/key_lcd_cnt_tb.v 
+# -- Compiling module key_lcd_cnt_tb
+# 
+# Top level modules:
+# 	key_lcd_cnt_tb
+# End time: 16:16:24 on Aug 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.key_lcd_cnt_tb(fast)
+# Loading work.key_lcd_cnt(fast)
+# Loading work.seven_tube(fast)
+# Loading work.clk_div_2khz(fast)
+# Loading work.seg_ctrl(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+run
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_filter.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:19:42 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_filter.v 
+# -- Compiling module key_filter
+# 
+# Top level modules:
+# 	key_filter
+# End time: 16:19:42 on Aug 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.key_lcd_cnt_tb
+# End time: 16:20:25 on Aug 14,2024, Elapsed time: 0:05:41
+# Errors: 0, Warnings: 0
+# vsim work.key_lcd_cnt_tb 
+# Start time: 16:20:25 on Aug 14,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.key_lcd_cnt_tb(fast)
+vsim -voptargs=+acc work.key_filter
+# End time: 16:20:39 on Aug 14,2024, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.key_filter 
+# Start time: 16:20:39 on Aug 14,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.key_filter(fast)
+add wave -position end  sim:/key_filter/T10ms
+add wave -position end  sim:/key_filter/s0
+add wave -position end  sim:/key_filter/s1
+add wave -position end  sim:/key_filter/sys_clk
+add wave -position end  sim:/key_filter/sys_rst_n
+add wave -position end  sim:/key_filter/key_in
+add wave -position end  sim:/key_filter/key_out
+add wave -position end  sim:/key_filter/state
+add wave -position end  sim:/key_filter/cnt
+run
+run
+run
+run
+run
+run
+run
+run
+vsim -voptargs=+acc work.key_lcd_cnt_tb
+# End time: 16:21:22 on Aug 14,2024, Elapsed time: 0:00:43
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.key_lcd_cnt_tb 
+# Start time: 16:21:22 on Aug 14,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.key_lcd_cnt_tb(fast)
+# Loading work.key_lcd_cnt(fast)
+# Loading work.seven_tube(fast)
+# Loading work.clk_div_2khz(fast)
+# Loading work.seg_ctrl(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/key_filter_inst/T10ms
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/key_filter_inst/s0
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/key_filter_inst/s1
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/key_filter_inst/sys_clk
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/key_filter_inst/sys_rst_n
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/key_filter_inst/key_in
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/key_filter_inst/key_out
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/key_filter_inst/state
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/key_filter_inst/cnt
+run
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/key_lcd_cnt/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/key_lcd_cnt/sim/key_lcd_cnt_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:23:27 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/key_lcd_cnt/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/key_lcd_cnt/sim/key_lcd_cnt_tb.v 
+# -- Compiling module key_lcd_cnt_tb
+# 
+# Top level modules:
+# 	key_lcd_cnt_tb
+# End time: 16:23:27 on Aug 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.key_lcd_cnt_tb
+# End time: 16:23:32 on Aug 14,2024, Elapsed time: 0:02:10
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.key_lcd_cnt_tb 
+# Start time: 16:23:32 on Aug 14,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.key_lcd_cnt_tb(fast)
+# Loading work.key_lcd_cnt(fast)
+# Loading work.seven_tube(fast)
+# Loading work.clk_div_2khz(fast)
+# Loading work.seg_ctrl(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/sys_clk
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/sys_rst_n
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/key_in
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/sel
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/seg
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/key_out
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/cnt_data
+run
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/key_lcd_cnt/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/key_lcd_cnt/sim/key_lcd_cnt_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:25:52 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/key_lcd_cnt/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/key_lcd_cnt/sim/key_lcd_cnt_tb.v 
+# -- Compiling module key_lcd_cnt_tb
+# 
+# Top level modules:
+# 	key_lcd_cnt_tb
+# End time: 16:25:52 on Aug 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.key_lcd_cnt_tb
+# End time: 16:25:56 on Aug 14,2024, Elapsed time: 0:02:24
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.key_lcd_cnt_tb 
+# Start time: 16:25:56 on Aug 14,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.key_lcd_cnt_tb(fast)
+# Loading work.key_lcd_cnt(fast)
+# Loading work.seven_tube(fast)
+# Loading work.clk_div_2khz(fast)
+# Loading work.seg_ctrl(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/sys_clk
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/sys_rst_n
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/key_in
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/sel
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/seg
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/key_out
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/cnt_data
+run
+# ** Note: $stop    : D:/git-repository/fpga_training/key_lcd_cnt/sim/key_lcd_cnt_tb.v(51)
+#    Time: 40900100 ps  Iteration: 0  Instance: /key_lcd_cnt_tb
+# Break in Module key_lcd_cnt_tb at D:/git-repository/fpga_training/key_lcd_cnt/sim/key_lcd_cnt_tb.v line 51
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/key_lcd_cnt/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/key_lcd_cnt/sim/key_lcd_cnt_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:30:16 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/key_lcd_cnt/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/key_lcd_cnt/sim/key_lcd_cnt_tb.v 
+# -- Compiling module key_lcd_cnt_tb
+# 
+# Top level modules:
+# 	key_lcd_cnt_tb
+# End time: 16:30:16 on Aug 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/key_lcd_cnt/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/key_lcd_cnt/sim/key_lcd_cnt_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:30:18 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/key_lcd_cnt/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/key_lcd_cnt/sim/key_lcd_cnt_tb.v 
+# -- Compiling module key_lcd_cnt_tb
+# 
+# Top level modules:
+# 	key_lcd_cnt_tb
+# End time: 16:30:18 on Aug 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.key_lcd_cnt_tb
+# End time: 16:30:22 on Aug 14,2024, Elapsed time: 0:04:26
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.key_lcd_cnt_tb 
+# Start time: 16:30:22 on Aug 14,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.key_lcd_cnt_tb(fast)
+# Loading work.key_lcd_cnt(fast)
+# Loading work.seven_tube(fast)
+# Loading work.clk_div_2khz(fast)
+# Loading work.seg_ctrl(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/sys_clk
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/sys_rst_n
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/key_in
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/sel
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/seg
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/key_out
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/cnt_data
+run
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/key_lcd_cnt/rtl/pulse_cnt.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:31:02 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/key_lcd_cnt/rtl/pulse_cnt.v 
+# -- Compiling module pulse_cnt
+# 
+# Top level modules:
+# 	pulse_cnt
+# End time: 16:31:02 on Aug 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.key_lcd_cnt_tb
+# End time: 16:31:07 on Aug 14,2024, Elapsed time: 0:00:45
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.key_lcd_cnt_tb 
+# Start time: 16:31:07 on Aug 14,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.key_lcd_cnt_tb(fast)
+# Loading work.key_lcd_cnt(fast)
+# Loading work.seven_tube(fast)
+# Loading work.clk_div_2khz(fast)
+# Loading work.seg_ctrl(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/sys_clk
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/sys_rst_n
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/key_in
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/sel
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/seg
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/key_out
+add wave -position end  sim:/key_lcd_cnt_tb/key_lcd_cnt_inst/cnt_data
+run
+# End time: 17:25:47 on Aug 14,2024, Elapsed time: 0:54:40
+# Errors: 0, Warnings: 0

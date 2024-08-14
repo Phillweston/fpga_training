@@ -1,0 +1,116 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/git-repository/fpga_training/bin2bcd/prj/simulation/questa
+T_opt
+!s110 1723607023
+VN]WF`M87a^GzCfTm`F[_b2
+04 13 4 work bin2bcd_v2_tb fast 0
+=1-00d861e3bc76-66bc27ee-33f-c2e8
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vbcd_modify
+!s110 1723607015
+!i10b 1
+!s100 L>1cIJFhKCfOc;geH7b]@3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IVBLJ1g<]Id:PiPEM2Wo1?3
+R0
+w1723606072
+8D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v
+FD:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v
+!i122 8
+L0 1 26
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2020.4;71
+r1
+!s85 0
+31
+!s108 1723607015.000000
+!s107 D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/bin2bcd/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v|
+!i113 0
+Z5 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/bin2bcd/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vbin2bcd_v2
+!s110 1723607013
+!i10b 1
+!s100 >DFbJ@B1YMkC[o@d>0GIg2
+R2
+IXM[D;l8<]id2CL:XddbM30
+R0
+w1723606582
+8D:/git-repository/fpga_training/bin2bcd/rtl/bin2bcd_v2.v
+FD:/git-repository/fpga_training/bin2bcd/rtl/bin2bcd_v2.v
+!i122 7
+L0 1 52
+R3
+R4
+r1
+!s85 0
+31
+!s108 1723607013.000000
+!s107 D:/git-repository/fpga_training/bin2bcd/rtl/bin2bcd_v2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/bin2bcd/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/bin2bcd/rtl/bin2bcd_v2.v|
+!i113 0
+R5
+R6
+R1
+vbin2bcd_v2_tb
+!s110 1723607010
+!i10b 1
+!s100 8ELZzj75ca3[V?W5IWjFN2
+R2
+I6H^3lYHlz;<iZ?SdjYdCj1
+R0
+w1723606146
+8D:/git-repository/fpga_training/bin2bcd/sim/bin2bcd_v2_tb.v
+FD:/git-repository/fpga_training/bin2bcd/sim/bin2bcd_v2_tb.v
+!i122 5
+L0 3 18
+R3
+R4
+r1
+!s85 0
+31
+!s108 1723607010.000000
+!s107 D:/git-repository/fpga_training/bin2bcd/sim/bin2bcd_v2_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/bin2bcd/prj/../sim|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/bin2bcd/sim/bin2bcd_v2_tb.v|
+!i113 0
+R5
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/bin2bcd/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vcmp
+!s110 1723607011
+!i10b 1
+!s100 4bmWh_OzAj??8D9QcjmXS3
+R2
+I:UBi2L:;[^6JFk09>K4dT3
+R0
+w1723606987
+8D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v
+FD:/git-repository/fpga_training/bin2bcd/rtl/cmp.v
+!i122 6
+L0 1 6
+R3
+R4
+r1
+!s85 0
+31
+!s108 1723607011.000000
+!s107 D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/bin2bcd/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v|
+!i113 0
+R5
+R6
+R1

@@ -1,0 +1,760 @@
+# Reading pref.tcl
+# //  ModelSim SE-64 2020.4 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do bin2bcd_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap work rtl_work 
+# Copying C:/modeltech64_2020.4/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/bin2bcd/rtl {D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:37:29 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/bin2bcd/rtl" D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v 
+# -- Compiling module cmp
+# 
+# Top level modules:
+# 	cmp
+# End time: 11:37:29 on Aug 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/bin2bcd/rtl {D:/git-repository/fpga_training/bin2bcd/rtl/bin2bcd_v2.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:37:29 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/bin2bcd/rtl" D:/git-repository/fpga_training/bin2bcd/rtl/bin2bcd_v2.v 
+# -- Compiling module bin2bcd_v2
+# 
+# Top level modules:
+# 	bin2bcd_v2
+# End time: 11:37:29 on Aug 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/bin2bcd/rtl {D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:37:29 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/bin2bcd/rtl" D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v 
+# -- Compiling module bcd_modify
+# 
+# Top level modules:
+# 	bcd_modify
+# End time: 11:37:30 on Aug 14,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/bin2bcd/prj/../sim {D:/git-repository/fpga_training/bin2bcd/prj/../sim/bin2bcd_v2_tb.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:37:30 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/bin2bcd/prj/../sim" D:/git-repository/fpga_training/bin2bcd/prj/../sim/bin2bcd_v2_tb.v 
+# -- Compiling module bin2bcd_v2_tb
+# 
+# Top level modules:
+# 	bin2bcd_v2_tb
+# End time: 11:37:30 on Aug 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  bin2bcd_v2_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" bin2bcd_v2_tb 
+# Start time: 11:37:30 on Aug 14,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/prj/../sim/bin2bcd_v2_tb.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/prj/../sim/bin2bcd_v2_tb.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/prj/../sim/bin2bcd_v2_tb.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/prj/../sim/bin2bcd_v2_tb.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/prj/../sim/bin2bcd_v2_tb.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/prj/../sim/bin2bcd_v2_tb.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/bin2bcd_v2.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/bin2bcd_v2.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/bin2bcd_v2.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/bin2bcd_v2.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/bin2bcd_v2.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/bin2bcd_v2.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=216, Warnings=72.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./bin2bcd_run_msim_rtl_verilog.do PAUSED at line 14
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/bin2bcd/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/bin2bcd/sim/bin2bcd_v2_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:42:08 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/bin2bcd/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/bin2bcd/sim/bin2bcd_v2_tb.v 
+# -- Compiling module bin2bcd_v2_tb
+# 
+# Top level modules:
+# 	bin2bcd_v2_tb
+# End time: 11:42:08 on Aug 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.bin2bcd_v2_tb
+# vsim -voptargs="+acc" work.bin2bcd_v2_tb 
+# Start time: 11:37:30 on Aug 14,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.bin2bcd_v2_tb(fast)
+# Loading work.bin2bcd_v2(fast)
+# Loading work.bcd_modify(fast)
+# Loading work.cmp(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst1/cmp_high File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst1/cmp_high File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst1/cmp_middle File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst1/cmp_middle File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst1/cmp_low File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst1/cmp_low File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst2/cmp_high File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst2/cmp_high File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst2/cmp_middle File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst2/cmp_middle File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst2/cmp_low File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst2/cmp_low File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst3/cmp_high File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst3/cmp_high File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst3/cmp_middle File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst3/cmp_middle File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst3/cmp_low File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst3/cmp_low File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst4/cmp_high File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst4/cmp_high File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst4/cmp_middle File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst4/cmp_middle File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst4/cmp_low File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst4/cmp_low File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst5/cmp_high File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst5/cmp_high File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst5/cmp_middle File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst5/cmp_middle File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst5/cmp_low File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst5/cmp_low File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst6/cmp_high File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst6/cmp_high File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst6/cmp_middle File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst6/cmp_middle File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst6/cmp_low File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst6/cmp_low File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst7/cmp_high File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst7/cmp_high File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst7/cmp_middle File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst7/cmp_middle File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst7/cmp_low File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst7/cmp_low File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst8/cmp_high File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst8/cmp_high File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 9
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst8/cmp_middle File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst8/cmp_middle File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 14
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_in'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst8/cmp_low File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 19
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (4) for port 'cmp_out'. The port definition is at: D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_modify_inst8/cmp_low File: D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v Line: 19
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/bin2bcd/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/bin2bcd/sim/bin2bcd_v2_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:43:30 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/bin2bcd/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/bin2bcd/sim/bin2bcd_v2_tb.v 
+# -- Compiling module bin2bcd_v2_tb
+# 
+# Top level modules:
+# 	bin2bcd_v2_tb
+# End time: 11:43:30 on Aug 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/bin2bcd/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:43:31 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/bin2bcd/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/bin2bcd/rtl/cmp.v 
+# -- Compiling module cmp
+# 
+# Top level modules:
+# 	cmp
+# End time: 11:43:31 on Aug 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/bin2bcd/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/bin2bcd/rtl/bin2bcd_v2.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:43:33 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/bin2bcd/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/bin2bcd/rtl/bin2bcd_v2.v 
+# -- Compiling module bin2bcd_v2
+# 
+# Top level modules:
+# 	bin2bcd_v2
+# End time: 11:43:33 on Aug 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/bin2bcd/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:43:35 on Aug 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/bin2bcd/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/bin2bcd/rtl/bcd_modify.v 
+# -- Compiling module bcd_modify
+# 
+# Top level modules:
+# 	bcd_modify
+# End time: 11:43:35 on Aug 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.bin2bcd_v2_tb
+# End time: 11:43:41 on Aug 14,2024, Elapsed time: 0:06:11
+# Errors: 216, Warnings: 120
+# vsim -voptargs="+acc" work.bin2bcd_v2_tb 
+# Start time: 11:43:41 on Aug 14,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.bin2bcd_v2_tb(fast)
+# Loading work.bin2bcd_v2(fast)
+# Loading work.bcd_modify(fast)
+# Loading work.cmp(fast)
+add wave -position end  sim:/bin2bcd_v2_tb/bin2bcd_v2_inst/bin
+add wave -position end  sim:/bin2bcd_v2_tb/bin2bcd_v2_inst/bcd
+add wave -position end  sim:/bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_data0
+add wave -position end  sim:/bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_data1
+add wave -position end  sim:/bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_data2
+add wave -position end  sim:/bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_data3
+add wave -position end  sim:/bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_data4
+add wave -position end  sim:/bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_data5
+add wave -position end  sim:/bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_data6
+add wave -position end  sim:/bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_data7
+add wave -position end  sim:/bin2bcd_v2_tb/bin2bcd_v2_inst/bcd_data8
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/git-repository/fpga_training/bin2bcd/prj/simulation/questa/wave.do
+# End time: 15:47:09 on Aug 14,2024, Elapsed time: 4:03:28
+# Errors: 0, Warnings: 0

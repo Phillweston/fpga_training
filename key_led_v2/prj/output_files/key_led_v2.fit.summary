@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Aug 13 18:14:21 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : key_led_v2
+Top-level Entity Name : key_led_v2_top
+Family : Cyclone IV E
+Device : EP4CE6E22C6
+Timing Models : Final
+Total logic elements : 100 / 6,272 ( 2 % )
+    Total combinational functions : 95 / 6,272 ( 2 % )
+    Dedicated logic registers : 71 / 6,272 ( 1 % )
+Total registers : 71
+Total pins : 18 / 92 ( 20 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

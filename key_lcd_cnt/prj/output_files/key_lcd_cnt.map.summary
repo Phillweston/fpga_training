@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Aug 14 17:22:51 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : key_lcd_cnt
+Top-level Entity Name : key_lcd_cnt
+Family : Cyclone IV E
+Total logic elements : 134
+    Total combinational functions : 126
+    Dedicated logic registers : 81
+Total registers : 81
+Total pins : 14
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

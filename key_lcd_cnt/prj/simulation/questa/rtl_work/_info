@@ -1,0 +1,208 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/git-repository/fpga_training/key_lcd_cnt/prj/simulation/questa
+T_opt
+!s110 1723624269
+VR:hk6bTi_QBW_26;oOYN`3
+Z1 04 14 4 work key_lcd_cnt_tb fast 0
+=1-00d861e3bc76-66bc6b4c-340-4b0c
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;2020.4;71
+T_opt1
+!s110 1723623626
+VUNj=UA3f;ZeCi`CN63mI83
+R1
+=1-00d861e3bc76-66bc68ca-c3-cb74
+o-quiet -auto_acc_if_foreign -work work
+R3
+n@_opt1
+R4
+R0
+T_opt2
+!s110 1723623640
+V]6Q[]j>=f8=JGDNU]h73B3
+04 10 4 work key_filter fast 0
+=1-00d861e3bc76-66bc68d8-26a-f7f0
+R2
+R3
+n@_opt2
+R4
+R0
+vclk_div_2khz
+Z5 !s110 1723623284
+!i10b 1
+!s100 gWb1@0NzJnfYDI1W<kN_i0
+Z6 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IfcE9aLdHB>VK;f8OgegG^0
+R0
+w1723616678
+8D:/git-repository/fpga_training/key_lcd_cnt/rtl/clk_div_2khz.v
+FD:/git-repository/fpga_training/key_lcd_cnt/rtl/clk_div_2khz.v
+!i122 5
+L0 1 20
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z9 !s108 1723623284.000000
+!s107 D:/git-repository/fpga_training/key_lcd_cnt/rtl/clk_div_2khz.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl|D:/git-repository/fpga_training/key_lcd_cnt/rtl/clk_div_2khz.v|
+!i113 0
+Z10 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vkey_filter
+!s110 1723623582
+!i10b 1
+!s100 c7>^m]dH2Lfm06jXDZe=E3
+R6
+IHW^ZkW5gSLXM_3>1lUfee1
+R0
+w1723616835
+8D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_filter.v
+FD:/git-repository/fpga_training/key_lcd_cnt/rtl/key_filter.v
+!i122 8
+L0 3 52
+R7
+R8
+r1
+!s85 0
+31
+!s108 1723623582.000000
+!s107 D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_filter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_filter.v|
+!i113 0
+R10
+R11
+R3
+vkey_lcd_cnt
+R5
+!i10b 1
+!s100 L8>1[iAAFG_W1YMJ>mbM@3
+R6
+Ib^o;4a4cW2W:cHk3?>6`H1
+R0
+w1723617524
+8D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_lcd_cnt.v
+FD:/git-repository/fpga_training/key_lcd_cnt/rtl/key_lcd_cnt.v
+!i122 3
+L0 1 32
+R7
+R8
+r1
+!s85 0
+31
+R9
+!s107 D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_lcd_cnt.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl|D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_lcd_cnt.v|
+!i113 0
+R10
+R11
+R3
+vkey_lcd_cnt_tb
+!s110 1723624218
+!i10b 1
+!s100 OgNdkMKj]OXk@@nbCLFcb0
+R6
+ITK=20911=MSm_JC^LIfP31
+R0
+w1723623947
+8D:/git-repository/fpga_training/key_lcd_cnt/sim/key_lcd_cnt_tb.v
+FD:/git-repository/fpga_training/key_lcd_cnt/sim/key_lcd_cnt_tb.v
+!i122 12
+L0 3 51
+R7
+R8
+r1
+!s85 0
+31
+!s108 1723624218.000000
+!s107 D:/git-repository/fpga_training/key_lcd_cnt/sim/key_lcd_cnt_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/key_lcd_cnt/prj/../sim|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/key_lcd_cnt/sim/key_lcd_cnt_tb.v|
+!i113 0
+R10
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/key_lcd_cnt/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vpulse_cnt
+!s110 1723624262
+!i10b 1
+!s100 SFC_>>l5KFO^zd4NeUSXQ1
+R6
+I<8FL[VHCMYWLf4o3ibYGF1
+R0
+w1723624203
+8D:/git-repository/fpga_training/key_lcd_cnt/rtl/pulse_cnt.v
+FD:/git-repository/fpga_training/key_lcd_cnt/rtl/pulse_cnt.v
+!i122 13
+L0 1 35
+R7
+R8
+r1
+!s85 0
+31
+!s108 1723624262.000000
+!s107 D:/git-repository/fpga_training/key_lcd_cnt/rtl/pulse_cnt.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/key_lcd_cnt/rtl/pulse_cnt.v|
+!i113 0
+R10
+R11
+R3
+vseg_ctrl
+Z12 !s110 1723623283
+!i10b 1
+!s100 AQ71B43WJViFM=8a[z>]U0
+R6
+IdY_[7c<JHHj7ZzTH=3=mZ3
+R0
+w1723186538
+8D:/git-repository/fpga_training/key_lcd_cnt/rtl/seg_ctrl.v
+FD:/git-repository/fpga_training/key_lcd_cnt/rtl/seg_ctrl.v
+!i122 1
+L0 1 61
+R7
+R8
+r1
+!s85 0
+31
+Z13 !s108 1723623283.000000
+!s107 D:/git-repository/fpga_training/key_lcd_cnt/rtl/seg_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl|D:/git-repository/fpga_training/key_lcd_cnt/rtl/seg_ctrl.v|
+!i113 0
+R10
+R11
+R3
+vseven_tube
+R12
+!i10b 1
+!s100 c4R6UZV?EUk4R[cVl5=Nn1
+R6
+I@4R^79fO7d5>P_WB8iGGF3
+R0
+w1723622951
+8D:/git-repository/fpga_training/key_lcd_cnt/rtl/seven_tube.v
+FD:/git-repository/fpga_training/key_lcd_cnt/rtl/seven_tube.v
+!i122 0
+L0 1 23
+R7
+R8
+r1
+!s85 0
+31
+R13
+!s107 D:/git-repository/fpga_training/key_lcd_cnt/rtl/seven_tube.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl|D:/git-repository/fpga_training/key_lcd_cnt/rtl/seven_tube.v|
+!i113 0
+R10
+R11
+R3

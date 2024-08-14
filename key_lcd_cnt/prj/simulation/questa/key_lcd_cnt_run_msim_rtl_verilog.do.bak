@@ -1,0 +1,14 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl {D:/git-repository/fpga_training/key_lcd_cnt/rtl/seven_tube.v}
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl {D:/git-repository/fpga_training/key_lcd_cnt/rtl/seg_ctrl.v}
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl {D:/git-repository/fpga_training/key_lcd_cnt/rtl/pulse_cnt.v}
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl {D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_lcd_cnt.v}
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl {D:/git-repository/fpga_training/key_lcd_cnt/rtl/key_filter.v}
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/key_lcd_cnt/rtl {D:/git-repository/fpga_training/key_lcd_cnt/rtl/clk_div_2khz.v}
+

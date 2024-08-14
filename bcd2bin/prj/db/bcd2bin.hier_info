@@ -1,0 +1,37 @@
+|bcd2bin
+bcd[0] => Add3.IN32
+bcd[1] => Add3.IN31
+bcd[2] => Add3.IN30
+bcd[3] => Add3.IN29
+bcd[4] => Add1.IN8
+bcd[4] => Add2.IN28
+bcd[5] => Add1.IN7
+bcd[5] => Add2.IN27
+bcd[6] => Add1.IN5
+bcd[6] => Add1.IN6
+bcd[7] => Add1.IN3
+bcd[7] => Add1.IN4
+bcd[8] => Mult1.IN10
+bcd[9] => Mult1.IN9
+bcd[10] => Mult1.IN8
+bcd[11] => Mult1.IN7
+bcd[12] => Mult0.IN13
+bcd[13] => Mult0.IN12
+bcd[14] => Mult0.IN11
+bcd[15] => Mult0.IN10
+bin[0] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+bin[1] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+bin[2] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+bin[3] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+bin[4] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+bin[5] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+bin[6] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+bin[7] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+bin[8] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+bin[9] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+bin[10] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+bin[11] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+bin[12] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+bin[13] <= Add3.DB_MAX_OUTPUT_PORT_TYPE
+
+
