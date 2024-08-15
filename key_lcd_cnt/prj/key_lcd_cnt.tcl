@@ -3,7 +3,8 @@ set_global_assignment -name DEVICE ep4ce10f17c8
 
 set_location_assignment PIN_E1    -to    sys_clk
 set_location_assignment PIN_L3    -to    sys_rst_n
-set_location_assignment PIN_L1    -to    key_in
+set_location_assignment PIN_L1    -to    key_in_inc
+set_location_assignment PIN_J6    -to    key_in_dec
 
 # LED Tube 7
 set_location_assignment PIN_L6    -to   sel[2]

@@ -3,7 +3,8 @@
 module key_lcd_cnt_tb;
     reg sys_clk;
     reg sys_rst_n;
-    reg key_in;
+    reg key_in_inc;
+    reg key_in_dec;
     wire [2:0] sel;
     wire [7:0] seg;
 
@@ -13,7 +14,8 @@ module key_lcd_cnt_tb;
     key_lcd_cnt key_lcd_cnt_inst (
         .sys_clk (sys_clk),
         .sys_rst_n (sys_rst_n),
-        .key_in (key_in),
+        .key_in_inc (key_in_inc),
+        .key_in_dec (key_in_dec),
         .sel (sel),
         .seg (seg)
     );
@@ -24,29 +26,53 @@ module key_lcd_cnt_tb;
 
     initial begin
         sys_rst_n = 1'b0;
-        key_in = 1'b1;
+        key_in_inc = 1'b1;
+        key_in_dec = 1'b1;
 
         #200.1 sys_rst_n = 1'b1;
-        #100 key_in = 1'b0;
+        #100 key_in_inc = 1'b0;
+        #100 key_in_dec = 1'b0;
 
         repeat (10) begin
             // Simulate the key press jitter
-            #5 key_in = 1'b1;
-            #10 key_in = 1'b0;
-            #5 key_in = 1'b1;
-            #10 key_in = 1'b0;
+            #5 key_in_inc = 1'b1;
+            #10 key_in_inc = 1'b0;
+            #5 key_in_inc = 1'b1;
+            #10 key_in_inc = 1'b0;
     
             // Simulate the key pressed
-            #2000 key_in = 1'b1;
+            #2000 key_in_inc = 1'b1;
     
             // Simulate the key press jitter
-            #5 key_in = 1'b0;
-            #10 key_in = 1'b1;
-            #5 key_in = 1'b0;
-            #10 key_in = 1'b1;
+            #5 key_in_inc = 1'b0;
+            #10 key_in_inc = 1'b1;
+            #5 key_in_inc = 1'b0;
+            #10 key_in_inc = 1'b1;
     
             // Simulate the key released
-            #2000 key_in = 1'b0;
+            #2000 key_in_inc = 1'b0;
+            #2000;
+        end
+
+        repeat (10) begin
+            // Simulate the key press jitter
+            #5 key_in_dec = 1'b1;
+            #10 key_in_dec = 1'b0;
+            #5 key_in_dec = 1'b1;
+            #10 key_in_dec = 1'b0;
+    
+            // Simulate the key pressed
+            #2000 key_in_dec = 1'b1;
+    
+            // Simulate the key press jitter
+            #5 key_in_dec = 1'b0;
+            #10 key_in_dec = 1'b1;
+            #5 key_in_dec = 1'b0;
+            #10 key_in_dec = 1'b1;
+    
+            // Simulate the key released
+            #2000 key_in_dec = 1'b0;
+            #2000;
         end
         $stop;
     end

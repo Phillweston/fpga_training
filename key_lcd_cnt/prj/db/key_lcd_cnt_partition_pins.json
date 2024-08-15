@@ -52,7 +52,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "key_in",
+					"name" : "key_in_inc",
+					"strict" : false
+				},
+				{
+					"name" : "key_in_dec",
 					"strict" : false
 				}
 			]
