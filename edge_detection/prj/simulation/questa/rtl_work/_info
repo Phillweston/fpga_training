@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/git-repository/fpga_training/edge_detection/prj/simulation/questa
+vedge_detection
+Z1 !s110 1723713885
+!i10b 1
+!s100 a]eNzQBQKoEOXWoWNgLla1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IZ0YgY0F4FBDPcbLa8UNEN0
+R0
+w1723688373
+8D:/git-repository/fpga_training/edge_detection/rtl/edge_detection.v
+FD:/git-repository/fpga_training/edge_detection/rtl/edge_detection.v
+!i122 2
+L0 1 25
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z5 !s108 1723713885.000000
+!s107 D:/git-repository/fpga_training/edge_detection/rtl/edge_detection.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/edge_detection/rtl|D:/git-repository/fpga_training/edge_detection/rtl/edge_detection.v|
+!i113 0
+Z6 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z7 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/edge_detection/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 tCvgOpt 0
+vedge_detection_top
+R1
+!i10b 1
+!s100 E8?E>;VhE?TVfTiVzBLlh3
+R2
+I6Q8W2a56VMFTJK?<P0M]O0
+R0
+w1723688035
+8D:/git-repository/fpga_training/edge_detection/rtl/edge_detection_top.v
+FD:/git-repository/fpga_training/edge_detection/rtl/edge_detection_top.v
+!i122 1
+L0 1 22
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/git-repository/fpga_training/edge_detection/rtl/edge_detection_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/edge_detection/rtl|D:/git-repository/fpga_training/edge_detection/rtl/edge_detection_top.v|
+!i113 0
+R6
+R7
+R8
+vedge_detection_top_tb
+!s110 1723713886
+!i10b 1
+!s100 _GLGL2Gc_Q20Yn:K435_:0
+R2
+I17n2edASJSLe^co`>@nzf0
+R0
+w1723687847
+8D:/git-repository/fpga_training/edge_detection/prj/../sim/edge_detection_top_tb.v
+FD:/git-repository/fpga_training/edge_detection/prj/../sim/edge_detection_top_tb.v
+!i122 3
+L0 3 45
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/git-repository/fpga_training/edge_detection/prj/../sim/edge_detection_top_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/edge_detection/prj/../sim|D:/git-repository/fpga_training/edge_detection/prj/../sim/edge_detection_top_tb.v|
+!i113 0
+R6
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/edge_detection/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R8
+vkey_filter
+R1
+!i10b 1
+!s100 A2HXMB8fnhi<L2<i`:YId3
+R2
+IVLQJKUfzY9nzWY_R:iS:o2
+R0
+w1723446987
+8D:/git-repository/fpga_training/edge_detection/rtl/key_filter.v
+FD:/git-repository/fpga_training/edge_detection/rtl/key_filter.v
+!i122 0
+L0 2 51
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/git-repository/fpga_training/edge_detection/rtl/key_filter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/edge_detection/rtl|D:/git-repository/fpga_training/edge_detection/rtl/key_filter.v|
+!i113 0
+R6
+R7
+R8

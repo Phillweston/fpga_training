@@ -2,7 +2,8 @@ module edge_detection_top (
     input sys_clk,
     input sys_rst_n,
     input key_in,
-    output q_out
+    output pos_edge,
+    output neg_edge
 );
     wire key_out;
 
@@ -17,6 +18,7 @@ module edge_detection_top (
         .sys_clk (sys_clk),
         .sys_rst_n (sys_rst_n),
         .signal (key_out),
-        .q_out (q_out)
+        .pos_edge (pos_edge),
+        .neg_edge (neg_edge)
     );
 endmodule

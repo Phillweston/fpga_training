@@ -1,0 +1,3611 @@
+|digital_clock_v1
+sys_clk => sys_clk.IN3
+sys_rst_n => sys_rst_n.IN3
+key_pause => key_pause.IN1
+key_switch => key_switch.IN1
+row_in[0] => row_in[0].IN1
+row_in[1] => row_in[1].IN1
+row_in[2] => row_in[2].IN1
+row_in[3] => row_in[3].IN1
+col_in[0] => col_in[0].IN1
+col_in[1] => col_in[1].IN1
+col_in[2] => col_in[2].IN1
+col_in[3] => col_in[3].IN1
+sel[0] << seven_tube:seven_tube_inst.sel
+sel[1] << seven_tube:seven_tube_inst.sel
+sel[2] << seven_tube:seven_tube_inst.sel
+seg[0] << seven_tube:seven_tube_inst.seg
+seg[1] << seven_tube:seven_tube_inst.seg
+seg[2] << seven_tube:seven_tube_inst.seg
+seg[3] << seven_tube:seven_tube_inst.seg
+seg[4] << seven_tube:seven_tube_inst.seg
+seg[5] << seven_tube:seven_tube_inst.seg
+seg[6] << seven_tube:seven_tube_inst.seg
+seg[7] << seven_tube:seven_tube_inst.seg
+
+
+|digital_clock_v1|matrix_keyboard:matrix_keyboard_inst
+sys_clk => key_code[0]~reg0.CLK
+sys_clk => key_code[1]~reg0.CLK
+sys_clk => key_code[2]~reg0.CLK
+sys_clk => key_code[3]~reg0.CLK
+sys_rst_n => key_code[0]~reg0.ACLR
+sys_rst_n => key_code[1]~reg0.ACLR
+sys_rst_n => key_code[2]~reg0.ACLR
+sys_rst_n => key_code[3]~reg0.ACLR
+row_in[0] => always0.IN0
+row_in[0] => always0.IN0
+row_in[0] => always0.IN0
+row_in[0] => always0.IN0
+row_in[1] => always0.IN0
+row_in[1] => always0.IN0
+row_in[1] => always0.IN0
+row_in[1] => always0.IN0
+row_in[2] => always0.IN0
+row_in[2] => always0.IN0
+row_in[2] => always0.IN0
+row_in[2] => always0.IN0
+row_in[3] => always0.IN0
+row_in[3] => always0.IN0
+row_in[3] => always0.IN0
+row_in[3] => always0.IN0
+col_in[0] => always0.IN1
+col_in[0] => always0.IN1
+col_in[0] => always0.IN1
+col_in[0] => always0.IN1
+col_in[1] => always0.IN1
+col_in[1] => always0.IN1
+col_in[1] => always0.IN1
+col_in[1] => always0.IN1
+col_in[2] => always0.IN1
+col_in[2] => always0.IN1
+col_in[2] => always0.IN1
+col_in[2] => always0.IN1
+col_in[3] => always0.IN1
+col_in[3] => always0.IN1
+col_in[3] => always0.IN1
+col_in[3] => always0.IN1
+key_code[0] <= key_code[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+key_code[1] <= key_code[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+key_code[2] <= key_code[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+key_code[3] <= key_code[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|logic_ctrl_v1:logic_ctrl_v1_inst
+sys_clk => sys_clk.IN6
+sys_rst_n => sys_rst_n.IN6
+key_pause => key_pause.IN1
+key_code[0] => Equal0.IN3
+key_code[0] => Equal1.IN0
+key_code[1] => Equal0.IN2
+key_code[1] => Equal1.IN3
+key_code[2] => Equal0.IN1
+key_code[2] => Equal1.IN2
+key_code[3] => Equal0.IN0
+key_code[3] => Equal1.IN1
+data_out[0] <= data_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= data_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_out[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= data_out[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[10] <= data_out[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[11] <= data_out[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[12] <= data_out[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[13] <= data_out[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[14] <= data_out[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[15] <= data_out[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[16] <= data_out[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[17] <= data_out[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[18] <= data_out[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[19] <= data_out[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[20] <= data_out[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[21] <= data_out[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[22] <= data_out[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[23] <= data_out[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|logic_ctrl_v1:logic_ctrl_v1_inst|key_process:key_process_inst
+sys_clk => sys_clk.IN2
+sys_rst_n => sys_rst_n.IN2
+key_in => key_in.IN1
+key_out_flag <= edge_detection:edge_detection_inst.neg_edge
+
+
+|digital_clock_v1|logic_ctrl_v1:logic_ctrl_v1_inst|key_process:key_process_inst|key_filter:key_filter_inst
+sys_clk => key_out~reg0.CLK
+sys_clk => state.CLK
+sys_clk => cnt[0].CLK
+sys_clk => cnt[1].CLK
+sys_clk => cnt[2].CLK
+sys_clk => cnt[3].CLK
+sys_clk => cnt[4].CLK
+sys_clk => cnt[5].CLK
+sys_clk => cnt[6].CLK
+sys_clk => cnt[7].CLK
+sys_clk => cnt[8].CLK
+sys_clk => cnt[9].CLK
+sys_clk => cnt[10].CLK
+sys_clk => cnt[11].CLK
+sys_clk => cnt[12].CLK
+sys_clk => cnt[13].CLK
+sys_clk => cnt[14].CLK
+sys_clk => cnt[15].CLK
+sys_clk => cnt[16].CLK
+sys_clk => cnt[17].CLK
+sys_clk => cnt[18].CLK
+sys_clk => cnt[19].CLK
+sys_clk => cnt[20].CLK
+sys_clk => cnt[21].CLK
+sys_clk => cnt[22].CLK
+sys_clk => cnt[23].CLK
+sys_clk => cnt[24].CLK
+sys_clk => cnt[25].CLK
+sys_clk => cnt[26].CLK
+sys_clk => cnt[27].CLK
+sys_clk => cnt[28].CLK
+sys_clk => cnt[29].CLK
+sys_clk => cnt[30].CLK
+sys_clk => cnt[31].CLK
+sys_rst_n => key_out~reg0.PRESET
+sys_rst_n => state.ACLR
+sys_rst_n => cnt[0].ACLR
+sys_rst_n => cnt[1].ACLR
+sys_rst_n => cnt[2].ACLR
+sys_rst_n => cnt[3].ACLR
+sys_rst_n => cnt[4].ACLR
+sys_rst_n => cnt[5].ACLR
+sys_rst_n => cnt[6].ACLR
+sys_rst_n => cnt[7].ACLR
+sys_rst_n => cnt[8].ACLR
+sys_rst_n => cnt[9].ACLR
+sys_rst_n => cnt[10].ACLR
+sys_rst_n => cnt[11].ACLR
+sys_rst_n => cnt[12].ACLR
+sys_rst_n => cnt[13].ACLR
+sys_rst_n => cnt[14].ACLR
+sys_rst_n => cnt[15].ACLR
+sys_rst_n => cnt[16].ACLR
+sys_rst_n => cnt[17].ACLR
+sys_rst_n => cnt[18].ACLR
+sys_rst_n => cnt[19].ACLR
+sys_rst_n => cnt[20].ACLR
+sys_rst_n => cnt[21].ACLR
+sys_rst_n => cnt[22].ACLR
+sys_rst_n => cnt[23].ACLR
+sys_rst_n => cnt[24].ACLR
+sys_rst_n => cnt[25].ACLR
+sys_rst_n => cnt[26].ACLR
+sys_rst_n => cnt[27].ACLR
+sys_rst_n => cnt[28].ACLR
+sys_rst_n => cnt[29].ACLR
+sys_rst_n => cnt[30].ACLR
+sys_rst_n => cnt[31].ACLR
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => key_out.OUTPUTSELECT
+key_in => state.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => key_out.OUTPUTSELECT
+key_in => state.OUTPUTSELECT
+key_out <= key_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|logic_ctrl_v1:logic_ctrl_v1_inst|key_process:key_process_inst|edge_detection:edge_detection_inst
+sys_clk => neg_edge~reg0.CLK
+sys_clk => pos_edge~reg0.CLK
+sys_clk => q2.CLK
+sys_clk => q1.CLK
+sys_rst_n => neg_edge~reg0.ACLR
+sys_rst_n => pos_edge~reg0.ACLR
+sys_rst_n => q2.ACLR
+sys_rst_n => q1.ACLR
+signal => q1.DATAIN
+pos_edge <= pos_edge~reg0.DB_MAX_OUTPUT_PORT_TYPE
+neg_edge <= neg_edge~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|logic_ctrl_v1:logic_ctrl_v1_inst|key_process:key_process_increment
+sys_clk => sys_clk.IN2
+sys_rst_n => sys_rst_n.IN2
+key_in => key_in.IN1
+key_out_flag <= edge_detection:edge_detection_inst.neg_edge
+
+
+|digital_clock_v1|logic_ctrl_v1:logic_ctrl_v1_inst|key_process:key_process_increment|key_filter:key_filter_inst
+sys_clk => key_out~reg0.CLK
+sys_clk => state.CLK
+sys_clk => cnt[0].CLK
+sys_clk => cnt[1].CLK
+sys_clk => cnt[2].CLK
+sys_clk => cnt[3].CLK
+sys_clk => cnt[4].CLK
+sys_clk => cnt[5].CLK
+sys_clk => cnt[6].CLK
+sys_clk => cnt[7].CLK
+sys_clk => cnt[8].CLK
+sys_clk => cnt[9].CLK
+sys_clk => cnt[10].CLK
+sys_clk => cnt[11].CLK
+sys_clk => cnt[12].CLK
+sys_clk => cnt[13].CLK
+sys_clk => cnt[14].CLK
+sys_clk => cnt[15].CLK
+sys_clk => cnt[16].CLK
+sys_clk => cnt[17].CLK
+sys_clk => cnt[18].CLK
+sys_clk => cnt[19].CLK
+sys_clk => cnt[20].CLK
+sys_clk => cnt[21].CLK
+sys_clk => cnt[22].CLK
+sys_clk => cnt[23].CLK
+sys_clk => cnt[24].CLK
+sys_clk => cnt[25].CLK
+sys_clk => cnt[26].CLK
+sys_clk => cnt[27].CLK
+sys_clk => cnt[28].CLK
+sys_clk => cnt[29].CLK
+sys_clk => cnt[30].CLK
+sys_clk => cnt[31].CLK
+sys_rst_n => key_out~reg0.PRESET
+sys_rst_n => state.ACLR
+sys_rst_n => cnt[0].ACLR
+sys_rst_n => cnt[1].ACLR
+sys_rst_n => cnt[2].ACLR
+sys_rst_n => cnt[3].ACLR
+sys_rst_n => cnt[4].ACLR
+sys_rst_n => cnt[5].ACLR
+sys_rst_n => cnt[6].ACLR
+sys_rst_n => cnt[7].ACLR
+sys_rst_n => cnt[8].ACLR
+sys_rst_n => cnt[9].ACLR
+sys_rst_n => cnt[10].ACLR
+sys_rst_n => cnt[11].ACLR
+sys_rst_n => cnt[12].ACLR
+sys_rst_n => cnt[13].ACLR
+sys_rst_n => cnt[14].ACLR
+sys_rst_n => cnt[15].ACLR
+sys_rst_n => cnt[16].ACLR
+sys_rst_n => cnt[17].ACLR
+sys_rst_n => cnt[18].ACLR
+sys_rst_n => cnt[19].ACLR
+sys_rst_n => cnt[20].ACLR
+sys_rst_n => cnt[21].ACLR
+sys_rst_n => cnt[22].ACLR
+sys_rst_n => cnt[23].ACLR
+sys_rst_n => cnt[24].ACLR
+sys_rst_n => cnt[25].ACLR
+sys_rst_n => cnt[26].ACLR
+sys_rst_n => cnt[27].ACLR
+sys_rst_n => cnt[28].ACLR
+sys_rst_n => cnt[29].ACLR
+sys_rst_n => cnt[30].ACLR
+sys_rst_n => cnt[31].ACLR
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => key_out.OUTPUTSELECT
+key_in => state.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => key_out.OUTPUTSELECT
+key_in => state.OUTPUTSELECT
+key_out <= key_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|logic_ctrl_v1:logic_ctrl_v1_inst|key_process:key_process_increment|edge_detection:edge_detection_inst
+sys_clk => neg_edge~reg0.CLK
+sys_clk => pos_edge~reg0.CLK
+sys_clk => q2.CLK
+sys_clk => q1.CLK
+sys_rst_n => neg_edge~reg0.ACLR
+sys_rst_n => pos_edge~reg0.ACLR
+sys_rst_n => q2.ACLR
+sys_rst_n => q1.ACLR
+signal => q1.DATAIN
+pos_edge <= pos_edge~reg0.DB_MAX_OUTPUT_PORT_TYPE
+neg_edge <= neg_edge~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|logic_ctrl_v1:logic_ctrl_v1_inst|key_process:key_process_decrement
+sys_clk => sys_clk.IN2
+sys_rst_n => sys_rst_n.IN2
+key_in => key_in.IN1
+key_out_flag <= edge_detection:edge_detection_inst.neg_edge
+
+
+|digital_clock_v1|logic_ctrl_v1:logic_ctrl_v1_inst|key_process:key_process_decrement|key_filter:key_filter_inst
+sys_clk => key_out~reg0.CLK
+sys_clk => state.CLK
+sys_clk => cnt[0].CLK
+sys_clk => cnt[1].CLK
+sys_clk => cnt[2].CLK
+sys_clk => cnt[3].CLK
+sys_clk => cnt[4].CLK
+sys_clk => cnt[5].CLK
+sys_clk => cnt[6].CLK
+sys_clk => cnt[7].CLK
+sys_clk => cnt[8].CLK
+sys_clk => cnt[9].CLK
+sys_clk => cnt[10].CLK
+sys_clk => cnt[11].CLK
+sys_clk => cnt[12].CLK
+sys_clk => cnt[13].CLK
+sys_clk => cnt[14].CLK
+sys_clk => cnt[15].CLK
+sys_clk => cnt[16].CLK
+sys_clk => cnt[17].CLK
+sys_clk => cnt[18].CLK
+sys_clk => cnt[19].CLK
+sys_clk => cnt[20].CLK
+sys_clk => cnt[21].CLK
+sys_clk => cnt[22].CLK
+sys_clk => cnt[23].CLK
+sys_clk => cnt[24].CLK
+sys_clk => cnt[25].CLK
+sys_clk => cnt[26].CLK
+sys_clk => cnt[27].CLK
+sys_clk => cnt[28].CLK
+sys_clk => cnt[29].CLK
+sys_clk => cnt[30].CLK
+sys_clk => cnt[31].CLK
+sys_rst_n => key_out~reg0.PRESET
+sys_rst_n => state.ACLR
+sys_rst_n => cnt[0].ACLR
+sys_rst_n => cnt[1].ACLR
+sys_rst_n => cnt[2].ACLR
+sys_rst_n => cnt[3].ACLR
+sys_rst_n => cnt[4].ACLR
+sys_rst_n => cnt[5].ACLR
+sys_rst_n => cnt[6].ACLR
+sys_rst_n => cnt[7].ACLR
+sys_rst_n => cnt[8].ACLR
+sys_rst_n => cnt[9].ACLR
+sys_rst_n => cnt[10].ACLR
+sys_rst_n => cnt[11].ACLR
+sys_rst_n => cnt[12].ACLR
+sys_rst_n => cnt[13].ACLR
+sys_rst_n => cnt[14].ACLR
+sys_rst_n => cnt[15].ACLR
+sys_rst_n => cnt[16].ACLR
+sys_rst_n => cnt[17].ACLR
+sys_rst_n => cnt[18].ACLR
+sys_rst_n => cnt[19].ACLR
+sys_rst_n => cnt[20].ACLR
+sys_rst_n => cnt[21].ACLR
+sys_rst_n => cnt[22].ACLR
+sys_rst_n => cnt[23].ACLR
+sys_rst_n => cnt[24].ACLR
+sys_rst_n => cnt[25].ACLR
+sys_rst_n => cnt[26].ACLR
+sys_rst_n => cnt[27].ACLR
+sys_rst_n => cnt[28].ACLR
+sys_rst_n => cnt[29].ACLR
+sys_rst_n => cnt[30].ACLR
+sys_rst_n => cnt[31].ACLR
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => key_out.OUTPUTSELECT
+key_in => state.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => key_out.OUTPUTSELECT
+key_in => state.OUTPUTSELECT
+key_out <= key_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|logic_ctrl_v1:logic_ctrl_v1_inst|key_process:key_process_decrement|edge_detection:edge_detection_inst
+sys_clk => neg_edge~reg0.CLK
+sys_clk => pos_edge~reg0.CLK
+sys_clk => q2.CLK
+sys_clk => q1.CLK
+sys_rst_n => neg_edge~reg0.ACLR
+sys_rst_n => pos_edge~reg0.ACLR
+sys_rst_n => q2.ACLR
+sys_rst_n => q1.ACLR
+signal => q1.DATAIN
+pos_edge <= pos_edge~reg0.DB_MAX_OUTPUT_PORT_TYPE
+neg_edge <= neg_edge~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|logic_ctrl_v1:logic_ctrl_v1_inst|seg_ctrl_sec:seg_ctrl_sec_inst
+sys_clk => sec[0]~reg0.CLK
+sys_clk => sec[1]~reg0.CLK
+sys_clk => sec[2]~reg0.CLK
+sys_clk => sec[3]~reg0.CLK
+sys_clk => sec[4]~reg0.CLK
+sys_clk => sec[5]~reg0.CLK
+sys_clk => sec[6]~reg0.CLK
+sys_clk => sec[7]~reg0.CLK
+sys_clk => cnt[0].CLK
+sys_clk => cnt[1].CLK
+sys_clk => cnt[2].CLK
+sys_clk => cnt[3].CLK
+sys_clk => cnt[4].CLK
+sys_clk => cnt[5].CLK
+sys_clk => cnt[6].CLK
+sys_clk => cnt[7].CLK
+sys_clk => cnt[8].CLK
+sys_clk => cnt[9].CLK
+sys_clk => cnt[10].CLK
+sys_clk => cnt[11].CLK
+sys_clk => cnt[12].CLK
+sys_clk => cnt[13].CLK
+sys_clk => cnt[14].CLK
+sys_clk => cnt[15].CLK
+sys_clk => cnt[16].CLK
+sys_clk => cnt[17].CLK
+sys_clk => cnt[18].CLK
+sys_clk => cnt[19].CLK
+sys_clk => cnt[20].CLK
+sys_clk => cnt[21].CLK
+sys_clk => cnt[22].CLK
+sys_clk => cnt[23].CLK
+sys_clk => cnt[24].CLK
+sys_clk => cnt[25].CLK
+sys_clk => cnt[26].CLK
+sys_clk => cnt[27].CLK
+sys_clk => cnt[28].CLK
+sys_clk => cnt[29].CLK
+sys_clk => cnt[30].CLK
+sys_clk => cnt[31].CLK
+sys_clk => paused.CLK
+sys_rst_n => cnt[0].ACLR
+sys_rst_n => cnt[1].ACLR
+sys_rst_n => cnt[2].ACLR
+sys_rst_n => cnt[3].ACLR
+sys_rst_n => cnt[4].ACLR
+sys_rst_n => cnt[5].ACLR
+sys_rst_n => cnt[6].ACLR
+sys_rst_n => cnt[7].ACLR
+sys_rst_n => cnt[8].ACLR
+sys_rst_n => cnt[9].ACLR
+sys_rst_n => cnt[10].ACLR
+sys_rst_n => cnt[11].ACLR
+sys_rst_n => cnt[12].ACLR
+sys_rst_n => cnt[13].ACLR
+sys_rst_n => cnt[14].ACLR
+sys_rst_n => cnt[15].ACLR
+sys_rst_n => cnt[16].ACLR
+sys_rst_n => cnt[17].ACLR
+sys_rst_n => cnt[18].ACLR
+sys_rst_n => cnt[19].ACLR
+sys_rst_n => cnt[20].ACLR
+sys_rst_n => cnt[21].ACLR
+sys_rst_n => cnt[22].ACLR
+sys_rst_n => cnt[23].ACLR
+sys_rst_n => cnt[24].ACLR
+sys_rst_n => cnt[25].ACLR
+sys_rst_n => cnt[26].ACLR
+sys_rst_n => cnt[27].ACLR
+sys_rst_n => cnt[28].ACLR
+sys_rst_n => cnt[29].ACLR
+sys_rst_n => cnt[30].ACLR
+sys_rst_n => cnt[31].ACLR
+sys_rst_n => sec[0]~reg0.ACLR
+sys_rst_n => sec[1]~reg0.ACLR
+sys_rst_n => sec[2]~reg0.ACLR
+sys_rst_n => sec[3]~reg0.ACLR
+sys_rst_n => sec[4]~reg0.ACLR
+sys_rst_n => sec[5]~reg0.ACLR
+sys_rst_n => sec[6]~reg0.ACLR
+sys_rst_n => sec[7]~reg0.ACLR
+sys_rst_n => paused.ACLR
+key_pause_flag => always0.IN1
+key_pause_flag => always0.IN1
+key_increment_flag => sec.OUTPUTSELECT
+key_increment_flag => sec.OUTPUTSELECT
+key_increment_flag => sec.OUTPUTSELECT
+key_increment_flag => sec.OUTPUTSELECT
+key_increment_flag => sec.OUTPUTSELECT
+key_increment_flag => sec.OUTPUTSELECT
+key_increment_flag => sec.OUTPUTSELECT
+key_increment_flag => sec.OUTPUTSELECT
+key_decrement_flag => sec.OUTPUTSELECT
+key_decrement_flag => sec.OUTPUTSELECT
+key_decrement_flag => sec.OUTPUTSELECT
+key_decrement_flag => sec.OUTPUTSELECT
+key_decrement_flag => sec.OUTPUTSELECT
+key_decrement_flag => sec.OUTPUTSELECT
+key_decrement_flag => sec.OUTPUTSELECT
+key_decrement_flag => sec.OUTPUTSELECT
+sec[0] <= sec[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec[1] <= sec[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec[2] <= sec[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec[3] <= sec[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec[4] <= sec[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec[5] <= sec[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec[6] <= sec[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec[7] <= sec[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+min_flag <= min_flag.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|logic_ctrl_v1:logic_ctrl_v1_inst|seg_ctrl_min:seg_ctrl_min_inst
+sys_clk => min[0]~reg0.CLK
+sys_clk => min[1]~reg0.CLK
+sys_clk => min[2]~reg0.CLK
+sys_clk => min[3]~reg0.CLK
+sys_clk => min[4]~reg0.CLK
+sys_clk => min[5]~reg0.CLK
+sys_clk => min[6]~reg0.CLK
+sys_clk => min[7]~reg0.CLK
+sys_rst_n => min[0]~reg0.ACLR
+sys_rst_n => min[1]~reg0.ACLR
+sys_rst_n => min[2]~reg0.ACLR
+sys_rst_n => min[3]~reg0.ACLR
+sys_rst_n => min[4]~reg0.ACLR
+sys_rst_n => min[5]~reg0.ACLR
+sys_rst_n => min[6]~reg0.ACLR
+sys_rst_n => min[7]~reg0.ACLR
+min_flag => hour_flag.IN1
+min_flag => min[7]~reg0.ENA
+min_flag => min[6]~reg0.ENA
+min_flag => min[5]~reg0.ENA
+min_flag => min[4]~reg0.ENA
+min_flag => min[3]~reg0.ENA
+min_flag => min[2]~reg0.ENA
+min_flag => min[1]~reg0.ENA
+min_flag => min[0]~reg0.ENA
+min[0] <= min[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+min[1] <= min[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+min[2] <= min[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+min[3] <= min[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+min[4] <= min[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+min[5] <= min[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+min[6] <= min[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+min[7] <= min[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hour_flag <= hour_flag.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|logic_ctrl_v1:logic_ctrl_v1_inst|seg_ctrl_hour:seg_ctrl_hour_inst
+sys_clk => hour[0]~reg0.CLK
+sys_clk => hour[1]~reg0.CLK
+sys_clk => hour[2]~reg0.CLK
+sys_clk => hour[3]~reg0.CLK
+sys_clk => hour[4]~reg0.CLK
+sys_clk => hour[5]~reg0.CLK
+sys_clk => hour[6]~reg0.CLK
+sys_clk => hour[7]~reg0.CLK
+sys_rst_n => hour[0]~reg0.ACLR
+sys_rst_n => hour[1]~reg0.ACLR
+sys_rst_n => hour[2]~reg0.ACLR
+sys_rst_n => hour[3]~reg0.ACLR
+sys_rst_n => hour[4]~reg0.ACLR
+sys_rst_n => hour[5]~reg0.ACLR
+sys_rst_n => hour[6]~reg0.ACLR
+sys_rst_n => hour[7]~reg0.ACLR
+hour_flag => hour[0]~reg0.ENA
+hour_flag => hour[7]~reg0.ENA
+hour_flag => hour[6]~reg0.ENA
+hour_flag => hour[5]~reg0.ENA
+hour_flag => hour[4]~reg0.ENA
+hour_flag => hour[3]~reg0.ENA
+hour_flag => hour[2]~reg0.ENA
+hour_flag => hour[1]~reg0.ENA
+hour[0] <= hour[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hour[1] <= hour[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hour[2] <= hour[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hour[3] <= hour[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hour[4] <= hour[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hour[5] <= hour[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hour[6] <= hour[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hour[7] <= hour[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h
+bin[0] => bcd_data0[0].IN1
+bin[1] => bcd_data0[1].IN1
+bin[2] => bcd_data0[2].IN1
+bin[3] => bcd_data0[3].IN1
+bin[4] => bcd_data0[4].IN1
+bin[5] => bcd_data0[5].IN1
+bin[6] => bcd_data0[6].IN1
+bin[7] => bcd_data0[7].IN1
+bcd[0] <= bcd_data0[0].DB_MAX_OUTPUT_PORT_TYPE
+bcd[1] <= bcd_data0[1].DB_MAX_OUTPUT_PORT_TYPE
+bcd[2] <= bcd_data0[2].DB_MAX_OUTPUT_PORT_TYPE
+bcd[3] <= bcd_data0[3].DB_MAX_OUTPUT_PORT_TYPE
+bcd[4] <= bcd_data0[4].DB_MAX_OUTPUT_PORT_TYPE
+bcd[5] <= bcd_data0[5].DB_MAX_OUTPUT_PORT_TYPE
+bcd[6] <= bcd_data0[6].DB_MAX_OUTPUT_PORT_TYPE
+bcd[7] <= bcd_data0[7].DB_MAX_OUTPUT_PORT_TYPE
+bcd[8] <= bcd_data0[8].DB_MAX_OUTPUT_PORT_TYPE
+bcd[9] <= bcd_data0[9].DB_MAX_OUTPUT_PORT_TYPE
+bcd[10] <= bcd_data0[10].DB_MAX_OUTPUT_PORT_TYPE
+bcd[11] <= bcd_data0[11].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst1
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst1|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst1|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst1|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst2
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst2|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst2|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst2|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst3
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst3|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst3|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst3|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst4
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst4|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst4|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst4|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst5
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst5|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst5|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst5|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst6
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst6|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst6|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst6|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst7
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst7|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst7|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst7|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst8
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst8|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst8|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_h|bcd_modify:bcd_modify_inst8|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m
+bin[0] => bcd_data0[0].IN1
+bin[1] => bcd_data0[1].IN1
+bin[2] => bcd_data0[2].IN1
+bin[3] => bcd_data0[3].IN1
+bin[4] => bcd_data0[4].IN1
+bin[5] => bcd_data0[5].IN1
+bin[6] => bcd_data0[6].IN1
+bin[7] => bcd_data0[7].IN1
+bcd[0] <= bcd_data0[0].DB_MAX_OUTPUT_PORT_TYPE
+bcd[1] <= bcd_data0[1].DB_MAX_OUTPUT_PORT_TYPE
+bcd[2] <= bcd_data0[2].DB_MAX_OUTPUT_PORT_TYPE
+bcd[3] <= bcd_data0[3].DB_MAX_OUTPUT_PORT_TYPE
+bcd[4] <= bcd_data0[4].DB_MAX_OUTPUT_PORT_TYPE
+bcd[5] <= bcd_data0[5].DB_MAX_OUTPUT_PORT_TYPE
+bcd[6] <= bcd_data0[6].DB_MAX_OUTPUT_PORT_TYPE
+bcd[7] <= bcd_data0[7].DB_MAX_OUTPUT_PORT_TYPE
+bcd[8] <= bcd_data0[8].DB_MAX_OUTPUT_PORT_TYPE
+bcd[9] <= bcd_data0[9].DB_MAX_OUTPUT_PORT_TYPE
+bcd[10] <= bcd_data0[10].DB_MAX_OUTPUT_PORT_TYPE
+bcd[11] <= bcd_data0[11].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst1
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst1|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst1|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst1|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst2
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst2|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst2|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst2|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst3
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst3|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst3|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst3|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst4
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst4|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst4|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst4|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst5
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst5|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst5|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst5|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst6
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst6|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst6|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst6|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst7
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst7|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst7|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst7|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst8
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst8|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst8|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_m|bcd_modify:bcd_modify_inst8|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l
+bin[0] => bcd_data0[0].IN1
+bin[1] => bcd_data0[1].IN1
+bin[2] => bcd_data0[2].IN1
+bin[3] => bcd_data0[3].IN1
+bin[4] => bcd_data0[4].IN1
+bin[5] => bcd_data0[5].IN1
+bin[6] => bcd_data0[6].IN1
+bin[7] => bcd_data0[7].IN1
+bcd[0] <= bcd_data0[0].DB_MAX_OUTPUT_PORT_TYPE
+bcd[1] <= bcd_data0[1].DB_MAX_OUTPUT_PORT_TYPE
+bcd[2] <= bcd_data0[2].DB_MAX_OUTPUT_PORT_TYPE
+bcd[3] <= bcd_data0[3].DB_MAX_OUTPUT_PORT_TYPE
+bcd[4] <= bcd_data0[4].DB_MAX_OUTPUT_PORT_TYPE
+bcd[5] <= bcd_data0[5].DB_MAX_OUTPUT_PORT_TYPE
+bcd[6] <= bcd_data0[6].DB_MAX_OUTPUT_PORT_TYPE
+bcd[7] <= bcd_data0[7].DB_MAX_OUTPUT_PORT_TYPE
+bcd[8] <= bcd_data0[8].DB_MAX_OUTPUT_PORT_TYPE
+bcd[9] <= bcd_data0[9].DB_MAX_OUTPUT_PORT_TYPE
+bcd[10] <= bcd_data0[10].DB_MAX_OUTPUT_PORT_TYPE
+bcd[11] <= bcd_data0[11].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst1
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst1|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst1|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst1|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst2
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst2|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst2|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst2|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst3
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst3|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst3|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst3|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst4
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst4|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst4|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst4|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst5
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst5|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst5|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst5|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst6
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst6|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst6|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst6|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst7
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst7|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst7|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst7|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst8
+data_in[0] => data_out[1].DATAIN
+data_in[1] => data_out[2].DATAIN
+data_in[2] => data_out[3].DATAIN
+data_in[3] => data_out[4].DATAIN
+data_in[4] => data_out[5].DATAIN
+data_in[5] => data_out[6].DATAIN
+data_in[6] => data_out[7].DATAIN
+data_in[7] => data_out[8].DATAIN
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_out[0] <= <GND>
+data_out[1] <= data_in[0].DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_in[1].DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_in[2].DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_in[3].DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_in[4].DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_in[5].DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_in[6].DB_MAX_OUTPUT_PORT_TYPE
+data_out[8] <= data_in[7].DB_MAX_OUTPUT_PORT_TYPE
+data_out[9] <= cmp:cmp_low.cmp_out
+data_out[10] <= cmp:cmp_low.cmp_out
+data_out[11] <= cmp:cmp_low.cmp_out
+data_out[12] <= cmp:cmp_low.cmp_out
+data_out[13] <= cmp:cmp_middle.cmp_out
+data_out[14] <= cmp:cmp_middle.cmp_out
+data_out[15] <= cmp:cmp_middle.cmp_out
+data_out[16] <= cmp:cmp_middle.cmp_out
+data_out[17] <= cmp:cmp_high.cmp_out
+data_out[18] <= cmp:cmp_high.cmp_out
+data_out[19] <= cmp:cmp_high.cmp_out
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst8|cmp:cmp_high
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst8|cmp:cmp_middle
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|bin2bcd:bin2bcd_inst_l|bcd_modify:bcd_modify_inst8|cmp:cmp_low
+cmp_in[0] => LessThan0.IN8
+cmp_in[0] => Add0.IN8
+cmp_in[0] => cmp_out.DATAA
+cmp_in[1] => LessThan0.IN7
+cmp_in[1] => Add0.IN7
+cmp_in[1] => cmp_out.DATAA
+cmp_in[2] => LessThan0.IN6
+cmp_in[2] => Add0.IN6
+cmp_in[2] => cmp_out.DATAA
+cmp_in[3] => LessThan0.IN5
+cmp_in[3] => Add0.IN5
+cmp_in[3] => cmp_out.DATAA
+cmp_out[0] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[1] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[2] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+cmp_out[3] <= cmp_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|seven_tube:seven_tube_inst
+sys_clk => sys_clk.IN3
+sys_rst_n => sys_rst_n.IN5
+data_in[0] => data_in[0].IN1
+data_in[1] => data_in[1].IN1
+data_in[2] => data_in[2].IN1
+data_in[3] => data_in[3].IN1
+data_in[4] => data_in[4].IN1
+data_in[5] => data_in[5].IN1
+data_in[6] => data_in[6].IN1
+data_in[7] => data_in[7].IN1
+data_in[8] => data_in[8].IN1
+data_in[9] => data_in[9].IN1
+data_in[10] => data_in[10].IN1
+data_in[11] => data_in[11].IN1
+data_in[12] => data_in[12].IN1
+data_in[13] => data_in[13].IN1
+data_in[14] => data_in[14].IN1
+data_in[15] => data_in[15].IN1
+data_in[16] => data_in[16].IN1
+data_in[17] => data_in[17].IN1
+data_in[18] => data_in[18].IN1
+data_in[19] => data_in[19].IN1
+data_in[20] => data_in[20].IN1
+data_in[21] => data_in[21].IN1
+data_in[22] => data_in[22].IN1
+data_in[23] => data_in[23].IN1
+key_switch => key_switch.IN1
+sel[0] <= seg_flash:seg_flash_inst.sel_out
+sel[1] <= seg_flash:seg_flash_inst.sel_out
+sel[2] <= seg_flash:seg_flash_inst.sel_out
+seg[0] <= seg_flash:seg_flash_inst.seg_out
+seg[1] <= seg_flash:seg_flash_inst.seg_out
+seg[2] <= seg_flash:seg_flash_inst.seg_out
+seg[3] <= seg_flash:seg_flash_inst.seg_out
+seg[4] <= seg_flash:seg_flash_inst.seg_out
+seg[5] <= seg_flash:seg_flash_inst.seg_out
+seg[6] <= seg_flash:seg_flash_inst.seg_out
+seg[7] <= seg_flash:seg_flash_inst.seg_out
+
+
+|digital_clock_v1|seven_tube:seven_tube_inst|clk_div_1khz:clk_div_1khz_inst
+sys_clk => clk_out~reg0.CLK
+sys_clk => counter[0].CLK
+sys_clk => counter[1].CLK
+sys_clk => counter[2].CLK
+sys_clk => counter[3].CLK
+sys_clk => counter[4].CLK
+sys_clk => counter[5].CLK
+sys_clk => counter[6].CLK
+sys_clk => counter[7].CLK
+sys_clk => counter[8].CLK
+sys_clk => counter[9].CLK
+sys_clk => counter[10].CLK
+sys_clk => counter[11].CLK
+sys_clk => counter[12].CLK
+sys_clk => counter[13].CLK
+sys_clk => counter[14].CLK
+sys_clk => counter[15].CLK
+sys_clk => counter[16].CLK
+sys_clk => counter[17].CLK
+sys_clk => counter[18].CLK
+sys_clk => counter[19].CLK
+sys_clk => counter[20].CLK
+sys_clk => counter[21].CLK
+sys_clk => counter[22].CLK
+sys_clk => counter[23].CLK
+sys_clk => counter[24].CLK
+sys_rst_n => clk_out~reg0.ACLR
+sys_rst_n => counter[0].ACLR
+sys_rst_n => counter[1].ACLR
+sys_rst_n => counter[2].ACLR
+sys_rst_n => counter[3].ACLR
+sys_rst_n => counter[4].ACLR
+sys_rst_n => counter[5].ACLR
+sys_rst_n => counter[6].ACLR
+sys_rst_n => counter[7].ACLR
+sys_rst_n => counter[8].ACLR
+sys_rst_n => counter[9].ACLR
+sys_rst_n => counter[10].ACLR
+sys_rst_n => counter[11].ACLR
+sys_rst_n => counter[12].ACLR
+sys_rst_n => counter[13].ACLR
+sys_rst_n => counter[14].ACLR
+sys_rst_n => counter[15].ACLR
+sys_rst_n => counter[16].ACLR
+sys_rst_n => counter[17].ACLR
+sys_rst_n => counter[18].ACLR
+sys_rst_n => counter[19].ACLR
+sys_rst_n => counter[20].ACLR
+sys_rst_n => counter[21].ACLR
+sys_rst_n => counter[22].ACLR
+sys_rst_n => counter[23].ACLR
+sys_rst_n => counter[24].ACLR
+clk_out <= clk_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|seven_tube:seven_tube_inst|clk_div_1hz:clk_div_1hz_inst
+sys_clk => ~NO_FANOUT~
+sys_rst_n => ~NO_FANOUT~
+clk_out <= <GND>
+
+
+|digital_clock_v1|seven_tube:seven_tube_inst|seg_ctrl:seg_ctrl_inst
+clk_1khz => sel[0]~reg0.CLK
+clk_1khz => sel[1]~reg0.CLK
+clk_1khz => sel[2]~reg0.CLK
+sys_rst_n => sel[0]~reg0.ACLR
+sys_rst_n => sel[1]~reg0.ACLR
+sys_rst_n => sel[2]~reg0.ACLR
+sys_rst_n => data_tmp[3].OUTPUTSELECT
+sys_rst_n => data_tmp[2].OUTPUTSELECT
+sys_rst_n => data_tmp[1].OUTPUTSELECT
+sys_rst_n => data_tmp[0].OUTPUTSELECT
+sys_rst_n => seg.OUTPUTSELECT
+sys_rst_n => seg.OUTPUTSELECT
+sys_rst_n => seg.OUTPUTSELECT
+sys_rst_n => seg.OUTPUTSELECT
+sys_rst_n => seg.OUTPUTSELECT
+sys_rst_n => seg.OUTPUTSELECT
+sys_rst_n => seg.OUTPUTSELECT
+data_in[0] => Mux3.IN7
+data_in[1] => Mux2.IN7
+data_in[2] => Mux1.IN7
+data_in[3] => Mux0.IN7
+data_in[4] => Mux3.IN6
+data_in[5] => Mux2.IN6
+data_in[6] => Mux1.IN6
+data_in[7] => Mux0.IN6
+data_in[8] => Mux3.IN5
+data_in[9] => Mux2.IN5
+data_in[10] => Mux1.IN5
+data_in[11] => Mux0.IN5
+data_in[12] => Mux3.IN4
+data_in[13] => Mux2.IN4
+data_in[14] => Mux1.IN4
+data_in[15] => Mux0.IN4
+data_in[16] => Mux3.IN3
+data_in[17] => Mux2.IN3
+data_in[18] => Mux1.IN3
+data_in[19] => Mux0.IN3
+data_in[20] => Mux3.IN2
+data_in[21] => Mux2.IN2
+data_in[22] => Mux1.IN2
+data_in[23] => Mux0.IN2
+sel[0] <= sel[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sel[1] <= sel[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sel[2] <= sel[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+seg[0] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[3] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[4] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[5] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[6] <= seg.DB_MAX_OUTPUT_PORT_TYPE
+seg[7] <= <VCC>
+
+
+|digital_clock_v1|seven_tube:seven_tube_inst|seg_flash:seg_flash_inst
+clk_1hz => toggle.CLK
+clk_1hz => current_state~1.DATAIN
+sys_rst_n => toggle.ACLR
+sys_rst_n => current_state~3.DATAIN
+key_switch_flag => Selector1.IN3
+key_switch_flag => Selector2.IN3
+key_switch_flag => Selector3.IN3
+key_switch_flag => Selector0.IN3
+key_switch_flag => Selector0.IN1
+key_switch_flag => Selector1.IN1
+key_switch_flag => Selector2.IN1
+key_switch_flag => Selector3.IN1
+sel_in[0] => sel_out[0].DATAIN
+sel_in[1] => sel_out[1].DATAIN
+sel_in[2] => sel_out[2].DATAIN
+seg_in[0] => seg_out.DATAB
+seg_in[0] => seg_out.DATAB
+seg_in[1] => seg_out.DATAB
+seg_in[1] => seg_out.DATAB
+seg_in[2] => seg_out.DATAB
+seg_in[2] => seg_out.DATAB
+seg_in[3] => seg_out.DATAB
+seg_in[3] => seg_out.DATAB
+seg_in[4] => seg_out.DATAB
+seg_in[4] => seg_out.DATAB
+seg_in[5] => seg_out.DATAB
+seg_in[5] => seg_out.DATAB
+seg_in[6] => seg_out.DATAB
+seg_in[6] => seg_out.DATAB
+seg_in[7] => seg_out.DATAB
+seg_in[7] => seg_out.DATAB
+sel_out[0] <= sel_in[0].DB_MAX_OUTPUT_PORT_TYPE
+sel_out[1] <= sel_in[1].DB_MAX_OUTPUT_PORT_TYPE
+sel_out[2] <= sel_in[2].DB_MAX_OUTPUT_PORT_TYPE
+seg_out[0] <= seg_out.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[1] <= seg_out.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[2] <= seg_out.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[3] <= seg_out.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[4] <= seg_out.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[5] <= seg_out.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[6] <= seg_out.DB_MAX_OUTPUT_PORT_TYPE
+seg_out[7] <= seg_out.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|seven_tube:seven_tube_inst|key_process:key_process_switch
+sys_clk => sys_clk.IN2
+sys_rst_n => sys_rst_n.IN2
+key_in => key_in.IN1
+key_out_flag <= edge_detection:edge_detection_inst.neg_edge
+
+
+|digital_clock_v1|seven_tube:seven_tube_inst|key_process:key_process_switch|key_filter:key_filter_inst
+sys_clk => key_out~reg0.CLK
+sys_clk => state.CLK
+sys_clk => cnt[0].CLK
+sys_clk => cnt[1].CLK
+sys_clk => cnt[2].CLK
+sys_clk => cnt[3].CLK
+sys_clk => cnt[4].CLK
+sys_clk => cnt[5].CLK
+sys_clk => cnt[6].CLK
+sys_clk => cnt[7].CLK
+sys_clk => cnt[8].CLK
+sys_clk => cnt[9].CLK
+sys_clk => cnt[10].CLK
+sys_clk => cnt[11].CLK
+sys_clk => cnt[12].CLK
+sys_clk => cnt[13].CLK
+sys_clk => cnt[14].CLK
+sys_clk => cnt[15].CLK
+sys_clk => cnt[16].CLK
+sys_clk => cnt[17].CLK
+sys_clk => cnt[18].CLK
+sys_clk => cnt[19].CLK
+sys_clk => cnt[20].CLK
+sys_clk => cnt[21].CLK
+sys_clk => cnt[22].CLK
+sys_clk => cnt[23].CLK
+sys_clk => cnt[24].CLK
+sys_clk => cnt[25].CLK
+sys_clk => cnt[26].CLK
+sys_clk => cnt[27].CLK
+sys_clk => cnt[28].CLK
+sys_clk => cnt[29].CLK
+sys_clk => cnt[30].CLK
+sys_clk => cnt[31].CLK
+sys_rst_n => key_out~reg0.PRESET
+sys_rst_n => state.ACLR
+sys_rst_n => cnt[0].ACLR
+sys_rst_n => cnt[1].ACLR
+sys_rst_n => cnt[2].ACLR
+sys_rst_n => cnt[3].ACLR
+sys_rst_n => cnt[4].ACLR
+sys_rst_n => cnt[5].ACLR
+sys_rst_n => cnt[6].ACLR
+sys_rst_n => cnt[7].ACLR
+sys_rst_n => cnt[8].ACLR
+sys_rst_n => cnt[9].ACLR
+sys_rst_n => cnt[10].ACLR
+sys_rst_n => cnt[11].ACLR
+sys_rst_n => cnt[12].ACLR
+sys_rst_n => cnt[13].ACLR
+sys_rst_n => cnt[14].ACLR
+sys_rst_n => cnt[15].ACLR
+sys_rst_n => cnt[16].ACLR
+sys_rst_n => cnt[17].ACLR
+sys_rst_n => cnt[18].ACLR
+sys_rst_n => cnt[19].ACLR
+sys_rst_n => cnt[20].ACLR
+sys_rst_n => cnt[21].ACLR
+sys_rst_n => cnt[22].ACLR
+sys_rst_n => cnt[23].ACLR
+sys_rst_n => cnt[24].ACLR
+sys_rst_n => cnt[25].ACLR
+sys_rst_n => cnt[26].ACLR
+sys_rst_n => cnt[27].ACLR
+sys_rst_n => cnt[28].ACLR
+sys_rst_n => cnt[29].ACLR
+sys_rst_n => cnt[30].ACLR
+sys_rst_n => cnt[31].ACLR
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => key_out.OUTPUTSELECT
+key_in => state.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => cnt.OUTPUTSELECT
+key_in => key_out.OUTPUTSELECT
+key_in => state.OUTPUTSELECT
+key_out <= key_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|digital_clock_v1|seven_tube:seven_tube_inst|key_process:key_process_switch|edge_detection:edge_detection_inst
+sys_clk => neg_edge~reg0.CLK
+sys_clk => pos_edge~reg0.CLK
+sys_clk => q2.CLK
+sys_clk => q1.CLK
+sys_rst_n => neg_edge~reg0.ACLR
+sys_rst_n => pos_edge~reg0.ACLR
+sys_rst_n => q2.ACLR
+sys_rst_n => q1.ACLR
+signal => q1.DATAIN
+pos_edge <= pos_edge~reg0.DB_MAX_OUTPUT_PORT_TYPE
+neg_edge <= neg_edge~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,83 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/git-repository/fpga_training/digital_clock/prj/simulation/questa
+vdigital_clock_v1
+Z1 !s110 1723827723
+!i10b 1
+!s100 j7?l4nLeiN9I[Wd[:1X5<2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I[DCK_:K2bOK^kSTD5?^Sc2
+R0
+Z3 w1723827344
+Z4 8digital_clock.vo
+Z5 Fdigital_clock.vo
+!i122 0
+L0 32 5666
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z8 !s108 1723827723.000000
+Z9 !s107 digital_clock.vo|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|digital_clock.vo|
+!i113 0
+Z11 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z12 !s92 -vlog01compat -work work +incdir+. -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z13 tCvgOpt 0
+vdigital_clock_v1_tb
+R1
+!i10b 1
+!s100 LOk@?>Bd4^lYj8Fm:DYS^0
+R2
+Ij`Pk[Z1Z_N1ebdlnT]SjB1
+R0
+w1723781426
+8D:/git-repository/fpga_training/digital_clock/prj/../sim/digital_clock_v1_tb.v
+FD:/git-repository/fpga_training/digital_clock/prj/../sim/digital_clock_v1_tb.v
+!i122 1
+L0 3 29
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/git-repository/fpga_training/digital_clock/prj/../sim/digital_clock_v1_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/digital_clock/prj/../sim|D:/git-repository/fpga_training/digital_clock/prj/../sim/digital_clock_v1_tb.v|
+!i113 0
+R11
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R13
+vhard_block
+R1
+!i10b 1
+!s100 ;dmb2]`4^ZZ7UJDg]ANW80
+R2
+I?]BQ=nf214f@nO]`]eAKT2
+R0
+R3
+R4
+R5
+!i122 0
+L0 5699 34
+R6
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 0
+R11
+R12
+R13

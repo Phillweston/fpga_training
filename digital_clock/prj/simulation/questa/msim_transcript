@@ -1,0 +1,1608 @@
+# Reading pref.tcl
+# //  ModelSim SE-64 2020.4 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do digital_clock_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap work rtl_work 
+# Copying C:/modeltech64_2020.4/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl {D:/git-repository/fpga_training/digital_clock/rtl/matrix_keyboard.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:13:57 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/rtl" D:/git-repository/fpga_training/digital_clock/rtl/matrix_keyboard.v 
+# -- Compiling module matrix_keyboard
+# 
+# Top level modules:
+# 	matrix_keyboard
+# End time: 13:13:57 on Aug 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl {D:/git-repository/fpga_training/digital_clock/rtl/seg_flash.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:13:57 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/rtl" D:/git-repository/fpga_training/digital_clock/rtl/seg_flash.v 
+# -- Compiling module seg_flash
+# 
+# Top level modules:
+# 	seg_flash
+# End time: 13:13:57 on Aug 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl {D:/git-repository/fpga_training/digital_clock/rtl/clk_div_1hz.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:13:57 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/rtl" D:/git-repository/fpga_training/digital_clock/rtl/clk_div_1hz.v 
+# -- Compiling module clk_div_1hz
+# 
+# Top level modules:
+# 	clk_div_1hz
+# End time: 13:13:57 on Aug 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl {D:/git-repository/fpga_training/digital_clock/rtl/clk_div_1khz.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:13:57 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/rtl" D:/git-repository/fpga_training/digital_clock/rtl/clk_div_1khz.v 
+# -- Compiling module clk_div_1khz
+# 
+# Top level modules:
+# 	clk_div_1khz
+# End time: 13:13:58 on Aug 18,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl {D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:13:58 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/rtl" D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v 
+# -- Compiling module edge_detection
+# 
+# Top level modules:
+# 	edge_detection
+# End time: 13:13:58 on Aug 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl {D:/git-repository/fpga_training/digital_clock/rtl/key_filter.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:13:58 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/rtl" D:/git-repository/fpga_training/digital_clock/rtl/key_filter.v 
+# -- Compiling module key_filter
+# 
+# Top level modules:
+# 	key_filter
+# End time: 13:13:58 on Aug 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl {D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_sec.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:13:58 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/rtl" D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_sec.v 
+# -- Compiling module seg_ctrl_sec
+# 
+# Top level modules:
+# 	seg_ctrl_sec
+# End time: 13:13:58 on Aug 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl {D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_min.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:13:58 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/rtl" D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_min.v 
+# -- Compiling module seg_ctrl_min
+# 
+# Top level modules:
+# 	seg_ctrl_min
+# End time: 13:13:58 on Aug 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl {D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_hour.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:13:58 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/rtl" D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_hour.v 
+# -- Compiling module seg_ctrl_hour
+# 
+# Top level modules:
+# 	seg_ctrl_hour
+# End time: 13:13:58 on Aug 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl {D:/git-repository/fpga_training/digital_clock/rtl/logic_ctrl_v1.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:13:58 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/rtl" D:/git-repository/fpga_training/digital_clock/rtl/logic_ctrl_v1.v 
+# -- Compiling module logic_ctrl_v1
+# 
+# Top level modules:
+# 	logic_ctrl_v1
+# End time: 13:13:59 on Aug 18,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl {D:/git-repository/fpga_training/digital_clock/rtl/digital_clock_v1.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:13:59 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/rtl" D:/git-repository/fpga_training/digital_clock/rtl/digital_clock_v1.v 
+# -- Compiling module digital_clock_v1
+# 
+# Top level modules:
+# 	digital_clock_v1
+# End time: 13:13:59 on Aug 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl {D:/git-repository/fpga_training/digital_clock/rtl/seven_tube.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:13:59 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/rtl" D:/git-repository/fpga_training/digital_clock/rtl/seven_tube.v 
+# -- Compiling module seven_tube
+# 
+# Top level modules:
+# 	seven_tube
+# End time: 13:13:59 on Aug 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl {D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:13:59 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/rtl" D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl.v 
+# -- Compiling module seg_ctrl
+# 
+# Top level modules:
+# 	seg_ctrl
+# End time: 13:13:59 on Aug 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl {D:/git-repository/fpga_training/digital_clock/rtl/cmp.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:13:59 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/rtl" D:/git-repository/fpga_training/digital_clock/rtl/cmp.v 
+# -- Compiling module cmp
+# 
+# Top level modules:
+# 	cmp
+# End time: 13:13:59 on Aug 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl {D:/git-repository/fpga_training/digital_clock/rtl/bin2bcd.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:13:59 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/rtl" D:/git-repository/fpga_training/digital_clock/rtl/bin2bcd.v 
+# -- Compiling module bin2bcd
+# 
+# Top level modules:
+# 	bin2bcd
+# End time: 13:13:59 on Aug 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl {D:/git-repository/fpga_training/digital_clock/rtl/bcd_modify.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:13:59 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/rtl" D:/git-repository/fpga_training/digital_clock/rtl/bcd_modify.v 
+# -- Compiling module bcd_modify
+# 
+# Top level modules:
+# 	bcd_modify
+# End time: 13:14:00 on Aug 18,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl {D:/git-repository/fpga_training/digital_clock/rtl/key_process.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:14:00 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/rtl" D:/git-repository/fpga_training/digital_clock/rtl/key_process.v 
+# -- Compiling module key_process
+# 
+# Top level modules:
+# 	key_process
+# End time: 13:14:00 on Aug 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/prj/../sim {D:/git-repository/fpga_training/digital_clock/prj/../sim/digital_clock_v1_tb.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:14:00 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/prj/../sim" D:/git-repository/fpga_training/digital_clock/prj/../sim/digital_clock_v1_tb.v 
+# -- Compiling module digital_clock_v1_tb
+# 
+# Top level modules:
+# 	digital_clock_v1_tb
+# End time: 13:14:00 on Aug 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  digital_clock_v1_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" digital_clock_v1_tb 
+# Start time: 13:14:00 on Aug 18,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/prj/../sim/digital_clock_v1_tb.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/prj/../sim/digital_clock_v1_tb.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/prj/../sim/digital_clock_v1_tb.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/prj/../sim/digital_clock_v1_tb.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/prj/../sim/digital_clock_v1_tb.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/prj/../sim/digital_clock_v1_tb.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/digital_clock_v1.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/digital_clock_v1.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/digital_clock_v1.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/digital_clock_v1.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/digital_clock_v1.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/digital_clock_v1.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/matrix_keyboard.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/matrix_keyboard.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/matrix_keyboard.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/matrix_keyboard.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/matrix_keyboard.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/matrix_keyboard.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/logic_ctrl_v1.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/logic_ctrl_v1.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/logic_ctrl_v1.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/logic_ctrl_v1.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/logic_ctrl_v1.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/logic_ctrl_v1.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/key_process.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/key_process.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/key_process.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/key_process.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/key_process.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/key_process.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/key_filter.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/key_filter.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/key_filter.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/key_filter.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/key_filter.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/key_filter.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_sec.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_sec.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_sec.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_sec.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_sec.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_sec.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_min.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_min.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_min.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_min.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_min.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_min.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_hour.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_hour.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_hour.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_hour.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_hour.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_hour.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/bin2bcd.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/bin2bcd.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/bin2bcd.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/bin2bcd.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/bin2bcd.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/bin2bcd.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/bcd_modify.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/bcd_modify.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/bcd_modify.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/bcd_modify.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/bcd_modify.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/bcd_modify.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/cmp.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seven_tube.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seven_tube.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seven_tube.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seven_tube.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seven_tube.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seven_tube.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/clk_div_1khz.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/clk_div_1khz.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/clk_div_1khz.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/clk_div_1khz.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/clk_div_1khz.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/clk_div_1khz.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/clk_div_1hz.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/clk_div_1hz.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/clk_div_1hz.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/clk_div_1hz.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/clk_div_1hz.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/clk_div_1hz.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_flash.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_flash.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_flash.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_flash.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_flash.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/digital_clock/rtl/seg_flash.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=558, Warnings=186.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./digital_clock_run_msim_rtl_verilog.do PAUSED at line 28
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/digital_clock/sim/digital_clock_v1_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:14:06 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/digital_clock/sim/digital_clock_v1_tb.v 
+# -- Compiling module digital_clock_v1_tb
+# 
+# Top level modules:
+# 	digital_clock_v1_tb
+# End time: 13:14:06 on Aug 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/digital_clock/rtl/matrix_keyboard.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:14:09 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/digital_clock/rtl/matrix_keyboard.v 
+# -- Compiling module matrix_keyboard
+# 
+# Top level modules:
+# 	matrix_keyboard
+# End time: 13:14:09 on Aug 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.digital_clock_v1_tb
+# vsim -voptargs="+acc" work.digital_clock_v1_tb 
+# Start time: 13:14:00 on Aug 18,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error (suppressible): D:/git-repository/fpga_training/digital_clock/sim/digital_clock_v1_tb.v(20): (vopt-2912) Port 'key_code' not found in module 'digital_clock_v1' (5th connection).
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=559, Warnings=186.
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./digital_clock_run_msim_rtl_verilog.do PAUSED at line 28
+# A time value could not be extracted from the current line
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/digital_clock/sim/digital_clock_v1_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:24:37 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/digital_clock/sim/digital_clock_v1_tb.v 
+# -- Compiling module digital_clock_v1_tb
+# 
+# Top level modules:
+# 	digital_clock_v1_tb
+# End time: 13:24:37 on Aug 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/digital_clock/rtl/logic_ctrl_v1.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:24:40 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/digital_clock/rtl/logic_ctrl_v1.v 
+# -- Compiling module logic_ctrl_v1
+# 
+# Top level modules:
+# 	logic_ctrl_v1
+# End time: 13:24:40 on Aug 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/digital_clock/rtl/digital_clock_v1.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 13:24:43 on Aug 18,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/digital_clock/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/digital_clock/rtl/digital_clock_v1.v 
+# -- Compiling module digital_clock_v1
+# 
+# Top level modules:
+# 	digital_clock_v1
+# End time: 13:24:43 on Aug 18,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.digital_clock_v1_tb
+# vsim -voptargs="+acc" work.digital_clock_v1_tb 
+# Start time: 13:14:00 on Aug 18,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "seg_flash(fast)".
+# Loading work.digital_clock_v1_tb(fast)
+# Loading work.digital_clock_v1(fast)
+# Loading work.matrix_keyboard(fast)
+# Loading work.logic_ctrl_v1(fast)
+# Loading work.key_process(fast)
+# Loading work.key_filter(fast)
+# Loading work.edge_detection(fast)
+# Loading work.seg_ctrl_sec(fast)
+# Loading work.seg_ctrl_min(fast)
+# Loading work.seg_ctrl_hour(fast)
+# Loading work.bin2bcd(fast)
+# Loading work.bcd_modify(fast)
+# Loading work.cmp(fast)
+# Loading work.seven_tube(fast)
+# Loading work.clk_div_1khz(fast)
+# Loading work.clk_div_1hz(fast)
+# Loading work.seg_ctrl(fast)
+# Loading work.seg_flash(fast)
+# Loading work.key_process(fast__1)
+# Loading work.key_filter(fast__1)
+# End time: 10:07:22 on Aug 19,2024, Elapsed time: 20:53:22
+# Errors: 559, Warnings: 186
