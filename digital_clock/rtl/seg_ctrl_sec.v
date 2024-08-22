@@ -2,8 +2,8 @@ module seg_ctrl_sec (
     input sys_clk,
     input sys_rst_n,
     input key_pause_flag,
-    input key_increment_flag,
-    input key_decrement_flag,
+    input sec_add_flag,
+    input sec_sub_flag,
     output reg [7:0] sec,
     output min_flag
 );
@@ -41,21 +41,16 @@ module seg_ctrl_sec (
     always @(posedge sys_clk or negedge sys_rst_n) begin
         if (~sys_rst_n)
             sec <= 8'd0;
-        else if (key_increment_flag) begin
+        else if (flag_1s || sec_add_flag) begin
             if (sec < 8'd59)
                 sec <= sec + 1'd1;
             else
                 sec <= 8'd0;
-        end else if (key_decrement_flag) begin
+        end else if (sec_sub_flag) begin
             if (sec > 8'd0)
                 sec <= sec - 1'd1;
             else
                 sec <= 8'd59;
-        end else if (flag_1s) begin
-            if (sec < 8'd59)
-                sec <= sec + 1'd1;
-            else
-                sec <= 8'd0;
         end else
             sec <= sec;
     end

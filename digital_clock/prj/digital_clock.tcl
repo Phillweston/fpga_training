@@ -5,8 +5,14 @@ set_location_assignment PIN_E1    -to    sys_clk
 set_location_assignment PIN_L3    -to    sys_rst_n
 set_location_assignment PIN_L1    -to    key_pause
 set_location_assignment PIN_J6    -to    key_switch
-set_location_assignment PIN_N1    -to    key_increment
-
+set_location_assignment PIN_R14    -to    row_in[0]
+set_location_assignment PIN_R16    -to    row_in[1]
+set_location_assignment PIN_P16    -to    row_in[2]
+set_location_assignment PIN_N16    -to    row_in[3]
+set_location_assignment PIN_L15    -to    col_in[0]
+set_location_assignment PIN_N15    -to    col_in[1]
+set_location_assignment PIN_P15    -to    col_in[2]
+set_location_assignment PIN_T15    -to    col_in[3]
 
 # LED Tube 7
 set_location_assignment PIN_L6    -to   sel[2]

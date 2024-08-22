@@ -1,0 +1,365 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\86150\Desktop\fpga_0729\digital_clock_v1\q_prj\simulation\modelsim
+vbcd_modify
+I<L]33e:hP?07T8m=15ILJ1
+VO`zamQP>]nbI0WQ4XeQo90
+Z1 dC:\Users\86150\Desktop\fpga_0729\digital_clock_v1\q_prj\simulation\modelsim
+w1723606053
+8C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/bcd_modify.v
+FC:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/bcd_modify.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl -O0
+!i10b 1
+!s100 H0SNd4EzJ9jUe>FYN@7dK2
+!s85 0
+!s108 1724038889.150000
+!s107 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/bcd_modify.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl|C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/bcd_modify.v|
+!s101 -O0
+vbin2bcd
+Ii[cR`L<E[bYYEnbRz[O?k1
+VOFXkbJbd5c[?mNHV@Q7kN0
+R1
+w1723605723
+8C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/bin2bcd.v
+FC:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/bin2bcd.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 CTD8LL4_UQ6]hDO8k3A=V1
+!s85 0
+!s108 1724038888.955000
+!s107 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/bin2bcd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl|C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/bin2bcd.v|
+!s101 -O0
+vclk_logic_ctrl
+IQfmizEJoL^23MNLKDolkR1
+Vd>5DCE;@T0YI_1I3N?N^J3
+R1
+w1724037966
+8C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/clk_logic_ctrl.v
+FC:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/clk_logic_ctrl.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 OdDM9]:8iW4W[Z:_TYi?f2
+!s85 0
+!s108 1724038889.474000
+!s107 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/clk_logic_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl|C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/clk_logic_ctrl.v|
+!s101 -O0
+vcmp
+I`2TNE`FE@72CGEVD04MBV2
+V=zHESBTzT>Si:2R;@S`g[0
+R1
+w1723606821
+8C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/cmp.v
+FC:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/cmp.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 oRkDULLbOOhV`S>WzVeMF0
+!s85 0
+!s108 1724038888.829000
+!s107 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/cmp.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl|C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/cmp.v|
+!s101 -O0
+vdigital_clock
+Ie<`ZghDo=1lPSLk0QUGnC2
+V`^KhbhCA7M8_Nn0`z@[0h2
+R1
+w1724038337
+8C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/digital_clock.v
+FC:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/digital_clock.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 >bO4cCTOL3[PX5gO@EL<j0
+!s85 0
+!s108 1724038889.272000
+!s107 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/digital_clock.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl|C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/digital_clock.v|
+!s101 -O0
+vdigital_clock_v1_tb
+!i10b 1
+!s100 M;1K]el`gnzgI1:5a:Gde3
+I2]0G2`Ah]:I<GVlCaHcMG1
+VlJC]CL352>l0@=ZdIFUfU2
+R1
+w1724040706
+8C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v
+FC:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1724041430.471000
+!s107 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/q_prj/../sim|-O0|C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/q_prj/../sim -O0
+vdiv_clk
+IAca`A3S2lP^gzeo00Q9:f2
+V:=WbOz;jVXg>n=eDT5RVi2
+R1
+w1723172724
+8C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/div_clk.v
+FC:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/div_clk.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 16k]dg1:UKAj0CP^[;gDX3
+!s85 0
+!s108 1724038888.692000
+!s107 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/div_clk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl|C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/div_clk.v|
+!s101 -O0
+vedge_check
+Io9jGf@c:I8RaT60fB3V]41
+V`1<NYZ9PoYzEJTVhd<dT93
+R1
+w1723520718
+8C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/edge_check.v
+FC:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/edge_check.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 a]E^J`NHJfl3KdcY6>XP=3
+!s85 0
+!s108 1724038888.489000
+!s107 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/edge_check.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl|C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/edge_check.v|
+!s101 -O0
+vhour_ctrl
+IN6Ca7jgF@:=Q_ZUM5`@^a1
+V[PUWa;I9BCWFzQkPNASVV1
+R1
+w1724034307
+8C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/hour_ctrl.v
+FC:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/hour_ctrl.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 >dKo=E^fDHS8mYnOM^8J^3
+!s85 0
+!s108 1724038888.386000
+!s107 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/hour_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl|C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/hour_ctrl.v|
+!s101 -O0
+vhour_flash
+I0F1<HLZQ=mnhmVfI3?hV<3
+VmLhQTG9aaI6=mlF_ZhZG:1
+R1
+w1724037238
+8C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/hour_flash.v
+FC:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/hour_flash.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 P6BlQdNM<c=X7gG<Ahm]J2
+!s85 0
+!s108 1724038889.839000
+!s107 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/hour_flash.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl|C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/hour_flash.v|
+!s101 -O0
+vkey_filter
+ICgdD0noRC][bN<XMfQ3cb1
+V8;?YKNG0LZ9EUU[o?Y^LL3
+R1
+w1724038436
+8C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/key_filter.v
+FC:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/key_filter.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ChXfnBj8fOfKZkW?zibib3
+!s85 0
+!s108 1724038888.272000
+!s107 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/key_filter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl|C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/key_filter.v|
+!s101 -O0
+vkey_process
+I:]BcUXzVbl>lg`g@gC4NT1
+VcXLEdMlfITJ26<;zZQY<?3
+R1
+w1724038953
+8C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/key_process.v
+FC:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/key_process.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ;4am8Y0GSIa11IF[gKlMA3
+!s85 0
+!s108 1724038964.456000
+!s107 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/key_process.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl|-O0|C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/key_process.v|
+!s101 -O0
+vlogic_ctrl
+IT@7eHj9[eLd@alS;iV5fh3
+V=T3fUSTM@;kfmmmNO2;0d1
+R1
+w1724041411
+8C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/logic_ctrl.v
+FC:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/logic_ctrl.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 eP2>P8hcPNAeLV]ViG4_V3
+!s85 0
+!s108 1724041426.816000
+!s107 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/logic_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl|-O0|C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/logic_ctrl.v|
+!s101 -O0
+vmin_ctrl
+I0NoP<ZC@^Y@_1`24MCjlo3
+VO8JICWkM1SD[YI?mJXLgB3
+R1
+w1724034487
+8C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/min_ctrl.v
+FC:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/min_ctrl.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 cMYGPFEBncZBCG?JXz6f80
+!s85 0
+!s108 1724038887.916000
+!s107 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/min_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl|C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/min_ctrl.v|
+!s101 -O0
+vmin_flash
+ID]PRJ86e6UG:UEzYZbn?H1
+V^BZmmVC:n6ZA3zRkCh3PR1
+R1
+w1724037075
+8C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/min_flash.v
+FC:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/min_flash.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 42^Jmk?]A:0Wo:^<>hQ=W1
+!s85 0
+!s108 1724038889.719000
+!s107 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/min_flash.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl|C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/min_flash.v|
+!s101 -O0
+vsec_ctrl
+InAWjoaeEhja:5E3PeCinX0
+V`KAhIj=H2gA<W@Uahi4K32
+R1
+w1724031457
+8C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/sec_ctrl.v
+FC:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/sec_ctrl.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ng=D5fY2Omh0PbfJ5;nnN2
+!s85 0
+!s108 1724038887.785000
+!s107 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/sec_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl|C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/sec_ctrl.v|
+!s101 -O0
+vseg_ctrl
+I@K0bUIHgz5I1HC`gDi6<h2
+VnfP?P2O8LnU]O^_La^M?j1
+R1
+w1723517484
+8C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/seg_ctrl.v
+FC:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/seg_ctrl.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 76kZLnmm1z:ZMQAjG5LL83
+!s85 0
+!s108 1724038887.675000
+!s107 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/seg_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl|C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/seg_ctrl.v|
+!s101 -O0
+vseven_tube
+IEU:dZmVL0JNI4ZgP9[9QO0
+V<O8Plkgc2>:ZOa21a^b2K1
+R1
+w1724038261
+8C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/seven_tube.v
+FC:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/seven_tube.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 IU?4CD`oIC>2T>MI`?]6E0
+!s85 0
+!s108 1724038887.507000
+!s107 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/seven_tube.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl|C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/seven_tube.v|
+!s101 -O0

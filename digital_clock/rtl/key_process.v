@@ -6,6 +6,7 @@ module key_process (
 );
     wire key_in_out;
 
+    // Filter key signal to eliminate noise
     key_filter key_filter_inst (
         .sys_clk (sys_clk),
         .sys_rst_n (sys_rst_n),
@@ -13,6 +14,7 @@ module key_process (
         .key_out (key_in_out)
     );
 
+    // Detect negedge of key signal
     edge_detection edge_detection_inst (
         .sys_clk (sys_clk),
         .sys_rst_n (sys_rst_n),

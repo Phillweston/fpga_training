@@ -1,5 +1,5 @@
 
-State Machine - |digital_clock_v1|seven_tube:seven_tube_inst|seg_flash:seg_flash_inst|current_state
+State Machine - |digital_clock_v1|key_flash_state:key_flash_state_inst|current_state
 Name current_state.STATE_3 current_state.STATE_2 current_state.STATE_1 current_state.STATE_0 
 current_state.STATE_0 0 0 0 0 
 current_state.STATE_1 0 0 1 1 

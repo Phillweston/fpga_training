@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'sys_clk'
+Slack : -4.580
+TNS   : -480.225
+
+Type  : Slow 1200mV 85C Model Setup 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : -1.694
+TNS   : -25.309
+
+Type  : Slow 1200mV 85C Model Setup 'seven_tube:seven_tube_inst|div_clk:div_clk_dut|clk_out'
+Slack : -1.665
+TNS   : -7.117
+
+Type  : Slow 1200mV 85C Model Hold 'sys_clk'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'seven_tube:seven_tube_inst|div_clk:div_clk_dut|clk_out'
+Slack : 0.493
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sys_clk'
+Slack : -3.000
+TNS   : -202.258
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : -1.487
+TNS   : -29.740
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'seven_tube:seven_tube_inst|div_clk:div_clk_dut|clk_out'
+Slack : -1.487
+TNS   : -19.331
+
+Type  : Slow 1200mV 0C Model Setup 'sys_clk'
+Slack : -4.249
+TNS   : -442.100
+
+Type  : Slow 1200mV 0C Model Setup 'seven_tube:seven_tube_inst|div_clk:div_clk_dut|clk_out'
+Slack : -1.513
+TNS   : -5.925
+
+Type  : Slow 1200mV 0C Model Setup 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : -1.472
+TNS   : -21.967
+
+Type  : Slow 1200mV 0C Model Hold 'sys_clk'
+Slack : 0.400
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'seven_tube:seven_tube_inst|div_clk:div_clk_dut|clk_out'
+Slack : 0.457
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sys_clk'
+Slack : -3.000
+TNS   : -202.258
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : -1.487
+TNS   : -29.740
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'seven_tube:seven_tube_inst|div_clk:div_clk_dut|clk_out'
+Slack : -1.487
+TNS   : -19.331
+
+Type  : Fast 1200mV 0C Model Setup 'sys_clk'
+Slack : -1.416
+TNS   : -121.074
+
+Type  : Fast 1200mV 0C Model Setup 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : -0.167
+TNS   : -0.768
+
+Type  : Fast 1200mV 0C Model Setup 'seven_tube:seven_tube_inst|div_clk:div_clk_dut|clk_out'
+Slack : -0.134
+TNS   : -0.312
+
+Type  : Fast 1200mV 0C Model Hold 'sys_clk'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'seven_tube:seven_tube_inst|div_clk:div_clk_dut|clk_out'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sys_clk'
+Slack : -3.000
+TNS   : -146.214
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : -1.000
+TNS   : -20.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'seven_tube:seven_tube_inst|div_clk:div_clk_dut|clk_out'
+Slack : -1.000
+TNS   : -13.000
+
+------------------------------------------------------------

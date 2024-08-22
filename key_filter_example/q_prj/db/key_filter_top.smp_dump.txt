@@ -1,0 +1,16 @@
+
+State Machine - |top|seven_tube:seven_tube_dut|seg_ctrl:seg_ctrl_dut|current_state
+Name current_state.s5 current_state.s4 current_state.s3 current_state.s2 current_state.s1 current_state.s0 
+current_state.s0 0 0 0 0 0 0 
+current_state.s1 0 0 0 0 1 1 
+current_state.s2 0 0 0 1 0 1 
+current_state.s3 0 0 1 0 0 1 
+current_state.s4 0 1 0 0 0 1 
+current_state.s5 1 0 0 0 0 1 
+
+State Machine - |top|key_filter:key_filter_dut|current_state
+Name current_state.s3 current_state.s2 current_state.s1 current_state.s0 
+current_state.s0 0 0 0 0 
+current_state.s1 0 0 1 1 
+current_state.s2 0 1 0 1 
+current_state.s3 1 0 0 1 

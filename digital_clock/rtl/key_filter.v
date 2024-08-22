@@ -9,8 +9,8 @@ module key_filter (
     reg [31:0] cnt;
 
     parameter T10ms = 50_000_000 / 100;         // 10ms
-    parameter s0 = 1'b0;
-    parameter s1 = 1'b1;
+    localparam s0 = 1'b0;
+    localparam s1 = 1'b1;
 
     always @(posedge sys_clk or negedge sys_rst_n) begin : FSM_1S_CN_Mealy
         if (~sys_rst_n) begin

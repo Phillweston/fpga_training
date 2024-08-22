@@ -1,0 +1,257 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'sys_clk'
+Slack : -4.122
+TNS   : -578.194
+
+Type  : Slow 1200mV 85C Model Setup 'mux_ctrl:mux_ctrl_dut|cnt_time[0]'
+Slack : -3.978
+TNS   : -15.467
+
+Type  : Slow 1200mV 85C Model Setup 'seven_tube:seven_tube_dut|div_clk:div_clk_dut|clk_out'
+Slack : -0.464
+TNS   : -1.944
+
+Type  : Slow 1200mV 85C Model Setup 'flash_led_top:flash_led_dut|flash_led:flash_led_dut1|clk_out'
+Slack : 0.114
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'flash_led_top:flash_led_dut|flash_led:flash_led_dut2|clk_out'
+Slack : 0.114
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'flash_led_top:flash_led_dut|flash_led:flash_led_dut3|clk_out'
+Slack : 0.114
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'flash_led_top:flash_led_dut|flash_led:flash_led_dut4|clk_out'
+Slack : 0.114
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'sys_clk'
+Slack : -1.150
+TNS   : -2.347
+
+Type  : Slow 1200mV 85C Model Hold 'mux_ctrl:mux_ctrl_dut|cnt_time[0]'
+Slack : -0.993
+TNS   : -3.786
+
+Type  : Slow 1200mV 85C Model Hold 'seven_tube:seven_tube_dut|div_clk:div_clk_dut|clk_out'
+Slack : -0.697
+TNS   : -0.697
+
+Type  : Slow 1200mV 85C Model Hold 'flash_led_top:flash_led_dut|flash_led:flash_led_dut1|clk_out'
+Slack : 0.497
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'flash_led_top:flash_led_dut|flash_led:flash_led_dut2|clk_out'
+Slack : 0.497
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'flash_led_top:flash_led_dut|flash_led:flash_led_dut3|clk_out'
+Slack : 0.497
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'flash_led_top:flash_led_dut|flash_led:flash_led_dut4|clk_out'
+Slack : 0.497
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sys_clk'
+Slack : -3.000
+TNS   : -261.738
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'seven_tube:seven_tube_dut|div_clk:div_clk_dut|clk_out'
+Slack : -1.487
+TNS   : -19.331
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'flash_led_top:flash_led_dut|flash_led:flash_led_dut1|clk_out'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'flash_led_top:flash_led_dut|flash_led:flash_led_dut2|clk_out'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'flash_led_top:flash_led_dut|flash_led:flash_led_dut3|clk_out'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'flash_led_top:flash_led_dut|flash_led:flash_led_dut4|clk_out'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'mux_ctrl:mux_ctrl_dut|cnt_time[0]'
+Slack : 0.430
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'sys_clk'
+Slack : -3.766
+TNS   : -528.323
+
+Type  : Slow 1200mV 0C Model Setup 'mux_ctrl:mux_ctrl_dut|cnt_time[0]'
+Slack : -3.576
+TNS   : -13.735
+
+Type  : Slow 1200mV 0C Model Setup 'seven_tube:seven_tube_dut|div_clk:div_clk_dut|clk_out'
+Slack : -0.343
+TNS   : -1.007
+
+Type  : Slow 1200mV 0C Model Setup 'flash_led_top:flash_led_dut|flash_led:flash_led_dut1|clk_out'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'flash_led_top:flash_led_dut|flash_led:flash_led_dut2|clk_out'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'flash_led_top:flash_led_dut|flash_led:flash_led_dut3|clk_out'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'flash_led_top:flash_led_dut|flash_led:flash_led_dut4|clk_out'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'sys_clk'
+Slack : -1.022
+TNS   : -2.070
+
+Type  : Slow 1200mV 0C Model Hold 'mux_ctrl:mux_ctrl_dut|cnt_time[0]'
+Slack : -0.890
+TNS   : -3.363
+
+Type  : Slow 1200mV 0C Model Hold 'seven_tube:seven_tube_dut|div_clk:div_clk_dut|clk_out'
+Slack : -0.599
+TNS   : -0.599
+
+Type  : Slow 1200mV 0C Model Hold 'flash_led_top:flash_led_dut|flash_led:flash_led_dut1|clk_out'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'flash_led_top:flash_led_dut|flash_led:flash_led_dut2|clk_out'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'flash_led_top:flash_led_dut|flash_led:flash_led_dut3|clk_out'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'flash_led_top:flash_led_dut|flash_led:flash_led_dut4|clk_out'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sys_clk'
+Slack : -3.000
+TNS   : -261.738
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'seven_tube:seven_tube_dut|div_clk:div_clk_dut|clk_out'
+Slack : -1.487
+TNS   : -19.331
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'flash_led_top:flash_led_dut|flash_led:flash_led_dut1|clk_out'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'flash_led_top:flash_led_dut|flash_led:flash_led_dut2|clk_out'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'flash_led_top:flash_led_dut|flash_led:flash_led_dut3|clk_out'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'flash_led_top:flash_led_dut|flash_led:flash_led_dut4|clk_out'
+Slack : -1.487
+TNS   : -1.487
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'mux_ctrl:mux_ctrl_dut|cnt_time[0]'
+Slack : 0.384
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'mux_ctrl:mux_ctrl_dut|cnt_time[0]'
+Slack : -1.290
+TNS   : -5.006
+
+Type  : Fast 1200mV 0C Model Setup 'sys_clk'
+Slack : -1.226
+TNS   : -144.650
+
+Type  : Fast 1200mV 0C Model Setup 'seven_tube:seven_tube_dut|div_clk:div_clk_dut|clk_out'
+Slack : 0.389
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'flash_led_top:flash_led_dut|flash_led:flash_led_dut1|clk_out'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'flash_led_top:flash_led_dut|flash_led:flash_led_dut2|clk_out'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'flash_led_top:flash_led_dut|flash_led:flash_led_dut3|clk_out'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'flash_led_top:flash_led_dut|flash_led:flash_led_dut4|clk_out'
+Slack : 0.626
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'sys_clk'
+Slack : -0.664
+TNS   : -1.781
+
+Type  : Fast 1200mV 0C Model Hold 'mux_ctrl:mux_ctrl_dut|cnt_time[0]'
+Slack : -0.495
+TNS   : -1.920
+
+Type  : Fast 1200mV 0C Model Hold 'seven_tube:seven_tube_dut|div_clk:div_clk_dut|clk_out'
+Slack : -0.378
+TNS   : -0.378
+
+Type  : Fast 1200mV 0C Model Hold 'flash_led_top:flash_led_dut|flash_led:flash_led_dut1|clk_out'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'flash_led_top:flash_led_dut|flash_led:flash_led_dut2|clk_out'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'flash_led_top:flash_led_dut|flash_led:flash_led_dut3|clk_out'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'flash_led_top:flash_led_dut|flash_led:flash_led_dut4|clk_out'
+Slack : 0.208
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sys_clk'
+Slack : -3.000
+TNS   : -188.778
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'seven_tube:seven_tube_dut|div_clk:div_clk_dut|clk_out'
+Slack : -1.000
+TNS   : -13.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'flash_led_top:flash_led_dut|flash_led:flash_led_dut1|clk_out'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'flash_led_top:flash_led_dut|flash_led:flash_led_dut2|clk_out'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'flash_led_top:flash_led_dut|flash_led:flash_led_dut3|clk_out'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'flash_led_top:flash_led_dut|flash_led:flash_led_dut4|clk_out'
+Slack : -1.000
+TNS   : -1.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'mux_ctrl:mux_ctrl_dut|cnt_time[0]'
+Slack : 0.345
+TNS   : 0.000
+
+------------------------------------------------------------

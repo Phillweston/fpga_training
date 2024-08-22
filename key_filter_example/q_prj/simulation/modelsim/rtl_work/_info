@@ -1,0 +1,245 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\86150\Desktop\fpga_0729\key_filter_top\q_prj\simulation\modelsim
+vbreathe_led
+IhjI;QP3`:U5?Q8g[OhAc_3
+VfgN]8c<KB>QQJ]K^zXbC<0
+Z1 dC:\Users\86150\Desktop\fpga_0729\key_filter_top\q_prj\simulation\modelsim
+w1722828328
+8C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/breathe_led.v
+FC:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/breathe_led.v
+L0 3
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl -O0
+!i10b 1
+!s100 >jiCjHcdmiOcW:L@8@DcJ0
+!s85 0
+!s108 1723517107.143000
+!s107 C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/breathe_led.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl|C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/breathe_led.v|
+!s101 -O0
+vbreathe_led_top
+I]<39iZHFQTak`lzW6]lHe3
+ViBgZR>JG^9Y5zB;c:O9?l0
+R1
+w1723515529
+8C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/breathe_led_top.v
+FC:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/breathe_led_top.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 c5UOf<RXzS2_mY27nKJ6c2
+!s85 0
+!s108 1723517107.764000
+!s107 C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/breathe_led_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl|C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/breathe_led_top.v|
+!s101 -O0
+vdiv_clk
+I;S3jO[<9nh;1fcKU_zFl`1
+V:=WbOz;jVXg>n=eDT5RVi2
+R1
+w1723172724
+8C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/div_clk.v
+FC:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/div_clk.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 1Hhj3_b=h3]2CAlEETjMj1
+!s85 0
+!s108 1723517106.982000
+!s107 C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/div_clk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl|C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/div_clk.v|
+!s101 -O0
+vflash_led
+I`gTzZL>z^NV[=F2EDjB=61
+V<MDd@Po[URA7zVaBXIk5M1
+R1
+w1723514897
+8C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/flash_led.v
+FC:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/flash_led.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 [>nd]hBSZSlO_81>6JgcF1
+!s85 0
+!s108 1723517106.862000
+!s107 C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/flash_led.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl|C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/flash_led.v|
+!s101 -O0
+vflash_led_top
+IMoFk]I1Qi`4JV7UPG[4So2
+V6ediE5hXaAQg17YeUb8`S3
+R1
+w1723515550
+8C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/flash_led_top.v
+FC:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/flash_led_top.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 IRghZz_AIIRCX8n5i_jdb2
+!s85 0
+!s108 1723517107.651000
+!s107 C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/flash_led_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl|C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/flash_led_top.v|
+!s101 -O0
+vkey_filter
+Ik]`3VTZNaPcIBMcTJXfLi3
+V5M@FlQk^=2bR2>@j_hBRX1
+R1
+w1723514669
+8C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/key_filter.v
+FC:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/key_filter.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 mi`QldGPOlX8C[TTb03L31
+!s85 0
+!s108 1723517106.758000
+!s107 C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/key_filter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl|C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/key_filter.v|
+!s101 -O0
+vled_driver
+IQ<B8`Fb7Hj<:EbQzljmS>0
+VaABYCh6eWI5lL7c`Ti6C12
+R1
+w1723514682
+8C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/led_driver.v
+FC:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/led_driver.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 HijBFfTeheOUWM>[B0WjX0
+!s85 0
+!s108 1723517106.631000
+!s107 C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/led_driver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl|C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/led_driver.v|
+!s101 -O0
+vmux_ctrl
+I:XYJNN_8^e[h5=?blFLoe1
+VbUc5OCeHdICdg_[z4VMgG2
+R1
+w1723516513
+8C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/mux_ctrl.v
+FC:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/mux_ctrl.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 d4WRkiHW:CnVB<D9[]11G1
+!s85 0
+!s108 1723517107.421000
+!s107 C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/mux_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl|C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/mux_ctrl.v|
+!s101 -O0
+vseg_ctrl
+IZ]d;Ea?cBkMO1f<YP>lS>1
+VnfP?P2O8LnU]O^_La^M?j1
+R1
+w1723514769
+8C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/seg_ctrl.v
+FC:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/seg_ctrl.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 V:XJPK=0X^K`O:@h?Q7a12
+!s85 0
+!s108 1723517106.524000
+!s107 C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/seg_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl|C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/seg_ctrl.v|
+!s101 -O0
+vseven_tube
+I;WHdR[i_NS@OO?CREM35=0
+V<O8Plkgc2>:ZOa21a^b2K1
+R1
+w1723514885
+8C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/seven_tube.v
+FC:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/seven_tube.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 T]:C=mbd]0jh@1XHbe6oE0
+!s85 0
+!s108 1723517106.381000
+!s107 C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/seven_tube.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl|C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/seven_tube.v|
+!s101 -O0
+vtop
+IbMl2SAg9fc^=5GClNSSC=0
+VDij3^5`D^M8=2_SN3KbP>1
+R1
+w1723516014
+8C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/top.v
+FC:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/top.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ;55cZAb_bK`<VL7aecimo3
+!s85 0
+!s108 1723517107.284000
+!s107 C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl|C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/top.v|
+!s101 -O0
+vtop_tb
+!i10b 1
+!s100 nd[S<K1HId:d0i88`>i?E2
+IKh64MV7AgfmRR<MhAfIji2
+VN7^ihbmI9enFg9D=Qco243
+R1
+w1723517065
+8C:/Users/86150/Desktop/fpga_0729/key_filter_top/q_prj/../sim/top_tb.v
+FC:/Users/86150/Desktop/fpga_0729/key_filter_top/q_prj/../sim/top_tb.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1723517107.902000
+!s107 C:/Users/86150/Desktop/fpga_0729/key_filter_top/q_prj/../sim/top_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/q_prj/../sim|C:/Users/86150/Desktop/fpga_0729/key_filter_top/q_prj/../sim/top_tb.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/q_prj/../sim -O0

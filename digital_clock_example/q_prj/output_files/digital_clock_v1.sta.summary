@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'sys_clk'
+Slack : -4.751
+TNS   : -894.372
+
+Type  : Slow 1200mV 85C Model Setup 'seven_tube:seven_tube_dut|div_clk:div_clk_dut|clk_out'
+Slack : -2.949
+TNS   : -16.055
+
+Type  : Slow 1200mV 85C Model Hold 'sys_clk'
+Slack : 0.431
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'seven_tube:seven_tube_dut|div_clk:div_clk_dut|clk_out'
+Slack : 0.723
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sys_clk'
+Slack : -3.000
+TNS   : -395.568
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'seven_tube:seven_tube_dut|div_clk:div_clk_dut|clk_out'
+Slack : -1.487
+TNS   : -19.331
+
+Type  : Slow 1200mV 0C Model Setup 'sys_clk'
+Slack : -4.420
+TNS   : -817.537
+
+Type  : Slow 1200mV 0C Model Setup 'seven_tube:seven_tube_dut|div_clk:div_clk_dut|clk_out'
+Slack : -2.597
+TNS   : -13.760
+
+Type  : Slow 1200mV 0C Model Hold 'sys_clk'
+Slack : 0.381
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'seven_tube:seven_tube_dut|div_clk:div_clk_dut|clk_out'
+Slack : 0.616
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sys_clk'
+Slack : -3.000
+TNS   : -395.568
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'seven_tube:seven_tube_dut|div_clk:div_clk_dut|clk_out'
+Slack : -1.487
+TNS   : -19.331
+
+Type  : Fast 1200mV 0C Model Setup 'sys_clk'
+Slack : -1.443
+TNS   : -225.010
+
+Type  : Fast 1200mV 0C Model Setup 'seven_tube:seven_tube_dut|div_clk:div_clk_dut|clk_out'
+Slack : -0.738
+TNS   : -2.829
+
+Type  : Fast 1200mV 0C Model Hold 'sys_clk'
+Slack : 0.178
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'seven_tube:seven_tube_dut|div_clk:div_clk_dut|clk_out'
+Slack : 0.280
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sys_clk'
+Slack : -3.000
+TNS   : -285.334
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'seven_tube:seven_tube_dut|div_clk:div_clk_dut|clk_out'
+Slack : -1.000
+TNS   : -13.000
+
+------------------------------------------------------------

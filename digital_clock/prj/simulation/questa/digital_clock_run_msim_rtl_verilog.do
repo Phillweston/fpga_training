@@ -5,6 +5,7 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl {D:/git-repository/fpga_training/digital_clock/rtl/key_flash_state.v}
 vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl {D:/git-repository/fpga_training/digital_clock/rtl/matrix_keyboard.v}
 vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl {D:/git-repository/fpga_training/digital_clock/rtl/seg_flash.v}
 vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl {D:/git-repository/fpga_training/digital_clock/rtl/clk_div_1hz.v}

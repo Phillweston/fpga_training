@@ -1,0 +1,482 @@
+# Reading D:/altera/modelsim_ase/tcl/vsim/pref.tcl 
+# do digital_clock_v1_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl {C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/seven_tube.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_tube
+# 
+# Top level modules:
+# 	seven_tube
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl {C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/seg_ctrl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seg_ctrl
+# 
+# Top level modules:
+# 	seg_ctrl
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl {C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/sec_ctrl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module sec_ctrl
+# 
+# Top level modules:
+# 	sec_ctrl
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl {C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/min_ctrl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module min_ctrl
+# 
+# Top level modules:
+# 	min_ctrl
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl {C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/key_process.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module key_process
+# 
+# Top level modules:
+# 	key_process
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl {C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/key_filter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module key_filter
+# 
+# Top level modules:
+# 	key_filter
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl {C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/hour_ctrl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hour_ctrl
+# 
+# Top level modules:
+# 	hour_ctrl
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl {C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/edge_check.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_check
+# 
+# Top level modules:
+# 	edge_check
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl {C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/div_clk.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module div_clk
+# 
+# Top level modules:
+# 	div_clk
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl {C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/cmp.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cmp
+# 
+# Top level modules:
+# 	cmp
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl {C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/bin2bcd.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bin2bcd
+# 
+# Top level modules:
+# 	bin2bcd
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl {C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/bcd_modify.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bcd_modify
+# 
+# Top level modules:
+# 	bcd_modify
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl {C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/digital_clock.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module digital_clock
+# 
+# Top level modules:
+# 	digital_clock
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl {C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/clk_logic_ctrl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clk_logic_ctrl
+# 
+# Top level modules:
+# 	clk_logic_ctrl
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl {C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/logic_ctrl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module logic_ctrl
+# 
+# Top level modules:
+# 	logic_ctrl
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl {C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/min_flash.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module min_flash
+# 
+# Top level modules:
+# 	min_flash
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl {C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/hour_flash.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module hour_flash
+# 
+# Top level modules:
+# 	hour_flash
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/q_prj/../sim {C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/q_prj/../sim/digital_clock_v1_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module digital_clock_v1_tb
+# 
+# Top level modules:
+# 	digital_clock_v1_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  digital_clock_v1_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps digital_clock_v1_tb 
+# Loading work.digital_clock_v1_tb
+# Loading work.digital_clock
+# Loading work.key_process
+# Loading work.key_filter
+# Loading work.edge_check
+# Loading work.clk_logic_ctrl
+# Loading work.logic_ctrl
+# Loading work.sec_ctrl
+# Loading work.min_ctrl
+# Loading work.hour_ctrl
+# Loading work.bin2bcd
+# Loading work.bcd_modify
+# Loading work.cmp
+# Loading work.min_flash
+# Loading work.hour_flash
+# Loading work.seven_tube
+# Loading work.div_clk
+# Loading work.seg_ctrl
+# ** Error: (vsim-10000) C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/q_prj/../sim/digital_clock_v1_tb.v(14): Unresolved defparam reference to 'T1s' in digital_clock_inst.clk_logic_ctrl_dut.min_ctrl_dut.T1s.
+# 
+#         Region: /digital_clock_v1_tb
+# ** Error: (vsim-10000) C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/q_prj/../sim/digital_clock_v1_tb.v(15): Unresolved defparam reference to 'T1s' in digital_clock_inst.clk_logic_ctrl_dut.hour_ctrl_dut.T1s.
+# 
+#         Region: /digital_clock_v1_tb
+# ** Error: (vsim-10000) C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/q_prj/../sim/digital_clock_v1_tb.v(22): Unresolved defparam reference to 'key_process_dut' in digital_clock_inst.clk_logic_ctrl_dut.key_process_dut.key_filter_adjust.T10ms.
+# 
+#         Region: /digital_clock_v1_tb
+# ** Error: (vsim-10000) C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/q_prj/../sim/digital_clock_v1_tb.v(23): Unresolved defparam reference to 'key_process_dut' in digital_clock_inst.clk_logic_ctrl_dut.key_process_dut.key_filter_add.T10ms.
+# 
+#         Region: /digital_clock_v1_tb
+# ** Error: (vsim-10000) C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/q_prj/../sim/digital_clock_v1_tb.v(24): Unresolved defparam reference to 'key_process_dut' in digital_clock_inst.clk_logic_ctrl_dut.key_process_dut.key_filter_sub.T10ms.
+# 
+#         Region: /digital_clock_v1_tb
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./digital_clock_v1_run_msim_rtl_verilog.do PAUSED at line 28
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/q_prj/../sim -O0 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module digital_clock_v1_tb
+# 
+# Top level modules:
+# 	digital_clock_v1_tb
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl -O0 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/key_process.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module key_process
+# 
+# Top level modules:
+# 	key_process
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/q_prj/../sim -O0 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module digital_clock_v1_tb
+# 
+# Top level modules:
+# 	digital_clock_v1_tb
+vsim -voptargs=+acc work.digital_clock_v1_tb
+# vsim -voptargs=+acc work.digital_clock_v1_tb 
+# Loading work.digital_clock_v1_tb
+# Loading work.digital_clock
+# Loading work.key_process
+# Loading work.key_filter
+# Loading work.edge_check
+# Loading work.clk_logic_ctrl
+# Loading work.logic_ctrl
+# Loading work.sec_ctrl
+# Loading work.min_ctrl
+# Loading work.hour_ctrl
+# Loading work.bin2bcd
+# Loading work.bcd_modify
+# Loading work.cmp
+# Loading work.min_flash
+# Loading work.hour_flash
+# Loading work.seven_tube
+# Loading work.div_clk
+# Loading work.seg_ctrl
+# ** Error: (vsim-10000) C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v(14): Unresolved defparam reference to 'T1s' in digital_clock_inst.clk_logic_ctrl_dut.min_ctrl_dut.T1s.
+# 
+#         Region: /digital_clock_v1_tb
+# ** Error: (vsim-10000) C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v(15): Unresolved defparam reference to 'T1s' in digital_clock_inst.clk_logic_ctrl_dut.hour_ctrl_dut.T1s.
+# 
+#         Region: /digital_clock_v1_tb
+# ** Error: (vsim-10000) C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v(22): Unresolved defparam reference to 'key_process_dut' in digital_clock_inst.clk_logic_ctrl_dut.key_process_dut.key_filter_adjust.T10ms.
+# 
+#         Region: /digital_clock_v1_tb
+# ** Error: (vsim-10000) C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v(23): Unresolved defparam reference to 'key_process_dut' in digital_clock_inst.clk_logic_ctrl_dut.key_process_dut.key_filter_add.T10ms.
+# 
+#         Region: /digital_clock_v1_tb
+# ** Error: (vsim-10000) C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v(24): Unresolved defparam reference to 'key_process_dut' in digital_clock_inst.clk_logic_ctrl_dut.key_process_dut.key_filter_sub.T10ms.
+# 
+#         Region: /digital_clock_v1_tb
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./digital_clock_v1_run_msim_rtl_verilog.do PAUSED at line 28
+vsim work.digital_clock_v1_tb
+# vsim work.digital_clock_v1_tb 
+# Loading work.digital_clock_v1_tb
+# Loading work.digital_clock
+# Loading work.key_process
+# Loading work.key_filter
+# Loading work.edge_check
+# Loading work.clk_logic_ctrl
+# Loading work.logic_ctrl
+# Loading work.sec_ctrl
+# Loading work.min_ctrl
+# Loading work.hour_ctrl
+# Loading work.bin2bcd
+# Loading work.bcd_modify
+# Loading work.cmp
+# Loading work.min_flash
+# Loading work.hour_flash
+# Loading work.seven_tube
+# Loading work.div_clk
+# Loading work.seg_ctrl
+# ** Error: (vsim-10000) C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v(14): Unresolved defparam reference to 'T1s' in digital_clock_inst.clk_logic_ctrl_dut.min_ctrl_dut.T1s.
+# 
+#         Region: /digital_clock_v1_tb
+# ** Error: (vsim-10000) C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v(15): Unresolved defparam reference to 'T1s' in digital_clock_inst.clk_logic_ctrl_dut.hour_ctrl_dut.T1s.
+# 
+#         Region: /digital_clock_v1_tb
+# ** Error: (vsim-10000) C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v(22): Unresolved defparam reference to 'key_process_dut' in digital_clock_inst.clk_logic_ctrl_dut.key_process_dut.key_filter_adjust.T10ms.
+# 
+#         Region: /digital_clock_v1_tb
+# ** Error: (vsim-10000) C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v(23): Unresolved defparam reference to 'key_process_dut' in digital_clock_inst.clk_logic_ctrl_dut.key_process_dut.key_filter_add.T10ms.
+# 
+#         Region: /digital_clock_v1_tb
+# ** Error: (vsim-10000) C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v(24): Unresolved defparam reference to 'key_process_dut' in digital_clock_inst.clk_logic_ctrl_dut.key_process_dut.key_filter_sub.T10ms.
+# 
+#         Region: /digital_clock_v1_tb
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./digital_clock_v1_run_msim_rtl_verilog.do PAUSED at line 28
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/q_prj/../sim -O0 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module digital_clock_v1_tb
+# 
+# Top level modules:
+# 	digital_clock_v1_tb
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/q_prj/../sim -O0 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module digital_clock_v1_tb
+# 
+# Top level modules:
+# 	digital_clock_v1_tb
+vsim -voptargs=+acc work.digital_clock_v1_tb
+# vsim -voptargs=+acc work.digital_clock_v1_tb 
+# Loading work.digital_clock_v1_tb
+# Loading work.digital_clock
+# Loading work.key_process
+# Loading work.key_filter
+# Loading work.edge_check
+# Loading work.clk_logic_ctrl
+# Loading work.logic_ctrl
+# Loading work.sec_ctrl
+# Loading work.min_ctrl
+# Loading work.hour_ctrl
+# Loading work.bin2bcd
+# Loading work.bcd_modify
+# Loading work.cmp
+# Loading work.min_flash
+# Loading work.hour_flash
+# Loading work.seven_tube
+# Loading work.div_clk
+# Loading work.seg_ctrl
+# ** Error: (vsim-10000) C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v(14): Unresolved defparam reference to 'T1s' in digital_clock_inst.clk_logic_ctrl_dut.min_ctrl_dut.T1s.
+# 
+#         Region: /digital_clock_v1_tb
+# ** Error: (vsim-10000) C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v(15): Unresolved defparam reference to 'T1s' in digital_clock_inst.clk_logic_ctrl_dut.hour_ctrl_dut.T1s.
+# 
+#         Region: /digital_clock_v1_tb
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./digital_clock_v1_run_msim_rtl_verilog.do PAUSED at line 28
+vsim -voptargs=+acc work.digital_clock_v1_tb
+# vsim -voptargs=+acc work.digital_clock_v1_tb 
+# Loading work.digital_clock_v1_tb
+# Loading work.digital_clock
+# Loading work.key_process
+# Loading work.key_filter
+# Loading work.edge_check
+# Loading work.clk_logic_ctrl
+# Loading work.logic_ctrl
+# Loading work.sec_ctrl
+# Loading work.min_ctrl
+# Loading work.hour_ctrl
+# Loading work.bin2bcd
+# Loading work.bcd_modify
+# Loading work.cmp
+# Loading work.min_flash
+# Loading work.hour_flash
+# Loading work.seven_tube
+# Loading work.div_clk
+# Loading work.seg_ctrl
+# ** Error: (vsim-10000) C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v(14): Unresolved defparam reference to 'T1s' in digital_clock_inst.clk_logic_ctrl_dut.min_ctrl_dut.T1s.
+# 
+#         Region: /digital_clock_v1_tb
+# ** Error: (vsim-10000) C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v(15): Unresolved defparam reference to 'T1s' in digital_clock_inst.clk_logic_ctrl_dut.hour_ctrl_dut.T1s.
+# 
+#         Region: /digital_clock_v1_tb
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./digital_clock_v1_run_msim_rtl_verilog.do PAUSED at line 28
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/q_prj/../sim -O0 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module digital_clock_v1_tb
+# 
+# Top level modules:
+# 	digital_clock_v1_tb
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/q_prj/../sim -O0 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module digital_clock_v1_tb
+# 
+# Top level modules:
+# 	digital_clock_v1_tb
+vsim -voptargs=+acc work.digital_clock_v1_tb
+# vsim -voptargs=+acc work.digital_clock_v1_tb 
+# Loading work.digital_clock_v1_tb
+# Loading work.digital_clock
+# Loading work.key_process
+# Loading work.key_filter
+# Loading work.edge_check
+# Loading work.clk_logic_ctrl
+# Loading work.logic_ctrl
+# Loading work.sec_ctrl
+# Loading work.min_ctrl
+# Loading work.hour_ctrl
+# Loading work.bin2bcd
+# Loading work.bcd_modify
+# Loading work.cmp
+# Loading work.min_flash
+# Loading work.hour_flash
+# Loading work.seven_tube
+# Loading work.div_clk
+# Loading work.seg_ctrl
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/sys_rst_n
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/sys_clk
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/show_data
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/sel
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/seg
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/key_sub_flag
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/key_sub
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/key_adjust_flag
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/key_adjust
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/key_add_flag
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/key_add
+run
+run
+run
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/clk_logic_ctrl_dut/hour_ctrl_dut/hour
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/clk_logic_ctrl_dut/min_ctrl_dut/hour_flag
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/clk_logic_ctrl_dut/min_ctrl_dut/min
+restart
+run
+run
+# WARNING: No extended dataflow license exists
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/clk_logic_ctrl_dut/logic_ctrl_dut/min_sub_flag
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/clk_logic_ctrl_dut/logic_ctrl_dut/min_en
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/clk_logic_ctrl_dut/logic_ctrl_dut/min_add_flag
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/clk_logic_ctrl_dut/logic_ctrl_dut/key_sub_flag
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/clk_logic_ctrl_dut/logic_ctrl_dut/key_adjust_flag
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/clk_logic_ctrl_dut/logic_ctrl_dut/key_add_flag
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/clk_logic_ctrl_dut/logic_ctrl_dut/hour_sub_flag
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/clk_logic_ctrl_dut/logic_ctrl_dut/hour_en
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/clk_logic_ctrl_dut/logic_ctrl_dut/hour_add_flag
+restart
+run
+run
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/clk_logic_ctrl_dut/min_flash_dut/min_data
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/clk_logic_ctrl_dut/hour_flash_dut/hour_data
+restart
+run
+run
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/clk_logic_ctrl_dut/min_flash_dut/min_en
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/clk_logic_ctrl_dut/hour_flash_dut/hour_en
+restart
+run
+run
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/q_prj/../sim -O0 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module digital_clock_v1_tb
+# 
+# Top level modules:
+# 	digital_clock_v1_tb
+vsim -voptargs=+acc work.digital_clock_v1_tb
+# vsim -voptargs=+acc work.digital_clock_v1_tb 
+# Loading work.digital_clock_v1_tb
+# Loading work.digital_clock
+# Loading work.key_process
+# Loading work.key_filter
+# Loading work.edge_check
+# Loading work.clk_logic_ctrl
+# Loading work.logic_ctrl
+# Loading work.sec_ctrl
+# Loading work.min_ctrl
+# Loading work.hour_ctrl
+# Loading work.bin2bcd
+# Loading work.bcd_modify
+# Loading work.cmp
+# Loading work.min_flash
+# Loading work.hour_flash
+# Loading work.seven_tube
+# Loading work.div_clk
+# Loading work.seg_ctrl
+# WARNING: No extended dataflow license exists
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/sys_rst_n
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/sys_clk
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/show_data
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/sel
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/seg
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/key_sub_flag
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/key_sub
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/key_adjust_flag
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/key_adjust
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/key_add_flag
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/key_add
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/clk_logic_ctrl_dut/hour_flash_dut/hour_en
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/clk_logic_ctrl_dut/hour_flash_dut/hour_data
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/clk_logic_ctrl_dut/min_flash_dut/min_en
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/clk_logic_ctrl_dut/min_flash_dut/min_data
+run
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl -O0 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/logic_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module logic_ctrl
+# 
+# Top level modules:
+# 	logic_ctrl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl -O0 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/logic_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module logic_ctrl
+# 
+# Top level modules:
+# 	logic_ctrl
+restart
+# Loading work.logic_ctrl
+run
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl -O0 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/rtl/logic_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module logic_ctrl
+# 
+# Top level modules:
+# 	logic_ctrl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/q_prj/../sim -O0 C:/Users/86150/Desktop/fpga_0729/digital_clock_v1/sim/digital_clock_v1_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module digital_clock_v1_tb
+# 
+# Top level modules:
+# 	digital_clock_v1_tb
+restart
+# Loading work.digital_clock_v1_tb
+# Loading work.logic_ctrl
+run
+run
+add wave -position end  sim:/digital_clock_v1_tb/digital_clock_inst/clk_logic_ctrl_dut/min_flash_dut/T1s_half
+restart
+run

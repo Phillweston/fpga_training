@@ -5,28 +5,31 @@ module digital_clock_v1_tb;
     reg sys_rst_n;
     reg key_pause;
     reg key_switch;
-    reg [3:0] row_in;
-    reg [3:0] col_in;
+    reg key_add;
+    reg key_sub;
 
     wire [2:0] sel;
     wire [7:0] seg;
 
     defparam digital_clock_v1_inst.logic_ctrl_v1_inst.seg_ctrl_sec_inst.T1s = 10;
     defparam digital_clock_v1_inst.seven_tube_inst.clk_div_1khz_inst.CNT_MAX = 10;
-    defparam digital_clock_v1_inst.seven_tube_inst.clk_div_1hz_inst.CNT_MAX = 10;
     defparam digital_clock_v1_inst.logic_ctrl_v1_inst.key_process_inst.key_filter_inst.T10ms = 10;
     defparam digital_clock_v1_inst.logic_ctrl_v1_inst.key_process_increment.key_filter_inst.T10ms = 10;
     defparam digital_clock_v1_inst.logic_ctrl_v1_inst.key_process_decrement.key_filter_inst.T10ms = 10;
+    defparam digital_clock_v1_inst.seg_flash_hour.clk_div_1hz_inst.CNT_MAX = 10;
+    defparam digital_clock_v1_inst.seg_flash_min.clk_div_1hz_inst.CNT_MAX = 10;
+    defparam digital_clock_v1_inst.seg_flash_sec.clk_div_1hz_inst.CNT_MAX = 10;
 
     digital_clock_v1 digital_clock_v1_inst (
         .sys_clk (sys_clk),
         .sys_rst_n (sys_rst_n),
         .key_pause (key_pause),
         .key_switch (key_switch),
-        .row_in (row_in),
-        .col_in (col_in),
+        .key_add (key_add),
+        .key_sub (key_sub),
         .sel (sel),
-        .seg (seg)
+        .seg (seg),
+        .beep (beep)
     );
 
     initial sys_clk = 1'b1;
@@ -36,8 +39,8 @@ module digital_clock_v1_tb;
     initial begin
         sys_rst_n = 1'b0;
         key_pause = 1'b1;
-        row_in = 4'b1111;
-        col_in = 4'b1111;
+        key_add = 1'b1;
+        key_sub = 1'b1;
         key_switch = 1'b1;
 
         #200.1 sys_rst_n = 1'b1;
@@ -55,13 +58,13 @@ module digital_clock_v1_tb;
         #500 key_pause = 1'b1;
         $display("Resume");
 
-        #2000 row_in = 4'b1110; col_in = 4'b1110;   // Increment
-        #500 row_in = 4'b1111; col_in = 4'b1111;
-        $display("Increment, key_code for row_in = 4'b1110, col_in = 4'b1110");
+        #2000 key_add = 1'b0;       // Increment
+        #500 key_add = 1'b1;
+        $display("Increment");
 
-        #2000 row_in = 4'b1110; col_in = 4'b1101;   // Decrement
-        #500 row_in = 4'b1111; col_in = 4'b1111;
-        $display("Decrement, key_code for row_in = 4'b1110, col_in = 4'b1101");
+        #2000 key_sub = 1'b0;       // Decrement
+        #500 key_sub = 1'b0;
+        $display("Decrement");
 
         #2000 key_switch = 1'b0;    // Switch 1
         #500 key_switch = 1'b1;

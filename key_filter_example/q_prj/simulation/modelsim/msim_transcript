@@ -1,0 +1,122 @@
+# Reading D:/altera/modelsim_ase/tcl/vsim/pref.tcl 
+# do key_filter_top_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl {C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/seven_tube.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_tube
+# 
+# Top level modules:
+# 	seven_tube
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl {C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/seg_ctrl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seg_ctrl
+# 
+# Top level modules:
+# 	seg_ctrl
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl {C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/led_driver.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module led_driver
+# 
+# Top level modules:
+# 	led_driver
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl {C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/key_filter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module key_filter
+# 
+# Top level modules:
+# 	key_filter
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl {C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/flash_led.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module flash_led
+# 
+# Top level modules:
+# 	flash_led
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl {C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/div_clk.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module div_clk
+# 
+# Top level modules:
+# 	div_clk
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl {C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/breathe_led.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module breathe_led
+# 
+# Top level modules:
+# 	breathe_led
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl {C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/top.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl {C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/mux_ctrl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux_ctrl
+# 
+# Top level modules:
+# 	mux_ctrl
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl {C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/flash_led_top.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module flash_led_top
+# 
+# Top level modules:
+# 	flash_led_top
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl {C:/Users/86150/Desktop/fpga_0729/key_filter_top/rtl/breathe_led_top.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module breathe_led_top
+# 
+# Top level modules:
+# 	breathe_led_top
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/key_filter_top/q_prj/../sim {C:/Users/86150/Desktop/fpga_0729/key_filter_top/q_prj/../sim/top_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  top_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps top_tb 
+# Loading work.top_tb
+# Loading work.top
+# Loading work.key_filter
+# Loading work.led_driver
+# Loading work.breathe_led_top
+# Loading work.breathe_led
+# Loading work.flash_led_top
+# Loading work.flash_led
+# Loading work.mux_ctrl
+# Loading work.seven_tube
+# Loading work.div_clk
+# Loading work.seg_ctrl
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break in Module top_tb at C:/Users/86150/Desktop/fpga_0729/key_filter_top/q_prj/../sim/top_tb.v line 84
+# Simulation Breakpoint: Break in Module top_tb at C:/Users/86150/Desktop/fpga_0729/key_filter_top/q_prj/../sim/top_tb.v line 84
+# MACRO ./key_filter_top_run_msim_rtl_verilog.do PAUSED at line 27
+add wave -position insertpoint sim:/top_tb/top_inst/key_filter_dut/*
+restart
+run -all
+# Break in Module top_tb at C:/Users/86150/Desktop/fpga_0729/key_filter_top/q_prj/../sim/top_tb.v line 84
+add wave -position insertpoint sim:/top_tb/top_inst/mux_ctrl_dut/*
+restart
+run -all
+# Break in Module top_tb at C:/Users/86150/Desktop/fpga_0729/key_filter_top/q_prj/../sim/top_tb.v line 84
+add wave -position insertpoint sim:/top_tb/top_inst/seven_tube_dut/*
+restart
+run -all
+# Break in Module top_tb at C:/Users/86150/Desktop/fpga_0729/key_filter_top/q_prj/../sim/top_tb.v line 84

@@ -16,31 +16,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "seg[0]",
-					"strict" : false
-				},
-				{
-					"name" : "seg[1]",
-					"strict" : false
-				},
-				{
-					"name" : "seg[2]",
-					"strict" : false
-				},
-				{
-					"name" : "seg[3]",
-					"strict" : false
-				},
-				{
-					"name" : "seg[4]",
-					"strict" : false
-				},
-				{
-					"name" : "seg[5]",
-					"strict" : false
-				},
-				{
-					"name" : "seg[6]",
+					"name" : "beep",
 					"strict" : false
 				},
 				{
@@ -52,39 +28,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "row_in[2]",
+					"name" : "key_add",
 					"strict" : false
 				},
 				{
-					"name" : "row_in[3]",
-					"strict" : false
-				},
-				{
-					"name" : "row_in[0]",
-					"strict" : false
-				},
-				{
-					"name" : "row_in[1]",
-					"strict" : false
-				},
-				{
-					"name" : "col_in[2]",
-					"strict" : false
-				},
-				{
-					"name" : "col_in[1]",
-					"strict" : false
-				},
-				{
-					"name" : "col_in[3]",
-					"strict" : false
-				},
-				{
-					"name" : "col_in[0]",
-					"strict" : false
-				},
-				{
-					"name" : "key_pause",
+					"name" : "key_sub",
 					"strict" : false
 				}
 			]

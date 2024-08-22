@@ -10,16 +10,17 @@ z2
 cModel Technology
 Z0 dD:/git-repository/fpga_training/digital_clock/prj/simulation/questa
 T_opt
-!s110 1723958686
-VjTeKRHiQCXVzHa]k<ea8f2
+!s110 1724036406
+V;3a>9oCML_G;N=0^JAiGR0
 04 19 4 work digital_clock_v1_tb fast 0
-=3-00d861e3bc76-66c1859d-320-ec24
+=2-00d861e3bc76-66c2b536-a0-dfdc
 o-quiet -auto_acc_if_foreign -work work +acc
 Z1 tCvgOpt 0
 n@_opt
 OL;O;2020.4;71
+R0
 vbcd_modify
-Z2 !s110 1723958040
+Z2 !s110 1724036356
 !i10b 1
 !s100 L>1cIJFhKCfOc;geH7b]@3
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -28,14 +29,14 @@ R0
 w1723606072
 8D:/git-repository/fpga_training/digital_clock/rtl/bcd_modify.v
 FD:/git-repository/fpga_training/digital_clock/rtl/bcd_modify.v
-!i122 15
+!i122 16
 L0 1 26
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 Z5 OL;L;2020.4;71
 r1
 !s85 0
 31
-Z6 !s108 1723958039.000000
+Z6 !s108 1724036356.000000
 !s107 D:/git-repository/fpga_training/digital_clock/rtl/bcd_modify.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/digital_clock/rtl|D:/git-repository/fpga_training/digital_clock/rtl/bcd_modify.v|
 !i113 0
@@ -43,7 +44,7 @@ Z7 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -
 Z8 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
 vbin2bcd
-Z9 !s110 1723958039
+R2
 !i10b 1
 !s100 aJ7R8dEkI^`=GIi29URK<0
 R3
@@ -52,14 +53,14 @@ R0
 w1723774675
 8D:/git-repository/fpga_training/digital_clock/rtl/bin2bcd.v
 FD:/git-repository/fpga_training/digital_clock/rtl/bin2bcd.v
-!i122 14
+!i122 15
 L0 1 52
 R4
 R5
 r1
 !s85 0
 31
-R6
+Z9 !s108 1724036355.000000
 !s107 D:/git-repository/fpga_training/digital_clock/rtl/bin2bcd.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/digital_clock/rtl|D:/git-repository/fpga_training/digital_clock/rtl/bin2bcd.v|
 !i113 0
@@ -67,7 +68,7 @@ R7
 R8
 R1
 vclk_div_1hz
-Z10 !s110 1723958037
+Z10 !s110 1724036353
 !i10b 1
 !s100 8DhIzU?GR95F]AmUR=0J]2
 R3
@@ -76,14 +77,14 @@ R0
 w1723897977
 8D:/git-repository/fpga_training/digital_clock/rtl/clk_div_1hz.v
 FD:/git-repository/fpga_training/digital_clock/rtl/clk_div_1hz.v
-!i122 2
+!i122 3
 Z11 L0 1 20
 R4
 R5
 r1
 !s85 0
 31
-Z12 !s108 1723958037.000000
+Z12 !s108 1724036353.000000
 !s107 D:/git-repository/fpga_training/digital_clock/rtl/clk_div_1hz.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/digital_clock/rtl|D:/git-repository/fpga_training/digital_clock/rtl/clk_div_1hz.v|
 !i113 0
@@ -91,7 +92,7 @@ R7
 R8
 R1
 vclk_div_1khz
-Z13 !s110 1723958038
+R10
 !i10b 1
 !s100 Y3oZWlE_zc^]MoN>`BoVA2
 R3
@@ -100,7 +101,7 @@ R0
 w1723898087
 8D:/git-repository/fpga_training/digital_clock/rtl/clk_div_1khz.v
 FD:/git-repository/fpga_training/digital_clock/rtl/clk_div_1khz.v
-!i122 3
+!i122 4
 R11
 R4
 R5
@@ -115,7 +116,7 @@ R7
 R8
 R1
 vcmp
-R9
+Z13 !s110 1724036355
 !i10b 1
 !s100 4bmWh_OzAj??8D9QcjmXS3
 R3
@@ -124,14 +125,14 @@ R0
 w1723606987
 8D:/git-repository/fpga_training/digital_clock/rtl/cmp.v
 FD:/git-repository/fpga_training/digital_clock/rtl/cmp.v
-!i122 13
+!i122 14
 L0 1 6
 R4
 R5
 r1
 !s85 0
 31
-R6
+R9
 !s107 D:/git-repository/fpga_training/digital_clock/rtl/cmp.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/digital_clock/rtl|D:/git-repository/fpga_training/digital_clock/rtl/cmp.v|
 !i113 0
@@ -139,47 +140,47 @@ R7
 R8
 R1
 vdigital_clock_v1
-!s110 1723958683
+R13
 !i10b 1
-!s100 lid9fP;8@HDG6IeDch3;T1
+!s100 E0mNJ2jH9=CA;5<fNiZnz2
 R3
-In3<g_E;XQiQ[o17ECIz7R3
+Iz:NRQHTDk:AEDL]6;;X6_0
 R0
-w1723957325
+w1724036285
 8D:/git-repository/fpga_training/digital_clock/rtl/digital_clock_v1.v
 FD:/git-repository/fpga_training/digital_clock/rtl/digital_clock_v1.v
-!i122 22
-Z14 L0 1 56
+!i122 11
+L0 1 109
 R4
 R5
 r1
 !s85 0
 31
-!s108 1723958683.000000
+Z14 !s108 1724036354.000000
 !s107 D:/git-repository/fpga_training/digital_clock/rtl/digital_clock_v1.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/digital_clock/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/digital_clock/rtl/digital_clock_v1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/digital_clock/rtl|D:/git-repository/fpga_training/digital_clock/rtl/digital_clock_v1.v|
 !i113 0
 R7
 R8
 R1
 vdigital_clock_v1_tb
-!s110 1723958677
+!s110 1724036991
 !i10b 1
-!s100 7>m]5^T0ZRoKEA<CemF8g0
+!s100 `X^DleQ0@4fmCg4>C<X:U2
 R3
-IfhPXb<_lo>Ne9>3O7Xi>83
+Im]EjmlhN[`XM@]PfzjmG81
 R0
-w1723958554
+w1724035991
 8D:/git-repository/fpga_training/digital_clock/sim/digital_clock_v1_tb.v
 FD:/git-repository/fpga_training/digital_clock/sim/digital_clock_v1_tb.v
 !i122 20
-L0 3 82
+L0 3 84
 R4
 R5
 r1
 !s85 0
 31
-!s108 1723958677.000000
+!s108 1724036990.000000
 !s107 D:/git-repository/fpga_training/digital_clock/sim/digital_clock_v1_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/digital_clock/prj/../sim|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/digital_clock/sim/digital_clock_v1_tb.v|
 !i113 0
@@ -187,7 +188,7 @@ R7
 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/digital_clock/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
 vedge_detection
-R13
+R10
 !i10b 1
 !s100 Lm2;eb>`U<cc_@T0PMND00
 R3
@@ -196,14 +197,14 @@ R0
 w1723877109
 8D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v
 FD:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v
-!i122 4
+!i122 5
 L0 1 33
 R4
 R5
 r1
 !s85 0
 31
-Z15 !s108 1723958038.000000
+R12
 !s107 D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/digital_clock/rtl|D:/git-repository/fpga_training/digital_clock/rtl/edge_detection.v|
 !i113 0
@@ -211,7 +212,7 @@ R7
 R8
 R1
 vkey_filter
-R13
+R10
 !i10b 1
 !s100 A2HXMB8fnhi<L2<i`:YId3
 R3
@@ -220,16 +221,40 @@ R0
 w1723859539
 8D:/git-repository/fpga_training/digital_clock/rtl/key_filter.v
 FD:/git-repository/fpga_training/digital_clock/rtl/key_filter.v
-!i122 5
+!i122 6
 L0 2 51
 R4
 R5
 r1
 !s85 0
 31
-R15
+R12
 !s107 D:/git-repository/fpga_training/digital_clock/rtl/key_filter.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/digital_clock/rtl|D:/git-repository/fpga_training/digital_clock/rtl/key_filter.v|
+!i113 0
+R7
+R8
+R1
+vkey_flash_state
+Z15 !s110 1724036352
+!i10b 1
+!s100 fD>LDgUz`@5]YLjoJ]h1f2
+R3
+IZkSKWfe5G:]OHXbRl]5`h2
+R0
+w1724035439
+8D:/git-repository/fpga_training/digital_clock/rtl/key_flash_state.v
+FD:/git-repository/fpga_training/digital_clock/rtl/key_flash_state.v
+!i122 0
+L0 1 46
+R4
+R5
+r1
+!s85 0
+31
+Z16 !s108 1724036352.000000
+!s107 D:/git-repository/fpga_training/digital_clock/rtl/key_flash_state.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/digital_clock/rtl|D:/git-repository/fpga_training/digital_clock/rtl/key_flash_state.v|
 !i113 0
 R7
 R8
@@ -244,14 +269,14 @@ R0
 w1723900389
 8D:/git-repository/fpga_training/digital_clock/rtl/key_process.v
 FD:/git-repository/fpga_training/digital_clock/rtl/key_process.v
-!i122 16
-Z16 L0 1 23
+!i122 17
+L0 1 23
 R4
 R5
 r1
 !s85 0
 31
-!s108 1723958040.000000
+R6
 !s107 D:/git-repository/fpga_training/digital_clock/rtl/key_process.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/digital_clock/rtl|D:/git-repository/fpga_training/digital_clock/rtl/key_process.v|
 !i113 0
@@ -259,31 +284,31 @@ R7
 R8
 R1
 vlogic_ctrl_v1
-!s110 1723958680
+Z17 !s110 1724036354
 !i10b 1
-!s100 94DaW@k@heX=EF>:P?:lF1
+!s100 dEGj;>CLc83WD=9J=QN6^1
 R3
-I[F18ET9GVigaZUH?>AF[I2
+If1z`XcXAM`U?1XQaZjFhZ0
 R0
-w1723958660
+w1724035876
 8D:/git-repository/fpga_training/digital_clock/rtl/logic_ctrl_v1.v
 FD:/git-repository/fpga_training/digital_clock/rtl/logic_ctrl_v1.v
-!i122 21
-L0 1 78
+!i122 10
+L0 1 86
 R4
 R5
 r1
 !s85 0
 31
-!s108 1723958680.000000
+R14
 !s107 D:/git-repository/fpga_training/digital_clock/rtl/logic_ctrl_v1.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/digital_clock/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/digital_clock/rtl/logic_ctrl_v1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/digital_clock/rtl|D:/git-repository/fpga_training/digital_clock/rtl/logic_ctrl_v1.v|
 !i113 0
 R7
 R8
 R1
 vmatrix_keyboard
-!s110 1723958049
+R15
 !i10b 1
 !s100 VE3_:0PcmaihgTIlKoYU>0
 R3
@@ -292,22 +317,22 @@ R0
 w1723957900
 8D:/git-repository/fpga_training/digital_clock/rtl/matrix_keyboard.v
 FD:/git-repository/fpga_training/digital_clock/rtl/matrix_keyboard.v
-!i122 19
+!i122 1
 L0 1 28
 R4
 R5
 r1
 !s85 0
 31
-!s108 1723958049.000000
+R16
 !s107 D:/git-repository/fpga_training/digital_clock/rtl/matrix_keyboard.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/digital_clock/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/digital_clock/rtl/matrix_keyboard.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/digital_clock/rtl|D:/git-repository/fpga_training/digital_clock/rtl/matrix_keyboard.v|
 !i113 0
 R7
 R8
 R1
 vseg_ctrl
-R9
+R13
 !i10b 1
 !s100 AQ71B43WJViFM=8a[z>]U0
 R3
@@ -316,14 +341,14 @@ R0
 w1723186538
 8D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl.v
 FD:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl.v
-!i122 12
+!i122 13
 L0 1 61
 R4
 R5
 r1
 !s85 0
 31
-R6
+R9
 !s107 D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/digital_clock/rtl|D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl.v|
 !i113 0
@@ -331,23 +356,23 @@ R7
 R8
 R1
 vseg_ctrl_hour
-R13
+R17
 !i10b 1
-!s100 aP9PGYoAke?[Z05S<C:@n2
+!s100 liC1oNHom`k=6l<fBRa^T1
 R3
-I:XHdKK^<^[[TTfKA[X:ae3
+IZCcJ3I6M1AZ:0NoSAgokA1
 R0
-w1723779271
+w1724036206
 8D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_hour.v
 FD:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_hour.v
-!i122 8
-L0 1 18
+!i122 9
+Z18 L0 1 25
 R4
 R5
 r1
 !s85 0
 31
-R15
+R14
 !s107 D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_hour.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/digital_clock/rtl|D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_hour.v|
 !i113 0
@@ -355,23 +380,23 @@ R7
 R8
 R1
 vseg_ctrl_min
-R13
+R17
 !i10b 1
-!s100 D1boGGL]He3[9dZ51eC[l1
+!s100 Df=FkZiQeSS85zg=W^z2i3
 R3
-IQV2k`SVKQRhPzD3:eYY6Y1
+IT2=cGbE[o4@CTgkff`1Mm2
 R0
-w1723779622
+w1724036222
 8D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_min.v
 FD:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_min.v
-!i122 7
-R16
+!i122 8
+L0 1 30
 R4
 R5
 r1
 !s85 0
 31
-R15
+R14
 !s107 D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_min.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/digital_clock/rtl|D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_min.v|
 !i113 0
@@ -379,23 +404,23 @@ R7
 R8
 R1
 vseg_ctrl_sec
-R13
+R10
 !i10b 1
-!s100 0eCMkabjh4ORbSJY3gOg11
+!s100 JJUkm178MjKk0C`hGGC^O0
 R3
-I:59cGX1_1GY5RXM0ccoC93
+I@:SibBXGCZV61VdgTkIPD2
 R0
-w1723896381
+w1724036170
 8D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_sec.v
 FD:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_sec.v
-!i122 6
-L0 1 64
+!i122 7
+L0 1 59
 R4
 R5
 r1
 !s85 0
 31
-R15
+R12
 !s107 D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_sec.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/digital_clock/rtl|D:/git-repository/fpga_training/digital_clock/rtl/seg_ctrl_sec.v|
 !i113 0
@@ -405,21 +430,21 @@ R1
 vseg_flash
 R10
 !i10b 1
-!s100 k7AIVn51VOaL3nh?DLB3d0
+!s100 9o^LEIL[8FSf_S_WNI[LF0
 R3
-I6T^GVd<AZ>IGQ^gSS5HKD2
+IXTDV1>US:Y;6bhh3[acIN1
 R0
-w1723899592
+w1724036042
 8D:/git-repository/fpga_training/digital_clock/rtl/seg_flash.v
 FD:/git-repository/fpga_training/digital_clock/rtl/seg_flash.v
-!i122 1
-L0 1 58
+!i122 2
+L0 1 35
 R4
 R5
 r1
 !s85 0
 31
-R12
+R16
 !s107 D:/git-repository/fpga_training/digital_clock/rtl/seg_flash.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/digital_clock/rtl|D:/git-repository/fpga_training/digital_clock/rtl/seg_flash.v|
 !i113 0
@@ -427,23 +452,23 @@ R7
 R8
 R1
 vseven_tube
-R9
+R13
 !i10b 1
-!s100 ?b>3XS6CzWcgIl?8<lfa<2
+!s100 oh[<Ke6;CQC^PCC;boba<3
 R3
-IjA>aDKcYHn@C[2`MO[:;?1
+I^6J<KE]E:T6TSVZi8]nYn3
 R0
-w1723899680
+w1724036009
 8D:/git-repository/fpga_training/digital_clock/rtl/seven_tube.v
 FD:/git-repository/fpga_training/digital_clock/rtl/seven_tube.v
-!i122 11
-R14
+!i122 12
+R18
 R4
 R5
 r1
 !s85 0
 31
-R6
+R9
 !s107 D:/git-repository/fpga_training/digital_clock/rtl/seven_tube.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/digital_clock/rtl|D:/git-repository/fpga_training/digital_clock/rtl/seven_tube.v|
 !i113 0
