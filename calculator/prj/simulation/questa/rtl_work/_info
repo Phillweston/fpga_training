@@ -1,0 +1,236 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/git-repository/fpga_training/calculator/prj/simulation/questa
+T_opt
+!s110 1724334275
+VVOBF`V5```l1gH^BgOQdk2
+04 17 4 work calculator_top_tb fast 0
+=1-00d861e3bc76-66c740c3-d-b9a8
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+valu
+!s110 1724334268
+!i10b 1
+!s100 [LzF07Ehl8A9V^fjSD5Xc2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I1]FGAPzl[EJfZj;>Bo95f3
+R0
+w1724299303
+8D:/git-repository/fpga_training/calculator/rtl/alu.v
+FD:/git-repository/fpga_training/calculator/rtl/alu.v
+!i122 28
+L0 1 101
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2020.4;71
+r1
+!s85 0
+31
+!s108 1724334268.000000
+!s107 D:/git-repository/fpga_training/calculator/rtl/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/calculator/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/calculator/rtl/alu.v|
+!i113 0
+Z5 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/calculator/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vbeep_driver
+Z7 !s110 1724334267
+!i10b 1
+!s100 l7KCeL@e>^K7InFMeD3fb3
+R2
+IU[LOJFI0hjhoCL=HjeB1=2
+R0
+w1724236509
+8D:/git-repository/fpga_training/calculator/rtl/beep_driver.v
+FD:/git-repository/fpga_training/calculator/rtl/beep_driver.v
+!i122 27
+L0 1 50
+R3
+R4
+r1
+!s85 0
+31
+Z8 !s108 1724334267.000000
+!s107 D:/git-repository/fpga_training/calculator/rtl/beep_driver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/calculator/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/calculator/rtl/beep_driver.v|
+!i113 0
+R5
+R6
+R1
+vcalculator_top
+R7
+!i10b 1
+!s100 IN:KZ4bA_=M9`5<kM9:zH3
+R2
+ID36@H4m8UJQ2ND[im;FQ;1
+R0
+w1724334250
+8D:/git-repository/fpga_training/calculator/rtl/calculator_top.v
+FD:/git-repository/fpga_training/calculator/rtl/calculator_top.v
+!i122 26
+L0 1 54
+R3
+R4
+r1
+!s85 0
+31
+R8
+!s107 D:/git-repository/fpga_training/calculator/rtl/calculator_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/calculator/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/calculator/rtl/calculator_top.v|
+!i113 0
+R5
+R6
+R1
+vcalculator_top_tb
+R7
+!i10b 1
+!s100 9S`]G?[jc:E1dj6cR4JbU2
+R2
+IT@AdTHhElecAbfMHDE>kL0
+R0
+w1724297854
+8D:/git-repository/fpga_training/calculator/sim/calculator_top_tb.v
+FD:/git-repository/fpga_training/calculator/sim/calculator_top_tb.v
+!i122 25
+L0 3 102
+R3
+R4
+r1
+!s85 0
+31
+R8
+!s107 D:/git-repository/fpga_training/calculator/sim/calculator_top_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/calculator/prj/../sim|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/calculator/sim/calculator_top_tb.v|
+!i113 0
+R5
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/calculator/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vdiv_clk
+R7
+!i10b 1
+!s100 ]226jNz6j=zDT6ehIPDfX0
+R2
+IgL=WoY6VgcJY89l:=1Vk:3
+R0
+w1724049949
+8D:/git-repository/fpga_training/calculator/rtl/div_clk.v
+FD:/git-repository/fpga_training/calculator/rtl/div_clk.v
+!i122 24
+L0 2 25
+R3
+R4
+r1
+!s85 0
+31
+Z9 !s108 1724334266.000000
+!s107 D:/git-repository/fpga_training/calculator/rtl/div_clk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/calculator/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/calculator/rtl/div_clk.v|
+!i113 0
+R5
+R6
+R1
+vedge_check
+Z10 !s110 1724334266
+!i10b 1
+!s100 ;a;JF`BG;>gYW0H0O9jgG2
+R2
+I2LL2cCaQm1@Ba3BL`blSA0
+R0
+w1724050326
+8D:/git-repository/fpga_training/calculator/rtl/edge_check.v
+FD:/git-repository/fpga_training/calculator/rtl/edge_check.v
+!i122 23
+L0 1 33
+R3
+R4
+r1
+!s85 0
+31
+R9
+!s107 D:/git-repository/fpga_training/calculator/rtl/edge_check.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/calculator/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/calculator/rtl/edge_check.v|
+!i113 0
+R5
+R6
+R1
+vkeyboard_scan
+R10
+!i10b 1
+!s100 elgmgH:M`cLFmbM7I>DlF3
+R2
+Ic4AUE9=@7m1CoULQl^DH[2
+R0
+w1724299773
+8D:/git-repository/fpga_training/calculator/rtl/keyboard_scan.v
+FD:/git-repository/fpga_training/calculator/rtl/keyboard_scan.v
+!i122 22
+L0 1 110
+R3
+R4
+r1
+!s85 0
+31
+R9
+!s107 D:/git-repository/fpga_training/calculator/rtl/keyboard_scan.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/calculator/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/calculator/rtl/keyboard_scan.v|
+!i113 0
+R5
+R6
+R1
+vseg_ctrl
+R10
+!i10b 1
+!s100 RYZBTan`Y3VTbTSJ=>`HE1
+R2
+IRbCbM]6SD;3Q5zl2UNQFU3
+R0
+w1724333015
+8D:/git-repository/fpga_training/calculator/rtl/seg_ctrl.v
+FD:/git-repository/fpga_training/calculator/rtl/seg_ctrl.v
+!i122 21
+L0 2 91
+R3
+R4
+r1
+!s85 0
+31
+R9
+!s107 D:/git-repository/fpga_training/calculator/rtl/seg_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/calculator/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/calculator/rtl/seg_ctrl.v|
+!i113 0
+R5
+R6
+R1
+vseven_tube
+!s110 1724334265
+!i10b 1
+!s100 e[]KKT?GQK[ENX3aF>nFX1
+R2
+I:O?TQAS6D>LCFAm>_IV<[2
+R0
+w1724038261
+8D:/git-repository/fpga_training/calculator/rtl/seven_tube.v
+FD:/git-repository/fpga_training/calculator/rtl/seven_tube.v
+!i122 20
+L0 1 28
+R3
+R4
+r1
+!s85 0
+31
+!s108 1724334265.000000
+!s107 D:/git-repository/fpga_training/calculator/rtl/seven_tube.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/calculator/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/calculator/rtl/seven_tube.v|
+!i113 0
+R5
+R6
+R1

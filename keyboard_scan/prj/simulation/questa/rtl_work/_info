@@ -10,16 +10,16 @@ z2
 cModel Technology
 Z0 dD:/git-repository/fpga_training/keyboard_scan/prj/simulation/questa
 T_opt
-!s110 1724236535
-VR60Y^^X7zWhE6[W4`9==^0
+!s110 1724290272
+VKT?Z:g=h@4NNT6ZggSXmI1
 04 15 4 work keyboard_top_tb fast 0
-=1-00d861e3bc76-66c5c2f7-189-10124
+=3-00d861e3bc76-66c694e0-35-c7d8
 o-quiet -auto_acc_if_foreign -work work +acc
 Z1 tCvgOpt 0
 n@_opt
 OL;O;2020.4;71
 vbeep_driver
-!s110 1724236524
+!s110 1724290055
 !i10b 1
 !s100 l7KCeL@e>^K7InFMeD3fb3
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -35,7 +35,7 @@ Z4 OL;L;2020.4;71
 r1
 !s85 0
 31
-!s108 1724236524.000000
+!s108 1724290055.000000
 !s107 D:/git-repository/fpga_training/keyboard_scan/rtl/beep_driver.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/keyboard_scan/rtl/beep_driver.v|
 !i113 0
@@ -43,7 +43,7 @@ Z5 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -
 Z6 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
 vdiv_clk
-Z7 !s110 1724233746
+Z7 !s110 1724290054
 !i10b 1
 !s100 ]226jNz6j=zDT6ehIPDfX0
 R2
@@ -52,16 +52,16 @@ R0
 w1724049949
 8D:/git-repository/fpga_training/keyboard_scan/rtl/div_clk.v
 FD:/git-repository/fpga_training/keyboard_scan/rtl/div_clk.v
-!i122 4
+!i122 16
 L0 2 25
 R3
 R4
 r1
 !s85 0
 31
-Z8 !s108 1724233746.000000
+Z8 !s108 1724290054.000000
 !s107 D:/git-repository/fpga_training/keyboard_scan/rtl/div_clk.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl|D:/git-repository/fpga_training/keyboard_scan/rtl/div_clk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/keyboard_scan/rtl/div_clk.v|
 !i113 0
 R5
 R6
@@ -76,7 +76,7 @@ R0
 w1724050326
 8D:/git-repository/fpga_training/keyboard_scan/rtl/edge_check.v
 FD:/git-repository/fpga_training/keyboard_scan/rtl/edge_check.v
-!i122 3
+!i122 15
 L0 1 33
 R3
 R4
@@ -85,7 +85,7 @@ r1
 31
 R8
 !s107 D:/git-repository/fpga_training/keyboard_scan/rtl/edge_check.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl|D:/git-repository/fpga_training/keyboard_scan/rtl/edge_check.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/keyboard_scan/rtl/edge_check.v|
 !i113 0
 R5
 R6
@@ -100,7 +100,7 @@ R0
 w1724210664
 8D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_scan.v
 FD:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_scan.v
-!i122 6
+!i122 14
 L0 1 110
 R3
 R4
@@ -109,7 +109,7 @@ r1
 31
 R8
 !s107 D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_scan.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl|D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_scan.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_scan.v|
 !i113 0
 R5
 R6
@@ -117,15 +117,15 @@ R1
 vkeyboard_top
 R7
 !i10b 1
-!s100 Dl23PoSZ5c<[lHY:BOkQg0
+!s100 >XNaMEGDMKf_Y`0k<7B7A2
 R2
-I1Y58]GJh]_6KadYG6KAfV3
+IndLYkMLR]WeOWNSGd1z;e2
 R0
-w1724212983
+w1724289661
 8D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_top.v
 FD:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_top.v
-!i122 2
-L0 1 45
+!i122 13
+L0 1 54
 R3
 R4
 r1
@@ -133,29 +133,29 @@ r1
 31
 R8
 !s107 D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_top.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl|D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_top.v|
 !i113 0
 R5
 R6
 R1
 vkeyboard_top_tb
-!s110 1724236528
+!s110 1724290265
 !i10b 1
-!s100 Q7Di7?lRIbf9aU10VbVGP2
+!s100 P5JK1F`CbUQ7DE8D4E]O53
 R2
-IIlM75@g>C``NeiFm0T]CK1
+IoXlZIen?6W9`?Ub5H>l;N2
 R0
-w1724233894
+w1724290253
 8D:/git-repository/fpga_training/keyboard_scan/sim/keyboard_top_tb.v
 FD:/git-repository/fpga_training/keyboard_scan/sim/keyboard_top_tb.v
 !i122 18
-L0 3 76
+L0 3 78
 R3
 R4
 r1
 !s85 0
 31
-!s108 1724236528.000000
+!s108 1724290264.000000
 !s107 D:/git-repository/fpga_training/keyboard_scan/sim/keyboard_top_tb.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/keyboard_scan/prj/../sim|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/keyboard_scan/sim/keyboard_top_tb.v|
 !i113 0
@@ -163,7 +163,7 @@ R5
 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
 vseg_ctrl
-R7
+Z9 !s110 1724290053
 !i10b 1
 !s100 RYZBTan`Y3VTbTSJ=>`HE1
 R2
@@ -172,22 +172,22 @@ R0
 w1723517484
 8D:/git-repository/fpga_training/keyboard_scan/rtl/seg_ctrl.v
 FD:/git-repository/fpga_training/keyboard_scan/rtl/seg_ctrl.v
-!i122 1
+!i122 11
 L0 2 91
 R3
 R4
 r1
 !s85 0
 31
-R8
+Z10 !s108 1724290053.000000
 !s107 D:/git-repository/fpga_training/keyboard_scan/rtl/seg_ctrl.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl|D:/git-repository/fpga_training/keyboard_scan/rtl/seg_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/keyboard_scan/rtl/seg_ctrl.v|
 !i113 0
 R5
 R6
 R1
 vseven_tube
-!s110 1724233745
+R9
 !i10b 1
 !s100 e[]KKT?GQK[ENX3aF>nFX1
 R2
@@ -196,16 +196,40 @@ R0
 w1724038261
 8D:/git-repository/fpga_training/keyboard_scan/rtl/seven_tube.v
 FD:/git-repository/fpga_training/keyboard_scan/rtl/seven_tube.v
-!i122 0
+!i122 10
 L0 1 28
 R3
 R4
 r1
 !s85 0
 31
-!s108 1724233745.000000
+R10
 !s107 D:/git-repository/fpga_training/keyboard_scan/rtl/seven_tube.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl|D:/git-repository/fpga_training/keyboard_scan/rtl/seven_tube.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/keyboard_scan/rtl/seven_tube.v|
+!i113 0
+R5
+R6
+R1
+vshift_data
+R9
+!i10b 1
+!s100 :nUEd>E_izTNC=2J6bGU=3
+R2
+ISU=JVC:mLPB5?OJY`6O^c0
+R0
+w1724289593
+8D:/git-repository/fpga_training/keyboard_scan/rtl/shift_data.v
+FD:/git-repository/fpga_training/keyboard_scan/rtl/shift_data.v
+!i122 9
+L0 1 16
+R3
+R4
+r1
+!s85 0
+31
+R10
+!s107 D:/git-repository/fpga_training/keyboard_scan/rtl/shift_data.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/keyboard_scan/rtl/shift_data.v|
 !i113 0
 R5
 R6

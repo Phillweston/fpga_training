@@ -23,91 +23,101 @@
 # Copying C:/modeltech64_2020.4/win64/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl {D:/git-repository/fpga_training/keyboard_scan/rtl/shift_data.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 09:27:19 on Aug 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl" D:/git-repository/fpga_training/keyboard_scan/rtl/shift_data.v 
+# -- Compiling module shift_data
+# 
+# Top level modules:
+# 	shift_data
+# End time: 09:27:19 on Aug 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl {D:/git-repository/fpga_training/keyboard_scan/rtl/seven_tube.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 17:49:05 on Aug 21,2024
+# Start time: 09:27:19 on Aug 22,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl" D:/git-repository/fpga_training/keyboard_scan/rtl/seven_tube.v 
 # -- Compiling module seven_tube
 # 
 # Top level modules:
 # 	seven_tube
-# End time: 17:49:05 on Aug 21,2024, Elapsed time: 0:00:00
+# End time: 09:27:19 on Aug 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl {D:/git-repository/fpga_training/keyboard_scan/rtl/seg_ctrl.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 17:49:06 on Aug 21,2024
+# Start time: 09:27:19 on Aug 22,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl" D:/git-repository/fpga_training/keyboard_scan/rtl/seg_ctrl.v 
 # -- Compiling module seg_ctrl
 # 
 # Top level modules:
 # 	seg_ctrl
-# End time: 17:49:06 on Aug 21,2024, Elapsed time: 0:00:00
+# End time: 09:27:19 on Aug 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl {D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_top.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 17:49:06 on Aug 21,2024
+# Start time: 09:27:19 on Aug 22,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl" D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_top.v 
 # -- Compiling module keyboard_top
 # 
 # Top level modules:
 # 	keyboard_top
-# End time: 17:49:06 on Aug 21,2024, Elapsed time: 0:00:00
+# End time: 09:27:20 on Aug 22,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl {D:/git-repository/fpga_training/keyboard_scan/rtl/edge_check.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 17:49:06 on Aug 21,2024
+# Start time: 09:27:20 on Aug 22,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl" D:/git-repository/fpga_training/keyboard_scan/rtl/edge_check.v 
 # -- Compiling module edge_check
 # 
 # Top level modules:
 # 	edge_check
-# End time: 17:49:06 on Aug 21,2024, Elapsed time: 0:00:00
+# End time: 09:27:20 on Aug 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl {D:/git-repository/fpga_training/keyboard_scan/rtl/div_clk.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 17:49:06 on Aug 21,2024
+# Start time: 09:27:20 on Aug 22,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl" D:/git-repository/fpga_training/keyboard_scan/rtl/div_clk.v 
 # -- Compiling module div_clk
 # 
 # Top level modules:
 # 	div_clk
-# End time: 17:49:06 on Aug 21,2024, Elapsed time: 0:00:00
+# End time: 09:27:20 on Aug 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl {D:/git-repository/fpga_training/keyboard_scan/rtl/beep_driver.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 17:49:06 on Aug 21,2024
+# Start time: 09:27:20 on Aug 22,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl" D:/git-repository/fpga_training/keyboard_scan/rtl/beep_driver.v 
 # -- Compiling module beep_driver
 # 
 # Top level modules:
 # 	beep_driver
-# End time: 17:49:06 on Aug 21,2024, Elapsed time: 0:00:00
+# End time: 09:27:20 on Aug 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl {D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_scan.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 17:49:06 on Aug 21,2024
+# Start time: 09:27:20 on Aug 22,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl" D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_scan.v 
 # -- Compiling module keyboard_scan
 # 
 # Top level modules:
 # 	keyboard_scan
-# End time: 17:49:06 on Aug 21,2024, Elapsed time: 0:00:00
+# End time: 09:27:20 on Aug 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/prj/../sim {D:/git-repository/fpga_training/keyboard_scan/prj/../sim/keyboard_top_tb.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 17:49:06 on Aug 21,2024
+# Start time: 09:27:20 on Aug 22,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/prj/../sim" D:/git-repository/fpga_training/keyboard_scan/prj/../sim/keyboard_top_tb.v 
 # -- Compiling module keyboard_top_tb
 # 
 # Top level modules:
 # 	keyboard_top_tb
-# End time: 17:49:06 on Aug 21,2024, Elapsed time: 0:00:00
+# End time: 09:27:20 on Aug 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  keyboard_top_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" keyboard_top_tb 
-# Start time: 17:49:07 on Aug 21,2024
+# Start time: 09:27:20 on Aug 22,2024
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
 # No such file or directory. (errno = ENOENT)
@@ -235,6 +245,48 @@
 # ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
 # No such file or directory. (errno = ENOENT)
 # ** Warning: D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_scan.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/keyboard_scan/rtl/shift_data.v(1): (vopt-2669) Unable to find library 'altera_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'lpm_ver' at "lpm_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/keyboard_scan/rtl/shift_data.v(1): (vopt-2669) Unable to find library 'lpm_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'sgate_ver' at "sgate_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/keyboard_scan/rtl/shift_data.v(1): (vopt-2669) Unable to find library 'sgate_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_mf_ver' at "altera_mf_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/keyboard_scan/rtl/shift_data.v(1): (vopt-2669) Unable to find library 'altera_mf_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'altera_lnsim_ver' at "altera_lnsim_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/keyboard_scan/rtl/shift_data.v(1): (vopt-2669) Unable to find library 'altera_lnsim_ver'.
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Error (suppressible): (vopt-19) Failed to access library 'cycloneive_ver' at "cycloneive_ver".
+# No such file or directory. (errno = ENOENT)
+# ** Warning: D:/git-repository/fpga_training/keyboard_scan/rtl/shift_data.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
 # ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
 # No such file or directory. (errno = ENOENT)
 # ** Error (suppressible): (vopt-19) Failed to access library 'altera_ver' at "altera_ver".
@@ -404,81 +456,118 @@
 # No such file or directory. (errno = ENOENT)
 # ** Warning: D:/git-repository/fpga_training/keyboard_scan/rtl/edge_check.v(1): (vopt-2669) Unable to find library 'cycloneive_ver'.
 # Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=126, Warnings=42.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=144, Warnings=48.
 # Error loading design
 # Error: Error loading design
 #        Pausing macro execution
-# MACRO ./keyboard_scan_run_msim_rtl_verilog.do PAUSED at line 18
+# MACRO ./keyboard_scan_run_msim_rtl_verilog.do PAUSED at line 19
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/shift_data.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 09:27:33 on Aug 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/shift_data.v 
+# -- Compiling module shift_data
+# 
+# Top level modules:
+# 	shift_data
+# End time: 09:27:33 on Aug 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/seven_tube.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 09:27:33 on Aug 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/seven_tube.v 
+# -- Compiling module seven_tube
+# 
+# Top level modules:
+# 	seven_tube
+# End time: 09:27:33 on Aug 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/seg_ctrl.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 09:27:33 on Aug 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/seg_ctrl.v 
+# -- Compiling module seg_ctrl
+# 
+# Top level modules:
+# 	seg_ctrl
+# End time: 09:27:33 on Aug 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/sim/keyboard_top_tb.v
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 17:49:18 on Aug 21,2024
+# Start time: 09:27:34 on Aug 22,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/sim/keyboard_top_tb.v 
 # -- Compiling module keyboard_top_tb
 # 
 # Top level modules:
 # 	keyboard_top_tb
-# End time: 17:49:18 on Aug 21,2024, Elapsed time: 0:00:00
+# End time: 09:27:34 on Aug 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim -voptargs=+acc work.keyboard_top_tb
-# vsim -voptargs="+acc" work.keyboard_top_tb 
-# Start time: 17:49:07 on Aug 21,2024
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Error (suppressible): D:/git-repository/fpga_training/keyboard_scan/sim/keyboard_top_tb.v(15): (vopt-7063) Failed to find 'keyboard_scan_inst' in hierarchical name 'keyboard_scan_inst.T1ms'.
-#         Region: keyboard_top_tb
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=127, Warnings=42.
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./keyboard_scan_run_msim_rtl_verilog.do PAUSED at line 18
-vsim -voptargs=+acc work.keyboard_top_tb
-# vsim -voptargs="+acc" work.keyboard_top_tb 
-# Start time: 17:49:07 on Aug 21,2024
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Error (suppressible): D:/git-repository/fpga_training/keyboard_scan/sim/keyboard_top_tb.v(15): (vopt-7063) Failed to find 'keyboard_scan_inst' in hierarchical name 'keyboard_scan_inst.T1ms'.
-#         Region: keyboard_top_tb
-# Optimization failed
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=128, Warnings=42.
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./keyboard_scan_run_msim_rtl_verilog.do PAUSED at line 18
-vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/sim/keyboard_top_tb.v
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_top.v
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 17:51:45 on Aug 21,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/sim/keyboard_top_tb.v 
-# -- Compiling module keyboard_top_tb
+# Start time: 09:27:34 on Aug 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_top.v 
+# -- Compiling module keyboard_top
 # 
 # Top level modules:
-# 	keyboard_top_tb
-# End time: 17:51:45 on Aug 21,2024, Elapsed time: 0:00:00
+# 	keyboard_top
+# End time: 09:27:34 on Aug 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/sim/keyboard_top_tb.v
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_scan.v
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 17:51:49 on Aug 21,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/sim/keyboard_top_tb.v 
-# -- Compiling module keyboard_top_tb
+# Start time: 09:27:34 on Aug 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_scan.v 
+# -- Compiling module keyboard_scan
 # 
 # Top level modules:
-# 	keyboard_top_tb
-# End time: 17:51:49 on Aug 21,2024, Elapsed time: 0:00:00
+# 	keyboard_scan
+# End time: 09:27:34 on Aug 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/edge_check.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 09:27:34 on Aug 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/edge_check.v 
+# -- Compiling module edge_check
+# 
+# Top level modules:
+# 	edge_check
+# End time: 09:27:34 on Aug 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/div_clk.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 09:27:34 on Aug 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/div_clk.v 
+# -- Compiling module div_clk
+# 
+# Top level modules:
+# 	div_clk
+# End time: 09:27:34 on Aug 22,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/beep_driver.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 09:27:35 on Aug 22,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/beep_driver.v 
+# -- Compiling module beep_driver
+# 
+# Top level modules:
+# 	beep_driver
+# End time: 09:27:35 on Aug 22,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim -voptargs=+acc work.keyboard_top_tb
 # vsim -voptargs="+acc" work.keyboard_top_tb 
-# Start time: 17:49:07 on Aug 21,2024
+# Start time: 09:27:20 on Aug 22,2024
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Note: (vopt-143) Recognized 1 FSM in module "keyboard_scan(fast)".
 # ** Note: (vopt-143) Recognized 1 FSM in module "seg_ctrl(fast)".
 # Loading work.keyboard_top_tb(fast)
 # Loading work.keyboard_top(fast)
 # Loading work.keyboard_scan(fast)
+# Loading work.shift_data(fast)
 # Loading work.seven_tube(fast)
 # Loading work.div_clk(fast)
 # Loading work.seg_ctrl(fast)
 # Loading work.edge_check(fast)
 # Loading work.beep_driver(fast)
 # ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (4) for port 'data_in'. The port definition is at: D:/git-repository/fpga_training/keyboard_scan/rtl/seven_tube.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /keyboard_top_tb/keyboard_top_inst/seven_tube_inst File: D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_top.v Line: 23
+#    Time: 0 ps  Iteration: 0  Instance: /keyboard_top_tb/keyboard_top_inst/seven_tube_inst File: D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_top.v Line: 32
 add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/sys_clk
 add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/sys_rst_n
 add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/row_in
@@ -489,65 +578,17 @@ add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/seg
 add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/key_data
 add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/key_valid
 add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/key_valid_flag
+add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/data_out
 run
-vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/beep_driver.v
-# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 18:01:29 on Aug 21,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/beep_driver.v 
-# -- Compiling module beep_driver
-# 
-# Top level modules:
-# 	beep_driver
-# End time: 18:01:29 on Aug 21,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
 vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/sim/keyboard_top_tb.v
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 18:01:33 on Aug 21,2024
+# Start time: 09:31:04 on Aug 22,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/sim/keyboard_top_tb.v 
 # -- Compiling module keyboard_top_tb
 # 
 # Top level modules:
 # 	keyboard_top_tb
-# End time: 18:01:33 on Aug 21,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim -voptargs=+acc work.keyboard_top_tb
-# End time: 18:01:38 on Aug 21,2024, Elapsed time: 0:12:31
-# Errors: 128, Warnings: 43
-# vsim -voptargs="+acc" work.keyboard_top_tb 
-# Start time: 18:01:38 on Aug 21,2024
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.keyboard_top_tb(fast)
-# Loading work.keyboard_top(fast)
-# Loading work.keyboard_scan(fast)
-# Loading work.seven_tube(fast)
-# Loading work.div_clk(fast)
-# Loading work.seg_ctrl(fast)
-# Loading work.edge_check(fast)
-# Loading work.beep_driver(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (4) for port 'data_in'. The port definition is at: D:/git-repository/fpga_training/keyboard_scan/rtl/seven_tube.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /keyboard_top_tb/keyboard_top_inst/seven_tube_inst File: D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_top.v Line: 23
-add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/sys_clk
-add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/sys_rst_n
-add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/row_in
-add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/col_out
-add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/beep
-add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/sel
-add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/seg
-add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/key_data
-add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/key_valid
-add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/key_valid_flag
-run
-run
-run
-vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/beep_driver.v
-# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 18:25:51 on Aug 21,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/beep_driver.v 
-# -- Compiling module beep_driver
-# 
-# Top level modules:
-# 	beep_driver
-# End time: 18:25:51 on Aug 21,2024, Elapsed time: 0:00:00
+# End time: 09:31:05 on Aug 22,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
@@ -555,139 +596,14 @@ restart
 # Loading work.keyboard_top_tb(fast)
 # Loading work.keyboard_top(fast)
 # Loading work.keyboard_scan(fast)
+# Loading work.shift_data(fast)
 # Loading work.seven_tube(fast)
 # Loading work.div_clk(fast)
 # Loading work.seg_ctrl(fast)
 # Loading work.edge_check(fast)
 # Loading work.beep_driver(fast)
 # ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (4) for port 'data_in'. The port definition is at: D:/git-repository/fpga_training/keyboard_scan/rtl/seven_tube.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /keyboard_top_tb/keyboard_top_inst/seven_tube_inst File: D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_top.v Line: 23
+#    Time: 0 ps  Iteration: 0  Instance: /keyboard_top_tb/keyboard_top_inst/seven_tube_inst File: D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_top.v Line: 32
 run
-run
-run
-vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/beep_driver.v
-# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 18:30:03 on Aug 21,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/beep_driver.v 
-# -- Compiling module beep_driver
-# 
-# Top level modules:
-# 	beep_driver
-# End time: 18:30:04 on Aug 21,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/sim/keyboard_top_tb.v
-# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 18:30:08 on Aug 21,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/sim/keyboard_top_tb.v 
-# -- Compiling module keyboard_top_tb
-# 
-# Top level modules:
-# 	keyboard_top_tb
-# End time: 18:30:08 on Aug 21,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.keyboard_top_tb(fast)
-# Loading work.keyboard_top(fast)
-# Loading work.keyboard_scan(fast)
-# Loading work.seven_tube(fast)
-# Loading work.div_clk(fast)
-# Loading work.seg_ctrl(fast)
-# Loading work.edge_check(fast)
-# Loading work.beep_driver(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (4) for port 'data_in'. The port definition is at: D:/git-repository/fpga_training/keyboard_scan/rtl/seven_tube.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /keyboard_top_tb/keyboard_top_inst/seven_tube_inst File: D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_top.v Line: 23
-run
-run
-run
-vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/beep_driver.v
-# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 18:34:03 on Aug 21,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/beep_driver.v 
-# -- Compiling module beep_driver
-# 
-# Top level modules:
-# 	beep_driver
-# End time: 18:34:03 on Aug 21,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.keyboard_top_tb(fast)
-# Loading work.keyboard_top(fast)
-# Loading work.keyboard_scan(fast)
-# Loading work.seven_tube(fast)
-# Loading work.div_clk(fast)
-# Loading work.seg_ctrl(fast)
-# Loading work.edge_check(fast)
-# Loading work.beep_driver(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (4) for port 'data_in'. The port definition is at: D:/git-repository/fpga_training/keyboard_scan/rtl/seven_tube.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /keyboard_top_tb/keyboard_top_inst/seven_tube_inst File: D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_top.v Line: 23
-run
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading work.keyboard_top_tb(fast)
-# Loading work.keyboard_top(fast)
-# Loading work.keyboard_scan(fast)
-# Loading work.seven_tube(fast)
-# Loading work.div_clk(fast)
-# Loading work.seg_ctrl(fast)
-# Loading work.edge_check(fast)
-# Loading work.beep_driver(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (4) for port 'data_in'. The port definition is at: D:/git-repository/fpga_training/keyboard_scan/rtl/seven_tube.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /keyboard_top_tb/keyboard_top_inst/seven_tube_inst File: D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_top.v Line: 23
-run
-run
-run
-vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/beep_driver.v
-# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 18:35:24 on Aug 21,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/rtl/beep_driver.v 
-# -- Compiling module beep_driver
-# 
-# Top level modules:
-# 	beep_driver
-# End time: 18:35:24 on Aug 21,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/sim/keyboard_top_tb.v
-# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 18:35:28 on Aug 21,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/keyboard_scan/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/keyboard_scan/sim/keyboard_top_tb.v 
-# -- Compiling module keyboard_top_tb
-# 
-# Top level modules:
-# 	keyboard_top_tb
-# End time: 18:35:28 on Aug 21,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim -voptargs=+acc work.keyboard_top_tb
-# End time: 18:35:33 on Aug 21,2024, Elapsed time: 0:33:55
-# Errors: 0, Warnings: 1
-# vsim -voptargs="+acc" work.keyboard_top_tb 
-# Start time: 18:35:33 on Aug 21,2024
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.keyboard_top_tb(fast)
-# Loading work.keyboard_top(fast)
-# Loading work.keyboard_scan(fast)
-# Loading work.seven_tube(fast)
-# Loading work.div_clk(fast)
-# Loading work.seg_ctrl(fast)
-# Loading work.edge_check(fast)
-# Loading work.beep_driver(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (24) does not match connection size (4) for port 'data_in'. The port definition is at: D:/git-repository/fpga_training/keyboard_scan/rtl/seven_tube.v(4).
-#    Time: 0 ps  Iteration: 0  Instance: /keyboard_top_tb/keyboard_top_inst/seven_tube_inst File: D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_top.v Line: 23
-add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/sys_clk
-add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/sys_rst_n
-add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/row_in
-add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/col_out
-add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/beep
-add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/sel
-add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/seg
-add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/key_data
-add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/key_valid
-add wave -position end  sim:/keyboard_top_tb/keyboard_top_inst/key_valid_flag
-run
-run
-# End time: 09:10:36 on Aug 22,2024, Elapsed time: 14:35:03
+# End time: 11:31:33 on Aug 22,2024, Elapsed time: 2:04:13
 # Errors: 0, Warnings: 1

@@ -5,6 +5,7 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl {D:/git-repository/fpga_training/keyboard_scan/rtl/shift_data.v}
 vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl {D:/git-repository/fpga_training/keyboard_scan/rtl/seven_tube.v}
 vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl {D:/git-repository/fpga_training/keyboard_scan/rtl/seg_ctrl.v}
 vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/keyboard_scan/rtl {D:/git-repository/fpga_training/keyboard_scan/rtl/keyboard_top.v}

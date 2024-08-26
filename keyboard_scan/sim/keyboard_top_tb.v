@@ -14,6 +14,8 @@ module keyboard_top_tb;
     // jitter time > 1000ns (20 * 5 * 10)ns
     defparam keyboard_top_inst.keyboard_scan_inst.T1ms = 5;
     defparam keyboard_top_inst.seven_tube_inst.div_clk_dut.CNT_MAX = 20;
+    defparam keyboard_top_inst.beep_driver_inst.MAX = 10;
+    defparam keyboard_top_inst.beep_driver_inst.T = 5;
 
     keyboard_top keyboard_top_inst (
         .sys_clk (sys_clk),

@@ -10,6 +10,7 @@ module keyboard_top (
     wire [3:0] key_data;
     wire key_valid;
     wire key_valid_flag;
+    wire [23:0] data_out;
 
     keyboard_scan keyboard_scan_inst (
         .sys_clk (sys_clk),
@@ -18,6 +19,14 @@ module keyboard_top (
         .col_out (col_out),
         .key_data (key_data),
         .key_valid (key_valid)
+    );
+
+    shift_data shift_data_inst (
+        .sys_clk (sys_clk),
+        .sys_rst_n (sys_rst_n),
+        .key_valid (key_valid_flag),
+        .key_data (key_data),
+        .show_data (data_out)
     );
 
     seven_tube seven_tube_inst (

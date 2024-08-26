@@ -1,14 +1,14 @@
-Fitter Status : Successful - Wed Aug 21 17:43:42 2024
+Fitter Status : Successful - Thu Aug 22 09:25:41 2024
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : keyboard_scan
 Top-level Entity Name : keyboard_top
 Family : Cyclone IV E
 Device : EP4CE10F17C8
 Timing Models : Final
-Total logic elements : 242 / 10,320 ( 2 % )
-    Total combinational functions : 230 / 10,320 ( 2 % )
-    Dedicated logic registers : 167 / 10,320 ( 2 % )
-Total registers : 167
+Total logic elements : 241 / 10,320 ( 2 % )
+    Total combinational functions : 225 / 10,320 ( 2 % )
+    Dedicated logic registers : 166 / 10,320 ( 2 % )
+Total registers : 166
 Total pins : 22 / 180 ( 12 % )
 Total virtual pins : 0
 Total memory bits : 0 / 423,936 ( 0 % )
