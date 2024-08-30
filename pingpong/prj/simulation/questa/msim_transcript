@@ -1,0 +1,463 @@
+# Reading pref.tcl
+# //  ModelSim SE-64 2020.4 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do pingpong_top_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap work rtl_work 
+# Modifying C:/modeltech64_2020.4/win64/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/pingpong/rtl {D:/git-repository/fpga_training/pingpong/rtl/ram_ctrl.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:44:53 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/pingpong/rtl" D:/git-repository/fpga_training/pingpong/rtl/ram_ctrl.v 
+# -- Compiling module ram_ctrl
+# 
+# Top level modules:
+# 	ram_ctrl
+# End time: 17:44:53 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/pingpong/rtl {D:/git-repository/fpga_training/pingpong/rtl/pingpong_top.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:44:53 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/pingpong/rtl" D:/git-repository/fpga_training/pingpong/rtl/pingpong_top.v 
+# -- Compiling module pingpong_top
+# 
+# Top level modules:
+# 	pingpong_top
+# End time: 17:44:54 on Aug 29,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/pingpong/rtl {D:/git-repository/fpga_training/pingpong/rtl/data_gen.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:44:54 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/pingpong/rtl" D:/git-repository/fpga_training/pingpong/rtl/data_gen.v 
+# -- Compiling module data_gen
+# 
+# Top level modules:
+# 	data_gen
+# End time: 17:44:54 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/pingpong/prj {D:/git-repository/fpga_training/pingpong/prj/clk_gen.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:44:54 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/pingpong/prj" D:/git-repository/fpga_training/pingpong/prj/clk_gen.v 
+# -- Compiling module clk_gen
+# 
+# Top level modules:
+# 	clk_gen
+# End time: 17:44:54 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/pingpong/prj {D:/git-repository/fpga_training/pingpong/prj/dp_ram_1.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:44:54 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/pingpong/prj" D:/git-repository/fpga_training/pingpong/prj/dp_ram_1.v 
+# -- Compiling module dp_ram_1
+# 
+# Top level modules:
+# 	dp_ram_1
+# End time: 17:44:54 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/pingpong/prj {D:/git-repository/fpga_training/pingpong/prj/dp_ram_2.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:44:54 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/pingpong/prj" D:/git-repository/fpga_training/pingpong/prj/dp_ram_2.v 
+# -- Compiling module dp_ram_2
+# 
+# Top level modules:
+# 	dp_ram_2
+# End time: 17:44:54 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/pingpong/prj/db {D:/git-repository/fpga_training/pingpong/prj/db/clk_gen_altpll.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:44:54 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/pingpong/prj/db" D:/git-repository/fpga_training/pingpong/prj/db/clk_gen_altpll.v 
+# -- Compiling module clk_gen_altpll
+# 
+# Top level modules:
+# 	clk_gen_altpll
+# End time: 17:44:54 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/pingpong/prj/../sim {D:/git-repository/fpga_training/pingpong/prj/../sim/pingpong_tb.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:44:54 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/pingpong/prj/../sim" D:/git-repository/fpga_training/pingpong/prj/../sim/pingpong_tb.v 
+# -- Compiling module pingpong_tb
+# 
+# Top level modules:
+# 	pingpong_tb
+# End time: 17:44:54 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  pingpong_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" pingpong_tb 
+# Start time: 17:44:55 on Aug 29,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "ram_ctrl(fast)".
+# Loading work.pingpong_tb(fast)
+# Loading work.pingpong_top(fast)
+# Loading work.ram_ctrl(fast)
+# Loading work.data_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.dp_ram_1(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.dp_ram_2(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (16) for port 'ram1_rd_data'. The port definition is at: D:/git-repository/fpga_training/pingpong/rtl/pingpong_top.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /pingpong_tb/pingpong_top_inst File: D:/git-repository/fpga_training/pingpong/prj/../sim/pingpong_tb.v Line: 10
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (16) for port 'ram2_rd_data'. The port definition is at: D:/git-repository/fpga_training/pingpong/rtl/pingpong_top.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /pingpong_tb/pingpong_top_inst File: D:/git-repository/fpga_training/pingpong/prj/../sim/pingpong_tb.v Line: 10
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: pingpong_tb.pingpong_top_inst.dp_ram_1_inst.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: pingpong_tb.pingpong_top_inst.dp_ram_2_inst.altsyncram_component.m_default.altsyncram_inst
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: pingpong_tb.pingpong_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: pingpong_tb.pingpong_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/pingpong/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/sim/pingpong_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:46:33 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/pingpong/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/sim/pingpong_tb.v 
+# -- Compiling module pingpong_tb
+# 
+# Top level modules:
+# 	pingpong_tb
+# End time: 17:46:33 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/pingpong/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/sim/pingpong_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:46:33 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/pingpong/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/sim/pingpong_tb.v 
+# -- Compiling module pingpong_tb
+# 
+# Top level modules:
+# 	pingpong_tb
+# End time: 17:46:33 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.pingpong_tb(fast)
+# Loading work.pingpong_top(fast)
+# Loading work.ram_ctrl(fast)
+# Loading work.data_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.dp_ram_1(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.dp_ram_2(fast)
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/pingpong/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/sim/pingpong_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:46:43 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/pingpong/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/sim/pingpong_tb.v 
+# -- Compiling module pingpong_tb
+# 
+# Top level modules:
+# 	pingpong_tb
+# End time: 17:46:43 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: pingpong_tb.pingpong_top_inst.dp_ram_1_inst.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: pingpong_tb.pingpong_top_inst.dp_ram_2_inst.altsyncram_component.m_default.altsyncram_inst
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: pingpong_tb.pingpong_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: pingpong_tb.pingpong_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+run
+run
+run
+run
+run
+run
+run
+run
+run -continue
+run -all
+add wave -position end  sim:/pingpong_tb/pingpong_top_inst/sys_clk
+add wave -position end  sim:/pingpong_tb/pingpong_top_inst/sys_rst_n
+add wave -position end  sim:/pingpong_tb/pingpong_top_inst/ram1_rd_data
+add wave -position end  sim:/pingpong_tb/pingpong_top_inst/ram2_rd_data
+add wave -position end  sim:/pingpong_tb/pingpong_top_inst/clk_50m
+add wave -position end  sim:/pingpong_tb/pingpong_top_inst/clk_25m
+add wave -position end  sim:/pingpong_tb/pingpong_top_inst/rst_n
+add wave -position end  sim:/pingpong_tb/pingpong_top_inst/data_en
+add wave -position end  sim:/pingpong_tb/pingpong_top_inst/data_in
+add wave -position end  sim:/pingpong_tb/pingpong_top_inst/ram1_wr_en
+add wave -position end  sim:/pingpong_tb/pingpong_top_inst/ram1_rd_en
+add wave -position end  sim:/pingpong_tb/pingpong_top_inst/ram1_wr_addr
+add wave -position end  sim:/pingpong_tb/pingpong_top_inst/ram1_rd_addr
+add wave -position end  sim:/pingpong_tb/pingpong_top_inst/ram1_wr_data
+add wave -position end  sim:/pingpong_tb/pingpong_top_inst/ram2_wr_en
+add wave -position end  sim:/pingpong_tb/pingpong_top_inst/ram2_rd_en
+add wave -position end  sim:/pingpong_tb/pingpong_top_inst/ram2_wr_addr
+add wave -position end  sim:/pingpong_tb/pingpong_top_inst/ram2_rd_addr
+add wave -position end  sim:/pingpong_tb/pingpong_top_inst/ram2_wr_data
+add wave -position end  sim:/pingpong_tb/pingpong_top_inst/data_out
+add wave -position end  sim:/pingpong_tb/pingpong_top_inst/locked
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.pingpong_tb(fast)
+# Loading work.pingpong_top(fast)
+# Loading work.ram_ctrl(fast)
+# Loading work.data_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.dp_ram_1(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.dp_ram_2(fast)
+run
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: pingpong_tb.pingpong_top_inst.dp_ram_1_inst.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: pingpong_tb.pingpong_top_inst.dp_ram_2_inst.altsyncram_component.m_default.altsyncram_inst
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: pingpong_tb.pingpong_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: pingpong_tb.pingpong_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position 2  sim:/pingpong_tb/pingpong_top_inst/ram_ctrl_inst/state
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.pingpong_tb(fast)
+# Loading work.pingpong_top(fast)
+# Loading work.ram_ctrl(fast)
+# Loading work.data_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.dp_ram_1(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.dp_ram_2(fast)
+run
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: pingpong_tb.pingpong_top_inst.dp_ram_1_inst.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: pingpong_tb.pingpong_top_inst.dp_ram_2_inst.altsyncram_component.m_default.altsyncram_inst
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: pingpong_tb.pingpong_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: pingpong_tb.pingpong_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/pingpong/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/rtl/ram_ctrl.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:06:20 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/pingpong/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/rtl/ram_ctrl.v 
+# -- Compiling module ram_ctrl
+# 
+# Top level modules:
+# 	ram_ctrl
+# End time: 18:06:21 on Aug 29,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/pingpong/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/rtl/pingpong_top.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:06:21 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/pingpong/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/rtl/pingpong_top.v 
+# -- Compiling module pingpong_top
+# 
+# Top level modules:
+# 	pingpong_top
+# End time: 18:06:21 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/pingpong/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/sim/pingpong_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:06:21 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/pingpong/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/sim/pingpong_tb.v 
+# -- Compiling module pingpong_tb
+# 
+# Top level modules:
+# 	pingpong_tb
+# End time: 18:06:21 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/pingpong/prj -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/prj/dp_ram_2.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:06:21 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/pingpong/prj" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/prj/dp_ram_2.v 
+# -- Compiling module dp_ram_2
+# 
+# Top level modules:
+# 	dp_ram_2
+# End time: 18:06:21 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/pingpong/prj -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/prj/dp_ram_1.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:06:21 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/pingpong/prj" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/prj/dp_ram_1.v 
+# -- Compiling module dp_ram_1
+# 
+# Top level modules:
+# 	dp_ram_1
+# End time: 18:06:22 on Aug 29,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/pingpong/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/rtl/data_gen.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:06:22 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/pingpong/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/rtl/data_gen.v 
+# -- Compiling module data_gen
+# 
+# Top level modules:
+# 	data_gen
+# End time: 18:06:22 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/pingpong/prj/db -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/prj/db/clk_gen_altpll.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:06:22 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/pingpong/prj/db" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/prj/db/clk_gen_altpll.v 
+# -- Compiling module clk_gen_altpll
+# 
+# Top level modules:
+# 	clk_gen_altpll
+# End time: 18:06:22 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/pingpong/prj -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/prj/clk_gen.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:06:22 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/pingpong/prj" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/prj/clk_gen.v 
+# -- Compiling module clk_gen
+# 
+# Top level modules:
+# 	clk_gen
+# End time: 18:06:22 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "ram_ctrl(fast)".
+# Loading work.pingpong_tb(fast)
+# Loading work.pingpong_top(fast)
+# Loading work.ram_ctrl(fast)
+# Loading work.data_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.dp_ram_1(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.dp_ram_2(fast)
+run
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: pingpong_tb.pingpong_top_inst.dp_ram_1_inst.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: pingpong_tb.pingpong_top_inst.dp_ram_2_inst.altsyncram_component.m_default.altsyncram_inst
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: pingpong_tb.pingpong_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: pingpong_tb.pingpong_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/pingpong/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/rtl/ram_ctrl.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 18:10:03 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/pingpong/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/pingpong/rtl/ram_ctrl.v 
+# -- Compiling module ram_ctrl
+# 
+# Top level modules:
+# 	ram_ctrl
+# End time: 18:10:03 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in module "ram_ctrl(fast)".
+# Loading work.pingpong_tb(fast)
+# Loading work.pingpong_top(fast)
+# Loading work.ram_ctrl(fast)
+# Loading work.data_gen(fast)
+# Loading work.clk_gen(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.dp_ram_1(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.dp_ram_2(fast)
+run
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: pingpong_tb.pingpong_top_inst.dp_ram_1_inst.altsyncram_component.m_default.altsyncram_inst
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: pingpong_tb.pingpong_top_inst.dp_ram_2_inst.altsyncram_component.m_default.altsyncram_inst
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: pingpong_tb.pingpong_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: pingpong_tb.pingpong_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/git-repository/fpga_training/pingpong/prj/simulation/questa/wave.do
+# End time: 09:57:57 on Aug 30,2024, Elapsed time: 16:13:02
+# Errors: 0, Warnings: 0

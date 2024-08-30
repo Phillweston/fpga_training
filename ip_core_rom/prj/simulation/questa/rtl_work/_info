@@ -1,0 +1,116 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/git-repository/fpga_training/ip_core_rom/prj/simulation/questa
+T_opt
+!s110 1724726966
+VO?GRoT]]WP5NFeflDkAB[2
+04 6 4 work rom_tb fast 0
+=3-00d861e3bc76-66cd3eb5-399-10968
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vaddr_ctrl
+Z2 !s110 1724726682
+!i10b 1
+!s100 @F:W>J[5CNZV`:m<^eBLW2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IKLJ091QTz]Nd85]2BYQ@10
+R0
+w1724726005
+8D:/git-repository/fpga_training/ip_core_rom/rtl/addr_ctrl.v
+FD:/git-repository/fpga_training/ip_core_rom/rtl/addr_ctrl.v
+!i122 1
+L0 1 19
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z6 !s108 1724726682.000000
+!s107 D:/git-repository/fpga_training/ip_core_rom/rtl/addr_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/ip_core_rom/rtl|D:/git-repository/fpga_training/ip_core_rom/rtl/addr_ctrl.v|
+!i113 0
+Z7 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_rom/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vip_core_rom
+R2
+!i10b 1
+!s100 bbbeEXIiK>oe;2:Tclaa51
+R3
+IO`?l`G:@OC;l_Z@_19SVj1
+R0
+w1724724490
+8D:/git-repository/fpga_training/ip_core_rom/prj/ip_core_rom.v
+FD:/git-repository/fpga_training/ip_core_rom/prj/ip_core_rom.v
+!i122 2
+L0 40 65
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/git-repository/fpga_training/ip_core_rom/prj/ip_core_rom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/ip_core_rom/prj|D:/git-repository/fpga_training/ip_core_rom/prj/ip_core_rom.v|
+!i113 0
+R7
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_rom/prj -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vrom_ip_top
+!s110 1724726681
+!i10b 1
+!s100 S1:8m4J=c_>oFSk>^EM6b2
+R3
+I2Hzi87LRCoD21X]kHcB0j3
+R0
+w1724725898
+8D:/git-repository/fpga_training/ip_core_rom/rtl/rom_ip_top.v
+FD:/git-repository/fpga_training/ip_core_rom/rtl/rom_ip_top.v
+!i122 0
+L0 1 23
+R4
+R5
+r1
+!s85 0
+31
+!s108 1724726681.000000
+!s107 D:/git-repository/fpga_training/ip_core_rom/rtl/rom_ip_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/ip_core_rom/rtl|D:/git-repository/fpga_training/ip_core_rom/rtl/rom_ip_top.v|
+!i113 0
+R7
+R8
+R1
+vrom_tb
+!s110 1724726962
+!i10b 1
+!s100 IL@Jd?]jM_dcEigln@<Wd2
+R3
+IbMd92=e6>1P54FBJ]BG^e1
+R0
+w1724726936
+8D:/git-repository/fpga_training/ip_core_rom/sim/rom_tb.v
+FD:/git-repository/fpga_training/ip_core_rom/sim/rom_tb.v
+!i122 4
+L0 3 22
+R4
+R5
+r1
+!s85 0
+31
+!s108 1724726962.000000
+!s107 D:/git-repository/fpga_training/ip_core_rom/sim/rom_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/ip_core_rom/prj/../sim|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/ip_core_rom/sim/rom_tb.v|
+!i113 0
+R7
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_rom/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1

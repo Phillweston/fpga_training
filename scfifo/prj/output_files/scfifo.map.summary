@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Aug 30 10:43:16 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : scfifo
+Top-level Entity Name : scfifo_top
+Family : Cyclone IV E
+Total logic elements : 47
+    Total combinational functions : 47
+    Dedicated logic registers : 37
+Total registers : 37
+Total pins : 10
+Total virtual pins : 0
+Total memory bits : 2,048
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

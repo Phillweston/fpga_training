@@ -1,0 +1,175 @@
+# Reading pref.tcl
+# //  ModelSim SE-64 2020.4 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do scfifo_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap work rtl_work 
+# Modifying C:/modeltech64_2020.4/win64/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/scfifo/rtl {D:/git-repository/fpga_training/scfifo/rtl/scfifo_top.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:43:55 on Aug 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/scfifo/rtl" D:/git-repository/fpga_training/scfifo/rtl/scfifo_top.v 
+# -- Compiling module scfifo_top
+# 
+# Top level modules:
+# 	scfifo_top
+# End time: 10:43:55 on Aug 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/scfifo/rtl {D:/git-repository/fpga_training/scfifo/rtl/scfifo_ctrl.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:43:55 on Aug 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/scfifo/rtl" D:/git-repository/fpga_training/scfifo/rtl/scfifo_ctrl.v 
+# -- Compiling module scfifo_ctrl
+# 
+# Top level modules:
+# 	scfifo_ctrl
+# End time: 10:43:55 on Aug 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/scfifo/prj {D:/git-repository/fpga_training/scfifo/prj/ip_scfifo.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:43:55 on Aug 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/scfifo/prj" D:/git-repository/fpga_training/scfifo/prj/ip_scfifo.v 
+# -- Compiling module ip_scfifo
+# 
+# Top level modules:
+# 	ip_scfifo
+# End time: 10:43:55 on Aug 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/scfifo/prj/../sim {D:/git-repository/fpga_training/scfifo/prj/../sim/ip_scfifo_top_tb.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:43:55 on Aug 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/scfifo/prj/../sim" D:/git-repository/fpga_training/scfifo/prj/../sim/ip_scfifo_top_tb.v 
+# -- Compiling module ip_scfifo_top_tb
+# 
+# Top level modules:
+# 	ip_scfifo_top_tb
+# End time: 10:43:55 on Aug 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  ip_scfifo_top_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" ip_scfifo_top_tb 
+# Start time: 10:43:56 on Aug 30,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.ip_scfifo_top_tb(fast)
+# Loading work.scfifo_top(fast)
+# Loading work.ip_scfifo(fast)
+# Loading altera_mf_ver.scfifo(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading work.scfifo_ctrl(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave -position end  sim:/ip_scfifo_top_tb/scfifo_top_inst/sys_clk
+add wave -position end  sim:/ip_scfifo_top_tb/scfifo_top_inst/sys_rst_n
+add wave -position end  sim:/ip_scfifo_top_tb/scfifo_top_inst/rd_data
+add wave -position end  sim:/ip_scfifo_top_tb/scfifo_top_inst/empty
+add wave -position end  sim:/ip_scfifo_top_tb/scfifo_top_inst/full
+add wave -position end  sim:/ip_scfifo_top_tb/scfifo_top_inst/wr_req
+add wave -position end  sim:/ip_scfifo_top_tb/scfifo_top_inst/wr_data
+add wave -position end  sim:/ip_scfifo_top_tb/scfifo_top_inst/rd_req
+add wave -position end  sim:/ip_scfifo_top_tb/scfifo_top_inst/almost_empty
+add wave -position end  sim:/ip_scfifo_top_tb/scfifo_top_inst/almost_full
+add wave -position end  sim:/ip_scfifo_top_tb/scfifo_top_inst/usedw
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.ip_scfifo_top_tb(fast)
+# Loading work.scfifo_top(fast)
+# Loading work.ip_scfifo(fast)
+# Loading altera_mf_ver.scfifo(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading work.scfifo_ctrl(fast)
+run
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/scfifo/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/scfifo/rtl/scfifo_ctrl.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:46:02 on Aug 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/scfifo/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/scfifo/rtl/scfifo_ctrl.v 
+# -- Compiling module scfifo_ctrl
+# 
+# Top level modules:
+# 	scfifo_ctrl
+# End time: 10:46:03 on Aug 30,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.ip_scfifo_top_tb(fast)
+# Loading work.scfifo_top(fast)
+# Loading work.ip_scfifo(fast)
+# Loading altera_mf_ver.scfifo(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading work.scfifo_ctrl(fast)
+run
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/git-repository/fpga_training/scfifo/prj/simulation/questa/wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/git-repository/fpga_training/scfifo/prj/simulation/questa/wave.do
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/scfifo/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/scfifo/rtl/scfifo_top.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:13:56 on Aug 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/scfifo/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/scfifo/rtl/scfifo_top.v 
+# -- Compiling module scfifo_top
+# 
+# Top level modules:
+# 	scfifo_top
+# End time: 15:13:56 on Aug 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/scfifo/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/scfifo/rtl/scfifo_ctrl.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:13:57 on Aug 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/scfifo/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/scfifo/rtl/scfifo_ctrl.v 
+# -- Compiling module scfifo_ctrl
+# 
+# Top level modules:
+# 	scfifo_ctrl
+# End time: 15:13:57 on Aug 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/scfifo/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/scfifo/sim/ip_scfifo_top_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:13:57 on Aug 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/scfifo/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/scfifo/sim/ip_scfifo_top_tb.v 
+# -- Compiling module ip_scfifo_top_tb
+# 
+# Top level modules:
+# 	ip_scfifo_top_tb
+# End time: 15:13:57 on Aug 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/scfifo/prj -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/scfifo/prj/ip_scfifo.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:13:57 on Aug 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/scfifo/prj" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/scfifo/prj/ip_scfifo.v 
+# -- Compiling module ip_scfifo
+# 
+# Top level modules:
+# 	ip_scfifo
+# End time: 15:13:57 on Aug 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.ip_scfifo_top_tb(fast)
+# Loading work.scfifo_top(fast)
+# Loading work.ip_scfifo(fast)
+# Loading altera_mf_ver.scfifo(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading work.scfifo_ctrl(fast)
+# End time: 15:14:41 on Aug 30,2024, Elapsed time: 4:30:45
+# Errors: 0, Warnings: 0

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Aug 27 17:02:11 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : music_player_top
+Top-level Entity Name : music_player_top
+Family : Cyclone IV E
+Total logic elements : 289
+    Total combinational functions : 289
+    Dedicated logic registers : 89
+Total registers : 89
+Total pins : 3
+Total virtual pins : 0
+Total memory bits : 576
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

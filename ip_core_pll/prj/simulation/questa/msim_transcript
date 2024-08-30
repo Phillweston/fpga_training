@@ -127,3 +127,5 @@
 #    Time: 1010 ns  Iteration: 0  Instance: /top_tb
 # 1
 # Break in Module top_tb at D:/git-repository/fpga_training/ip_core_pll/prj/../sim/top_tb.v line 27
+# End time: 10:37:48 on Aug 27,2024, Elapsed time: 17:18:49
+# Errors: 0, Warnings: 0

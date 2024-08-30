@@ -1,0 +1,188 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/git-repository/fpga_training/dcfifo/prj/simulation/questa
+T_opt
+!s110 1725002892
+VQm1<]FPk1MndPSHn<o=GI0
+04 16 4 work ip_dcfifo_top_tb fast 0
+=4-00d861e3bc76-66d1748c-5a-71b4
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vclk_gen
+Z2 !s110 1725002888
+!i10b 1
+!s100 FAA@fDWUlN8bHQA6lCdPa3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ITL3A1d;?ig3b^U21H0cG92
+R0
+w1724989958
+8D:/git-repository/fpga_training/dcfifo/prj/clk_gen.v
+FD:/git-repository/fpga_training/dcfifo/prj/clk_gen.v
+!i122 13
+L0 40 132
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z6 !s108 1725002888.000000
+!s107 D:/git-repository/fpga_training/dcfifo/prj/clk_gen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/dcfifo/prj|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/dcfifo/prj/clk_gen.v|
+!i113 0
+Z7 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dcfifo/prj -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vclk_gen_altpll
+R2
+!i10b 1
+!s100 iMn?;_B6ddAJVzakjSKXS0
+R3
+IMYS2_Thh1c]>1ciGJ<[ZF0
+R0
+w1724990711
+8D:/git-repository/fpga_training/dcfifo/prj/db/clk_gen_altpll.v
+FD:/git-repository/fpga_training/dcfifo/prj/db/clk_gen_altpll.v
+!i122 12
+L0 31 83
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/git-repository/fpga_training/dcfifo/prj/db/clk_gen_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/dcfifo/prj/db|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/dcfifo/prj/db/clk_gen_altpll.v|
+!i113 0
+R7
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dcfifo/prj/db -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vdcfifo_ip
+R2
+!i10b 1
+!s100 j5=YoN;KgYaKmQPHN@4m43
+R3
+ITV5^1N?ejmG1;UIJ;D1S?2
+R0
+w1724987873
+8D:/git-repository/fpga_training/dcfifo/prj/dcfifo_ip.v
+FD:/git-repository/fpga_training/dcfifo/prj/dcfifo_ip.v
+!i122 11
+L0 40 73
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/git-repository/fpga_training/dcfifo/prj/dcfifo_ip.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/dcfifo/prj|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/dcfifo/prj/dcfifo_ip.v|
+!i113 0
+R7
+R8
+R1
+vdcfifo_rd_ctrl
+R2
+!i10b 1
+!s100 d0Kk]6<@[aHB3T_F8bzL12
+R3
+I=>_?`W0Qch5T>A1d<ZfLf2
+R0
+w1724995349
+8D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_rd_ctrl.v
+FD:/git-repository/fpga_training/dcfifo/rtl/dcfifo_rd_ctrl.v
+!i122 10
+Z9 L0 1 41
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_rd_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/dcfifo/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_rd_ctrl.v|
+!i113 0
+R7
+Z10 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dcfifo/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vdcfifo_top
+R2
+!i10b 1
+!s100 <[GZ48lo[@BnCGDJOggO:0
+R3
+I<fWGjWWmJ4_D218`k_fd]0
+R0
+w1725002878
+8D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_top.v
+FD:/git-repository/fpga_training/dcfifo/rtl/dcfifo_top.v
+!i122 9
+L0 1 58
+R4
+R5
+r1
+!s85 0
+31
+Z11 !s108 1725002887.000000
+!s107 D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/dcfifo/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_top.v|
+!i113 0
+R7
+R10
+R1
+vdcfifo_wr_ctrl
+Z12 !s110 1725002887
+!i10b 1
+!s100 TN]SSAnW:OFEdKJ4Y;=of2
+R3
+IdLQB?@4GMnTg0TiC`Na=a3
+R0
+w1724990508
+8D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_wr_ctrl.v
+FD:/git-repository/fpga_training/dcfifo/rtl/dcfifo_wr_ctrl.v
+!i122 8
+R9
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_wr_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/dcfifo/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_wr_ctrl.v|
+!i113 0
+R7
+R10
+R1
+vip_dcfifo_top_tb
+R12
+!i10b 1
+!s100 XNYeCjF`H?egMk@dhZ@i92
+R3
+IUGDj>2@^YRL:@R2e9<OFA0
+R0
+w1724989195
+8D:/git-repository/fpga_training/dcfifo/sim/ip_dcfifo_top_tb.v
+FD:/git-repository/fpga_training/dcfifo/sim/ip_dcfifo_top_tb.v
+!i122 7
+L0 3 20
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/git-repository/fpga_training/dcfifo/sim/ip_dcfifo_top_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/dcfifo/prj/../sim|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/dcfifo/sim/ip_dcfifo_top_tb.v|
+!i113 0
+R7
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dcfifo/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1

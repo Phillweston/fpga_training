@@ -1,0 +1,3716 @@
+// Copyright (C) 2024  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
+
+// DATE "08/29/2024 18:11:25"
+
+// 
+// Device: Altera EP4CE10F17C8 Package FBGA256
+// 
+
+// 
+// This Verilog file should be used for Questa Intel FPGA (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module pingpong_top (
+	sys_clk,
+	sys_rst_n,
+	ram1_rd_data,
+	ram2_rd_data);
+input 	sys_clk;
+input 	sys_rst_n;
+output 	[7:0] ram1_rd_data;
+output 	[7:0] ram2_rd_data;
+
+// Design Ports Information
+// ram1_rd_data[0]	=>  Location: PIN_B11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ram1_rd_data[1]	=>  Location: PIN_E11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ram1_rd_data[2]	=>  Location: PIN_F11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ram1_rd_data[3]	=>  Location: PIN_D11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ram1_rd_data[4]	=>  Location: PIN_B12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ram1_rd_data[5]	=>  Location: PIN_A11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ram1_rd_data[6]	=>  Location: PIN_A14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ram1_rd_data[7]	=>  Location: PIN_F9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ram2_rd_data[0]	=>  Location: PIN_B13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ram2_rd_data[1]	=>  Location: PIN_E10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ram2_rd_data[2]	=>  Location: PIN_B14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ram2_rd_data[3]	=>  Location: PIN_F10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ram2_rd_data[4]	=>  Location: PIN_A13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ram2_rd_data[5]	=>  Location: PIN_C11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ram2_rd_data[6]	=>  Location: PIN_D12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ram2_rd_data[7]	=>  Location: PIN_A12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// sys_rst_n	=>  Location: PIN_M2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// sys_clk	=>  Location: PIN_E1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \~ALTERA_ASDO_DATA1~~ibuf_o ;
+wire \~ALTERA_ASDO_DATA1~~padout ;
+wire \~ALTERA_FLASH_nCE_nCSO~~ibuf_o ;
+wire \~ALTERA_FLASH_nCE_nCSO~~padout ;
+wire \~ALTERA_DCLK~~padout ;
+wire \~ALTERA_DATA0~~ibuf_o ;
+wire \~ALTERA_DATA0~~padout ;
+wire \~ALTERA_nCEO~~padout ;
+wire \~ALTERA_DCLK~~obuf_o ;
+wire \~ALTERA_nCEO~~obuf_o ;
+wire \sys_rst_n~input_o ;
+wire \sys_rst_n~inputclkctrl_outclk ;
+wire \sys_clk~input_o ;
+wire \clk_gen_inst|altpll_component|auto_generated|wire_pll1_fbout ;
+wire \clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ;
+wire \ram_ctrl_inst|state.IDLE~feeder_combout ;
+wire \clk_gen_inst|altpll_component|auto_generated|wire_pll1_locked ;
+wire \clk_gen_inst|altpll_component|auto_generated|pll_lock_sync~feeder_combout ;
+wire \clk_gen_inst|altpll_component|auto_generated|pll_lock_sync~q ;
+wire \rst_n~0_combout ;
+wire \rst_n~0clkctrl_outclk ;
+wire \ram_ctrl_inst|ram2_wr_addr[2]~0_combout ;
+wire \ram_ctrl_inst|Add1~0_combout ;
+wire \ram_ctrl_inst|ram2_wr_addr[0]~2_combout ;
+wire \ram_ctrl_inst|Add1~1 ;
+wire \ram_ctrl_inst|Add1~2_combout ;
+wire \ram_ctrl_inst|ram2_wr_addr[1]~3_combout ;
+wire \ram_ctrl_inst|Add1~3 ;
+wire \ram_ctrl_inst|Add1~4_combout ;
+wire \ram_ctrl_inst|ram2_wr_addr[2]~4_combout ;
+wire \ram_ctrl_inst|Add1~5 ;
+wire \ram_ctrl_inst|Add1~6_combout ;
+wire \ram_ctrl_inst|ram2_wr_addr[3]~5_combout ;
+wire \ram_ctrl_inst|Equal1~1_combout ;
+wire \ram_ctrl_inst|ram2_wr_addr[7]~1_combout ;
+wire \ram_ctrl_inst|Add1~7 ;
+wire \ram_ctrl_inst|Add1~8_combout ;
+wire \ram_ctrl_inst|ram2_wr_addr[4]~6_combout ;
+wire \ram_ctrl_inst|Add1~9 ;
+wire \ram_ctrl_inst|Add1~10_combout ;
+wire \ram_ctrl_inst|ram2_wr_addr[5]~7_combout ;
+wire \ram_ctrl_inst|Add1~11 ;
+wire \ram_ctrl_inst|Add1~12_combout ;
+wire \ram_ctrl_inst|ram2_wr_addr[6]~8_combout ;
+wire \ram_ctrl_inst|Add1~13 ;
+wire \ram_ctrl_inst|Add1~14_combout ;
+wire \ram_ctrl_inst|ram2_wr_addr[7]~9_combout ;
+wire \ram_ctrl_inst|Equal1~0_combout ;
+wire \ram_ctrl_inst|Selector1~3_combout ;
+wire \data_gen_inst|data_en~feeder_combout ;
+wire \data_gen_inst|data_en~q ;
+wire \ram_ctrl_inst|Selector1~6_combout ;
+wire \ram_ctrl_inst|state.IDLE~q ;
+wire \ram_ctrl_inst|ram1_wr_addr[0]~12_combout ;
+wire \ram_ctrl_inst|Add0~0_combout ;
+wire \ram_ctrl_inst|ram1_wr_addr[0]~4_combout ;
+wire \ram_ctrl_inst|Add0~1 ;
+wire \ram_ctrl_inst|Add0~2_combout ;
+wire \ram_ctrl_inst|ram1_wr_addr[1]~5_combout ;
+wire \ram_ctrl_inst|Add0~3 ;
+wire \ram_ctrl_inst|Add0~4_combout ;
+wire \ram_ctrl_inst|ram1_wr_addr[2]~6_combout ;
+wire \ram_ctrl_inst|Add0~5 ;
+wire \ram_ctrl_inst|Add0~7 ;
+wire \ram_ctrl_inst|Add0~8_combout ;
+wire \ram_ctrl_inst|ram1_wr_addr[4]~8_combout ;
+wire \ram_ctrl_inst|Add0~9 ;
+wire \ram_ctrl_inst|Add0~10_combout ;
+wire \ram_ctrl_inst|ram1_wr_addr[5]~9_combout ;
+wire \ram_ctrl_inst|Add0~11 ;
+wire \ram_ctrl_inst|Add0~12_combout ;
+wire \ram_ctrl_inst|ram1_wr_addr[6]~10_combout ;
+wire \ram_ctrl_inst|Add0~13 ;
+wire \ram_ctrl_inst|Add0~14_combout ;
+wire \ram_ctrl_inst|ram1_wr_addr[7]~11_combout ;
+wire \ram_ctrl_inst|Equal0~0_combout ;
+wire \ram_ctrl_inst|ram1_wr_addr[7]~13_combout ;
+wire \ram_ctrl_inst|Add0~6_combout ;
+wire \ram_ctrl_inst|ram1_wr_addr[3]~7_combout ;
+wire \ram_ctrl_inst|Equal0~1_combout ;
+wire \ram_ctrl_inst|Selector1~4_combout ;
+wire \ram_ctrl_inst|Selector1~5_combout ;
+wire \ram_ctrl_inst|state.WRAM1~q ;
+wire \ram_ctrl_inst|state.WRAM1_RRAM2~q ;
+wire \ram_ctrl_inst|Selector1~2_combout ;
+wire \ram_ctrl_inst|Selector2~0_combout ;
+wire \ram_ctrl_inst|state.WRAM2_RRAM1~q ;
+wire \ram_ctrl_inst|ram1_wr_en~0_combout ;
+wire \clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ;
+wire \ram_ctrl_inst|ram1_rd_en~q ;
+wire \dp_ram_1_inst|altsyncram_component|auto_generated|rden_b_store~q ;
+wire \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0~0_combout ;
+wire \data_gen_inst|data_in[0]~8_combout ;
+wire \data_gen_inst|data_in[0]~9 ;
+wire \data_gen_inst|data_in[1]~10_combout ;
+wire \data_gen_inst|data_in[1]~11 ;
+wire \data_gen_inst|data_in[2]~12_combout ;
+wire \data_gen_inst|data_in[2]~13 ;
+wire \data_gen_inst|data_in[3]~14_combout ;
+wire \data_gen_inst|Equal0~0_combout ;
+wire \data_gen_inst|data_in[3]~15 ;
+wire \data_gen_inst|data_in[4]~16_combout ;
+wire \data_gen_inst|data_in[4]~17 ;
+wire \data_gen_inst|data_in[5]~18_combout ;
+wire \data_gen_inst|data_in[5]~19 ;
+wire \data_gen_inst|data_in[6]~20_combout ;
+wire \data_gen_inst|data_in[6]~21 ;
+wire \data_gen_inst|data_in[7]~22_combout ;
+wire \data_gen_inst|Equal0~1_combout ;
+wire \data_gen_inst|Equal0~2_combout ;
+wire \ram_ctrl_inst|ram1_wr_data[0]~0_combout ;
+wire \ram_ctrl_inst|ram1_rd_addr[0]~8_combout ;
+wire \ram_ctrl_inst|ram1_rd_addr[0]~9 ;
+wire \ram_ctrl_inst|ram1_rd_addr[1]~10_combout ;
+wire \ram_ctrl_inst|ram1_rd_addr[1]~11 ;
+wire \ram_ctrl_inst|ram1_rd_addr[2]~12_combout ;
+wire \ram_ctrl_inst|ram1_rd_addr[2]~13 ;
+wire \ram_ctrl_inst|ram1_rd_addr[3]~14_combout ;
+wire \ram_ctrl_inst|ram1_rd_addr[3]~15 ;
+wire \ram_ctrl_inst|ram1_rd_addr[4]~16_combout ;
+wire \ram_ctrl_inst|ram1_rd_addr[4]~17 ;
+wire \ram_ctrl_inst|ram1_rd_addr[5]~18_combout ;
+wire \ram_ctrl_inst|ram1_rd_addr[5]~19 ;
+wire \ram_ctrl_inst|ram1_rd_addr[6]~20_combout ;
+wire \ram_ctrl_inst|ram1_rd_addr[6]~21 ;
+wire \ram_ctrl_inst|ram1_rd_addr[7]~22_combout ;
+wire \ram_ctrl_inst|Equal2~1_combout ;
+wire \ram_ctrl_inst|Equal2~0_combout ;
+wire \ram_ctrl_inst|Equal2~2_combout ;
+wire \ram_ctrl_inst|ram1_wr_data[1]~1_combout ;
+wire \ram_ctrl_inst|ram1_wr_data[2]~2_combout ;
+wire \ram_ctrl_inst|ram1_wr_data[3]~3_combout ;
+wire \ram_ctrl_inst|ram1_wr_data[4]~4_combout ;
+wire \ram_ctrl_inst|data_reg[5]~feeder_combout ;
+wire \ram_ctrl_inst|ram1_wr_data[5]~5_combout ;
+wire \ram_ctrl_inst|ram1_wr_data[6]~6_combout ;
+wire \ram_ctrl_inst|ram1_wr_data[7]~7_combout ;
+wire \ram_ctrl_inst|ram2_rd_en~feeder_combout ;
+wire \ram_ctrl_inst|ram2_rd_en~q ;
+wire \dp_ram_2_inst|altsyncram_component|auto_generated|rden_b_store~q ;
+wire \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0~0_combout ;
+wire \ram_ctrl_inst|ram2_wr_data[0]~0_combout ;
+wire \ram_ctrl_inst|ram2_rd_addr[0]~8_combout ;
+wire \ram_ctrl_inst|ram2_rd_addr[0]~9 ;
+wire \ram_ctrl_inst|ram2_rd_addr[1]~10_combout ;
+wire \ram_ctrl_inst|ram2_rd_addr[1]~11 ;
+wire \ram_ctrl_inst|ram2_rd_addr[2]~12_combout ;
+wire \ram_ctrl_inst|ram2_rd_addr[2]~13 ;
+wire \ram_ctrl_inst|ram2_rd_addr[3]~14_combout ;
+wire \ram_ctrl_inst|Equal3~0_combout ;
+wire \ram_ctrl_inst|ram2_rd_addr[3]~15 ;
+wire \ram_ctrl_inst|ram2_rd_addr[4]~16_combout ;
+wire \ram_ctrl_inst|ram2_rd_addr[4]~17 ;
+wire \ram_ctrl_inst|ram2_rd_addr[5]~18_combout ;
+wire \ram_ctrl_inst|ram2_rd_addr[5]~19 ;
+wire \ram_ctrl_inst|ram2_rd_addr[6]~20_combout ;
+wire \ram_ctrl_inst|ram2_rd_addr[6]~21 ;
+wire \ram_ctrl_inst|ram2_rd_addr[7]~22_combout ;
+wire \ram_ctrl_inst|Equal3~1_combout ;
+wire \ram_ctrl_inst|Equal3~2_combout ;
+wire \ram_ctrl_inst|ram2_wr_data[1]~1_combout ;
+wire \ram_ctrl_inst|ram2_wr_data[2]~2_combout ;
+wire \ram_ctrl_inst|ram2_wr_data[3]~3_combout ;
+wire \ram_ctrl_inst|ram2_wr_data[4]~4_combout ;
+wire \ram_ctrl_inst|ram2_wr_data[5]~5_combout ;
+wire \ram_ctrl_inst|ram2_wr_data[6]~6_combout ;
+wire \ram_ctrl_inst|ram2_wr_data[7]~7_combout ;
+wire [7:0] \dp_ram_1_inst|altsyncram_component|auto_generated|q_b ;
+wire [7:0] \ram_ctrl_inst|ram2_rd_addr ;
+wire [7:0] \ram_ctrl_inst|ram1_wr_addr ;
+wire [7:0] \dp_ram_2_inst|altsyncram_component|auto_generated|q_b ;
+wire [4:0] \clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk ;
+wire [7:0] \ram_ctrl_inst|ram1_rd_addr ;
+wire [7:0] \data_gen_inst|data_in ;
+wire [7:0] \ram_ctrl_inst|data_reg ;
+wire [7:0] \ram_ctrl_inst|ram2_wr_addr ;
+
+wire [35:0] \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus ;
+wire [35:0] \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus ;
+wire [4:0] \clk_gen_inst|altpll_component|auto_generated|pll1_CLK_bus ;
+
+assign \dp_ram_1_inst|altsyncram_component|auto_generated|q_b [0] = \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [0];
+assign \dp_ram_1_inst|altsyncram_component|auto_generated|q_b [1] = \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [1];
+assign \dp_ram_1_inst|altsyncram_component|auto_generated|q_b [2] = \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [2];
+assign \dp_ram_1_inst|altsyncram_component|auto_generated|q_b [3] = \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [3];
+assign \dp_ram_1_inst|altsyncram_component|auto_generated|q_b [4] = \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [4];
+assign \dp_ram_1_inst|altsyncram_component|auto_generated|q_b [5] = \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [5];
+assign \dp_ram_1_inst|altsyncram_component|auto_generated|q_b [6] = \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [6];
+assign \dp_ram_1_inst|altsyncram_component|auto_generated|q_b [7] = \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [7];
+
+assign \dp_ram_2_inst|altsyncram_component|auto_generated|q_b [0] = \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [0];
+assign \dp_ram_2_inst|altsyncram_component|auto_generated|q_b [1] = \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [1];
+assign \dp_ram_2_inst|altsyncram_component|auto_generated|q_b [2] = \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [2];
+assign \dp_ram_2_inst|altsyncram_component|auto_generated|q_b [3] = \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [3];
+assign \dp_ram_2_inst|altsyncram_component|auto_generated|q_b [4] = \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [4];
+assign \dp_ram_2_inst|altsyncram_component|auto_generated|q_b [5] = \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [5];
+assign \dp_ram_2_inst|altsyncram_component|auto_generated|q_b [6] = \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [6];
+assign \dp_ram_2_inst|altsyncram_component|auto_generated|q_b [7] = \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus [7];
+
+assign \clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk [0] = \clk_gen_inst|altpll_component|auto_generated|pll1_CLK_bus [0];
+assign \clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk [1] = \clk_gen_inst|altpll_component|auto_generated|pll1_CLK_bus [1];
+assign \clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk [2] = \clk_gen_inst|altpll_component|auto_generated|pll1_CLK_bus [2];
+assign \clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk [3] = \clk_gen_inst|altpll_component|auto_generated|pll1_CLK_bus [3];
+assign \clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk [4] = \clk_gen_inst|altpll_component|auto_generated|pll1_CLK_bus [4];
+
+// Location: IOOBUF_X25_Y24_N23
+cycloneive_io_obuf \ram1_rd_data[0]~output (
+	.i(\dp_ram_1_inst|altsyncram_component|auto_generated|q_b [0]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ram1_rd_data[0]),
+	.obar());
+// synopsys translate_off
+defparam \ram1_rd_data[0]~output .bus_hold = "false";
+defparam \ram1_rd_data[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X28_Y24_N16
+cycloneive_io_obuf \ram1_rd_data[1]~output (
+	.i(\dp_ram_1_inst|altsyncram_component|auto_generated|q_b [1]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ram1_rd_data[1]),
+	.obar());
+// synopsys translate_off
+defparam \ram1_rd_data[1]~output .bus_hold = "false";
+defparam \ram1_rd_data[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X23_Y24_N23
+cycloneive_io_obuf \ram1_rd_data[2]~output (
+	.i(\dp_ram_1_inst|altsyncram_component|auto_generated|q_b [2]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ram1_rd_data[2]),
+	.obar());
+// synopsys translate_off
+defparam \ram1_rd_data[2]~output .bus_hold = "false";
+defparam \ram1_rd_data[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X32_Y24_N23
+cycloneive_io_obuf \ram1_rd_data[3]~output (
+	.i(\dp_ram_1_inst|altsyncram_component|auto_generated|q_b [3]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ram1_rd_data[3]),
+	.obar());
+// synopsys translate_off
+defparam \ram1_rd_data[3]~output .bus_hold = "false";
+defparam \ram1_rd_data[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X25_Y24_N9
+cycloneive_io_obuf \ram1_rd_data[4]~output (
+	.i(\dp_ram_1_inst|altsyncram_component|auto_generated|q_b [4]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ram1_rd_data[4]),
+	.obar());
+// synopsys translate_off
+defparam \ram1_rd_data[4]~output .bus_hold = "false";
+defparam \ram1_rd_data[4]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X25_Y24_N16
+cycloneive_io_obuf \ram1_rd_data[5]~output (
+	.i(\dp_ram_1_inst|altsyncram_component|auto_generated|q_b [5]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ram1_rd_data[5]),
+	.obar());
+// synopsys translate_off
+defparam \ram1_rd_data[5]~output .bus_hold = "false";
+defparam \ram1_rd_data[5]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X28_Y24_N2
+cycloneive_io_obuf \ram1_rd_data[6]~output (
+	.i(\dp_ram_1_inst|altsyncram_component|auto_generated|q_b [6]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ram1_rd_data[6]),
+	.obar());
+// synopsys translate_off
+defparam \ram1_rd_data[6]~output .bus_hold = "false";
+defparam \ram1_rd_data[6]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X23_Y24_N16
+cycloneive_io_obuf \ram1_rd_data[7]~output (
+	.i(\dp_ram_1_inst|altsyncram_component|auto_generated|q_b [7]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ram1_rd_data[7]),
+	.obar());
+// synopsys translate_off
+defparam \ram1_rd_data[7]~output .bus_hold = "false";
+defparam \ram1_rd_data[7]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X30_Y24_N23
+cycloneive_io_obuf \ram2_rd_data[0]~output (
+	.i(\dp_ram_2_inst|altsyncram_component|auto_generated|q_b [0]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ram2_rd_data[0]),
+	.obar());
+// synopsys translate_off
+defparam \ram2_rd_data[0]~output .bus_hold = "false";
+defparam \ram2_rd_data[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X28_Y24_N23
+cycloneive_io_obuf \ram2_rd_data[1]~output (
+	.i(\dp_ram_2_inst|altsyncram_component|auto_generated|q_b [1]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ram2_rd_data[1]),
+	.obar());
+// synopsys translate_off
+defparam \ram2_rd_data[1]~output .bus_hold = "false";
+defparam \ram2_rd_data[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X28_Y24_N9
+cycloneive_io_obuf \ram2_rd_data[2]~output (
+	.i(\dp_ram_2_inst|altsyncram_component|auto_generated|q_b [2]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ram2_rd_data[2]),
+	.obar());
+// synopsys translate_off
+defparam \ram2_rd_data[2]~output .bus_hold = "false";
+defparam \ram2_rd_data[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X23_Y24_N9
+cycloneive_io_obuf \ram2_rd_data[3]~output (
+	.i(\dp_ram_2_inst|altsyncram_component|auto_generated|q_b [3]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ram2_rd_data[3]),
+	.obar());
+// synopsys translate_off
+defparam \ram2_rd_data[3]~output .bus_hold = "false";
+defparam \ram2_rd_data[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X30_Y24_N9
+cycloneive_io_obuf \ram2_rd_data[4]~output (
+	.i(\dp_ram_2_inst|altsyncram_component|auto_generated|q_b [4]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ram2_rd_data[4]),
+	.obar());
+// synopsys translate_off
+defparam \ram2_rd_data[4]~output .bus_hold = "false";
+defparam \ram2_rd_data[4]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X23_Y24_N2
+cycloneive_io_obuf \ram2_rd_data[5]~output (
+	.i(\dp_ram_2_inst|altsyncram_component|auto_generated|q_b [5]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ram2_rd_data[5]),
+	.obar());
+// synopsys translate_off
+defparam \ram2_rd_data[5]~output .bus_hold = "false";
+defparam \ram2_rd_data[5]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X30_Y24_N2
+cycloneive_io_obuf \ram2_rd_data[6]~output (
+	.i(\dp_ram_2_inst|altsyncram_component|auto_generated|q_b [6]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ram2_rd_data[6]),
+	.obar());
+// synopsys translate_off
+defparam \ram2_rd_data[6]~output .bus_hold = "false";
+defparam \ram2_rd_data[6]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X25_Y24_N2
+cycloneive_io_obuf \ram2_rd_data[7]~output (
+	.i(\dp_ram_2_inst|altsyncram_component|auto_generated|q_b [7]),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(ram2_rd_data[7]),
+	.obar());
+// synopsys translate_off
+defparam \ram2_rd_data[7]~output .bus_hold = "false";
+defparam \ram2_rd_data[7]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y11_N15
+cycloneive_io_ibuf \sys_rst_n~input (
+	.i(sys_rst_n),
+	.ibar(gnd),
+	.o(\sys_rst_n~input_o ));
+// synopsys translate_off
+defparam \sys_rst_n~input .bus_hold = "false";
+defparam \sys_rst_n~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: CLKCTRL_G1
+cycloneive_clkctrl \sys_rst_n~inputclkctrl (
+	.ena(vcc),
+	.inclk({vcc,vcc,vcc,\sys_rst_n~input_o }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\sys_rst_n~inputclkctrl_outclk ));
+// synopsys translate_off
+defparam \sys_rst_n~inputclkctrl .clock_type = "global clock";
+defparam \sys_rst_n~inputclkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y11_N8
+cycloneive_io_ibuf \sys_clk~input (
+	.i(sys_clk),
+	.ibar(gnd),
+	.o(\sys_clk~input_o ));
+// synopsys translate_off
+defparam \sys_clk~input .bus_hold = "false";
+defparam \sys_clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: PLL_1
+cycloneive_pll \clk_gen_inst|altpll_component|auto_generated|pll1 (
+	.areset(!\sys_rst_n~inputclkctrl_outclk ),
+	.pfdena(vcc),
+	.fbin(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_fbout ),
+	.phaseupdown(gnd),
+	.phasestep(gnd),
+	.scandata(gnd),
+	.scanclk(gnd),
+	.scanclkena(vcc),
+	.configupdate(gnd),
+	.clkswitch(gnd),
+	.inclk({gnd,\sys_clk~input_o }),
+	.phasecounterselect(3'b000),
+	.phasedone(),
+	.scandataout(),
+	.scandone(),
+	.activeclock(),
+	.locked(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_locked ),
+	.vcooverrange(),
+	.vcounderrange(),
+	.fbout(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_fbout ),
+	.clk(\clk_gen_inst|altpll_component|auto_generated|pll1_CLK_bus ),
+	.clkbad());
+// synopsys translate_off
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .auto_settings = "false";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .bandwidth_type = "medium";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c0_high = 6;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c0_initial = 1;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c0_low = 6;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c0_mode = "even";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c0_ph = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c1_high = 12;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c1_initial = 1;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c1_low = 12;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c1_mode = "even";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c1_ph = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c1_use_casc_in = "off";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c2_high = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c2_initial = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c2_low = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c2_mode = "bypass";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c2_ph = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c2_use_casc_in = "off";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c3_high = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c3_initial = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c3_low = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c3_mode = "bypass";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c3_ph = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c3_use_casc_in = "off";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c4_high = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c4_initial = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c4_low = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c4_mode = "bypass";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c4_ph = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .c4_use_casc_in = "off";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .charge_pump_current_bits = 1;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk0_counter = "c0";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk0_divide_by = 1;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk0_duty_cycle = 50;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk0_multiply_by = 1;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk0_phase_shift = "0";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk1_counter = "c1";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk1_divide_by = 2;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk1_duty_cycle = 50;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk1_multiply_by = 1;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk1_phase_shift = "0";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk2_counter = "unused";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk2_divide_by = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk2_duty_cycle = 50;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk2_multiply_by = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk2_phase_shift = "0";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk3_counter = "unused";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk3_divide_by = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk3_duty_cycle = 50;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk3_multiply_by = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk3_phase_shift = "0";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk4_counter = "unused";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk4_divide_by = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk4_duty_cycle = 50;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk4_multiply_by = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .clk4_phase_shift = "0";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .compensate_clock = "clock0";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .inclk0_input_frequency = 20000;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .inclk1_input_frequency = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .loop_filter_c_bits = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .loop_filter_r_bits = 27;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .m = 12;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .m_initial = 1;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .m_ph = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .n = 1;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .operation_mode = "normal";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .pfd_max = 200000;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .pfd_min = 3076;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .self_reset_on_loss_lock = "off";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .simulation_type = "functional";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .switch_over_type = "auto";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .vco_center = 1538;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .vco_divide_by = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .vco_frequency_control = "auto";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .vco_max = 3333;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .vco_min = 1538;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .vco_multiply_by = 0;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .vco_phase_shift_step = 208;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll1 .vco_post_scale = 2;
+// synopsys translate_on
+
+// Location: CLKCTRL_G3
+cycloneive_clkctrl \clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl (
+	.ena(vcc),
+	.inclk({vcc,vcc,vcc,\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk [0]}),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ));
+// synopsys translate_off
+defparam \clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl .clock_type = "global clock";
+defparam \clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y20_N18
+cycloneive_lcell_comb \ram_ctrl_inst|state.IDLE~feeder (
+// Equation(s):
+// \ram_ctrl_inst|state.IDLE~feeder_combout  = VCC
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|state.IDLE~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|state.IDLE~feeder .lut_mask = 16'hFFFF;
+defparam \ram_ctrl_inst|state.IDLE~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y10_N0
+cycloneive_lcell_comb \clk_gen_inst|altpll_component|auto_generated|pll_lock_sync~feeder (
+// Equation(s):
+// \clk_gen_inst|altpll_component|auto_generated|pll_lock_sync~feeder_combout  = VCC
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\clk_gen_inst|altpll_component|auto_generated|pll_lock_sync~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \clk_gen_inst|altpll_component|auto_generated|pll_lock_sync~feeder .lut_mask = 16'hFFFF;
+defparam \clk_gen_inst|altpll_component|auto_generated|pll_lock_sync~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X1_Y10_N1
+dffeas \clk_gen_inst|altpll_component|auto_generated|pll_lock_sync (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_locked ),
+	.d(\clk_gen_inst|altpll_component|auto_generated|pll_lock_sync~feeder_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\clk_gen_inst|altpll_component|auto_generated|pll_lock_sync~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \clk_gen_inst|altpll_component|auto_generated|pll_lock_sync .is_wysiwyg = "true";
+defparam \clk_gen_inst|altpll_component|auto_generated|pll_lock_sync .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y11_N16
+cycloneive_lcell_comb \rst_n~0 (
+// Equation(s):
+// \rst_n~0_combout  = ((!\clk_gen_inst|altpll_component|auto_generated|pll_lock_sync~q ) # (!\clk_gen_inst|altpll_component|auto_generated|wire_pll1_locked )) # (!\sys_rst_n~input_o )
+
+	.dataa(gnd),
+	.datab(\sys_rst_n~input_o ),
+	.datac(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_locked ),
+	.datad(\clk_gen_inst|altpll_component|auto_generated|pll_lock_sync~q ),
+	.cin(gnd),
+	.combout(\rst_n~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \rst_n~0 .lut_mask = 16'h3FFF;
+defparam \rst_n~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: CLKCTRL_G2
+cycloneive_clkctrl \rst_n~0clkctrl (
+	.ena(vcc),
+	.inclk({vcc,vcc,vcc,\rst_n~0_combout }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\rst_n~0clkctrl_outclk ));
+// synopsys translate_off
+defparam \rst_n~0clkctrl .clock_type = "global clock";
+defparam \rst_n~0clkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y20_N6
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_wr_addr[2]~0 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_wr_addr[2]~0_combout  = (\ram_ctrl_inst|state.WRAM2_RRAM1~q ) # ((\ram_ctrl_inst|Equal1~0_combout  & \ram_ctrl_inst|Equal1~1_combout ))
+
+	.dataa(\ram_ctrl_inst|Equal1~0_combout ),
+	.datab(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.datac(\ram_ctrl_inst|Equal1~1_combout ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram2_wr_addr[2]~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_addr[2]~0 .lut_mask = 16'hECEC;
+defparam \ram_ctrl_inst|ram2_wr_addr[2]~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y21_N14
+cycloneive_lcell_comb \ram_ctrl_inst|Add1~0 (
+// Equation(s):
+// \ram_ctrl_inst|Add1~0_combout  = \ram_ctrl_inst|ram2_wr_addr [0] $ (VCC)
+// \ram_ctrl_inst|Add1~1  = CARRY(\ram_ctrl_inst|ram2_wr_addr [0])
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|ram2_wr_addr [0]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|Add1~0_combout ),
+	.cout(\ram_ctrl_inst|Add1~1 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|Add1~0 .lut_mask = 16'h33CC;
+defparam \ram_ctrl_inst|Add1~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y21_N0
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_wr_addr[0]~2 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_wr_addr[0]~2_combout  = (\ram_ctrl_inst|ram2_wr_addr[7]~1_combout  & (((\ram_ctrl_inst|ram2_wr_addr [0] & !\ram_ctrl_inst|ram2_wr_addr[2]~0_combout )))) # (!\ram_ctrl_inst|ram2_wr_addr[7]~1_combout  & ((\ram_ctrl_inst|Add1~0_combout ) 
+// # ((\ram_ctrl_inst|ram2_wr_addr [0] & !\ram_ctrl_inst|ram2_wr_addr[2]~0_combout ))))
+
+	.dataa(\ram_ctrl_inst|ram2_wr_addr[7]~1_combout ),
+	.datab(\ram_ctrl_inst|Add1~0_combout ),
+	.datac(\ram_ctrl_inst|ram2_wr_addr [0]),
+	.datad(\ram_ctrl_inst|ram2_wr_addr[2]~0_combout ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram2_wr_addr[0]~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_addr[0]~2 .lut_mask = 16'h44F4;
+defparam \ram_ctrl_inst|ram2_wr_addr[0]~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X28_Y21_N1
+dffeas \ram_ctrl_inst|ram2_wr_addr[0] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram2_wr_addr[0]~2_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram2_wr_addr [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_addr[0] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram2_wr_addr[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y21_N16
+cycloneive_lcell_comb \ram_ctrl_inst|Add1~2 (
+// Equation(s):
+// \ram_ctrl_inst|Add1~2_combout  = (\ram_ctrl_inst|ram2_wr_addr [1] & (!\ram_ctrl_inst|Add1~1 )) # (!\ram_ctrl_inst|ram2_wr_addr [1] & ((\ram_ctrl_inst|Add1~1 ) # (GND)))
+// \ram_ctrl_inst|Add1~3  = CARRY((!\ram_ctrl_inst|Add1~1 ) # (!\ram_ctrl_inst|ram2_wr_addr [1]))
+
+	.dataa(\ram_ctrl_inst|ram2_wr_addr [1]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|Add1~1 ),
+	.combout(\ram_ctrl_inst|Add1~2_combout ),
+	.cout(\ram_ctrl_inst|Add1~3 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|Add1~2 .lut_mask = 16'h5A5F;
+defparam \ram_ctrl_inst|Add1~2 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y21_N10
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_wr_addr[1]~3 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_wr_addr[1]~3_combout  = (\ram_ctrl_inst|ram2_wr_addr[7]~1_combout  & (!\ram_ctrl_inst|ram2_wr_addr[2]~0_combout  & (\ram_ctrl_inst|ram2_wr_addr [1]))) # (!\ram_ctrl_inst|ram2_wr_addr[7]~1_combout  & ((\ram_ctrl_inst|Add1~2_combout ) # 
+// ((!\ram_ctrl_inst|ram2_wr_addr[2]~0_combout  & \ram_ctrl_inst|ram2_wr_addr [1]))))
+
+	.dataa(\ram_ctrl_inst|ram2_wr_addr[7]~1_combout ),
+	.datab(\ram_ctrl_inst|ram2_wr_addr[2]~0_combout ),
+	.datac(\ram_ctrl_inst|ram2_wr_addr [1]),
+	.datad(\ram_ctrl_inst|Add1~2_combout ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram2_wr_addr[1]~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_addr[1]~3 .lut_mask = 16'h7530;
+defparam \ram_ctrl_inst|ram2_wr_addr[1]~3 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X28_Y21_N11
+dffeas \ram_ctrl_inst|ram2_wr_addr[1] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram2_wr_addr[1]~3_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram2_wr_addr [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_addr[1] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram2_wr_addr[1] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y21_N18
+cycloneive_lcell_comb \ram_ctrl_inst|Add1~4 (
+// Equation(s):
+// \ram_ctrl_inst|Add1~4_combout  = (\ram_ctrl_inst|ram2_wr_addr [2] & (\ram_ctrl_inst|Add1~3  $ (GND))) # (!\ram_ctrl_inst|ram2_wr_addr [2] & (!\ram_ctrl_inst|Add1~3  & VCC))
+// \ram_ctrl_inst|Add1~5  = CARRY((\ram_ctrl_inst|ram2_wr_addr [2] & !\ram_ctrl_inst|Add1~3 ))
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|ram2_wr_addr [2]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|Add1~3 ),
+	.combout(\ram_ctrl_inst|Add1~4_combout ),
+	.cout(\ram_ctrl_inst|Add1~5 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|Add1~4 .lut_mask = 16'hC30C;
+defparam \ram_ctrl_inst|Add1~4 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y20_N22
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_wr_addr[2]~4 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_wr_addr[2]~4_combout  = (\ram_ctrl_inst|ram2_wr_addr[7]~1_combout  & (!\ram_ctrl_inst|state.WRAM2_RRAM1~q  & (\ram_ctrl_inst|ram2_wr_addr [2]))) # (!\ram_ctrl_inst|ram2_wr_addr[7]~1_combout  & ((\ram_ctrl_inst|Add1~4_combout ) # 
+// ((!\ram_ctrl_inst|state.WRAM2_RRAM1~q  & \ram_ctrl_inst|ram2_wr_addr [2]))))
+
+	.dataa(\ram_ctrl_inst|ram2_wr_addr[7]~1_combout ),
+	.datab(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.datac(\ram_ctrl_inst|ram2_wr_addr [2]),
+	.datad(\ram_ctrl_inst|Add1~4_combout ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram2_wr_addr[2]~4_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_addr[2]~4 .lut_mask = 16'h7530;
+defparam \ram_ctrl_inst|ram2_wr_addr[2]~4 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X28_Y20_N23
+dffeas \ram_ctrl_inst|ram2_wr_addr[2] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram2_wr_addr[2]~4_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram2_wr_addr [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_addr[2] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram2_wr_addr[2] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y21_N20
+cycloneive_lcell_comb \ram_ctrl_inst|Add1~6 (
+// Equation(s):
+// \ram_ctrl_inst|Add1~6_combout  = (\ram_ctrl_inst|ram2_wr_addr [3] & (!\ram_ctrl_inst|Add1~5 )) # (!\ram_ctrl_inst|ram2_wr_addr [3] & ((\ram_ctrl_inst|Add1~5 ) # (GND)))
+// \ram_ctrl_inst|Add1~7  = CARRY((!\ram_ctrl_inst|Add1~5 ) # (!\ram_ctrl_inst|ram2_wr_addr [3]))
+
+	.dataa(\ram_ctrl_inst|ram2_wr_addr [3]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|Add1~5 ),
+	.combout(\ram_ctrl_inst|Add1~6_combout ),
+	.cout(\ram_ctrl_inst|Add1~7 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|Add1~6 .lut_mask = 16'h5A5F;
+defparam \ram_ctrl_inst|Add1~6 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y21_N12
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_wr_addr[3]~5 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_wr_addr[3]~5_combout  = (\ram_ctrl_inst|ram2_wr_addr[7]~1_combout  & (!\ram_ctrl_inst|state.WRAM2_RRAM1~q  & (\ram_ctrl_inst|ram2_wr_addr [3]))) # (!\ram_ctrl_inst|ram2_wr_addr[7]~1_combout  & ((\ram_ctrl_inst|Add1~6_combout ) # 
+// ((!\ram_ctrl_inst|state.WRAM2_RRAM1~q  & \ram_ctrl_inst|ram2_wr_addr [3]))))
+
+	.dataa(\ram_ctrl_inst|ram2_wr_addr[7]~1_combout ),
+	.datab(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.datac(\ram_ctrl_inst|ram2_wr_addr [3]),
+	.datad(\ram_ctrl_inst|Add1~6_combout ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram2_wr_addr[3]~5_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_addr[3]~5 .lut_mask = 16'h7530;
+defparam \ram_ctrl_inst|ram2_wr_addr[3]~5 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X28_Y21_N13
+dffeas \ram_ctrl_inst|ram2_wr_addr[3] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram2_wr_addr[3]~5_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram2_wr_addr [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_addr[3] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram2_wr_addr[3] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y21_N30
+cycloneive_lcell_comb \ram_ctrl_inst|Equal1~1 (
+// Equation(s):
+// \ram_ctrl_inst|Equal1~1_combout  = (!\ram_ctrl_inst|ram2_wr_addr [3] & (\ram_ctrl_inst|ram2_wr_addr [0] & (!\ram_ctrl_inst|ram2_wr_addr [2] & \ram_ctrl_inst|ram2_wr_addr [1])))
+
+	.dataa(\ram_ctrl_inst|ram2_wr_addr [3]),
+	.datab(\ram_ctrl_inst|ram2_wr_addr [0]),
+	.datac(\ram_ctrl_inst|ram2_wr_addr [2]),
+	.datad(\ram_ctrl_inst|ram2_wr_addr [1]),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|Equal1~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|Equal1~1 .lut_mask = 16'h0400;
+defparam \ram_ctrl_inst|Equal1~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y20_N16
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_wr_addr[7]~1 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_wr_addr[7]~1_combout  = ((\ram_ctrl_inst|Equal1~0_combout  & \ram_ctrl_inst|Equal1~1_combout )) # (!\ram_ctrl_inst|state.WRAM2_RRAM1~q )
+
+	.dataa(\ram_ctrl_inst|Equal1~0_combout ),
+	.datab(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.datac(\ram_ctrl_inst|Equal1~1_combout ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram2_wr_addr[7]~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_addr[7]~1 .lut_mask = 16'hB3B3;
+defparam \ram_ctrl_inst|ram2_wr_addr[7]~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y21_N22
+cycloneive_lcell_comb \ram_ctrl_inst|Add1~8 (
+// Equation(s):
+// \ram_ctrl_inst|Add1~8_combout  = (\ram_ctrl_inst|ram2_wr_addr [4] & (\ram_ctrl_inst|Add1~7  $ (GND))) # (!\ram_ctrl_inst|ram2_wr_addr [4] & (!\ram_ctrl_inst|Add1~7  & VCC))
+// \ram_ctrl_inst|Add1~9  = CARRY((\ram_ctrl_inst|ram2_wr_addr [4] & !\ram_ctrl_inst|Add1~7 ))
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|ram2_wr_addr [4]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|Add1~7 ),
+	.combout(\ram_ctrl_inst|Add1~8_combout ),
+	.cout(\ram_ctrl_inst|Add1~9 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|Add1~8 .lut_mask = 16'hC30C;
+defparam \ram_ctrl_inst|Add1~8 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y20_N0
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_wr_addr[4]~6 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_wr_addr[4]~6_combout  = (\ram_ctrl_inst|ram2_wr_addr[7]~1_combout  & (((\ram_ctrl_inst|ram2_wr_addr [4] & !\ram_ctrl_inst|state.WRAM2_RRAM1~q )))) # (!\ram_ctrl_inst|ram2_wr_addr[7]~1_combout  & ((\ram_ctrl_inst|Add1~8_combout ) # 
+// ((\ram_ctrl_inst|ram2_wr_addr [4] & !\ram_ctrl_inst|state.WRAM2_RRAM1~q ))))
+
+	.dataa(\ram_ctrl_inst|ram2_wr_addr[7]~1_combout ),
+	.datab(\ram_ctrl_inst|Add1~8_combout ),
+	.datac(\ram_ctrl_inst|ram2_wr_addr [4]),
+	.datad(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram2_wr_addr[4]~6_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_addr[4]~6 .lut_mask = 16'h44F4;
+defparam \ram_ctrl_inst|ram2_wr_addr[4]~6 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X28_Y20_N1
+dffeas \ram_ctrl_inst|ram2_wr_addr[4] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram2_wr_addr[4]~6_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram2_wr_addr [4]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_addr[4] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram2_wr_addr[4] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y21_N24
+cycloneive_lcell_comb \ram_ctrl_inst|Add1~10 (
+// Equation(s):
+// \ram_ctrl_inst|Add1~10_combout  = (\ram_ctrl_inst|ram2_wr_addr [5] & (!\ram_ctrl_inst|Add1~9 )) # (!\ram_ctrl_inst|ram2_wr_addr [5] & ((\ram_ctrl_inst|Add1~9 ) # (GND)))
+// \ram_ctrl_inst|Add1~11  = CARRY((!\ram_ctrl_inst|Add1~9 ) # (!\ram_ctrl_inst|ram2_wr_addr [5]))
+
+	.dataa(\ram_ctrl_inst|ram2_wr_addr [5]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|Add1~9 ),
+	.combout(\ram_ctrl_inst|Add1~10_combout ),
+	.cout(\ram_ctrl_inst|Add1~11 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|Add1~10 .lut_mask = 16'h5A5F;
+defparam \ram_ctrl_inst|Add1~10 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y21_N6
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_wr_addr[5]~7 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_wr_addr[5]~7_combout  = (\ram_ctrl_inst|ram2_wr_addr[7]~1_combout  & (!\ram_ctrl_inst|ram2_wr_addr[2]~0_combout  & (\ram_ctrl_inst|ram2_wr_addr [5]))) # (!\ram_ctrl_inst|ram2_wr_addr[7]~1_combout  & ((\ram_ctrl_inst|Add1~10_combout ) # 
+// ((!\ram_ctrl_inst|ram2_wr_addr[2]~0_combout  & \ram_ctrl_inst|ram2_wr_addr [5]))))
+
+	.dataa(\ram_ctrl_inst|ram2_wr_addr[7]~1_combout ),
+	.datab(\ram_ctrl_inst|ram2_wr_addr[2]~0_combout ),
+	.datac(\ram_ctrl_inst|ram2_wr_addr [5]),
+	.datad(\ram_ctrl_inst|Add1~10_combout ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram2_wr_addr[5]~7_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_addr[5]~7 .lut_mask = 16'h7530;
+defparam \ram_ctrl_inst|ram2_wr_addr[5]~7 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X28_Y21_N7
+dffeas \ram_ctrl_inst|ram2_wr_addr[5] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram2_wr_addr[5]~7_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram2_wr_addr [5]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_addr[5] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram2_wr_addr[5] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y21_N26
+cycloneive_lcell_comb \ram_ctrl_inst|Add1~12 (
+// Equation(s):
+// \ram_ctrl_inst|Add1~12_combout  = (\ram_ctrl_inst|ram2_wr_addr [6] & (\ram_ctrl_inst|Add1~11  $ (GND))) # (!\ram_ctrl_inst|ram2_wr_addr [6] & (!\ram_ctrl_inst|Add1~11  & VCC))
+// \ram_ctrl_inst|Add1~13  = CARRY((\ram_ctrl_inst|ram2_wr_addr [6] & !\ram_ctrl_inst|Add1~11 ))
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|ram2_wr_addr [6]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|Add1~11 ),
+	.combout(\ram_ctrl_inst|Add1~12_combout ),
+	.cout(\ram_ctrl_inst|Add1~13 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|Add1~12 .lut_mask = 16'hC30C;
+defparam \ram_ctrl_inst|Add1~12 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y21_N8
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_wr_addr[6]~8 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_wr_addr[6]~8_combout  = (\ram_ctrl_inst|ram2_wr_addr[7]~1_combout  & (!\ram_ctrl_inst|ram2_wr_addr[2]~0_combout  & (\ram_ctrl_inst|ram2_wr_addr [6]))) # (!\ram_ctrl_inst|ram2_wr_addr[7]~1_combout  & ((\ram_ctrl_inst|Add1~12_combout ) # 
+// ((!\ram_ctrl_inst|ram2_wr_addr[2]~0_combout  & \ram_ctrl_inst|ram2_wr_addr [6]))))
+
+	.dataa(\ram_ctrl_inst|ram2_wr_addr[7]~1_combout ),
+	.datab(\ram_ctrl_inst|ram2_wr_addr[2]~0_combout ),
+	.datac(\ram_ctrl_inst|ram2_wr_addr [6]),
+	.datad(\ram_ctrl_inst|Add1~12_combout ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram2_wr_addr[6]~8_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_addr[6]~8 .lut_mask = 16'h7530;
+defparam \ram_ctrl_inst|ram2_wr_addr[6]~8 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X28_Y21_N9
+dffeas \ram_ctrl_inst|ram2_wr_addr[6] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram2_wr_addr[6]~8_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram2_wr_addr [6]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_addr[6] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram2_wr_addr[6] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y21_N28
+cycloneive_lcell_comb \ram_ctrl_inst|Add1~14 (
+// Equation(s):
+// \ram_ctrl_inst|Add1~14_combout  = \ram_ctrl_inst|Add1~13  $ (\ram_ctrl_inst|ram2_wr_addr [7])
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\ram_ctrl_inst|ram2_wr_addr [7]),
+	.cin(\ram_ctrl_inst|Add1~13 ),
+	.combout(\ram_ctrl_inst|Add1~14_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|Add1~14 .lut_mask = 16'h0FF0;
+defparam \ram_ctrl_inst|Add1~14 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y21_N2
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_wr_addr[7]~9 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_wr_addr[7]~9_combout  = (\ram_ctrl_inst|ram2_wr_addr[7]~1_combout  & (!\ram_ctrl_inst|state.WRAM2_RRAM1~q  & (\ram_ctrl_inst|ram2_wr_addr [7]))) # (!\ram_ctrl_inst|ram2_wr_addr[7]~1_combout  & ((\ram_ctrl_inst|Add1~14_combout ) # 
+// ((!\ram_ctrl_inst|state.WRAM2_RRAM1~q  & \ram_ctrl_inst|ram2_wr_addr [7]))))
+
+	.dataa(\ram_ctrl_inst|ram2_wr_addr[7]~1_combout ),
+	.datab(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.datac(\ram_ctrl_inst|ram2_wr_addr [7]),
+	.datad(\ram_ctrl_inst|Add1~14_combout ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram2_wr_addr[7]~9_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_addr[7]~9 .lut_mask = 16'h7530;
+defparam \ram_ctrl_inst|ram2_wr_addr[7]~9 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X28_Y21_N3
+dffeas \ram_ctrl_inst|ram2_wr_addr[7] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram2_wr_addr[7]~9_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram2_wr_addr [7]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_addr[7] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram2_wr_addr[7] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y21_N4
+cycloneive_lcell_comb \ram_ctrl_inst|Equal1~0 (
+// Equation(s):
+// \ram_ctrl_inst|Equal1~0_combout  = (\ram_ctrl_inst|ram2_wr_addr [5] & (!\ram_ctrl_inst|ram2_wr_addr [7] & (\ram_ctrl_inst|ram2_wr_addr [6] & !\ram_ctrl_inst|ram2_wr_addr [4])))
+
+	.dataa(\ram_ctrl_inst|ram2_wr_addr [5]),
+	.datab(\ram_ctrl_inst|ram2_wr_addr [7]),
+	.datac(\ram_ctrl_inst|ram2_wr_addr [6]),
+	.datad(\ram_ctrl_inst|ram2_wr_addr [4]),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|Equal1~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|Equal1~0 .lut_mask = 16'h0020;
+defparam \ram_ctrl_inst|Equal1~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y20_N8
+cycloneive_lcell_comb \ram_ctrl_inst|Selector1~3 (
+// Equation(s):
+// \ram_ctrl_inst|Selector1~3_combout  = (\ram_ctrl_inst|Equal1~0_combout  & (\ram_ctrl_inst|state.WRAM2_RRAM1~q  & \ram_ctrl_inst|Equal1~1_combout ))
+
+	.dataa(\ram_ctrl_inst|Equal1~0_combout ),
+	.datab(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.datac(\ram_ctrl_inst|Equal1~1_combout ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|Selector1~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|Selector1~3 .lut_mask = 16'h8080;
+defparam \ram_ctrl_inst|Selector1~3 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y20_N2
+cycloneive_lcell_comb \data_gen_inst|data_en~feeder (
+// Equation(s):
+// \data_gen_inst|data_en~feeder_combout  = VCC
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\data_gen_inst|data_en~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \data_gen_inst|data_en~feeder .lut_mask = 16'hFFFF;
+defparam \data_gen_inst|data_en~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X28_Y20_N3
+dffeas \data_gen_inst|data_en (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\data_gen_inst|data_en~feeder_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\data_gen_inst|data_en~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \data_gen_inst|data_en .is_wysiwyg = "true";
+defparam \data_gen_inst|data_en .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y20_N26
+cycloneive_lcell_comb \ram_ctrl_inst|Selector1~6 (
+// Equation(s):
+// \ram_ctrl_inst|Selector1~6_combout  = \ram_ctrl_inst|Selector1~2_combout  $ (\ram_ctrl_inst|Selector1~3_combout  $ (((!\ram_ctrl_inst|state.IDLE~q  & \data_gen_inst|data_en~q ))))
+
+	.dataa(\ram_ctrl_inst|Selector1~2_combout ),
+	.datab(\ram_ctrl_inst|state.IDLE~q ),
+	.datac(\ram_ctrl_inst|Selector1~3_combout ),
+	.datad(\data_gen_inst|data_en~q ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|Selector1~6_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|Selector1~6 .lut_mask = 16'h695A;
+defparam \ram_ctrl_inst|Selector1~6 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X28_Y20_N19
+dffeas \ram_ctrl_inst|state.IDLE (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|state.IDLE~feeder_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\ram_ctrl_inst|Selector1~6_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|state.IDLE~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|state.IDLE .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|state.IDLE .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y20_N28
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_wr_addr[0]~12 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_wr_addr[0]~12_combout  = (\ram_ctrl_inst|Equal0~1_combout  & (!\ram_ctrl_inst|Equal0~0_combout  & ((\ram_ctrl_inst|state.WRAM2_RRAM1~q ) # (!\ram_ctrl_inst|state.IDLE~q )))) # (!\ram_ctrl_inst|Equal0~1_combout  & 
+// ((\ram_ctrl_inst|state.WRAM2_RRAM1~q ) # ((!\ram_ctrl_inst|state.IDLE~q ))))
+
+	.dataa(\ram_ctrl_inst|Equal0~1_combout ),
+	.datab(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.datac(\ram_ctrl_inst|state.IDLE~q ),
+	.datad(\ram_ctrl_inst|Equal0~0_combout ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram1_wr_addr[0]~12_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_addr[0]~12 .lut_mask = 16'h45CF;
+defparam \ram_ctrl_inst|ram1_wr_addr[0]~12 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X29_Y20_N8
+cycloneive_lcell_comb \ram_ctrl_inst|Add0~0 (
+// Equation(s):
+// \ram_ctrl_inst|Add0~0_combout  = \ram_ctrl_inst|ram1_wr_addr [0] $ (VCC)
+// \ram_ctrl_inst|Add0~1  = CARRY(\ram_ctrl_inst|ram1_wr_addr [0])
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|ram1_wr_addr [0]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|Add0~0_combout ),
+	.cout(\ram_ctrl_inst|Add0~1 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|Add0~0 .lut_mask = 16'h33CC;
+defparam \ram_ctrl_inst|Add0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X29_Y20_N24
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_wr_addr[0]~4 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_wr_addr[0]~4_combout  = (\ram_ctrl_inst|ram1_wr_addr[7]~13_combout  & (((\ram_ctrl_inst|ram1_wr_addr [0] & \ram_ctrl_inst|ram1_wr_addr[0]~12_combout )))) # (!\ram_ctrl_inst|ram1_wr_addr[7]~13_combout  & ((\ram_ctrl_inst|Add0~0_combout 
+// ) # ((\ram_ctrl_inst|ram1_wr_addr [0] & \ram_ctrl_inst|ram1_wr_addr[0]~12_combout ))))
+
+	.dataa(\ram_ctrl_inst|ram1_wr_addr[7]~13_combout ),
+	.datab(\ram_ctrl_inst|Add0~0_combout ),
+	.datac(\ram_ctrl_inst|ram1_wr_addr [0]),
+	.datad(\ram_ctrl_inst|ram1_wr_addr[0]~12_combout ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram1_wr_addr[0]~4_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_addr[0]~4 .lut_mask = 16'hF444;
+defparam \ram_ctrl_inst|ram1_wr_addr[0]~4 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X29_Y20_N25
+dffeas \ram_ctrl_inst|ram1_wr_addr[0] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram1_wr_addr[0]~4_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram1_wr_addr [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_addr[0] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram1_wr_addr[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X29_Y20_N10
+cycloneive_lcell_comb \ram_ctrl_inst|Add0~2 (
+// Equation(s):
+// \ram_ctrl_inst|Add0~2_combout  = (\ram_ctrl_inst|ram1_wr_addr [1] & (!\ram_ctrl_inst|Add0~1 )) # (!\ram_ctrl_inst|ram1_wr_addr [1] & ((\ram_ctrl_inst|Add0~1 ) # (GND)))
+// \ram_ctrl_inst|Add0~3  = CARRY((!\ram_ctrl_inst|Add0~1 ) # (!\ram_ctrl_inst|ram1_wr_addr [1]))
+
+	.dataa(\ram_ctrl_inst|ram1_wr_addr [1]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|Add0~1 ),
+	.combout(\ram_ctrl_inst|Add0~2_combout ),
+	.cout(\ram_ctrl_inst|Add0~3 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|Add0~2 .lut_mask = 16'h5A5F;
+defparam \ram_ctrl_inst|Add0~2 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y20_N12
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_wr_addr[1]~5 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_wr_addr[1]~5_combout  = (\ram_ctrl_inst|ram1_wr_addr[0]~12_combout  & ((\ram_ctrl_inst|ram1_wr_addr [1]) # ((\ram_ctrl_inst|Add0~2_combout  & !\ram_ctrl_inst|ram1_wr_addr[7]~13_combout )))) # (!\ram_ctrl_inst|ram1_wr_addr[0]~12_combout 
+//  & (\ram_ctrl_inst|Add0~2_combout  & ((!\ram_ctrl_inst|ram1_wr_addr[7]~13_combout ))))
+
+	.dataa(\ram_ctrl_inst|ram1_wr_addr[0]~12_combout ),
+	.datab(\ram_ctrl_inst|Add0~2_combout ),
+	.datac(\ram_ctrl_inst|ram1_wr_addr [1]),
+	.datad(\ram_ctrl_inst|ram1_wr_addr[7]~13_combout ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram1_wr_addr[1]~5_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_addr[1]~5 .lut_mask = 16'hA0EC;
+defparam \ram_ctrl_inst|ram1_wr_addr[1]~5 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X28_Y20_N13
+dffeas \ram_ctrl_inst|ram1_wr_addr[1] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram1_wr_addr[1]~5_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram1_wr_addr [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_addr[1] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram1_wr_addr[1] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X29_Y20_N12
+cycloneive_lcell_comb \ram_ctrl_inst|Add0~4 (
+// Equation(s):
+// \ram_ctrl_inst|Add0~4_combout  = (\ram_ctrl_inst|ram1_wr_addr [2] & (\ram_ctrl_inst|Add0~3  $ (GND))) # (!\ram_ctrl_inst|ram1_wr_addr [2] & (!\ram_ctrl_inst|Add0~3  & VCC))
+// \ram_ctrl_inst|Add0~5  = CARRY((\ram_ctrl_inst|ram1_wr_addr [2] & !\ram_ctrl_inst|Add0~3 ))
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|ram1_wr_addr [2]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|Add0~3 ),
+	.combout(\ram_ctrl_inst|Add0~4_combout ),
+	.cout(\ram_ctrl_inst|Add0~5 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|Add0~4 .lut_mask = 16'hC30C;
+defparam \ram_ctrl_inst|Add0~4 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: LCCOMB_X29_Y20_N2
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_wr_addr[2]~6 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_wr_addr[2]~6_combout  = (\ram_ctrl_inst|ram1_wr_addr[7]~13_combout  & (\ram_ctrl_inst|ram1_wr_addr[0]~12_combout  & (\ram_ctrl_inst|ram1_wr_addr [2]))) # (!\ram_ctrl_inst|ram1_wr_addr[7]~13_combout  & ((\ram_ctrl_inst|Add0~4_combout ) 
+// # ((\ram_ctrl_inst|ram1_wr_addr[0]~12_combout  & \ram_ctrl_inst|ram1_wr_addr [2]))))
+
+	.dataa(\ram_ctrl_inst|ram1_wr_addr[7]~13_combout ),
+	.datab(\ram_ctrl_inst|ram1_wr_addr[0]~12_combout ),
+	.datac(\ram_ctrl_inst|ram1_wr_addr [2]),
+	.datad(\ram_ctrl_inst|Add0~4_combout ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram1_wr_addr[2]~6_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_addr[2]~6 .lut_mask = 16'hD5C0;
+defparam \ram_ctrl_inst|ram1_wr_addr[2]~6 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X29_Y20_N3
+dffeas \ram_ctrl_inst|ram1_wr_addr[2] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram1_wr_addr[2]~6_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram1_wr_addr [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_addr[2] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram1_wr_addr[2] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X29_Y20_N14
+cycloneive_lcell_comb \ram_ctrl_inst|Add0~6 (
+// Equation(s):
+// \ram_ctrl_inst|Add0~6_combout  = (\ram_ctrl_inst|ram1_wr_addr [3] & (!\ram_ctrl_inst|Add0~5 )) # (!\ram_ctrl_inst|ram1_wr_addr [3] & ((\ram_ctrl_inst|Add0~5 ) # (GND)))
+// \ram_ctrl_inst|Add0~7  = CARRY((!\ram_ctrl_inst|Add0~5 ) # (!\ram_ctrl_inst|ram1_wr_addr [3]))
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|ram1_wr_addr [3]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|Add0~5 ),
+	.combout(\ram_ctrl_inst|Add0~6_combout ),
+	.cout(\ram_ctrl_inst|Add0~7 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|Add0~6 .lut_mask = 16'h3C3F;
+defparam \ram_ctrl_inst|Add0~6 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: LCCOMB_X29_Y20_N16
+cycloneive_lcell_comb \ram_ctrl_inst|Add0~8 (
+// Equation(s):
+// \ram_ctrl_inst|Add0~8_combout  = (\ram_ctrl_inst|ram1_wr_addr [4] & (\ram_ctrl_inst|Add0~7  $ (GND))) # (!\ram_ctrl_inst|ram1_wr_addr [4] & (!\ram_ctrl_inst|Add0~7  & VCC))
+// \ram_ctrl_inst|Add0~9  = CARRY((\ram_ctrl_inst|ram1_wr_addr [4] & !\ram_ctrl_inst|Add0~7 ))
+
+	.dataa(\ram_ctrl_inst|ram1_wr_addr [4]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|Add0~7 ),
+	.combout(\ram_ctrl_inst|Add0~8_combout ),
+	.cout(\ram_ctrl_inst|Add0~9 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|Add0~8 .lut_mask = 16'hA50A;
+defparam \ram_ctrl_inst|Add0~8 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: LCCOMB_X29_Y20_N30
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_wr_addr[4]~8 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_wr_addr[4]~8_combout  = (\ram_ctrl_inst|ram1_wr_addr[7]~13_combout  & (\ram_ctrl_inst|ram1_wr_addr[0]~12_combout  & (\ram_ctrl_inst|ram1_wr_addr [4]))) # (!\ram_ctrl_inst|ram1_wr_addr[7]~13_combout  & ((\ram_ctrl_inst|Add0~8_combout ) 
+// # ((\ram_ctrl_inst|ram1_wr_addr[0]~12_combout  & \ram_ctrl_inst|ram1_wr_addr [4]))))
+
+	.dataa(\ram_ctrl_inst|ram1_wr_addr[7]~13_combout ),
+	.datab(\ram_ctrl_inst|ram1_wr_addr[0]~12_combout ),
+	.datac(\ram_ctrl_inst|ram1_wr_addr [4]),
+	.datad(\ram_ctrl_inst|Add0~8_combout ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram1_wr_addr[4]~8_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_addr[4]~8 .lut_mask = 16'hD5C0;
+defparam \ram_ctrl_inst|ram1_wr_addr[4]~8 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X29_Y20_N31
+dffeas \ram_ctrl_inst|ram1_wr_addr[4] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram1_wr_addr[4]~8_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram1_wr_addr [4]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_addr[4] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram1_wr_addr[4] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X29_Y20_N18
+cycloneive_lcell_comb \ram_ctrl_inst|Add0~10 (
+// Equation(s):
+// \ram_ctrl_inst|Add0~10_combout  = (\ram_ctrl_inst|ram1_wr_addr [5] & (!\ram_ctrl_inst|Add0~9 )) # (!\ram_ctrl_inst|ram1_wr_addr [5] & ((\ram_ctrl_inst|Add0~9 ) # (GND)))
+// \ram_ctrl_inst|Add0~11  = CARRY((!\ram_ctrl_inst|Add0~9 ) # (!\ram_ctrl_inst|ram1_wr_addr [5]))
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|ram1_wr_addr [5]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|Add0~9 ),
+	.combout(\ram_ctrl_inst|Add0~10_combout ),
+	.cout(\ram_ctrl_inst|Add0~11 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|Add0~10 .lut_mask = 16'h3C3F;
+defparam \ram_ctrl_inst|Add0~10 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: LCCOMB_X29_Y20_N0
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_wr_addr[5]~9 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_wr_addr[5]~9_combout  = (\ram_ctrl_inst|ram1_wr_addr[7]~13_combout  & (\ram_ctrl_inst|ram1_wr_addr[0]~12_combout  & (\ram_ctrl_inst|ram1_wr_addr [5]))) # (!\ram_ctrl_inst|ram1_wr_addr[7]~13_combout  & ((\ram_ctrl_inst|Add0~10_combout ) 
+// # ((\ram_ctrl_inst|ram1_wr_addr[0]~12_combout  & \ram_ctrl_inst|ram1_wr_addr [5]))))
+
+	.dataa(\ram_ctrl_inst|ram1_wr_addr[7]~13_combout ),
+	.datab(\ram_ctrl_inst|ram1_wr_addr[0]~12_combout ),
+	.datac(\ram_ctrl_inst|ram1_wr_addr [5]),
+	.datad(\ram_ctrl_inst|Add0~10_combout ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram1_wr_addr[5]~9_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_addr[5]~9 .lut_mask = 16'hD5C0;
+defparam \ram_ctrl_inst|ram1_wr_addr[5]~9 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X29_Y20_N1
+dffeas \ram_ctrl_inst|ram1_wr_addr[5] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram1_wr_addr[5]~9_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram1_wr_addr [5]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_addr[5] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram1_wr_addr[5] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X29_Y20_N20
+cycloneive_lcell_comb \ram_ctrl_inst|Add0~12 (
+// Equation(s):
+// \ram_ctrl_inst|Add0~12_combout  = (\ram_ctrl_inst|ram1_wr_addr [6] & (\ram_ctrl_inst|Add0~11  $ (GND))) # (!\ram_ctrl_inst|ram1_wr_addr [6] & (!\ram_ctrl_inst|Add0~11  & VCC))
+// \ram_ctrl_inst|Add0~13  = CARRY((\ram_ctrl_inst|ram1_wr_addr [6] & !\ram_ctrl_inst|Add0~11 ))
+
+	.dataa(\ram_ctrl_inst|ram1_wr_addr [6]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|Add0~11 ),
+	.combout(\ram_ctrl_inst|Add0~12_combout ),
+	.cout(\ram_ctrl_inst|Add0~13 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|Add0~12 .lut_mask = 16'hA50A;
+defparam \ram_ctrl_inst|Add0~12 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: LCCOMB_X29_Y20_N26
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_wr_addr[6]~10 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_wr_addr[6]~10_combout  = (\ram_ctrl_inst|ram1_wr_addr[7]~13_combout  & (\ram_ctrl_inst|ram1_wr_addr[0]~12_combout  & (\ram_ctrl_inst|ram1_wr_addr [6]))) # (!\ram_ctrl_inst|ram1_wr_addr[7]~13_combout  & ((\ram_ctrl_inst|Add0~12_combout 
+// ) # ((\ram_ctrl_inst|ram1_wr_addr[0]~12_combout  & \ram_ctrl_inst|ram1_wr_addr [6]))))
+
+	.dataa(\ram_ctrl_inst|ram1_wr_addr[7]~13_combout ),
+	.datab(\ram_ctrl_inst|ram1_wr_addr[0]~12_combout ),
+	.datac(\ram_ctrl_inst|ram1_wr_addr [6]),
+	.datad(\ram_ctrl_inst|Add0~12_combout ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram1_wr_addr[6]~10_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_addr[6]~10 .lut_mask = 16'hD5C0;
+defparam \ram_ctrl_inst|ram1_wr_addr[6]~10 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X29_Y20_N27
+dffeas \ram_ctrl_inst|ram1_wr_addr[6] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram1_wr_addr[6]~10_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram1_wr_addr [6]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_addr[6] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram1_wr_addr[6] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X29_Y20_N22
+cycloneive_lcell_comb \ram_ctrl_inst|Add0~14 (
+// Equation(s):
+// \ram_ctrl_inst|Add0~14_combout  = \ram_ctrl_inst|Add0~13  $ (\ram_ctrl_inst|ram1_wr_addr [7])
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\ram_ctrl_inst|ram1_wr_addr [7]),
+	.cin(\ram_ctrl_inst|Add0~13 ),
+	.combout(\ram_ctrl_inst|Add0~14_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|Add0~14 .lut_mask = 16'h0FF0;
+defparam \ram_ctrl_inst|Add0~14 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: LCCOMB_X29_Y20_N28
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_wr_addr[7]~11 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_wr_addr[7]~11_combout  = (\ram_ctrl_inst|Add0~14_combout  & (((\ram_ctrl_inst|ram1_wr_addr[0]~12_combout  & \ram_ctrl_inst|ram1_wr_addr [7])) # (!\ram_ctrl_inst|ram1_wr_addr[7]~13_combout ))) # (!\ram_ctrl_inst|Add0~14_combout  & 
+// (\ram_ctrl_inst|ram1_wr_addr[0]~12_combout  & (\ram_ctrl_inst|ram1_wr_addr [7])))
+
+	.dataa(\ram_ctrl_inst|Add0~14_combout ),
+	.datab(\ram_ctrl_inst|ram1_wr_addr[0]~12_combout ),
+	.datac(\ram_ctrl_inst|ram1_wr_addr [7]),
+	.datad(\ram_ctrl_inst|ram1_wr_addr[7]~13_combout ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram1_wr_addr[7]~11_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_addr[7]~11 .lut_mask = 16'hC0EA;
+defparam \ram_ctrl_inst|ram1_wr_addr[7]~11 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X29_Y20_N29
+dffeas \ram_ctrl_inst|ram1_wr_addr[7] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram1_wr_addr[7]~11_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram1_wr_addr [7]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_addr[7] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram1_wr_addr[7] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X29_Y20_N6
+cycloneive_lcell_comb \ram_ctrl_inst|Equal0~0 (
+// Equation(s):
+// \ram_ctrl_inst|Equal0~0_combout  = (\ram_ctrl_inst|ram1_wr_addr [6] & (!\ram_ctrl_inst|ram1_wr_addr [7] & (!\ram_ctrl_inst|ram1_wr_addr [4] & \ram_ctrl_inst|ram1_wr_addr [5])))
+
+	.dataa(\ram_ctrl_inst|ram1_wr_addr [6]),
+	.datab(\ram_ctrl_inst|ram1_wr_addr [7]),
+	.datac(\ram_ctrl_inst|ram1_wr_addr [4]),
+	.datad(\ram_ctrl_inst|ram1_wr_addr [5]),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|Equal0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|Equal0~0 .lut_mask = 16'h0200;
+defparam \ram_ctrl_inst|Equal0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y20_N14
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_wr_addr[7]~13 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_wr_addr[7]~13_combout  = (\ram_ctrl_inst|state.WRAM2_RRAM1~q ) # (((\ram_ctrl_inst|Equal0~1_combout  & \ram_ctrl_inst|Equal0~0_combout )) # (!\ram_ctrl_inst|state.IDLE~q ))
+
+	.dataa(\ram_ctrl_inst|Equal0~1_combout ),
+	.datab(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.datac(\ram_ctrl_inst|state.IDLE~q ),
+	.datad(\ram_ctrl_inst|Equal0~0_combout ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram1_wr_addr[7]~13_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_addr[7]~13 .lut_mask = 16'hEFCF;
+defparam \ram_ctrl_inst|ram1_wr_addr[7]~13 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X29_Y20_N4
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_wr_addr[3]~7 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_wr_addr[3]~7_combout  = (\ram_ctrl_inst|ram1_wr_addr[7]~13_combout  & (((\ram_ctrl_inst|ram1_wr_addr [3] & \ram_ctrl_inst|ram1_wr_addr[0]~12_combout )))) # (!\ram_ctrl_inst|ram1_wr_addr[7]~13_combout  & ((\ram_ctrl_inst|Add0~6_combout 
+// ) # ((\ram_ctrl_inst|ram1_wr_addr [3] & \ram_ctrl_inst|ram1_wr_addr[0]~12_combout ))))
+
+	.dataa(\ram_ctrl_inst|ram1_wr_addr[7]~13_combout ),
+	.datab(\ram_ctrl_inst|Add0~6_combout ),
+	.datac(\ram_ctrl_inst|ram1_wr_addr [3]),
+	.datad(\ram_ctrl_inst|ram1_wr_addr[0]~12_combout ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram1_wr_addr[3]~7_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_addr[3]~7 .lut_mask = 16'hF444;
+defparam \ram_ctrl_inst|ram1_wr_addr[3]~7 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X29_Y20_N5
+dffeas \ram_ctrl_inst|ram1_wr_addr[3] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram1_wr_addr[3]~7_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram1_wr_addr [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_addr[3] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram1_wr_addr[3] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y20_N10
+cycloneive_lcell_comb \ram_ctrl_inst|Equal0~1 (
+// Equation(s):
+// \ram_ctrl_inst|Equal0~1_combout  = (!\ram_ctrl_inst|ram1_wr_addr [3] & (\ram_ctrl_inst|ram1_wr_addr [0] & (!\ram_ctrl_inst|ram1_wr_addr [2] & \ram_ctrl_inst|ram1_wr_addr [1])))
+
+	.dataa(\ram_ctrl_inst|ram1_wr_addr [3]),
+	.datab(\ram_ctrl_inst|ram1_wr_addr [0]),
+	.datac(\ram_ctrl_inst|ram1_wr_addr [2]),
+	.datad(\ram_ctrl_inst|ram1_wr_addr [1]),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|Equal0~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|Equal0~1 .lut_mask = 16'h0400;
+defparam \ram_ctrl_inst|Equal0~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y20_N4
+cycloneive_lcell_comb \ram_ctrl_inst|Selector1~4 (
+// Equation(s):
+// \ram_ctrl_inst|Selector1~4_combout  = (!\ram_ctrl_inst|state.IDLE~q  & \data_gen_inst|data_en~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\ram_ctrl_inst|state.IDLE~q ),
+	.datad(\data_gen_inst|data_en~q ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|Selector1~4_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|Selector1~4 .lut_mask = 16'h0F00;
+defparam \ram_ctrl_inst|Selector1~4 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y20_N20
+cycloneive_lcell_comb \ram_ctrl_inst|Selector1~5 (
+// Equation(s):
+// \ram_ctrl_inst|Selector1~5_combout  = (\ram_ctrl_inst|Selector1~2_combout  & (\ram_ctrl_inst|state.WRAM1~q  & (\ram_ctrl_inst|Selector1~4_combout  $ (\ram_ctrl_inst|Selector1~3_combout )))) # (!\ram_ctrl_inst|Selector1~2_combout  & 
+// ((\ram_ctrl_inst|Selector1~4_combout  & ((\ram_ctrl_inst|state.WRAM1~q ) # (!\ram_ctrl_inst|Selector1~3_combout ))) # (!\ram_ctrl_inst|Selector1~4_combout  & (\ram_ctrl_inst|state.WRAM1~q  & !\ram_ctrl_inst|Selector1~3_combout ))))
+
+	.dataa(\ram_ctrl_inst|Selector1~2_combout ),
+	.datab(\ram_ctrl_inst|Selector1~4_combout ),
+	.datac(\ram_ctrl_inst|state.WRAM1~q ),
+	.datad(\ram_ctrl_inst|Selector1~3_combout ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|Selector1~5_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|Selector1~5 .lut_mask = 16'h60D4;
+defparam \ram_ctrl_inst|Selector1~5 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X28_Y20_N21
+dffeas \ram_ctrl_inst|state.WRAM1 (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|Selector1~5_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|state.WRAM1~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|state.WRAM1 .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|state.WRAM1 .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X28_Y20_N31
+dffeas \ram_ctrl_inst|state.WRAM1_RRAM2 (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(gnd),
+	.asdata(\ram_ctrl_inst|Selector1~3_combout ),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(\ram_ctrl_inst|Selector1~6_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|state.WRAM1_RRAM2~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|state.WRAM1_RRAM2 .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|state.WRAM1_RRAM2 .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y20_N30
+cycloneive_lcell_comb \ram_ctrl_inst|Selector1~2 (
+// Equation(s):
+// \ram_ctrl_inst|Selector1~2_combout  = (\ram_ctrl_inst|Equal0~1_combout  & (\ram_ctrl_inst|Equal0~0_combout  & ((\ram_ctrl_inst|state.WRAM1~q ) # (\ram_ctrl_inst|state.WRAM1_RRAM2~q ))))
+
+	.dataa(\ram_ctrl_inst|Equal0~1_combout ),
+	.datab(\ram_ctrl_inst|state.WRAM1~q ),
+	.datac(\ram_ctrl_inst|state.WRAM1_RRAM2~q ),
+	.datad(\ram_ctrl_inst|Equal0~0_combout ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|Selector1~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|Selector1~2 .lut_mask = 16'hA800;
+defparam \ram_ctrl_inst|Selector1~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X28_Y20_N24
+cycloneive_lcell_comb \ram_ctrl_inst|Selector2~0 (
+// Equation(s):
+// \ram_ctrl_inst|Selector2~0_combout  = (\ram_ctrl_inst|Selector1~2_combout  & ((\ram_ctrl_inst|Selector1~4_combout  & (\ram_ctrl_inst|state.WRAM2_RRAM1~q  & !\ram_ctrl_inst|Selector1~3_combout )) # (!\ram_ctrl_inst|Selector1~4_combout  & 
+// ((\ram_ctrl_inst|state.WRAM2_RRAM1~q ) # (!\ram_ctrl_inst|Selector1~3_combout ))))) # (!\ram_ctrl_inst|Selector1~2_combout  & (\ram_ctrl_inst|state.WRAM2_RRAM1~q  & (\ram_ctrl_inst|Selector1~4_combout  $ (!\ram_ctrl_inst|Selector1~3_combout ))))
+
+	.dataa(\ram_ctrl_inst|Selector1~2_combout ),
+	.datab(\ram_ctrl_inst|Selector1~4_combout ),
+	.datac(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.datad(\ram_ctrl_inst|Selector1~3_combout ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|Selector2~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|Selector2~0 .lut_mask = 16'h60B2;
+defparam \ram_ctrl_inst|Selector2~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X28_Y20_N25
+dffeas \ram_ctrl_inst|state.WRAM2_RRAM1 (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|Selector2~0_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|state.WRAM2_RRAM1 .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|state.WRAM2_RRAM1 .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y20_N16
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_wr_en~0 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_wr_en~0_combout  = (!\ram_ctrl_inst|state.WRAM2_RRAM1~q  & \ram_ctrl_inst|state.IDLE~q )
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.datac(gnd),
+	.datad(\ram_ctrl_inst|state.IDLE~q ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram1_wr_en~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_en~0 .lut_mask = 16'h3300;
+defparam \ram_ctrl_inst|ram1_wr_en~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: CLKCTRL_G4
+cycloneive_clkctrl \clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl (
+	.ena(vcc),
+	.inclk({vcc,vcc,vcc,\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk [1]}),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ));
+// synopsys translate_off
+defparam \clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl .clock_type = "global clock";
+defparam \clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: FF_X26_Y20_N19
+dffeas \ram_ctrl_inst|ram1_rd_en (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
+	.d(gnd),
+	.asdata(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram1_rd_en~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_rd_en .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram1_rd_en .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X25_Y20_N17
+dffeas \dp_ram_1_inst|altsyncram_component|auto_generated|rden_b_store (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
+	.d(gnd),
+	.asdata(\ram_ctrl_inst|ram1_rd_en~q ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\dp_ram_1_inst|altsyncram_component|auto_generated|rden_b_store~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|rden_b_store .is_wysiwyg = "true";
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|rden_b_store .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X25_Y20_N16
+cycloneive_lcell_comb \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0~0 (
+// Equation(s):
+// \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0~0_combout  = (\ram_ctrl_inst|ram1_rd_en~q ) # (\dp_ram_1_inst|altsyncram_component|auto_generated|rden_b_store~q )
+
+	.dataa(\ram_ctrl_inst|ram1_rd_en~q ),
+	.datab(gnd),
+	.datac(\dp_ram_1_inst|altsyncram_component|auto_generated|rden_b_store~q ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0~0 .lut_mask = 16'hFAFA;
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N4
+cycloneive_lcell_comb \data_gen_inst|data_in[0]~8 (
+// Equation(s):
+// \data_gen_inst|data_in[0]~8_combout  = (\data_gen_inst|data_en~q  & (\data_gen_inst|data_in [0] $ (VCC))) # (!\data_gen_inst|data_en~q  & (\data_gen_inst|data_in [0] & VCC))
+// \data_gen_inst|data_in[0]~9  = CARRY((\data_gen_inst|data_en~q  & \data_gen_inst|data_in [0]))
+
+	.dataa(\data_gen_inst|data_en~q ),
+	.datab(\data_gen_inst|data_in [0]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(gnd),
+	.combout(\data_gen_inst|data_in[0]~8_combout ),
+	.cout(\data_gen_inst|data_in[0]~9 ));
+// synopsys translate_off
+defparam \data_gen_inst|data_in[0]~8 .lut_mask = 16'h6688;
+defparam \data_gen_inst|data_in[0]~8 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N6
+cycloneive_lcell_comb \data_gen_inst|data_in[1]~10 (
+// Equation(s):
+// \data_gen_inst|data_in[1]~10_combout  = (\data_gen_inst|data_in [1] & (!\data_gen_inst|data_in[0]~9 )) # (!\data_gen_inst|data_in [1] & ((\data_gen_inst|data_in[0]~9 ) # (GND)))
+// \data_gen_inst|data_in[1]~11  = CARRY((!\data_gen_inst|data_in[0]~9 ) # (!\data_gen_inst|data_in [1]))
+
+	.dataa(\data_gen_inst|data_in [1]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\data_gen_inst|data_in[0]~9 ),
+	.combout(\data_gen_inst|data_in[1]~10_combout ),
+	.cout(\data_gen_inst|data_in[1]~11 ));
+// synopsys translate_off
+defparam \data_gen_inst|data_in[1]~10 .lut_mask = 16'h5A5F;
+defparam \data_gen_inst|data_in[1]~10 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y20_N7
+dffeas \data_gen_inst|data_in[1] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\data_gen_inst|data_in[1]~10_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\data_gen_inst|Equal0~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\data_gen_inst|data_in [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \data_gen_inst|data_in[1] .is_wysiwyg = "true";
+defparam \data_gen_inst|data_in[1] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N8
+cycloneive_lcell_comb \data_gen_inst|data_in[2]~12 (
+// Equation(s):
+// \data_gen_inst|data_in[2]~12_combout  = (\data_gen_inst|data_in [2] & (\data_gen_inst|data_in[1]~11  $ (GND))) # (!\data_gen_inst|data_in [2] & (!\data_gen_inst|data_in[1]~11  & VCC))
+// \data_gen_inst|data_in[2]~13  = CARRY((\data_gen_inst|data_in [2] & !\data_gen_inst|data_in[1]~11 ))
+
+	.dataa(gnd),
+	.datab(\data_gen_inst|data_in [2]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\data_gen_inst|data_in[1]~11 ),
+	.combout(\data_gen_inst|data_in[2]~12_combout ),
+	.cout(\data_gen_inst|data_in[2]~13 ));
+// synopsys translate_off
+defparam \data_gen_inst|data_in[2]~12 .lut_mask = 16'hC30C;
+defparam \data_gen_inst|data_in[2]~12 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y20_N9
+dffeas \data_gen_inst|data_in[2] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\data_gen_inst|data_in[2]~12_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\data_gen_inst|Equal0~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\data_gen_inst|data_in [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \data_gen_inst|data_in[2] .is_wysiwyg = "true";
+defparam \data_gen_inst|data_in[2] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N10
+cycloneive_lcell_comb \data_gen_inst|data_in[3]~14 (
+// Equation(s):
+// \data_gen_inst|data_in[3]~14_combout  = (\data_gen_inst|data_in [3] & (!\data_gen_inst|data_in[2]~13 )) # (!\data_gen_inst|data_in [3] & ((\data_gen_inst|data_in[2]~13 ) # (GND)))
+// \data_gen_inst|data_in[3]~15  = CARRY((!\data_gen_inst|data_in[2]~13 ) # (!\data_gen_inst|data_in [3]))
+
+	.dataa(\data_gen_inst|data_in [3]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\data_gen_inst|data_in[2]~13 ),
+	.combout(\data_gen_inst|data_in[3]~14_combout ),
+	.cout(\data_gen_inst|data_in[3]~15 ));
+// synopsys translate_off
+defparam \data_gen_inst|data_in[3]~14 .lut_mask = 16'h5A5F;
+defparam \data_gen_inst|data_in[3]~14 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y20_N11
+dffeas \data_gen_inst|data_in[3] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\data_gen_inst|data_in[3]~14_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\data_gen_inst|Equal0~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\data_gen_inst|data_in [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \data_gen_inst|data_in[3] .is_wysiwyg = "true";
+defparam \data_gen_inst|data_in[3] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N24
+cycloneive_lcell_comb \data_gen_inst|Equal0~0 (
+// Equation(s):
+// \data_gen_inst|Equal0~0_combout  = (\data_gen_inst|data_in [1] & (\data_gen_inst|data_in [2] & (\data_gen_inst|data_in [0] & !\data_gen_inst|data_in [3])))
+
+	.dataa(\data_gen_inst|data_in [1]),
+	.datab(\data_gen_inst|data_in [2]),
+	.datac(\data_gen_inst|data_in [0]),
+	.datad(\data_gen_inst|data_in [3]),
+	.cin(gnd),
+	.combout(\data_gen_inst|Equal0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \data_gen_inst|Equal0~0 .lut_mask = 16'h0080;
+defparam \data_gen_inst|Equal0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N12
+cycloneive_lcell_comb \data_gen_inst|data_in[4]~16 (
+// Equation(s):
+// \data_gen_inst|data_in[4]~16_combout  = (\data_gen_inst|data_in [4] & (\data_gen_inst|data_in[3]~15  $ (GND))) # (!\data_gen_inst|data_in [4] & (!\data_gen_inst|data_in[3]~15  & VCC))
+// \data_gen_inst|data_in[4]~17  = CARRY((\data_gen_inst|data_in [4] & !\data_gen_inst|data_in[3]~15 ))
+
+	.dataa(\data_gen_inst|data_in [4]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\data_gen_inst|data_in[3]~15 ),
+	.combout(\data_gen_inst|data_in[4]~16_combout ),
+	.cout(\data_gen_inst|data_in[4]~17 ));
+// synopsys translate_off
+defparam \data_gen_inst|data_in[4]~16 .lut_mask = 16'hA50A;
+defparam \data_gen_inst|data_in[4]~16 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y20_N13
+dffeas \data_gen_inst|data_in[4] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\data_gen_inst|data_in[4]~16_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\data_gen_inst|Equal0~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\data_gen_inst|data_in [4]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \data_gen_inst|data_in[4] .is_wysiwyg = "true";
+defparam \data_gen_inst|data_in[4] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N14
+cycloneive_lcell_comb \data_gen_inst|data_in[5]~18 (
+// Equation(s):
+// \data_gen_inst|data_in[5]~18_combout  = (\data_gen_inst|data_in [5] & (!\data_gen_inst|data_in[4]~17 )) # (!\data_gen_inst|data_in [5] & ((\data_gen_inst|data_in[4]~17 ) # (GND)))
+// \data_gen_inst|data_in[5]~19  = CARRY((!\data_gen_inst|data_in[4]~17 ) # (!\data_gen_inst|data_in [5]))
+
+	.dataa(gnd),
+	.datab(\data_gen_inst|data_in [5]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\data_gen_inst|data_in[4]~17 ),
+	.combout(\data_gen_inst|data_in[5]~18_combout ),
+	.cout(\data_gen_inst|data_in[5]~19 ));
+// synopsys translate_off
+defparam \data_gen_inst|data_in[5]~18 .lut_mask = 16'h3C3F;
+defparam \data_gen_inst|data_in[5]~18 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y20_N15
+dffeas \data_gen_inst|data_in[5] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\data_gen_inst|data_in[5]~18_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\data_gen_inst|Equal0~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\data_gen_inst|data_in [5]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \data_gen_inst|data_in[5] .is_wysiwyg = "true";
+defparam \data_gen_inst|data_in[5] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N16
+cycloneive_lcell_comb \data_gen_inst|data_in[6]~20 (
+// Equation(s):
+// \data_gen_inst|data_in[6]~20_combout  = (\data_gen_inst|data_in [6] & (\data_gen_inst|data_in[5]~19  $ (GND))) # (!\data_gen_inst|data_in [6] & (!\data_gen_inst|data_in[5]~19  & VCC))
+// \data_gen_inst|data_in[6]~21  = CARRY((\data_gen_inst|data_in [6] & !\data_gen_inst|data_in[5]~19 ))
+
+	.dataa(gnd),
+	.datab(\data_gen_inst|data_in [6]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\data_gen_inst|data_in[5]~19 ),
+	.combout(\data_gen_inst|data_in[6]~20_combout ),
+	.cout(\data_gen_inst|data_in[6]~21 ));
+// synopsys translate_off
+defparam \data_gen_inst|data_in[6]~20 .lut_mask = 16'hC30C;
+defparam \data_gen_inst|data_in[6]~20 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y20_N17
+dffeas \data_gen_inst|data_in[6] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\data_gen_inst|data_in[6]~20_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\data_gen_inst|Equal0~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\data_gen_inst|data_in [6]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \data_gen_inst|data_in[6] .is_wysiwyg = "true";
+defparam \data_gen_inst|data_in[6] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N18
+cycloneive_lcell_comb \data_gen_inst|data_in[7]~22 (
+// Equation(s):
+// \data_gen_inst|data_in[7]~22_combout  = \data_gen_inst|data_in [7] $ (\data_gen_inst|data_in[6]~21 )
+
+	.dataa(gnd),
+	.datab(\data_gen_inst|data_in [7]),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(\data_gen_inst|data_in[6]~21 ),
+	.combout(\data_gen_inst|data_in[7]~22_combout ),
+	.cout());
+// synopsys translate_off
+defparam \data_gen_inst|data_in[7]~22 .lut_mask = 16'h3C3C;
+defparam \data_gen_inst|data_in[7]~22 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y20_N19
+dffeas \data_gen_inst|data_in[7] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\data_gen_inst|data_in[7]~22_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\data_gen_inst|Equal0~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\data_gen_inst|data_in [7]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \data_gen_inst|data_in[7] .is_wysiwyg = "true";
+defparam \data_gen_inst|data_in[7] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N26
+cycloneive_lcell_comb \data_gen_inst|Equal0~1 (
+// Equation(s):
+// \data_gen_inst|Equal0~1_combout  = (!\data_gen_inst|data_in [4] & (\data_gen_inst|data_in [7] & (!\data_gen_inst|data_in [5] & \data_gen_inst|data_in [6])))
+
+	.dataa(\data_gen_inst|data_in [4]),
+	.datab(\data_gen_inst|data_in [7]),
+	.datac(\data_gen_inst|data_in [5]),
+	.datad(\data_gen_inst|data_in [6]),
+	.cin(gnd),
+	.combout(\data_gen_inst|Equal0~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \data_gen_inst|Equal0~1 .lut_mask = 16'h0400;
+defparam \data_gen_inst|Equal0~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N28
+cycloneive_lcell_comb \data_gen_inst|Equal0~2 (
+// Equation(s):
+// \data_gen_inst|Equal0~2_combout  = (\data_gen_inst|Equal0~0_combout  & \data_gen_inst|Equal0~1_combout )
+
+	.dataa(gnd),
+	.datab(\data_gen_inst|Equal0~0_combout ),
+	.datac(\data_gen_inst|Equal0~1_combout ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\data_gen_inst|Equal0~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \data_gen_inst|Equal0~2 .lut_mask = 16'hC0C0;
+defparam \data_gen_inst|Equal0~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X23_Y20_N5
+dffeas \data_gen_inst|data_in[0] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\data_gen_inst|data_in[0]~8_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\data_gen_inst|Equal0~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\data_gen_inst|data_in [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \data_gen_inst|data_in[0] .is_wysiwyg = "true";
+defparam \data_gen_inst|data_in[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X26_Y20_N5
+dffeas \ram_ctrl_inst|data_reg[0] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(gnd),
+	.asdata(\data_gen_inst|data_in [0]),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|data_reg [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|data_reg[0] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|data_reg[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y20_N6
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_wr_data[0]~0 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_wr_data[0]~0_combout  = (!\ram_ctrl_inst|state.WRAM2_RRAM1~q  & (\ram_ctrl_inst|data_reg [0] & \ram_ctrl_inst|state.IDLE~q ))
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.datac(\ram_ctrl_inst|data_reg [0]),
+	.datad(\ram_ctrl_inst|state.IDLE~q ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram1_wr_data[0]~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_data[0]~0 .lut_mask = 16'h3000;
+defparam \ram_ctrl_inst|ram1_wr_data[0]~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N8
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_rd_addr[0]~8 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_rd_addr[0]~8_combout  = (\ram_ctrl_inst|ram1_rd_en~q  & (\ram_ctrl_inst|ram1_rd_addr [0] $ (VCC))) # (!\ram_ctrl_inst|ram1_rd_en~q  & (\ram_ctrl_inst|ram1_rd_addr [0] & VCC))
+// \ram_ctrl_inst|ram1_rd_addr[0]~9  = CARRY((\ram_ctrl_inst|ram1_rd_en~q  & \ram_ctrl_inst|ram1_rd_addr [0]))
+
+	.dataa(\ram_ctrl_inst|ram1_rd_en~q ),
+	.datab(\ram_ctrl_inst|ram1_rd_addr [0]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram1_rd_addr[0]~8_combout ),
+	.cout(\ram_ctrl_inst|ram1_rd_addr[0]~9 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_rd_addr[0]~8 .lut_mask = 16'h6688;
+defparam \ram_ctrl_inst|ram1_rd_addr[0]~8 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N10
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_rd_addr[1]~10 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_rd_addr[1]~10_combout  = (\ram_ctrl_inst|ram1_rd_addr [1] & (!\ram_ctrl_inst|ram1_rd_addr[0]~9 )) # (!\ram_ctrl_inst|ram1_rd_addr [1] & ((\ram_ctrl_inst|ram1_rd_addr[0]~9 ) # (GND)))
+// \ram_ctrl_inst|ram1_rd_addr[1]~11  = CARRY((!\ram_ctrl_inst|ram1_rd_addr[0]~9 ) # (!\ram_ctrl_inst|ram1_rd_addr [1]))
+
+	.dataa(\ram_ctrl_inst|ram1_rd_addr [1]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|ram1_rd_addr[0]~9 ),
+	.combout(\ram_ctrl_inst|ram1_rd_addr[1]~10_combout ),
+	.cout(\ram_ctrl_inst|ram1_rd_addr[1]~11 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_rd_addr[1]~10 .lut_mask = 16'h5A5F;
+defparam \ram_ctrl_inst|ram1_rd_addr[1]~10 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X24_Y20_N11
+dffeas \ram_ctrl_inst|ram1_rd_addr[1] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram1_rd_addr[1]~10_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\ram_ctrl_inst|Equal2~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram1_rd_addr [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_rd_addr[1] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram1_rd_addr[1] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N12
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_rd_addr[2]~12 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_rd_addr[2]~12_combout  = (\ram_ctrl_inst|ram1_rd_addr [2] & (\ram_ctrl_inst|ram1_rd_addr[1]~11  $ (GND))) # (!\ram_ctrl_inst|ram1_rd_addr [2] & (!\ram_ctrl_inst|ram1_rd_addr[1]~11  & VCC))
+// \ram_ctrl_inst|ram1_rd_addr[2]~13  = CARRY((\ram_ctrl_inst|ram1_rd_addr [2] & !\ram_ctrl_inst|ram1_rd_addr[1]~11 ))
+
+	.dataa(\ram_ctrl_inst|ram1_rd_addr [2]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|ram1_rd_addr[1]~11 ),
+	.combout(\ram_ctrl_inst|ram1_rd_addr[2]~12_combout ),
+	.cout(\ram_ctrl_inst|ram1_rd_addr[2]~13 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_rd_addr[2]~12 .lut_mask = 16'hA50A;
+defparam \ram_ctrl_inst|ram1_rd_addr[2]~12 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X24_Y20_N13
+dffeas \ram_ctrl_inst|ram1_rd_addr[2] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram1_rd_addr[2]~12_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\ram_ctrl_inst|Equal2~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram1_rd_addr [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_rd_addr[2] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram1_rd_addr[2] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N14
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_rd_addr[3]~14 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_rd_addr[3]~14_combout  = (\ram_ctrl_inst|ram1_rd_addr [3] & (!\ram_ctrl_inst|ram1_rd_addr[2]~13 )) # (!\ram_ctrl_inst|ram1_rd_addr [3] & ((\ram_ctrl_inst|ram1_rd_addr[2]~13 ) # (GND)))
+// \ram_ctrl_inst|ram1_rd_addr[3]~15  = CARRY((!\ram_ctrl_inst|ram1_rd_addr[2]~13 ) # (!\ram_ctrl_inst|ram1_rd_addr [3]))
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|ram1_rd_addr [3]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|ram1_rd_addr[2]~13 ),
+	.combout(\ram_ctrl_inst|ram1_rd_addr[3]~14_combout ),
+	.cout(\ram_ctrl_inst|ram1_rd_addr[3]~15 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_rd_addr[3]~14 .lut_mask = 16'h3C3F;
+defparam \ram_ctrl_inst|ram1_rd_addr[3]~14 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X24_Y20_N15
+dffeas \ram_ctrl_inst|ram1_rd_addr[3] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram1_rd_addr[3]~14_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\ram_ctrl_inst|Equal2~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram1_rd_addr [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_rd_addr[3] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram1_rd_addr[3] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N16
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_rd_addr[4]~16 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_rd_addr[4]~16_combout  = (\ram_ctrl_inst|ram1_rd_addr [4] & (\ram_ctrl_inst|ram1_rd_addr[3]~15  $ (GND))) # (!\ram_ctrl_inst|ram1_rd_addr [4] & (!\ram_ctrl_inst|ram1_rd_addr[3]~15  & VCC))
+// \ram_ctrl_inst|ram1_rd_addr[4]~17  = CARRY((\ram_ctrl_inst|ram1_rd_addr [4] & !\ram_ctrl_inst|ram1_rd_addr[3]~15 ))
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|ram1_rd_addr [4]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|ram1_rd_addr[3]~15 ),
+	.combout(\ram_ctrl_inst|ram1_rd_addr[4]~16_combout ),
+	.cout(\ram_ctrl_inst|ram1_rd_addr[4]~17 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_rd_addr[4]~16 .lut_mask = 16'hC30C;
+defparam \ram_ctrl_inst|ram1_rd_addr[4]~16 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X24_Y20_N17
+dffeas \ram_ctrl_inst|ram1_rd_addr[4] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram1_rd_addr[4]~16_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\ram_ctrl_inst|Equal2~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram1_rd_addr [4]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_rd_addr[4] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram1_rd_addr[4] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N18
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_rd_addr[5]~18 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_rd_addr[5]~18_combout  = (\ram_ctrl_inst|ram1_rd_addr [5] & (!\ram_ctrl_inst|ram1_rd_addr[4]~17 )) # (!\ram_ctrl_inst|ram1_rd_addr [5] & ((\ram_ctrl_inst|ram1_rd_addr[4]~17 ) # (GND)))
+// \ram_ctrl_inst|ram1_rd_addr[5]~19  = CARRY((!\ram_ctrl_inst|ram1_rd_addr[4]~17 ) # (!\ram_ctrl_inst|ram1_rd_addr [5]))
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|ram1_rd_addr [5]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|ram1_rd_addr[4]~17 ),
+	.combout(\ram_ctrl_inst|ram1_rd_addr[5]~18_combout ),
+	.cout(\ram_ctrl_inst|ram1_rd_addr[5]~19 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_rd_addr[5]~18 .lut_mask = 16'h3C3F;
+defparam \ram_ctrl_inst|ram1_rd_addr[5]~18 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X24_Y20_N19
+dffeas \ram_ctrl_inst|ram1_rd_addr[5] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram1_rd_addr[5]~18_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\ram_ctrl_inst|Equal2~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram1_rd_addr [5]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_rd_addr[5] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram1_rd_addr[5] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N20
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_rd_addr[6]~20 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_rd_addr[6]~20_combout  = (\ram_ctrl_inst|ram1_rd_addr [6] & (\ram_ctrl_inst|ram1_rd_addr[5]~19  $ (GND))) # (!\ram_ctrl_inst|ram1_rd_addr [6] & (!\ram_ctrl_inst|ram1_rd_addr[5]~19  & VCC))
+// \ram_ctrl_inst|ram1_rd_addr[6]~21  = CARRY((\ram_ctrl_inst|ram1_rd_addr [6] & !\ram_ctrl_inst|ram1_rd_addr[5]~19 ))
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|ram1_rd_addr [6]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|ram1_rd_addr[5]~19 ),
+	.combout(\ram_ctrl_inst|ram1_rd_addr[6]~20_combout ),
+	.cout(\ram_ctrl_inst|ram1_rd_addr[6]~21 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_rd_addr[6]~20 .lut_mask = 16'hC30C;
+defparam \ram_ctrl_inst|ram1_rd_addr[6]~20 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X24_Y20_N21
+dffeas \ram_ctrl_inst|ram1_rd_addr[6] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram1_rd_addr[6]~20_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\ram_ctrl_inst|Equal2~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram1_rd_addr [6]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_rd_addr[6] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram1_rd_addr[6] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N22
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_rd_addr[7]~22 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_rd_addr[7]~22_combout  = \ram_ctrl_inst|ram1_rd_addr [7] $ (\ram_ctrl_inst|ram1_rd_addr[6]~21 )
+
+	.dataa(\ram_ctrl_inst|ram1_rd_addr [7]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(\ram_ctrl_inst|ram1_rd_addr[6]~21 ),
+	.combout(\ram_ctrl_inst|ram1_rd_addr[7]~22_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_rd_addr[7]~22 .lut_mask = 16'h5A5A;
+defparam \ram_ctrl_inst|ram1_rd_addr[7]~22 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X24_Y20_N23
+dffeas \ram_ctrl_inst|ram1_rd_addr[7] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram1_rd_addr[7]~22_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\ram_ctrl_inst|Equal2~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram1_rd_addr [7]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_rd_addr[7] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram1_rd_addr[7] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N26
+cycloneive_lcell_comb \ram_ctrl_inst|Equal2~1 (
+// Equation(s):
+// \ram_ctrl_inst|Equal2~1_combout  = (\ram_ctrl_inst|ram1_rd_addr [5] & (\ram_ctrl_inst|ram1_rd_addr [4] & (!\ram_ctrl_inst|ram1_rd_addr [7] & !\ram_ctrl_inst|ram1_rd_addr [6])))
+
+	.dataa(\ram_ctrl_inst|ram1_rd_addr [5]),
+	.datab(\ram_ctrl_inst|ram1_rd_addr [4]),
+	.datac(\ram_ctrl_inst|ram1_rd_addr [7]),
+	.datad(\ram_ctrl_inst|ram1_rd_addr [6]),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|Equal2~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|Equal2~1 .lut_mask = 16'h0008;
+defparam \ram_ctrl_inst|Equal2~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N24
+cycloneive_lcell_comb \ram_ctrl_inst|Equal2~0 (
+// Equation(s):
+// \ram_ctrl_inst|Equal2~0_combout  = (!\ram_ctrl_inst|ram1_rd_addr [2] & (!\ram_ctrl_inst|ram1_rd_addr [3] & (\ram_ctrl_inst|ram1_rd_addr [0] & !\ram_ctrl_inst|ram1_rd_addr [1])))
+
+	.dataa(\ram_ctrl_inst|ram1_rd_addr [2]),
+	.datab(\ram_ctrl_inst|ram1_rd_addr [3]),
+	.datac(\ram_ctrl_inst|ram1_rd_addr [0]),
+	.datad(\ram_ctrl_inst|ram1_rd_addr [1]),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|Equal2~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|Equal2~0 .lut_mask = 16'h0010;
+defparam \ram_ctrl_inst|Equal2~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N4
+cycloneive_lcell_comb \ram_ctrl_inst|Equal2~2 (
+// Equation(s):
+// \ram_ctrl_inst|Equal2~2_combout  = (\ram_ctrl_inst|Equal2~1_combout  & \ram_ctrl_inst|Equal2~0_combout )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\ram_ctrl_inst|Equal2~1_combout ),
+	.datad(\ram_ctrl_inst|Equal2~0_combout ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|Equal2~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|Equal2~2 .lut_mask = 16'hF000;
+defparam \ram_ctrl_inst|Equal2~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X24_Y20_N9
+dffeas \ram_ctrl_inst|ram1_rd_addr[0] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram1_rd_addr[0]~8_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\ram_ctrl_inst|Equal2~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram1_rd_addr [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_rd_addr[0] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram1_rd_addr[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X26_Y20_N1
+dffeas \ram_ctrl_inst|data_reg[1] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(gnd),
+	.asdata(\data_gen_inst|data_in [1]),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|data_reg [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|data_reg[1] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|data_reg[1] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y20_N2
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_wr_data[1]~1 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_wr_data[1]~1_combout  = (\ram_ctrl_inst|data_reg [1] & (!\ram_ctrl_inst|state.WRAM2_RRAM1~q  & \ram_ctrl_inst|state.IDLE~q ))
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|data_reg [1]),
+	.datac(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.datad(\ram_ctrl_inst|state.IDLE~q ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram1_wr_data[1]~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_data[1]~1 .lut_mask = 16'h0C00;
+defparam \ram_ctrl_inst|ram1_wr_data[1]~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X26_Y20_N21
+dffeas \ram_ctrl_inst|data_reg[2] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(gnd),
+	.asdata(\data_gen_inst|data_in [2]),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|data_reg [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|data_reg[2] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|data_reg[2] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y20_N30
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_wr_data[2]~2 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_wr_data[2]~2_combout  = (\ram_ctrl_inst|data_reg [2] & (!\ram_ctrl_inst|state.WRAM2_RRAM1~q  & \ram_ctrl_inst|state.IDLE~q ))
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|data_reg [2]),
+	.datac(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.datad(\ram_ctrl_inst|state.IDLE~q ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram1_wr_data[2]~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_data[2]~2 .lut_mask = 16'h0C00;
+defparam \ram_ctrl_inst|ram1_wr_data[2]~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X26_Y20_N9
+dffeas \ram_ctrl_inst|data_reg[3] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(gnd),
+	.asdata(\data_gen_inst|data_in [3]),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|data_reg [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|data_reg[3] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|data_reg[3] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y20_N26
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_wr_data[3]~3 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_wr_data[3]~3_combout  = (!\ram_ctrl_inst|state.WRAM2_RRAM1~q  & (\ram_ctrl_inst|data_reg [3] & \ram_ctrl_inst|state.IDLE~q ))
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.datac(\ram_ctrl_inst|data_reg [3]),
+	.datad(\ram_ctrl_inst|state.IDLE~q ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram1_wr_data[3]~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_data[3]~3 .lut_mask = 16'h3000;
+defparam \ram_ctrl_inst|ram1_wr_data[3]~3 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X26_Y20_N13
+dffeas \ram_ctrl_inst|data_reg[4] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(gnd),
+	.asdata(\data_gen_inst|data_in [4]),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|data_reg [4]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|data_reg[4] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|data_reg[4] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y20_N18
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_wr_data[4]~4 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_wr_data[4]~4_combout  = (\ram_ctrl_inst|data_reg [4] & (!\ram_ctrl_inst|state.WRAM2_RRAM1~q  & \ram_ctrl_inst|state.IDLE~q ))
+
+	.dataa(\ram_ctrl_inst|data_reg [4]),
+	.datab(gnd),
+	.datac(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.datad(\ram_ctrl_inst|state.IDLE~q ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram1_wr_data[4]~4_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_data[4]~4 .lut_mask = 16'h0A00;
+defparam \ram_ctrl_inst|ram1_wr_data[4]~4 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y20_N14
+cycloneive_lcell_comb \ram_ctrl_inst|data_reg[5]~feeder (
+// Equation(s):
+// \ram_ctrl_inst|data_reg[5]~feeder_combout  = \data_gen_inst|data_in [5]
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\data_gen_inst|data_in [5]),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|data_reg[5]~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|data_reg[5]~feeder .lut_mask = 16'hFF00;
+defparam \ram_ctrl_inst|data_reg[5]~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X26_Y20_N15
+dffeas \ram_ctrl_inst|data_reg[5] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|data_reg[5]~feeder_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|data_reg [5]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|data_reg[5] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|data_reg[5] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y20_N24
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_wr_data[5]~5 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_wr_data[5]~5_combout  = (!\ram_ctrl_inst|state.WRAM2_RRAM1~q  & (\ram_ctrl_inst|data_reg [5] & \ram_ctrl_inst|state.IDLE~q ))
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.datac(\ram_ctrl_inst|data_reg [5]),
+	.datad(\ram_ctrl_inst|state.IDLE~q ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram1_wr_data[5]~5_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_data[5]~5 .lut_mask = 16'h3000;
+defparam \ram_ctrl_inst|ram1_wr_data[5]~5 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X26_Y20_N17
+dffeas \ram_ctrl_inst|data_reg[6] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(gnd),
+	.asdata(\data_gen_inst|data_in [6]),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|data_reg [6]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|data_reg[6] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|data_reg[6] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y20_N10
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_wr_data[6]~6 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_wr_data[6]~6_combout  = (\ram_ctrl_inst|data_reg [6] & (!\ram_ctrl_inst|state.WRAM2_RRAM1~q  & \ram_ctrl_inst|state.IDLE~q ))
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|data_reg [6]),
+	.datac(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.datad(\ram_ctrl_inst|state.IDLE~q ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram1_wr_data[6]~6_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_data[6]~6 .lut_mask = 16'h0C00;
+defparam \ram_ctrl_inst|ram1_wr_data[6]~6 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X26_Y20_N29
+dffeas \ram_ctrl_inst|data_reg[7] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.d(gnd),
+	.asdata(\data_gen_inst|data_in [7]),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|data_reg [7]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|data_reg[7] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|data_reg[7] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y20_N22
+cycloneive_lcell_comb \ram_ctrl_inst|ram1_wr_data[7]~7 (
+// Equation(s):
+// \ram_ctrl_inst|ram1_wr_data[7]~7_combout  = (\ram_ctrl_inst|data_reg [7] & (!\ram_ctrl_inst|state.WRAM2_RRAM1~q  & \ram_ctrl_inst|state.IDLE~q ))
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|data_reg [7]),
+	.datac(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.datad(\ram_ctrl_inst|state.IDLE~q ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram1_wr_data[7]~7_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram1_wr_data[7]~7 .lut_mask = 16'h0C00;
+defparam \ram_ctrl_inst|ram1_wr_data[7]~7 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: M9K_X27_Y20_N0
+cycloneive_ram_block \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 (
+	.portawe(\ram_ctrl_inst|ram1_wr_en~0_combout ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(\ram_ctrl_inst|ram1_rd_en~q ),
+	.portbaddrstall(gnd),
+	.clk0(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.clk1(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
+	.ena0(\ram_ctrl_inst|ram1_wr_en~0_combout ),
+	.ena1(\dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0~0_combout ),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain({gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,\ram_ctrl_inst|ram1_wr_data[7]~7_combout ,\ram_ctrl_inst|ram1_wr_data[6]~6_combout ,\ram_ctrl_inst|ram1_wr_data[5]~5_combout ,\ram_ctrl_inst|ram1_wr_data[4]~4_combout ,
+\ram_ctrl_inst|ram1_wr_data[3]~3_combout ,\ram_ctrl_inst|ram1_wr_data[2]~2_combout ,\ram_ctrl_inst|ram1_wr_data[1]~1_combout ,\ram_ctrl_inst|ram1_wr_data[0]~0_combout }),
+	.portaaddr({\ram_ctrl_inst|ram1_wr_addr [7],\ram_ctrl_inst|ram1_wr_addr [6],\ram_ctrl_inst|ram1_wr_addr [5],\ram_ctrl_inst|ram1_wr_addr [4],\ram_ctrl_inst|ram1_wr_addr [3],\ram_ctrl_inst|ram1_wr_addr [2],\ram_ctrl_inst|ram1_wr_addr [1],\ram_ctrl_inst|ram1_wr_addr [0]}),
+	.portabyteenamasks(1'b1),
+	.portbdatain(36'b000000000000000000000000000000000000),
+	.portbaddr({\ram_ctrl_inst|ram1_rd_addr [7],\ram_ctrl_inst|ram1_rd_addr [6],\ram_ctrl_inst|ram1_rd_addr [5],\ram_ctrl_inst|ram1_rd_addr [4],\ram_ctrl_inst|ram1_rd_addr [3],\ram_ctrl_inst|ram1_rd_addr [2],\ram_ctrl_inst|ram1_rd_addr [1],\ram_ctrl_inst|ram1_rd_addr [0]}),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus ));
+// synopsys translate_off
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .clk0_core_clock_enable = "ena0";
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .clk1_core_clock_enable = "ena1";
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .data_interleave_offset_in_bits = 1;
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .data_interleave_width_in_bits = 1;
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .logical_ram_name = "dp_ram_1:dp_ram_1_inst|altsyncram:altsyncram_component|altsyncram_suo1:auto_generated|ALTSYNCRAM";
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .mixed_port_feed_through_mode = "dont_care";
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .operation_mode = "dual_port";
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_address_clear = "none";
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_address_width = 8;
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_byte_enable_clock = "none";
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_data_out_clear = "none";
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_data_out_clock = "none";
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_data_width = 36;
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_first_address = 0;
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_first_bit_number = 0;
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_last_address = 255;
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_logical_ram_depth = 256;
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_logical_ram_width = 8;
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_read_during_write_mode = "new_data_with_nbe_read";
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_address_clear = "none";
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_address_clock = "clock1";
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_address_width = 8;
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_data_out_clear = "none";
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_data_out_clock = "none";
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_data_width = 36;
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_first_address = 0;
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_first_bit_number = 0;
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_last_address = 255;
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_logical_ram_depth = 256;
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_logical_ram_width = 8;
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_read_during_write_mode = "new_data_with_nbe_read";
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_read_enable_clock = "clock1";
+defparam \dp_ram_1_inst|altsyncram_component|auto_generated|ram_block1a0 .ram_block_type = "M9K";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y21_N16
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_rd_en~feeder (
+// Equation(s):
+// \ram_ctrl_inst|ram2_rd_en~feeder_combout  = \ram_ctrl_inst|state.WRAM1_RRAM2~q 
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\ram_ctrl_inst|state.WRAM1_RRAM2~q ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram2_rd_en~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_rd_en~feeder .lut_mask = 16'hFF00;
+defparam \ram_ctrl_inst|ram2_rd_en~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X26_Y21_N17
+dffeas \ram_ctrl_inst|ram2_rd_en (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram2_rd_en~feeder_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram2_rd_en~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_rd_en .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram2_rd_en .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X25_Y21_N25
+dffeas \dp_ram_2_inst|altsyncram_component|auto_generated|rden_b_store (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
+	.d(gnd),
+	.asdata(\ram_ctrl_inst|ram2_rd_en~q ),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\dp_ram_2_inst|altsyncram_component|auto_generated|rden_b_store~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|rden_b_store .is_wysiwyg = "true";
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|rden_b_store .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X25_Y21_N24
+cycloneive_lcell_comb \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0~0 (
+// Equation(s):
+// \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0~0_combout  = (\ram_ctrl_inst|ram2_rd_en~q ) # (\dp_ram_2_inst|altsyncram_component|auto_generated|rden_b_store~q )
+
+	.dataa(\ram_ctrl_inst|ram2_rd_en~q ),
+	.datab(gnd),
+	.datac(\dp_ram_2_inst|altsyncram_component|auto_generated|rden_b_store~q ),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0~0 .lut_mask = 16'hFAFA;
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y20_N4
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_wr_data[0]~0 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_wr_data[0]~0_combout  = (\ram_ctrl_inst|data_reg [0] & \ram_ctrl_inst|state.WRAM2_RRAM1~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\ram_ctrl_inst|data_reg [0]),
+	.datad(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram2_wr_data[0]~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_data[0]~0 .lut_mask = 16'hF000;
+defparam \ram_ctrl_inst|ram2_wr_data[0]~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y21_N0
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_rd_addr[0]~8 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_rd_addr[0]~8_combout  = (\ram_ctrl_inst|ram2_rd_en~q  & (\ram_ctrl_inst|ram2_rd_addr [0] $ (VCC))) # (!\ram_ctrl_inst|ram2_rd_en~q  & (\ram_ctrl_inst|ram2_rd_addr [0] & VCC))
+// \ram_ctrl_inst|ram2_rd_addr[0]~9  = CARRY((\ram_ctrl_inst|ram2_rd_en~q  & \ram_ctrl_inst|ram2_rd_addr [0]))
+
+	.dataa(\ram_ctrl_inst|ram2_rd_en~q ),
+	.datab(\ram_ctrl_inst|ram2_rd_addr [0]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram2_rd_addr[0]~8_combout ),
+	.cout(\ram_ctrl_inst|ram2_rd_addr[0]~9 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_rd_addr[0]~8 .lut_mask = 16'h6688;
+defparam \ram_ctrl_inst|ram2_rd_addr[0]~8 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y21_N2
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_rd_addr[1]~10 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_rd_addr[1]~10_combout  = (\ram_ctrl_inst|ram2_rd_addr [1] & (!\ram_ctrl_inst|ram2_rd_addr[0]~9 )) # (!\ram_ctrl_inst|ram2_rd_addr [1] & ((\ram_ctrl_inst|ram2_rd_addr[0]~9 ) # (GND)))
+// \ram_ctrl_inst|ram2_rd_addr[1]~11  = CARRY((!\ram_ctrl_inst|ram2_rd_addr[0]~9 ) # (!\ram_ctrl_inst|ram2_rd_addr [1]))
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|ram2_rd_addr [1]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|ram2_rd_addr[0]~9 ),
+	.combout(\ram_ctrl_inst|ram2_rd_addr[1]~10_combout ),
+	.cout(\ram_ctrl_inst|ram2_rd_addr[1]~11 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_rd_addr[1]~10 .lut_mask = 16'h3C3F;
+defparam \ram_ctrl_inst|ram2_rd_addr[1]~10 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X26_Y21_N3
+dffeas \ram_ctrl_inst|ram2_rd_addr[1] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram2_rd_addr[1]~10_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\ram_ctrl_inst|Equal3~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram2_rd_addr [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_rd_addr[1] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram2_rd_addr[1] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y21_N4
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_rd_addr[2]~12 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_rd_addr[2]~12_combout  = (\ram_ctrl_inst|ram2_rd_addr [2] & (\ram_ctrl_inst|ram2_rd_addr[1]~11  $ (GND))) # (!\ram_ctrl_inst|ram2_rd_addr [2] & (!\ram_ctrl_inst|ram2_rd_addr[1]~11  & VCC))
+// \ram_ctrl_inst|ram2_rd_addr[2]~13  = CARRY((\ram_ctrl_inst|ram2_rd_addr [2] & !\ram_ctrl_inst|ram2_rd_addr[1]~11 ))
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|ram2_rd_addr [2]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|ram2_rd_addr[1]~11 ),
+	.combout(\ram_ctrl_inst|ram2_rd_addr[2]~12_combout ),
+	.cout(\ram_ctrl_inst|ram2_rd_addr[2]~13 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_rd_addr[2]~12 .lut_mask = 16'hC30C;
+defparam \ram_ctrl_inst|ram2_rd_addr[2]~12 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X26_Y21_N5
+dffeas \ram_ctrl_inst|ram2_rd_addr[2] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram2_rd_addr[2]~12_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\ram_ctrl_inst|Equal3~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram2_rd_addr [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_rd_addr[2] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram2_rd_addr[2] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y21_N6
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_rd_addr[3]~14 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_rd_addr[3]~14_combout  = (\ram_ctrl_inst|ram2_rd_addr [3] & (!\ram_ctrl_inst|ram2_rd_addr[2]~13 )) # (!\ram_ctrl_inst|ram2_rd_addr [3] & ((\ram_ctrl_inst|ram2_rd_addr[2]~13 ) # (GND)))
+// \ram_ctrl_inst|ram2_rd_addr[3]~15  = CARRY((!\ram_ctrl_inst|ram2_rd_addr[2]~13 ) # (!\ram_ctrl_inst|ram2_rd_addr [3]))
+
+	.dataa(\ram_ctrl_inst|ram2_rd_addr [3]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|ram2_rd_addr[2]~13 ),
+	.combout(\ram_ctrl_inst|ram2_rd_addr[3]~14_combout ),
+	.cout(\ram_ctrl_inst|ram2_rd_addr[3]~15 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_rd_addr[3]~14 .lut_mask = 16'h5A5F;
+defparam \ram_ctrl_inst|ram2_rd_addr[3]~14 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X26_Y21_N7
+dffeas \ram_ctrl_inst|ram2_rd_addr[3] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram2_rd_addr[3]~14_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\ram_ctrl_inst|Equal3~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram2_rd_addr [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_rd_addr[3] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram2_rd_addr[3] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y21_N30
+cycloneive_lcell_comb \ram_ctrl_inst|Equal3~0 (
+// Equation(s):
+// \ram_ctrl_inst|Equal3~0_combout  = (!\ram_ctrl_inst|ram2_rd_addr [3] & (!\ram_ctrl_inst|ram2_rd_addr [1] & (!\ram_ctrl_inst|ram2_rd_addr [2] & \ram_ctrl_inst|ram2_rd_addr [0])))
+
+	.dataa(\ram_ctrl_inst|ram2_rd_addr [3]),
+	.datab(\ram_ctrl_inst|ram2_rd_addr [1]),
+	.datac(\ram_ctrl_inst|ram2_rd_addr [2]),
+	.datad(\ram_ctrl_inst|ram2_rd_addr [0]),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|Equal3~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|Equal3~0 .lut_mask = 16'h0100;
+defparam \ram_ctrl_inst|Equal3~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y21_N8
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_rd_addr[4]~16 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_rd_addr[4]~16_combout  = (\ram_ctrl_inst|ram2_rd_addr [4] & (\ram_ctrl_inst|ram2_rd_addr[3]~15  $ (GND))) # (!\ram_ctrl_inst|ram2_rd_addr [4] & (!\ram_ctrl_inst|ram2_rd_addr[3]~15  & VCC))
+// \ram_ctrl_inst|ram2_rd_addr[4]~17  = CARRY((\ram_ctrl_inst|ram2_rd_addr [4] & !\ram_ctrl_inst|ram2_rd_addr[3]~15 ))
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|ram2_rd_addr [4]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|ram2_rd_addr[3]~15 ),
+	.combout(\ram_ctrl_inst|ram2_rd_addr[4]~16_combout ),
+	.cout(\ram_ctrl_inst|ram2_rd_addr[4]~17 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_rd_addr[4]~16 .lut_mask = 16'hC30C;
+defparam \ram_ctrl_inst|ram2_rd_addr[4]~16 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X26_Y21_N9
+dffeas \ram_ctrl_inst|ram2_rd_addr[4] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram2_rd_addr[4]~16_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\ram_ctrl_inst|Equal3~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram2_rd_addr [4]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_rd_addr[4] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram2_rd_addr[4] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y21_N10
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_rd_addr[5]~18 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_rd_addr[5]~18_combout  = (\ram_ctrl_inst|ram2_rd_addr [5] & (!\ram_ctrl_inst|ram2_rd_addr[4]~17 )) # (!\ram_ctrl_inst|ram2_rd_addr [5] & ((\ram_ctrl_inst|ram2_rd_addr[4]~17 ) # (GND)))
+// \ram_ctrl_inst|ram2_rd_addr[5]~19  = CARRY((!\ram_ctrl_inst|ram2_rd_addr[4]~17 ) # (!\ram_ctrl_inst|ram2_rd_addr [5]))
+
+	.dataa(\ram_ctrl_inst|ram2_rd_addr [5]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|ram2_rd_addr[4]~17 ),
+	.combout(\ram_ctrl_inst|ram2_rd_addr[5]~18_combout ),
+	.cout(\ram_ctrl_inst|ram2_rd_addr[5]~19 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_rd_addr[5]~18 .lut_mask = 16'h5A5F;
+defparam \ram_ctrl_inst|ram2_rd_addr[5]~18 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X26_Y21_N11
+dffeas \ram_ctrl_inst|ram2_rd_addr[5] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram2_rd_addr[5]~18_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\ram_ctrl_inst|Equal3~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram2_rd_addr [5]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_rd_addr[5] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram2_rd_addr[5] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y21_N12
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_rd_addr[6]~20 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_rd_addr[6]~20_combout  = (\ram_ctrl_inst|ram2_rd_addr [6] & (\ram_ctrl_inst|ram2_rd_addr[5]~19  $ (GND))) # (!\ram_ctrl_inst|ram2_rd_addr [6] & (!\ram_ctrl_inst|ram2_rd_addr[5]~19  & VCC))
+// \ram_ctrl_inst|ram2_rd_addr[6]~21  = CARRY((\ram_ctrl_inst|ram2_rd_addr [6] & !\ram_ctrl_inst|ram2_rd_addr[5]~19 ))
+
+	.dataa(\ram_ctrl_inst|ram2_rd_addr [6]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\ram_ctrl_inst|ram2_rd_addr[5]~19 ),
+	.combout(\ram_ctrl_inst|ram2_rd_addr[6]~20_combout ),
+	.cout(\ram_ctrl_inst|ram2_rd_addr[6]~21 ));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_rd_addr[6]~20 .lut_mask = 16'hA50A;
+defparam \ram_ctrl_inst|ram2_rd_addr[6]~20 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X26_Y21_N13
+dffeas \ram_ctrl_inst|ram2_rd_addr[6] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram2_rd_addr[6]~20_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\ram_ctrl_inst|Equal3~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram2_rd_addr [6]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_rd_addr[6] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram2_rd_addr[6] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y21_N14
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_rd_addr[7]~22 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_rd_addr[7]~22_combout  = \ram_ctrl_inst|ram2_rd_addr [7] $ (\ram_ctrl_inst|ram2_rd_addr[6]~21 )
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|ram2_rd_addr [7]),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(\ram_ctrl_inst|ram2_rd_addr[6]~21 ),
+	.combout(\ram_ctrl_inst|ram2_rd_addr[7]~22_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_rd_addr[7]~22 .lut_mask = 16'h3C3C;
+defparam \ram_ctrl_inst|ram2_rd_addr[7]~22 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X26_Y21_N15
+dffeas \ram_ctrl_inst|ram2_rd_addr[7] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram2_rd_addr[7]~22_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\ram_ctrl_inst|Equal3~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram2_rd_addr [7]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_rd_addr[7] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram2_rd_addr[7] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y21_N24
+cycloneive_lcell_comb \ram_ctrl_inst|Equal3~1 (
+// Equation(s):
+// \ram_ctrl_inst|Equal3~1_combout  = (\ram_ctrl_inst|ram2_rd_addr [5] & (\ram_ctrl_inst|ram2_rd_addr [4] & (!\ram_ctrl_inst|ram2_rd_addr [7] & !\ram_ctrl_inst|ram2_rd_addr [6])))
+
+	.dataa(\ram_ctrl_inst|ram2_rd_addr [5]),
+	.datab(\ram_ctrl_inst|ram2_rd_addr [4]),
+	.datac(\ram_ctrl_inst|ram2_rd_addr [7]),
+	.datad(\ram_ctrl_inst|ram2_rd_addr [6]),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|Equal3~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|Equal3~1 .lut_mask = 16'h0008;
+defparam \ram_ctrl_inst|Equal3~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y21_N18
+cycloneive_lcell_comb \ram_ctrl_inst|Equal3~2 (
+// Equation(s):
+// \ram_ctrl_inst|Equal3~2_combout  = (\ram_ctrl_inst|Equal3~0_combout  & \ram_ctrl_inst|Equal3~1_combout )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\ram_ctrl_inst|Equal3~0_combout ),
+	.datad(\ram_ctrl_inst|Equal3~1_combout ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|Equal3~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|Equal3~2 .lut_mask = 16'hF000;
+defparam \ram_ctrl_inst|Equal3~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X26_Y21_N1
+dffeas \ram_ctrl_inst|ram2_rd_addr[0] (
+	.clk(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
+	.d(\ram_ctrl_inst|ram2_rd_addr[0]~8_combout ),
+	.asdata(vcc),
+	.clrn(!\rst_n~0clkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\ram_ctrl_inst|Equal3~2_combout ),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\ram_ctrl_inst|ram2_rd_addr [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_rd_addr[0] .is_wysiwyg = "true";
+defparam \ram_ctrl_inst|ram2_rd_addr[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y20_N0
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_wr_data[1]~1 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_wr_data[1]~1_combout  = (\ram_ctrl_inst|data_reg [1] & \ram_ctrl_inst|state.WRAM2_RRAM1~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\ram_ctrl_inst|data_reg [1]),
+	.datad(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram2_wr_data[1]~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_data[1]~1 .lut_mask = 16'hF000;
+defparam \ram_ctrl_inst|ram2_wr_data[1]~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y20_N20
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_wr_data[2]~2 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_wr_data[2]~2_combout  = (\ram_ctrl_inst|data_reg [2] & \ram_ctrl_inst|state.WRAM2_RRAM1~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\ram_ctrl_inst|data_reg [2]),
+	.datad(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram2_wr_data[2]~2_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_data[2]~2 .lut_mask = 16'hF000;
+defparam \ram_ctrl_inst|ram2_wr_data[2]~2 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y20_N8
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_wr_data[3]~3 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_wr_data[3]~3_combout  = (\ram_ctrl_inst|data_reg [3] & \ram_ctrl_inst|state.WRAM2_RRAM1~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\ram_ctrl_inst|data_reg [3]),
+	.datad(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram2_wr_data[3]~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_data[3]~3 .lut_mask = 16'hF000;
+defparam \ram_ctrl_inst|ram2_wr_data[3]~3 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y20_N12
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_wr_data[4]~4 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_wr_data[4]~4_combout  = (\ram_ctrl_inst|data_reg [4] & \ram_ctrl_inst|state.WRAM2_RRAM1~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\ram_ctrl_inst|data_reg [4]),
+	.datad(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram2_wr_data[4]~4_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_data[4]~4 .lut_mask = 16'hF000;
+defparam \ram_ctrl_inst|ram2_wr_data[4]~4 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y21_N26
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_wr_data[5]~5 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_wr_data[5]~5_combout  = (\ram_ctrl_inst|data_reg [5] & \ram_ctrl_inst|state.WRAM2_RRAM1~q )
+
+	.dataa(gnd),
+	.datab(\ram_ctrl_inst|data_reg [5]),
+	.datac(gnd),
+	.datad(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram2_wr_data[5]~5_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_data[5]~5 .lut_mask = 16'hCC00;
+defparam \ram_ctrl_inst|ram2_wr_data[5]~5 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y21_N28
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_wr_data[6]~6 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_wr_data[6]~6_combout  = (\ram_ctrl_inst|data_reg [6] & \ram_ctrl_inst|state.WRAM2_RRAM1~q )
+
+	.dataa(\ram_ctrl_inst|data_reg [6]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram2_wr_data[6]~6_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_data[6]~6 .lut_mask = 16'hAA00;
+defparam \ram_ctrl_inst|ram2_wr_data[6]~6 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X26_Y20_N28
+cycloneive_lcell_comb \ram_ctrl_inst|ram2_wr_data[7]~7 (
+// Equation(s):
+// \ram_ctrl_inst|ram2_wr_data[7]~7_combout  = (\ram_ctrl_inst|data_reg [7] & \ram_ctrl_inst|state.WRAM2_RRAM1~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\ram_ctrl_inst|data_reg [7]),
+	.datad(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.cin(gnd),
+	.combout(\ram_ctrl_inst|ram2_wr_data[7]~7_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ram_ctrl_inst|ram2_wr_data[7]~7 .lut_mask = 16'hF000;
+defparam \ram_ctrl_inst|ram2_wr_data[7]~7 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: M9K_X27_Y21_N0
+cycloneive_ram_block \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 (
+	.portawe(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.portare(vcc),
+	.portaaddrstall(gnd),
+	.portbwe(gnd),
+	.portbre(\ram_ctrl_inst|ram2_rd_en~q ),
+	.portbaddrstall(gnd),
+	.clk0(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[0]~clkctrl_outclk ),
+	.clk1(\clk_gen_inst|altpll_component|auto_generated|wire_pll1_clk[1]~clkctrl_outclk ),
+	.ena0(\ram_ctrl_inst|state.WRAM2_RRAM1~q ),
+	.ena1(\dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0~0_combout ),
+	.ena2(vcc),
+	.ena3(vcc),
+	.clr0(gnd),
+	.clr1(gnd),
+	.portadatain({gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,gnd,\ram_ctrl_inst|ram2_wr_data[7]~7_combout ,\ram_ctrl_inst|ram2_wr_data[6]~6_combout ,\ram_ctrl_inst|ram2_wr_data[5]~5_combout ,\ram_ctrl_inst|ram2_wr_data[4]~4_combout ,
+\ram_ctrl_inst|ram2_wr_data[3]~3_combout ,\ram_ctrl_inst|ram2_wr_data[2]~2_combout ,\ram_ctrl_inst|ram2_wr_data[1]~1_combout ,\ram_ctrl_inst|ram2_wr_data[0]~0_combout }),
+	.portaaddr({\ram_ctrl_inst|ram2_wr_addr [7],\ram_ctrl_inst|ram2_wr_addr [6],\ram_ctrl_inst|ram2_wr_addr [5],\ram_ctrl_inst|ram2_wr_addr [4],\ram_ctrl_inst|ram2_wr_addr [3],\ram_ctrl_inst|ram2_wr_addr [2],\ram_ctrl_inst|ram2_wr_addr [1],\ram_ctrl_inst|ram2_wr_addr [0]}),
+	.portabyteenamasks(1'b1),
+	.portbdatain(36'b000000000000000000000000000000000000),
+	.portbaddr({\ram_ctrl_inst|ram2_rd_addr [7],\ram_ctrl_inst|ram2_rd_addr [6],\ram_ctrl_inst|ram2_rd_addr [5],\ram_ctrl_inst|ram2_rd_addr [4],\ram_ctrl_inst|ram2_rd_addr [3],\ram_ctrl_inst|ram2_rd_addr [2],\ram_ctrl_inst|ram2_rd_addr [1],\ram_ctrl_inst|ram2_rd_addr [0]}),
+	.portbbyteenamasks(1'b1),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.portadataout(),
+	.portbdataout(\dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0_PORTBDATAOUT_bus ));
+// synopsys translate_off
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .clk0_core_clock_enable = "ena0";
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .clk1_core_clock_enable = "ena1";
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .data_interleave_offset_in_bits = 1;
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .data_interleave_width_in_bits = 1;
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .logical_ram_name = "dp_ram_2:dp_ram_2_inst|altsyncram:altsyncram_component|altsyncram_suo1:auto_generated|ALTSYNCRAM";
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .mixed_port_feed_through_mode = "dont_care";
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .operation_mode = "dual_port";
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_address_clear = "none";
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_address_width = 8;
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_byte_enable_clock = "none";
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_data_out_clear = "none";
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_data_out_clock = "none";
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_data_width = 36;
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_first_address = 0;
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_first_bit_number = 0;
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_last_address = 255;
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_logical_ram_depth = 256;
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_logical_ram_width = 8;
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_a_read_during_write_mode = "new_data_with_nbe_read";
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_address_clear = "none";
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_address_clock = "clock1";
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_address_width = 8;
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_data_out_clear = "none";
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_data_out_clock = "none";
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_data_width = 36;
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_first_address = 0;
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_first_bit_number = 0;
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_last_address = 255;
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_logical_ram_depth = 256;
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_logical_ram_width = 8;
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_read_during_write_mode = "new_data_with_nbe_read";
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .port_b_read_enable_clock = "clock1";
+defparam \dp_ram_2_inst|altsyncram_component|auto_generated|ram_block1a0 .ram_block_type = "M9K";
+// synopsys translate_on
+
+endmodule

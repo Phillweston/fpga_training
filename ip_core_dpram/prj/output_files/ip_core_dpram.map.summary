@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Aug 29 11:04:29 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : ip_core_dpram
+Top-level Entity Name : dpram_v3_top
+Family : Cyclone IV E
+Total logic elements : 24
+    Total combinational functions : 23
+    Dedicated logic registers : 19
+Total registers : 19
+Total pins : 10
+Total virtual pins : 0
+Total memory bits : 2,048
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

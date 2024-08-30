@@ -1,0 +1,191 @@
+# Reading pref.tcl
+# //  ModelSim SE-64 2020.4 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do ip_core_dpram_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is 24365@PHILLLAPTOP.
+# vlib rtl_work
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Errors: 0, Warnings: 1
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap work rtl_work 
+# Modifying C:/modeltech64_2020.4/win64/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_dpram/rtl {D:/git-repository/fpga_training/ip_core_dpram/rtl/dpram_wr_ctrl.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:11:42 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_dpram/rtl" D:/git-repository/fpga_training/ip_core_dpram/rtl/dpram_wr_ctrl.v 
+# -- Compiling module dpram_wr_ctrl
+# 
+# Top level modules:
+# 	dpram_wr_ctrl
+# End time: 11:11:42 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_dpram/rtl {D:/git-repository/fpga_training/ip_core_dpram/rtl/dpram_v3_top.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:11:42 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_dpram/rtl" D:/git-repository/fpga_training/ip_core_dpram/rtl/dpram_v3_top.v 
+# -- Compiling module dpram_v3_top
+# 
+# Top level modules:
+# 	dpram_v3_top
+# End time: 11:11:43 on Aug 29,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_dpram/rtl {D:/git-repository/fpga_training/ip_core_dpram/rtl/dpram_rd_ctrl.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:11:43 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_dpram/rtl" D:/git-repository/fpga_training/ip_core_dpram/rtl/dpram_rd_ctrl.v 
+# -- Compiling module dpram_rd_ctrl
+# 
+# Top level modules:
+# 	dpram_rd_ctrl
+# End time: 11:11:43 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_dpram/prj {D:/git-repository/fpga_training/ip_core_dpram/prj/ip_core_dpram_v2.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:11:43 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_dpram/prj" D:/git-repository/fpga_training/ip_core_dpram/prj/ip_core_dpram_v2.v 
+# -- Compiling module ip_core_dpram_v2
+# 
+# Top level modules:
+# 	ip_core_dpram_v2
+# End time: 11:11:43 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_dpram/prj {D:/git-repository/fpga_training/ip_core_dpram/prj/clk_gen.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:11:43 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_dpram/prj" D:/git-repository/fpga_training/ip_core_dpram/prj/clk_gen.v 
+# -- Compiling module clk_gen
+# 
+# Top level modules:
+# 	clk_gen
+# End time: 11:11:43 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_dpram/prj/db {D:/git-repository/fpga_training/ip_core_dpram/prj/db/clk_gen_altpll.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:11:43 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_dpram/prj/db" D:/git-repository/fpga_training/ip_core_dpram/prj/db/clk_gen_altpll.v 
+# -- Compiling module clk_gen_altpll
+# 
+# Top level modules:
+# 	clk_gen_altpll
+# End time: 11:11:43 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_dpram/prj/../sim {D:/git-repository/fpga_training/ip_core_dpram/prj/../sim/dpram_v3_tb.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 11:11:43 on Aug 29,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_dpram/prj/../sim" D:/git-repository/fpga_training/ip_core_dpram/prj/../sim/dpram_v3_tb.v 
+# -- Compiling module dpram_v3_tb
+# 
+# Top level modules:
+# 	dpram_v3_tb
+# End time: 11:11:43 on Aug 29,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  dpram_v3_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" dpram_v3_tb 
+# Start time: 11:11:43 on Aug 29,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.dpram_v3_tb(fast)
+# Loading work.dpram_v3_top(fast)
+# Loading work.ip_core_dpram_v2(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.clk_gen(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.dpram_wr_ctrl(fast)
+# Loading work.dpram_rd_ctrl(fast)
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 24365  Hostname: PHILLLAPTOP  ProcessID: 29172
+#           Attempting to use alternate WLF file "./wlftbjjb8f".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftbjjb8f
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: dpram_v3_tb.dpram_v3_top_inst.ip_core_dpram_v2_inst.altsyncram_component.m_default.altsyncram_inst
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: dpram_v3_tb.dpram_v3_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: dpram_v3_tb.dpram_v3_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+add wave -position end  sim:/dpram_v3_tb/dpram_v3_top_inst/sys_clk
+add wave -position end  sim:/dpram_v3_tb/dpram_v3_top_inst/sys_rst_n
+add wave -position end  sim:/dpram_v3_tb/dpram_v3_top_inst/rd_data
+add wave -position end  sim:/dpram_v3_tb/dpram_v3_top_inst/wr_clk
+add wave -position end  sim:/dpram_v3_tb/dpram_v3_top_inst/rd_clk
+add wave -position end  sim:/dpram_v3_tb/dpram_v3_top_inst/locked
+add wave -position end  sim:/dpram_v3_tb/dpram_v3_top_inst/wr_en
+add wave -position end  sim:/dpram_v3_tb/dpram_v3_top_inst/wr_addr
+add wave -position end  sim:/dpram_v3_tb/dpram_v3_top_inst/wr_data
+add wave -position end  sim:/dpram_v3_tb/dpram_v3_top_inst/rd_en
+add wave -position end  sim:/dpram_v3_tb/dpram_v3_top_inst/rd_addr
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.dpram_v3_tb(fast)
+# Loading work.dpram_v3_top(fast)
+# Loading work.ip_core_dpram_v2(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.clk_gen(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.dpram_wr_ctrl(fast)
+# Loading work.dpram_rd_ctrl(fast)
+run
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: dpram_v3_tb.dpram_v3_top_inst.ip_core_dpram_v2_inst.altsyncram_component.m_default.altsyncram_inst
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: dpram_v3_tb.dpram_v3_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: dpram_v3_tb.dpram_v3_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 17:33:14 on Aug 29,2024, Elapsed time: 6:21:31
+# Errors: 0, Warnings: 0

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Aug 27 10:33:57 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : ip_core_rom
+Top-level Entity Name : rom_ip_top
+Family : Cyclone IV E
+Total logic elements : 13
+    Total combinational functions : 12
+    Dedicated logic registers : 10
+Total registers : 10
+Total pins : 10
+Total virtual pins : 0
+Total memory bits : 2,048
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

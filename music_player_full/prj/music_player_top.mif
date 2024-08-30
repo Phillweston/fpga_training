@@ -1,0 +1,68 @@
+-- Copyright (C) 2024  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and any partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel FPGA IP License Agreement, or other applicable license
+-- agreement, including, without limitation, that your use is for
+-- the sole purpose of programming logic devices manufactured by
+-- Intel and sold by Intel or its authorized distributors.  Please
+-- refer to the applicable agreement for further details, at
+-- https://fpgasoftware.intel.com/eula.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=9;
+DEPTH=46;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+    0   :   000010010;
+    [1..2]  :   100001000;
+    3   :   000110010;
+    4   :   010110101;
+    5   :   000110001;
+    6   :   001110010;
+    7   :   000110000;
+    8   :   000110001;
+    9   :   101001001;
+    10  :   100001001;
+    11  :   000110101;
+    12  :   000010001;
+    13  :   110001001;
+    14  :   000110001;
+    15  :   010110001;
+    16  :   100010101;
+    17  :   000110001;
+    18  :   101010010;
+    19  :   100010000;
+    20  :   100010001;
+    21  :   010110001;
+    22  :   001110111;
+    23  :   000010001;
+    24  :   100010001;
+    25  :   101010001;
+    26  :   110010001;
+    27  :   000111101;
+    [28..29]  :   110010001;
+    30  :   101010001;
+    31  :   100010001;
+    32  :   011010001;
+    33  :   100010011;
+    34  :   010110011;
+    35  :   000010001;
+    36  :   000110001;
+    37  :   100010001;
+    38  :   011010001;
+    39  :   010110101;
+    [40..41]  :   010110001;
+    42  :   001110000;
+    43  :   000110010;
+    44  :   110001001;
+    45  :   000110101;
+END;

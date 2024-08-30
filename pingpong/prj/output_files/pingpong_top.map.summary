@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Aug 29 18:11:06 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : pingpong_top
+Top-level Entity Name : pingpong_top
+Family : Cyclone IV E
+Total logic elements : 114
+    Total combinational functions : 99
+    Dedicated logic registers : 58
+Total registers : 58
+Total pins : 18
+Total virtual pins : 0
+Total memory bits : 4,096
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
