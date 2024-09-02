@@ -1,0 +1,428 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/git-repository/fpga_training/ip_core_top/prj/simulation/questa
+T_opt
+!s110 1725266731
+VP@bZUa[ATcN`979b^z_2<1
+04 14 4 work ip_core_top_tb fast 0
+=1-00d861e3bc76-66d57b2a-184-14148
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vbeep_driver
+Z2 !s110 1725266728
+!i10b 1
+!s100 @HZ?1Pk87dgFofTco@FR03
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IEgFn_Ec5VFIYeKmaZ<RGV0
+R0
+w1725264733
+8D:/git-repository/fpga_training/ip_core_top/rtl/beep_driver.v
+FD:/git-repository/fpga_training/ip_core_top/rtl/beep_driver.v
+!i122 11
+L0 1 50
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z6 !s108 1725266728.000000
+!s107 D:/git-repository/fpga_training/ip_core_top/rtl/beep_driver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/ip_core_top/rtl|D:/git-repository/fpga_training/ip_core_top/rtl/beep_driver.v|
+!i113 0
+Z7 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_top/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vclk_gen
+R2
+!i10b 1
+!s100 j<c52b1icPb1jJQg[bfdn3
+R3
+IC<WU5<VTc:W1M3CBH;E<?1
+R0
+w1725244170
+8D:/git-repository/fpga_training/ip_core_top/prj/clk_gen.v
+FD:/git-repository/fpga_training/ip_core_top/prj/clk_gen.v
+!i122 13
+L0 40 124
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/git-repository/fpga_training/ip_core_top/prj/clk_gen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/ip_core_top/prj|D:/git-repository/fpga_training/ip_core_top/prj/clk_gen.v|
+!i113 0
+R7
+Z9 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_top/prj -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vclk_gen_altpll
+R2
+!i10b 1
+!s100 :Zz??<RAJUNNSN2@3bX3@0
+R3
+I^NE8T?S5?j<5>=WknN:WV1
+R0
+w1725250685
+8D:/git-repository/fpga_training/ip_core_top/prj/db/clk_gen_altpll.v
+FD:/git-repository/fpga_training/ip_core_top/prj/db/clk_gen_altpll.v
+!i122 15
+L0 31 79
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/git-repository/fpga_training/ip_core_top/prj/db/clk_gen_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/ip_core_top/prj/db|D:/git-repository/fpga_training/ip_core_top/prj/db/clk_gen_altpll.v|
+!i113 0
+R7
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_top/prj/db -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vdcfifo_div_clk
+R2
+!i10b 1
+!s100 2>nmYUmNhK34>99>iZiJF2
+R3
+IzLh=08NVCf`aL2ThhJSPJ1
+R0
+w1725244580
+8D:/git-repository/fpga_training/ip_core_top/rtl/dcfifo_div_clk.v
+FD:/git-repository/fpga_training/ip_core_top/rtl/dcfifo_div_clk.v
+!i122 10
+Z10 L0 2 25
+R4
+R5
+r1
+!s85 0
+31
+Z11 !s108 1725266727.000000
+!s107 D:/git-repository/fpga_training/ip_core_top/rtl/dcfifo_div_clk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/ip_core_top/rtl|D:/git-repository/fpga_training/ip_core_top/rtl/dcfifo_div_clk.v|
+!i113 0
+R7
+R8
+R1
+vdcfifo_ip
+R2
+!i10b 1
+!s100 CB3Q[IUXQU^hcm?Icj=K:1
+R3
+I2ITL?_ZJWCX3VWhfIo4T91
+R0
+w1725250295
+8D:/git-repository/fpga_training/ip_core_top/prj/dcfifo_ip.v
+FD:/git-repository/fpga_training/ip_core_top/prj/dcfifo_ip.v
+!i122 14
+L0 40 65
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/git-repository/fpga_training/ip_core_top/prj/dcfifo_ip.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/ip_core_top/prj|D:/git-repository/fpga_training/ip_core_top/prj/dcfifo_ip.v|
+!i113 0
+R7
+R9
+R1
+vdcfifo_rd_ctrl
+Z12 !s110 1725266727
+!i10b 1
+!s100 OckJ>:S:z8TT[U:?PmdFF2
+R3
+IG75j0j0O<:n6BNJ9X8]f>3
+R0
+w1725266019
+8D:/git-repository/fpga_training/ip_core_top/rtl/dcfifo_rd_ctrl.v
+FD:/git-repository/fpga_training/ip_core_top/rtl/dcfifo_rd_ctrl.v
+!i122 9
+L0 1 44
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/git-repository/fpga_training/ip_core_top/rtl/dcfifo_rd_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/ip_core_top/rtl|D:/git-repository/fpga_training/ip_core_top/rtl/dcfifo_rd_ctrl.v|
+!i113 0
+R7
+R8
+R1
+vdcfifo_wr_ctrl
+R12
+!i10b 1
+!s100 QWTd[[>o:Tii3GK;JomI32
+R3
+IKm=BZ?Lj[:_iR2?YmI4e02
+R0
+w1725266347
+8D:/git-repository/fpga_training/ip_core_top/rtl/dcfifo_wr_ctrl.v
+FD:/git-repository/fpga_training/ip_core_top/rtl/dcfifo_wr_ctrl.v
+!i122 8
+L0 1 51
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/git-repository/fpga_training/ip_core_top/rtl/dcfifo_wr_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/ip_core_top/rtl|D:/git-repository/fpga_training/ip_core_top/rtl/dcfifo_wr_ctrl.v|
+!i113 0
+R7
+R8
+R1
+vdiv_clk
+R12
+!i10b 1
+!s100 ]226jNz6j=zDT6ehIPDfX0
+R3
+Ifo`P]`TGX6BoHPn]YJAoT2
+R0
+w1725260289
+8D:/git-repository/fpga_training/ip_core_top/rtl/div_clk.v
+FD:/git-repository/fpga_training/ip_core_top/rtl/div_clk.v
+!i122 7
+R10
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/git-repository/fpga_training/ip_core_top/rtl/div_clk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/ip_core_top/rtl|D:/git-repository/fpga_training/ip_core_top/rtl/div_clk.v|
+!i113 0
+R7
+R8
+R1
+vdpram_ip
+R2
+!i10b 1
+!s100 <h<Wl8MHdbLgkPZ_T4QVn2
+R3
+Ia1:o0Q0B6cW03n>n`fENB3
+R0
+w1725244111
+8D:/git-repository/fpga_training/ip_core_top/prj/dpram_ip.v
+FD:/git-repository/fpga_training/ip_core_top/prj/dpram_ip.v
+!i122 12
+L0 40 78
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/git-repository/fpga_training/ip_core_top/prj/dpram_ip.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/ip_core_top/prj|D:/git-repository/fpga_training/ip_core_top/prj/dpram_ip.v|
+!i113 0
+R7
+R9
+R1
+vdpram_rd_ctrl
+R12
+!i10b 1
+!s100 <olV6JTL6DfEZ;fmT@dA@3
+R3
+I0KL8Po?eMW]?l?nd4n41Y0
+R0
+w1725254638
+8D:/git-repository/fpga_training/ip_core_top/rtl/dpram_rd_ctrl.v
+FD:/git-repository/fpga_training/ip_core_top/rtl/dpram_rd_ctrl.v
+!i122 6
+L0 1 22
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/git-repository/fpga_training/ip_core_top/rtl/dpram_rd_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/ip_core_top/rtl|D:/git-repository/fpga_training/ip_core_top/rtl/dpram_rd_ctrl.v|
+!i113 0
+R7
+R8
+R1
+vdpram_wr_ctrl
+R12
+!i10b 1
+!s100 Z2TXUBi:GO74i^P2CX5Hj1
+R3
+Ih2V`WRVY4of]U73QW_m110
+R0
+w1725254833
+8D:/git-repository/fpga_training/ip_core_top/rtl/dpram_wr_ctrl.v
+FD:/git-repository/fpga_training/ip_core_top/rtl/dpram_wr_ctrl.v
+!i122 5
+L0 1 26
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/git-repository/fpga_training/ip_core_top/rtl/dpram_wr_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/ip_core_top/rtl|D:/git-repository/fpga_training/ip_core_top/rtl/dpram_wr_ctrl.v|
+!i113 0
+R7
+R8
+R1
+vedge_check
+R12
+!i10b 1
+!s100 i^CH0mFVag?47=ASKW1Ld3
+R3
+IHGBUaNZ=WGPD5O:CnHA]`1
+R0
+w1725264119
+8D:/git-repository/fpga_training/ip_core_top/rtl/edge_check.v
+FD:/git-repository/fpga_training/ip_core_top/rtl/edge_check.v
+!i122 4
+L0 1 32
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/git-repository/fpga_training/ip_core_top/rtl/edge_check.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/ip_core_top/rtl|D:/git-repository/fpga_training/ip_core_top/rtl/edge_check.v|
+!i113 0
+R7
+R8
+R1
+vip_core_top
+R12
+!i10b 1
+!s100 mfCG>iCCgO`XBbo28RlgP1
+R3
+IVkL54Z<fN=N0f66^CANF22
+R0
+w1725265458
+8D:/git-repository/fpga_training/ip_core_top/rtl/ip_core_top.v
+FD:/git-repository/fpga_training/ip_core_top/rtl/ip_core_top.v
+!i122 3
+L0 1 156
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 D:/git-repository/fpga_training/ip_core_top/rtl/ip_core_top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/ip_core_top/rtl|D:/git-repository/fpga_training/ip_core_top/rtl/ip_core_top.v|
+!i113 0
+R7
+R8
+R1
+vip_core_top_tb
+R2
+!i10b 1
+!s100 4F>BTKH_iofX557fXG5Gm1
+R3
+IWOiZ=ORH0MZE1EgIf^?NL3
+R0
+w1725264648
+8D:/git-repository/fpga_training/ip_core_top/prj/../sim/ip_core_top_tb.v
+FD:/git-repository/fpga_training/ip_core_top/prj/../sim/ip_core_top_tb.v
+!i122 16
+L0 3 116
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/git-repository/fpga_training/ip_core_top/prj/../sim/ip_core_top_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/ip_core_top/prj/../sim|D:/git-repository/fpga_training/ip_core_top/prj/../sim/ip_core_top_tb.v|
+!i113 0
+R7
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_top/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vkeyboard_scan
+Z13 !s110 1725266726
+!i10b 1
+!s100 elgmgH:M`cLFmbM7I>DlF3
+R3
+I?WM4ldKD?eITNm02i3W_E1
+R0
+w1724210664
+8D:/git-repository/fpga_training/ip_core_top/rtl/keyboard_scan.v
+FD:/git-repository/fpga_training/ip_core_top/rtl/keyboard_scan.v
+!i122 2
+L0 1 110
+R4
+R5
+r1
+!s85 0
+31
+Z14 !s108 1725266726.000000
+!s107 D:/git-repository/fpga_training/ip_core_top/rtl/keyboard_scan.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/ip_core_top/rtl|D:/git-repository/fpga_training/ip_core_top/rtl/keyboard_scan.v|
+!i113 0
+R7
+R8
+R1
+vseg_ctrl
+R13
+!i10b 1
+!s100 ZL1N_?WC5^je8720PYP@A1
+R3
+IBg1QDHaT2VRRj4FiC06P72
+R0
+w1725264162
+8D:/git-repository/fpga_training/ip_core_top/rtl/seg_ctrl.v
+FD:/git-repository/fpga_training/ip_core_top/rtl/seg_ctrl.v
+!i122 1
+L0 2 90
+R4
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/git-repository/fpga_training/ip_core_top/rtl/seg_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/ip_core_top/rtl|D:/git-repository/fpga_training/ip_core_top/rtl/seg_ctrl.v|
+!i113 0
+R7
+R8
+R1
+vseven_tube
+R13
+!i10b 1
+!s100 eEh>[SC=RH[Ob]@Y6TGi`0
+R3
+I@HizCF@FeCjcfoR44bNEB0
+R0
+w1725264179
+8D:/git-repository/fpga_training/ip_core_top/rtl/seven_tube.v
+FD:/git-repository/fpga_training/ip_core_top/rtl/seven_tube.v
+!i122 0
+L0 1 27
+R4
+R5
+r1
+!s85 0
+31
+R14
+!s107 D:/git-repository/fpga_training/ip_core_top/rtl/seven_tube.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/ip_core_top/rtl|D:/git-repository/fpga_training/ip_core_top/rtl/seven_tube.v|
+!i113 0
+R7
+R8
+R1

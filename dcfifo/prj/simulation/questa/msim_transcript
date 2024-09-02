@@ -24,79 +24,79 @@
 # 
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dcfifo/rtl {D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_wr_ctrl.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:15:08 on Aug 30,2024
+# Start time: 01:31:52 on Aug 31,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/dcfifo/rtl" D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_wr_ctrl.v 
 # -- Compiling module dcfifo_wr_ctrl
 # 
 # Top level modules:
 # 	dcfifo_wr_ctrl
-# End time: 15:15:08 on Aug 30,2024, Elapsed time: 0:00:00
+# End time: 01:31:52 on Aug 31,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dcfifo/rtl {D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_top.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:15:09 on Aug 30,2024
+# Start time: 01:31:53 on Aug 31,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/dcfifo/rtl" D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_top.v 
 # -- Compiling module dcfifo_top
 # 
 # Top level modules:
 # 	dcfifo_top
-# End time: 15:15:09 on Aug 30,2024, Elapsed time: 0:00:00
+# End time: 01:31:53 on Aug 31,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dcfifo/rtl {D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_rd_ctrl.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:15:09 on Aug 30,2024
+# Start time: 01:31:53 on Aug 31,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/dcfifo/rtl" D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_rd_ctrl.v 
 # -- Compiling module dcfifo_rd_ctrl
 # 
 # Top level modules:
 # 	dcfifo_rd_ctrl
-# End time: 15:15:09 on Aug 30,2024, Elapsed time: 0:00:00
+# End time: 01:31:53 on Aug 31,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dcfifo/prj {D:/git-repository/fpga_training/dcfifo/prj/dcfifo_ip.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:15:09 on Aug 30,2024
+# Start time: 01:31:53 on Aug 31,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/dcfifo/prj" D:/git-repository/fpga_training/dcfifo/prj/dcfifo_ip.v 
 # -- Compiling module dcfifo_ip
 # 
 # Top level modules:
 # 	dcfifo_ip
-# End time: 15:15:09 on Aug 30,2024, Elapsed time: 0:00:00
+# End time: 01:31:53 on Aug 31,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dcfifo/prj {D:/git-repository/fpga_training/dcfifo/prj/clk_gen.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:15:09 on Aug 30,2024
+# Start time: 01:31:53 on Aug 31,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/dcfifo/prj" D:/git-repository/fpga_training/dcfifo/prj/clk_gen.v 
 # -- Compiling module clk_gen
 # 
 # Top level modules:
 # 	clk_gen
-# End time: 15:15:09 on Aug 30,2024, Elapsed time: 0:00:00
+# End time: 01:31:53 on Aug 31,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dcfifo/prj/db {D:/git-repository/fpga_training/dcfifo/prj/db/clk_gen_altpll.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:15:09 on Aug 30,2024
+# Start time: 01:31:53 on Aug 31,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/dcfifo/prj/db" D:/git-repository/fpga_training/dcfifo/prj/db/clk_gen_altpll.v 
 # -- Compiling module clk_gen_altpll
 # 
 # Top level modules:
 # 	clk_gen_altpll
-# End time: 15:15:09 on Aug 30,2024, Elapsed time: 0:00:00
+# End time: 01:31:53 on Aug 31,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dcfifo/prj/../sim {D:/git-repository/fpga_training/dcfifo/prj/../sim/ip_dcfifo_top_tb.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:15:09 on Aug 30,2024
+# Start time: 01:31:54 on Aug 31,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/dcfifo/prj/../sim" D:/git-repository/fpga_training/dcfifo/prj/../sim/ip_dcfifo_top_tb.v 
 # -- Compiling module ip_dcfifo_top_tb
 # 
 # Top level modules:
 # 	ip_dcfifo_top_tb
-# End time: 15:15:09 on Aug 30,2024, Elapsed time: 0:00:00
+# End time: 01:31:54 on Aug 31,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  ip_dcfifo_top_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" ip_dcfifo_top_tb 
-# Start time: 15:15:09 on Aug 30,2024
+# Start time: 01:31:54 on Aug 31,2024
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: d:/intelfpga_lite/23.1std/quartus/eda/sim_lib/altera_mf.v(31792): (vopt-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
 # ** Warning: d:/intelfpga_lite/23.1std/quartus/eda/sim_lib/altera_mf.v(31792): (vopt-2718) [TFMPC] - Missing connection for port 'eccstatus'.
@@ -142,219 +142,5 @@
 # Time: 0  Instance: ip_dcfifo_top_tb.dcfifo_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
 #  Note : Cyclone IV E PLL locked to incoming clock
 # Time: 290000  Instance: ip_dcfifo_top_tb.dcfifo_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
-# Loading work.ip_dcfifo_top_tb(fast)
-# Loading work.dcfifo_top(fast)
-# Loading work.clk_gen(fast)
-# Loading altera_mf_ver.altpll(fast)
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
-# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
-# Loading altera_mf_ver.cda_m_cntr(fast)
-# Loading altera_mf_ver.cda_n_cntr(fast)
-# Loading altera_mf_ver.cda_scale_cntr(fast)
-# Loading altera_mf_ver.pll_iobuf(fast)
-# Loading work.dcfifo_rd_ctrl(fast)
-# Loading work.dcfifo_wr_ctrl(fast)
-# Loading work.dcfifo_ip(fast)
-# Loading altera_mf_ver.dcfifo(fast)
-# Loading altera_mf_ver.dcfifo_mixed_widths(fast)
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
-# Loading altera_mf_ver.dcfifo_async(fast)
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__2)
-# Loading altera_mf_ver.dcfifo_dffpipe(fast)
-# Loading altera_mf_ver.dcfifo_dffpipe(fast__1)
-# Loading altera_mf_ver.dcfifo_dffpipe(fast__2)
-# Loading altera_mf_ver.dcfifo_fefifo(fast)
-# Loading altera_mf_ver.dcfifo_fefifo(fast__1)
-# Loading altera_mf_ver.dcfifo_low_latency(fast)
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__3)
-# Loading altera_mf_ver.ALTERA_MF_HINT_EVALUATION(fast)
-# Loading altera_mf_ver.dcfifo_dffpipe(fast__3)
-# Loading altera_mf_ver.dcfifo_dffpipe(fast__4)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'rdusedw'. The port definition is at: D:/git-repository/fpga_training/dcfifo/prj/dcfifo_ip.v(49).
-#    Time: 0 ps  Iteration: 0  Instance: /ip_dcfifo_top_tb/dcfifo_top_inst/dcfifo_ip_inst File: D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_top.v Line: 44
-run
-#  Note : Cyclone IV E PLL was reset
-# Time: 0  Instance: ip_dcfifo_top_tb.dcfifo_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
-#  Note : Cyclone IV E PLL locked to incoming clock
-# Time: 290000  Instance: ip_dcfifo_top_tb.dcfifo_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
-run
-add wave -position 0  sim:/ip_dcfifo_top_tb/dcfifo_top_inst/dcfifo_wr_ctrl_inst/state
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
-# Loading work.ip_dcfifo_top_tb(fast)
-# Loading work.dcfifo_top(fast)
-# Loading work.clk_gen(fast)
-# Loading altera_mf_ver.altpll(fast)
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
-# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
-# Loading altera_mf_ver.cda_m_cntr(fast)
-# Loading altera_mf_ver.cda_n_cntr(fast)
-# Loading altera_mf_ver.cda_scale_cntr(fast)
-# Loading altera_mf_ver.pll_iobuf(fast)
-# Loading work.dcfifo_rd_ctrl(fast)
-# Loading work.dcfifo_wr_ctrl(fast)
-# Loading work.dcfifo_ip(fast)
-# Loading altera_mf_ver.dcfifo(fast)
-# Loading altera_mf_ver.dcfifo_mixed_widths(fast)
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
-# Loading altera_mf_ver.dcfifo_async(fast)
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__2)
-# Loading altera_mf_ver.dcfifo_dffpipe(fast)
-# Loading altera_mf_ver.dcfifo_dffpipe(fast__1)
-# Loading altera_mf_ver.dcfifo_dffpipe(fast__2)
-# Loading altera_mf_ver.dcfifo_fefifo(fast)
-# Loading altera_mf_ver.dcfifo_fefifo(fast__1)
-# Loading altera_mf_ver.dcfifo_low_latency(fast)
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__3)
-# Loading altera_mf_ver.ALTERA_MF_HINT_EVALUATION(fast)
-# Loading altera_mf_ver.dcfifo_dffpipe(fast__3)
-# Loading altera_mf_ver.dcfifo_dffpipe(fast__4)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'rdusedw'. The port definition is at: D:/git-repository/fpga_training/dcfifo/prj/dcfifo_ip.v(49).
-#    Time: 0 ps  Iteration: 0  Instance: /ip_dcfifo_top_tb/dcfifo_top_inst/dcfifo_ip_inst File: D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_top.v Line: 44
-run
-#  Note : Cyclone IV E PLL was reset
-# Time: 0  Instance: ip_dcfifo_top_tb.dcfifo_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
-#  Note : Cyclone IV E PLL locked to incoming clock
-# Time: 290000  Instance: ip_dcfifo_top_tb.dcfifo_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dcfifo/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/dcfifo/sim/ip_dcfifo_top_tb.v
-# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:28:07 on Aug 30,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/dcfifo/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/dcfifo/sim/ip_dcfifo_top_tb.v 
-# -- Compiling module ip_dcfifo_top_tb
-# 
-# Top level modules:
-# 	ip_dcfifo_top_tb
-# End time: 15:28:07 on Aug 30,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dcfifo/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_wr_ctrl.v
-# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:28:07 on Aug 30,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/dcfifo/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_wr_ctrl.v 
-# -- Compiling module dcfifo_wr_ctrl
-# 
-# Top level modules:
-# 	dcfifo_wr_ctrl
-# End time: 15:28:07 on Aug 30,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dcfifo/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_top.v
-# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:28:07 on Aug 30,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/dcfifo/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_top.v 
-# -- Compiling module dcfifo_top
-# 
-# Top level modules:
-# 	dcfifo_top
-# End time: 15:28:08 on Aug 30,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dcfifo/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_rd_ctrl.v
-# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:28:08 on Aug 30,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/dcfifo/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_rd_ctrl.v 
-# -- Compiling module dcfifo_rd_ctrl
-# 
-# Top level modules:
-# 	dcfifo_rd_ctrl
-# End time: 15:28:08 on Aug 30,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dcfifo/prj -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/dcfifo/prj/dcfifo_ip.v
-# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:28:08 on Aug 30,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/dcfifo/prj" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/dcfifo/prj/dcfifo_ip.v 
-# -- Compiling module dcfifo_ip
-# 
-# Top level modules:
-# 	dcfifo_ip
-# End time: 15:28:08 on Aug 30,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dcfifo/prj/db -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/dcfifo/prj/db/clk_gen_altpll.v
-# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:28:08 on Aug 30,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/dcfifo/prj/db" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/dcfifo/prj/db/clk_gen_altpll.v 
-# -- Compiling module clk_gen_altpll
-# 
-# Top level modules:
-# 	clk_gen_altpll
-# End time: 15:28:08 on Aug 30,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dcfifo/prj -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/dcfifo/prj/clk_gen.v
-# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:28:08 on Aug 30,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/dcfifo/prj" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/dcfifo/prj/clk_gen.v 
-# -- Compiling module clk_gen
-# 
-# Top level modules:
-# 	clk_gen
-# End time: 15:28:08 on Aug 30,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.ip_dcfifo_top_tb(fast)
-# Loading work.dcfifo_top(fast)
-# Loading work.clk_gen(fast)
-# Loading altera_mf_ver.altpll(fast)
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
-# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
-# Loading altera_mf_ver.cda_m_cntr(fast)
-# Loading altera_mf_ver.cda_n_cntr(fast)
-# Loading altera_mf_ver.cda_scale_cntr(fast)
-# Loading altera_mf_ver.pll_iobuf(fast)
-# Loading work.dcfifo_rd_ctrl(fast)
-# Loading work.dcfifo_wr_ctrl(fast)
-# Loading work.dcfifo_ip(fast)
-# Loading altera_mf_ver.dcfifo(fast)
-# Loading altera_mf_ver.dcfifo_mixed_widths(fast)
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
-# Loading altera_mf_ver.dcfifo_async(fast)
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__2)
-# Loading altera_mf_ver.dcfifo_dffpipe(fast)
-# Loading altera_mf_ver.dcfifo_dffpipe(fast__1)
-# Loading altera_mf_ver.dcfifo_dffpipe(fast__2)
-# Loading altera_mf_ver.dcfifo_fefifo(fast)
-# Loading altera_mf_ver.dcfifo_fefifo(fast__1)
-# Loading altera_mf_ver.dcfifo_low_latency(fast)
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__3)
-# Loading altera_mf_ver.ALTERA_MF_HINT_EVALUATION(fast)
-# Loading altera_mf_ver.dcfifo_dffpipe(fast__3)
-# Loading altera_mf_ver.dcfifo_dffpipe(fast__4)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'rdusedw'. The port definition is at: D:/git-repository/fpga_training/dcfifo/prj/dcfifo_ip.v(49).
-#    Time: 0 ps  Iteration: 0  Instance: /ip_dcfifo_top_tb/dcfifo_top_inst/dcfifo_ip_inst File: D:/git-repository/fpga_training/dcfifo/rtl/dcfifo_top.v Line: 44
-run
-#  Note : Cyclone IV E PLL was reset
-# Time: 0  Instance: ip_dcfifo_top_tb.dcfifo_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
-#  Note : Cyclone IV E PLL locked to incoming clock
-# Time: 290000  Instance: ip_dcfifo_top_tb.dcfifo_top_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
-run
-run
-run
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/git-repository/fpga_training/dcfifo/prj/simulation/questa/wave.do
-# End time: 15:29:02 on Aug 30,2024, Elapsed time: 0:13:53
-# Errors: 0, Warnings: 1
+# End time: 12:19:46 on Sep 02,2024, Elapsed time: 58:47:52
+# Errors: 0, Warnings: 3

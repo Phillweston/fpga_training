@@ -1,0 +1,277 @@
+# Reading pref.tcl
+# //  ModelSim SE-64 2020.4 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do top_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap work rtl_work 
+# Modifying C:/modeltech64_2020.4/win64/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl {D:/git-repository/fpga_training/ip_core_top_example/rtl/seven_tube.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:51:57 on Sep 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl" D:/git-repository/fpga_training/ip_core_top_example/rtl/seven_tube.v 
+# -- Compiling module seven_tube
+# 
+# Top level modules:
+# 	seven_tube
+# End time: 16:51:57 on Sep 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl {D:/git-repository/fpga_training/ip_core_top_example/rtl/seg_ctrl.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:51:57 on Sep 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl" D:/git-repository/fpga_training/ip_core_top_example/rtl/seg_ctrl.v 
+# -- Compiling module seg_ctrl
+# 
+# Top level modules:
+# 	seg_ctrl
+# End time: 16:51:57 on Sep 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl {D:/git-repository/fpga_training/ip_core_top_example/rtl/keyboard_scan.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:51:57 on Sep 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl" D:/git-repository/fpga_training/ip_core_top_example/rtl/keyboard_scan.v 
+# -- Compiling module keyboard_scan
+# 
+# Top level modules:
+# 	keyboard_scan
+# End time: 16:51:57 on Sep 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl {D:/git-repository/fpga_training/ip_core_top_example/rtl/edge_check.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:51:57 on Sep 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl" D:/git-repository/fpga_training/ip_core_top_example/rtl/edge_check.v 
+# -- Compiling module edge_check
+# 
+# Top level modules:
+# 	edge_check
+# End time: 16:51:57 on Sep 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl {D:/git-repository/fpga_training/ip_core_top_example/rtl/div_clk.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:51:57 on Sep 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl" D:/git-repository/fpga_training/ip_core_top_example/rtl/div_clk.v 
+# -- Compiling module div_clk
+# 
+# Top level modules:
+# 	div_clk
+# End time: 16:51:58 on Sep 02,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl {D:/git-repository/fpga_training/ip_core_top_example/rtl/beep_driver.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:51:58 on Sep 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl" D:/git-repository/fpga_training/ip_core_top_example/rtl/beep_driver.v 
+# -- Compiling module beep_driver
+# 
+# Top level modules:
+# 	beep_driver
+# End time: 16:51:58 on Sep 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl {D:/git-repository/fpga_training/ip_core_top_example/rtl/top.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:51:58 on Sep 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl" D:/git-repository/fpga_training/ip_core_top_example/rtl/top.v 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 16:51:58 on Sep 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl {D:/git-repository/fpga_training/ip_core_top_example/rtl/dpram_wr_ctrl.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:51:58 on Sep 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl" D:/git-repository/fpga_training/ip_core_top_example/rtl/dpram_wr_ctrl.v 
+# -- Compiling module dpram_wr_ctrl
+# 
+# Top level modules:
+# 	dpram_wr_ctrl
+# End time: 16:51:58 on Sep 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl {D:/git-repository/fpga_training/ip_core_top_example/rtl/dpram_rd_ctrl.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:51:58 on Sep 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl" D:/git-repository/fpga_training/ip_core_top_example/rtl/dpram_rd_ctrl.v 
+# -- Compiling module dpram_rd_ctrl
+# 
+# Top level modules:
+# 	dpram_rd_ctrl
+# End time: 16:51:58 on Sep 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_top_example/q_prj {D:/git-repository/fpga_training/ip_core_top_example/q_prj/dpram_ip.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:51:58 on Sep 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_top_example/q_prj" D:/git-repository/fpga_training/ip_core_top_example/q_prj/dpram_ip.v 
+# -- Compiling module dpram_ip
+# 
+# Top level modules:
+# 	dpram_ip
+# End time: 16:51:58 on Sep 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_top_example/q_prj {D:/git-repository/fpga_training/ip_core_top_example/q_prj/clk_gen.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:51:58 on Sep 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_top_example/q_prj" D:/git-repository/fpga_training/ip_core_top_example/q_prj/clk_gen.v 
+# -- Compiling module clk_gen
+# 
+# Top level modules:
+# 	clk_gen
+# End time: 16:51:59 on Sep 02,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl {D:/git-repository/fpga_training/ip_core_top_example/rtl/dcfifo_div_clk.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:51:59 on Sep 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl" D:/git-repository/fpga_training/ip_core_top_example/rtl/dcfifo_div_clk.v 
+# -- Compiling module dcfifo_div_clk
+# 
+# Top level modules:
+# 	dcfifo_div_clk
+# End time: 16:51:59 on Sep 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl {D:/git-repository/fpga_training/ip_core_top_example/rtl/dcfifo_wr_ctrl.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:51:59 on Sep 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl" D:/git-repository/fpga_training/ip_core_top_example/rtl/dcfifo_wr_ctrl.v 
+# -- Compiling module dcfifo_wr_ctrl
+# 
+# Top level modules:
+# 	dcfifo_wr_ctrl
+# End time: 16:51:59 on Sep 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl {D:/git-repository/fpga_training/ip_core_top_example/rtl/dcfifo_rd_ctrl.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:51:59 on Sep 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_top_example/rtl" D:/git-repository/fpga_training/ip_core_top_example/rtl/dcfifo_rd_ctrl.v 
+# -- Compiling module dcfifo_rd_ctrl
+# 
+# Top level modules:
+# 	dcfifo_rd_ctrl
+# End time: 16:51:59 on Sep 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_top_example/q_prj {D:/git-repository/fpga_training/ip_core_top_example/q_prj/dcfifo_ip.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:51:59 on Sep 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_top_example/q_prj" D:/git-repository/fpga_training/ip_core_top_example/q_prj/dcfifo_ip.v 
+# -- Compiling module dcfifo_ip
+# 
+# Top level modules:
+# 	dcfifo_ip
+# End time: 16:51:59 on Sep 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_top_example/q_prj/db {D:/git-repository/fpga_training/ip_core_top_example/q_prj/db/clk_gen_altpll.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:51:59 on Sep 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_top_example/q_prj/db" D:/git-repository/fpga_training/ip_core_top_example/q_prj/db/clk_gen_altpll.v 
+# -- Compiling module clk_gen_altpll
+# 
+# Top level modules:
+# 	clk_gen_altpll
+# End time: 16:51:59 on Sep 02,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ip_core_top_example/q_prj/../sim {D:/git-repository/fpga_training/ip_core_top_example/q_prj/../sim/top_tb.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:51:59 on Sep 02,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ip_core_top_example/q_prj/../sim" D:/git-repository/fpga_training/ip_core_top_example/q_prj/../sim/top_tb.v 
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# End time: 16:52:00 on Sep 02,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  top_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" top_tb 
+# Start time: 16:52:00 on Sep 02,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: d:/intelfpga_lite/23.1std/quartus/eda/sim_lib/altera_mf.v(31792): (vopt-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+# ** Warning: d:/intelfpga_lite/23.1std/quartus/eda/sim_lib/altera_mf.v(31792): (vopt-2718) [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "keyboard_scan(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "seg_ctrl(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.top_tb(fast)
+# Loading work.top(fast)
+# Loading work.clk_gen(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.dcfifo_div_clk(fast)
+# Loading work.keyboard_scan(fast)
+# Loading work.edge_check(fast)
+# Loading work.edge_check(fast__1)
+# Loading work.dpram_wr_ctrl(fast)
+# Loading work.dpram_rd_ctrl(fast)
+# Loading work.dpram_ip(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.dcfifo_wr_ctrl(fast)
+# Loading work.dcfifo_rd_ctrl(fast)
+# Loading work.dcfifo_ip(fast)
+# Loading altera_mf_ver.dcfifo(fast)
+# Loading altera_mf_ver.dcfifo_mixed_widths(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__2)
+# Loading altera_mf_ver.dcfifo_async(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__3)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__1)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__2)
+# Loading altera_mf_ver.dcfifo_fefifo(fast)
+# Loading altera_mf_ver.dcfifo_fefifo(fast__1)
+# Loading altera_mf_ver.dcfifo_low_latency(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__4)
+# Loading altera_mf_ver.ALTERA_MF_HINT_EVALUATION(fast)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__3)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__4)
+# Loading work.seven_tube(fast)
+# Loading work.div_clk(fast)
+# Loading work.seg_ctrl(fast)
+# Loading work.beep_driver(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: top_tb.top_inst.dpram_ip_dut.altsyncram_component.m_default.altsyncram_inst
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: top_tb.top_inst.clk_gen_dut.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: top_tb.top_inst.clk_gen_dut.altpll_component.cycloneiii_pll.pll3
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -all
+# End time: 16:59:25 on Sep 02,2024, Elapsed time: 0:07:25
+# Errors: 0, Warnings: 2

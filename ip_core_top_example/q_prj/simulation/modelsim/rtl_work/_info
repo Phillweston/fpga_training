@@ -1,0 +1,345 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\86150\Desktop\fpga_0729\ip_core\top\q_prj\simulation\modelsim
+vbeep_driver
+IUn3nk6Ii_Uc`@H81nZa>X1
+V;UN@Q2I3K9YJe9>56`?H80
+Z1 dC:\Users\86150\Desktop\fpga_0729\ip_core\top\q_prj\simulation\modelsim
+w1724119073
+8C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/beep_driver.v
+FC:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/beep_driver.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0
+!i10b 1
+!s100 kbF[E<;J@XQ7JT5Q=70B>0
+!s85 0
+!s108 1725249278.178000
+!s107 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/beep_driver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl|-O0|C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/beep_driver.v|
+!s101 -O0
+vclk_gen
+ISF3aKhOLBEidWMoF;BN?@2
+VKnMB_jQF1JW^gL;NJzZ781
+R1
+w1725244143
+8C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/clk_gen.v
+FC:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/clk_gen.v
+L0 39
+R2
+r1
+31
+R3
+Z5 !s92 -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj -O0
+!i10b 1
+!s100 NgcSNGRJ]JGT5l7glknXz3
+!s85 0
+!s108 1725249278.308000
+!s107 C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/clk_gen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj|-O0|C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/clk_gen.v|
+!s101 -O0
+vclk_gen_altpll
+IAPAYIbW[g6IAW<I5V0c542
+VfB_eBS9U0nYDV4D;Dd^Xe3
+R1
+w1725245790
+8C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/db/clk_gen_altpll.v
+FC:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/db/clk_gen_altpll.v
+L0 30
+R2
+r1
+31
+R3
+!i10b 1
+!s100 0DYH8_8Im5ckoibl<lj8h0
+!s85 0
+!s108 1725249278.550000
+!s107 C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/db/clk_gen_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/db|-O0|C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/db/clk_gen_altpll.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/db -O0
+vdcfifo_div_clk
+I`]<Fg0jZ77g7HZi`PS;LT2
+VS2jiaM1jIM;8Xmc^22ESU3
+R1
+w1725244175
+8C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_div_clk.v
+FC:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_div_clk.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 IgC:CFD1EfXgFkEfAd^Di2
+!s85 0
+!s108 1725249278.735000
+!s107 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_div_clk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl|-O0|C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_div_clk.v|
+!s101 -O0
+vdcfifo_ip
+Ij`:`d4nG<S1Qf^b1bcfm?2
+VO=8R0cb6C5ULIGR=dk;fF1
+R1
+w1725244439
+8C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/dcfifo_ip.v
+FC:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/dcfifo_ip.v
+L0 39
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 CTAWcQVjS<9MHF60WBdG?1
+!s85 0
+!s108 1725249278.890000
+!s107 C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/dcfifo_ip.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj|-O0|C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/dcfifo_ip.v|
+!s101 -O0
+vdcfifo_rd_ctrl
+I@;^c3GRa^YZInYW8WCQNZ3
+V3CF=0Cg0a:32X:7QRf3U`3
+R1
+w1725247021
+8C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_rd_ctrl.v
+FC:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_rd_ctrl.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 P`k8WR`d:f1OOm`k8kjea1
+!s85 0
+!s108 1725249279.048000
+!s107 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_rd_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl|-O0|C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_rd_ctrl.v|
+!s101 -O0
+vdcfifo_wr_ctrl
+I:?69gAUzFjAD^=8e4:?gU0
+VO`]lV;mz9nAP1h3];_Q]W3
+R1
+w1725249017
+8C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_wr_ctrl.v
+FC:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_wr_ctrl.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 m_a5`8id2KT@DSgQ8jnDW2
+!s85 0
+!s108 1725249279.214000
+!s107 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_wr_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl|-O0|C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_wr_ctrl.v|
+!s101 -O0
+vdiv_clk
+IFKCmfzL6T=Jk<8DAoiD?d2
+V:=WbOz;jVXg>n=eDT5RVi2
+R1
+w1723172724
+8C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/div_clk.v
+FC:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/div_clk.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 JHh:Z`CS?`k1Ifz2QKX2Q2
+!s85 0
+!s108 1725249279.357000
+!s107 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/div_clk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl|-O0|C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/div_clk.v|
+!s101 -O0
+vdpram_ip
+IFfno?hT[<:Ggn_lRK@bEz2
+V3Sh17E3N@AXLH8=SQEF<a1
+R1
+w1725244091
+8C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/dpram_ip.v
+FC:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/dpram_ip.v
+L0 39
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 ]3>ef3Y4J@CeO580AG@RY3
+!s85 0
+!s108 1725249279.618000
+!s107 C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/dpram_ip.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj|-O0|C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/dpram_ip.v|
+!s101 -O0
+vdpram_rd_ctrl
+IY^TXRP6Zg6<QKDm58`i4R2
+VHZ52Ng<`DE:JaPO]L5WnC0
+R1
+w1725248588
+8C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dpram_rd_ctrl.v
+FC:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dpram_rd_ctrl.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ;PK>j;SESk^HeHEgQ2jZ51
+!s85 0
+!s108 1725249279.781000
+!s107 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dpram_rd_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl|-O0|C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dpram_rd_ctrl.v|
+!s101 -O0
+vdpram_wr_ctrl
+IYz@VTM0DgTmgQgB_46Y7X2
+VJcPm12[fUi[6a8OEn71@31
+R1
+w1725247747
+8C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dpram_wr_ctrl.v
+FC:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dpram_wr_ctrl.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 Z[o`H`XV0:`jh2cQUEo5P1
+!s85 0
+!s108 1725249279.995000
+!s107 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dpram_wr_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl|-O0|C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dpram_wr_ctrl.v|
+!s101 -O0
+vedge_check
+Ih7RJO4ROL^571cob7^mNZ0
+V`1<NYZ9PoYzEJTVhd<dT93
+R1
+w1723520718
+8C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/edge_check.v
+FC:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/edge_check.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 QR1PI3;fKK^zZJFWA6QWE2
+!s85 0
+!s108 1725249280.181000
+!s107 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/edge_check.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl|-O0|C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/edge_check.v|
+!s101 -O0
+vkeyboard_scan
+I@`^3cR:PF9dG@L6DL;7Z`0
+VKiNiKWm^h4=7o0BaSh70[2
+R1
+w1724210695
+8C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/keyboard_scan.v
+FC:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/keyboard_scan.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 4bFSnigWcDE>[da29?D6[1
+!s85 0
+!s108 1725249280.339000
+!s107 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/keyboard_scan.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl|-O0|C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/keyboard_scan.v|
+!s101 -O0
+vseg_ctrl
+I6L8JJ7]ezY^g:5fAFCHgF0
+VnfP?P2O8LnU]O^_La^M?j1
+R1
+w1723517484
+8C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/seg_ctrl.v
+FC:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/seg_ctrl.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 l[g[aEljE]]1KcoPnPQdo3
+!s85 0
+!s108 1725249280.508000
+!s107 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/seg_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl|-O0|C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/seg_ctrl.v|
+!s101 -O0
+vseven_tube
+I@hbS2PK1@ohz74>ENA?<k3
+V<O8Plkgc2>:ZOa21a^b2K1
+R1
+w1725243668
+8C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/seven_tube.v
+FC:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/seven_tube.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 GX<j11Q]kWVYgWIZB6@CA3
+!s85 0
+!s108 1725249280.659000
+!s107 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/seven_tube.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl|-O0|C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/seven_tube.v|
+!s101 -O0
+vtop
+IMcR9d[8k^Kz5HU4J@PjCU2
+V3mRA06NMRLRTU:Mk@hG^H1
+R1
+w1725248844
+8C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/top.v
+FC:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/top.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 PV0DZU6ClHV>9dEBD9nc02
+!s85 0
+!s108 1725249280.964000
+!s107 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/top.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl|-O0|C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/top.v|
+!s101 -O0
+vtop_tb
+!i10b 1
+!s100 6ORVzhVT9j^DF1Fbm27ag3
+I8eD0G]dlGVd7NodNYN<<_3
+VN7^ihbmI9enFg9D=Qco243
+R1
+w1725249255
+8C:/Users/86150/Desktop/fpga_0729/ip_core/top/sim/top_tb.v
+FC:/Users/86150/Desktop/fpga_0729/ip_core/top/sim/top_tb.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1725249281.142000
+!s107 C:/Users/86150/Desktop/fpga_0729/ip_core/top/sim/top_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/../sim|-O0|C:/Users/86150/Desktop/fpga_0729/ip_core/top/sim/top_tb.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/../sim -O0

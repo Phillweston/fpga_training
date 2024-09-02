@@ -1,14 +1,14 @@
 |dcfifo_top
-sys_clk => sys_clk.IN2
-sys_rst_n => sys_rst_n.IN1
-rd_data[0] << dcfifo_ip:dcfifo_ip_inst.q
-rd_data[1] << dcfifo_ip:dcfifo_ip_inst.q
-rd_data[2] << dcfifo_ip:dcfifo_ip_inst.q
-rd_data[3] << dcfifo_ip:dcfifo_ip_inst.q
-rd_data[4] << dcfifo_ip:dcfifo_ip_inst.q
-rd_data[5] << dcfifo_ip:dcfifo_ip_inst.q
-rd_data[6] << dcfifo_ip:dcfifo_ip_inst.q
-rd_data[7] << dcfifo_ip:dcfifo_ip_inst.q
+sys_clk => sys_clk.IN1
+sys_rst_n => sys_rst_n.IN2
+rd_data[0] <= dcfifo_ip:dcfifo_ip_inst.q
+rd_data[1] <= dcfifo_ip:dcfifo_ip_inst.q
+rd_data[2] <= dcfifo_ip:dcfifo_ip_inst.q
+rd_data[3] <= dcfifo_ip:dcfifo_ip_inst.q
+rd_data[4] <= dcfifo_ip:dcfifo_ip_inst.q
+rd_data[5] <= dcfifo_ip:dcfifo_ip_inst.q
+rd_data[6] <= dcfifo_ip:dcfifo_ip_inst.q
+rd_data[7] <= dcfifo_ip:dcfifo_ip_inst.q
 
 
 |dcfifo_top|clk_gen:clk_gen_inst

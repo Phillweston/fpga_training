@@ -17,17 +17,17 @@ module dcfifo_rd_ctrl (
             case (state)
                 s0: begin
                     if (rd_full) begin
-                        rd_req <= 1'b0;
+                        rd_req <= 1'b1;     // Start read request when FIFO is full
                         state <= s1;
                     end else
                         state <= s0;
                 end
                 s1: begin
                     if (rd_empty) begin
-                        rd_req <= 1'b0;
+                        rd_req <= 1'b0;     // No read request when FIFO is empty
                         state <= s0;
                     end else begin
-                        rd_req <= 1'b1;
+                        rd_req <= 1'b1;     // Continue read request when FIFO is not empty
                         state <= s1;
                     end
                 end

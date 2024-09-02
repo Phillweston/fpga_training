@@ -1,0 +1,686 @@
+# Reading D:/altera/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do top_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj {C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/clk_gen.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clk_gen
+# 
+# Top level modules:
+# 	clk_gen
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl {C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/seven_tube.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_tube
+# 
+# Top level modules:
+# 	seven_tube
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl {C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/seg_ctrl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seg_ctrl
+# 
+# Top level modules:
+# 	seg_ctrl
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl {C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/keyboard_scan.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module keyboard_scan
+# 
+# Top level modules:
+# 	keyboard_scan
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl {C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/edge_check.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_check
+# 
+# Top level modules:
+# 	edge_check
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl {C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/div_clk.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module div_clk
+# 
+# Top level modules:
+# 	div_clk
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl {C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/beep_driver.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module beep_driver
+# 
+# Top level modules:
+# 	beep_driver
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl {C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/top.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl {C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dpram_wr_ctrl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dpram_wr_ctrl
+# 
+# Top level modules:
+# 	dpram_wr_ctrl
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl {C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dpram_rd_ctrl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dpram_rd_ctrl
+# 
+# Top level modules:
+# 	dpram_rd_ctrl
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj {C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/dpram_ip.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dpram_ip
+# 
+# Top level modules:
+# 	dpram_ip
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl {C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_div_clk.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dcfifo_div_clk
+# 
+# Top level modules:
+# 	dcfifo_div_clk
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl {C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_wr_ctrl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dcfifo_wr_ctrl
+# 
+# Top level modules:
+# 	dcfifo_wr_ctrl
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl {C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_rd_ctrl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dcfifo_rd_ctrl
+# 
+# Top level modules:
+# 	dcfifo_rd_ctrl
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj {C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/dcfifo_ip.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dcfifo_ip
+# 
+# Top level modules:
+# 	dcfifo_ip
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/db {C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/db/clk_gen_altpll.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clk_gen_altpll
+# 
+# Top level modules:
+# 	clk_gen_altpll
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/../sim {C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/../sim/top_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  top_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps top_tb 
+# Loading work.top_tb
+# Loading work.top
+# Loading work.clk_gen
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading work.dcfifo_div_clk
+# Loading work.keyboard_scan
+# Loading work.edge_check
+# Loading work.dpram_wr_ctrl
+# Loading work.dpram_rd_ctrl
+# Loading work.dpram_ip
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.dcfifo_wr_ctrl
+# Loading work.dcfifo_rd_ctrl
+# Loading work.dcfifo_ip
+# Loading altera_mf_ver.dcfifo
+# Loading altera_mf_ver.dcfifo_mixed_widths
+# Loading altera_mf_ver.dcfifo_low_latency
+# Loading altera_mf_ver.ALTERA_MF_HINT_EVALUATION
+# Loading altera_mf_ver.dcfifo_dffpipe
+# Loading work.seven_tube
+# Loading work.div_clk
+# Loading work.seg_ctrl
+# Loading work.beep_driver
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+# Loading altera_mf_ver.dcfifo_async
+# Loading altera_mf_ver.dcfifo_fefifo
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: top_tb.top_inst.dpram_ip_dut.altsyncram_component
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: top_tb.top_inst.clk_gen_dut.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: top_tb.top_inst.clk_gen_dut.altpll_component.cycloneiii_pll.pll3
+add wave -position insertpoint sim:/top_tb/top_inst/dpram_wr/*
+add wave -position insertpoint sim:/top_tb/top_inst/dpram_rd/*
+add wave -position insertpoint sim:/top_tb/top_inst/dpram_ip_dut/*
+restart
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: top_tb.top_inst.dpram_ip_dut.altsyncram_component
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: top_tb.top_inst.clk_gen_dut.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: top_tb.top_inst.clk_gen_dut.altpll_component.cycloneiii_pll.pll3
+add wave -position insertpoint sim:/top_tb/top_inst/dcfifo_wr/*
+restart
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: top_tb.top_inst.dpram_ip_dut.altsyncram_component
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: top_tb.top_inst.clk_gen_dut.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: top_tb.top_inst.clk_gen_dut.altpll_component.cycloneiii_pll.pll3
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/beep_driver.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module beep_driver
+# 
+# Top level modules:
+# 	beep_driver
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/clk_gen.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clk_gen
+# 
+# Top level modules:
+# 	clk_gen
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/db -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/db/clk_gen_altpll.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clk_gen_altpll
+# 
+# Top level modules:
+# 	clk_gen_altpll
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_div_clk.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dcfifo_div_clk
+# 
+# Top level modules:
+# 	dcfifo_div_clk
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/dcfifo_ip.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dcfifo_ip
+# 
+# Top level modules:
+# 	dcfifo_ip
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_rd_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dcfifo_rd_ctrl
+# 
+# Top level modules:
+# 	dcfifo_rd_ctrl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_wr_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dcfifo_wr_ctrl
+# 
+# Top level modules:
+# 	dcfifo_wr_ctrl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/div_clk.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module div_clk
+# 
+# Top level modules:
+# 	div_clk
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/dpram_ip.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dpram_ip
+# 
+# Top level modules:
+# 	dpram_ip
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dpram_rd_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dpram_rd_ctrl
+# 
+# Top level modules:
+# 	dpram_rd_ctrl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dpram_wr_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dpram_wr_ctrl
+# 
+# Top level modules:
+# 	dpram_wr_ctrl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/edge_check.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_check
+# 
+# Top level modules:
+# 	edge_check
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/keyboard_scan.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module keyboard_scan
+# 
+# Top level modules:
+# 	keyboard_scan
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/seg_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seg_ctrl
+# 
+# Top level modules:
+# 	seg_ctrl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/seven_tube.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_tube
+# 
+# Top level modules:
+# 	seven_tube
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/top.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/../sim -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/sim/top_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+restart
+# Loading work.top_tb
+# Loading work.top
+# Loading work.clk_gen
+# Loading work.dcfifo_div_clk
+# Loading work.keyboard_scan
+# Loading work.edge_check
+# Loading work.dpram_wr_ctrl
+# Loading work.dpram_rd_ctrl
+# Loading work.dpram_ip
+# Loading work.dcfifo_wr_ctrl
+# Loading work.dcfifo_rd_ctrl
+# Loading work.dcfifo_ip
+# Loading work.seven_tube
+# Loading work.div_clk
+# Loading work.seg_ctrl
+# Loading work.beep_driver
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: top_tb.top_inst.dpram_ip_dut.altsyncram_component
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: top_tb.top_inst.clk_gen_dut.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: top_tb.top_inst.clk_gen_dut.altpll_component.cycloneiii_pll.pll3
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/beep_driver.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module beep_driver
+# 
+# Top level modules:
+# 	beep_driver
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/clk_gen.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clk_gen
+# 
+# Top level modules:
+# 	clk_gen
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/db -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/db/clk_gen_altpll.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clk_gen_altpll
+# 
+# Top level modules:
+# 	clk_gen_altpll
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_div_clk.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dcfifo_div_clk
+# 
+# Top level modules:
+# 	dcfifo_div_clk
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/dcfifo_ip.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dcfifo_ip
+# 
+# Top level modules:
+# 	dcfifo_ip
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_rd_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dcfifo_rd_ctrl
+# 
+# Top level modules:
+# 	dcfifo_rd_ctrl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_wr_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dcfifo_wr_ctrl
+# 
+# Top level modules:
+# 	dcfifo_wr_ctrl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/div_clk.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module div_clk
+# 
+# Top level modules:
+# 	div_clk
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/dpram_ip.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dpram_ip
+# 
+# Top level modules:
+# 	dpram_ip
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dpram_rd_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dpram_rd_ctrl
+# 
+# Top level modules:
+# 	dpram_rd_ctrl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dpram_wr_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dpram_wr_ctrl
+# 
+# Top level modules:
+# 	dpram_wr_ctrl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/edge_check.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_check
+# 
+# Top level modules:
+# 	edge_check
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/keyboard_scan.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module keyboard_scan
+# 
+# Top level modules:
+# 	keyboard_scan
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/seg_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seg_ctrl
+# 
+# Top level modules:
+# 	seg_ctrl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/seven_tube.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_tube
+# 
+# Top level modules:
+# 	seven_tube
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/top.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/../sim -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/sim/top_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+restart
+# Loading work.top_tb
+# Loading work.top
+# Loading work.clk_gen
+# Loading work.dcfifo_div_clk
+# Loading work.keyboard_scan
+# Loading work.edge_check
+# Loading work.dpram_wr_ctrl
+# Loading work.dpram_rd_ctrl
+# Loading work.dpram_ip
+# Loading work.dcfifo_wr_ctrl
+# Loading work.dcfifo_rd_ctrl
+# Loading work.dcfifo_ip
+# Loading work.seven_tube
+# Loading work.div_clk
+# Loading work.seg_ctrl
+# Loading work.beep_driver
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: top_tb.top_inst.dpram_ip_dut.altsyncram_component
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: top_tb.top_inst.clk_gen_dut.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: top_tb.top_inst.clk_gen_dut.altpll_component.cycloneiii_pll.pll3
+add wave -position insertpoint sim:/top_tb/top_inst/dcfifo_ip_dut/*
+restart
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: top_tb.top_inst.dpram_ip_dut.altsyncram_component
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: top_tb.top_inst.clk_gen_dut.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: top_tb.top_inst.clk_gen_dut.altpll_component.cycloneiii_pll.pll3
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/beep_driver.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module beep_driver
+# 
+# Top level modules:
+# 	beep_driver
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/clk_gen.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clk_gen
+# 
+# Top level modules:
+# 	clk_gen
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/db -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/db/clk_gen_altpll.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clk_gen_altpll
+# 
+# Top level modules:
+# 	clk_gen_altpll
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_div_clk.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dcfifo_div_clk
+# 
+# Top level modules:
+# 	dcfifo_div_clk
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/dcfifo_ip.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dcfifo_ip
+# 
+# Top level modules:
+# 	dcfifo_ip
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_rd_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dcfifo_rd_ctrl
+# 
+# Top level modules:
+# 	dcfifo_rd_ctrl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_wr_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dcfifo_wr_ctrl
+# 
+# Top level modules:
+# 	dcfifo_wr_ctrl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/div_clk.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module div_clk
+# 
+# Top level modules:
+# 	div_clk
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/dpram_ip.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dpram_ip
+# 
+# Top level modules:
+# 	dpram_ip
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dpram_rd_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dpram_rd_ctrl
+# 
+# Top level modules:
+# 	dpram_rd_ctrl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dpram_wr_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dpram_wr_ctrl
+# 
+# Top level modules:
+# 	dpram_wr_ctrl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/edge_check.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_check
+# 
+# Top level modules:
+# 	edge_check
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/keyboard_scan.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module keyboard_scan
+# 
+# Top level modules:
+# 	keyboard_scan
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/seg_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seg_ctrl
+# 
+# Top level modules:
+# 	seg_ctrl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/seven_tube.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_tube
+# 
+# Top level modules:
+# 	seven_tube
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/top.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/../sim -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/sim/top_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/beep_driver.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module beep_driver
+# 
+# Top level modules:
+# 	beep_driver
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/clk_gen.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clk_gen
+# 
+# Top level modules:
+# 	clk_gen
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/db -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/db/clk_gen_altpll.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clk_gen_altpll
+# 
+# Top level modules:
+# 	clk_gen_altpll
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_div_clk.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dcfifo_div_clk
+# 
+# Top level modules:
+# 	dcfifo_div_clk
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/dcfifo_ip.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dcfifo_ip
+# 
+# Top level modules:
+# 	dcfifo_ip
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_rd_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dcfifo_rd_ctrl
+# 
+# Top level modules:
+# 	dcfifo_rd_ctrl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dcfifo_wr_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dcfifo_wr_ctrl
+# 
+# Top level modules:
+# 	dcfifo_wr_ctrl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/div_clk.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module div_clk
+# 
+# Top level modules:
+# 	div_clk
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/dpram_ip.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dpram_ip
+# 
+# Top level modules:
+# 	dpram_ip
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dpram_rd_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dpram_rd_ctrl
+# 
+# Top level modules:
+# 	dpram_rd_ctrl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/dpram_wr_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dpram_wr_ctrl
+# 
+# Top level modules:
+# 	dpram_wr_ctrl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/edge_check.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module edge_check
+# 
+# Top level modules:
+# 	edge_check
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/keyboard_scan.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module keyboard_scan
+# 
+# Top level modules:
+# 	keyboard_scan
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/seg_ctrl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seg_ctrl
+# 
+# Top level modules:
+# 	seg_ctrl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/seven_tube.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_tube
+# 
+# Top level modules:
+# 	seven_tube
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/rtl/top.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/fpga_0729/ip_core/top/q_prj/../sim -O0 C:/Users/86150/Desktop/fpga_0729/ip_core/top/sim/top_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top_tb
+# 
+# Top level modules:
+# 	top_tb
+restart
+# Loading work.top_tb
+# Loading work.top
+# Loading work.clk_gen
+# Loading work.dcfifo_div_clk
+# Loading work.keyboard_scan
+# Loading work.edge_check
+# Loading work.dpram_wr_ctrl
+# Loading work.dpram_rd_ctrl
+# Loading work.dpram_ip
+# Loading work.dcfifo_wr_ctrl
+# Loading work.dcfifo_rd_ctrl
+# Loading work.dcfifo_ip
+# Loading work.seven_tube
+# Loading work.div_clk
+# Loading work.seg_ctrl
+# Loading work.beep_driver
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: top_tb.top_inst.dpram_ip_dut.altsyncram_component
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: top_tb.top_inst.clk_gen_dut.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: top_tb.top_inst.clk_gen_dut.altpll_component.cycloneiii_pll.pll3
+add wave -position insertpoint  \
+sim:/top_tb/top_inst/seven_tube_dut/data_in
+restart
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as               OLD_DATA
+# Time: 0  Instance: top_tb.top_inst.dpram_ip_dut.altsyncram_component
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: top_tb.top_inst.clk_gen_dut.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: top_tb.top_inst.clk_gen_dut.altpll_component.cycloneiii_pll.pll3
+add wave -position insertpoint sim:/top_tb/top_inst/dcfifo_rd/*
+# Break key hit 
+# Break in Function alpha_tolower at D:/altera/modelsim_ase/win32aloem/../altera/verilog/src/altera_mf.v line 22323
