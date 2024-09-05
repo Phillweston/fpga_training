@@ -10,16 +10,16 @@ z2
 cModel Technology
 Z0 dD:/git-repository/fpga_training/dds/prj/simulation/questa
 T_opt
-!s110 1724838787
-VPiFPjY^Qa4kMf2n?5XEzQ2
+!s110 1725445525
+Vj8SEdH5E3UZ=aCkL53Zd<1
 04 6 4 work dds_tb fast 0
-=1-00d861e3bc76-66cef382-302-12240
+=1-00d861e3bc76-66d83594-2c9-6c68
 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
 Z1 tCvgOpt 0
 n@_opt
 OL;O;2020.4;71
 vaddr_ctrl
-Z2 !s110 1724838784
+Z2 !s110 1725445522
 !i10b 1
 !s100 D20V625[an_8?7YlDb2Dk1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -35,7 +35,7 @@ Z5 OL;L;2020.4;71
 r1
 !s85 0
 31
-Z6 !s108 1724838784.000000
+Z6 !s108 1725445522.000000
 !s107 D:/git-repository/fpga_training/dds/rtl/addr_ctrl.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/dds/rtl|D:/git-repository/fpga_training/dds/rtl/addr_ctrl.v|
 !i113 0
@@ -67,7 +67,7 @@ R7
 R8
 R1
 vdds_tb
-!s110 1724838785
+!s110 1725445523
 !i10b 1
 !s100 K1K^AQF_8?CeHNG5;h2;70
 R3

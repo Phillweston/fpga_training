@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -1.089
+TNS   : -20.484
+
+Type  : Slow 1200mV 85C Model Setup 'sys_clk'
+Slack : 14.058
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'sys_clk'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sys_clk'
+Slack : 9.781
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 12.201
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.505
+TNS   : -7.060
+
+Type  : Slow 1200mV 0C Model Setup 'sys_clk'
+Slack : 14.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.400
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'sys_clk'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sys_clk'
+Slack : 9.770
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 12.173
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 2.083
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'sys_clk'
+Slack : 17.487
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'sys_clk'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sys_clk'
+Slack : 9.435
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 12.232
+TNS   : 0.000
+
+------------------------------------------------------------

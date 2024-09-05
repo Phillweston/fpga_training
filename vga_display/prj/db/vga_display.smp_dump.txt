@@ -1,0 +1,6 @@
+
+State Machine - |vga_driver|pulse_cnt:pulse_cnt_inst|state
+Name state.IDLE state.SECOND_PRESS state.FIRST_PRESS 
+state.IDLE 0 0 0 
+state.FIRST_PRESS 1 0 1 
+state.SECOND_PRESS 1 1 0 

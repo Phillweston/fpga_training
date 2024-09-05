@@ -24,59 +24,59 @@
 # 
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dds/rtl {D:/git-repository/fpga_training/dds/rtl/div_clk.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 17:53:04 on Aug 28,2024
+# Start time: 18:25:22 on Sep 04,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/dds/rtl" D:/git-repository/fpga_training/dds/rtl/div_clk.v 
 # -- Compiling module div_clk
 # 
 # Top level modules:
 # 	div_clk
-# End time: 17:53:04 on Aug 28,2024, Elapsed time: 0:00:00
+# End time: 18:25:22 on Sep 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dds/rtl {D:/git-repository/fpga_training/dds/rtl/dds.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 17:53:04 on Aug 28,2024
+# Start time: 18:25:22 on Sep 04,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/dds/rtl" D:/git-repository/fpga_training/dds/rtl/dds.v 
 # -- Compiling module dds
 # 
 # Top level modules:
 # 	dds
-# End time: 17:53:04 on Aug 28,2024, Elapsed time: 0:00:00
+# End time: 18:25:22 on Sep 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dds/rtl {D:/git-repository/fpga_training/dds/rtl/addr_ctrl.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 17:53:04 on Aug 28,2024
+# Start time: 18:25:22 on Sep 04,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/dds/rtl" D:/git-repository/fpga_training/dds/rtl/addr_ctrl.v 
 # -- Compiling module addr_ctrl
 # 
 # Top level modules:
 # 	addr_ctrl
-# End time: 17:53:04 on Aug 28,2024, Elapsed time: 0:00:00
+# End time: 18:25:22 on Sep 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dds/prj {D:/git-repository/fpga_training/dds/prj/ip_1port_rom.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 17:53:04 on Aug 28,2024
+# Start time: 18:25:22 on Sep 04,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/dds/prj" D:/git-repository/fpga_training/dds/prj/ip_1port_rom.v 
 # -- Compiling module ip_1port_rom
 # 
 # Top level modules:
 # 	ip_1port_rom
-# End time: 17:53:04 on Aug 28,2024, Elapsed time: 0:00:00
+# End time: 18:25:22 on Sep 04,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/dds/prj/../sim {D:/git-repository/fpga_training/dds/prj/../sim/dds_tb.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 17:53:04 on Aug 28,2024
+# Start time: 18:25:22 on Sep 04,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/dds/prj/../sim" D:/git-repository/fpga_training/dds/prj/../sim/dds_tb.v 
 # -- Compiling module dds_tb
 # 
 # Top level modules:
 # 	dds_tb
-# End time: 17:53:05 on Aug 28,2024, Elapsed time: 0:00:01
+# End time: 18:25:23 on Sep 04,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  dds_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" dds_tb 
-# Start time: 17:53:05 on Aug 28,2024
+# Start time: 18:25:23 on Sep 04,2024
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading work.dds_tb(fast)
 # Loading work.dds(fast)
@@ -94,5 +94,47 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# End time: 17:55:04 on Aug 28,2024, Elapsed time: 0:01:59
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.dds_tb(fast)
+# Loading work.dds(fast)
+# Loading work.div_clk(fast)
+# Loading work.addr_ctrl(fast)
+# Loading work.ip_1port_rom(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+add wave -position end  sim:/dds_tb/dds_inst/sys_clk
+add wave -position end  sim:/dds_tb/dds_inst/sys_rst_n
+add wave -position end  sim:/dds_tb/dds_inst/q
+add wave -position end  sim:/dds_tb/dds_inst/addr
+add wave -position end  sim:/dds_tb/dds_inst/clk_4khz
+run
+run
+run
+add wave -position end  sim:/dds_tb/dds_inst/addr_ctrl_inst/addr_temp
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.dds_tb(fast)
+# Loading work.dds(fast)
+# Loading work.div_clk(fast)
+# Loading work.addr_ctrl(fast)
+# Loading work.ip_1port_rom(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -all
+# End time: 18:49:40 on Sep 04,2024, Elapsed time: 0:24:17
 # Errors: 0, Warnings: 0

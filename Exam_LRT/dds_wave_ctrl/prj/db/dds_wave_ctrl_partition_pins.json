@@ -1,0 +1,65 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "q[0]",
+					"strict" : false
+				},
+				{
+					"name" : "q[1]",
+					"strict" : false
+				},
+				{
+					"name" : "q[2]",
+					"strict" : false
+				},
+				{
+					"name" : "q[3]",
+					"strict" : false
+				},
+				{
+					"name" : "q[4]",
+					"strict" : false
+				},
+				{
+					"name" : "q[5]",
+					"strict" : false
+				},
+				{
+					"name" : "q[6]",
+					"strict" : false
+				},
+				{
+					"name" : "q[7]",
+					"strict" : false
+				},
+				{
+					"name" : "sys_rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "sys_clk",
+					"strict" : false
+				},
+				{
+					"name" : "key_switch",
+					"strict" : false
+				},
+				{
+					"name" : "key_add",
+					"strict" : false
+				},
+				{
+					"name" : "key_sub",
+					"strict" : false
+				},
+				{
+					"name" : "key_mode",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at candy_vending_machine.v(8): object "dispense" differs only in case from object "DISPENSE" in the same scope File: D:/git-repository/fpga_training/candy_vending_machine/rtl/candy_vending_machine.v Line: 8

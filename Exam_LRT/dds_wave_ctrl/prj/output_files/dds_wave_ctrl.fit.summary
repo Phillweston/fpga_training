@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Sep  4 18:49:53 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : dds_wave_ctrl
+Top-level Entity Name : dds_wave_ctrl
+Family : Cyclone IV E
+Device : EP4CE10F17C8
+Timing Models : Final
+Total logic elements : 375 / 10,320 ( 4 % )
+    Total combinational functions : 368 / 10,320 ( 4 % )
+    Dedicated logic registers : 241 / 10,320 ( 2 % )
+Total registers : 241
+Total pins : 14 / 180 ( 8 % )
+Total virtual pins : 0
+Total memory bits : 8,192 / 423,936 ( 2 % )
+Embedded Multiplier 9-bit elements : 1 / 46 ( 2 % )
+Total PLLs : 0 / 2 ( 0 % )

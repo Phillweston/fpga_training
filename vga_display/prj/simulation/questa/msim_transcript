@@ -1,0 +1,156 @@
+# Reading pref.tcl
+# //  ModelSim SE-64 2020.4 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do vga_display_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap work rtl_work 
+# Modifying C:/modeltech64_2020.4/win64/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_display/rtl {D:/git-repository/fpga_training/vga_display/rtl/pulse_cnt.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:04:59 on Sep 05,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_display/rtl" D:/git-repository/fpga_training/vga_display/rtl/pulse_cnt.v 
+# -- Compiling module pulse_cnt
+# 
+# Top level modules:
+# 	pulse_cnt
+# End time: 10:04:59 on Sep 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_display/rtl {D:/git-repository/fpga_training/vga_display/rtl/key_filter.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:05:00 on Sep 05,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_display/rtl" D:/git-repository/fpga_training/vga_display/rtl/key_filter.v 
+# -- Compiling module key_filter
+# 
+# Top level modules:
+# 	key_filter
+# End time: 10:05:00 on Sep 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_display/rtl {D:/git-repository/fpga_training/vga_display/rtl/vga_ctrl.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:05:00 on Sep 05,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_display/rtl" D:/git-repository/fpga_training/vga_display/rtl/vga_ctrl.v 
+# -- Compiling module vga_ctrl
+# 
+# Top level modules:
+# 	vga_ctrl
+# End time: 10:05:00 on Sep 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_display/rtl {D:/git-repository/fpga_training/vga_display/rtl/vga_driver.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:05:00 on Sep 05,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_display/rtl" D:/git-repository/fpga_training/vga_display/rtl/vga_driver.v 
+# -- Compiling module vga_driver
+# 
+# Top level modules:
+# 	vga_driver
+# End time: 10:05:00 on Sep 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_display/prj {D:/git-repository/fpga_training/vga_display/prj/clk_gen.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:05:00 on Sep 05,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_display/prj" D:/git-repository/fpga_training/vga_display/prj/clk_gen.v 
+# -- Compiling module clk_gen
+# 
+# Top level modules:
+# 	clk_gen
+# End time: 10:05:00 on Sep 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_display/prj/db {D:/git-repository/fpga_training/vga_display/prj/db/clk_gen_altpll.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:05:00 on Sep 05,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_display/prj/db" D:/git-repository/fpga_training/vga_display/prj/db/clk_gen_altpll.v 
+# -- Compiling module clk_gen_altpll
+# 
+# Top level modules:
+# 	clk_gen_altpll
+# End time: 10:05:00 on Sep 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_display/prj/../sim {D:/git-repository/fpga_training/vga_display/prj/../sim/vga_driver_tb.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:05:00 on Sep 05,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_display/prj/../sim" D:/git-repository/fpga_training/vga_display/prj/../sim/vga_driver_tb.v 
+# -- Compiling module vga_driver_tb
+# 
+# Top level modules:
+# 	vga_driver_tb
+# End time: 10:05:01 on Sep 05,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  vga_driver_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" vga_driver_tb 
+# Start time: 10:05:01 on Sep 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.vga_driver_tb(fast)
+# Loading work.vga_driver(fast)
+# Loading work.clk_gen(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.vga_ctrl(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: vga_driver_tb.vga_driver_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: vga_driver_tb.vga_driver_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_display/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_display/sim/vga_driver_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:06:36 on Sep 05,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_display/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_display/sim/vga_driver_tb.v 
+# -- Compiling module vga_driver_tb
+# 
+# Top level modules:
+# 	vga_driver_tb
+# End time: 10:06:36 on Sep 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.vga_driver_tb(fast)
+# Loading work.vga_driver(fast)
+# Loading work.clk_gen(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.vga_ctrl(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+run -all
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: vga_driver_tb.vga_driver_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: vga_driver_tb.vga_driver_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+# End time: 11:40:50 on Sep 05,2024, Elapsed time: 1:35:49
+# Errors: 0, Warnings: 0

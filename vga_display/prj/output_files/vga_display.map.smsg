@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at pulse_cnt.v(27): always construct contains both blocking and non-blocking assignments File: D:/git-repository/fpga_training/vga_display/rtl/pulse_cnt.v Line: 27

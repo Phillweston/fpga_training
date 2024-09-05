@@ -1,0 +1,8 @@
+
+State Machine - |candy_vending_machine|state
+Name state.RETURN state.DISPENSE state.ACCUMULATE state.IDLE state.RETURN_EXCESS 
+state.IDLE 0 0 0 0 0 
+state.ACCUMULATE 0 0 1 1 0 
+state.DISPENSE 0 1 0 1 0 
+state.RETURN 1 0 0 1 0 
+state.RETURN_EXCESS 0 0 0 1 1 

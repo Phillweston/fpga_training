@@ -1,0 +1,188 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/git-repository/fpga_training/vga_display/prj/simulation/questa
+T_opt
+!s110 1725502000
+V_bzOQmOhlW_[amPdU]AK13
+04 13 4 work vga_driver_tb fast 0
+=2-00d861e3bc76-66d9122f-2fe-ccf0
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vclk_gen
+Z2 !s110 1725501900
+!i10b 1
+!s100 0fNQ8:14XEHkWjejMAfhG3
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IkoFjE9U:W183ZR@V5:6F;2
+R0
+w1725331835
+8D:/git-repository/fpga_training/vga_display/prj/clk_gen.v
+FD:/git-repository/fpga_training/vga_display/prj/clk_gen.v
+!i122 4
+L0 40 124
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z6 !s108 1725501900.000000
+!s107 D:/git-repository/fpga_training/vga_display/prj/clk_gen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/vga_display/prj|D:/git-repository/fpga_training/vga_display/prj/clk_gen.v|
+!i113 0
+Z7 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_display/prj -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vclk_gen_altpll
+R2
+!i10b 1
+!s100 jAmoCbK0`3A@I43U]gniZ1
+R3
+I>2e[LDPTZF`RSk6>M4[:93
+R0
+w1725334408
+8D:/git-repository/fpga_training/vga_display/prj/db/clk_gen_altpll.v
+FD:/git-repository/fpga_training/vga_display/prj/db/clk_gen_altpll.v
+!i122 5
+L0 31 79
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/git-repository/fpga_training/vga_display/prj/db/clk_gen_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/vga_display/prj/db|D:/git-repository/fpga_training/vga_display/prj/db/clk_gen_altpll.v|
+!i113 0
+R7
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_display/prj/db -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vkey_filter
+R2
+!i10b 1
+!s100 c7>^m]dH2Lfm06jXDZe=E3
+R3
+IbGB5B8ak23R;nQ9[2nn6?0
+R0
+w1725360467
+8D:/git-repository/fpga_training/vga_display/rtl/key_filter.v
+FD:/git-repository/fpga_training/vga_display/rtl/key_filter.v
+!i122 1
+L0 3 52
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/git-repository/fpga_training/vga_display/rtl/key_filter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/vga_display/rtl|D:/git-repository/fpga_training/vga_display/rtl/key_filter.v|
+!i113 0
+R7
+Z8 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_display/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vpulse_cnt
+!s110 1725501899
+!i10b 1
+!s100 FoZzZe89GXJ2mEfc>R>^>1
+R3
+IHH?24:7c`cHS0Ml8@bA@72
+R0
+w1725362303
+8D:/git-repository/fpga_training/vga_display/rtl/pulse_cnt.v
+FD:/git-repository/fpga_training/vga_display/rtl/pulse_cnt.v
+!i122 0
+L0 1 28
+R4
+R5
+r1
+!s85 0
+31
+!s108 1725501899.000000
+!s107 D:/git-repository/fpga_training/vga_display/rtl/pulse_cnt.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/vga_display/rtl|D:/git-repository/fpga_training/vga_display/rtl/pulse_cnt.v|
+!i113 0
+R7
+R8
+R1
+vvga_ctrl
+R2
+!i10b 1
+!s100 OKnKX;?NVZ8C<75K1Z>;h1
+R3
+IkYTn9CI^FT_<MJHC]?9S20
+R0
+w1725501636
+8D:/git-repository/fpga_training/vga_display/rtl/vga_ctrl.v
+FD:/git-repository/fpga_training/vga_display/rtl/vga_ctrl.v
+!i122 2
+L0 1 157
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/git-repository/fpga_training/vga_display/rtl/vga_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/vga_display/rtl|D:/git-repository/fpga_training/vga_display/rtl/vga_ctrl.v|
+!i113 0
+R7
+R8
+R1
+vvga_driver
+R2
+!i10b 1
+!s100 GR6bU2JkC;kIz>9eBDEEO1
+R3
+I@=nPMjV7R?KhJge9^J@7T2
+R0
+w1725501830
+8D:/git-repository/fpga_training/vga_display/rtl/vga_driver.v
+FD:/git-repository/fpga_training/vga_display/rtl/vga_driver.v
+!i122 3
+L0 1 44
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/git-repository/fpga_training/vga_display/rtl/vga_driver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/vga_display/rtl|D:/git-repository/fpga_training/vga_display/rtl/vga_driver.v|
+!i113 0
+R7
+R8
+R1
+vvga_driver_tb
+!s110 1725501996
+!i10b 1
+!s100 27SFYhCoMCDAL[DKa`05B2
+R3
+IZP]Y@e2cY5A:9fW5U4=B83
+R0
+w1725501982
+8D:/git-repository/fpga_training/vga_display/sim/vga_driver_tb.v
+FD:/git-repository/fpga_training/vga_display/sim/vga_driver_tb.v
+!i122 7
+L0 3 44
+R4
+R5
+r1
+!s85 0
+31
+!s108 1725501996.000000
+!s107 D:/git-repository/fpga_training/vga_display/sim/vga_driver_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/vga_display/prj/../sim|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/vga_display/sim/vga_driver_tb.v|
+!i113 0
+R7
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_display/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
