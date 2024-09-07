@@ -28,7 +28,6 @@ module dds_wave_ctrl_tb;
     initial clock = 1'b1;
     always #10 clock = ~clock;
 
-    // TODO:
     initial begin
         sys_rst_n = 1'b0;
         key_switch = 1'b0;

@@ -54,6 +54,14 @@
 				{
 					"name" : "key_switch",
 					"strict" : false
+				},
+				{
+					"name" : "key_zoom_out",
+					"strict" : false
+				},
+				{
+					"name" : "key_zoom_in",
+					"strict" : false
 				}
 			]
 		}

@@ -82,7 +82,9 @@ set_location_assignment PIN_C3 -to vga_rgb[7]
 set_location_assignment PIN_B1 -to vga_rgb[6]
 set_location_assignment PIN_E8 -to vga_rgb[5]
 set_location_assignment PIN_L1 -to key_switch
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_location_assignment PIN_J6 -to key_zoom_in
+set_location_assignment PIN_N1 -to key_zoom_out
+set_global_assignment -name VERILOG_FILE ../rtl/zoom_level.v
 set_global_assignment -name VERILOG_FILE ../rtl/key_toggle.v
 set_global_assignment -name VERILOG_FILE ../rtl/pulse_cnt.v
 set_global_assignment -name VERILOG_FILE ../rtl/key_filter.v
@@ -92,3 +94,4 @@ set_global_assignment -name VERILOG_TEST_BENCH_FILE ../sim/vga_image_display_tb.
 set_global_assignment -name QIP_FILE clk_gen.qip
 set_global_assignment -name MIF_FILE vga_image_display.mif
 set_global_assignment -name QIP_FILE rom_ip.qip
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

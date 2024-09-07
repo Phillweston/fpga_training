@@ -42,7 +42,7 @@ module addr_ctrl (
         if (~sys_rst_n) begin
             addr_temp <= 24'd0;
         end else if (addr < 2 ** 16 - 1) begin
-            // N=24		1KHZ=50MHZ / 2 ^ 24 * B		B = 335.54432	
+            // N=24		1KHZ=50MHZ / 2 ^ 24 * B		B = 335.54432
             addr_temp <= addr_temp + B;
         end else begin
             addr_temp <= 24'd0;

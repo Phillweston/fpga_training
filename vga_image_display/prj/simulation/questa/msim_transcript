@@ -22,71 +22,111 @@
 # vmap work rtl_work 
 # Modifying C:/modeltech64_2020.4/win64/../modelsim.ini
 # 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/rtl {D:/git-repository/fpga_training/vga_image_display/rtl/zoom_level.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 14:47:42 on Sep 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/rtl" D:/git-repository/fpga_training/vga_image_display/rtl/zoom_level.v 
+# -- Compiling module zoom_level
+# 
+# Top level modules:
+# 	zoom_level
+# End time: 14:47:42 on Sep 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/rtl {D:/git-repository/fpga_training/vga_image_display/rtl/key_toggle.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 14:47:42 on Sep 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/rtl" D:/git-repository/fpga_training/vga_image_display/rtl/key_toggle.v 
+# -- Compiling module key_toggle
+# 
+# Top level modules:
+# 	key_toggle
+# End time: 14:47:42 on Sep 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/rtl {D:/git-repository/fpga_training/vga_image_display/rtl/pulse_cnt.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 14:47:42 on Sep 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/rtl" D:/git-repository/fpga_training/vga_image_display/rtl/pulse_cnt.v 
+# -- Compiling module pulse_cnt
+# 
+# Top level modules:
+# 	pulse_cnt
+# End time: 14:47:42 on Sep 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/rtl {D:/git-repository/fpga_training/vga_image_display/rtl/key_filter.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 14:47:43 on Sep 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/rtl" D:/git-repository/fpga_training/vga_image_display/rtl/key_filter.v 
+# -- Compiling module key_filter
+# 
+# Top level modules:
+# 	key_filter
+# End time: 14:47:43 on Sep 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/rtl {D:/git-repository/fpga_training/vga_image_display/rtl/vga_ctrl.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:56:32 on Sep 05,2024
+# Start time: 14:47:43 on Sep 06,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/rtl" D:/git-repository/fpga_training/vga_image_display/rtl/vga_ctrl.v 
 # -- Compiling module vga_ctrl
 # 
 # Top level modules:
 # 	vga_ctrl
-# End time: 14:56:32 on Sep 05,2024, Elapsed time: 0:00:00
+# End time: 14:47:43 on Sep 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/rtl {D:/git-repository/fpga_training/vga_image_display/rtl/vga_image_display.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:56:32 on Sep 05,2024
+# Start time: 14:47:43 on Sep 06,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/rtl" D:/git-repository/fpga_training/vga_image_display/rtl/vga_image_display.v 
 # -- Compiling module vga_image_display
 # 
 # Top level modules:
 # 	vga_image_display
-# End time: 14:56:32 on Sep 05,2024, Elapsed time: 0:00:00
+# End time: 14:47:43 on Sep 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/prj {D:/git-repository/fpga_training/vga_image_display/prj/clk_gen.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:56:33 on Sep 05,2024
+# Start time: 14:47:43 on Sep 06,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/prj" D:/git-repository/fpga_training/vga_image_display/prj/clk_gen.v 
 # -- Compiling module clk_gen
 # 
 # Top level modules:
 # 	clk_gen
-# End time: 14:56:33 on Sep 05,2024, Elapsed time: 0:00:00
+# End time: 14:47:43 on Sep 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/prj {D:/git-repository/fpga_training/vga_image_display/prj/rom_ip.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:56:33 on Sep 05,2024
+# Start time: 14:47:43 on Sep 06,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/prj" D:/git-repository/fpga_training/vga_image_display/prj/rom_ip.v 
 # -- Compiling module rom_ip
 # 
 # Top level modules:
 # 	rom_ip
-# End time: 14:56:33 on Sep 05,2024, Elapsed time: 0:00:00
+# End time: 14:47:43 on Sep 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/prj/db {D:/git-repository/fpga_training/vga_image_display/prj/db/clk_gen_altpll.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:56:33 on Sep 05,2024
+# Start time: 14:47:43 on Sep 06,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/prj/db" D:/git-repository/fpga_training/vga_image_display/prj/db/clk_gen_altpll.v 
 # -- Compiling module clk_gen_altpll
 # 
 # Top level modules:
 # 	clk_gen_altpll
-# End time: 14:56:33 on Sep 05,2024, Elapsed time: 0:00:00
+# End time: 14:47:43 on Sep 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/prj/../sim {D:/git-repository/fpga_training/vga_image_display/prj/../sim/vga_image_display_tb.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:56:33 on Sep 05,2024
+# Start time: 14:47:43 on Sep 06,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/prj/../sim" D:/git-repository/fpga_training/vga_image_display/prj/../sim/vga_image_display_tb.v 
 # -- Compiling module vga_image_display_tb
 # 
 # Top level modules:
 # 	vga_image_display_tb
-# End time: 14:56:33 on Sep 05,2024, Elapsed time: 0:00:00
+# End time: 14:47:43 on Sep 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  vga_image_display_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" vga_image_display_tb 
-# Start time: 14:56:33 on Sep 05,2024
+# Start time: 14:47:43 on Sep 06,2024
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading work.vga_image_display_tb(fast)
 # Loading work.vga_image_display(fast)
@@ -103,7 +143,12 @@
 # Loading altera_mf_ver.altsyncram_body(fast)
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.zoom_level(fast)
 # Loading work.vga_ctrl(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.key_toggle(fast)
+# Loading work.key_filter(fast__1)
 # 
 # add wave *
 # view structure
@@ -115,99 +160,65 @@
 # Time: 0  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
 #  Note : Cyclone IV E PLL locked to incoming clock
 # Time: 280000  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
-run -all
-add wave -position end  sim:/vga_image_display_tb/vga_image_display_inst/clk_40mhz
-restart
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading work.vga_image_display_tb(fast)
-# Loading work.vga_image_display(fast)
-# Loading work.clk_gen(fast)
-# Loading altera_mf_ver.altpll(fast)
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
-# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
-# Loading altera_mf_ver.cda_m_cntr(fast)
-# Loading altera_mf_ver.cda_n_cntr(fast)
-# Loading altera_mf_ver.cda_scale_cntr(fast)
-# Loading altera_mf_ver.pll_iobuf(fast)
-# Loading work.rom_ip(fast)
-# Loading altera_mf_ver.altsyncram(fast)
-# Loading altera_mf_ver.altsyncram_body(fast)
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
-# Loading work.vga_ctrl(fast)
-run
-#  Note : Cyclone IV E PLL was reset
-# Time: 0  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
-#  Note : Cyclone IV E PLL locked to incoming clock
-# Time: 280000  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
-add wave -position end  sim:/vga_image_display_tb/vga_image_display_inst/vga_ctrl_inst/cnt1
-add wave -position end  sim:/vga_image_display_tb/vga_image_display_inst/vga_ctrl_inst/cnt2
-restart
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading work.vga_image_display_tb(fast)
-# Loading work.vga_image_display(fast)
-# Loading work.clk_gen(fast)
-# Loading altera_mf_ver.altpll(fast)
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
-# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
-# Loading altera_mf_ver.cda_m_cntr(fast)
-# Loading altera_mf_ver.cda_n_cntr(fast)
-# Loading altera_mf_ver.cda_scale_cntr(fast)
-# Loading altera_mf_ver.pll_iobuf(fast)
-# Loading work.rom_ip(fast)
-# Loading altera_mf_ver.altsyncram(fast)
-# Loading altera_mf_ver.altsyncram_body(fast)
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
-# Loading work.vga_ctrl(fast)
-run -all
-#  Note : Cyclone IV E PLL was reset
-# Time: 0  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
-#  Note : Cyclone IV E PLL locked to incoming clock
-# Time: 280000  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
-add wave -position end  sim:/vga_image_display_tb/vga_image_display_inst/vga_ctrl_inst/valid
-restart
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading work.vga_image_display_tb(fast)
-# Loading work.vga_image_display(fast)
-# Loading work.clk_gen(fast)
-# Loading altera_mf_ver.altpll(fast)
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
-# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
-# Loading altera_mf_ver.cda_m_cntr(fast)
-# Loading altera_mf_ver.cda_n_cntr(fast)
-# Loading altera_mf_ver.cda_scale_cntr(fast)
-# Loading altera_mf_ver.pll_iobuf(fast)
-# Loading work.rom_ip(fast)
-# Loading altera_mf_ver.altsyncram(fast)
-# Loading altera_mf_ver.altsyncram_body(fast)
-# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
-# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
-# Loading work.vga_ctrl(fast)
-run -all
-#  Note : Cyclone IV E PLL was reset
-# Time: 0  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
-#  Note : Cyclone IV E PLL locked to incoming clock
-# Time: 280000  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
-run -all
-# Causality operation skipped due to absence of debug database file
-run -all
-run -all
-run -all
-run -all
-run -all
-# ** Note: $stop    : D:/git-repository/fpga_training/vga_image_display/prj/../sim/vga_image_display_tb.v(27)
-#    Time: 10000200100 ps  Iteration: 0  Instance: /vga_image_display_tb
-# Break in Module vga_image_display_tb at D:/git-repository/fpga_training/vga_image_display/prj/../sim/vga_image_display_tb.v line 27
 vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/sim/vga_image_display_tb.v
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 15:09:43 on Sep 05,2024
+# Start time: 14:48:40 on Sep 06,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/sim/vga_image_display_tb.v 
 # -- Compiling module vga_image_display_tb
 # 
 # Top level modules:
 # 	vga_image_display_tb
-# End time: 15:09:43 on Sep 05,2024, Elapsed time: 0:00:00
+# End time: 14:48:40 on Sep 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/sim/vga_image_display_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 14:48:42 on Sep 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/sim/vga_image_display_tb.v 
+# -- Compiling module vga_image_display_tb
+# 
+# Top level modules:
+# 	vga_image_display_tb
+# End time: 14:48:42 on Sep 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run -all
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.vga_image_display_tb(fast)
+# Loading work.vga_image_display(fast)
+# Loading work.clk_gen(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.rom_ip(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.zoom_level(fast)
+# Loading work.vga_ctrl(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.key_toggle(fast)
+# Loading work.key_filter(fast__1)
+run -all
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+run -all
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/sim/vga_image_display_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 14:49:48 on Sep 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/sim/vga_image_display_tb.v 
+# -- Compiling module vga_image_display_tb
+# 
+# Top level modules:
+# 	vga_image_display_tb
+# End time: 14:49:48 on Sep 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 restart
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
@@ -226,4 +237,317 @@ restart
 # Loading altera_mf_ver.altsyncram_body(fast)
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.zoom_level(fast)
 # Loading work.vga_ctrl(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.key_toggle(fast)
+# Loading work.key_filter(fast__1)
+run -all
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+add wave -position end  sim:/vga_image_display_tb/vga_image_display_inst/vga_ctrl_inst/zoom_in_level
+add wave -position end  sim:/vga_image_display_tb/vga_image_display_inst/vga_ctrl_inst/zoom_out_level
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.vga_image_display_tb(fast)
+# Loading work.vga_image_display(fast)
+# Loading work.clk_gen(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.rom_ip(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.zoom_level(fast)
+# Loading work.vga_ctrl(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.key_toggle(fast)
+# Loading work.key_filter(fast__1)
+run -all
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/sim/vga_image_display_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 14:52:34 on Sep 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/sim/vga_image_display_tb.v 
+# -- Compiling module vga_image_display_tb
+# 
+# Top level modules:
+# 	vga_image_display_tb
+# End time: 14:52:34 on Sep 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.vga_image_display_tb(fast)
+# Loading work.vga_image_display(fast)
+# Loading work.clk_gen(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.rom_ip(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.zoom_level(fast)
+# Loading work.vga_ctrl(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.key_toggle(fast)
+# Loading work.key_filter(fast__1)
+run -all
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+add wave -position end  sim:/vga_image_display_tb/vga_image_display_inst/zoom_level_inst/zoom_in
+add wave -position end  sim:/vga_image_display_tb/vga_image_display_inst/zoom_level_inst/zoom_out
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.vga_image_display_tb(fast)
+# Loading work.vga_image_display(fast)
+# Loading work.clk_gen(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.rom_ip(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.zoom_level(fast)
+# Loading work.vga_ctrl(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.key_toggle(fast)
+# Loading work.key_filter(fast__1)
+run -all
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/sim/vga_image_display_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 14:58:25 on Sep 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/sim/vga_image_display_tb.v 
+# -- Compiling module vga_image_display_tb
+# 
+# Top level modules:
+# 	vga_image_display_tb
+# End time: 14:58:25 on Sep 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.vga_image_display_tb(fast)
+# Loading work.vga_image_display(fast)
+# Loading work.clk_gen(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.rom_ip(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.zoom_level(fast)
+# Loading work.vga_ctrl(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.key_toggle(fast)
+run -all
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+run -all
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/rtl/zoom_level.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 14:59:36 on Sep 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/rtl/zoom_level.v 
+# -- Compiling module zoom_level
+# 
+# Top level modules:
+# 	zoom_level
+# End time: 14:59:36 on Sep 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/sim/vga_image_display_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 14:59:36 on Sep 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/sim/vga_image_display_tb.v 
+# -- Compiling module vga_image_display_tb
+# 
+# Top level modules:
+# 	vga_image_display_tb
+# End time: 14:59:36 on Sep 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/rtl/vga_image_display.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 14:59:37 on Sep 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/rtl/vga_image_display.v 
+# -- Compiling module vga_image_display
+# 
+# Top level modules:
+# 	vga_image_display
+# End time: 14:59:37 on Sep 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/rtl/vga_ctrl.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 14:59:37 on Sep 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/rtl/vga_ctrl.v 
+# -- Compiling module vga_ctrl
+# 
+# Top level modules:
+# 	vga_ctrl
+# End time: 14:59:37 on Sep 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/prj -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/prj/rom_ip.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 14:59:37 on Sep 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/prj" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/prj/rom_ip.v 
+# -- Compiling module rom_ip
+# 
+# Top level modules:
+# 	rom_ip
+# End time: 14:59:37 on Sep 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/rtl/pulse_cnt.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 14:59:37 on Sep 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/rtl/pulse_cnt.v 
+# -- Compiling module pulse_cnt
+# 
+# Top level modules:
+# 	pulse_cnt
+# End time: 14:59:37 on Sep 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/rtl/key_toggle.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 14:59:37 on Sep 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/rtl/key_toggle.v 
+# -- Compiling module key_toggle
+# 
+# Top level modules:
+# 	key_toggle
+# End time: 14:59:37 on Sep 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/rtl/key_filter.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 14:59:37 on Sep 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/rtl/key_filter.v 
+# -- Compiling module key_filter
+# 
+# Top level modules:
+# 	key_filter
+# End time: 14:59:38 on Sep 06,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/prj/db -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/prj/db/clk_gen_altpll.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 14:59:38 on Sep 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/prj/db" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/prj/db/clk_gen_altpll.v 
+# -- Compiling module clk_gen_altpll
+# 
+# Top level modules:
+# 	clk_gen_altpll
+# End time: 14:59:38 on Sep 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/prj -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/prj/clk_gen.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 14:59:38 on Sep 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/prj" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/prj/clk_gen.v 
+# -- Compiling module clk_gen
+# 
+# Top level modules:
+# 	clk_gen
+# End time: 14:59:38 on Sep 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.vga_image_display_tb(fast)
+# Loading work.vga_image_display(fast)
+# Loading work.clk_gen(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.rom_ip(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.zoom_level(fast)
+# Loading work.vga_ctrl(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.key_toggle(fast)
+run -all
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/sim/vga_image_display_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:00:34 on Sep 06,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_image_display/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_image_display/sim/vga_image_display_tb.v 
+# -- Compiling module vga_image_display_tb
+# 
+# Top level modules:
+# 	vga_image_display_tb
+# End time: 15:00:34 on Sep 06,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.vga_image_display_tb(fast)
+# Loading work.vga_image_display(fast)
+# Loading work.clk_gen(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.rom_ip(fast)
+# Loading altera_mf_ver.altsyncram(fast)
+# Loading altera_mf_ver.altsyncram_body(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION(fast)
+# Loading work.zoom_level(fast)
+# Loading work.vga_ctrl(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.key_toggle(fast)
+run -all
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: vga_image_display_tb.vga_image_display_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+# Causality operation skipped due to absence of debug database file
+# End time: 14:52:09 on Sep 07,2024, Elapsed time: 24:04:26
+# Errors: 0, Warnings: 0

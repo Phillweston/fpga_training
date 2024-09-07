@@ -5,6 +5,10 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/rtl {D:/git-repository/fpga_training/vga_image_display/rtl/zoom_level.v}
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/rtl {D:/git-repository/fpga_training/vga_image_display/rtl/key_toggle.v}
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/rtl {D:/git-repository/fpga_training/vga_image_display/rtl/pulse_cnt.v}
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/rtl {D:/git-repository/fpga_training/vga_image_display/rtl/key_filter.v}
 vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/rtl {D:/git-repository/fpga_training/vga_image_display/rtl/vga_ctrl.v}
 vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/rtl {D:/git-repository/fpga_training/vga_image_display/rtl/vga_image_display.v}
 vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_image_display/prj {D:/git-repository/fpga_training/vga_image_display/prj/clk_gen.v}

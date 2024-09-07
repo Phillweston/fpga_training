@@ -14,6 +14,8 @@ module vga_image_display (
     wire [15:0] rd_addr;
     wire key_pulse;
     wire [1:0] pulse_cnt;
+    wire [1:0] zoom_in_level;
+    wire [1:0] zoom_out_level;
 
     wire key_zoom_in_pulse;
     wire key_zoom_in_toggle;
@@ -33,11 +35,22 @@ module vga_image_display (
         .q (rd_data)
     );
 
+    zoom_level zoom_level_inst (
+        .sys_clk (sys_clk),
+        .sys_rst_n (sys_rst_n),
+        .zoom_in (key_zoom_in_toggle),              // key input zoom_in
+        .zoom_out (key_zoom_out_toggle),             // key input zoom_out
+        .zoom_in_level (zoom_in_level), // 2-bit counter to count from 0 to 2
+        .zoom_out_level (zoom_out_level) // 2-bit counter to count from 0 to 2
+    );
+
     vga_ctrl vga_ctrl_inst (
         .vga_clk (clk_40mhz),
         .sys_rst_n (locked),
         .q (rd_data),
-        .pulse_cnt (pulse_cnt),
+        .display_mode (pulse_cnt),
+        .zoom_in_level (zoom_in_level),
+        .zoom_out_level (zoom_out_level),
         .addr (rd_addr),
         .vga_hsync (vga_hsync),
         .vga_vsync (vga_vsync),

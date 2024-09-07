@@ -12,6 +12,7 @@ module vga_image_display_tb;
 
     defparam vga_image_display_inst.key_filter_inst1.T10ms = 5;
     defparam vga_image_display_inst.key_filter_inst2.T10ms = 5;
+    defparam vga_image_display_inst.key_filter_inst3.T10ms = 5;
 
     vga_image_display vga_image_display_inst (
         .sys_clk (sys_clk),
@@ -30,12 +31,15 @@ module vga_image_display_tb;
 
     initial begin
         sys_rst_n = 1'b0;
+        key_switch = 1'b0;
+        key_zoom_in = 1'b0;
+        key_zoom_out = 1'b0;
         #200.1
         sys_rst_n = 1'b1;
 
         repeat (4) begin
             // Simulate the key press jitter
-            #10_000_000 key_switch = 1'b1;
+            #10_000 key_switch = 1'b1;
             #10 key_switch = 1'b0;
             #5 key_switch = 1'b1;
             #10 key_switch = 1'b0;
@@ -47,6 +51,38 @@ module vga_image_display_tb;
             #5 key_switch = 1'b0;
             #10 key_switch = 1'b1;
             #5 key_switch = 1'b0;     // key released
+        end
+
+        repeat (2) begin
+            // Simulate the key press jitter
+            #10_000 key_zoom_in = 1'b1;
+            #10 key_zoom_in = 1'b0;
+            #5 key_zoom_in = 1'b1;
+            #10 key_zoom_in = 1'b0;
+            #5 key_zoom_in = 1'b1;     // key pressed
+
+            // Simulate the key release jitter
+            #1000 key_zoom_in = 1'b0;
+            #10 key_zoom_in = 1'b1;
+            #5 key_zoom_in = 1'b0;
+            #10 key_zoom_in = 1'b1;
+            #5 key_zoom_in = 1'b0;     // key released
+        end
+
+        repeat (4) begin
+            // Simulate the key press jitter
+            #10_000 key_zoom_out = 1'b1;
+            #10 key_zoom_out = 1'b0;
+            #5 key_zoom_out = 1'b1;
+            #10 key_zoom_out = 1'b0;
+            #5 key_zoom_out = 1'b1;     // key pressed
+
+            // Simulate the key release jitter
+            #1000 key_zoom_out = 1'b0;
+            #10 key_zoom_out = 1'b1;
+            #5 key_zoom_out = 1'b0;
+            #10 key_zoom_out = 1'b1;
+            #5 key_zoom_out = 1'b0;     // key released
         end
         #10_000_000 $stop;
     end
