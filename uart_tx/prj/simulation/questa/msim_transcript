@@ -22,34 +22,125 @@
 # vmap work rtl_work 
 # Modifying C:/modeltech64_2020.4/win64/../modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_tx/rtl {D:/git-repository/fpga_training/uart_tx/rtl/uart_tx.v}
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_tx/rtl {D:/git-repository/fpga_training/uart_tx/rtl/uart_tx_v1.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 10:01:22 on Sep 14,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_tx/rtl" D:/git-repository/fpga_training/uart_tx/rtl/uart_tx.v 
-# -- Compiling module uart_tx
+# Start time: 17:02:13 on Sep 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_tx/rtl" D:/git-repository/fpga_training/uart_tx/rtl/uart_tx_v1.v 
+# -- Compiling module uart_tx_v1
 # 
 # Top level modules:
-# 	uart_tx
-# End time: 10:01:22 on Sep 14,2024, Elapsed time: 0:00:00
+# 	uart_tx_v1
+# End time: 17:02:13 on Sep 14,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_tx/prj/../sim {D:/git-repository/fpga_training/uart_tx/prj/../sim/uart_tx_v1_tb.v}
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_tx/rtl {D:/git-repository/fpga_training/uart_tx/rtl/uart_transmitter.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 10:01:22 on Sep 14,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_tx/prj/../sim" D:/git-repository/fpga_training/uart_tx/prj/../sim/uart_tx_v1_tb.v 
-# -- Compiling module uart_tx_v1_tb
+# Start time: 17:02:14 on Sep 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_tx/rtl" D:/git-repository/fpga_training/uart_tx/rtl/uart_transmitter.v 
+# -- Compiling module uart_transmitter
 # 
 # Top level modules:
-# 	uart_tx_v1_tb
-# End time: 10:01:22 on Sep 14,2024, Elapsed time: 0:00:00
+# 	uart_transmitter
+# End time: 17:02:14 on Sep 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_tx/rtl {D:/git-repository/fpga_training/uart_tx/rtl/keyboard_scan.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:02:14 on Sep 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_tx/rtl" D:/git-repository/fpga_training/uart_tx/rtl/keyboard_scan.v 
+# -- Compiling module keyboard_scan
+# 
+# Top level modules:
+# 	keyboard_scan
+# End time: 17:02:14 on Sep 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_tx/rtl {D:/git-repository/fpga_training/uart_tx/rtl/div_clk.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:02:14 on Sep 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_tx/rtl" D:/git-repository/fpga_training/uart_tx/rtl/div_clk.v 
+# -- Compiling module div_clk
+# 
+# Top level modules:
+# 	div_clk
+# End time: 17:02:14 on Sep 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_tx/prj {D:/git-repository/fpga_training/uart_tx/prj/clk_gen.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:02:14 on Sep 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_tx/prj" D:/git-repository/fpga_training/uart_tx/prj/clk_gen.v 
+# -- Compiling module clk_gen
+# 
+# Top level modules:
+# 	clk_gen
+# End time: 17:02:14 on Sep 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_tx/prj {D:/git-repository/fpga_training/uart_tx/prj/tx_fifo.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:02:14 on Sep 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_tx/prj" D:/git-repository/fpga_training/uart_tx/prj/tx_fifo.v 
+# -- Compiling module tx_fifo
+# 
+# Top level modules:
+# 	tx_fifo
+# End time: 17:02:15 on Sep 14,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_tx/prj/db {D:/git-repository/fpga_training/uart_tx/prj/db/clk_gen_altpll.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:02:15 on Sep 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_tx/prj/db" D:/git-repository/fpga_training/uart_tx/prj/db/clk_gen_altpll.v 
+# -- Compiling module clk_gen_altpll
+# 
+# Top level modules:
+# 	clk_gen_altpll
+# End time: 17:02:15 on Sep 14,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  uart_tx_v1_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" uart_tx_v1_tb 
-# Start time: 10:01:23 on Sep 14,2024
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_tx/prj/../sim {D:/git-repository/fpga_training/uart_tx/prj/../sim/uart_transmitter_tb.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 17:02:15 on Sep 14,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_tx/prj/../sim" D:/git-repository/fpga_training/uart_tx/prj/../sim/uart_transmitter_tb.v 
+# -- Compiling module uart_transmitter_tb
+# 
+# Top level modules:
+# 	uart_transmitter_tb
+# End time: 17:02:15 on Sep 14,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  uart_transmitter_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" uart_transmitter_tb 
+# Start time: 17:02:15 on Sep 14,2024
 # ** Note: (vsim-3812) Design is being optimized...
-# Loading work.uart_tx_v1_tb(fast)
-# Loading work.uart_tx(fast)
+# ** Warning: d:/intelfpga_lite/23.1std/quartus/eda/sim_lib/altera_mf.v(31792): (vopt-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+# ** Warning: d:/intelfpga_lite/23.1std/quartus/eda/sim_lib/altera_mf.v(31792): (vopt-2718) [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Note: (vopt-143) Recognized 1 FSM in module "keyboard_scan(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.uart_transmitter_tb(fast)
+# Loading work.uart_transmitter(fast)
+# Loading work.div_clk(fast)
+# Loading work.clk_gen(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.keyboard_scan(fast)
+# Loading work.tx_fifo(fast)
+# Loading altera_mf_ver.dcfifo(fast)
+# Loading altera_mf_ver.dcfifo_mixed_widths(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.dcfifo_async(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__2)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__1)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__2)
+# Loading altera_mf_ver.dcfifo_fefifo(fast)
+# Loading altera_mf_ver.dcfifo_fefifo(fast__1)
+# Loading altera_mf_ver.dcfifo_low_latency(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__3)
+# Loading altera_mf_ver.ALTERA_MF_HINT_EVALUATION(fast)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__3)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__4)
+# Loading work.uart_tx_v1(fast)
 # 
 # add wave *
 # view structure
@@ -57,10 +148,66 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: $stop    : D:/git-repository/fpga_training/uart_tx/prj/../sim/uart_tx_v1_tb.v(60)
-#    Time: 2083520100 ps  Iteration: 0  Instance: /uart_tx_v1_tb
-# Break in Module uart_tx_v1_tb at D:/git-repository/fpga_training/uart_tx/prj/../sim/uart_tx_v1_tb.v line 60
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: uart_transmitter_tb.uart_transmitter_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: uart_transmitter_tb.uart_transmitter_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+run
+run
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/tx_fifo_inst/wrreq
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/tx_fifo_inst/wrfull
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/tx_fifo_inst/wrclk
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/tx_fifo_inst/sub_wire2
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/tx_fifo_inst/sub_wire1
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/tx_fifo_inst/sub_wire0
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/tx_fifo_inst/rdreq
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/tx_fifo_inst/rdempty
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/tx_fifo_inst/rdclk
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/tx_fifo_inst/q
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/tx_fifo_inst/data
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/uart_tx_v1_inst/uart_clk
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/uart_tx_v1_inst/txd
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/uart_tx_v1_inst/temp_data
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/uart_tx_v1_inst/sys_rst_n
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/uart_tx_v1_inst/state
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/uart_tx_v1_inst/send_data_flag
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/uart_tx_v1_inst/send_data
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/uart_tx_v1_inst/s1
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/uart_tx_v1_inst/s0
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/uart_tx_v1_inst/rd_req
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/uart_tx_v1_inst/rd_empty
+add wave -position end  sim:/uart_transmitter_tb/uart_transmitter_inst/uart_tx_v1_inst/cnt
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/git-repository/fpga_training/uart_tx/prj/simulation/questa/wave.do
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/git-repository/fpga_training/uart_tx/prj/simulation/questa/wave.do
-# End time: 11:23:31 on Sep 14,2024, Elapsed time: 1:22:08
-# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.uart_transmitter_tb(fast)
+# Loading work.uart_transmitter(fast)
+# Loading work.div_clk(fast)
+# Loading work.clk_gen(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.keyboard_scan(fast)
+# Loading work.tx_fifo(fast)
+# Loading altera_mf_ver.dcfifo(fast)
+# Loading altera_mf_ver.dcfifo_mixed_widths(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.dcfifo_async(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__2)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__1)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__2)
+# Loading altera_mf_ver.dcfifo_fefifo(fast)
+# Loading altera_mf_ver.dcfifo_fefifo(fast__1)
+# Loading altera_mf_ver.dcfifo_low_latency(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__3)
+# Loading altera_mf_ver.ALTERA_MF_HINT_EVALUATION(fast)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__3)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__4)
+# Loading work.uart_tx_v1(fast)

@@ -3,7 +3,7 @@ module uart_tx_v1 (
     input sys_rst_n,
     input [7:0] send_data,          // fifo data waiting to be sent
     input rd_empty,                 // fifo read empty flag
-    output reg rd_req,                  // fifo read request
+    output reg rd_req,              // fifo read request
     output reg txd,                 // uart data sending line
     output reg send_data_flag       // sending data flag
 );
@@ -51,11 +51,9 @@ module uart_tx_v1 (
             txd <= 1'b1;
             send_data_flag <= 1'b0;
             rd_req <= 1'b0;
-        end
-        // else if (cnt >= `EP1 && ~rd_empty)      // FIFO is not empty and the counter is in the terminal state
-        //     rd_req <= 1'b1;                         // open the FIFO read request (pull up for 1 time interval to read data for 1 time)
-        // else 
-        begin
+        end else if (cnt >= `EP1 && ~rd_empty)      // FIFO is not empty and the counter is in the terminal state
+            rd_req <= 1'b1;                         // open the FIFO read request (pull up for 1 time interval to read data for 1 time)
+        else begin
             case (cnt)
                 0: begin
                     txd <= 1'b0;                        // start bit

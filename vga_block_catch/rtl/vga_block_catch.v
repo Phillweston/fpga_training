@@ -27,7 +27,7 @@ module vga_block_catch (
     wire beep_caught;
     wire beep_missed;
 
-    clk_gen	clk_gen_inst (
+    clk_gen clk_gen_inst (
         .areset (~sys_rst_n),
         .inclk0 (sys_clk),
         .c0 (clk_40mhz),             // 40MHz

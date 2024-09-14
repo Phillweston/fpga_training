@@ -13,9 +13,9 @@ vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_tx/pr
 vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_tx/prj {D:/git-repository/fpga_training/uart_tx/prj/tx_fifo.v}
 vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_tx/prj/db {D:/git-repository/fpga_training/uart_tx/prj/db/clk_gen_altpll.v}
 
-vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_tx/prj/../sim {D:/git-repository/fpga_training/uart_tx/prj/../sim/uart_tx_v1_tb.v}
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_tx/prj/../sim {D:/git-repository/fpga_training/uart_tx/prj/../sim/uart_transmitter_tb.v}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  uart_tx_v1_tb
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  uart_transmitter_tb
 
 add wave *
 view structure

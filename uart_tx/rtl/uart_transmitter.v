@@ -24,7 +24,7 @@ module uart_transmitter (
         .clk_out (wr_clk)
     );
 
-    clk_gen	clk_gen_inst (
+    clk_gen clk_gen_inst (
         .areset (~sys_rst_n),
         .inclk0 (sys_clk),
         .c0 (uart_clk),

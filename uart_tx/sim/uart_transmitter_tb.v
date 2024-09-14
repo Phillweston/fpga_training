@@ -9,6 +9,9 @@ module uart_transmitter_tb;
     wire [3:0] col;
     wire txd;
 
+    defparam uart_transmitter_inst.keyboard_scan_inst.T1ms = 5;     // 5ms
+    defparam uart_transmitter_inst.div_clk_inst.CNT_MAX = 10;       // 10
+
     uart_transmitter uart_transmitter_inst (
         .sys_clk (sys_clk),
         .sys_rst_n (sys_rst_n),
@@ -26,18 +29,23 @@ module uart_transmitter_tb;
         key_num = 5'd16;
 
         #200.1 sys_rst_n = 1'b1;
+        // rd_data: 8'b00010001
         #100 key_num = 5'd1;        // Press 1
         #3000 key_num = 5'd16;      // Release 1
 
+        // rd_data: 8'b00100010
         #3000 key_num = 5'd2;        // Press 2
         #3000 key_num = 5'd16;      // Release 2
 
+        // rd_data: 8'b00110011
         #3000 key_num = 5'd3;        // Press 3
         #3000 key_num = 5'd16;      // Release 3
 
+        // rd_data: 8'b01000100
         #3000 key_num = 5'd4;        // Press 4
         #3000 key_num = 5'd16;      // Release 4
 
+        // rd_data: 8'b01010101
         #3000 key_num = 5'd5;        // Press 5
         #3000 key_num = 5'd16;      // Release 5
     end
@@ -63,7 +71,7 @@ module uart_transmitter_tb;
             5'd13: row = {col[1], 1'b1, 1'b1, 1'b1};
             5'd14: row = {col[2], 1'b1, 1'b1, 1'b1};
             5'd15: row = {col[3], 1'b1, 1'b1, 1'b1};
-            
+
             default: row = 4'b1111;
         endcase
     end
