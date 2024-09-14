@@ -81,7 +81,7 @@ module vga_ctrl (
                     col1 = 11'd216 + ((11'd400 - ((IMG_WIDTH >> zoom_out_level) << zoom_in_level)) >> 1);
                     col2 = col1 + ((IMG_WIDTH >> zoom_out_level) << zoom_in_level);
                     row1 = 10'd27 + ((10'd600 - ((IMG_HEIGHT >> zoom_out_level) << zoom_in_level)) >> 1);
-                    row2 = row1 + (IMG_HEIGHT << zoom_in_level);
+                    row2 = row1 + ((IMG_HEIGHT >> zoom_out_level) << zoom_in_level);
                 
                     if ((cnt1 >= col1 && cnt1 < col2) && (cnt2 >= row1 && cnt2 < row2)) begin
                         valid = 1'b1;
@@ -132,7 +132,7 @@ module vga_ctrl (
                     2'd0: begin
                         // FIXME: Calculate the boundaries for the centered image
                         col1 = 11'd216 + ((11'd800 - ((IMG_WIDTH >> zoom_out_level) << zoom_in_level)) >> 1);
-                        col2 = col1 + (IMG_WIDTH << zoom_in_level);
+                        col2 = col1 + ((IMG_WIDTH >> zoom_out_level) << zoom_in_level);
                         row1 = 10'd27 + ((10'd600 - ((IMG_HEIGHT >> zoom_out_level) << zoom_in_level)) >> 1);
                         row2 = row1 + ((IMG_HEIGHT >> zoom_out_level) << zoom_in_level);
                         

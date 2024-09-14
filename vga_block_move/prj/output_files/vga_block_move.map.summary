@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Sep 11 15:45:44 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : vga_block_move
+Top-level Entity Name : vga_block_move
+Family : Cyclone IV E
+Total logic elements : 241
+    Total combinational functions : 240
+    Dedicated logic registers : 75
+Total registers : 75
+Total pins : 12
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

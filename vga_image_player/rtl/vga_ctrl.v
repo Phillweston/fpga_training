@@ -52,22 +52,21 @@ module vga_ctrl (
     reg [9:0] row1, row2;
 
     always @(*) begin
+        // Display only one image
+        // COL1 = 216 + (800 - IMG_WIDTH * zoom_in_level) / 2 = 416
+        // COL2 = 416 + IMG_WIDTH * zoom_in_level = 816
+        // ROW1 = 27 + (600 - IMG_HEIGHT * zoom_in_level) / 2 = 127
+        // ROW2 = 127 + IMG_HEIGHT * zoom_in_level = 527
+        // Calculate the boundaries based on the zoom level
+        col1 = 11'd216 + ((11'd800 - ((IMG_WIDTH >> zoom_out_level) << zoom_in_level)) >> 1);
+        col2 = col1 + ((IMG_WIDTH >> zoom_out_level) << zoom_in_level);
+        row1 = 10'd27 + ((10'd600 - ((IMG_HEIGHT >> zoom_out_level) << zoom_in_level)) >> 1);
+        row2 = row1 + ((IMG_HEIGHT >> zoom_out_level) << zoom_in_level);
+
         if (~sys_rst_n)
             valid = 1'b0;
         else begin
-            // Display only one image
-            // COL1 = 216 + (800 - IMG_WIDTH * zoom_in_level) / 2 = 416
-            // COL2 = 416 + IMG_WIDTH * zoom_in_level = 816
-            // ROW1 = 27 + (600 - IMG_HEIGHT * zoom_in_level) / 2 = 127
-            // ROW2 = 127 + IMG_HEIGHT * zoom_in_level = 527
-            // Calculate the boundaries based on the zoom level
-            col1 = 11'd216 + ((11'd800 - ((IMG_WIDTH >> zoom_out_level) << zoom_in_level)) >> 1);
-            col2 = col1 + ((IMG_WIDTH >> zoom_out_level) << zoom_in_level);
-            row1 = 10'd27 + ((10'd600 - ((IMG_HEIGHT >> zoom_out_level) << zoom_in_level)) >> 1);
-            row2 = row1 + ((IMG_HEIGHT >> zoom_out_level) << zoom_in_level);
-
-            if ((cnt1 >= col1 && cnt1 < col2) &&
-                (cnt2 >= row1 && cnt2 < row2))
+            if ((cnt1 >= col1 && cnt1 < col2) && (cnt2 >= row1 && cnt2 < row2))
                 valid = 1'b1;
             else
                 valid = 1'b0;
@@ -80,12 +79,6 @@ module vga_ctrl (
             vga_rgb <= 8'd0;
         end else begin
             if (valid) begin
-                // Calculate the boundaries for the centered image
-                col1 = 11'd216 + ((11'd800 - ((IMG_WIDTH >> zoom_out_level) << zoom_in_level)) >> 1);
-                col2 = col1 + (IMG_WIDTH << zoom_in_level);
-                row1 = 10'd27 + ((10'd600 - ((IMG_HEIGHT >> zoom_out_level) << zoom_in_level)) >> 1);
-                row2 = row1 + ((IMG_HEIGHT >> zoom_out_level) << zoom_in_level);
-                
                 if ((cnt1 >= col1 && cnt1 < col2) && (cnt2 >= row1 && cnt2 < row2)) begin
                     if (zoom_out_level)
                         addr <= ((cnt1 - col1) << zoom_out_level) + ((cnt2 - row1) << zoom_out_level) * IMG_WIDTH;

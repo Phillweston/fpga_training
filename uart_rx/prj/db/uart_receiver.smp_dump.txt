@@ -1,0 +1,7 @@
+
+State Machine - |uart_receiver|state
+Name state.STOP state.LSM_2S state.LSM_1S state.IDLE 
+state.IDLE 0 0 0 0 
+state.LSM_1S 0 0 1 1 
+state.LSM_2S 0 1 0 1 
+state.STOP 1 0 0 1 

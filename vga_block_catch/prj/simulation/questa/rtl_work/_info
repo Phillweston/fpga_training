@@ -1,0 +1,261 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/git-repository/fpga_training/vga_block_catch/prj/simulation/questa
+T_opt
+!s110 1726067240
+V3:V9ZM@`QboEE3FYMKz`C1
+04 18 4 work vga_block_catch_tb fast 0
+=1-00d861e3bc76-66e1b228-7d-4314
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+R0
+vbeep_driver
+Z2 !s110 1726067334
+!i10b 1
+!s100 d;mg[AZ]QdMK@`YTONLzH1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IJQ<FG_k:6G;iC]Q>Y0k<N0
+R0
+w1726047097
+8D:/git-repository/fpga_training/vga_block_catch/rtl/beep_driver.v
+FD:/git-repository/fpga_training/vga_block_catch/rtl/beep_driver.v
+!i122 19
+L0 1 53
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z6 !s108 1726067334.000000
+!s107 D:/git-repository/fpga_training/vga_block_catch/rtl/beep_driver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/vga_block_catch/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/vga_block_catch/rtl/beep_driver.v|
+!i113 0
+Z7 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z8 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vblock_move
+R2
+!i10b 1
+!s100 <74YC;Qh1S@[J;5TU0BoX0
+R3
+IaY6CfbTaZnWd]RA2az=hV3
+R0
+w1726048332
+8D:/git-repository/fpga_training/vga_block_catch/rtl/block_move.v
+FD:/git-repository/fpga_training/vga_block_catch/rtl/block_move.v
+!i122 18
+L0 1 31
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/git-repository/fpga_training/vga_block_catch/rtl/block_move.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/vga_block_catch/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/vga_block_catch/rtl/block_move.v|
+!i113 0
+R7
+R8
+R1
+vclk_gen
+R2
+!i10b 1
+!s100 0fNQ8:14XEHkWjejMAfhG3
+R3
+I>BCQ=M2GdFPiQGBn[MW>j2
+R0
+w1726047542
+8D:/git-repository/fpga_training/vga_block_catch/prj/clk_gen.v
+FD:/git-repository/fpga_training/vga_block_catch/prj/clk_gen.v
+!i122 17
+L0 40 124
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/git-repository/fpga_training/vga_block_catch/prj/clk_gen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/vga_block_catch/prj|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/vga_block_catch/prj/clk_gen.v|
+!i113 0
+R7
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/prj -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vclk_gen_altpll
+R2
+!i10b 1
+!s100 jAmoCbK0`3A@I43U]gniZ1
+R3
+Ii@5Rn0SQgKOK0eQSGMn3X2
+R0
+w1726047562
+8D:/git-repository/fpga_training/vga_block_catch/prj/db/clk_gen_altpll.v
+FD:/git-repository/fpga_training/vga_block_catch/prj/db/clk_gen_altpll.v
+!i122 16
+L0 31 79
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/git-repository/fpga_training/vga_block_catch/prj/db/clk_gen_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/vga_block_catch/prj/db|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/vga_block_catch/prj/db/clk_gen_altpll.v|
+!i113 0
+R7
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/prj/db -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vkey_filter
+R2
+!i10b 1
+!s100 c7>^m]dH2Lfm06jXDZe=E3
+R3
+InizaQel4S?`SeROW`nAc>1
+R0
+w1725360467
+8D:/git-repository/fpga_training/vga_block_catch/rtl/key_filter.v
+FD:/git-repository/fpga_training/vga_block_catch/rtl/key_filter.v
+!i122 15
+L0 3 52
+R4
+R5
+r1
+!s85 0
+31
+Z9 !s108 1726067333.000000
+!s107 D:/git-repository/fpga_training/vga_block_catch/rtl/key_filter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/vga_block_catch/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/vga_block_catch/rtl/key_filter.v|
+!i113 0
+R7
+R8
+R1
+vkey_toggle
+Z10 !s110 1726067333
+!i10b 1
+!s100 dA4Ei<`A=BNa;PDc`R<4S0
+R3
+I^XaYRQUYCYaiz@=h4Ji9Y0
+R0
+w1725528872
+8D:/git-repository/fpga_training/vga_block_catch/rtl/key_toggle.v
+FD:/git-repository/fpga_training/vga_block_catch/rtl/key_toggle.v
+!i122 14
+L0 1 22
+R4
+R5
+r1
+!s85 0
+31
+R9
+!s107 D:/git-repository/fpga_training/vga_block_catch/rtl/key_toggle.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/vga_block_catch/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/vga_block_catch/rtl/key_toggle.v|
+!i113 0
+R7
+R8
+R1
+vmove_ctrl
+R10
+!i10b 1
+!s100 D3alVB_7P<TOF1mNDM31]3
+R3
+InYAXFKQ:8RKX^J>z=V<kX2
+R0
+w1726048279
+8D:/git-repository/fpga_training/vga_block_catch/rtl/move_ctrl.v
+FD:/git-repository/fpga_training/vga_block_catch/rtl/move_ctrl.v
+!i122 13
+L0 4 141
+R4
+R5
+r1
+!s85 0
+31
+R9
+!s107 D:/git-repository/fpga_training/vga_block_catch/rtl/move_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/vga_block_catch/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/vga_block_catch/rtl/move_ctrl.v|
+!i113 0
+R7
+R8
+R1
+vvga_block_catch
+R10
+!i10b 1
+!s100 G?>;QoejY:C0=z6PXojQD1
+R3
+IQ3TL41A2QBlb>inCcI4f@1
+R0
+w1726046554
+8D:/git-repository/fpga_training/vga_block_catch/rtl/vga_block_catch.v
+FD:/git-repository/fpga_training/vga_block_catch/rtl/vga_block_catch.v
+!i122 12
+L0 1 116
+R4
+R5
+r1
+!s85 0
+31
+R9
+!s107 D:/git-repository/fpga_training/vga_block_catch/rtl/vga_block_catch.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/vga_block_catch/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/vga_block_catch/rtl/vga_block_catch.v|
+!i113 0
+R7
+R8
+R1
+vvga_block_catch_tb
+R10
+!i10b 1
+!s100 nM5`;3Uh@nOG6F;bgBA_d0
+R3
+IkoZ:6?VZL=dj]?ebJc8DM3
+R0
+w1726067304
+8D:/git-repository/fpga_training/vga_block_catch/sim/vga_block_catch_tb.v
+FD:/git-repository/fpga_training/vga_block_catch/sim/vga_block_catch_tb.v
+!i122 11
+L0 3 71
+R4
+R5
+r1
+!s85 0
+31
+R9
+!s107 D:/git-repository/fpga_training/vga_block_catch/sim/vga_block_catch_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/vga_block_catch/prj/../sim|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/vga_block_catch/sim/vga_block_catch_tb.v|
+!i113 0
+R7
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vvga_ctrl
+!s110 1726067332
+!i10b 1
+!s100 Tz44H<ARf@T?8>5Y5[iMk2
+R3
+I8G_2aS@l]U3gXKGZ75T0g0
+R0
+w1726038210
+8D:/git-repository/fpga_training/vga_block_catch/rtl/vga_ctrl.v
+FD:/git-repository/fpga_training/vga_block_catch/rtl/vga_ctrl.v
+!i122 10
+L0 1 64
+R4
+R5
+r1
+!s85 0
+31
+!s108 1726067332.000000
+!s107 D:/git-repository/fpga_training/vga_block_catch/rtl/vga_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/vga_block_catch/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/vga_block_catch/rtl/vga_ctrl.v|
+!i113 0
+R7
+R8
+R1

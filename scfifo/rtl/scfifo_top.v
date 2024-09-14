@@ -14,16 +14,16 @@ module scfifo_top (
     wire [7:0] usedw;
 
     ip_scfifo ip_scfifo_inst (
-        .clock ( sys_clk ),
-        .data ( wr_data ),
-        .rdreq ( rd_req ),
-        .wrreq ( wr_req ),
-        .almost_empty ( almost_empty ),
-        .almost_full ( almost_full ),
-        .empty ( empty ),
-        .full ( full ),
-        .q ( rd_data ),
-        .usedw ( usedw )
+        .clock (sys_clk),
+        .data (wr_data),
+        .rdreq (rd_req),
+        .wrreq (wr_req),
+        .almost_empty (almost_empty),
+        .almost_full (almost_full),
+        .empty (empty),
+        .full (full),
+        .q (rd_data),
+        .usedw (usedw)
     );
 
     scfifo_ctrl scfifo_ctrl_inst (

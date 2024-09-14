@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'fifo_div_clk:fifo_div_clk_inst|clk_out'
+Slack : -3.179
+TNS   : -91.628
+
+Type  : Slow 1200mV 85C Model Setup 'sys_clk'
+Slack : -1.092
+TNS   : -2.146
+
+Type  : Slow 1200mV 85C Model Setup 'seven_tube:seven_tube_ist|clk_div_2khz:clk_div_2khz_inst|clk_out'
+Slack : -0.365
+TNS   : -1.054
+
+Type  : Slow 1200mV 85C Model Setup 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 6504.612
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.451
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'fifo_div_clk:fifo_div_clk_inst|clk_out'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'seven_tube:seven_tube_ist|clk_div_2khz:clk_div_2khz_inst|clk_out'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'sys_clk'
+Slack : 0.492
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fifo_div_clk:fifo_div_clk_inst|clk_out'
+Slack : -3.201
+TNS   : -88.289
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'seven_tube:seven_tube_ist|clk_div_2khz:clk_div_2khz_inst|clk_out'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sys_clk'
+Slack : 9.783
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3254.924
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'fifo_div_clk:fifo_div_clk_inst|clk_out'
+Slack : -2.894
+TNS   : -82.676
+
+Type  : Slow 1200mV 0C Model Setup 'sys_clk'
+Slack : -1.004
+TNS   : -1.970
+
+Type  : Slow 1200mV 0C Model Setup 'seven_tube:seven_tube_ist|clk_div_2khz:clk_div_2khz_inst|clk_out'
+Slack : -0.231
+TNS   : -0.652
+
+Type  : Slow 1200mV 0C Model Setup 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 6504.998
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.400
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'seven_tube:seven_tube_ist|clk_div_2khz:clk_div_2khz_inst|clk_out'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'fifo_div_clk:fifo_div_clk_inst|clk_out'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'sys_clk'
+Slack : 0.455
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fifo_div_clk:fifo_div_clk_inst|clk_out'
+Slack : -3.201
+TNS   : -88.289
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'seven_tube:seven_tube_ist|clk_div_2khz:clk_div_2khz_inst|clk_out'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sys_clk'
+Slack : 9.772
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3254.924
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'fifo_div_clk:fifo_div_clk_inst|clk_out'
+Slack : -0.816
+TNS   : -20.176
+
+Type  : Fast 1200mV 0C Model Setup 'sys_clk'
+Slack : -0.296
+TNS   : -0.588
+
+Type  : Fast 1200mV 0C Model Setup 'seven_tube:seven_tube_ist|clk_div_2khz:clk_div_2khz_inst|clk_out'
+Slack : 0.399
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 6507.946
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.154
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'seven_tube:seven_tube_ist|clk_div_2khz:clk_div_2khz_inst|clk_out'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'fifo_div_clk:fifo_div_clk_inst|clk_out'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'sys_clk'
+Slack : 0.197
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fifo_div_clk:fifo_div_clk_inst|clk_out'
+Slack : -1.000
+TNS   : -49.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'seven_tube:seven_tube_ist|clk_div_2khz:clk_div_2khz_inst|clk_out'
+Slack : -1.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sys_clk'
+Slack : 9.435
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3254.942
+TNS   : 0.000
+
+------------------------------------------------------------

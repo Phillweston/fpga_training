@@ -20,7 +20,7 @@ set_location_assignment PIN_M10   -to   LED[3]
 set_location_assignment PIN_N8    -to    ps2_sclk
 set_location_assignment PIN_L8    -to    ps2_sda
 
-#BEEP 蜂鸣器                      
+#BEEP 蜂鸣器
 set_location_assignment PIN_P9    -to    beep
 
 # 256色VGA 

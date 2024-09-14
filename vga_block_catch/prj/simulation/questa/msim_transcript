@@ -1,0 +1,263 @@
+# Reading pref.tcl
+# //  ModelSim SE-64 2020.4 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do vga_block_catch_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap work rtl_work 
+# Modifying C:/modeltech64_2020.4/win64/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/rtl {D:/git-repository/fpga_training/vga_block_catch/rtl/key_toggle.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:07:17 on Sep 11,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_block_catch/rtl" D:/git-repository/fpga_training/vga_block_catch/rtl/key_toggle.v 
+# -- Compiling module key_toggle
+# 
+# Top level modules:
+# 	key_toggle
+# End time: 23:07:17 on Sep 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/rtl {D:/git-repository/fpga_training/vga_block_catch/rtl/key_filter.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:07:17 on Sep 11,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_block_catch/rtl" D:/git-repository/fpga_training/vga_block_catch/rtl/key_filter.v 
+# -- Compiling module key_filter
+# 
+# Top level modules:
+# 	key_filter
+# End time: 23:07:17 on Sep 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/rtl {D:/git-repository/fpga_training/vga_block_catch/rtl/vga_ctrl.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:07:17 on Sep 11,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_block_catch/rtl" D:/git-repository/fpga_training/vga_block_catch/rtl/vga_ctrl.v 
+# -- Compiling module vga_ctrl
+# 
+# Top level modules:
+# 	vga_ctrl
+# End time: 23:07:17 on Sep 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/rtl {D:/git-repository/fpga_training/vga_block_catch/rtl/vga_block_catch.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:07:17 on Sep 11,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_block_catch/rtl" D:/git-repository/fpga_training/vga_block_catch/rtl/vga_block_catch.v 
+# -- Compiling module vga_block_catch
+# 
+# Top level modules:
+# 	vga_block_catch
+# End time: 23:07:17 on Sep 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/rtl {D:/git-repository/fpga_training/vga_block_catch/rtl/move_ctrl.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:07:17 on Sep 11,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_block_catch/rtl" D:/git-repository/fpga_training/vga_block_catch/rtl/move_ctrl.v 
+# -- Compiling module move_ctrl
+# 
+# Top level modules:
+# 	move_ctrl
+# End time: 23:07:17 on Sep 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/rtl {D:/git-repository/fpga_training/vga_block_catch/rtl/block_move.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:07:17 on Sep 11,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_block_catch/rtl" D:/git-repository/fpga_training/vga_block_catch/rtl/block_move.v 
+# -- Compiling module block_move
+# 
+# Top level modules:
+# 	block_move
+# End time: 23:07:17 on Sep 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/rtl {D:/git-repository/fpga_training/vga_block_catch/rtl/beep_driver.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:07:17 on Sep 11,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_block_catch/rtl" D:/git-repository/fpga_training/vga_block_catch/rtl/beep_driver.v 
+# -- Compiling module beep_driver
+# 
+# Top level modules:
+# 	beep_driver
+# End time: 23:07:18 on Sep 11,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/prj {D:/git-repository/fpga_training/vga_block_catch/prj/clk_gen.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:07:18 on Sep 11,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_block_catch/prj" D:/git-repository/fpga_training/vga_block_catch/prj/clk_gen.v 
+# -- Compiling module clk_gen
+# 
+# Top level modules:
+# 	clk_gen
+# End time: 23:07:18 on Sep 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/prj/db {D:/git-repository/fpga_training/vga_block_catch/prj/db/clk_gen_altpll.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:07:18 on Sep 11,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_block_catch/prj/db" D:/git-repository/fpga_training/vga_block_catch/prj/db/clk_gen_altpll.v 
+# -- Compiling module clk_gen_altpll
+# 
+# Top level modules:
+# 	clk_gen_altpll
+# End time: 23:07:18 on Sep 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/prj/../sim {D:/git-repository/fpga_training/vga_block_catch/prj/../sim/vga_block_catch_tb.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:07:18 on Sep 11,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_block_catch/prj/../sim" D:/git-repository/fpga_training/vga_block_catch/prj/../sim/vga_block_catch_tb.v 
+# -- Compiling module vga_block_catch_tb
+# 
+# Top level modules:
+# 	vga_block_catch_tb
+# End time: 23:07:18 on Sep 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  vga_block_catch_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" vga_block_catch_tb 
+# Start time: 23:07:18 on Sep 11,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: D:/git-repository/fpga_training/vga_block_catch/prj/../sim/vga_block_catch_tb.v(17): (vopt-2685) [TFMPC] - Too few port connections for 'vga_block_catch_inst'.  Expected 8, found 7.
+# ** Warning: D:/git-repository/fpga_training/vga_block_catch/prj/../sim/vga_block_catch_tb.v(17): (vopt-2718) [TFMPC] - Missing connection for port 'beep'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.vga_block_catch_tb(fast)
+# Loading work.vga_block_catch(fast)
+# Loading work.clk_gen(fast)
+# Loading altera_mf_ver.altpll(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.MF_cycloneiii_pll(fast)
+# Loading altera_mf_ver.cda_m_cntr(fast)
+# Loading altera_mf_ver.cda_n_cntr(fast)
+# Loading altera_mf_ver.cda_scale_cntr(fast)
+# Loading altera_mf_ver.pll_iobuf(fast)
+# Loading work.move_ctrl(fast)
+# Loading work.beep_driver(fast)
+# Loading work.beep_driver(fast__1)
+# Loading work.key_filter(fast)
+# Loading work.key_toggle(fast)
+# Loading work.block_move(fast)
+# Loading work.vga_ctrl(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: vga_block_catch_tb.vga_block_catch_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 280000  Instance: vga_block_catch_tb.vga_block_catch_inst.clk_gen_inst.altpll_component.cycloneiii_pll.pll3
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_block_catch/rtl/vga_ctrl.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:08:52 on Sep 11,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_block_catch/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_block_catch/rtl/vga_ctrl.v 
+# -- Compiling module vga_ctrl
+# 
+# Top level modules:
+# 	vga_ctrl
+# End time: 23:08:52 on Sep 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_block_catch/sim/vga_block_catch_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:08:53 on Sep 11,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_block_catch/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_block_catch/sim/vga_block_catch_tb.v 
+# -- Compiling module vga_block_catch_tb
+# 
+# Top level modules:
+# 	vga_block_catch_tb
+# End time: 23:08:53 on Sep 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_block_catch/rtl/vga_block_catch.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:08:53 on Sep 11,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_block_catch/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_block_catch/rtl/vga_block_catch.v 
+# -- Compiling module vga_block_catch
+# 
+# Top level modules:
+# 	vga_block_catch
+# End time: 23:08:53 on Sep 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_block_catch/rtl/move_ctrl.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:08:53 on Sep 11,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_block_catch/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_block_catch/rtl/move_ctrl.v 
+# -- Compiling module move_ctrl
+# 
+# Top level modules:
+# 	move_ctrl
+# End time: 23:08:53 on Sep 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_block_catch/rtl/key_toggle.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:08:53 on Sep 11,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_block_catch/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_block_catch/rtl/key_toggle.v 
+# -- Compiling module key_toggle
+# 
+# Top level modules:
+# 	key_toggle
+# End time: 23:08:53 on Sep 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_block_catch/rtl/key_filter.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:08:53 on Sep 11,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_block_catch/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_block_catch/rtl/key_filter.v 
+# -- Compiling module key_filter
+# 
+# Top level modules:
+# 	key_filter
+# End time: 23:08:54 on Sep 11,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/prj/db -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_block_catch/prj/db/clk_gen_altpll.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:08:54 on Sep 11,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_block_catch/prj/db" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_block_catch/prj/db/clk_gen_altpll.v 
+# -- Compiling module clk_gen_altpll
+# 
+# Top level modules:
+# 	clk_gen_altpll
+# End time: 23:08:54 on Sep 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/prj -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_block_catch/prj/clk_gen.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:08:54 on Sep 11,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_block_catch/prj" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_block_catch/prj/clk_gen.v 
+# -- Compiling module clk_gen
+# 
+# Top level modules:
+# 	clk_gen
+# End time: 23:08:54 on Sep 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_block_catch/rtl/block_move.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:08:54 on Sep 11,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_block_catch/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_block_catch/rtl/block_move.v 
+# -- Compiling module block_move
+# 
+# Top level modules:
+# 	block_move
+# End time: 23:08:54 on Sep 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/vga_block_catch/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_block_catch/rtl/beep_driver.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:08:54 on Sep 11,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/vga_block_catch/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/vga_block_catch/rtl/beep_driver.v 
+# -- Compiling module beep_driver
+# 
+# Top level modules:
+# 	beep_driver
+# End time: 23:08:54 on Sep 11,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 09:15:54 on Sep 13,2024, Elapsed time: 34:08:36
+# Errors: 0, Warnings: 2

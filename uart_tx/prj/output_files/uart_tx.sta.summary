@@ -1,0 +1,257 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk_gen:clk_gen_inst|altpll:altpll_component|clk_gen_altpll:auto_generated|pll_lock_sync'
+Slack : -7.417
+TNS   : -47.953
+
+Type  : Slow 1200mV 85C Model Setup 'div_clk:div_clk_inst|clk_out'
+Slack : -3.310
+TNS   : -86.074
+
+Type  : Slow 1200mV 85C Model Setup 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : -1.849
+TNS   : -26.619
+
+Type  : Slow 1200mV 85C Model Setup 'sys_clk'
+Slack : -1.381
+TNS   : -2.671
+
+Type  : Slow 1200mV 85C Model Setup 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 6503.217
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.249
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div_clk:div_clk_inst|clk_out'
+Slack : 0.430
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'sys_clk'
+Slack : 0.760
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_gen:clk_gen_inst|altpll:altpll_component|clk_gen_altpll:auto_generated|pll_lock_sync'
+Slack : 1.966
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'sys_clk'
+Slack : -1.363
+TNS   : -78.138
+
+Type  : Slow 1200mV 85C Model Recovery 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -1.308
+TNS   : -9.421
+
+Type  : Slow 1200mV 85C Model Recovery 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : -1.164
+TNS   : -20.860
+
+Type  : Slow 1200mV 85C Model Removal 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.539
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : 0.605
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'sys_clk'
+Slack : 0.792
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div_clk:div_clk_inst|clk_out'
+Slack : -3.201
+TNS   : -82.466
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : -1.487
+TNS   : -29.740
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_gen:clk_gen_inst|altpll:altpll_component|clk_gen_altpll:auto_generated|pll_lock_sync'
+Slack : 0.297
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sys_clk'
+Slack : 9.783
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3254.909
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk_gen:clk_gen_inst|altpll:altpll_component|clk_gen_altpll:auto_generated|pll_lock_sync'
+Slack : -6.889
+TNS   : -47.721
+
+Type  : Slow 1200mV 0C Model Setup 'div_clk:div_clk_inst|clk_out'
+Slack : -3.038
+TNS   : -77.810
+
+Type  : Slow 1200mV 0C Model Setup 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : -1.670
+TNS   : -23.728
+
+Type  : Slow 1200mV 0C Model Setup 'sys_clk'
+Slack : -1.258
+TNS   : -2.465
+
+Type  : Slow 1200mV 0C Model Setup 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 6503.685
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.220
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div_clk:div_clk_inst|clk_out'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'sys_clk'
+Slack : 0.705
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_gen:clk_gen_inst|altpll:altpll_component|clk_gen_altpll:auto_generated|pll_lock_sync'
+Slack : 1.827
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'sys_clk'
+Slack : -1.288
+TNS   : -73.622
+
+Type  : Slow 1200mV 0C Model Recovery 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : -1.093
+TNS   : -19.446
+
+Type  : Slow 1200mV 0C Model Recovery 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -1.009
+TNS   : -6.852
+
+Type  : Slow 1200mV 0C Model Removal 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.343
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : 0.460
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'sys_clk'
+Slack : 0.687
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div_clk:div_clk_inst|clk_out'
+Slack : -3.201
+TNS   : -82.466
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : -1.487
+TNS   : -29.740
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_gen:clk_gen_inst|altpll:altpll_component|clk_gen_altpll:auto_generated|pll_lock_sync'
+Slack : 0.204
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sys_clk'
+Slack : 9.773
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3254.876
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk_gen:clk_gen_inst|altpll:altpll_component|clk_gen_altpll:auto_generated|pll_lock_sync'
+Slack : -2.765
+TNS   : -18.013
+
+Type  : Fast 1200mV 0C Model Setup 'div_clk:div_clk_inst|clk_out'
+Slack : -0.863
+TNS   : -17.324
+
+Type  : Fast 1200mV 0C Model Setup 'sys_clk'
+Slack : -0.411
+TNS   : -0.811
+
+Type  : Fast 1200mV 0C Model Setup 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : -0.236
+TNS   : -1.192
+
+Type  : Fast 1200mV 0C Model Setup 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 6507.289
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.091
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'div_clk:div_clk_inst|clk_out'
+Slack : 0.154
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'sys_clk'
+Slack : 0.303
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_gen:clk_gen_inst|altpll:altpll_component|clk_gen_altpll:auto_generated|pll_lock_sync'
+Slack : 0.599
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'sys_clk'
+Slack : -0.318
+TNS   : -16.336
+
+Type  : Fast 1200mV 0C Model Recovery 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : -0.238
+TNS   : -3.739
+
+Type  : Fast 1200mV 0C Model Recovery 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.152
+TNS   : -0.610
+
+Type  : Fast 1200mV 0C Model Removal 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'sys_clk'
+Slack : 0.517
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : 0.520
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div_clk:div_clk_inst|clk_out'
+Slack : -1.000
+TNS   : -52.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'keyboard_scan:keyboard_scan_inst|clk_1khz'
+Slack : -1.000
+TNS   : -20.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_gen:clk_gen_inst|altpll:altpll_component|clk_gen_altpll:auto_generated|pll_lock_sync'
+Slack : 0.373
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sys_clk'
+Slack : 9.435
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_gen_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 3254.943
+TNS   : 0.000
+
+------------------------------------------------------------

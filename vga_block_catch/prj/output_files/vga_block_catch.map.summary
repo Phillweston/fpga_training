@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Sep 11 17:52:36 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : vga_block_catch
+Top-level Entity Name : vga_block_catch
+Family : Cyclone IV E
+Total logic elements : 605
+    Total combinational functions : 602
+    Dedicated logic registers : 291
+Total registers : 291
+Total pins : 15
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

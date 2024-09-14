@@ -1,12 +1,12 @@
-Fitter Status : Successful - Fri Sep  6 15:32:25 2024
+Fitter Status : Successful - Tue Sep 10 09:17:50 2024
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : vga_image_display
 Top-level Entity Name : vga_image_display
 Family : Cyclone IV E
 Device : EP4CE10F17C8
 Timing Models : Final
-Total logic elements : 1,388 / 10,320 ( 13 % )
-    Total combinational functions : 1,385 / 10,320 ( 13 % )
+Total logic elements : 1,327 / 10,320 ( 13 % )
+    Total combinational functions : 1,324 / 10,320 ( 13 % )
     Dedicated logic registers : 163 / 10,320 ( 2 % )
 Total registers : 163
 Total pins : 15 / 180 ( 8 % )
