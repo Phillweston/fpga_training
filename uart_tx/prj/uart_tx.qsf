@@ -50,17 +50,6 @@ set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
 set_global_assignment -name DEVICE_FILTER_PIN_COUNT 256
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
 set_global_assignment -name EDA_SIMULATION_TOOL "Questa Intel FPGA (Verilog)"
-set_global_assignment -name VERILOG_FILE ../sim/uart_transmitter_tb.v
-set_global_assignment -name VERILOG_FILE ../rtl/uart_tx_v1.v
-set_global_assignment -name VERILOG_FILE ../rtl/uart_transmitter.v
-set_global_assignment -name VERILOG_FILE ../rtl/uart_test.v
-set_global_assignment -name VERILOG_FILE ../rtl/keyboard_scan.v
-set_global_assignment -name VERILOG_FILE ../rtl/div_clk.v
-set_global_assignment -name VERILOG_FILE ../rtl/uart_tx.v
-set_global_assignment -name VERILOG_TEST_BENCH_FILE ../sim/uart_tx_tb.v
-set_global_assignment -name VERILOG_TEST_BENCH_FILE ../sim/uart_tx_v1_tb.v
-set_global_assignment -name QIP_FILE clk_gen.qip
-set_global_assignment -name QIP_FILE tx_fifo.qip
 set_location_assignment PIN_E1 -to sys_clk
 set_location_assignment PIN_L3 -to sys_rst_n
 set_location_assignment PIN_L15 -to col[0]
@@ -87,4 +76,32 @@ set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME uart_transmitter_tb -sect
 set_global_assignment -name EDA_TEST_BENCH_FILE ../sim/uart_transmitter_tb.v -section_id uart_transmitter_tb
 set_global_assignment -name FLOW_ENABLE_RTL_VIEWER ON
 set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS ON
+set_global_assignment -name VERILOG_FILE ../rtl/uart_clk_div.v
+set_global_assignment -name VERILOG_FILE ../rtl/seg_ctrl.v
+set_global_assignment -name VERILOG_FILE ../rtl/pulse_cnt.v
+set_global_assignment -name VERILOG_FILE ../rtl/key_filter.v
+set_global_assignment -name VERILOG_FILE ../rtl/baud_select.v
+set_global_assignment -name VERILOG_FILE ../rtl/uart_tx_v1.v
+set_global_assignment -name VERILOG_FILE ../rtl/uart_transmitter.v
+set_global_assignment -name VERILOG_FILE ../rtl/uart_test.v
+set_global_assignment -name VERILOG_FILE ../rtl/keyboard_scan.v
+set_global_assignment -name VERILOG_FILE ../rtl/div_clk.v
+set_global_assignment -name VERILOG_FILE ../rtl/uart_tx.v
+set_global_assignment -name VERILOG_TEST_BENCH_FILE ../sim/uart_tx_tb.v
+set_global_assignment -name VERILOG_TEST_BENCH_FILE ../sim/uart_tx_v1_tb.v
+set_global_assignment -name QIP_FILE clk_gen.qip
+set_global_assignment -name QIP_FILE tx_fifo.qip
+set_global_assignment -name VERILOG_TEST_BENCH_FILE ../sim/uart_transmitter_tb.v
+set_location_assignment PIN_L1 -to key_in
+set_location_assignment PIN_L6 -to sel[2]
+set_location_assignment PIN_N6 -to sel[1]
+set_location_assignment PIN_M7 -to sel[0]
+set_location_assignment PIN_T11 -to seg[0]
+set_location_assignment PIN_T10 -to seg[1]
+set_location_assignment PIN_T9 -to seg[2]
+set_location_assignment PIN_T8 -to seg[3]
+set_location_assignment PIN_T7 -to seg[4]
+set_location_assignment PIN_T6 -to seg[5]
+set_location_assignment PIN_T5 -to seg[6]
+set_location_assignment PIN_T4 -to seg[7]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

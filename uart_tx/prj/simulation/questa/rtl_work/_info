@@ -10,203 +10,275 @@ z2
 cModel Technology
 Z0 dD:/git-repository/fpga_training/uart_tx/prj/simulation/questa
 T_opt
-!s110 1726304539
-Vj2Oe`HNE6lQPmfKMeaLII1
+!s110 1726309956
+V1VlUcQJE5SHgBTbIM9hWf1
 04 19 4 work uart_transmitter_tb fast 0
-=1-00d861e3bc76-66e5511a-12e-155c8
+=2-00d861e3bc76-66e56643-296-11a0c
 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
 Z1 tCvgOpt 0
 n@_opt
 OL;O;2020.4;71
-vclk_gen
-Z2 !s110 1726304534
+vbaud_select
+!s110 1726309951
 !i10b 1
-!s100 6K@Rmh?>S>bKiHgU1lXX[2
-Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IC8J_1G>7dXUBRA5B100d?2
+!s100 f:<hgHDkKC>XD?hMLME4C1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IOU_8z25>kBB0[:k<j@6C:3
 R0
-w1726279970
-8D:/git-repository/fpga_training/uart_tx/prj/clk_gen.v
-FD:/git-repository/fpga_training/uart_tx/prj/clk_gen.v
-!i122 4
-L0 40 124
-Z4 VDg1SIo80bB@j0V0VzS_@n1
-Z5 OL;L;2020.4;71
+w1726309926
+8D:/git-repository/fpga_training/uart_tx/rtl/baud_select.v
+FD:/git-repository/fpga_training/uart_tx/rtl/baud_select.v
+!i122 21
+L0 1 51
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2020.4;71
 r1
 !s85 0
 31
-Z6 !s108 1726304534.000000
-!s107 D:/git-repository/fpga_training/uart_tx/prj/clk_gen.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/uart_tx/prj|D:/git-repository/fpga_training/uart_tx/prj/clk_gen.v|
+!s108 1726309951.000000
+!s107 D:/git-repository/fpga_training/uart_tx/rtl/baud_select.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/uart_tx/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/uart_tx/rtl/baud_select.v|
 !i113 0
-Z7 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z8 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_tx/prj -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R1
-vclk_gen_altpll
-Z9 !s110 1726304535
-!i10b 1
-!s100 aXVH3[V@:XjW=7PM=fY_B2
-R3
-IPKBQg:4amdR_Z_U4[:`6^3
-R0
-w1726282235
-8D:/git-repository/fpga_training/uart_tx/prj/db/clk_gen_altpll.v
-FD:/git-repository/fpga_training/uart_tx/prj/db/clk_gen_altpll.v
-!i122 6
-L0 31 79
-R4
-R5
-r1
-!s85 0
-31
-Z10 !s108 1726304535.000000
-!s107 D:/git-repository/fpga_training/uart_tx/prj/db/clk_gen_altpll.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/uart_tx/prj/db|D:/git-repository/fpga_training/uart_tx/prj/db/clk_gen_altpll.v|
-!i113 0
-R7
-!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_tx/prj/db -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z5 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_tx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
 vdiv_clk
-R2
+Z7 !s110 1726309950
 !i10b 1
-!s100 ]226jNz6j=zDT6ehIPDfX0
-R3
-IDZ;zXlkM]Ghn[Me6lHg;o1
+!s100 oTdRTb;EiK8h^TOA^3h;O2
+R2
+IjA4PDEXR0;VAXZKGD?O]@1
 R0
-w1726281292
+w1726305828
 8D:/git-repository/fpga_training/uart_tx/rtl/div_clk.v
 FD:/git-repository/fpga_training/uart_tx/rtl/div_clk.v
-!i122 3
-L0 2 25
+!i122 20
+L0 2 23
+R3
 R4
-R5
 r1
 !s85 0
 31
-R6
+Z8 !s108 1726309950.000000
 !s107 D:/git-repository/fpga_training/uart_tx/rtl/div_clk.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/uart_tx/rtl|D:/git-repository/fpga_training/uart_tx/rtl/div_clk.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/uart_tx/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/uart_tx/rtl/div_clk.v|
 !i113 0
+R5
+R6
+R1
+vkey_filter
 R7
-Z11 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_tx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!i10b 1
+!s100 c7>^m]dH2Lfm06jXDZe=E3
+R2
+I@gnPW9W5oZ<dhBcZk6e=Z1
+R0
+w1725360467
+8D:/git-repository/fpga_training/uart_tx/rtl/key_filter.v
+FD:/git-repository/fpga_training/uart_tx/rtl/key_filter.v
+!i122 19
+L0 3 52
+R3
+R4
+r1
+!s85 0
+31
+R8
+!s107 D:/git-repository/fpga_training/uart_tx/rtl/key_filter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/uart_tx/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/uart_tx/rtl/key_filter.v|
+!i113 0
+R5
+R6
 R1
 vkeyboard_scan
-R2
+R7
 !i10b 1
 !s100 elgmgH:M`cLFmbM7I>DlF3
-R3
+R2
 INKPO[Qj7e<7NAi9;oIbAd1
 R0
 w1726281279
 8D:/git-repository/fpga_training/uart_tx/rtl/keyboard_scan.v
 FD:/git-repository/fpga_training/uart_tx/rtl/keyboard_scan.v
-!i122 2
+!i122 18
 L0 1 110
+R3
 R4
-R5
 r1
 !s85 0
 31
-R6
+R8
 !s107 D:/git-repository/fpga_training/uart_tx/rtl/keyboard_scan.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/uart_tx/rtl|D:/git-repository/fpga_training/uart_tx/rtl/keyboard_scan.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/uart_tx/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/uart_tx/rtl/keyboard_scan.v|
 !i113 0
-R7
-R11
+R5
+R6
+R1
+vpulse_cnt
+Z9 !s110 1726309949
+!i10b 1
+!s100 2Io>WIV5QH:9CWIokP@?M2
+R2
+IS[oJ^bNOJh7<DlSlXHPGc1
+R0
+w1726307154
+8D:/git-repository/fpga_training/uart_tx/rtl/pulse_cnt.v
+FD:/git-repository/fpga_training/uart_tx/rtl/pulse_cnt.v
+!i122 17
+L0 1 28
+R3
+R4
+r1
+!s85 0
+31
+Z10 !s108 1726309949.000000
+!s107 D:/git-repository/fpga_training/uart_tx/rtl/pulse_cnt.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/uart_tx/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/uart_tx/rtl/pulse_cnt.v|
+!i113 0
+R5
+R6
+R1
+vseg_ctrl
+R9
+!i10b 1
+!s100 AQ71B43WJViFM=8a[z>]U0
+R2
+IGS0I4=dTLSLj`gR7b[F>f2
+R0
+w1726309140
+8D:/git-repository/fpga_training/uart_tx/rtl/seg_ctrl.v
+FD:/git-repository/fpga_training/uart_tx/rtl/seg_ctrl.v
+!i122 16
+L0 1 61
+R3
+R4
+r1
+!s85 0
+31
+R10
+!s107 D:/git-repository/fpga_training/uart_tx/rtl/seg_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/uart_tx/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/uart_tx/rtl/seg_ctrl.v|
+!i113 0
+R5
+R6
 R1
 vtx_fifo
 R9
 !i10b 1
 !s100 a6JFzhSz0m4WWG48G@7:h2
-R3
+R2
 IS@a4aN7G<KE7`OL?Tdl_k1
 R0
 w1726281438
 8D:/git-repository/fpga_training/uart_tx/prj/tx_fifo.v
 FD:/git-repository/fpga_training/uart_tx/prj/tx_fifo.v
-!i122 5
+!i122 15
 L0 40 56
+R3
 R4
-R5
 r1
 !s85 0
 31
-R6
+Z11 !s108 1726309948.000000
 !s107 D:/git-repository/fpga_training/uart_tx/prj/tx_fifo.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/uart_tx/prj|D:/git-repository/fpga_training/uart_tx/prj/tx_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/uart_tx/prj|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/uart_tx/prj/tx_fifo.v|
 !i113 0
-R7
-R8
+R5
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_tx/prj -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vuart_clk_div
+Z12 !s110 1726309948
+!i10b 1
+!s100 5ff[zlc:>[PO]PMGX^mDi3
+R2
+I]fglBJi[Qal>g?e3HMhD@2
+R0
+w1726306461
+8D:/git-repository/fpga_training/uart_tx/rtl/uart_clk_div.v
+FD:/git-repository/fpga_training/uart_tx/rtl/uart_clk_div.v
+!i122 14
+L0 1 25
+R3
+R4
+r1
+!s85 0
+31
+R11
+!s107 D:/git-repository/fpga_training/uart_tx/rtl/uart_clk_div.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/uart_tx/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/uart_tx/rtl/uart_clk_div.v|
+!i113 0
+R5
+R6
 R1
 vuart_transmitter
-R2
+R12
 !i10b 1
-!s100 ZTYGiVYaHP_TgcWO]g7En1
-R3
-ILF_M`ee`B]MNWRWJG[BC03
+!s100 9z^>7Md6Bkn[M>?BDQM8B1
+R2
+IGKTc97V6eZ2;?;Jf<U2aD1
 R0
-w1726300484
+w1726309608
 8D:/git-repository/fpga_training/uart_tx/rtl/uart_transmitter.v
 FD:/git-repository/fpga_training/uart_tx/rtl/uart_transmitter.v
-!i122 1
-L0 1 63
+!i122 13
+L0 1 103
+R3
 R4
-R5
 r1
 !s85 0
 31
-R6
-!s107 D:/git-repository/fpga_training/uart_tx/rtl/uart_transmitter.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/uart_tx/rtl|D:/git-repository/fpga_training/uart_tx/rtl/uart_transmitter.v|
-!i113 0
-R7
 R11
+!s107 D:/git-repository/fpga_training/uart_tx/rtl/uart_transmitter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/uart_tx/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/uart_tx/rtl/uart_transmitter.v|
+!i113 0
+R5
+R6
 R1
 vuart_transmitter_tb
-R9
+R12
 !i10b 1
-!s100 o9:j3ijDE;EZH@Mf3KKQo0
-R3
-I1zf6FFI`Z=h`mEVaL^__F1
+!s100 S?V2M>5DFn;hd4O>O3b`10
+R2
+I[U2]6H@eRRPzdD^e6?HhU0
 R0
-w1726304343
-8D:/git-repository/fpga_training/uart_tx/prj/../sim/uart_transmitter_tb.v
-FD:/git-repository/fpga_training/uart_tx/prj/../sim/uart_transmitter_tb.v
-!i122 7
-L0 3 71
+w1726309801
+8D:/git-repository/fpga_training/uart_tx/sim/uart_transmitter_tb.v
+FD:/git-repository/fpga_training/uart_tx/sim/uart_transmitter_tb.v
+!i122 12
+L0 3 100
+R3
 R4
-R5
 r1
 !s85 0
 31
-R10
-!s107 D:/git-repository/fpga_training/uart_tx/prj/../sim/uart_transmitter_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/uart_tx/prj/../sim|D:/git-repository/fpga_training/uart_tx/prj/../sim/uart_transmitter_tb.v|
+Z13 !s108 1726309947.000000
+!s107 D:/git-repository/fpga_training/uart_tx/sim/uart_transmitter_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/uart_tx/prj/../sim|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/uart_tx/sim/uart_transmitter_tb.v|
 !i113 0
-R7
+R5
 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_tx/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
 vuart_tx_v1
-!s110 1726304533
+!s110 1726309947
 !i10b 1
 !s100 EfCjJ4;Ih:Z6kYC>zFiIP3
-R3
+R2
 ImnB0E:Si;2d>kBXJTQSl_0
 R0
 w1726304189
 8D:/git-repository/fpga_training/uart_tx/rtl/uart_tx_v1.v
 FD:/git-repository/fpga_training/uart_tx/rtl/uart_tx_v1.v
-!i122 0
+!i122 11
 L0 1 78
+R3
 R4
-R5
 r1
 !s85 0
 31
-!s108 1726304533.000000
+R13
 !s107 D:/git-repository/fpga_training/uart_tx/rtl/uart_tx_v1.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/uart_tx/rtl|D:/git-repository/fpga_training/uart_tx/rtl/uart_tx_v1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/uart_tx/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/uart_tx/rtl/uart_tx_v1.v|
 !i113 0
-R7
-R11
+R5
+R6
 R1

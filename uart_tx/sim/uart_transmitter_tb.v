@@ -8,6 +8,10 @@ module uart_transmitter_tb;
     reg [3:0] row;
     wire [3:0] col;
     wire txd;
+    reg key_in;
+
+    wire [2:0] sel;
+    wire [7:0] seg;
 
     defparam uart_transmitter_inst.keyboard_scan_inst.T1ms = 5;     // 5ms
     defparam uart_transmitter_inst.div_clk_inst.CNT_MAX = 10;       // 10
@@ -16,8 +20,11 @@ module uart_transmitter_tb;
         .sys_clk (sys_clk),
         .sys_rst_n (sys_rst_n),
         .row (row),
+        .key_in (key_in),
         .txd (txd),
-        .col (col)
+        .col (col),
+        .sel (sel),
+        .seg (seg)
     );
 
     initial sys_clk = 1'b1;
@@ -27,6 +34,7 @@ module uart_transmitter_tb;
     initial begin
         sys_rst_n = 1'b0;
         key_num = 5'd16;
+        key_in = 1'b0;
 
         #200.1 sys_rst_n = 1'b1;
         // rd_data: 8'b00010001
@@ -48,6 +56,23 @@ module uart_transmitter_tb;
         // rd_data: 8'b01010101
         #3000 key_num = 5'd5;        // Press 5
         #3000 key_num = 5'd16;      // Release 5
+
+        repeat (2) begin
+            // Simulate the key press jitter
+            #300_000 key_in = 1'b1;
+            #10 key_in = 1'b0;
+            #5 key_in = 1'b1;
+            #10 key_in = 1'b0;
+            #5 key_in = 1'b1;     // key pressed
+
+            // Simulate the key release jitter
+            #1000 key_in = 1'b0;
+            #10 key_in = 1'b1;
+            #5 key_in = 1'b0;
+            #10 key_in = 1'b1;
+            #5 key_in = 1'b0;     // key released
+        end
+        #30_000 $stop;
     end
 
     always @(*) begin
