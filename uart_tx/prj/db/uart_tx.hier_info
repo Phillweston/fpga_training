@@ -1,27 +1,27 @@
 |uart_transmitter
-sys_clk => sys_clk.IN5
-sys_rst_n => sys_rst_n.IN7
+sys_clk => sys_clk.IN8
+sys_rst_n => sys_rst_n.IN10
 row[0] => row[0].IN1
 row[1] => row[1].IN1
 row[2] => row[2].IN1
 row[3] => row[3].IN1
 key_in => key_in.IN1
-txd << uart_tx_v1:uart_tx_v1_inst.txd
-col[0] << keyboard_scan:keyboard_scan_inst.col_out
-col[1] << keyboard_scan:keyboard_scan_inst.col_out
-col[2] << keyboard_scan:keyboard_scan_inst.col_out
-col[3] << keyboard_scan:keyboard_scan_inst.col_out
-sel[0] << seg_ctrl:seg_ctrl_inst.sel
-sel[1] << seg_ctrl:seg_ctrl_inst.sel
-sel[2] << seg_ctrl:seg_ctrl_inst.sel
-seg[0] << seg_ctrl:seg_ctrl_inst.seg
-seg[1] << seg_ctrl:seg_ctrl_inst.seg
-seg[2] << seg_ctrl:seg_ctrl_inst.seg
-seg[3] << seg_ctrl:seg_ctrl_inst.seg
-seg[4] << seg_ctrl:seg_ctrl_inst.seg
-seg[5] << seg_ctrl:seg_ctrl_inst.seg
-seg[6] << seg_ctrl:seg_ctrl_inst.seg
-seg[7] << seg_ctrl:seg_ctrl_inst.seg
+txd <= uart_tx_v1:uart_tx_v1_inst.txd
+col[0] <= keyboard_scan:keyboard_scan_inst.col_out
+col[1] <= keyboard_scan:keyboard_scan_inst.col_out
+col[2] <= keyboard_scan:keyboard_scan_inst.col_out
+col[3] <= keyboard_scan:keyboard_scan_inst.col_out
+sel[0] <= seg_ctrl:seg_ctrl_inst.sel
+sel[1] <= seg_ctrl:seg_ctrl_inst.sel
+sel[2] <= seg_ctrl:seg_ctrl_inst.sel
+seg[0] <= seg_ctrl:seg_ctrl_inst.seg
+seg[1] <= seg_ctrl:seg_ctrl_inst.seg
+seg[2] <= seg_ctrl:seg_ctrl_inst.seg
+seg[3] <= seg_ctrl:seg_ctrl_inst.seg
+seg[4] <= seg_ctrl:seg_ctrl_inst.seg
+seg[5] <= seg_ctrl:seg_ctrl_inst.seg
+seg[6] <= seg_ctrl:seg_ctrl_inst.seg
+seg[7] <= seg_ctrl:seg_ctrl_inst.seg
 
 
 |uart_transmitter|div_clk:div_clk_inst
@@ -133,6 +133,120 @@ uart_clk <= uart_clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |uart_transmitter|uart_clk_div:uart_clk_div_19200
+sys_clk => uart_clk~reg0.CLK
+sys_clk => clk_cnt[0].CLK
+sys_clk => clk_cnt[1].CLK
+sys_clk => clk_cnt[2].CLK
+sys_clk => clk_cnt[3].CLK
+sys_clk => clk_cnt[4].CLK
+sys_clk => clk_cnt[5].CLK
+sys_clk => clk_cnt[6].CLK
+sys_clk => clk_cnt[7].CLK
+sys_clk => clk_cnt[8].CLK
+sys_clk => clk_cnt[9].CLK
+sys_clk => clk_cnt[10].CLK
+sys_clk => clk_cnt[11].CLK
+sys_clk => clk_cnt[12].CLK
+sys_clk => clk_cnt[13].CLK
+sys_clk => clk_cnt[14].CLK
+sys_clk => clk_cnt[15].CLK
+sys_rst_n => uart_clk~reg0.ACLR
+sys_rst_n => clk_cnt[0].ACLR
+sys_rst_n => clk_cnt[1].ACLR
+sys_rst_n => clk_cnt[2].ACLR
+sys_rst_n => clk_cnt[3].ACLR
+sys_rst_n => clk_cnt[4].ACLR
+sys_rst_n => clk_cnt[5].ACLR
+sys_rst_n => clk_cnt[6].ACLR
+sys_rst_n => clk_cnt[7].ACLR
+sys_rst_n => clk_cnt[8].ACLR
+sys_rst_n => clk_cnt[9].ACLR
+sys_rst_n => clk_cnt[10].ACLR
+sys_rst_n => clk_cnt[11].ACLR
+sys_rst_n => clk_cnt[12].ACLR
+sys_rst_n => clk_cnt[13].ACLR
+sys_rst_n => clk_cnt[14].ACLR
+sys_rst_n => clk_cnt[15].ACLR
+uart_clk <= uart_clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|uart_transmitter|uart_clk_div:uart_clk_div_38400
+sys_clk => uart_clk~reg0.CLK
+sys_clk => clk_cnt[0].CLK
+sys_clk => clk_cnt[1].CLK
+sys_clk => clk_cnt[2].CLK
+sys_clk => clk_cnt[3].CLK
+sys_clk => clk_cnt[4].CLK
+sys_clk => clk_cnt[5].CLK
+sys_clk => clk_cnt[6].CLK
+sys_clk => clk_cnt[7].CLK
+sys_clk => clk_cnt[8].CLK
+sys_clk => clk_cnt[9].CLK
+sys_clk => clk_cnt[10].CLK
+sys_clk => clk_cnt[11].CLK
+sys_clk => clk_cnt[12].CLK
+sys_clk => clk_cnt[13].CLK
+sys_clk => clk_cnt[14].CLK
+sys_clk => clk_cnt[15].CLK
+sys_rst_n => uart_clk~reg0.ACLR
+sys_rst_n => clk_cnt[0].ACLR
+sys_rst_n => clk_cnt[1].ACLR
+sys_rst_n => clk_cnt[2].ACLR
+sys_rst_n => clk_cnt[3].ACLR
+sys_rst_n => clk_cnt[4].ACLR
+sys_rst_n => clk_cnt[5].ACLR
+sys_rst_n => clk_cnt[6].ACLR
+sys_rst_n => clk_cnt[7].ACLR
+sys_rst_n => clk_cnt[8].ACLR
+sys_rst_n => clk_cnt[9].ACLR
+sys_rst_n => clk_cnt[10].ACLR
+sys_rst_n => clk_cnt[11].ACLR
+sys_rst_n => clk_cnt[12].ACLR
+sys_rst_n => clk_cnt[13].ACLR
+sys_rst_n => clk_cnt[14].ACLR
+sys_rst_n => clk_cnt[15].ACLR
+uart_clk <= uart_clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|uart_transmitter|uart_clk_div:uart_clk_div_57600
+sys_clk => uart_clk~reg0.CLK
+sys_clk => clk_cnt[0].CLK
+sys_clk => clk_cnt[1].CLK
+sys_clk => clk_cnt[2].CLK
+sys_clk => clk_cnt[3].CLK
+sys_clk => clk_cnt[4].CLK
+sys_clk => clk_cnt[5].CLK
+sys_clk => clk_cnt[6].CLK
+sys_clk => clk_cnt[7].CLK
+sys_clk => clk_cnt[8].CLK
+sys_clk => clk_cnt[9].CLK
+sys_clk => clk_cnt[10].CLK
+sys_clk => clk_cnt[11].CLK
+sys_clk => clk_cnt[12].CLK
+sys_clk => clk_cnt[13].CLK
+sys_clk => clk_cnt[14].CLK
+sys_clk => clk_cnt[15].CLK
+sys_rst_n => uart_clk~reg0.ACLR
+sys_rst_n => clk_cnt[0].ACLR
+sys_rst_n => clk_cnt[1].ACLR
+sys_rst_n => clk_cnt[2].ACLR
+sys_rst_n => clk_cnt[3].ACLR
+sys_rst_n => clk_cnt[4].ACLR
+sys_rst_n => clk_cnt[5].ACLR
+sys_rst_n => clk_cnt[6].ACLR
+sys_rst_n => clk_cnt[7].ACLR
+sys_rst_n => clk_cnt[8].ACLR
+sys_rst_n => clk_cnt[9].ACLR
+sys_rst_n => clk_cnt[10].ACLR
+sys_rst_n => clk_cnt[11].ACLR
+sys_rst_n => clk_cnt[12].ACLR
+sys_rst_n => clk_cnt[13].ACLR
+sys_rst_n => clk_cnt[14].ACLR
+sys_rst_n => clk_cnt[15].ACLR
+uart_clk <= uart_clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|uart_transmitter|uart_clk_div:uart_clk_div_115200
 sys_clk => uart_clk~reg0.CLK
 sys_clk => clk_cnt[0].CLK
 sys_clk => clk_cnt[1].CLK
@@ -895,9 +1009,23 @@ send_data_flag <= send_data_flag~reg0.DB_MAX_OUTPUT_PORT_TYPE
 sys_clk => sys_clk.IN2
 sys_rst_n => sys_rst_n.IN2
 key_in => key_in.IN1
-uart_clk_9600 => uart_clk.DATAA
+uart_clk_9600 => Mux0.IN0
+uart_clk_9600 => Mux0.IN1
+uart_clk_9600 => Mux0.IN2
+uart_clk_9600 => Mux0.IN3
+uart_clk_9600 => Mux0.IN4
+uart_clk_9600 => Mux0.IN5
+uart_clk_9600 => Mux0.IN6
+uart_clk_9600 => Mux0.IN7
+uart_clk_9600 => Mux0.IN8
+uart_clk_9600 => Mux0.IN9
+uart_clk_9600 => Mux0.IN10
+uart_clk_9600 => Mux0.IN11
 uart_clk_9600 => uart_clk~reg0.ADATA
-uart_clk_19200 => uart_clk.DATAB
+uart_clk_19200 => Mux0.IN12
+uart_clk_38400 => Mux0.IN13
+uart_clk_57600 => Mux0.IN14
+uart_clk_115200 => Mux0.IN15
 uart_clk <= uart_clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
 uart_baud[0] <= uart_baud[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 uart_baud[1] <= uart_baud[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -1068,18 +1196,22 @@ key_out <= key_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
 |uart_transmitter|baud_select:baud_select_inst|pulse_cnt:pulse_cnt_inst
 sys_clk => pulse_cnt[0]~reg0.CLK
 sys_clk => pulse_cnt[1]~reg0.CLK
+sys_clk => pulse_cnt[2]~reg0.CLK
 sys_clk => counter[0].CLK
 sys_clk => counter[1].CLK
 sys_rst_n => pulse_cnt[0]~reg0.ACLR
 sys_rst_n => pulse_cnt[1]~reg0.ACLR
+sys_rst_n => pulse_cnt[2]~reg0.ACLR
 sys_rst_n => counter[0].ACLR
 sys_rst_n => counter[1].ACLR
 key_pulse => pulse_cnt[0]~reg0.ENA
 key_pulse => counter[1].ENA
 key_pulse => counter[0].ENA
+key_pulse => pulse_cnt[2]~reg0.ENA
 key_pulse => pulse_cnt[1]~reg0.ENA
 pulse_cnt[0] <= pulse_cnt[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 pulse_cnt[1] <= pulse_cnt[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+pulse_cnt[2] <= pulse_cnt[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |uart_transmitter|seg_ctrl:seg_ctrl_inst

@@ -22,35 +22,168 @@
 # vmap work rtl_work 
 # Modifying C:/modeltech64_2020.4/win64/../modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart/rtl {D:/git-repository/fpga_training/uart/rtl/uart_rx.v}
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl {D:/git-repository/fpga_training/uart_rx/rtl/uart_clk_div.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 10:00:15 on Sep 13,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart/rtl" D:/git-repository/fpga_training/uart/rtl/uart_rx.v 
+# Start time: 10:38:11 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" D:/git-repository/fpga_training/uart_rx/rtl/uart_clk_div.v 
+# -- Compiling module uart_clk_div
+# 
+# Top level modules:
+# 	uart_clk_div
+# End time: 10:38:11 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl {D:/git-repository/fpga_training/uart_rx/rtl/pulse_cnt.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:38:11 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" D:/git-repository/fpga_training/uart_rx/rtl/pulse_cnt.v 
+# -- Compiling module pulse_cnt
+# 
+# Top level modules:
+# 	pulse_cnt
+# End time: 10:38:11 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl {D:/git-repository/fpga_training/uart_rx/rtl/key_filter.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:38:11 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" D:/git-repository/fpga_training/uart_rx/rtl/key_filter.v 
+# -- Compiling module key_filter
+# 
+# Top level modules:
+# 	key_filter
+# End time: 10:38:11 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl {D:/git-repository/fpga_training/uart_rx/rtl/baud_select.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:38:11 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" D:/git-repository/fpga_training/uart_rx/rtl/baud_select.v 
+# -- Compiling module baud_select
+# 
+# Top level modules:
+# 	baud_select
+# End time: 10:38:11 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl {D:/git-repository/fpga_training/uart_rx/rtl/seven_tube.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:38:11 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" D:/git-repository/fpga_training/uart_rx/rtl/seven_tube.v 
+# -- Compiling module seven_tube
+# 
+# Top level modules:
+# 	seven_tube
+# End time: 10:38:12 on Sep 16,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl {D:/git-repository/fpga_training/uart_rx/rtl/seg_ctrl.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:38:12 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" D:/git-repository/fpga_training/uart_rx/rtl/seg_ctrl.v 
+# -- Compiling module seg_ctrl
+# 
+# Top level modules:
+# 	seg_ctrl
+# End time: 10:38:12 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl {D:/git-repository/fpga_training/uart_rx/rtl/fifo_div_clk.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:38:12 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" D:/git-repository/fpga_training/uart_rx/rtl/fifo_div_clk.v 
+# -- Compiling module fifo_div_clk
+# 
+# Top level modules:
+# 	fifo_div_clk
+# End time: 10:38:12 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl {D:/git-repository/fpga_training/uart_rx/rtl/clk_div_2khz.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:38:12 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" D:/git-repository/fpga_training/uart_rx/rtl/clk_div_2khz.v 
+# -- Compiling module clk_div_2khz
+# 
+# Top level modules:
+# 	clk_div_2khz
+# End time: 10:38:12 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl {D:/git-repository/fpga_training/uart_rx/rtl/uart_rx.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:38:12 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" D:/git-repository/fpga_training/uart_rx/rtl/uart_rx.v 
 # -- Compiling module uart_rx
 # 
 # Top level modules:
 # 	uart_rx
-# End time: 10:00:15 on Sep 13,2024, Elapsed time: 0:00:00
+# End time: 10:38:12 on Sep 16,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart/prj/../sim {D:/git-repository/fpga_training/uart/prj/../sim/uart_rx_tb.v}
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl {D:/git-repository/fpga_training/uart_rx/rtl/uart_receiver.v}
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 10:00:16 on Sep 13,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart/prj/../sim" D:/git-repository/fpga_training/uart/prj/../sim/uart_rx_tb.v 
-# -- Compiling module uart_rx_tb
+# Start time: 10:38:12 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" D:/git-repository/fpga_training/uart_rx/rtl/uart_receiver.v 
+# -- Compiling module uart_receiver
 # 
 # Top level modules:
-# 	uart_rx_tb
-# End time: 10:00:16 on Sep 13,2024, Elapsed time: 0:00:00
+# 	uart_receiver
+# End time: 10:38:12 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/prj {D:/git-repository/fpga_training/uart_rx/prj/rx_fifo.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:38:12 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/prj" D:/git-repository/fpga_training/uart_rx/prj/rx_fifo.v 
+# -- Compiling module rx_fifo
+# 
+# Top level modules:
+# 	rx_fifo
+# End time: 10:38:12 on Sep 16,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  uart_rx_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" uart_rx_tb 
-# Start time: 10:00:16 on Sep 13,2024
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/prj/../sim {D:/git-repository/fpga_training/uart_rx/prj/../sim/uart_receiver_tb.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:38:13 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/prj/../sim" D:/git-repository/fpga_training/uart_rx/prj/../sim/uart_receiver_tb.v 
+# -- Compiling module uart_receiver_tb
+# 
+# Top level modules:
+# 	uart_receiver_tb
+# End time: 10:38:13 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  uart_receiver_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" uart_receiver_tb 
+# Start time: 10:38:13 on Sep 16,2024
 # ** Note: (vsim-3812) Design is being optimized...
-# ** Note: (vopt-143) Recognized 1 FSM in module "uart_rx(fast)".
-# Loading work.uart_rx_tb(fast)
+# ** Warning: d:/intelfpga_lite/23.1std/quartus/eda/sim_lib/altera_mf.v(31792): (vopt-2685) [TFMPC] - Too few port connections for 'DCFIFO_MW'.  Expected 14, found 13.
+# ** Warning: d:/intelfpga_lite/23.1std/quartus/eda/sim_lib/altera_mf.v(31792): (vopt-2718) [TFMPC] - Missing connection for port 'eccstatus'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.uart_receiver_tb(fast)
+# Loading work.uart_receiver(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.fifo_div_clk(fast)
+# Loading work.rx_fifo(fast)
+# Loading altera_mf_ver.dcfifo(fast)
+# Loading altera_mf_ver.dcfifo_mixed_widths(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.dcfifo_async(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__1)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__2)
+# Loading altera_mf_ver.dcfifo_fefifo(fast)
+# Loading altera_mf_ver.dcfifo_fefifo(fast__1)
+# Loading altera_mf_ver.dcfifo_low_latency(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__2)
+# Loading altera_mf_ver.ALTERA_MF_HINT_EVALUATION(fast)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__3)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__4)
 # Loading work.uart_rx(fast)
+# Loading work.seven_tube(fast)
+# Loading work.clk_div_2khz(fast)
+# Loading work.seg_ctrl(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'pulse_cnt'. The port definition is at: D:/git-repository/fpga_training/uart_rx/rtl/pulse_cnt.v(5).
+#    Time: 0 ps  Iteration: 0  Instance: /uart_receiver_tb/uart_receiver_inst/baud_select_inst/pulse_cnt_inst File: D:/git-repository/fpga_training/uart_rx/rtl/baud_select.v Line: 25
 # 
 # add wave *
 # view structure
@@ -58,96 +191,368 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-add wave -position end  sim:/uart_rx_tb/uart_rx_inst/uart_clk
-add wave -position end  sim:/uart_rx_tb/uart_rx_inst/temp_data
-add wave -position end  sim:/uart_rx_tb/uart_rx_inst/sys_rst_n
-add wave -position end  sim:/uart_rx_tb/uart_rx_inst/state
-add wave -position end  sim:/uart_rx_tb/uart_rx_inst/s1
-add wave -position end  sim:/uart_rx_tb/uart_rx_inst/s0
-add wave -position end  sim:/uart_rx_tb/uart_rx_inst/rxd
-add wave -position end  sim:/uart_rx_tb/uart_rx_inst/rec_flag
-add wave -position end  sim:/uart_rx_tb/uart_rx_inst/rec_data
-add wave -position end  sim:/uart_rx_tb/uart_rx_inst/cnt
-run -all
-restart
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading work.uart_rx_tb(fast)
-# Loading work.uart_rx(fast)
-run
-run
-run
-run
-run
-run
-run
-run
-restart
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading work.uart_rx_tb(fast)
-# Loading work.uart_rx(fast)
-vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart/sim/uart_rx_tb.v
+# Time: 0 | Data: 1
+# Time: 2200000 | Data: 0
+# Time: 2520000 | Data: 1
+# Time: 2840000 | Data: 0
+# Time: 3160000 | Data: 1
+# Time: 3480000 | Data: 0
+# Time: 3800000 | Data: 1
+# Time: 4120000 | Data: 0
+# Time: 4440000 | Data: 1
+# Time: 4760000 | Data: 0
+# Time: 5080000 | Data: 1
+# Time: 308780000 | Data: 0
+# Time: 309100000 | Data: 1
+# Time: 309740000 | Data: 0
+# Time: 310700000 | Data: 1
+# Time: 311020000 | Data: 0
+# Time: 311340000 | Data: 1
+# ** Note: $finish    : D:/git-repository/fpga_training/uart_rx/prj/../sim/uart_receiver_tb.v(49)
+#    Time: 615360100 ps  Iteration: 0  Instance: /uart_receiver_tb
+# 1
+# Break in Module uart_receiver_tb at D:/git-repository/fpga_training/uart_rx/prj/../sim/uart_receiver_tb.v line 49
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/uart_rx.v
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 10:04:44 on Sep 13,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart/sim/uart_rx_tb.v 
-# -- Compiling module uart_rx_tb
-# 
-# Top level modules:
-# 	uart_rx_tb
-# End time: 10:04:44 on Sep 13,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart/rtl/uart_rx.v
-# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 10:04:44 on Sep 13,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart/rtl/uart_rx.v 
+# Start time: 10:39:43 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/uart_rx.v 
 # -- Compiling module uart_rx
 # 
 # Top level modules:
 # 	uart_rx
-# End time: 10:04:44 on Sep 13,2024, Elapsed time: 0:00:00
+# End time: 10:39:43 on Sep 16,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-run
-run
-run
-run
-run
-run
-run
-run
-vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart/sim/uart_rx_tb.v
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/sim/uart_receiver_tb.v
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 10:07:28 on Sep 13,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart/sim/uart_rx_tb.v 
-# -- Compiling module uart_rx_tb
+# Start time: 10:39:43 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/sim/uart_receiver_tb.v 
+# -- Compiling module uart_receiver_tb
 # 
 # Top level modules:
-# 	uart_rx_tb
-# End time: 10:07:28 on Sep 13,2024, Elapsed time: 0:00:00
+# 	uart_receiver_tb
+# End time: 10:39:43 on Sep 16,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart/rtl/uart_rx.v
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/uart_receiver.v
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 10:07:28 on Sep 13,2024
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart/rtl/uart_rx.v 
+# Start time: 10:39:44 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/uart_receiver.v 
+# -- Compiling module uart_receiver
+# 
+# Top level modules:
+# 	uart_receiver
+# End time: 10:39:44 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/uart_clk_div.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:39:44 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/uart_clk_div.v 
+# -- Compiling module uart_clk_div
+# 
+# Top level modules:
+# 	uart_clk_div
+# End time: 10:39:44 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/seven_tube.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:39:44 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/seven_tube.v 
+# -- Compiling module seven_tube
+# 
+# Top level modules:
+# 	seven_tube
+# End time: 10:39:44 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/seg_ctrl.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:39:44 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/seg_ctrl.v 
+# -- Compiling module seg_ctrl
+# 
+# Top level modules:
+# 	seg_ctrl
+# End time: 10:39:44 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/prj -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/prj/rx_fifo.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:39:44 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/prj" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/prj/rx_fifo.v 
+# -- Compiling module rx_fifo
+# 
+# Top level modules:
+# 	rx_fifo
+# End time: 10:39:45 on Sep 16,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/pulse_cnt.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:39:45 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/pulse_cnt.v 
+# -- Compiling module pulse_cnt
+# 
+# Top level modules:
+# 	pulse_cnt
+# End time: 10:39:45 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/key_filter.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:39:45 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/key_filter.v 
+# -- Compiling module key_filter
+# 
+# Top level modules:
+# 	key_filter
+# End time: 10:39:45 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/fifo_div_clk.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:39:45 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/fifo_div_clk.v 
+# -- Compiling module fifo_div_clk
+# 
+# Top level modules:
+# 	fifo_div_clk
+# End time: 10:39:45 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/clk_div_2khz.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:39:45 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/clk_div_2khz.v 
+# -- Compiling module clk_div_2khz
+# 
+# Top level modules:
+# 	clk_div_2khz
+# End time: 10:39:45 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/baud_select.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:39:45 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/baud_select.v 
+# -- Compiling module baud_select
+# 
+# Top level modules:
+# 	baud_select
+# End time: 10:39:46 on Sep 16,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.uart_receiver_tb(fast)
+# Loading work.uart_receiver(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.fifo_div_clk(fast)
+# Loading work.rx_fifo(fast)
+# Loading altera_mf_ver.dcfifo(fast)
+# Loading altera_mf_ver.dcfifo_mixed_widths(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.dcfifo_async(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__1)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__2)
+# Loading altera_mf_ver.dcfifo_fefifo(fast)
+# Loading altera_mf_ver.dcfifo_fefifo(fast__1)
+# Loading altera_mf_ver.dcfifo_low_latency(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__2)
+# Loading altera_mf_ver.ALTERA_MF_HINT_EVALUATION(fast)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__3)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__4)
+# Loading work.uart_rx(fast)
+# Loading work.seven_tube(fast)
+# Loading work.clk_div_2khz(fast)
+# Loading work.seg_ctrl(fast)
+run
+# Time: 0 | Data: 1
+# Time: 2200000 | Data: 0
+# Time: 2520000 | Data: 1
+# Time: 2840000 | Data: 0
+# Time: 3160000 | Data: 1
+# Time: 3480000 | Data: 0
+# Time: 3800000 | Data: 1
+# Time: 4120000 | Data: 0
+# Time: 4440000 | Data: 1
+# Time: 4760000 | Data: 0
+# Time: 5080000 | Data: 1
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/uart_rx.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:41:07 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/uart_rx.v 
 # -- Compiling module uart_rx
 # 
 # Top level modules:
 # 	uart_rx
-# End time: 10:07:28 on Sep 13,2024, Elapsed time: 0:00:00
+# End time: 10:41:07 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/sim/uart_receiver_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:41:07 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/sim/uart_receiver_tb.v 
+# -- Compiling module uart_receiver_tb
+# 
+# Top level modules:
+# 	uart_receiver_tb
+# End time: 10:41:07 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/uart_receiver.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:41:08 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/uart_receiver.v 
+# -- Compiling module uart_receiver
+# 
+# Top level modules:
+# 	uart_receiver
+# End time: 10:41:08 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/uart_clk_div.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:41:08 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/uart_clk_div.v 
+# -- Compiling module uart_clk_div
+# 
+# Top level modules:
+# 	uart_clk_div
+# End time: 10:41:08 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/seven_tube.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:41:08 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/seven_tube.v 
+# -- Compiling module seven_tube
+# 
+# Top level modules:
+# 	seven_tube
+# End time: 10:41:08 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/seg_ctrl.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:41:08 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/seg_ctrl.v 
+# -- Compiling module seg_ctrl
+# 
+# Top level modules:
+# 	seg_ctrl
+# End time: 10:41:08 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/prj -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/prj/rx_fifo.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:41:08 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/prj" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/prj/rx_fifo.v 
+# -- Compiling module rx_fifo
+# 
+# Top level modules:
+# 	rx_fifo
+# End time: 10:41:09 on Sep 16,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/pulse_cnt.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:41:09 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/pulse_cnt.v 
+# -- Compiling module pulse_cnt
+# 
+# Top level modules:
+# 	pulse_cnt
+# End time: 10:41:09 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/key_filter.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:41:09 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/key_filter.v 
+# -- Compiling module key_filter
+# 
+# Top level modules:
+# 	key_filter
+# End time: 10:41:09 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/fifo_div_clk.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:41:10 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/fifo_div_clk.v 
+# -- Compiling module fifo_div_clk
+# 
+# Top level modules:
+# 	fifo_div_clk
+# End time: 10:41:10 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/clk_div_2khz.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:41:10 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/clk_div_2khz.v 
+# -- Compiling module clk_div_2khz
+# 
+# Top level modules:
+# 	clk_div_2khz
+# End time: 10:41:10 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_rx/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/baud_select.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:41:10 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_rx/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_rx/rtl/baud_select.v 
+# -- Compiling module baud_select
+# 
+# Top level modules:
+# 	baud_select
+# End time: 10:41:10 on Sep 16,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 restart
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading work.uart_rx_tb(fast)
+# Loading work.uart_receiver_tb(fast)
+# Loading work.uart_receiver(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.fifo_div_clk(fast)
+# Loading work.rx_fifo(fast)
+# Loading altera_mf_ver.dcfifo(fast)
+# Loading altera_mf_ver.dcfifo_mixed_widths(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast)
+# Loading altera_mf_ver.dcfifo_async(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__1)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__1)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__2)
+# Loading altera_mf_ver.dcfifo_fefifo(fast)
+# Loading altera_mf_ver.dcfifo_fefifo(fast__1)
+# Loading altera_mf_ver.dcfifo_low_latency(fast)
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES(fast__2)
+# Loading altera_mf_ver.ALTERA_MF_HINT_EVALUATION(fast)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__3)
+# Loading altera_mf_ver.dcfifo_dffpipe(fast__4)
 # Loading work.uart_rx(fast)
+# Loading work.seven_tube(fast)
+# Loading work.clk_div_2khz(fast)
+# Loading work.seg_ctrl(fast)
+run
+# Time: 0 | Data: 1
+# Time: 2200000 | Data: 0
+# Time: 2520000 | Data: 1
+# Time: 2840000 | Data: 0
+# Time: 3160000 | Data: 1
+# Time: 3480000 | Data: 0
+# Time: 3800000 | Data: 1
+# Time: 4120000 | Data: 0
+# Time: 4440000 | Data: 1
+# Time: 4760000 | Data: 0
+# Time: 5080000 | Data: 1
 run
 run
 run
+# Time: 308780000 | Data: 0
+# Time: 309100000 | Data: 1
+# Time: 309740000 | Data: 0
+# Time: 310700000 | Data: 1
+# Time: 311020000 | Data: 0
+# Time: 311340000 | Data: 1
 run
-run
-run
-run
-run
-run
-run
-run
-# Causality operation skipped due to absence of debug database file
-# End time: 11:41:19 on Sep 13,2024, Elapsed time: 1:41:03
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/git-repository/fpga_training/uart_rx/prj/simulation/questa/wave.do
+# End time: 10:54:25 on Sep 16,2024, Elapsed time: 0:16:12
 # Errors: 0, Warnings: 0

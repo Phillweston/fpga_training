@@ -384,3 +384,5 @@ run
 # Break in Module uart_transmitter_tb at D:/git-repository/fpga_training/uart_tx/sim/uart_transmitter_tb.v line 74
 run
 run
+# End time: 21:54:38 on Sep 14,2024, Elapsed time: 3:23:41
+# Errors: 0, Warnings: 1

@@ -15,6 +15,12 @@ module uart_transmitter_tb;
 
     defparam uart_transmitter_inst.keyboard_scan_inst.T1ms = 5;     // 5ms
     defparam uart_transmitter_inst.div_clk_inst.CNT_MAX = 10;       // 10
+    defparam uart_transmitter_inst.uart_clk_div_9600.SYS_CLK_FREQ = 5;
+    defparam uart_transmitter_inst.uart_clk_div_19200.SYS_CLK_FREQ = 5;
+    defparam uart_transmitter_inst.uart_clk_div_38400.SYS_CLK_FREQ = 5;
+    defparam uart_transmitter_inst.uart_clk_div_57600.SYS_CLK_FREQ = 5;
+    defparam uart_transmitter_inst.uart_clk_div_115200.SYS_CLK_FREQ = 5;
+    defparam uart_transmitter_inst.baud_select_inst.key_filter_inst.T10ms = 5;
 
     uart_transmitter uart_transmitter_inst (
         .sys_clk (sys_clk),
@@ -34,46 +40,54 @@ module uart_transmitter_tb;
     initial begin
         sys_rst_n = 1'b0;
         key_num = 5'd16;
-        key_in = 1'b0;
+        key_in = 1'b1;
 
         #200.1 sys_rst_n = 1'b1;
         // rd_data: 8'b00010001
         #100 key_num = 5'd1;        // Press 1
         #3000 key_num = 5'd16;      // Release 1
+        simulate_key_action();
 
         // rd_data: 8'b00100010
         #3000 key_num = 5'd2;        // Press 2
         #3000 key_num = 5'd16;      // Release 2
+        simulate_key_action();
 
         // rd_data: 8'b00110011
         #3000 key_num = 5'd3;        // Press 3
         #3000 key_num = 5'd16;      // Release 3
+        simulate_key_action();
 
         // rd_data: 8'b01000100
         #3000 key_num = 5'd4;        // Press 4
         #3000 key_num = 5'd16;      // Release 4
+        simulate_key_action();
 
         // rd_data: 8'b01010101
         #3000 key_num = 5'd5;        // Press 5
         #3000 key_num = 5'd16;      // Release 5
+        simulate_key_action();
 
-        repeat (2) begin
-            // Simulate the key press jitter
-            #300_000 key_in = 1'b1;
-            #10 key_in = 1'b0;
-            #5 key_in = 1'b1;
-            #10 key_in = 1'b0;
-            #5 key_in = 1'b1;     // key pressed
-
-            // Simulate the key release jitter
-            #1000 key_in = 1'b0;
-            #10 key_in = 1'b1;
-            #5 key_in = 1'b0;
-            #10 key_in = 1'b1;
-            #5 key_in = 1'b0;     // key released
-        end
         #30_000 $stop;
     end
+
+    task simulate_key_action;
+    begin
+        // Simulate the key press jitter
+        #300_000 key_in = 1'b0;
+        #10 key_in = 1'b1;
+        #5 key_in = 1'b0;
+        #10 key_in = 1'b1;
+        #5 key_in = 1'b0;     // key pressed
+
+        // Simulate the key release jitter
+        #1000 key_in = 1'b1;
+        #10 key_in = 1'b0;
+        #5 key_in = 1'b1;
+        #10 key_in = 1'b0;
+        #5 key_in = 1'b1;     // key released    
+    end
+    endtask
 
     always @(*) begin
         case (key_num)
@@ -99,5 +113,9 @@ module uart_transmitter_tb;
 
             default: row = 4'b1111;
         endcase
+    end
+
+    initial begin
+        $monitor("Time: %0t | Data: %h", $time, txd);
     end
 endmodule

@@ -10,6 +10,9 @@ module uart_transmitter (
 );
     wire uart_clk_9600;
     wire uart_clk_19200;
+    wire uart_clk_38400;
+    wire uart_clk_57600;
+    wire uart_clk_115200;
     wire uart_clk;
 
     wire wr_clk;            // 1kHz
@@ -48,10 +51,37 @@ module uart_transmitter (
         .uart_clk (uart_clk_19200)
     );
 
+    // Generate the UART clock of 38400Hz
+    uart_clk_div #(
+        .BAUD_RATE(38400)
+    ) uart_clk_div_38400 (
+        .sys_clk (sys_clk),
+        .sys_rst_n (sys_rst_n),
+        .uart_clk (uart_clk_38400)
+    );
+
+    // Generate the UART clock of 57600Hz
+    uart_clk_div #(
+        .BAUD_RATE(57600)
+    ) uart_clk_div_57600 (
+        .sys_clk (sys_clk),
+        .sys_rst_n (sys_rst_n),
+        .uart_clk (uart_clk_57600)
+    );
+
+    // Generate the UART clock of 115200Hz
+    uart_clk_div #(
+        .BAUD_RATE(115200)
+    ) uart_clk_div_115200 (
+        .sys_clk (sys_clk),
+        .sys_rst_n (sys_rst_n),
+        .uart_clk (uart_clk_115200)
+    );
+
     // Scan the keyboard
     keyboard_scan keyboard_scan_inst (
         .sys_clk (sys_clk),                // System clock
-        .sys_rst_n (sys_rst_n),               // Reset signal
+        .sys_rst_n (sys_rst_n),            // Reset signal
         .row_in (row),                     // Rows input from the keyboard
         .col_out (col),                    // Columns output to the keyboard
         .key_data (key_data),              // Output the key data (4-bit binary encoding of the key position)
@@ -88,6 +118,9 @@ module uart_transmitter (
         .key_in (key_in),
         .uart_clk_9600 (uart_clk_9600),
         .uart_clk_19200 (uart_clk_19200),
+        .uart_clk_38400 (uart_clk_38400),
+        .uart_clk_57600 (uart_clk_57600),
+        .uart_clk_115200 (uart_clk_115200),
         .uart_clk (uart_clk),
         .uart_baud (uart_baud)
     );

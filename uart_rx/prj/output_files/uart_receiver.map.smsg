@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at uart_receiver.v(51): always construct contains both blocking and non-blocking assignments File: D:/git-repository/fpga_training/uart/rtl/uart_receiver.v Line: 51
+Warning (10268): Verilog HDL information at uart_receiver_2.v(51): always construct contains both blocking and non-blocking assignments File: D:/git-repository/fpga_training/uart_rx/rtl/uart_receiver_2.v Line: 51

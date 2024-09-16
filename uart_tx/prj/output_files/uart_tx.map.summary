@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Sat Sep 14 18:28:11 2024
+Analysis & Synthesis Status : Successful - Mon Sep 16 09:28:47 2024
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : uart_tx
 Top-level Entity Name : uart_transmitter
 Family : Cyclone IV E
-Total logic elements : 408
-    Total combinational functions : 328
-    Dedicated logic registers : 270
-Total registers : 270
+Total logic elements : 503
+    Total combinational functions : 424
+    Dedicated logic registers : 327
+Total registers : 327
 Total pins : 23
 Total virtual pins : 0
 Total memory bits : 2,048

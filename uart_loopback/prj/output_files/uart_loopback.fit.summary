@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon Sep 16 15:17:20 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : uart_loopback
+Top-level Entity Name : uart_loopback
+Family : Cyclone IV E
+Device : EP4CE10F17C8
+Timing Models : Final
+Total logic elements : 346 / 10,320 ( 3 % )
+    Total combinational functions : 334 / 10,320 ( 3 % )
+    Dedicated logic registers : 211 / 10,320 ( 2 % )
+Total registers : 211
+Total pins : 16 / 180 ( 9 % )
+Total virtual pins : 0
+Total memory bits : 0 / 423,936 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

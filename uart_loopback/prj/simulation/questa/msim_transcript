@@ -1,0 +1,1673 @@
+# Reading pref.tcl
+# //  ModelSim SE-64 2020.4 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do uart_loopback_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap work rtl_work 
+# Modifying C:/modeltech64_2020.4/win64/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl {D:/git-repository/fpga_training/uart_loopback/rtl/uart_tx.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:38:44 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" D:/git-repository/fpga_training/uart_loopback/rtl/uart_tx.v 
+# -- Compiling module uart_tx
+# 
+# Top level modules:
+# 	uart_tx
+# End time: 15:38:44 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl {D:/git-repository/fpga_training/uart_loopback/rtl/uart_rx.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:38:44 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" D:/git-repository/fpga_training/uart_loopback/rtl/uart_rx.v 
+# -- Compiling module uart_rx
+# 
+# Top level modules:
+# 	uart_rx
+# End time: 15:38:44 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl {D:/git-repository/fpga_training/uart_loopback/rtl/uart_loopback.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:38:44 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" D:/git-repository/fpga_training/uart_loopback/rtl/uart_loopback.v 
+# -- Compiling module uart_loopback
+# 
+# Top level modules:
+# 	uart_loopback
+# End time: 15:38:44 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl {D:/git-repository/fpga_training/uart_loopback/rtl/uart_clk_div.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:38:44 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" D:/git-repository/fpga_training/uart_loopback/rtl/uart_clk_div.v 
+# -- Compiling module uart_clk_div
+# 
+# Top level modules:
+# 	uart_clk_div
+# End time: 15:38:44 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl {D:/git-repository/fpga_training/uart_loopback/rtl/seg_ctrl.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:38:45 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" D:/git-repository/fpga_training/uart_loopback/rtl/seg_ctrl.v 
+# -- Compiling module seg_ctrl
+# 
+# Top level modules:
+# 	seg_ctrl
+# End time: 15:38:45 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl {D:/git-repository/fpga_training/uart_loopback/rtl/pulse_cnt.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:38:45 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" D:/git-repository/fpga_training/uart_loopback/rtl/pulse_cnt.v 
+# -- Compiling module pulse_cnt
+# 
+# Top level modules:
+# 	pulse_cnt
+# End time: 15:38:45 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl {D:/git-repository/fpga_training/uart_loopback/rtl/key_filter.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:38:45 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" D:/git-repository/fpga_training/uart_loopback/rtl/key_filter.v 
+# -- Compiling module key_filter
+# 
+# Top level modules:
+# 	key_filter
+# End time: 15:38:45 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl {D:/git-repository/fpga_training/uart_loopback/rtl/div_clk.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:38:45 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" D:/git-repository/fpga_training/uart_loopback/rtl/div_clk.v 
+# -- Compiling module div_clk
+# 
+# Top level modules:
+# 	div_clk
+# End time: 15:38:45 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl {D:/git-repository/fpga_training/uart_loopback/rtl/baud_select.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:38:45 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" D:/git-repository/fpga_training/uart_loopback/rtl/baud_select.v 
+# -- Compiling module baud_select
+# 
+# Top level modules:
+# 	baud_select
+# End time: 15:38:45 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/prj/../sim {D:/git-repository/fpga_training/uart_loopback/prj/../sim/uart_loopback_tb.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:38:45 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/prj/../sim" D:/git-repository/fpga_training/uart_loopback/prj/../sim/uart_loopback_tb.v 
+# -- Compiling module uart_loopback_tb
+# 
+# Top level modules:
+# 	uart_loopback_tb
+# End time: 15:38:45 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  uart_loopback_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" uart_loopback_tb 
+# Start time: 15:38:46 on Sep 16,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.uart_loopback_tb(fast)
+# Loading work.uart_loopback(fast)
+# Loading work.div_clk(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.seg_ctrl(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Time: 0 | Receive Data: 1 | Send Data: x
+# Time: 200000 | Receive Data: 1 | Send Data: 1
+# Time: 5408000 | Receive Data: 0 | Send Data: 1
+# Time: 10616000 | Receive Data: 1 | Send Data: 1
+# Time: 15824000 | Receive Data: 0 | Send Data: 1
+# Time: 21032000 | Receive Data: 1 | Send Data: 1
+# Time: 26240000 | Receive Data: 0 | Send Data: 1
+# Time: 31448000 | Receive Data: 1 | Send Data: 1
+# Time: 36656000 | Receive Data: 0 | Send Data: 1
+# Time: 41864000 | Receive Data: 1 | Send Data: 1
+# Time: 47072000 | Receive Data: 0 | Send Data: 1
+# Time: 52280000 | Receive Data: 1 | Send Data: 1
+# Time: 449688000 | Receive Data: 0 | Send Data: 1
+# Time: 452292000 | Receive Data: 1 | Send Data: 1
+# Time: 457500000 | Receive Data: 0 | Send Data: 1
+# Time: 465312000 | Receive Data: 1 | Send Data: 1
+# Time: 467916000 | Receive Data: 0 | Send Data: 1
+# Time: 470520000 | Receive Data: 1 | Send Data: 1
+# Time: 822358000 | Receive Data: 0 | Send Data: 1
+# Time: 823660000 | Receive Data: 1 | Send Data: 1
+# Time: 827566000 | Receive Data: 0 | Send Data: 1
+# Time: 828868000 | Receive Data: 1 | Send Data: 1
+# Time: 831472000 | Receive Data: 0 | Send Data: 1
+# Time: 832774000 | Receive Data: 1 | Send Data: 1
+# Time: 1159440000 | Receive Data: 0 | Send Data: 1
+# Time: 1160308000 | Receive Data: 1 | Send Data: 1
+# Time: 1161176000 | Receive Data: 0 | Send Data: 1
+# Time: 1162912000 | Receive Data: 1 | Send Data: 1
+# Time: 1163780000 | Receive Data: 0 | Send Data: 1
+# Time: 1166384000 | Receive Data: 1 | Send Data: 1
+# Time: 1484370000 | Receive Data: 0 | Send Data: 1
+# Time: 1484804000 | Receive Data: 1 | Send Data: 1
+# Time: 1485238000 | Receive Data: 0 | Send Data: 1
+# Time: 1486106000 | Receive Data: 1 | Send Data: 1
+# Time: 1486540000 | Receive Data: 0 | Send Data: 1
+# Time: 1487842000 | Receive Data: 1 | Send Data: 1
+# ** Note: $finish    : D:/git-repository/fpga_training/uart_loopback/prj/../sim/uart_loopback_tb.v(78)
+#    Time: 1817148100 ps  Iteration: 0  Instance: /uart_loopback_tb
+# 1
+# Break in Module uart_loopback_tb at D:/git-repository/fpga_training/uart_loopback/prj/../sim/uart_loopback_tb.v line 78
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_tx.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:44:45 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_tx.v 
+# -- Compiling module uart_tx
+# 
+# Top level modules:
+# 	uart_tx
+# End time: 15:44:46 on Sep 16,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_rx.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:44:46 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_rx.v 
+# -- Compiling module uart_rx
+# 
+# Top level modules:
+# 	uart_rx
+# End time: 15:44:46 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/sim/uart_loopback_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:44:46 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/sim/uart_loopback_tb.v 
+# -- Compiling module uart_loopback_tb
+# 
+# Top level modules:
+# 	uart_loopback_tb
+# End time: 15:44:46 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_loopback.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:44:46 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_loopback.v 
+# -- Compiling module uart_loopback
+# 
+# Top level modules:
+# 	uart_loopback
+# End time: 15:44:46 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_clk_div.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:44:47 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_clk_div.v 
+# -- Compiling module uart_clk_div
+# 
+# Top level modules:
+# 	uart_clk_div
+# End time: 15:44:47 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/seg_ctrl.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:44:47 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/seg_ctrl.v 
+# -- Compiling module seg_ctrl
+# 
+# Top level modules:
+# 	seg_ctrl
+# End time: 15:44:47 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/pulse_cnt.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:44:47 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/pulse_cnt.v 
+# -- Compiling module pulse_cnt
+# 
+# Top level modules:
+# 	pulse_cnt
+# End time: 15:44:47 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/key_filter.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:44:47 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/key_filter.v 
+# -- Compiling module key_filter
+# 
+# Top level modules:
+# 	key_filter
+# End time: 15:44:47 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/div_clk.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:44:47 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/div_clk.v 
+# -- Compiling module div_clk
+# 
+# Top level modules:
+# 	div_clk
+# End time: 15:44:48 on Sep 16,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/baud_select.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:44:48 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/baud_select.v 
+# -- Compiling module baud_select
+# 
+# Top level modules:
+# 	baud_select
+# End time: 15:44:48 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.uart_loopback_tb(fast)
+# Loading work.uart_loopback(fast)
+# Loading work.div_clk(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.seg_ctrl(fast)
+run
+# Time: 0 | Receive Data: 1 | Send Data: x
+# Time: 200000 | Receive Data: 1 | Send Data: 1
+# Time: 5408000 | Receive Data: 0 | Send Data: 1
+# Time: 10616000 | Receive Data: 1 | Send Data: 1
+# Time: 15824000 | Receive Data: 0 | Send Data: 1
+# Time: 21032000 | Receive Data: 1 | Send Data: 1
+# Time: 26240000 | Receive Data: 0 | Send Data: 1
+# Time: 31448000 | Receive Data: 1 | Send Data: 1
+# Time: 36656000 | Receive Data: 0 | Send Data: 1
+# Time: 41864000 | Receive Data: 1 | Send Data: 1
+# Time: 47072000 | Receive Data: 0 | Send Data: 1
+# Time: 52280000 | Receive Data: 1 | Send Data: 1
+run -all
+# Time: 449688000 | Receive Data: 0 | Send Data: 1
+# Time: 452292000 | Receive Data: 1 | Send Data: 1
+# Time: 457500000 | Receive Data: 0 | Send Data: 1
+# Time: 465312000 | Receive Data: 1 | Send Data: 1
+# Time: 467916000 | Receive Data: 0 | Send Data: 1
+# Time: 470520000 | Receive Data: 1 | Send Data: 1
+# Time: 822358000 | Receive Data: 0 | Send Data: 1
+# Time: 823660000 | Receive Data: 1 | Send Data: 1
+# Time: 827566000 | Receive Data: 0 | Send Data: 1
+# Time: 828868000 | Receive Data: 1 | Send Data: 1
+# Time: 831472000 | Receive Data: 0 | Send Data: 1
+# Time: 832774000 | Receive Data: 1 | Send Data: 1
+# Time: 1159440000 | Receive Data: 0 | Send Data: 1
+# Time: 1160308000 | Receive Data: 1 | Send Data: 1
+# Time: 1161176000 | Receive Data: 0 | Send Data: 1
+# Time: 1162912000 | Receive Data: 1 | Send Data: 1
+# Time: 1163780000 | Receive Data: 0 | Send Data: 1
+# Time: 1166384000 | Receive Data: 1 | Send Data: 1
+# Time: 1484370000 | Receive Data: 0 | Send Data: 1
+# Time: 1484804000 | Receive Data: 1 | Send Data: 1
+# Time: 1485238000 | Receive Data: 0 | Send Data: 1
+# Time: 1486106000 | Receive Data: 1 | Send Data: 1
+# Time: 1486540000 | Receive Data: 0 | Send Data: 1
+# Time: 1487842000 | Receive Data: 1 | Send Data: 1
+# ** Note: $finish    : D:/git-repository/fpga_training/uart_loopback/sim/uart_loopback_tb.v(73)
+#    Time: 1817148100 ps  Iteration: 0  Instance: /uart_loopback_tb
+# 1
+# Break in Module uart_loopback_tb at D:/git-repository/fpga_training/uart_loopback/sim/uart_loopback_tb.v line 73
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_tx.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:46:43 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_tx.v 
+# -- Compiling module uart_tx
+# 
+# Top level modules:
+# 	uart_tx
+# End time: 15:46:44 on Sep 16,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_rx.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:46:44 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_rx.v 
+# -- Compiling module uart_rx
+# 
+# Top level modules:
+# 	uart_rx
+# End time: 15:46:44 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/sim/uart_loopback_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:46:44 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/sim/uart_loopback_tb.v 
+# -- Compiling module uart_loopback_tb
+# 
+# Top level modules:
+# 	uart_loopback_tb
+# End time: 15:46:44 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_loopback.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:46:44 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_loopback.v 
+# -- Compiling module uart_loopback
+# 
+# Top level modules:
+# 	uart_loopback
+# End time: 15:46:44 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_clk_div.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:46:44 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_clk_div.v 
+# -- Compiling module uart_clk_div
+# 
+# Top level modules:
+# 	uart_clk_div
+# End time: 15:46:45 on Sep 16,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/seg_ctrl.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:46:45 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/seg_ctrl.v 
+# -- Compiling module seg_ctrl
+# 
+# Top level modules:
+# 	seg_ctrl
+# End time: 15:46:45 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/pulse_cnt.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:46:45 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/pulse_cnt.v 
+# -- Compiling module pulse_cnt
+# 
+# Top level modules:
+# 	pulse_cnt
+# End time: 15:46:45 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/key_filter.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:46:45 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/key_filter.v 
+# -- Compiling module key_filter
+# 
+# Top level modules:
+# 	key_filter
+# End time: 15:46:45 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/div_clk.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:46:45 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/div_clk.v 
+# -- Compiling module div_clk
+# 
+# Top level modules:
+# 	div_clk
+# End time: 15:46:46 on Sep 16,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/baud_select.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:46:46 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/baud_select.v 
+# -- Compiling module baud_select
+# 
+# Top level modules:
+# 	baud_select
+# End time: 15:46:46 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+add wave -position end  sim:/uart_loopback_tb/txd
+add wave -position end  sim:/uart_loopback_tb/sys_rst_n
+add wave -position end  sim:/uart_loopback_tb/sys_clk
+add wave -position end  sim:/uart_loopback_tb/sel
+add wave -position end  sim:/uart_loopback_tb/seg
+add wave -position end  sim:/uart_loopback_tb/rxd
+add wave -position end  sim:/uart_loopback_tb/key_in
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.uart_loopback_tb(fast)
+# Loading work.uart_loopback(fast)
+# Loading work.div_clk(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.seg_ctrl(fast)
+run
+# Time: 0 | Receive Data: 1 | Send Data: x
+# Time: 200000 | Receive Data: 1 | Send Data: 1
+# Time: 5408000 | Receive Data: 0 | Send Data: 1
+# Time: 10616000 | Receive Data: 1 | Send Data: 1
+# Time: 15824000 | Receive Data: 0 | Send Data: 1
+# Time: 21032000 | Receive Data: 1 | Send Data: 1
+# Time: 26240000 | Receive Data: 0 | Send Data: 1
+# Time: 31448000 | Receive Data: 1 | Send Data: 1
+# Time: 36656000 | Receive Data: 0 | Send Data: 1
+# Time: 41864000 | Receive Data: 1 | Send Data: 1
+# Time: 47072000 | Receive Data: 0 | Send Data: 1
+# Time: 52280000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+run
+# Time: 449688000 | Receive Data: 0 | Send Data: 1
+# Time: 452292000 | Receive Data: 1 | Send Data: 1
+# Time: 457500000 | Receive Data: 0 | Send Data: 1
+# Time: 465312000 | Receive Data: 1 | Send Data: 1
+# Time: 467916000 | Receive Data: 0 | Send Data: 1
+# Time: 470520000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+run
+# Time: 822358000 | Receive Data: 0 | Send Data: 1
+# Time: 823660000 | Receive Data: 1 | Send Data: 1
+# Time: 827566000 | Receive Data: 0 | Send Data: 1
+# Time: 828868000 | Receive Data: 1 | Send Data: 1
+# Time: 831472000 | Receive Data: 0 | Send Data: 1
+# Time: 832774000 | Receive Data: 1 | Send Data: 1
+run
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/uart_clk_115200
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/uart_clk_57600
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/uart_clk_38400
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/uart_clk_19200
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/uart_clk_9600
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/uart_clk
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.uart_loopback_tb(fast)
+# Loading work.uart_loopback(fast)
+# Loading work.div_clk(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.seg_ctrl(fast)
+run -all
+# Time: 0 | Receive Data: 1 | Send Data: x
+# Time: 200000 | Receive Data: 1 | Send Data: 1
+# Time: 5408000 | Receive Data: 0 | Send Data: 1
+# Time: 10616000 | Receive Data: 1 | Send Data: 1
+# Time: 15824000 | Receive Data: 0 | Send Data: 1
+# Time: 21032000 | Receive Data: 1 | Send Data: 1
+# Time: 26240000 | Receive Data: 0 | Send Data: 1
+# Time: 31448000 | Receive Data: 1 | Send Data: 1
+# Time: 36656000 | Receive Data: 0 | Send Data: 1
+# Time: 41864000 | Receive Data: 1 | Send Data: 1
+# Time: 47072000 | Receive Data: 0 | Send Data: 1
+# Time: 52280000 | Receive Data: 1 | Send Data: 1
+# Time: 449688000 | Receive Data: 0 | Send Data: 1
+# Time: 452292000 | Receive Data: 1 | Send Data: 1
+# Time: 457500000 | Receive Data: 0 | Send Data: 1
+# Time: 465312000 | Receive Data: 1 | Send Data: 1
+# Time: 467916000 | Receive Data: 0 | Send Data: 1
+# Time: 470520000 | Receive Data: 1 | Send Data: 1
+# Time: 822358000 | Receive Data: 0 | Send Data: 1
+# Time: 823660000 | Receive Data: 1 | Send Data: 1
+# Time: 827566000 | Receive Data: 0 | Send Data: 1
+# Time: 828868000 | Receive Data: 1 | Send Data: 1
+# Time: 831472000 | Receive Data: 0 | Send Data: 1
+# Time: 832774000 | Receive Data: 1 | Send Data: 1
+# Time: 1159440000 | Receive Data: 0 | Send Data: 1
+# Time: 1160308000 | Receive Data: 1 | Send Data: 1
+# Time: 1161176000 | Receive Data: 0 | Send Data: 1
+# Time: 1162912000 | Receive Data: 1 | Send Data: 1
+# Time: 1163780000 | Receive Data: 0 | Send Data: 1
+# Time: 1166384000 | Receive Data: 1 | Send Data: 1
+# Time: 1484370000 | Receive Data: 0 | Send Data: 1
+# Time: 1484804000 | Receive Data: 1 | Send Data: 1
+# Time: 1485238000 | Receive Data: 0 | Send Data: 1
+# Time: 1486106000 | Receive Data: 1 | Send Data: 1
+# Time: 1486540000 | Receive Data: 0 | Send Data: 1
+# Time: 1487842000 | Receive Data: 1 | Send Data: 1
+# ** Note: $finish    : D:/git-repository/fpga_training/uart_loopback/sim/uart_loopback_tb.v(73)
+#    Time: 1817148100 ps  Iteration: 0  Instance: /uart_loopback_tb
+# 1
+# Break in Module uart_loopback_tb at D:/git-repository/fpga_training/uart_loopback/sim/uart_loopback_tb.v line 73
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_tx.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:55:17 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_tx.v 
+# -- Compiling module uart_tx
+# 
+# Top level modules:
+# 	uart_tx
+# End time: 15:55:17 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_rx.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:55:17 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_rx.v 
+# -- Compiling module uart_rx
+# 
+# Top level modules:
+# 	uart_rx
+# End time: 15:55:17 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/sim/uart_loopback_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:55:18 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/sim/uart_loopback_tb.v 
+# -- Compiling module uart_loopback_tb
+# 
+# Top level modules:
+# 	uart_loopback_tb
+# End time: 15:55:18 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_loopback.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:55:18 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_loopback.v 
+# -- Compiling module uart_loopback
+# 
+# Top level modules:
+# 	uart_loopback
+# End time: 15:55:18 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_clk_div.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:55:18 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_clk_div.v 
+# -- Compiling module uart_clk_div
+# 
+# Top level modules:
+# 	uart_clk_div
+# End time: 15:55:18 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/seg_ctrl.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:55:18 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/seg_ctrl.v 
+# -- Compiling module seg_ctrl
+# 
+# Top level modules:
+# 	seg_ctrl
+# End time: 15:55:18 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/pulse_cnt.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:55:19 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/pulse_cnt.v 
+# -- Compiling module pulse_cnt
+# 
+# Top level modules:
+# 	pulse_cnt
+# End time: 15:55:19 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/key_filter.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:55:19 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/key_filter.v 
+# -- Compiling module key_filter
+# 
+# Top level modules:
+# 	key_filter
+# End time: 15:55:19 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/div_clk.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:55:19 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/div_clk.v 
+# -- Compiling module div_clk
+# 
+# Top level modules:
+# 	div_clk
+# End time: 15:55:19 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/baud_select.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 15:55:19 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/baud_select.v 
+# -- Compiling module baud_select
+# 
+# Top level modules:
+# 	baud_select
+# End time: 15:55:19 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.uart_loopback_tb(fast)
+# Loading work.uart_loopback(fast)
+# Loading work.div_clk(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.seg_ctrl(fast)
+run
+# Time: 0 | Receive Data: 1 | Send Data: x
+# Time: 200000 | Receive Data: 1 | Send Data: 1
+# Time: 5408000 | Receive Data: 0 | Send Data: 1
+# Time: 10616000 | Receive Data: 1 | Send Data: 1
+# Time: 15824000 | Receive Data: 0 | Send Data: 1
+# Time: 21032000 | Receive Data: 1 | Send Data: 1
+# Time: 26240000 | Receive Data: 0 | Send Data: 1
+# Time: 31448000 | Receive Data: 1 | Send Data: 1
+# Time: 36656000 | Receive Data: 0 | Send Data: 1
+# Time: 41864000 | Receive Data: 1 | Send Data: 1
+# Time: 47072000 | Receive Data: 0 | Send Data: 1
+# Time: 52280000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+run
+# Time: 449688000 | Receive Data: 0 | Send Data: 1
+# Time: 452292000 | Receive Data: 1 | Send Data: 1
+# Time: 457500000 | Receive Data: 0 | Send Data: 1
+# Time: 465312000 | Receive Data: 1 | Send Data: 1
+# Time: 467916000 | Receive Data: 0 | Send Data: 1
+# Time: 470520000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+run
+# Time: 822358000 | Receive Data: 0 | Send Data: 1
+# Time: 823660000 | Receive Data: 1 | Send Data: 1
+# Time: 827566000 | Receive Data: 0 | Send Data: 1
+# Time: 828868000 | Receive Data: 1 | Send Data: 1
+# Time: 831472000 | Receive Data: 0 | Send Data: 1
+# Time: 832774000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+# Time: 1159440000 | Receive Data: 0 | Send Data: 1
+# Time: 1160308000 | Receive Data: 1 | Send Data: 1
+# Time: 1161176000 | Receive Data: 0 | Send Data: 1
+# Time: 1162912000 | Receive Data: 1 | Send Data: 1
+# Time: 1163780000 | Receive Data: 0 | Send Data: 1
+# Time: 1166384000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+# Time: 1484370000 | Receive Data: 0 | Send Data: 1
+# Time: 1484804000 | Receive Data: 1 | Send Data: 1
+# Time: 1485238000 | Receive Data: 0 | Send Data: 1
+# Time: 1486106000 | Receive Data: 1 | Send Data: 1
+# Time: 1486540000 | Receive Data: 0 | Send Data: 1
+# Time: 1487842000 | Receive Data: 1 | Send Data: 1
+run -all
+run -all
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/clk_1khz
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.uart_loopback_tb(fast)
+# Loading work.uart_loopback(fast)
+# Loading work.div_clk(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.seg_ctrl(fast)
+run
+# Time: 0 | Receive Data: 1 | Send Data: x
+# Time: 200000 | Receive Data: 1 | Send Data: 1
+# Time: 5408000 | Receive Data: 0 | Send Data: 1
+# Time: 10616000 | Receive Data: 1 | Send Data: 1
+# Time: 15824000 | Receive Data: 0 | Send Data: 1
+# Time: 21032000 | Receive Data: 1 | Send Data: 1
+# Time: 26240000 | Receive Data: 0 | Send Data: 1
+# Time: 31448000 | Receive Data: 1 | Send Data: 1
+# Time: 36656000 | Receive Data: 0 | Send Data: 1
+# Time: 41864000 | Receive Data: 1 | Send Data: 1
+# Time: 47072000 | Receive Data: 0 | Send Data: 1
+# Time: 52280000 | Receive Data: 1 | Send Data: 1
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.uart_loopback_tb(fast)
+# Loading work.uart_loopback(fast)
+# Loading work.div_clk(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.seg_ctrl(fast)
+run
+# Time: 0 | Receive Data: 1 | Send Data: x
+# Time: 200000 | Receive Data: 1 | Send Data: 1
+# Time: 5408000 | Receive Data: 0 | Send Data: 1
+# Time: 10616000 | Receive Data: 1 | Send Data: 1
+# Time: 15824000 | Receive Data: 0 | Send Data: 1
+# Time: 21032000 | Receive Data: 1 | Send Data: 1
+# Time: 26240000 | Receive Data: 0 | Send Data: 1
+# Time: 31448000 | Receive Data: 1 | Send Data: 1
+# Time: 36656000 | Receive Data: 0 | Send Data: 1
+# Time: 41864000 | Receive Data: 1 | Send Data: 1
+# Time: 47072000 | Receive Data: 0 | Send Data: 1
+# Time: 52280000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+run
+# Time: 449688000 | Receive Data: 0 | Send Data: 1
+# Time: 452292000 | Receive Data: 1 | Send Data: 1
+# Time: 457500000 | Receive Data: 0 | Send Data: 1
+# Time: 465312000 | Receive Data: 1 | Send Data: 1
+# Time: 467916000 | Receive Data: 0 | Send Data: 1
+# Time: 470520000 | Receive Data: 1 | Send Data: 1
+# Causality operation skipped due to absence of debug database file
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/baud_select_inst/pulse_cnt
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.uart_loopback_tb(fast)
+# Loading work.uart_loopback(fast)
+# Loading work.div_clk(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.seg_ctrl(fast)
+run
+# Time: 0 | Receive Data: 1 | Send Data: x
+# Time: 200000 | Receive Data: 1 | Send Data: 1
+# Time: 5408000 | Receive Data: 0 | Send Data: 1
+# Time: 10616000 | Receive Data: 1 | Send Data: 1
+# Time: 15824000 | Receive Data: 0 | Send Data: 1
+# Time: 21032000 | Receive Data: 1 | Send Data: 1
+# Time: 26240000 | Receive Data: 0 | Send Data: 1
+# Time: 31448000 | Receive Data: 1 | Send Data: 1
+# Time: 36656000 | Receive Data: 0 | Send Data: 1
+# Time: 41864000 | Receive Data: 1 | Send Data: 1
+# Time: 47072000 | Receive Data: 0 | Send Data: 1
+# Time: 52280000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+run
+# Time: 449688000 | Receive Data: 0 | Send Data: 1
+# Time: 452292000 | Receive Data: 1 | Send Data: 1
+# Time: 457500000 | Receive Data: 0 | Send Data: 1
+# Time: 465312000 | Receive Data: 1 | Send Data: 1
+# Time: 467916000 | Receive Data: 0 | Send Data: 1
+# Time: 470520000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+run
+# Time: 822358000 | Receive Data: 0 | Send Data: 1
+# Time: 823660000 | Receive Data: 1 | Send Data: 1
+# Time: 827566000 | Receive Data: 0 | Send Data: 1
+# Time: 828868000 | Receive Data: 1 | Send Data: 1
+# Time: 831472000 | Receive Data: 0 | Send Data: 1
+# Time: 832774000 | Receive Data: 1 | Send Data: 1
+run
+add wave -position end  sim:/uart_loopback_tb/key_in
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.uart_loopback_tb(fast)
+# Loading work.uart_loopback(fast)
+# Loading work.div_clk(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.seg_ctrl(fast)
+run
+# Time: 0 | Receive Data: 1 | Send Data: x
+# Time: 200000 | Receive Data: 1 | Send Data: 1
+# Time: 5408000 | Receive Data: 0 | Send Data: 1
+# Time: 10616000 | Receive Data: 1 | Send Data: 1
+# Time: 15824000 | Receive Data: 0 | Send Data: 1
+# Time: 21032000 | Receive Data: 1 | Send Data: 1
+# Time: 26240000 | Receive Data: 0 | Send Data: 1
+# Time: 31448000 | Receive Data: 1 | Send Data: 1
+# Time: 36656000 | Receive Data: 0 | Send Data: 1
+# Time: 41864000 | Receive Data: 1 | Send Data: 1
+# Time: 47072000 | Receive Data: 0 | Send Data: 1
+# Time: 52280000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+run
+# Time: 449688000 | Receive Data: 0 | Send Data: 1
+# Time: 452292000 | Receive Data: 1 | Send Data: 1
+# Time: 457500000 | Receive Data: 0 | Send Data: 1
+# Time: 465312000 | Receive Data: 1 | Send Data: 1
+# Time: 467916000 | Receive Data: 0 | Send Data: 1
+# Time: 470520000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+run
+# Time: 822358000 | Receive Data: 0 | Send Data: 1
+# Time: 823660000 | Receive Data: 1 | Send Data: 1
+# Time: 827566000 | Receive Data: 0 | Send Data: 1
+# Time: 828868000 | Receive Data: 1 | Send Data: 1
+# Time: 831472000 | Receive Data: 0 | Send Data: 1
+# Time: 832774000 | Receive Data: 1 | Send Data: 1
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_tx.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:09:22 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_tx.v 
+# -- Compiling module uart_tx
+# 
+# Top level modules:
+# 	uart_tx
+# End time: 16:09:22 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_rx.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:09:23 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_rx.v 
+# -- Compiling module uart_rx
+# 
+# Top level modules:
+# 	uart_rx
+# End time: 16:09:23 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/sim/uart_loopback_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:09:24 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/sim/uart_loopback_tb.v 
+# -- Compiling module uart_loopback_tb
+# 
+# Top level modules:
+# 	uart_loopback_tb
+# End time: 16:09:24 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_loopback.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:09:26 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_loopback.v 
+# -- Compiling module uart_loopback
+# 
+# Top level modules:
+# 	uart_loopback
+# End time: 16:09:26 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_clk_div.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:09:26 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_clk_div.v 
+# -- Compiling module uart_clk_div
+# 
+# Top level modules:
+# 	uart_clk_div
+# End time: 16:09:27 on Sep 16,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/seg_ctrl.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:09:27 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/seg_ctrl.v 
+# -- Compiling module seg_ctrl
+# 
+# Top level modules:
+# 	seg_ctrl
+# End time: 16:09:27 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/pulse_cnt.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:09:27 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/pulse_cnt.v 
+# -- Compiling module pulse_cnt
+# 
+# Top level modules:
+# 	pulse_cnt
+# End time: 16:09:27 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/key_filter.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:09:28 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/key_filter.v 
+# -- Compiling module key_filter
+# 
+# Top level modules:
+# 	key_filter
+# End time: 16:09:28 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/div_clk.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:09:28 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/div_clk.v 
+# -- Compiling module div_clk
+# 
+# Top level modules:
+# 	div_clk
+# End time: 16:09:28 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/baud_select.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:09:28 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/baud_select.v 
+# -- Compiling module baud_select
+# 
+# Top level modules:
+# 	baud_select
+# End time: 16:09:28 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.uart_loopback_tb(fast)
+# Loading work.uart_loopback(fast)
+# Loading work.div_clk(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.seg_ctrl(fast)
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.uart_loopback_tb(fast)
+# Loading work.uart_loopback(fast)
+# Loading work.div_clk(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.seg_ctrl(fast)
+run
+# Time: 0 | Receive Data: 1 | Send Data: x
+# Time: 200000 | Receive Data: 1 | Send Data: 1
+# Time: 5408000 | Receive Data: 0 | Send Data: 1
+# Time: 10616000 | Receive Data: 1 | Send Data: 1
+# Time: 15824000 | Receive Data: 0 | Send Data: 1
+# Time: 21032000 | Receive Data: 1 | Send Data: 1
+# Time: 26240000 | Receive Data: 0 | Send Data: 1
+# Time: 31448000 | Receive Data: 1 | Send Data: 1
+# Time: 36656000 | Receive Data: 0 | Send Data: 1
+# Time: 41864000 | Receive Data: 1 | Send Data: 1
+# Time: 47072000 | Receive Data: 0 | Send Data: 1
+# Time: 52280000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+run
+# Time: 449688000 | Receive Data: 0 | Send Data: 1
+# Time: 452292000 | Receive Data: 1 | Send Data: 1
+# Time: 457500000 | Receive Data: 0 | Send Data: 1
+# Time: 465312000 | Receive Data: 1 | Send Data: 1
+# Time: 467916000 | Receive Data: 0 | Send Data: 1
+# Time: 470520000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+run
+# Time: 822358000 | Receive Data: 0 | Send Data: 1
+# Time: 823660000 | Receive Data: 1 | Send Data: 1
+# Time: 827566000 | Receive Data: 0 | Send Data: 1
+# Time: 828868000 | Receive Data: 1 | Send Data: 1
+# Time: 831472000 | Receive Data: 0 | Send Data: 1
+# Time: 832774000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+# Time: 1159440000 | Receive Data: 0 | Send Data: 1
+# Time: 1160308000 | Receive Data: 1 | Send Data: 1
+# Time: 1161176000 | Receive Data: 0 | Send Data: 1
+# Time: 1162912000 | Receive Data: 1 | Send Data: 1
+# Time: 1163780000 | Receive Data: 0 | Send Data: 1
+# Time: 1166384000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+# Time: 1484370000 | Receive Data: 0 | Send Data: 1
+# Time: 1484804000 | Receive Data: 1 | Send Data: 1
+# Time: 1485238000 | Receive Data: 0 | Send Data: 1
+# Time: 1486106000 | Receive Data: 1 | Send Data: 1
+# Time: 1486540000 | Receive Data: 0 | Send Data: 1
+# Time: 1487842000 | Receive Data: 1 | Send Data: 1
+run
+run
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_tx.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:11:46 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_tx.v 
+# -- Compiling module uart_tx
+# 
+# Top level modules:
+# 	uart_tx
+# End time: 16:11:46 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_rx.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:11:47 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_rx.v 
+# -- Compiling module uart_rx
+# 
+# Top level modules:
+# 	uart_rx
+# End time: 16:11:47 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/sim/uart_loopback_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:11:47 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/sim/uart_loopback_tb.v 
+# -- Compiling module uart_loopback_tb
+# 
+# Top level modules:
+# 	uart_loopback_tb
+# End time: 16:11:47 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_loopback.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:11:47 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_loopback.v 
+# -- Compiling module uart_loopback
+# 
+# Top level modules:
+# 	uart_loopback
+# End time: 16:11:47 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_clk_div.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:11:47 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/uart_clk_div.v 
+# -- Compiling module uart_clk_div
+# 
+# Top level modules:
+# 	uart_clk_div
+# End time: 16:11:47 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/seg_ctrl.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:11:48 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/seg_ctrl.v 
+# -- Compiling module seg_ctrl
+# 
+# Top level modules:
+# 	seg_ctrl
+# End time: 16:11:48 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/pulse_cnt.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:11:48 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/pulse_cnt.v 
+# -- Compiling module pulse_cnt
+# 
+# Top level modules:
+# 	pulse_cnt
+# End time: 16:11:48 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/key_filter.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:11:48 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/key_filter.v 
+# -- Compiling module key_filter
+# 
+# Top level modules:
+# 	key_filter
+# End time: 16:11:48 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/div_clk.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:11:48 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/div_clk.v 
+# -- Compiling module div_clk
+# 
+# Top level modules:
+# 	div_clk
+# End time: 16:11:48 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/baud_select.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:11:49 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/rtl/baud_select.v 
+# -- Compiling module baud_select
+# 
+# Top level modules:
+# 	baud_select
+# End time: 16:11:49 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.uart_loopback_tb(fast)
+# Loading work.uart_loopback(fast)
+# Loading work.div_clk(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.seg_ctrl(fast)
+run
+# Time: 0 | Receive Data: 1 | Send Data: x
+# Time: 200000 | Receive Data: 1 | Send Data: 1
+# Time: 5408000 | Receive Data: 0 | Send Data: 1
+# Time: 10616000 | Receive Data: 1 | Send Data: 1
+# Time: 15824000 | Receive Data: 0 | Send Data: 1
+# Time: 21032000 | Receive Data: 1 | Send Data: 1
+# Time: 26240000 | Receive Data: 0 | Send Data: 1
+# Time: 31448000 | Receive Data: 1 | Send Data: 1
+# Time: 36656000 | Receive Data: 0 | Send Data: 1
+# Time: 41864000 | Receive Data: 1 | Send Data: 1
+# Time: 47072000 | Receive Data: 0 | Send Data: 1
+# Time: 52280000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+run
+# Time: 449688000 | Receive Data: 0 | Send Data: 1
+# Time: 452292000 | Receive Data: 1 | Send Data: 1
+# Time: 457500000 | Receive Data: 0 | Send Data: 1
+# Time: 465312000 | Receive Data: 1 | Send Data: 1
+# Time: 467916000 | Receive Data: 0 | Send Data: 1
+# Time: 470520000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+run
+# Time: 822358000 | Receive Data: 0 | Send Data: 1
+# Time: 823660000 | Receive Data: 1 | Send Data: 1
+# Time: 827566000 | Receive Data: 0 | Send Data: 1
+# Time: 828868000 | Receive Data: 1 | Send Data: 1
+# Time: 831472000 | Receive Data: 0 | Send Data: 1
+# Time: 832774000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+# Time: 1159440000 | Receive Data: 0 | Send Data: 1
+# Time: 1160308000 | Receive Data: 1 | Send Data: 1
+# Time: 1161176000 | Receive Data: 0 | Send Data: 1
+# Time: 1162912000 | Receive Data: 1 | Send Data: 1
+# Time: 1163780000 | Receive Data: 0 | Send Data: 1
+# Time: 1166384000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+# Time: 1484370000 | Receive Data: 0 | Send Data: 1
+# Time: 1484804000 | Receive Data: 1 | Send Data: 1
+# Time: 1485238000 | Receive Data: 0 | Send Data: 1
+# Time: 1486106000 | Receive Data: 1 | Send Data: 1
+# Time: 1486540000 | Receive Data: 0 | Send Data: 1
+# Time: 1487842000 | Receive Data: 1 | Send Data: 1
+run
+run -all
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.uart_loopback_tb(fast)
+# Loading work.uart_loopback(fast)
+# Loading work.div_clk(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.seg_ctrl(fast)
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/uart_clk_div_9600/uart_clk
+run
+# Time: 0 | Receive Data: 1 | Send Data: x
+# Time: 200000 | Receive Data: 1 | Send Data: 1
+# Time: 5408000 | Receive Data: 0 | Send Data: 1
+# Time: 10616000 | Receive Data: 1 | Send Data: 1
+# Time: 15824000 | Receive Data: 0 | Send Data: 1
+# Time: 21032000 | Receive Data: 1 | Send Data: 1
+# Time: 26240000 | Receive Data: 0 | Send Data: 1
+# Time: 31448000 | Receive Data: 1 | Send Data: 1
+# Time: 36656000 | Receive Data: 0 | Send Data: 1
+# Time: 41864000 | Receive Data: 1 | Send Data: 1
+# Time: 47072000 | Receive Data: 0 | Send Data: 1
+# Time: 52280000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+run
+# Time: 449688000 | Receive Data: 0 | Send Data: 1
+# Time: 452292000 | Receive Data: 1 | Send Data: 1
+# Time: 457500000 | Receive Data: 0 | Send Data: 1
+# Time: 465312000 | Receive Data: 1 | Send Data: 1
+# Time: 467916000 | Receive Data: 0 | Send Data: 1
+# Time: 470520000 | Receive Data: 1 | Send Data: 1
+run
+run
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/uart_clk_div_9600/sys_clk
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.uart_loopback_tb(fast)
+# Loading work.uart_loopback(fast)
+# Loading work.div_clk(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.seg_ctrl(fast)
+run
+# Time: 0 | Receive Data: 1 | Send Data: x
+# Time: 200000 | Receive Data: 1 | Send Data: 1
+# Time: 5408000 | Receive Data: 0 | Send Data: 1
+# Time: 10616000 | Receive Data: 1 | Send Data: 1
+# Time: 15824000 | Receive Data: 0 | Send Data: 1
+# Time: 21032000 | Receive Data: 1 | Send Data: 1
+# Time: 26240000 | Receive Data: 0 | Send Data: 1
+# Time: 31448000 | Receive Data: 1 | Send Data: 1
+# Time: 36656000 | Receive Data: 0 | Send Data: 1
+# Time: 41864000 | Receive Data: 1 | Send Data: 1
+# Time: 47072000 | Receive Data: 0 | Send Data: 1
+# Time: 52280000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+run
+# Time: 449688000 | Receive Data: 0 | Send Data: 1
+# Time: 452292000 | Receive Data: 1 | Send Data: 1
+# Time: 457500000 | Receive Data: 0 | Send Data: 1
+# Time: 465312000 | Receive Data: 1 | Send Data: 1
+# Time: 467916000 | Receive Data: 0 | Send Data: 1
+# Time: 470520000 | Receive Data: 1 | Send Data: 1
+run
+add wave -position end  sim:/uart_loopback_tb/txd
+add wave -position end  sim:/uart_loopback_tb/sys_rst_n
+add wave -position end  sim:/uart_loopback_tb/sys_clk
+add wave -position end  sim:/uart_loopback_tb/sel
+add wave -position end  sim:/uart_loopback_tb/seg
+add wave -position end  sim:/uart_loopback_tb/rxd
+add wave -position end  sim:/uart_loopback_tb/key_in
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.uart_loopback_tb(fast)
+# Loading work.uart_loopback(fast)
+# Loading work.div_clk(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.seg_ctrl(fast)
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/sim/uart_loopback_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:19:14 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/sim/uart_loopback_tb.v 
+# -- Compiling module uart_loopback_tb
+# 
+# Top level modules:
+# 	uart_loopback_tb
+# End time: 16:19:14 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run
+# Time: 0 | Receive Data: 1 | Send Data: x
+# Time: 200000 | Receive Data: 1 | Send Data: 1
+# Time: 5408000 | Receive Data: 0 | Send Data: 1
+# Time: 10616000 | Receive Data: 1 | Send Data: 1
+# Time: 15824000 | Receive Data: 0 | Send Data: 1
+# Time: 21032000 | Receive Data: 1 | Send Data: 1
+# Time: 26240000 | Receive Data: 0 | Send Data: 1
+# Time: 31448000 | Receive Data: 1 | Send Data: 1
+# Time: 36656000 | Receive Data: 0 | Send Data: 1
+# Time: 41864000 | Receive Data: 1 | Send Data: 1
+# Time: 47072000 | Receive Data: 0 | Send Data: 1
+# Time: 52280000 | Receive Data: 1 | Send Data: 1
+run -all
+# Time: 449688000 | Receive Data: 0 | Send Data: 1
+# Time: 452292000 | Receive Data: 1 | Send Data: 1
+# Time: 457500000 | Receive Data: 0 | Send Data: 1
+# Time: 465312000 | Receive Data: 1 | Send Data: 1
+# Time: 467916000 | Receive Data: 0 | Send Data: 1
+# Time: 470520000 | Receive Data: 1 | Send Data: 1
+# Time: 822358000 | Receive Data: 0 | Send Data: 1
+# Time: 823660000 | Receive Data: 1 | Send Data: 1
+# Time: 827566000 | Receive Data: 0 | Send Data: 1
+# Time: 828868000 | Receive Data: 1 | Send Data: 1
+# Time: 831472000 | Receive Data: 0 | Send Data: 1
+# Time: 832774000 | Receive Data: 1 | Send Data: 1
+# Time: 1159440000 | Receive Data: 0 | Send Data: 1
+# Time: 1160308000 | Receive Data: 1 | Send Data: 1
+# Time: 1161176000 | Receive Data: 0 | Send Data: 1
+# Time: 1162912000 | Receive Data: 1 | Send Data: 1
+# Time: 1163780000 | Receive Data: 0 | Send Data: 1
+# Time: 1166384000 | Receive Data: 1 | Send Data: 1
+# Time: 1484370000 | Receive Data: 0 | Send Data: 1
+# Time: 1484804000 | Receive Data: 1 | Send Data: 1
+# Time: 1485238000 | Receive Data: 0 | Send Data: 1
+# Time: 1486106000 | Receive Data: 1 | Send Data: 1
+# Time: 1486540000 | Receive Data: 0 | Send Data: 1
+# Time: 1487842000 | Receive Data: 1 | Send Data: 1
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/uart_clk_115200
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/uart_clk_57600
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/uart_clk_38400
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/uart_clk_19200
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/uart_clk_9600
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/uart_clk
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/uart_baud
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/txd
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/sys_rst_n
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/sys_clk
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/send_data_flag
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/sel
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/seg
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/rxd
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/rec_flag
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/rec_data
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/key_in
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/clk_1khz
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.uart_loopback_tb(fast)
+# Loading work.uart_loopback(fast)
+# Loading work.div_clk(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.seg_ctrl(fast)
+run -all
+# Time: 0 | Receive Data: 1 | Send Data: 1
+# Time: 5408000 | Receive Data: 0 | Send Data: 1
+# Time: 10616000 | Receive Data: 1 | Send Data: 1
+# Time: 15824000 | Receive Data: 0 | Send Data: 1
+# Time: 21032000 | Receive Data: 1 | Send Data: 1
+# Time: 26240000 | Receive Data: 0 | Send Data: 1
+# Time: 31448000 | Receive Data: 1 | Send Data: 1
+# Time: 36656000 | Receive Data: 0 | Send Data: 1
+# Time: 41864000 | Receive Data: 1 | Send Data: 1
+# Time: 47072000 | Receive Data: 0 | Send Data: 1
+# Time: 52280000 | Receive Data: 1 | Send Data: 1
+# Time: 449688000 | Receive Data: 0 | Send Data: 1
+# Time: 452292000 | Receive Data: 1 | Send Data: 1
+# Time: 457500000 | Receive Data: 0 | Send Data: 1
+# Time: 465312000 | Receive Data: 1 | Send Data: 1
+# Time: 467916000 | Receive Data: 0 | Send Data: 1
+# Time: 470520000 | Receive Data: 1 | Send Data: 1
+# Time: 822358000 | Receive Data: 0 | Send Data: 1
+# Time: 823660000 | Receive Data: 1 | Send Data: 1
+# Time: 827566000 | Receive Data: 0 | Send Data: 1
+# Time: 828868000 | Receive Data: 1 | Send Data: 1
+# Time: 831472000 | Receive Data: 0 | Send Data: 1
+# Time: 832774000 | Receive Data: 1 | Send Data: 1
+# Time: 968980000 | Receive Data: 1 | Send Data: 0
+# Time: 1072660000 | Receive Data: 1 | Send Data: 1
+# Time: 1159440000 | Receive Data: 0 | Send Data: 1
+# Time: 1160308000 | Receive Data: 1 | Send Data: 1
+# Time: 1161176000 | Receive Data: 0 | Send Data: 1
+# Time: 1162912000 | Receive Data: 1 | Send Data: 1
+# Time: 1163780000 | Receive Data: 0 | Send Data: 1
+# Time: 1166384000 | Receive Data: 1 | Send Data: 1
+# Time: 1484370000 | Receive Data: 0 | Send Data: 1
+# Time: 1484804000 | Receive Data: 1 | Send Data: 1
+# Time: 1485238000 | Receive Data: 0 | Send Data: 1
+# Time: 1486106000 | Receive Data: 1 | Send Data: 1
+# Time: 1486540000 | Receive Data: 0 | Send Data: 1
+# Time: 1487842000 | Receive Data: 1 | Send Data: 1
+# Time: 2446420000 | Receive Data: 1 | Send Data: 0
+# Time: 2550100000 | Receive Data: 1 | Send Data: 1
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/baud_select_inst/pulse_cnt
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.uart_loopback_tb(fast)
+# Loading work.uart_loopback(fast)
+# Loading work.div_clk(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.seg_ctrl(fast)
+run
+# Time: 0 | Receive Data: 1 | Send Data: 1
+# Time: 5408000 | Receive Data: 0 | Send Data: 1
+# Time: 10616000 | Receive Data: 1 | Send Data: 1
+# Time: 15824000 | Receive Data: 0 | Send Data: 1
+# Time: 21032000 | Receive Data: 1 | Send Data: 1
+# Time: 26240000 | Receive Data: 0 | Send Data: 1
+# Time: 31448000 | Receive Data: 1 | Send Data: 1
+# Time: 36656000 | Receive Data: 0 | Send Data: 1
+# Time: 41864000 | Receive Data: 1 | Send Data: 1
+# Time: 47072000 | Receive Data: 0 | Send Data: 1
+# Time: 52280000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+run
+# Time: 449688000 | Receive Data: 0 | Send Data: 1
+# Time: 452292000 | Receive Data: 1 | Send Data: 1
+# Time: 457500000 | Receive Data: 0 | Send Data: 1
+# Time: 465312000 | Receive Data: 1 | Send Data: 1
+# Time: 467916000 | Receive Data: 0 | Send Data: 1
+# Time: 470520000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/baud_select_inst/key_pulse
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.uart_loopback_tb(fast)
+# Loading work.uart_loopback(fast)
+# Loading work.div_clk(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.seg_ctrl(fast)
+run
+# Time: 0 | Receive Data: 1 | Send Data: 1
+# Time: 5408000 | Receive Data: 0 | Send Data: 1
+# Time: 10616000 | Receive Data: 1 | Send Data: 1
+# Time: 15824000 | Receive Data: 0 | Send Data: 1
+# Time: 21032000 | Receive Data: 1 | Send Data: 1
+# Time: 26240000 | Receive Data: 0 | Send Data: 1
+# Time: 31448000 | Receive Data: 1 | Send Data: 1
+# Time: 36656000 | Receive Data: 0 | Send Data: 1
+# Time: 41864000 | Receive Data: 1 | Send Data: 1
+# Time: 47072000 | Receive Data: 0 | Send Data: 1
+# Time: 52280000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+run
+# Time: 449688000 | Receive Data: 0 | Send Data: 1
+# Time: 452292000 | Receive Data: 1 | Send Data: 1
+# Time: 457500000 | Receive Data: 0 | Send Data: 1
+# Time: 465312000 | Receive Data: 1 | Send Data: 1
+# Time: 467916000 | Receive Data: 0 | Send Data: 1
+# Time: 470520000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+add wave -position end  sim:/uart_loopback_tb/uart_loopback_inst/baud_select_inst/key_filter_inst/key_out
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.uart_loopback_tb(fast)
+# Loading work.uart_loopback(fast)
+# Loading work.div_clk(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.seg_ctrl(fast)
+run
+# Time: 0 | Receive Data: 1 | Send Data: 1
+# Time: 5408000 | Receive Data: 0 | Send Data: 1
+# Time: 10616000 | Receive Data: 1 | Send Data: 1
+# Time: 15824000 | Receive Data: 0 | Send Data: 1
+# Time: 21032000 | Receive Data: 1 | Send Data: 1
+# Time: 26240000 | Receive Data: 0 | Send Data: 1
+# Time: 31448000 | Receive Data: 1 | Send Data: 1
+# Time: 36656000 | Receive Data: 0 | Send Data: 1
+# Time: 41864000 | Receive Data: 1 | Send Data: 1
+# Time: 47072000 | Receive Data: 0 | Send Data: 1
+# Time: 52280000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+run
+# Time: 449688000 | Receive Data: 0 | Send Data: 1
+# Time: 452292000 | Receive Data: 1 | Send Data: 1
+# Time: 457500000 | Receive Data: 0 | Send Data: 1
+# Time: 465312000 | Receive Data: 1 | Send Data: 1
+# Time: 467916000 | Receive Data: 0 | Send Data: 1
+# Time: 470520000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/uart_loopback/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/sim/uart_loopback_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 16:28:57 on Sep 16,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/uart_loopback/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/uart_loopback/sim/uart_loopback_tb.v 
+# -- Compiling module uart_loopback_tb
+# 
+# Top level modules:
+# 	uart_loopback_tb
+# End time: 16:28:57 on Sep 16,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.uart_loopback_tb(fast)
+# Loading work.uart_loopback(fast)
+# Loading work.div_clk(fast)
+# Loading work.uart_clk_div(fast)
+# Loading work.uart_clk_div(fast__1)
+# Loading work.uart_clk_div(fast__2)
+# Loading work.uart_clk_div(fast__3)
+# Loading work.uart_clk_div(fast__4)
+# Loading work.uart_tx(fast)
+# Loading work.uart_rx(fast)
+# Loading work.baud_select(fast)
+# Loading work.key_filter(fast)
+# Loading work.pulse_cnt(fast)
+# Loading work.seg_ctrl(fast)
+run
+# Time: 0 | Receive Data: 1 | Send Data: 1
+# Time: 5408000 | Receive Data: 0 | Send Data: 1
+# Time: 10616000 | Receive Data: 1 | Send Data: 1
+# Time: 15824000 | Receive Data: 0 | Send Data: 1
+# Time: 21032000 | Receive Data: 1 | Send Data: 1
+# Time: 26240000 | Receive Data: 0 | Send Data: 1
+# Time: 31448000 | Receive Data: 1 | Send Data: 1
+# Time: 36656000 | Receive Data: 0 | Send Data: 1
+# Time: 41864000 | Receive Data: 1 | Send Data: 1
+# Time: 47072000 | Receive Data: 0 | Send Data: 1
+# Time: 52280000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+run
+# Time: 449688000 | Receive Data: 0 | Send Data: 1
+# Time: 452292000 | Receive Data: 1 | Send Data: 1
+# Time: 457500000 | Receive Data: 0 | Send Data: 1
+# Time: 465312000 | Receive Data: 1 | Send Data: 1
+# Time: 467916000 | Receive Data: 0 | Send Data: 1
+# Time: 470520000 | Receive Data: 1 | Send Data: 1
+run
+run
+run
+# Time: 708160000 | Receive Data: 1 | Send Data: 0
+# Time: 760000000 | Receive Data: 1 | Send Data: 1
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/git-repository/fpga_training/uart_loopback/prj/simulation/questa/wave.do
+# End time: 16:39:29 on Sep 16,2024, Elapsed time: 1:00:43
+# Errors: 0, Warnings: 0

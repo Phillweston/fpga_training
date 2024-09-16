@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2024.09.13.15:26:33"
+ date="2024.09.16.10:37:17"
  outputDirectory="D:/git-repository/fpga_training/uart_rx/prj/db/ip/signal_probe/">
  <perimeter>
   <parameter
@@ -46,12 +46,12 @@
  </perimeter>
  <entity
    path=""
-   parameterizationKey="signal_probe:1.0:AUTO_DEVICE=EP4CE10F17C8,AUTO_DEVICE_FAMILY=Cyclone IV E,AUTO_DEVICE_SPEEDGRADE=8,AUTO_GENERATION_ID=1726212390,AUTO_UNIQUE_ID=(altera_in_system_sources_probes:23.1:create_source_clock=false,create_source_clock_enable=false,device_family=Cyclone IV E,enable_metastability=NO,gui_use_auto_index=true,instance_id=NONE,probe_width=8,sld_auto_instance_index=YES,sld_instance_index=0,source_initial_value=0,source_width=1)"
+   parameterizationKey="signal_probe:1.0:AUTO_DEVICE=EP4CE10F17C8,AUTO_DEVICE_FAMILY=Cyclone IV E,AUTO_DEVICE_SPEEDGRADE=8,AUTO_GENERATION_ID=1726454234,AUTO_UNIQUE_ID=(altera_in_system_sources_probes:23.1:create_source_clock=false,create_source_clock_enable=false,device_family=Cyclone IV E,enable_metastability=NO,gui_use_auto_index=true,instance_id=NONE,probe_width=8,sld_auto_instance_index=YES,sld_instance_index=0,source_initial_value=0,source_width=1)"
    instancePathKey="signal_probe"
    kind="signal_probe"
    version="1.0"
    name="signal_probe">
-  <parameter name="AUTO_GENERATION_ID" value="1726212390" />
+  <parameter name="AUTO_GENERATION_ID" value="1726454234" />
   <parameter name="AUTO_DEVICE" value="EP4CE10F17C8" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
   <parameter name="AUTO_UNIQUE_ID" value="" />

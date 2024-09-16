@@ -6,9 +6,16 @@ set_location_assignment PIN_E1    -to    sys_clk
 
 # KEY 轻触按键
 set_location_assignment PIN_L3    -to   sys_rst_n
+set_location_assignment PIN_L1    -to   key_in
+
+# LED
+set_location_assignment PIN_T12   -to   led[0]
+set_location_assignment PIN_P8    -to   led[1]
+set_location_assignment PIN_M8    -to   led[2]
+set_location_assignment PIN_M10   -to   led[3]
 
 # UART (no tx)
-set_location_assignment PIN_K5    -to    rxd
+set_location_assignment PIN_K5    -to   rxd
 
 # SEG7 x 8 七段数码管
 set_location_assignment PIN_L6    -to   sel[2]
