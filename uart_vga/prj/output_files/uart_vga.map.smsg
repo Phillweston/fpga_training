@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at vga_ctrl.v(75): always construct contains both blocking and non-blocking assignments File: D:/git-repository/fpga_training/uart_vga/rtl/vga_ctrl.v Line: 75
