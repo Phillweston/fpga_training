@@ -1,0 +1,701 @@
+# Reading D:/altera/11.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do camera_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying d:\altera\11.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied d:\altera\11.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ip {D:/class170715/video20171022/camera_ov7670_sobel/ip/ram2.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module ram2
+# 
+# Top level modules:
+# 	ram2
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sobel {D:/class170715/video20171022/camera_ov7670_sobel/sobel/sobel_head.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sobel {D:/class170715/video20171022/camera_ov7670_sobel/sobel/sobel_filter_zx1702.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module sobel_filter_zx1702
+# 
+# Top level modules:
+# 	sobel_filter_zx1702
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sobel {D:/class170715/video20171022/camera_ov7670_sobel/sobel/fsm.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module fsm
+# 
+# Top level modules:
+# 	fsm
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sobel {D:/class170715/video20171022/camera_ov7670_sobel/sobel/computer.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module computer
+# 
+# Top level modules:
+# 	computer
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ov7670 {D:/class170715/video20171022/camera_ov7670_sobel/ov7670/rgb565_data.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module rgb565_data
+# 
+# Top level modules:
+# 	rgb565_data
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ov7670 {D:/class170715/video20171022/camera_ov7670_sobel/ov7670/ov7670.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module ov7670
+# 
+# Top level modules:
+# 	ov7670
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ov7670 {D:/class170715/video20171022/camera_ov7670_sobel/ov7670/frep_deay.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module frep_deay
+# 
+# Top level modules:
+# 	frep_deay
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ov7670 {D:/class170715/video20171022/camera_ov7670_sobel/ov7670/config_reg.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module config_reg
+# 
+# Top level modules:
+# 	config_reg
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ov7670 {D:/class170715/video20171022/camera_ov7670_sobel/ov7670/cmos_ov7670_config_rgb565_regsiter_data.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module cmos_ov7670_config_rgb565_regsiter_data
+# 
+# Top level modules:
+# 	cmos_ov7670_config_rgb565_regsiter_data
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller {D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/camera_head.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ip {D:/class170715/video20171022/camera_ov7670_sobel/ip/wr_fifo.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module wr_fifo
+# 
+# Top level modules:
+# 	wr_fifo
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ip {D:/class170715/video20171022/camera_ov7670_sobel/ip/rd_fifo.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module rd_fifo
+# 
+# Top level modules:
+# 	rd_fifo
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel {D:/class170715/video20171022/camera_ov7670_sobel/pll.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel {D:/class170715/video20171022/camera_ov7670_sobel/camera.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module camera
+# 
+# Top level modules:
+# 	camera
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/vga_src {D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module vga565_sobel
+# 
+# Top level modules:
+# 	vga565_sobel
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/db {D:/class170715/video20171022/camera_ov7670_sobel/db/pll_altpll.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module pll_altpll
+# 
+# Top level modules:
+# 	pll_altpll
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sobel {D:/class170715/video20171022/camera_ov7670_sobel/sobel/addr_gen.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module addr_gen
+# 
+# Top level modules:
+# 	addr_gen
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller {D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/write.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module write
+# 
+# Top level modules:
+# 	write
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller {D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/timer.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module timer
+# 
+# Top level modules:
+# 	timer
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller {D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/sdram_fsm.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module sdram_fsm
+# 
+# Top level modules:
+# 	sdram_fsm
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller {D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/sdram_controller.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module sdram_controller
+# 
+# Top level modules:
+# 	sdram_controller
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller {D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/sdram_control.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module sdram_control
+# 
+# Top level modules:
+# 	sdram_control
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller {D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/refresh.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module refresh
+# 
+# Top level modules:
+# 	refresh
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller {D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/read.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module read
+# 
+# Top level modules:
+# 	read
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller {D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/mux_bus.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module mux_bus
+# 
+# Top level modules:
+# 	mux_bus
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller {D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/init.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module init
+# 
+# Top level modules:
+# 	init
+# 
+# vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/vga_src {D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel_tb.v}
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module vga565_sobel_tb
+# 
+# Top level modules:
+# 	vga565_sobel_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc" vga565_sobel_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps vga565_sobel_tb 
+# Loading work.vga565_sobel_tb
+# Loading work.vga565_sobel
+# Loading work.ram2
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.sobel_filter_zx1702
+# Loading work.addr_gen
+# Loading work.computer
+# Loading work.fsm
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2a.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2b.altsyncram_component
+# Break in Module vga565_sobel_tb at D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel_tb.v line 33
+# Simulation Breakpoint: Break in Module vga565_sobel_tb at D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel_tb.v line 33
+# MACRO ./camera_run_msim_rtl_verilog.do PAUSED at line 43
+add wave sim:/vga565_sobel_tb/DUT/ram2a/*
+add wave sim:/vga565_sobel_tb/DUT/sobel_filter/*
+add wave sim:/vga565_sobel_tb/DUT/ram2b/*
+add wave \
+{sim:/vga565_sobel_tb/DUT/data } \
+{sim:/vga565_sobel_tb/DUT/hcnt } \
+{sim:/vga565_sobel_tb/DUT/vcnt } \
+{sim:/vga565_sobel_tb/DUT/Y16 } \
+{sim:/vga565_sobel_tb/DUT/r0 } \
+{sim:/vga565_sobel_tb/DUT/r1 } \
+{sim:/vga565_sobel_tb/DUT/r2 } \
+{sim:/vga565_sobel_tb/DUT/r3 } 
+restart
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2a.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2b.altsyncram_component
+# Break in Module vga565_sobel_tb at D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel_tb.v line 33
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/vga_src -O0 D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel_tb.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module vga565_sobel_tb
+# 
+# Top level modules:
+# 	vga565_sobel_tb
+restart
+# Loading work.vga565_sobel_tb
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2a.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2b.altsyncram_component
+# Break in Module vga565_sobel_tb at D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel_tb.v line 33
+add wave \
+{sim:/vga565_sobel_tb/DUT/start } \
+{sim:/vga565_sobel_tb/DUT/done } \
+{sim:/vga565_sobel_tb/DUT/mem_addr } \
+{sim:/vga565_sobel_tb/DUT/ram2a_data } \
+{sim:/vga565_sobel_tb/DUT/ram2a_q } \
+{sim:/vga565_sobel_tb/DUT/ram2b_data } \
+{sim:/vga565_sobel_tb/DUT/ram2b_q } \
+{sim:/vga565_sobel_tb/DUT/wren_a } \
+{sim:/vga565_sobel_tb/DUT/wren_b } \
+{sim:/vga565_sobel_tb/DUT/ram2a_wraddr } \
+{sim:/vga565_sobel_tb/DUT/ram2b_rdaddr } 
+restart
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2a.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2b.altsyncram_component
+# Break in Module vga565_sobel_tb at D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel_tb.v line 33
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/vga_src -O0 D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module vga565_sobel
+# 
+# Top level modules:
+# 	vga565_sobel
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/vga_src -O0 D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel_tb.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module vga565_sobel_tb
+# 
+# Top level modules:
+# 	vga565_sobel_tb
+restart
+# Loading work.vga565_sobel_tb
+# Loading work.vga565_sobel
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2a.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2b.altsyncram_component
+# Break in Module vga565_sobel_tb at D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel_tb.v line 33
+add wave \
+{sim:/vga565_sobel_tb/DUT/sobel_filter/FSM/flag } 
+restart
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2a.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2b.altsyncram_component
+# Break in Module vga565_sobel_tb at D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel_tb.v line 33
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sobel -O0 D:/class170715/video20171022/camera_ov7670_sobel/sobel/addr_gen.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module addr_gen
+# 
+# Top level modules:
+# 	addr_gen
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel -O0 D:/class170715/video20171022/camera_ov7670_sobel/camera.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module camera
+# 
+# Top level modules:
+# 	camera
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ov7670 -O0 D:/class170715/video20171022/camera_ov7670_sobel/ov7670/cmos_ov7670_config_rgb565_regsiter_data.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module cmos_ov7670_config_rgb565_regsiter_data
+# 
+# Top level modules:
+# 	cmos_ov7670_config_rgb565_regsiter_data
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sobel -O0 D:/class170715/video20171022/camera_ov7670_sobel/sobel/computer.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module computer
+# 
+# Top level modules:
+# 	computer
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ov7670 -O0 D:/class170715/video20171022/camera_ov7670_sobel/ov7670/config_reg.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module config_reg
+# 
+# Top level modules:
+# 	config_reg
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ov7670 -O0 D:/class170715/video20171022/camera_ov7670_sobel/ov7670/frep_deay.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module frep_deay
+# 
+# Top level modules:
+# 	frep_deay
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sobel -O0 D:/class170715/video20171022/camera_ov7670_sobel/sobel/fsm.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module fsm
+# 
+# Top level modules:
+# 	fsm
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller -O0 D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/init.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module init
+# 
+# Top level modules:
+# 	init
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller -O0 D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/mux_bus.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module mux_bus
+# 
+# Top level modules:
+# 	mux_bus
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ov7670 -O0 D:/class170715/video20171022/camera_ov7670_sobel/ov7670/ov7670.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module ov7670
+# 
+# Top level modules:
+# 	ov7670
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel -O0 D:/class170715/video20171022/camera_ov7670_sobel/pll.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/db -O0 D:/class170715/video20171022/camera_ov7670_sobel/db/pll_altpll.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module pll_altpll
+# 
+# Top level modules:
+# 	pll_altpll
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ip -O0 D:/class170715/video20171022/camera_ov7670_sobel/ip/ram2.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module ram2
+# 
+# Top level modules:
+# 	ram2
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ip -O0 D:/class170715/video20171022/camera_ov7670_sobel/ip/rd_fifo.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module rd_fifo
+# 
+# Top level modules:
+# 	rd_fifo
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller -O0 D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/read.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module read
+# 
+# Top level modules:
+# 	read
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller -O0 D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/refresh.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module refresh
+# 
+# Top level modules:
+# 	refresh
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ov7670 -O0 D:/class170715/video20171022/camera_ov7670_sobel/ov7670/rgb565_data.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module rgb565_data
+# 
+# Top level modules:
+# 	rgb565_data
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller -O0 D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/sdram_control.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module sdram_control
+# 
+# Top level modules:
+# 	sdram_control
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller -O0 D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/sdram_controller.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module sdram_controller
+# 
+# Top level modules:
+# 	sdram_controller
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller -O0 D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/sdram_fsm.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module sdram_fsm
+# 
+# Top level modules:
+# 	sdram_fsm
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sobel -O0 D:/class170715/video20171022/camera_ov7670_sobel/sobel/sobel_filter_zx1702.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module sobel_filter_zx1702
+# 
+# Top level modules:
+# 	sobel_filter_zx1702
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller -O0 D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/timer.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module timer
+# 
+# Top level modules:
+# 	timer
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/vga_src -O0 D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module vga565_sobel
+# 
+# Top level modules:
+# 	vga565_sobel
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/vga_src -O0 D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel_tb.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module vga565_sobel_tb
+# 
+# Top level modules:
+# 	vga565_sobel_tb
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ip -O0 D:/class170715/video20171022/camera_ov7670_sobel/ip/wr_fifo.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module wr_fifo
+# 
+# Top level modules:
+# 	wr_fifo
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller -O0 D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/write.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module write
+# 
+# Top level modules:
+# 	write
+restart
+# Loading work.vga565_sobel_tb
+# Loading work.vga565_sobel
+# Loading work.ram2
+# Loading work.sobel_filter_zx1702
+# Loading work.addr_gen
+# Loading work.computer
+# Loading work.fsm
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2a.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2b.altsyncram_component
+# Break in Module vga565_sobel_tb at D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel_tb.v line 33
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sobel -O0 D:/class170715/video20171022/camera_ov7670_sobel/sobel/addr_gen.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module addr_gen
+# 
+# Top level modules:
+# 	addr_gen
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel -O0 D:/class170715/video20171022/camera_ov7670_sobel/camera.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module camera
+# 
+# Top level modules:
+# 	camera
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ov7670 -O0 D:/class170715/video20171022/camera_ov7670_sobel/ov7670/cmos_ov7670_config_rgb565_regsiter_data.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module cmos_ov7670_config_rgb565_regsiter_data
+# 
+# Top level modules:
+# 	cmos_ov7670_config_rgb565_regsiter_data
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sobel -O0 D:/class170715/video20171022/camera_ov7670_sobel/sobel/computer.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module computer
+# 
+# Top level modules:
+# 	computer
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ov7670 -O0 D:/class170715/video20171022/camera_ov7670_sobel/ov7670/config_reg.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module config_reg
+# 
+# Top level modules:
+# 	config_reg
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ov7670 -O0 D:/class170715/video20171022/camera_ov7670_sobel/ov7670/frep_deay.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module frep_deay
+# 
+# Top level modules:
+# 	frep_deay
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sobel -O0 D:/class170715/video20171022/camera_ov7670_sobel/sobel/fsm.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module fsm
+# 
+# Top level modules:
+# 	fsm
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller -O0 D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/init.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module init
+# 
+# Top level modules:
+# 	init
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller -O0 D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/mux_bus.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module mux_bus
+# 
+# Top level modules:
+# 	mux_bus
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ov7670 -O0 D:/class170715/video20171022/camera_ov7670_sobel/ov7670/ov7670.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module ov7670
+# 
+# Top level modules:
+# 	ov7670
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel -O0 D:/class170715/video20171022/camera_ov7670_sobel/pll.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/db -O0 D:/class170715/video20171022/camera_ov7670_sobel/db/pll_altpll.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module pll_altpll
+# 
+# Top level modules:
+# 	pll_altpll
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ip -O0 D:/class170715/video20171022/camera_ov7670_sobel/ip/ram2.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module ram2
+# 
+# Top level modules:
+# 	ram2
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ip -O0 D:/class170715/video20171022/camera_ov7670_sobel/ip/rd_fifo.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module rd_fifo
+# 
+# Top level modules:
+# 	rd_fifo
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller -O0 D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/read.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module read
+# 
+# Top level modules:
+# 	read
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller -O0 D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/refresh.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module refresh
+# 
+# Top level modules:
+# 	refresh
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ov7670 -O0 D:/class170715/video20171022/camera_ov7670_sobel/ov7670/rgb565_data.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module rgb565_data
+# 
+# Top level modules:
+# 	rgb565_data
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller -O0 D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/sdram_control.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module sdram_control
+# 
+# Top level modules:
+# 	sdram_control
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller -O0 D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/sdram_controller.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module sdram_controller
+# 
+# Top level modules:
+# 	sdram_controller
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller -O0 D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/sdram_fsm.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module sdram_fsm
+# 
+# Top level modules:
+# 	sdram_fsm
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sobel -O0 D:/class170715/video20171022/camera_ov7670_sobel/sobel/sobel_filter_zx1702.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module sobel_filter_zx1702
+# 
+# Top level modules:
+# 	sobel_filter_zx1702
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller -O0 D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/timer.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module timer
+# 
+# Top level modules:
+# 	timer
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/vga_src -O0 D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module vga565_sobel
+# 
+# Top level modules:
+# 	vga565_sobel
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/vga_src -O0 D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel_tb.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module vga565_sobel_tb
+# 
+# Top level modules:
+# 	vga565_sobel_tb
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ip -O0 D:/class170715/video20171022/camera_ov7670_sobel/ip/wr_fifo.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module wr_fifo
+# 
+# Top level modules:
+# 	wr_fifo
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller -O0 D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/write.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module write
+# 
+# Top level modules:
+# 	write
+restart
+# Loading work.vga565_sobel_tb
+# Loading work.vga565_sobel
+# Loading work.ram2
+# Loading work.sobel_filter_zx1702
+# Loading work.addr_gen
+# Loading work.computer
+# Loading work.fsm
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2a.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2b.altsyncram_component
+# Break in Module vga565_sobel_tb at D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel_tb.v line 33
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sobel -O0 D:/class170715/video20171022/camera_ov7670_sobel/sobel/fsm.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module fsm
+# 
+# Top level modules:
+# 	fsm
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sobel -O0 D:/class170715/video20171022/camera_ov7670_sobel/sobel/fsm.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module fsm
+# 
+# Top level modules:
+# 	fsm
+restart
+# Loading work.fsm
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2a.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2b.altsyncram_component
+# Break in Module vga565_sobel_tb at D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel_tb.v line 33
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sobel -O0 D:/class170715/video20171022/camera_ov7670_sobel/sobel/fsm.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module fsm
+# 
+# Top level modules:
+# 	fsm
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sobel -O0 D:/class170715/video20171022/camera_ov7670_sobel/sobel/fsm.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module fsm
+# 
+# Top level modules:
+# 	fsm
+restart
+# Loading work.fsm
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2a.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2b.altsyncram_component
+# Break in Module vga565_sobel_tb at D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel_tb.v line 33
+add wave \
+{sim:/vga565_sobel_tb/DUT/sobel_filter/FSM/beat } \
+{sim:/vga565_sobel_tb/DUT/sobel_filter/FSM/col } \
+{sim:/vga565_sobel_tb/DUT/sobel_filter/FSM/row } 
+restart
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2a.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2b.altsyncram_component
+# Break in Module vga565_sobel_tb at D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel_tb.v line 33
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sobel -O0 D:/class170715/video20171022/camera_ov7670_sobel/sobel/fsm.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module fsm
+# 
+# Top level modules:
+# 	fsm
+restart
+# Loading work.fsm
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2a.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2b.altsyncram_component
+# Break in Module vga565_sobel_tb at D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel_tb.v line 33
+vlog -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sobel -O0 D:/class170715/video20171022/camera_ov7670_sobel/sobel/fsm.v
+# Model Technology ModelSim ALTERA vlog 6.6d Compiler 2010.11 Nov  2 2010
+# -- Compiling module fsm
+# 
+# Top level modules:
+# 	fsm
+restart
+# Loading work.fsm
+run -all
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2a.altsyncram_component
+# Warning: read_during_write_mode_mixed_ports is assumed as   OLD_DATA
+# Time: 0  Instance: vga565_sobel_tb.DUT.ram2b.altsyncram_component
+# Break in Module vga565_sobel_tb at D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel_tb.v line 33

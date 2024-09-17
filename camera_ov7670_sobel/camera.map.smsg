@@ -1,0 +1,6 @@
+Info (10281): Verilog HDL Declaration information at computer.v(10): object "pr" differs only in case from object "PR" in the same scope File: D:/git-repository/fpga_training/camera_ov7670_sobel/sobel/computer.v Line: 10
+Info (10281): Verilog HDL Declaration information at computer.v(10): object "cr" differs only in case from object "CR" in the same scope File: D:/git-repository/fpga_training/camera_ov7670_sobel/sobel/computer.v Line: 10
+Info (10281): Verilog HDL Declaration information at computer.v(10): object "nr" differs only in case from object "NR" in the same scope File: D:/git-repository/fpga_training/camera_ov7670_sobel/sobel/computer.v Line: 10
+Info (10281): Verilog HDL Declaration information at computer.v(13): object "absd" differs only in case from object "ABSD" in the same scope File: D:/git-repository/fpga_training/camera_ov7670_sobel/sobel/computer.v Line: 13
+Warning (10273): Verilog HDL warning at write.v(21): extended using "x" or "z" File: D:/git-repository/fpga_training/camera_ov7670_sobel/sdram_controller/write.v Line: 21
+Warning (10273): Verilog HDL warning at read.v(23): extended using "x" or "z" File: D:/git-repository/fpga_training/camera_ov7670_sobel/sdram_controller/read.v Line: 23

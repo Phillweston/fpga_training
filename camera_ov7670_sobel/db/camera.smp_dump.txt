@@ -1,0 +1,54 @@
+
+State Machine - |camera|ov7670:ov7670|rgb565_data:rgb565_data|state
+Name state.0000 state.0010 state.0001 
+state.0000 0 0 0 
+state.0001 1 0 1 
+state.0010 1 1 0 
+
+State Machine - |camera|sdram_controller:sdram_controller_dut|sdram_control:sdram_control_dut|sdram_fsm:sdram_fsm_dut|state
+Name state.00110 state.00101 state.00100 state.00011 state.00010 state.00001 state.00000 
+state.00000 0 0 0 0 0 0 0 
+state.00001 0 0 0 0 0 1 1 
+state.00010 0 0 0 0 1 0 1 
+state.00011 0 0 0 1 0 0 1 
+state.00100 0 0 1 0 0 0 1 
+state.00101 0 1 0 0 0 0 1 
+state.00110 1 0 0 0 0 0 1 
+
+State Machine - |camera|sdram_controller:sdram_controller_dut|sdram_control:sdram_control_dut|read:read_dut|state
+Name state.0111 state.0110 state.0101 state.0100 state.0011 state.0010 state.0001 state.0000 
+state.0000 0 0 0 0 0 0 0 0 
+state.0001 0 0 0 0 0 0 1 1 
+state.0010 0 0 0 0 0 1 0 1 
+state.0011 0 0 0 0 1 0 0 1 
+state.0100 0 0 0 1 0 0 0 1 
+state.0101 0 0 1 0 0 0 0 1 
+state.0110 0 1 0 0 0 0 0 1 
+state.0111 1 0 0 0 0 0 0 1 
+
+State Machine - |camera|sdram_controller:sdram_controller_dut|sdram_control:sdram_control_dut|write:write_dut|state
+Name state.111 state.110 state.101 state.100 state.011 state.010 state.001 state.000 
+state.000 0 0 0 0 0 0 0 0 
+state.001 0 0 0 0 0 0 1 1 
+state.010 0 0 0 0 0 1 0 1 
+state.011 0 0 0 0 1 0 0 1 
+state.100 0 0 0 1 0 0 0 1 
+state.101 0 0 1 0 0 0 0 1 
+state.110 0 1 0 0 0 0 0 1 
+state.111 1 0 0 0 0 0 0 1 
+
+State Machine - |camera|sdram_controller:sdram_controller_dut|sdram_control:sdram_control_dut|refresh:refresh_dut|state
+Name state.11 state.10 state.01 state.00 
+state.00 0 0 0 0 
+state.01 0 0 1 1 
+state.10 0 1 0 1 
+state.11 1 0 0 1 
+
+State Machine - |camera|sdram_controller:sdram_controller_dut|sdram_control:sdram_control_dut|init:init_dut|state
+Name state.101 state.100 state.011 state.010 state.001 state.000 
+state.000 0 0 0 0 0 0 
+state.001 0 0 0 0 1 1 
+state.010 0 0 0 1 0 1 
+state.011 0 0 1 0 0 1 
+state.100 0 1 0 0 0 1 
+state.101 1 0 0 0 0 1 

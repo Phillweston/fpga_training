@@ -1,0 +1,421 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\class170715\video20171022\camera_ov7670_sobel\simulation\modelsim
+vaddr_gen
+IXL_KzN1fWSZ58B4:z2V<g1
+Vf1CPIMS?K:U[ZSK2C]V_<0
+Z1 dD:\class170715\video20171022\camera_ov7670_sobel\simulation\modelsim
+w1509431446
+8D:/class170715/video20171022/camera_ov7670_sobel/sobel/addr_gen.v
+FD:/class170715/video20171022/camera_ov7670_sobel/sobel/addr_gen.v
+L0 3
+Z2 OV;L;6.6d;45
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sobel -O0
+!s100 Rad6X?^VSfB]e?lb9hj6E2
+!s85 0
+!s101 -O0
+vcamera
+I][cZazG`EC1VTQIRV_njg0
+VzaU<8mGXzXIV7eJ?OYc^g1
+R1
+w1508895027
+8D:/class170715/video20171022/camera_ov7670_sobel/camera.v
+FD:/class170715/video20171022/camera_ov7670_sobel/camera.v
+L0 1
+R2
+r1
+31
+R3
+Z5 !s92 -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel -O0
+!s100 MbRN`MoMMGOn7TaaULO>H1
+!s85 0
+!s101 -O0
+vcmos_ov7670_config_rgb565_regsiter_data
+I;9OYUkz9K0QoNC9zST4HC1
+V[`=TgfBoILZPdPd0iWVN^0
+R1
+w1502954839
+8D:/class170715/video20171022/camera_ov7670_sobel/ov7670/cmos_ov7670_config_rgb565_regsiter_data.v
+FD:/class170715/video20171022/camera_ov7670_sobel/ov7670/cmos_ov7670_config_rgb565_regsiter_data.v
+L0 3
+R2
+r1
+31
+R3
+Z6 !s92 -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ov7670 -O0
+!s100 M=94]A_@;eaEaJY3BGzoh1
+!s85 0
+!s101 -O0
+vcomputer
+ILDZlULJ2nz2cHG76>BYeb0
+VV13H>5=JD`T_?iz[ciXbX1
+R1
+w1509421782
+8D:/class170715/video20171022/camera_ov7670_sobel/sobel/computer.v
+FD:/class170715/video20171022/camera_ov7670_sobel/sobel/computer.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!s100 6;PkhC<_P[^Pn5=Kh4noS2
+!s85 0
+!s101 -O0
+vconfig_reg
+IC><`Hf:?ocM@8IXaB<B]F3
+VWTT9lzgFcTGYhXe`F[IPX0
+R1
+w1497945048
+8D:/class170715/video20171022/camera_ov7670_sobel/ov7670/config_reg.v
+FD:/class170715/video20171022/camera_ov7670_sobel/ov7670/config_reg.v
+L0 1
+R2
+r1
+31
+R3
+R6
+!s100 5NXk_TZNO=m7V^N^CBQam1
+!s85 0
+!s101 -O0
+vfrep_deay
+I6=S:mVRo?OHa3Q_oR4^<82
+VEB9S6NU@DfS4zTLN;L2@g2
+R1
+w1497945046
+8D:/class170715/video20171022/camera_ov7670_sobel/ov7670/frep_deay.v
+FD:/class170715/video20171022/camera_ov7670_sobel/ov7670/frep_deay.v
+L0 1
+R2
+r1
+31
+R3
+R6
+!s100 7ME?@bTeWCEXA2WEK[hMU3
+!s85 0
+!s101 -O0
+vfsm
+!s100 dQ]RRIHe?G2`39[Qm=k_B1
+I@mBa2=Laa3lO4NR>W36K^0
+VEd`F5LTGAQ:6l4I:Nl=n50
+R1
+w1509505014
+8D:/class170715/video20171022/camera_ov7670_sobel/sobel/fsm.v
+FD:/class170715/video20171022/camera_ov7670_sobel/sobel/fsm.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s101 -O0
+R3
+R4
+vinit
+IhJj2ci1L0KG8g5J:lZA0J1
+VmEiWJ<7:8m5ol?[SKj[k^0
+R1
+w1497517616
+8D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/init.v
+FD:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/init.v
+L0 4
+R2
+r1
+31
+R3
+Z7 !s92 -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller -O0
+!s100 5mNfc5:SoXZJ9AeIOJkQG2
+!s85 0
+!s101 -O0
+vmux_bus
+I@2Zhg4f273]hWG:E5TdQ;0
+V80OjiYSQIKNYU7aZkliiJ2
+R1
+w1497664014
+8D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/mux_bus.v
+FD:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/mux_bus.v
+L0 4
+R2
+r1
+31
+R3
+R7
+!s100 D^gTQWzh1N:J?=eCGb8I@3
+!s85 0
+!s101 -O0
+vov7670
+Il3cHkg>Rd9lA]BINg8WAR3
+V10;9OTRRBUz3l;l^l<men3
+R1
+w1497943594
+8D:/class170715/video20171022/camera_ov7670_sobel/ov7670/ov7670.v
+FD:/class170715/video20171022/camera_ov7670_sobel/ov7670/ov7670.v
+L0 1
+R2
+r1
+31
+R3
+R6
+!s100 h;ARZGS9>2NR09Z6m_^z92
+!s85 0
+!s101 -O0
+vpll
+Ik`F^akJg<b3j7[N`NZD@<3
+V4mBg2NY6zIz8b[@60kZR01
+R1
+w1497769938
+8D:/class170715/video20171022/camera_ov7670_sobel/pll.v
+FD:/class170715/video20171022/camera_ov7670_sobel/pll.v
+L0 39
+R2
+r1
+31
+R3
+R5
+!s100 C_oSTY=3T7m5zdGZ@:IIR0
+!s85 0
+!s101 -O0
+vpll_altpll
+ISalDa:_1:JS@8cn;Qzz;X1
+V?DF8j=RJ_EcKZlDzF;fMW0
+R1
+w1502934952
+8D:/class170715/video20171022/camera_ov7670_sobel/db/pll_altpll.v
+FD:/class170715/video20171022/camera_ov7670_sobel/db/pll_altpll.v
+L0 30
+R2
+r1
+31
+R3
+!s100 PAS6mkfZbNaM]Qa8zfKT73
+!s85 0
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/db -O0
+vram2
+Id=XGGl@ZXj^Q>9G;R<DN_0
+V216[C^@_158;T3US>KQ0N1
+R1
+w1508984737
+8D:/class170715/video20171022/camera_ov7670_sobel/ip/ram2.v
+FD:/class170715/video20171022/camera_ov7670_sobel/ip/ram2.v
+L0 39
+R2
+r1
+31
+R3
+Z8 !s92 -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/ip -O0
+!s100 7E?6Z1Jo^NY1SN=^J1Xk10
+!s85 0
+!s101 -O0
+vrd_fifo
+I;zoeW?f;FD3U^]<XGReIj2
+VHPb8z?CgoOSC=:mQoE>@41
+R1
+w1497680276
+8D:/class170715/video20171022/camera_ov7670_sobel/ip/rd_fifo.v
+FD:/class170715/video20171022/camera_ov7670_sobel/ip/rd_fifo.v
+L0 39
+R2
+r1
+31
+R3
+R8
+!s100 M0oh;YFlQ`oMA_QjYzk@o0
+!s85 0
+!s101 -O0
+vread
+IT=2W;]Joz0VgC2dXBHGOO2
+VTl9ae>jPhz9?`f:PQfjn_1
+R1
+w1497680764
+8D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/read.v
+FD:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/read.v
+L0 4
+R2
+r1
+31
+R3
+R7
+!s100 QGG[N<`[=2:IRQoiO0<^U0
+!s85 0
+!s101 -O0
+vrefresh
+IL4YaP5M_>[A9SKnHZVIU80
+V6_RK26dn^bb9E7ngl`GGB1
+R1
+w1497517614
+8D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/refresh.v
+FD:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/refresh.v
+L0 4
+R2
+r1
+31
+R3
+R7
+!s100 2g<fX^W:SeaW@5SlRAfjY2
+!s85 0
+!s101 -O0
+vrgb565_data
+IR[O5afFzYO<oGj1OzhX593
+VJZDR6Z@k]O_D80SjMDH1H3
+R1
+w1508985411
+8D:/class170715/video20171022/camera_ov7670_sobel/ov7670/rgb565_data.v
+FD:/class170715/video20171022/camera_ov7670_sobel/ov7670/rgb565_data.v
+L0 1
+R2
+r1
+31
+R3
+R6
+!s100 o>i=f9?W>6WG1fb=7[:=G3
+!s85 0
+!s101 -O0
+vsdram_control
+IciXT4F4NlzzAWfAIRZL[62
+VA3H<`F7^L6A>Y_fm[E9QK2
+R1
+w1497680608
+8D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/sdram_control.v
+FD:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/sdram_control.v
+L0 4
+R2
+r1
+31
+R3
+R7
+!s100 T7I[7@5?jiRm[Y192z[iC0
+!s85 0
+!s101 -O0
+vsdram_controller
+I`;0Lflz988l[WH2:16kH63
+V<>T=O[W2TmTjb>elnNaMC0
+R1
+w1497939120
+8D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/sdram_controller.v
+FD:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/sdram_controller.v
+L0 4
+R2
+r1
+31
+R3
+R7
+!s100 kJ2GT718c22Pj]MUB5k440
+!s85 0
+!s101 -O0
+vsdram_fsm
+IB[0n]g3k;85=_Y>MRc_NT3
+VdTY6O1kfOS7kf]SLV0Q2e2
+R1
+Z9 w1497517612
+8D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/sdram_fsm.v
+FD:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/sdram_fsm.v
+L0 4
+R2
+r1
+31
+R3
+R7
+!s100 ^Gn`bI@ZJnm^3D7NmAVJ11
+!s85 0
+!s101 -O0
+vsobel_filter_zx1702
+IQFd<aNS^BAfFihiiV`RXj0
+VTdCBRIba<ZlFdnL[RJ9g23
+R1
+w1508944662
+8D:/class170715/video20171022/camera_ov7670_sobel/sobel/sobel_filter_zx1702.v
+FD:/class170715/video20171022/camera_ov7670_sobel/sobel/sobel_filter_zx1702.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!s100 B=007WTg7@=cfHDbjh8S13
+!s85 0
+!s101 -O0
+vtimer
+Ik99=61CF0RS>IP9?1K9_H0
+V1]3<LlIYS9UXa8Xz]SmnF0
+R1
+R9
+8D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/timer.v
+FD:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/timer.v
+L0 4
+R2
+r1
+31
+R3
+R7
+!s100 =?8[2UokkAT?<;`PzD1mR1
+!s85 0
+!s101 -O0
+vvga565_sobel
+InL^S9SdZUSAh<jk7=7kQn1
+VMaM58@EMXOMPT1eddVNII0
+R1
+w1509456207
+8D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel.v
+FD:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel.v
+L0 1
+R2
+r1
+31
+R3
+Z10 !s92 -vlog01compat -work work +incdir+D:/class170715/video20171022/camera_ov7670_sobel/vga_src -O0
+!s100 ;;<e^d?l1jf>hRF31@93U1
+!s85 0
+!s101 -O0
+vvga565_sobel_tb
+IKa0[_e5[FGIFDWcN2UNGN1
+V8PWFSZQ37_96TY3k=FDM[0
+R1
+w1509438220
+8D:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel_tb.v
+FD:/class170715/video20171022/camera_ov7670_sobel/vga_src/vga565_sobel_tb.v
+L0 3
+R2
+r1
+31
+R3
+R10
+!s100 KFRnB=zKNLSF08UDZ0WSg2
+!s85 0
+!s101 -O0
+vwr_fifo
+I2Wll1En4@TKU@JgDTX@l81
+V@h9bzKP259TX0:XRc8faH0
+R1
+w1497754654
+8D:/class170715/video20171022/camera_ov7670_sobel/ip/wr_fifo.v
+FD:/class170715/video20171022/camera_ov7670_sobel/ip/wr_fifo.v
+L0 39
+R2
+r1
+31
+R3
+R8
+!s100 3<;h2E5d5z4feaeW_9jdZ3
+!s85 0
+!s101 -O0
+vwrite
+IK^;]WVK4_aC>UiSdT=dJi1
+VBSjWUn[FHcOoGFbFJL0W30
+R1
+w1497680660
+8D:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/write.v
+FD:/class170715/video20171022/camera_ov7670_sobel/sdram_controller/write.v
+L0 3
+R2
+r1
+31
+R3
+R7
+!s100 0]RVg^4L@MmH09ek:jR^I0
+!s85 0
+!s101 -O0
