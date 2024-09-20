@@ -1,0 +1,65 @@
+# Reading pref.tcl
+# //  ModelSim SE-64 2020.4 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do tlc549_drive_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap work rtl_work 
+# Modifying C:/modeltech64_2020.4/win64/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/tlc549_drive/rtl {D:/git-repository/fpga_training/tlc549_drive/rtl/tlc549_drive.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 09:45:50 on Sep 20,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/tlc549_drive/rtl" D:/git-repository/fpga_training/tlc549_drive/rtl/tlc549_drive.v 
+# -- Compiling module tlc549_drive
+# 
+# Top level modules:
+# 	tlc549_drive
+# End time: 09:45:50 on Sep 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/tlc549_drive/prj/../sim {D:/git-repository/fpga_training/tlc549_drive/prj/../sim/tlc549_drive_tb.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 09:45:51 on Sep 20,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/tlc549_drive/prj/../sim" D:/git-repository/fpga_training/tlc549_drive/prj/../sim/tlc549_drive_tb.v 
+# -- Compiling module tlc549_drive_tb
+# 
+# Top level modules:
+# 	tlc549_drive_tb
+# End time: 09:45:51 on Sep 20,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tlc549_drive_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tlc549_drive_tb 
+# Start time: 09:45:51 on Sep 20,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tlc549_drive_tb(fast)
+# Loading work.tlc549_drive(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $finish    : D:/git-repository/fpga_training/tlc549_drive/prj/../sim/tlc549_drive_tb.v(51)
+#    Time: 27280100 ps  Iteration: 0  Instance: /tlc549_drive_tb
+# 1
+# Break in Module tlc549_drive_tb at D:/git-repository/fpga_training/tlc549_drive/prj/../sim/tlc549_drive_tb.v line 51
+# End time: 10:40:38 on Sep 20,2024, Elapsed time: 0:54:47
+# Errors: 0, Warnings: 0

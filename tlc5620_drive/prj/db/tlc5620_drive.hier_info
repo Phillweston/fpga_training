@@ -1,0 +1,55 @@
+|tlc5620_top
+sys_clk => sys_clk.IN1
+sys_rst_n => sys_rst_n.IN1
+tlc5620_clk << tlc5620_drive:tlc5620_drive_inst.tlc5620_clk
+tlc5620_data << tlc5620_drive:tlc5620_drive_inst.tlc5620_data
+tlc5620_load << tlc5620_drive:tlc5620_drive_inst.tlc5620_load
+tlc5620_ldac << tlc5620_drive:tlc5620_drive_inst.tlc5620_ldac
+
+
+|tlc5620_top|tlc5620_drive:tlc5620_drive_inst
+sys_clk => tlc5620_ldac~reg0.CLK
+sys_clk => tlc5620_load~reg0.CLK
+sys_clk => tlc5620_data~reg0.CLK
+sys_clk => tlc5620_clk~reg0.CLK
+sys_clk => cnt[0].CLK
+sys_clk => cnt[1].CLK
+sys_clk => cnt[2].CLK
+sys_clk => cnt[3].CLK
+sys_clk => cnt[4].CLK
+sys_clk => cnt[5].CLK
+sys_clk => cnt[6].CLK
+sys_clk => cnt[7].CLK
+sys_clk => cnt[8].CLK
+sys_clk => cnt[9].CLK
+sys_rst_n => cnt[0].ACLR
+sys_rst_n => cnt[1].ACLR
+sys_rst_n => cnt[2].ACLR
+sys_rst_n => cnt[3].ACLR
+sys_rst_n => cnt[4].ACLR
+sys_rst_n => cnt[5].ACLR
+sys_rst_n => cnt[6].ACLR
+sys_rst_n => cnt[7].ACLR
+sys_rst_n => cnt[8].ACLR
+sys_rst_n => cnt[9].ACLR
+sys_rst_n => tlc5620_ldac~reg0.ACLR
+sys_rst_n => tlc5620_load~reg0.ACLR
+sys_rst_n => tlc5620_data~reg0.ACLR
+sys_rst_n => tlc5620_clk~reg0.ACLR
+cmd_code[0] => Selector1.IN24
+cmd_code[1] => Selector1.IN23
+cmd_code[2] => Selector1.IN22
+cmd_code[3] => Selector1.IN21
+cmd_code[4] => Selector1.IN20
+cmd_code[5] => Selector1.IN19
+cmd_code[6] => Selector1.IN18
+cmd_code[7] => Selector1.IN17
+cmd_code[8] => Selector1.IN16
+cmd_code[9] => Selector1.IN15
+cmd_code[10] => Selector1.IN14
+tlc5620_clk <= tlc5620_clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tlc5620_data <= tlc5620_data~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tlc5620_load <= tlc5620_load~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tlc5620_ldac <= tlc5620_ldac~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

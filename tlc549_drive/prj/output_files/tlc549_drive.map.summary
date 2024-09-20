@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Sep 20 10:43:53 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : tlc549_drive
+Top-level Entity Name : digital_voltmeter
+Family : Cyclone IV E
+Total logic elements : 822
+    Total combinational functions : 822
+    Dedicated logic registers : 136
+Total registers : 136
+Total pins : 18
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

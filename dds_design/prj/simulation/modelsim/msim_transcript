@@ -1,0 +1,170 @@
+# Reading D:/altera/modelsim_ase/tcl/vsim/pref.tcl 
+# do dds_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/dds_design/src {C:/Users/86150/Desktop/dds_design/src/seven_tube_drive.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module seven_tube_drive
+# 
+# Top level modules:
+# 	seven_tube_drive
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/dds_design/src {C:/Users/86150/Desktop/dds_design/src/shift_adjust.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module shift_adjust
+# 
+# Top level modules:
+# 	shift_adjust
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/dds_design/src {C:/Users/86150/Desktop/dds_design/src/bin2bcd.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bin2bcd
+# 
+# Top level modules:
+# 	bin2bcd
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/dds_design/src {C:/Users/86150/Desktop/dds_design/src/adjust.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adjust
+# 
+# Top level modules:
+# 	adjust
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/dds_design/src {C:/Users/86150/Desktop/dds_design/src/check_edge.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module check_edge
+# 
+# Top level modules:
+# 	check_edge
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/dds_design/src {C:/Users/86150/Desktop/dds_design/src/key_filter.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module key_filter
+# 
+# Top level modules:
+# 	key_filter
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/dds_design/src {C:/Users/86150/Desktop/dds_design/src/dds.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dds
+# 
+# Top level modules:
+# 	dds
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/dds_design/src {C:/Users/86150/Desktop/dds_design/src/key_handle.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module key_handle
+# 
+# Top level modules:
+# 	key_handle
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/dds_design/src {C:/Users/86150/Desktop/dds_design/src/control.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/dds_design/src {C:/Users/86150/Desktop/dds_design/src/show.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module show
+# 
+# Top level modules:
+# 	show
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/dds_design/src {C:/Users/86150/Desktop/dds_design/src/wave_generate.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module wave_generate
+# 
+# Top level modules:
+# 	wave_generate
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/dds_design/src {C:/Users/86150/Desktop/dds_design/src/addr_control.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module addr_control
+# 
+# Top level modules:
+# 	addr_control
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/dds_design/prj/ipcore/rom1024x8 {C:/Users/86150/Desktop/dds_design/prj/ipcore/rom1024x8/rom1024x8.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module rom1024x8
+# 
+# Top level modules:
+# 	rom1024x8
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/dds_design/src {C:/Users/86150/Desktop/dds_design/src/adjust_a.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module adjust_a
+# 
+# Top level modules:
+# 	adjust_a
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/dds_design/prj/ipcore/div {C:/Users/86150/Desktop/dds_design/prj/ipcore/div/mydiv.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mydiv
+# 
+# Top level modules:
+# 	mydiv
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/dds_design/prj/../sim {C:/Users/86150/Desktop/dds_design/prj/../sim/dds_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module dds_tb
+# 
+# Top level modules:
+# 	dds_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  dds_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps dds_tb 
+# Loading work.dds_tb
+# Loading work.dds
+# Loading work.key_handle
+# Loading work.key_filter
+# Loading work.check_edge
+# Loading work.control
+# Loading work.show
+# Loading work.bin2bcd
+# Loading work.seven_tube_drive
+# Loading work.wave_generate
+# Loading work.addr_control
+# Loading work.mydiv
+# Loading lpm_ver.lpm_divide
+# Loading lpm_ver.LPM_HINT_EVALUATION
+# Loading work.rom1024x8
+# Loading altera_mf_ver.altsyncram
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.adjust_a
+# Loading work.shift_adjust
+# Loading work.adjust
+# ** Warning: (vsim-3017) C:/Users/86150/Desktop/dds_design/prj/../sim/dds_tb.v(32): [TFMPC] - Too few port connections. Expected 9, found 7.
+# 
+#         Region: /dds_tb/dds_inst
+# ** Warning: (vsim-3722) C:/Users/86150/Desktop/dds_design/prj/../sim/dds_tb.v(32): [TFMPC] - Missing connection for port 'sel'.
+# 
+# ** Warning: (vsim-3722) C:/Users/86150/Desktop/dds_design/prj/../sim/dds_tb.v(32): [TFMPC] - Missing connection for port 'seg'.
+# 
+# ** Warning: (vsim-3016) C:/Users/86150/Desktop/dds_design/src/wave_generate.v(36): Port type is incompatible with connection (port 'clock').
+# 
+#         Region: /dds_tb/dds_inst/wave_generate_inst/rom1024x8_inst
+# ** Warning: (vsim-3016) C:/Users/86150/Desktop/dds_design/prj/ipcore/rom1024x8/rom1024x8.v(85): Port type is incompatible with connection (port 'clock0').
+# 
+#         Region: /dds_tb/dds_inst/wave_generate_inst/rom1024x8_inst/altsyncram_component
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave -position insertpoint sim:/dds_tb/dds_inst/*
+restart
+# ** Warning: (vsim-3017) C:/Users/86150/Desktop/dds_design/prj/../sim/dds_tb.v(32): [TFMPC] - Too few port connections. Expected 9, found 7.
+# 
+#         Region: /dds_tb/dds_inst
+# ** Warning: (vsim-3722) C:/Users/86150/Desktop/dds_design/prj/../sim/dds_tb.v(32): [TFMPC] - Missing connection for port 'sel'.
+# 
+# ** Warning: (vsim-3722) C:/Users/86150/Desktop/dds_design/prj/../sim/dds_tb.v(32): [TFMPC] - Missing connection for port 'seg'.
+# 
+# ** Warning: (vsim-3016) C:/Users/86150/Desktop/dds_design/src/wave_generate.v(36): Port type is incompatible with connection (port 'clock').
+# 
+#         Region: /dds_tb/dds_inst/wave_generate_inst/rom1024x8_inst
+# ** Warning: (vsim-3016) C:/Users/86150/Desktop/dds_design/prj/ipcore/rom1024x8/rom1024x8.v(85): Port type is incompatible with connection (port 'clock0').
+# 
+#         Region: /dds_tb/dds_inst/wave_generate_inst/rom1024x8_inst/altsyncram_component
+run -all
+# Break in Module dds_tb at C:/Users/86150/Desktop/dds_design/prj/../sim/dds_tb.v line 136

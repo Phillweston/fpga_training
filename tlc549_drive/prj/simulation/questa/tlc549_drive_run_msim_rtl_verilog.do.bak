@@ -1,0 +1,15 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/tlc549_drive/rtl {D:/git-repository/fpga_training/tlc549_drive/rtl/seven_tube.v}
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/tlc549_drive/rtl {D:/git-repository/fpga_training/tlc549_drive/rtl/seg_ctrl.v}
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/tlc549_drive/rtl {D:/git-repository/fpga_training/tlc549_drive/rtl/flag_led.v}
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/tlc549_drive/rtl {D:/git-repository/fpga_training/tlc549_drive/rtl/clk_div_2khz.v}
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/tlc549_drive/rtl {D:/git-repository/fpga_training/tlc549_drive/rtl/tlc549_top.v}
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/tlc549_drive/rtl {D:/git-repository/fpga_training/tlc549_drive/rtl/key_filter.v}
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/tlc549_drive/rtl {D:/git-repository/fpga_training/tlc549_drive/rtl/tlc549_drive.v}
+

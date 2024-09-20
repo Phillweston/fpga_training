@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "tlc5620_clk",
+					"strict" : false
+				},
+				{
+					"name" : "tlc5620_data",
+					"strict" : false
+				},
+				{
+					"name" : "tlc5620_load",
+					"strict" : false
+				},
+				{
+					"name" : "tlc5620_ldac",
+					"strict" : false
+				},
+				{
+					"name" : "sys_clk",
+					"strict" : false
+				},
+				{
+					"name" : "sys_rst_n",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

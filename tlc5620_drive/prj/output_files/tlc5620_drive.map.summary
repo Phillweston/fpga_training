@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Sep 18 16:55:02 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : tlc5620_drive
+Top-level Entity Name : tlc5620_top
+Family : Cyclone IV E
+Total logic elements : 98
+    Total combinational functions : 97
+    Dedicated logic registers : 22
+Total registers : 22
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 2,816
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,37 @@
+
+State Machine - |dds|show:show_inst|seven_tube_drive:seven_tube_drive_inst|c_state
+Name c_state.S5 c_state.S4 c_state.S3 c_state.S2 c_state.S1 c_state.S0 
+c_state.S0 0 0 0 0 0 0 
+c_state.S1 0 0 0 0 1 1 
+c_state.S2 0 0 0 1 0 1 
+c_state.S3 0 0 1 0 0 1 
+c_state.S4 0 1 0 0 0 1 
+c_state.S5 1 0 0 0 0 1 
+
+State Machine - |dds|key_handle:key_handle_inst|key_filter:key_filter_key_a|c_state
+Name c_state.OFF_SHAKE c_state.ON c_state.ON_SHAKE c_state.OFF 
+c_state.OFF 0 0 0 0 
+c_state.ON_SHAKE 0 0 1 1 
+c_state.ON 0 1 0 1 
+c_state.OFF_SHAKE 1 0 0 1 
+
+State Machine - |dds|key_handle:key_handle_inst|key_filter:key_filter_key_freq_sub|c_state
+Name c_state.OFF_SHAKE c_state.ON c_state.ON_SHAKE c_state.OFF 
+c_state.OFF 0 0 0 0 
+c_state.ON_SHAKE 0 0 1 1 
+c_state.ON 0 1 0 1 
+c_state.OFF_SHAKE 1 0 0 1 
+
+State Machine - |dds|key_handle:key_handle_inst|key_filter:key_filter_key_freq_add|c_state
+Name c_state.OFF_SHAKE c_state.ON c_state.ON_SHAKE c_state.OFF 
+c_state.OFF 0 0 0 0 
+c_state.ON_SHAKE 0 0 1 1 
+c_state.ON 0 1 0 1 
+c_state.OFF_SHAKE 1 0 0 1 
+
+State Machine - |dds|key_handle:key_handle_inst|key_filter:key_filter_key_wave|c_state
+Name c_state.OFF_SHAKE c_state.ON c_state.ON_SHAKE c_state.OFF 
+c_state.OFF 0 0 0 0 
+c_state.ON_SHAKE 0 0 1 1 
+c_state.ON 0 1 0 1 
+c_state.OFF_SHAKE 1 0 0 1 

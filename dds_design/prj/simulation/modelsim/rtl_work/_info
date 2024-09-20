@@ -1,0 +1,325 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\86150\Desktop\dds_design\prj\simulation\modelsim
+vaddr_control
+ICOLjM0OTHhC50zeU:aD0f3
+V1fXRhLKnHccec<>LYQREn1
+Z1 dC:\Users\86150\Desktop\dds_design\prj\simulation\modelsim
+w1521100574
+8C:/Users/86150/Desktop/dds_design/src/addr_control.v
+FC:/Users/86150/Desktop/dds_design/src/addr_control.v
+L0 6
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/86150/Desktop/dds_design/src -O0
+!i10b 1
+!s100 e?gmSJYMbLWA1oL@6M[6>3
+!s85 0
+!s108 1713756448.937000
+!s107 C:/Users/86150/Desktop/dds_design/src/addr_control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/dds_design/src|C:/Users/86150/Desktop/dds_design/src/addr_control.v|
+!s101 -O0
+vadjust
+Ij4Ynmn>@13cn8]hE=CfL71
+Vjf>_jWnOTBF992ho:CBU82
+R1
+w1516763692
+8C:/Users/86150/Desktop/dds_design/src/adjust.v
+FC:/Users/86150/Desktop/dds_design/src/adjust.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 J[jm2KY<MDX2=SCIZKf>G3
+!s85 0
+!s108 1713756447.759000
+!s107 C:/Users/86150/Desktop/dds_design/src/adjust.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/dds_design/src|C:/Users/86150/Desktop/dds_design/src/adjust.v|
+!s101 -O0
+vadjust_a
+IbkAG[nbi;S07C0R]h7FBS2
+VX<L]8Chae@f2D7dh:mKnW3
+R1
+w1521100792
+8C:/Users/86150/Desktop/dds_design/src/adjust_a.v
+FC:/Users/86150/Desktop/dds_design/src/adjust_a.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 S@bRF<GM27IToU6RSnG;z0
+!s85 0
+!s108 1713756449.172000
+!s107 C:/Users/86150/Desktop/dds_design/src/adjust_a.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/dds_design/src|C:/Users/86150/Desktop/dds_design/src/adjust_a.v|
+!s101 -O0
+vbin2bcd
+Ie;G`l2G;[;XBMRlP;mcAg0
+VGTTb3^=c<?LK4ADm^9?]10
+R1
+w1517619760
+8C:/Users/86150/Desktop/dds_design/src/bin2bcd.v
+FC:/Users/86150/Desktop/dds_design/src/bin2bcd.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 3M9e`czNN[4lfZ2Hh3mgT1
+!s85 0
+!s108 1713756447.541000
+!s107 C:/Users/86150/Desktop/dds_design/src/bin2bcd.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/dds_design/src|C:/Users/86150/Desktop/dds_design/src/bin2bcd.v|
+!s101 -O0
+vcheck_edge
+I?BHVCM:7KT;KlLKU?7_243
+VTA<i`QAh<Q?mdJ[C4c;<;0
+R1
+w1516504008
+8C:/Users/86150/Desktop/dds_design/src/check_edge.v
+FC:/Users/86150/Desktop/dds_design/src/check_edge.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 m^^=igO:=TFV6RPBHb@ZO0
+!s85 0
+!s108 1713756447.914000
+!s107 C:/Users/86150/Desktop/dds_design/src/check_edge.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/dds_design/src|C:/Users/86150/Desktop/dds_design/src/check_edge.v|
+!s101 -O0
+vcontrol
+Icg`ho=KBYSnn?3z?ZfG8_2
+VcJ48OMa4`MKZ_gBb8YdoL2
+R1
+w1521100394
+8C:/Users/86150/Desktop/dds_design/src/control.v
+FC:/Users/86150/Desktop/dds_design/src/control.v
+L0 2
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 8O1ONWomIJLbZlg@E6NkO0
+!s85 0
+!s108 1713756448.497000
+!s107 C:/Users/86150/Desktop/dds_design/src/control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/dds_design/src|C:/Users/86150/Desktop/dds_design/src/control.v|
+!s101 -O0
+vdds
+Ih5YEoNIY_bH`_R]Rz6llg3
+VC4kGdmXM5SmJ7X>km?e_N3
+R1
+w1517636038
+8C:/Users/86150/Desktop/dds_design/src/dds.v
+FC:/Users/86150/Desktop/dds_design/src/dds.v
+L0 30
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 <Ci[6=i<D8@kDGL?FbdOS1
+!s85 0
+!s108 1713756448.198000
+!s107 C:/Users/86150/Desktop/dds_design/src/dds.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/dds_design/src|C:/Users/86150/Desktop/dds_design/src/dds.v|
+!s101 -O0
+vdds_tb
+!i10b 1
+!s100 9^:;1o[>=[ZK9DJH>_2aW1
+I]Oc7=_<<JCM5m5YlkbLT61
+V4EiVYVFe0MTbQd_NoP1<L1
+R1
+w1517638000
+8C:/Users/86150/Desktop/dds_design/prj/../sim/dds_tb.v
+FC:/Users/86150/Desktop/dds_design/prj/../sim/dds_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1713756449.458000
+!s107 C:/Users/86150/Desktop/dds_design/prj/../sim/dds_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/dds_design/prj/../sim|C:/Users/86150/Desktop/dds_design/prj/../sim/dds_tb.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+C:/Users/86150/Desktop/dds_design/prj/../sim -O0
+vkey_filter
+Il[H65]FRg;R_;z?5oALSi1
+V0:XfEHVZo=fkL2e=@BN:a1
+R1
+w1684379608
+8C:/Users/86150/Desktop/dds_design/src/key_filter.v
+FC:/Users/86150/Desktop/dds_design/src/key_filter.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 8DLJW<HHC1VB5GoRnO;K:3
+!s85 0
+!s108 1713756448.077000
+!s107 C:/Users/86150/Desktop/dds_design/src/key_filter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/dds_design/src|C:/Users/86150/Desktop/dds_design/src/key_filter.v|
+!s101 -O0
+vkey_handle
+ICD;mD_lkD44j=28_S2J_f2
+VA:T1;b<;WCX?XhO5@gf@R3
+R1
+w1517473240
+8C:/Users/86150/Desktop/dds_design/src/key_handle.v
+FC:/Users/86150/Desktop/dds_design/src/key_handle.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 hLif1WVgf5zgmfXm]WNBh0
+!s85 0
+!s108 1713756448.333000
+!s107 C:/Users/86150/Desktop/dds_design/src/key_handle.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/dds_design/src|C:/Users/86150/Desktop/dds_design/src/key_handle.v|
+!s101 -O0
+vmydiv
+Ih]?gNQVS[Nil_[jf44Rc41
+V39QkN=JLXacinhgUB9gHD1
+R1
+w1517618540
+8C:/Users/86150/Desktop/dds_design/prj/ipcore/div/mydiv.v
+FC:/Users/86150/Desktop/dds_design/prj/ipcore/div/mydiv.v
+L0 39
+R2
+r1
+31
+R3
+!i10b 1
+!s100 LC8MecdUZ6VD^::OB4HjZ3
+!s85 0
+!s108 1713756449.312000
+!s107 C:/Users/86150/Desktop/dds_design/prj/ipcore/div/mydiv.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/dds_design/prj/ipcore/div|C:/Users/86150/Desktop/dds_design/prj/ipcore/div/mydiv.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/86150/Desktop/dds_design/prj/ipcore/div -O0
+vrom1024x8
+I5USom98XRoGOkE?PMo:5n2
+VjAjd;bo=e^Y48;jE4aY@]1
+R1
+w1521097346
+8C:/Users/86150/Desktop/dds_design/prj/ipcore/rom1024x8/rom1024x8.v
+FC:/Users/86150/Desktop/dds_design/prj/ipcore/rom1024x8/rom1024x8.v
+L0 43
+R2
+r1
+31
+R3
+!i10b 1
+!s100 PdKeaNcz0oco7D<0SDnZ;3
+!s85 0
+!s108 1713756449.042000
+!s107 C:/Users/86150/Desktop/dds_design/prj/ipcore/rom1024x8/rom1024x8.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/dds_design/prj/ipcore/rom1024x8|C:/Users/86150/Desktop/dds_design/prj/ipcore/rom1024x8/rom1024x8.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/86150/Desktop/dds_design/prj/ipcore/rom1024x8 -O0
+vseven_tube_drive
+II[k4Y>iV>[b<2hMc1]FZb2
+V9EH07m?[cOgn4Q2SF[NcQ2
+R1
+w1517634246
+8C:/Users/86150/Desktop/dds_design/src/seven_tube_drive.v
+FC:/Users/86150/Desktop/dds_design/src/seven_tube_drive.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 O_3ljbR3f_AoH9AA?W=Hl1
+!s85 0
+!s108 1713756447.164000
+!s107 C:/Users/86150/Desktop/dds_design/src/seven_tube_drive.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/dds_design/src|C:/Users/86150/Desktop/dds_design/src/seven_tube_drive.v|
+!s101 -O0
+vshift_adjust
+IdeJmZ7JEE3dT:5EOF`D4C2
+V]_VYMBh^Mg?5FYl<bB:DD1
+R1
+w1517620128
+8C:/Users/86150/Desktop/dds_design/src/shift_adjust.v
+FC:/Users/86150/Desktop/dds_design/src/shift_adjust.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 gFGkaHX138m_@XhHZ10g[1
+!s85 0
+!s108 1713756447.345000
+!s107 C:/Users/86150/Desktop/dds_design/src/shift_adjust.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/dds_design/src|C:/Users/86150/Desktop/dds_design/src/shift_adjust.v|
+!s101 -O0
+vshow
+I3QRHbF;jSPS1_@<n[]43?0
+VZ2`L@Ihhb_HKJaJVhZeoH0
+R1
+w1517475354
+8C:/Users/86150/Desktop/dds_design/src/show.v
+FC:/Users/86150/Desktop/dds_design/src/show.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 0kSDz`HXa:lPaK`onLT<82
+!s85 0
+!s108 1713756448.655000
+!s107 C:/Users/86150/Desktop/dds_design/src/show.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/dds_design/src|C:/Users/86150/Desktop/dds_design/src/show.v|
+!s101 -O0
+vwave_generate
+I2dRWTeaK@7a:YIAgj=dGc3
+VZczifSf=T2X4Ob9n66PKG1
+R1
+w1521099260
+8C:/Users/86150/Desktop/dds_design/src/wave_generate.v
+FC:/Users/86150/Desktop/dds_design/src/wave_generate.v
+L0 6
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 Q775?`1_aJgbGg`;^756?0
+!s85 0
+!s108 1713756448.796000
+!s107 C:/Users/86150/Desktop/dds_design/src/wave_generate.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/dds_design/src|C:/Users/86150/Desktop/dds_design/src/wave_generate.v|
+!s101 -O0

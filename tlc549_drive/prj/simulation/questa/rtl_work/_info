@@ -1,0 +1,68 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/git-repository/fpga_training/tlc549_drive/prj/simulation/questa
+T_opt
+!s110 1726796753
+VIUdWejKH6SY[m32UYzf>20
+04 15 4 work tlc549_drive_tb fast 0
+=1-00d861e3bc76-66ecd3d1-1bd-1332c
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vtlc549_drive
+!s110 1726796750
+!i10b 1
+!s100 0@g^Ln4Hl>S][42n?Z2]42
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IkmG<T>7Wh?G3:BZQc:Ic73
+R0
+w1726795724
+8D:/git-repository/fpga_training/tlc549_drive/rtl/tlc549_drive.v
+FD:/git-repository/fpga_training/tlc549_drive/rtl/tlc549_drive.v
+!i122 0
+L0 1 129
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2020.4;71
+r1
+!s85 0
+31
+!s108 1726796750.000000
+!s107 D:/git-repository/fpga_training/tlc549_drive/rtl/tlc549_drive.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/tlc549_drive/rtl|D:/git-repository/fpga_training/tlc549_drive/rtl/tlc549_drive.v|
+!i113 0
+Z5 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/tlc549_drive/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vtlc549_drive_tb
+!s110 1726796751
+!i10b 1
+!s100 RBH1hRV>eIZ:nIYZ4gech1
+R2
+I;`H?74LHA4G4iBBfd5CJk2
+R0
+w1726796561
+8D:/git-repository/fpga_training/tlc549_drive/prj/../sim/tlc549_drive_tb.v
+FD:/git-repository/fpga_training/tlc549_drive/prj/../sim/tlc549_drive_tb.v
+!i122 1
+L0 3 51
+R3
+R4
+r1
+!s85 0
+31
+!s108 1726796751.000000
+!s107 D:/git-repository/fpga_training/tlc549_drive/prj/../sim/tlc549_drive_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/tlc549_drive/prj/../sim|D:/git-repository/fpga_training/tlc549_drive/prj/../sim/tlc549_drive_tb.v|
+!i113 0
+R5
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/tlc549_drive/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
