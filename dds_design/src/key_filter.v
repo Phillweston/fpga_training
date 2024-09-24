@@ -1,10 +1,7 @@
 module key_filter (
-
 	input	wire				clk,
 	input	wire				rst_n,
-	
 	input	wire				ikey,
-	
 	output	reg					okey
 );
 

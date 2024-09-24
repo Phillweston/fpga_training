@@ -1,17 +1,15 @@
 //控制模块
 module control (
-	
 	input	wire			clk,						//时钟
 	input	wire			rst_n,					//复位按键低电平有效
 	input	wire			wave_flag,				//控制选择波形按键
 	input	wire			key_freq_add_flag,	//控制波形频率递增
 	input	wire			key_freq_sub_flag,	//控制波形频率递减
 	input	wire			key_a_flag,				//控制幅度按键
-		
 	output	reg		[1:0]	wave_sel,		//输出选择的波形
 	output	reg		[19:0]	wave_freq,	//输出所对应波形的频率
 	output	reg		[1:0]	wave_a			//输出所对应波形的幅度
-	);
+);
 
 	parameter	Base_freq = 500;				//基础设置的频率为500HZ
 	

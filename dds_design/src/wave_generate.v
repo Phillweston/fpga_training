@@ -4,14 +4,11 @@
 //ROM所存的波形：512-767		方波
 //ROM所存的波形：768-1023		三角波
 module	wave_generate(
-
 	input	wire			clk,
 	input	wire			rst_n,
-	
 	input	wire	[1:0]	wave_sel,
 	input	wire	[19:0]	wave_freq,
 	input	wire	[1:0]	wave_a,
-	
 	output	wire	[9:0]	wave_data
 );
 	

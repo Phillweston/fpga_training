@@ -45,6 +45,6 @@ module wave_generate_tb;
 		wave_sel = 3;
 		#200000;
 		$stop;
-	end 
+	end
 
-endmodule 
+endmodule

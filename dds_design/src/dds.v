@@ -35,7 +35,6 @@ module dds (
 	);
 	
 	control control_inst(
-	
 		.clk					(clk),
 		.rst_n					(rst_n),
 		.wave_flag				(wave_flag),

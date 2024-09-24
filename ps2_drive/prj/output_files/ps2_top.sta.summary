@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'sys_clk'
+Slack : -8.653
+TNS   : -597.605
+
+Type  : Slow 1200mV 85C Model Setup 'seven_tube:seven_tube_inst|clk_div_2khz:clk_div_2khz_inst|clk_out'
+Slack : -0.407
+TNS   : -1.099
+
+Type  : Slow 1200mV 85C Model Hold 'seven_tube:seven_tube_inst|clk_div_2khz:clk_div_2khz_inst|clk_out'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'sys_clk'
+Slack : 0.452
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sys_clk'
+Slack : -3.000
+TNS   : -206.719
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'seven_tube:seven_tube_inst|clk_div_2khz:clk_div_2khz_inst|clk_out'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Slow 1200mV 0C Model Setup 'sys_clk'
+Slack : -8.080
+TNS   : -549.146
+
+Type  : Slow 1200mV 0C Model Setup 'seven_tube:seven_tube_inst|clk_div_2khz:clk_div_2khz_inst|clk_out'
+Slack : -0.268
+TNS   : -0.692
+
+Type  : Slow 1200mV 0C Model Hold 'seven_tube:seven_tube_inst|clk_div_2khz:clk_div_2khz_inst|clk_out'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'sys_clk'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sys_clk'
+Slack : -3.000
+TNS   : -206.719
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'seven_tube:seven_tube_inst|clk_div_2khz:clk_div_2khz_inst|clk_out'
+Slack : -1.487
+TNS   : -4.461
+
+Type  : Fast 1200mV 0C Model Setup 'sys_clk'
+Slack : -3.047
+TNS   : -177.087
+
+Type  : Fast 1200mV 0C Model Setup 'seven_tube:seven_tube_inst|clk_div_2khz:clk_div_2khz_inst|clk_out'
+Slack : 0.379
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'sys_clk'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'seven_tube:seven_tube_inst|clk_div_2khz:clk_div_2khz_inst|clk_out'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sys_clk'
+Slack : -3.000
+TNS   : -149.209
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'seven_tube:seven_tube_inst|clk_div_2khz:clk_div_2khz_inst|clk_out'
+Slack : -1.000
+TNS   : -3.000
+
+------------------------------------------------------------

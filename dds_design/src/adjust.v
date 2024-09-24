@@ -1,7 +1,5 @@
 module adjust (
-
 	input	wire	[3:0]	idata,
-	
 	output	wire	[3:0]	odata
 );
 

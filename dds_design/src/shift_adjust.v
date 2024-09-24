@@ -1,7 +1,5 @@
 module shift_adjust (
-
 	input	wire	[43:0]	idata,
-	
 	output	wire	[43:0]	odata
 );
 	
@@ -19,14 +17,7 @@ module shift_adjust (
 			);
 		end
 	endgenerate
-	
-	
-	
-	// adjust adjust_inst0(.idata(temp[25:22]),.odata(odata[25:22]));
-	// adjust adjust_inst1(.idata(temp[21:18]),.odata(odata[21:18]));
-	// adjust adjust_inst2(.idata(temp[17:14]),.odata(odata[17:14]));
-	// adjust adjust_inst3(.idata(temp[13:10]),.odata(odata[13:10]));
-	
+
 	assign odata[19:0] = temp[19:0];
-	
+
 endmodule 

@@ -1,17 +1,15 @@
 module	key_handle (
-
 	input	wire			clk,
 	input	wire			rst_n,
 	input	wire			key_freq_add,
 	input	wire			key_freq_sub,
 	input	wire			key_a,
 	input	wire			key_wave,
-	
 	output	wire			wave_flag,
 	output	wire			key_freq_add_flag,
 	output	wire			key_freq_sub_flag,
 	output	wire			key_a_flag
-	);
+);
 	
 	wire			wave_keywave;
 	wire			wave_key_freq_add;
@@ -19,7 +17,6 @@ module	key_handle (
 	wire			wave_key_a;
 	
 	key_filter key_filter_key_wave(
-
 		.clk				(clk),
 		.rst_n				(rst_n),
 		

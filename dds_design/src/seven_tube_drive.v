@@ -1,10 +1,7 @@
 module seven_tube_drive (
-
 	input	wire				clk,
 	input	wire				rst_n,
-	
 	input	wire	[23:0]		idata,
-	
 	output	reg		[7:0]		seven_tube_seg,
 	output	reg		[2:0]		seven_tube_sel
 );

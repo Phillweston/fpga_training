@@ -1,9 +1,6 @@
 module check_edge (
-	
 	input	wire				clk,
-	
 	input	wire				wave,
-	
 	output	wire				pos_flag,
 	output	wire				neg_flag
 );

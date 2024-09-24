@@ -1,0 +1,231 @@
+# Reading pref.tcl
+# //  ModelSim SE-64 2020.4 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do ps2_top_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap work rtl_work 
+# Modifying C:/modeltech64_2020.4/win64/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ps2_drive/rtl {D:/git-repository/fpga_training/ps2_drive/rtl/ps2_drive.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:02:13 on Sep 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ps2_drive/rtl" D:/git-repository/fpga_training/ps2_drive/rtl/ps2_drive.v 
+# -- Compiling module ps2_drive
+# 
+# Top level modules:
+# 	ps2_drive
+# End time: 10:02:13 on Sep 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ps2_drive/prj/../sim {D:/git-repository/fpga_training/ps2_drive/prj/../sim/ps2_drive_tb.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:02:16 on Sep 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ps2_drive/prj/../sim" D:/git-repository/fpga_training/ps2_drive/prj/../sim/ps2_drive_tb.v 
+# -- Compiling module ps2_drive_tb
+# 
+# Top level modules:
+# 	ps2_drive_tb
+# End time: 10:02:16 on Sep 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  ps2_drive_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" ps2_drive_tb 
+# Start time: 10:02:16 on Sep 24,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: D:/git-repository/fpga_training/ps2_drive/prj/../sim/ps2_drive_tb.v(13): (vopt-2685) [TFMPC] - Too few port connections for 'ps2_drive_inst'.  Expected 7, found 6.
+# ** Warning: D:/git-repository/fpga_training/ps2_drive/prj/../sim/ps2_drive_tb.v(13): (vopt-2718) [TFMPC] - Missing connection for port 'key_value'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.ps2_drive_tb(fast)
+# Loading work.ps2_drive(fast)
+add wave -position end  sim:/ps2_drive_tb/sys_rst_n
+add wave -position end  sim:/ps2_drive_tb/sys_clk
+add wave -position end  sim:/ps2_drive_tb/rec_flag
+add wave -position end  sim:/ps2_drive_tb/rec_data
+add wave -position end  sim:/ps2_drive_tb/ps2_sda
+add wave -position end  sim:/ps2_drive_tb/ps2_sclk
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : D:/git-repository/fpga_training/ps2_drive/prj/../sim/ps2_drive_tb.v(41)
+#    Time: 2760200100 ps  Iteration: 0  Instance: /ps2_drive_tb
+# Break in Module ps2_drive_tb at D:/git-repository/fpga_training/ps2_drive/prj/../sim/ps2_drive_tb.v line 41
+run
+run
+run
+run
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ps2_drive/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/ps2_drive/sim/ps2_drive_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:04:15 on Sep 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ps2_drive/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/ps2_drive/sim/ps2_drive_tb.v 
+# -- Compiling module ps2_drive_tb
+# 
+# Top level modules:
+# 	ps2_drive_tb
+# End time: 10:04:15 on Sep 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ps2_drive/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/ps2_drive/rtl/ps2_drive.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:04:15 on Sep 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ps2_drive/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/ps2_drive/rtl/ps2_drive.v 
+# -- Compiling module ps2_drive
+# 
+# Top level modules:
+# 	ps2_drive
+# End time: 10:04:15 on Sep 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: D:/git-repository/fpga_training/ps2_drive/sim/ps2_drive_tb.v(13): (vopt-2685) [TFMPC] - Too few port connections for 'ps2_drive_inst'.  Expected 7, found 6.
+# ** Warning: D:/git-repository/fpga_training/ps2_drive/sim/ps2_drive_tb.v(13): (vopt-2718) [TFMPC] - Missing connection for port 'key_value'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.ps2_drive_tb(fast)
+# Loading work.ps2_drive(fast)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# ** Note: $stop    : D:/git-repository/fpga_training/ps2_drive/sim/ps2_drive_tb.v(41)
+#    Time: 2760200100 ps  Iteration: 0  Instance: /ps2_drive_tb
+# Break in Module ps2_drive_tb at D:/git-repository/fpga_training/ps2_drive/sim/ps2_drive_tb.v line 41
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position end  sim:/ps2_drive_tb/ps2_drive_inst/temp_data
+add wave -position end  sim:/ps2_drive_tb/ps2_drive_inst/sys_rst_n
+add wave -position end  sim:/ps2_drive_tb/ps2_drive_inst/sys_clk
+add wave -position end  sim:/ps2_drive_tb/ps2_drive_inst/sclk_last_2
+add wave -position end  sim:/ps2_drive_tb/ps2_drive_inst/sclk_last
+add wave -position end  sim:/ps2_drive_tb/ps2_drive_inst/sclk_falling_edge_reg
+add wave -position end  sim:/ps2_drive_tb/ps2_drive_inst/sclk_falling_edge
+add wave -position end  sim:/ps2_drive_tb/ps2_drive_inst/rec_flag
+add wave -position end  sim:/ps2_drive_tb/ps2_drive_inst/rec_data
+add wave -position end  sim:/ps2_drive_tb/ps2_drive_inst/ps2_sda
+add wave -position end  sim:/ps2_drive_tb/ps2_drive_inst/ps2_sclk
+add wave -position end  sim:/ps2_drive_tb/ps2_drive_inst/long_code_flag
+add wave -position end  sim:/ps2_drive_tb/ps2_drive_inst/key_value
+add wave -position end  sim:/ps2_drive_tb/ps2_drive_inst/cnt
+add wave -position end  sim:/ps2_drive_tb/ps2_drive_inst/break_code_flag
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.ps2_drive_tb(fast)
+# Loading work.ps2_drive(fast)
+run
+run
+run
+# ** Note: $stop    : D:/git-repository/fpga_training/ps2_drive/sim/ps2_drive_tb.v(41)
+#    Time: 2760200100 ps  Iteration: 0  Instance: /ps2_drive_tb
+# Break in Module ps2_drive_tb at D:/git-repository/fpga_training/ps2_drive/sim/ps2_drive_tb.v line 41
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/git-repository/fpga_training/ps2_drive/prj/simulation/questa/wave.do
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ps2_drive/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/ps2_drive/sim/ps2_drive_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:29:12 on Sep 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ps2_drive/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/ps2_drive/sim/ps2_drive_tb.v 
+# -- Compiling module ps2_drive_tb
+# 
+# Top level modules:
+# 	ps2_drive_tb
+# End time: 10:29:13 on Sep 24,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ps2_drive/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/ps2_drive/rtl/ps2_drive.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:29:13 on Sep 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ps2_drive/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/ps2_drive/rtl/ps2_drive.v 
+# -- Compiling module ps2_drive
+# 
+# Top level modules:
+# 	ps2_drive
+# End time: 10:29:13 on Sep 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ps2_drive/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/ps2_drive/sim/ps2_drive_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:49:40 on Sep 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ps2_drive/prj/../sim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/ps2_drive/sim/ps2_drive_tb.v 
+# -- Compiling module ps2_drive_tb
+# 
+# Top level modules:
+# 	ps2_drive_tb
+# End time: 10:49:40 on Sep 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/ps2_drive/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/ps2_drive/rtl/ps2_drive.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:49:40 on Sep 24,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/ps2_drive/rtl" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact D:/git-repository/fpga_training/ps2_drive/rtl/ps2_drive.v 
+# -- Compiling module ps2_drive
+# 
+# Top level modules:
+# 	ps2_drive
+# End time: 10:49:40 on Sep 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: D:/git-repository/fpga_training/ps2_drive/sim/ps2_drive_tb.v(13): (vopt-2685) [TFMPC] - Too few port connections for 'ps2_drive_inst'.  Expected 7, found 6.
+# ** Warning: D:/git-repository/fpga_training/ps2_drive/sim/ps2_drive_tb.v(13): (vopt-2718) [TFMPC] - Missing connection for port 'key_value'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.ps2_drive_tb(fast)
+# Loading work.ps2_drive(fast)
+run
+run
+run
+run
+run
+# ** Note: $stop    : D:/git-repository/fpga_training/ps2_drive/sim/ps2_drive_tb.v(40)
+#    Time: 4900200100 ps  Iteration: 0  Instance: /ps2_drive_tb
+# Break in Module ps2_drive_tb at D:/git-repository/fpga_training/ps2_drive/sim/ps2_drive_tb.v line 40

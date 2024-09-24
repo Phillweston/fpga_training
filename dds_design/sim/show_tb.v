@@ -72,4 +72,4 @@ module	show_tb;
 		$stop;
 	end
 
-endmodule 
+endmodule

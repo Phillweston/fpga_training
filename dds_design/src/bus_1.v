@@ -1,6 +1,5 @@
 module bus_1 (
 	input	wire	[9:0]	in,
-	
 	output	wire	[10:0]	out
 );
 
