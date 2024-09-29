@@ -1,0 +1,246 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/git-repository/fpga_training/spi_flash/prj/simulation/questa
+T_opt
+!s110 1727316200
+VW4FkhU>IG4@DGDS`fe5lY0
+04 25 4 work tb_spi_flash_write_enable fast 0
+=1-00d861e3bc76-66f4c0e8-16f-10b24
+Z1 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;2020.4;71
+R0
+T_opt1
+!s110 1727430468
+VVL703;6mc[FfeZ4W1@MgE3
+04 15 4 work spi_flash_se_tb fast 0
+=1-00d861e3bc76-66f67f44-26e-27c0
+R1
+R2
+n@_opt1
+R3
+vacdc_check
+Z4 !s110 1727430466
+!i10b 1
+!s100 SOQLo=D3jSPcNn?Z]EnSM2
+Z5 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I7=@eFnX@KWzePFc0KGDG]1
+R0
+w1086255684
+8D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/acdc_check.v
+FD:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/acdc_check.v
+!i122 3
+L0 20 348
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z8 !s108 1727430466.000000
+!s107 D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/parameter.v|D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/acdc_check.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12|D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/acdc_check.v|
+!i113 0
+Z9 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z10 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vinternal_logic
+R4
+!i10b 1
+!s100 eXHFIj4<7agibJh>58D>J1
+R5
+IhT7jm=LA8XRUSPiP[@a8U1
+R0
+w1086255746
+8D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/internal_logic.v
+FD:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/internal_logic.v
+!i122 4
+L0 20 1576
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/parameter.v|D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/internal_logic.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12|D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/internal_logic.v|
+!i113 0
+R9
+R10
+R2
+vm25p16
+R4
+!i10b 1
+!s100 obO<nlOQYJPZ3DP1>8Q560
+R5
+IgfC28zQ?1TlN4VcOD4X432
+R0
+w1086255776
+8D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/M25p16.v
+FD:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/M25p16.v
+!i122 5
+L0 20 39
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/parameter.v|D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/M25p16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12|D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/M25p16.v|
+!i113 0
+R9
+R10
+R2
+vm25p16_driver
+R4
+!i10b 1
+!s100 `OUECmG^zV]PI@MmIQ;RL3
+R5
+I>d^n^WCg3X0nelHnQi7Q33
+R0
+w1727251731
+8D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/m25p16_driver.v
+FD:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/m25p16_driver.v
+!i122 6
+L0 20 1460
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/parameter.v|D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/m25p16_driver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12|D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/m25p16_driver.v|
+!i113 0
+R9
+R10
+R2
+vmemory_access
+R4
+!i10b 1
+!s100 5i>KUSEgi^CiDGLl?aPT?3
+R5
+I:HZNG5I6D5TKP2fmP9BNV3
+R0
+w1086255824
+8D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/memory_access.v
+FD:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/memory_access.v
+!i122 7
+L0 20 189
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/parameter.v|D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/memory_access.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12|D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/memory_access.v|
+!i113 0
+R9
+R10
+R2
+vspi_flash_se
+R4
+!i10b 1
+!s100 2CGG`DZjEAI=RWZdFVi0g1
+R5
+IZ<b6`]j[9`R_EEShP^N3l3
+R0
+w1727430137
+8D:/git-repository/fpga_training/spi_flash/rtl/spi_flash_se.v
+FD:/git-repository/fpga_training/spi_flash/rtl/spi_flash_se.v
+!i122 1
+L0 1 301
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/git-repository/fpga_training/spi_flash/rtl/spi_flash_se.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/spi_flash/rtl|D:/git-repository/fpga_training/spi_flash/rtl/spi_flash_se.v|
+!i113 0
+R9
+Z11 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/spi_flash/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vspi_flash_se_tb
+R4
+!i10b 1
+!s100 0R7a`Bg<:V0gVUk28GnFU1
+R5
+IDHKQ9K53I@N;7JBFzTK[l3
+R0
+w1727430207
+8D:/git-repository/fpga_training/spi_flash/prj/../sim/spi_flash_se_tb.v
+FD:/git-repository/fpga_training/spi_flash/prj/../sim/spi_flash_se_tb.v
+!i122 2
+L0 3 52
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 D:/git-repository/fpga_training/spi_flash/prj/../sim/spi_flash_se_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/spi_flash/prj/../sim|D:/git-repository/fpga_training/spi_flash/prj/../sim/spi_flash_se_tb.v|
+!i113 0
+R9
+!s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/spi_flash/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vspi_flash_wren
+R4
+!i10b 1
+!s100 _chk[6`IRb9zTjXDNF7ie1
+R5
+IVlm]ng2an:oleRQh070gf0
+R0
+w1727427015
+8D:/git-repository/fpga_training/spi_flash/rtl/spi_flash_wren.v
+FD:/git-repository/fpga_training/spi_flash/rtl/spi_flash_wren.v
+!i122 0
+L0 1 116
+R6
+R7
+r1
+!s85 0
+31
+!s108 1727430465.000000
+!s107 D:/git-repository/fpga_training/spi_flash/rtl/spi_flash_wren.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/spi_flash/rtl|D:/git-repository/fpga_training/spi_flash/rtl/spi_flash_wren.v|
+!i113 0
+R9
+R11
+R2
+vtestbench
+!s110 1727430467
+!i10b 1
+!s100 ;G>HEWGjGSA3R7F_SjFlN2
+R5
+I`eX=1^izATDj3BMa3U[3o3
+R0
+w1086256946
+8D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/testbench.v
+FD:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/testbench.v
+!i122 8
+L0 19 15
+R6
+R7
+r1
+!s85 0
+31
+!s108 1727430467.000000
+!s107 D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12|D:/git-repository/fpga_training/spi_flash/prj/../m25p16-vg-v12/testbench.v|
+!i113 0
+R9
+R10
+R2
