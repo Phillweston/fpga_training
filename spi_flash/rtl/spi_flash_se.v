@@ -282,6 +282,7 @@ module spi_flash_se (
                 end
                 10'd1 + 64 * `HALF: begin
                     spi_sck <= 1'b0;
+                    spi_cs_n <= 1'b1;
                 end
 
                 default: ;

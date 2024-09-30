@@ -343,6 +343,7 @@ module spi_flash_read (
                 end
                 10'd1 + 80 * `HALF: begin
                     spi_sck <= 1'b0;
+                    spi_cs_n <= 1'b1;
                 end
 
                 default: ;

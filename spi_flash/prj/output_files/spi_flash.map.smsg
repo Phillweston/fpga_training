@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at spi_flash_write_enable.v(34): always construct contains both blocking and non-blocking assignments File: D:/git-repository/fpga_training/spi_flash/rtl/spi_flash_write_enable.v Line: 34
+Warning (10268): Verilog HDL information at spi_flash_rdsr.v(36): always construct contains both blocking and non-blocking assignments File: D:/git-repository/fpga_training/spi_flash/rtl/spi_flash_rdsr.v Line: 36

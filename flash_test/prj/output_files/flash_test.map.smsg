@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at flash_ctrl.v(22): object "id" differs only in case from object "ID" in the same scope File: D:/git-repository/fpga_training/flash_test/rtl/flash_ctrl.v Line: 22

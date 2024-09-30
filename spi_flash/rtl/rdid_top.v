@@ -4,7 +4,7 @@ module rdid_top (
     input spi_miso,
     output spi_mosi,
     output spi_cs_n,
-    output spi_sclk
+    output spi_sck
 );
     wire sample_clk;
     wire locked;
@@ -25,7 +25,7 @@ module rdid_top (
         .spi_miso (spi_miso),
         .spi_mosi (spi_mosi),
         .spi_cs_n (spi_cs_n),
-        .spi_sck (spi_sclk),
+        .spi_sck (spi_sck),
         .flash_id (flash_id),
         .valid_id (valid_id)
     );

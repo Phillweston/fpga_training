@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Sep 30 19:21:36 2024
+Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+Revision Name : flash_test
+Top-level Entity Name : flash_test
+Family : Cyclone IV E
+Total logic elements : 79
+    Total combinational functions : 77
+    Dedicated logic registers : 29
+Total registers : 29
+Total pins : 43
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

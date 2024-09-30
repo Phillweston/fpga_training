@@ -41,7 +41,7 @@ module spi_flash_rdsr (
             data <= 8'h0;
         end else begin
             case (cnt)
-                8'd0: begin
+                10'd0: begin
                     spi_cs_n <= 1'b1;
                     spi_sck <= 1'b0;
                     spi_mosi <= 1'b0;
@@ -114,7 +114,7 @@ module spi_flash_rdsr (
                 end
                 10'd1 + 16 * `HALF: begin
                     spi_sck <= 1'b0;
-                    spi_mosi <= 1'b1;
+                    spi_mosi <= 1'b0;
                 end
 
                 // Read data from SPI in the positive edge of the clock
@@ -173,6 +173,7 @@ module spi_flash_rdsr (
                 end
                 10'd1 + 32 * `HALF: begin
                     spi_sck <= 1'b0;
+                    spi_cs_n = 1'b1;
                 end
 
                 default: ;

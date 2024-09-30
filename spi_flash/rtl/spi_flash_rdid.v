@@ -41,7 +41,7 @@ module spi_flash_rdid (
             id <= 24'h0;
         end else begin
             case (cnt)
-                8'd0: begin
+                10'd0: begin
                     spi_cs_n <= 1'b1;
                     spi_sck <= 1'b0;
                     spi_mosi <= 1'b0;
@@ -114,7 +114,7 @@ module spi_flash_rdid (
                 end
                 10'd1 + 16 * `HALF: begin
                     spi_sck <= 1'b0;
-                    spi_mosi <= 1'b1;
+                    spi_mosi <= 1'b0;       // release the MOSI line
                 end
 
                 // Read data from SPI in the positive edge of the clock

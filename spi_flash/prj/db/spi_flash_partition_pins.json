@@ -16,7 +16,103 @@
 					"strict" : false
 				},
 				{
-					"name" : "check_wip",
+					"name" : "flash_id[0]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[1]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[2]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[3]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[4]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[5]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[6]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[7]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[8]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[9]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[10]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[11]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[12]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[13]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[14]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[15]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[16]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[17]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[18]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[19]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[20]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[21]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[22]",
+					"strict" : false
+				},
+				{
+					"name" : "flash_id[23]",
+					"strict" : false
+				},
+				{
+					"name" : "valid_id",
 					"strict" : false
 				},
 				{
@@ -25,6 +121,26 @@
 				},
 				{
 					"name" : "sys_rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "spi_miso",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
 					"strict" : false
 				}
 			]

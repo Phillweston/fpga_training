@@ -431,6 +431,7 @@ module spi_flash_pp (
                 10'd1 + 98 * `HALF: begin
                     spi_sck <= 1'b1;
                     spi_mosi <= 1'b1;
+                    spi_cs_n <= 1'b1;
                 end
 
                 default: ;

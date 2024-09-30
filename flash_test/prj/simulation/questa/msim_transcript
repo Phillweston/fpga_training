@@ -1,0 +1,225 @@
+# Reading pref.tcl
+# //  ModelSim SE-64 2020.4 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do flash_test_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap work rtl_work 
+# Modifying C:/modeltech64_2020.4/win64/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/flash_test/rtl {D:/git-repository/fpga_training/flash_test/rtl/spi_tx.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 20:09:18 on Sep 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/flash_test/rtl" D:/git-repository/fpga_training/flash_test/rtl/spi_tx.v 
+# -- Compiling module spi_tx
+# 
+# Top level modules:
+# 	spi_tx
+# End time: 20:09:19 on Sep 30,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/flash_test/rtl {D:/git-repository/fpga_training/flash_test/rtl/spi_rx.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 20:09:19 on Sep 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/flash_test/rtl" D:/git-repository/fpga_training/flash_test/rtl/spi_rx.v 
+# -- Compiling module spi_rx
+# 
+# Top level modules:
+# 	spi_rx
+# End time: 20:09:19 on Sep 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/flash_test/rtl {D:/git-repository/fpga_training/flash_test/rtl/spi_8bit_driver.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 20:09:19 on Sep 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/flash_test/rtl" D:/git-repository/fpga_training/flash_test/rtl/spi_8bit_driver.v 
+# -- Compiling module spi_8bit_driver
+# 
+# Top level modules:
+# 	spi_8bit_driver
+# End time: 20:09:19 on Sep 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/flash_test/rtl {D:/git-repository/fpga_training/flash_test/rtl/flash_test.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 20:09:19 on Sep 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/flash_test/rtl" D:/git-repository/fpga_training/flash_test/rtl/flash_test.v 
+# -- Compiling module flash_test
+# 
+# Top level modules:
+# 	flash_test
+# End time: 20:09:19 on Sep 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/flash_test/rtl {D:/git-repository/fpga_training/flash_test/rtl/flash_ctrl.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 20:09:19 on Sep 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/flash_test/rtl" D:/git-repository/fpga_training/flash_test/rtl/flash_ctrl.v 
+# -- Compiling module flash_ctrl
+# 
+# Top level modules:
+# 	flash_ctrl
+# End time: 20:09:19 on Sep 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12 {D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/testbench.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 20:09:19 on Sep 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12" D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/testbench.v 
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# End time: 20:09:19 on Sep 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12 {D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/parameter.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 20:09:19 on Sep 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12" D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/parameter.v 
+# End time: 20:09:19 on Sep 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12 {D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/memory_access.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 20:09:19 on Sep 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12" D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/memory_access.v 
+# -- Compiling module memory_access
+# 
+# Top level modules:
+# 	memory_access
+# End time: 20:09:20 on Sep 30,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12 {D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/m25p16_driver.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 20:09:20 on Sep 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12" D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/m25p16_driver.v 
+# -- Compiling module m25p16_driver
+# 
+# Top level modules:
+# 	m25p16_driver
+# End time: 20:09:20 on Sep 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12 {D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/M25p16.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 20:09:20 on Sep 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12" D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/M25p16.v 
+# -- Compiling module m25p16
+# 
+# Top level modules:
+# 	m25p16
+# End time: 20:09:20 on Sep 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12 {D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/internal_logic.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 20:09:20 on Sep 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12" D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/internal_logic.v 
+# -- Compiling module internal_logic
+# 
+# Top level modules:
+# 	internal_logic
+# End time: 20:09:20 on Sep 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12 {D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/acdc_check.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 20:09:20 on Sep 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12" D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/acdc_check.v 
+# -- Compiling module acdc_check
+# 
+# Top level modules:
+# 	acdc_check
+# End time: 20:09:20 on Sep 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/git-repository/fpga_training/flash_test/prj/../sim {D:/git-repository/fpga_training/flash_test/prj/../sim/flash_test_tb.v}
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 20:09:20 on Sep 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/git-repository/fpga_training/flash_test/prj/../sim" D:/git-repository/fpga_training/flash_test/prj/../sim/flash_test_tb.v 
+# -- Compiling module flash_test_tb
+# 
+# Top level modules:
+# 	flash_test_tb
+# End time: 20:09:20 on Sep 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  flash_test_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" flash_test_tb 
+# Start time: 20:09:20 on Sep 30,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "flash_ctrl(fast)".
+# Loading work.flash_test_tb(fast)
+# Loading work.flash_test(fast)
+# Loading work.flash_ctrl(fast)
+# Loading work.spi_8bit_driver(fast)
+# Loading work.spi_rx(fast)
+# Loading work.spi_tx(fast)
+# Loading work.m25p16(fast)
+# Loading work.memory_access(fast)
+# Loading work.acdc_check(fast)
+# Loading work.internal_logic(fast)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#                    0 : NOTE : Load memory with Initial content
+# ** Warning: (vsim-7) Failed to open readmem file "initM25P16.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/memory_access.v(58)
+#    Time: 0 ps  Iteration: 0  Instance: /flash_test_tb/m25p16_inst/mem_access
+#                    0 : NOTE : Initial Load End
+#             13970000:  NOTE : Bulk erase cycle has begun
+#             14170000:  NOTE : Only a Read Status Register instruction will be valid
+#             17970000:  NOTE : Bulk erase cycle is finished
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.flash_test_tb(fast)
+# Loading work.flash_test(fast)
+# Loading work.flash_ctrl(fast)
+# Loading work.spi_8bit_driver(fast)
+# Loading work.spi_rx(fast)
+# Loading work.spi_tx(fast)
+# Loading work.m25p16(fast)
+# Loading work.memory_access(fast)
+# Loading work.acdc_check(fast)
+# Loading work.internal_logic(fast)
+add wave -position end  sim:/flash_test_tb/flash_test_inst/spi_8bit_driver_inst/spi_rx_inst/temp_data
+add wave -position end  sim:/flash_test_tb/flash_test_inst/spi_8bit_driver_inst/spi_rx_inst/sys_rst_n
+add wave -position end  sim:/flash_test_tb/flash_test_inst/spi_8bit_driver_inst/spi_rx_inst/sys_clk
+add wave -position end  sim:/flash_test_tb/flash_test_inst/spi_8bit_driver_inst/spi_rx_inst/spi_sclk
+add wave -position end  sim:/flash_test_tb/flash_test_inst/spi_8bit_driver_inst/spi_rx_inst/spi_miso
+add wave -position end  sim:/flash_test_tb/flash_test_inst/spi_8bit_driver_inst/spi_rx_inst/rx_done
+add wave -position end  sim:/flash_test_tb/flash_test_inst/spi_8bit_driver_inst/spi_rx_inst/rx_data
+add wave -position end  sim:/flash_test_tb/flash_test_inst/spi_8bit_driver_inst/spi_rx_inst/HALF
+add wave -position end  sim:/flash_test_tb/flash_test_inst/spi_8bit_driver_inst/spi_rx_inst/en_rx
+add wave -position end  sim:/flash_test_tb/flash_test_inst/spi_8bit_driver_inst/spi_rx_inst/cnt
+add wave -position end  sim:/flash_test_tb/flash_test_inst/spi_8bit_driver_inst/spi_tx_inst/tx_done
+add wave -position end  sim:/flash_test_tb/flash_test_inst/spi_8bit_driver_inst/spi_tx_inst/tx_data
+add wave -position end  sim:/flash_test_tb/flash_test_inst/spi_8bit_driver_inst/spi_tx_inst/sys_rst_n
+add wave -position end  sim:/flash_test_tb/flash_test_inst/spi_8bit_driver_inst/spi_tx_inst/sys_clk
+add wave -position end  sim:/flash_test_tb/flash_test_inst/spi_8bit_driver_inst/spi_tx_inst/spi_sclk
+add wave -position end  sim:/flash_test_tb/flash_test_inst/spi_8bit_driver_inst/spi_tx_inst/spi_mosi
+add wave -position end  sim:/flash_test_tb/flash_test_inst/spi_8bit_driver_inst/spi_tx_inst/HALF
+add wave -position end  sim:/flash_test_tb/flash_test_inst/spi_8bit_driver_inst/spi_tx_inst/en_tx
+add wave -position end  sim:/flash_test_tb/flash_test_inst/spi_8bit_driver_inst/spi_tx_inst/cnt
+run
+#                    0 : NOTE : Load memory with Initial content
+# ** Warning: (vsim-7) Failed to open readmem file "initM25P16.txt" in read mode.
+# No such file or directory. (errno = ENOENT)    : D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/memory_access.v(58)
+#    Time: 0 ps  Iteration: 0  Instance: /flash_test_tb/m25p16_inst/mem_access
+#                    0 : NOTE : Initial Load End
+#             13970000:  NOTE : Bulk erase cycle has begun
+#             14170000:  NOTE : Only a Read Status Register instruction will be valid
+#             17970000:  NOTE : Bulk erase cycle is finished
+# End time: 21:32:38 on Sep 30,2024, Elapsed time: 1:23:18
+# Errors: 0, Warnings: 1

@@ -108,6 +108,7 @@ module spi_flash_wren (
                 8'd1 + 16 * `HALF: begin
                     spi_sck <= 1'b0;
                     spi_mosi <= 1'b1;
+                    spi_cs_n <= 1'b1;
                 end
                 default: ;
             endcase

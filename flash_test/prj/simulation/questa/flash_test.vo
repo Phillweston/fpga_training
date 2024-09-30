@@ -1,0 +1,2734 @@
+// Copyright (C) 2024  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition"
+
+// DATE "09/30/2024 19:21:53"
+
+// 
+// Device: Altera EP4CE10F17C8 Package FBGA256
+// 
+
+// 
+// This Verilog file should be used for Questa Intel FPGA (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module flash_test (
+	sys_clk,
+	sys_rst_n,
+	se_flag,
+	be_flag,
+	pp_flag,
+	read_flag,
+	addr,
+	len,
+	spi_miso,
+	busy,
+	spi_sclk,
+	spi_cs_n,
+	spi_mosi);
+input 	sys_clk;
+input 	sys_rst_n;
+input 	se_flag;
+input 	be_flag;
+input 	pp_flag;
+input 	read_flag;
+input 	[23:0] addr;
+input 	[7:0] len;
+input 	spi_miso;
+output 	busy;
+output 	spi_sclk;
+output 	spi_cs_n;
+output 	spi_mosi;
+
+// Design Ports Information
+// se_flag	=>  Location: PIN_N12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// be_flag	=>  Location: PIN_J6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// pp_flag	=>  Location: PIN_J2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// read_flag	=>  Location: PIN_N6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[0]	=>  Location: PIN_F6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[1]	=>  Location: PIN_R13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[2]	=>  Location: PIN_R14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[3]	=>  Location: PIN_T15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[4]	=>  Location: PIN_N3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[5]	=>  Location: PIN_R10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[6]	=>  Location: PIN_L10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[7]	=>  Location: PIN_R5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[8]	=>  Location: PIN_M8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[9]	=>  Location: PIN_J12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[10]	=>  Location: PIN_A14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[11]	=>  Location: PIN_B5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[12]	=>  Location: PIN_T12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[13]	=>  Location: PIN_B14,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[14]	=>  Location: PIN_B6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[15]	=>  Location: PIN_K5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[16]	=>  Location: PIN_C3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[17]	=>  Location: PIN_B9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[18]	=>  Location: PIN_G1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[19]	=>  Location: PIN_F15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[20]	=>  Location: PIN_G5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[21]	=>  Location: PIN_M11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[22]	=>  Location: PIN_E16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// addr[23]	=>  Location: PIN_E15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// len[0]	=>  Location: PIN_D11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// len[1]	=>  Location: PIN_B7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// len[2]	=>  Location: PIN_R9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// len[3]	=>  Location: PIN_C11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// len[4]	=>  Location: PIN_A6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// len[5]	=>  Location: PIN_T3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// len[6]	=>  Location: PIN_N11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// len[7]	=>  Location: PIN_L4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// spi_miso	=>  Location: PIN_M7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// busy	=>  Location: PIN_F9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// spi_sclk	=>  Location: PIN_A10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// spi_cs_n	=>  Location: PIN_A15,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// spi_mosi	=>  Location: PIN_F11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// sys_clk	=>  Location: PIN_E1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// sys_rst_n	=>  Location: PIN_M2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \se_flag~input_o ;
+wire \be_flag~input_o ;
+wire \pp_flag~input_o ;
+wire \read_flag~input_o ;
+wire \addr[0]~input_o ;
+wire \addr[1]~input_o ;
+wire \addr[2]~input_o ;
+wire \addr[3]~input_o ;
+wire \addr[4]~input_o ;
+wire \addr[5]~input_o ;
+wire \addr[6]~input_o ;
+wire \addr[7]~input_o ;
+wire \addr[8]~input_o ;
+wire \addr[9]~input_o ;
+wire \addr[10]~input_o ;
+wire \addr[11]~input_o ;
+wire \addr[12]~input_o ;
+wire \addr[13]~input_o ;
+wire \addr[14]~input_o ;
+wire \addr[15]~input_o ;
+wire \addr[16]~input_o ;
+wire \addr[17]~input_o ;
+wire \addr[18]~input_o ;
+wire \addr[19]~input_o ;
+wire \addr[20]~input_o ;
+wire \addr[21]~input_o ;
+wire \addr[22]~input_o ;
+wire \addr[23]~input_o ;
+wire \len[0]~input_o ;
+wire \len[1]~input_o ;
+wire \len[2]~input_o ;
+wire \len[3]~input_o ;
+wire \len[4]~input_o ;
+wire \len[5]~input_o ;
+wire \len[6]~input_o ;
+wire \len[7]~input_o ;
+wire \spi_miso~input_o ;
+wire \busy~output_o ;
+wire \spi_sclk~output_o ;
+wire \spi_cs_n~output_o ;
+wire \spi_mosi~output_o ;
+wire \sys_clk~input_o ;
+wire \sys_clk~inputclkctrl_outclk ;
+wire \spi_8bit_driver_inst|spi_rx_inst|cnt[0]~10_combout ;
+wire \sys_rst_n~input_o ;
+wire \sys_rst_n~inputclkctrl_outclk ;
+wire \spi_8bit_driver_inst|spi_tx_inst|cnt[0]~10_combout ;
+wire \flash_ctrl_inst|en_tx~0_combout ;
+wire \flash_ctrl_inst|en_tx~q ;
+wire \spi_8bit_driver_inst|spi_tx_inst|cnt[4]~21 ;
+wire \spi_8bit_driver_inst|spi_tx_inst|cnt[5]~22_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|cnt[5]~23 ;
+wire \spi_8bit_driver_inst|spi_tx_inst|cnt[6]~24_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|cnt[9]~14_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|cnt[6]~25 ;
+wire \spi_8bit_driver_inst|spi_tx_inst|cnt[7]~26_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|cnt[7]~27 ;
+wire \spi_8bit_driver_inst|spi_tx_inst|cnt[8]~28_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|cnt[8]~29 ;
+wire \spi_8bit_driver_inst|spi_tx_inst|cnt[9]~30_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|Equal1~5_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|cnt[9]~15_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|cnt[0]~11 ;
+wire \spi_8bit_driver_inst|spi_tx_inst|cnt[1]~12_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|cnt[1]~13 ;
+wire \spi_8bit_driver_inst|spi_tx_inst|cnt[2]~16_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|cnt[2]~17 ;
+wire \spi_8bit_driver_inst|spi_tx_inst|cnt[3]~18_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|cnt[3]~19 ;
+wire \spi_8bit_driver_inst|spi_tx_inst|cnt[4]~20_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|Equal2~0_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|WideNor0~36_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|Equal17~0_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|tx_done~q ;
+wire \flash_ctrl_inst|state~0_combout ;
+wire \flash_ctrl_inst|state~q ;
+wire \flash_ctrl_inst|en_rx~0_combout ;
+wire \flash_ctrl_inst|en_rx~q ;
+wire \spi_8bit_driver_inst|spi_rx_inst|Selector0~5_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|cnt[6]~24 ;
+wire \spi_8bit_driver_inst|spi_rx_inst|cnt[7]~25_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|cnt[7]~26 ;
+wire \spi_8bit_driver_inst|spi_rx_inst|cnt[8]~27_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|cnt[8]~28 ;
+wire \spi_8bit_driver_inst|spi_rx_inst|cnt[9]~29_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|Selector0~15_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|cnt[9]~16_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|cnt[0]~11 ;
+wire \spi_8bit_driver_inst|spi_rx_inst|cnt[1]~12_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|cnt[1]~13 ;
+wire \spi_8bit_driver_inst|spi_rx_inst|cnt[2]~14_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|cnt[2]~15 ;
+wire \spi_8bit_driver_inst|spi_rx_inst|cnt[3]~17_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|cnt[3]~18 ;
+wire \spi_8bit_driver_inst|spi_rx_inst|cnt[4]~19_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|cnt[4]~20 ;
+wire \spi_8bit_driver_inst|spi_rx_inst|cnt[5]~21_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|cnt[5]~22 ;
+wire \spi_8bit_driver_inst|spi_rx_inst|cnt[6]~23_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|Selector0~14_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|Selector0~11_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|Selector0~12_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|Selector0~13_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|Selector0~8_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|Selector0~9_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|Selector0~10_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|Selector0~16_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|Selector0~7_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|Selector0~18_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|Selector0~4_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|Selector0~6_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|Selector0~17_combout ;
+wire \spi_8bit_driver_inst|spi_rx_inst|spi_sclk~q ;
+wire \spi_8bit_driver_inst|spi_tx_inst|WideNor0~27_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|WideNor0~23_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|WideNor0~11_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|WideNor0~7_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|WideNor0~43_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|Equal1~7_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|Equal7~0_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|Equal1~4_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|Equal2~1_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|WideNor0~37_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|Selector0~19_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|Selector0~6_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|Selector0~3_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|Selector0~23_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|Equal8~0_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|Equal8~1_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|Equal12~0_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|Selector0~20_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|WideNor0~44_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|WideNor0~40_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|WideNor0~39_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|Equal6~1_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|Equal6~0_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|Equal4~0_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|WideNor0~38_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|Equal1~6_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|WideNor0~42_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|WideNor0~41_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|Selector0~21_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|Selector0~22_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|spi_sclk~q ;
+wire \spi_8bit_driver_inst|spi_sclk~combout ;
+wire \flash_ctrl_inst|spi_cs_n~feeder_combout ;
+wire \flash_ctrl_inst|spi_cs_n~q ;
+wire \flash_ctrl_inst|tx_data[7]~feeder_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|Selector1~0_combout ;
+wire \spi_8bit_driver_inst|spi_tx_inst|spi_mosi~q ;
+wire [9:0] \spi_8bit_driver_inst|spi_rx_inst|cnt ;
+wire [9:0] \spi_8bit_driver_inst|spi_tx_inst|cnt ;
+wire [7:0] \flash_ctrl_inst|tx_data ;
+
+
+hard_block auto_generated_inst(
+	.devpor(devpor),
+	.devclrn(devclrn),
+	.devoe(devoe));
+
+// Location: IOOBUF_X23_Y24_N16
+cycloneive_io_obuf \busy~output (
+	.i(vcc),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\busy~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \busy~output .bus_hold = "false";
+defparam \busy~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X21_Y24_N9
+cycloneive_io_obuf \spi_sclk~output (
+	.i(\spi_8bit_driver_inst|spi_sclk~combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\spi_sclk~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \spi_sclk~output .bus_hold = "false";
+defparam \spi_sclk~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X21_Y24_N2
+cycloneive_io_obuf \spi_cs_n~output (
+	.i(!\flash_ctrl_inst|spi_cs_n~q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\spi_cs_n~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \spi_cs_n~output .bus_hold = "false";
+defparam \spi_cs_n~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X23_Y24_N23
+cycloneive_io_obuf \spi_mosi~output (
+	.i(\spi_8bit_driver_inst|spi_tx_inst|spi_mosi~q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\spi_mosi~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \spi_mosi~output .bus_hold = "false";
+defparam \spi_mosi~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y11_N8
+cycloneive_io_ibuf \sys_clk~input (
+	.i(sys_clk),
+	.ibar(gnd),
+	.o(\sys_clk~input_o ));
+// synopsys translate_off
+defparam \sys_clk~input .bus_hold = "false";
+defparam \sys_clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: CLKCTRL_G2
+cycloneive_clkctrl \sys_clk~inputclkctrl (
+	.ena(vcc),
+	.inclk({vcc,vcc,vcc,\sys_clk~input_o }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\sys_clk~inputclkctrl_outclk ));
+// synopsys translate_off
+defparam \sys_clk~inputclkctrl .clock_type = "global clock";
+defparam \sys_clk~inputclkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y21_N8
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|cnt[0]~10 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|cnt[0]~10_combout  = \spi_8bit_driver_inst|spi_rx_inst|cnt [0] $ (VCC)
+// \spi_8bit_driver_inst|spi_rx_inst|cnt[0]~11  = CARRY(\spi_8bit_driver_inst|spi_rx_inst|cnt [0])
+
+	.dataa(gnd),
+	.datab(\spi_8bit_driver_inst|spi_rx_inst|cnt [0]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|cnt[0]~10_combout ),
+	.cout(\spi_8bit_driver_inst|spi_rx_inst|cnt[0]~11 ));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[0]~10 .lut_mask = 16'h33CC;
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[0]~10 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y11_N15
+cycloneive_io_ibuf \sys_rst_n~input (
+	.i(sys_rst_n),
+	.ibar(gnd),
+	.o(\sys_rst_n~input_o ));
+// synopsys translate_off
+defparam \sys_rst_n~input .bus_hold = "false";
+defparam \sys_rst_n~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: CLKCTRL_G4
+cycloneive_clkctrl \sys_rst_n~inputclkctrl (
+	.ena(vcc),
+	.inclk({vcc,vcc,vcc,\sys_rst_n~input_o }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\sys_rst_n~inputclkctrl_outclk ));
+// synopsys translate_off
+defparam \sys_rst_n~inputclkctrl .clock_type = "global clock";
+defparam \sys_rst_n~inputclkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: LCCOMB_X25_Y20_N8
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|cnt[0]~10 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|cnt[0]~10_combout  = \spi_8bit_driver_inst|spi_tx_inst|cnt [0] $ (VCC)
+// \spi_8bit_driver_inst|spi_tx_inst|cnt[0]~11  = CARRY(\spi_8bit_driver_inst|spi_tx_inst|cnt [0])
+
+	.dataa(gnd),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [0]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|cnt[0]~10_combout ),
+	.cout(\spi_8bit_driver_inst|spi_tx_inst|cnt[0]~11 ));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[0]~10 .lut_mask = 16'h33CC;
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[0]~10 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N16
+cycloneive_lcell_comb \flash_ctrl_inst|en_tx~0 (
+// Equation(s):
+// \flash_ctrl_inst|en_tx~0_combout  = !\flash_ctrl_inst|state~q 
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\flash_ctrl_inst|state~q ),
+	.cin(gnd),
+	.combout(\flash_ctrl_inst|en_tx~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \flash_ctrl_inst|en_tx~0 .lut_mask = 16'h00FF;
+defparam \flash_ctrl_inst|en_tx~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X23_Y20_N17
+dffeas \flash_ctrl_inst|en_tx (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\flash_ctrl_inst|en_tx~0_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\flash_ctrl_inst|en_tx~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \flash_ctrl_inst|en_tx .is_wysiwyg = "true";
+defparam \flash_ctrl_inst|en_tx .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X25_Y20_N16
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|cnt[4]~20 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|cnt[4]~20_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [4] & (\spi_8bit_driver_inst|spi_tx_inst|cnt[3]~19  $ (GND))) # (!\spi_8bit_driver_inst|spi_tx_inst|cnt [4] & (!\spi_8bit_driver_inst|spi_tx_inst|cnt[3]~19  & 
+// VCC))
+// \spi_8bit_driver_inst|spi_tx_inst|cnt[4]~21  = CARRY((\spi_8bit_driver_inst|spi_tx_inst|cnt [4] & !\spi_8bit_driver_inst|spi_tx_inst|cnt[3]~19 ))
+
+	.dataa(gnd),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [4]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\spi_8bit_driver_inst|spi_tx_inst|cnt[3]~19 ),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|cnt[4]~20_combout ),
+	.cout(\spi_8bit_driver_inst|spi_tx_inst|cnt[4]~21 ));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[4]~20 .lut_mask = 16'hC30C;
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[4]~20 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: LCCOMB_X25_Y20_N18
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|cnt[5]~22 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|cnt[5]~22_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [5] & (!\spi_8bit_driver_inst|spi_tx_inst|cnt[4]~21 )) # (!\spi_8bit_driver_inst|spi_tx_inst|cnt [5] & ((\spi_8bit_driver_inst|spi_tx_inst|cnt[4]~21 ) # (GND)))
+// \spi_8bit_driver_inst|spi_tx_inst|cnt[5]~23  = CARRY((!\spi_8bit_driver_inst|spi_tx_inst|cnt[4]~21 ) # (!\spi_8bit_driver_inst|spi_tx_inst|cnt [5]))
+
+	.dataa(gnd),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [5]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\spi_8bit_driver_inst|spi_tx_inst|cnt[4]~21 ),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|cnt[5]~22_combout ),
+	.cout(\spi_8bit_driver_inst|spi_tx_inst|cnt[5]~23 ));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[5]~22 .lut_mask = 16'h3C3F;
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[5]~22 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X25_Y20_N19
+dffeas \spi_8bit_driver_inst|spi_tx_inst|cnt[5] (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_tx_inst|cnt[5]~22_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\flash_ctrl_inst|en_tx~q ),
+	.sload(gnd),
+	.ena(\spi_8bit_driver_inst|spi_tx_inst|cnt[9]~15_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_tx_inst|cnt [5]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[5] .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[5] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X25_Y20_N20
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|cnt[6]~24 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|cnt[6]~24_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [6] & (\spi_8bit_driver_inst|spi_tx_inst|cnt[5]~23  $ (GND))) # (!\spi_8bit_driver_inst|spi_tx_inst|cnt [6] & (!\spi_8bit_driver_inst|spi_tx_inst|cnt[5]~23  & 
+// VCC))
+// \spi_8bit_driver_inst|spi_tx_inst|cnt[6]~25  = CARRY((\spi_8bit_driver_inst|spi_tx_inst|cnt [6] & !\spi_8bit_driver_inst|spi_tx_inst|cnt[5]~23 ))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [6]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\spi_8bit_driver_inst|spi_tx_inst|cnt[5]~23 ),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|cnt[6]~24_combout ),
+	.cout(\spi_8bit_driver_inst|spi_tx_inst|cnt[6]~25 ));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[6]~24 .lut_mask = 16'hA50A;
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[6]~24 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X25_Y20_N21
+dffeas \spi_8bit_driver_inst|spi_tx_inst|cnt[6] (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_tx_inst|cnt[6]~24_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\flash_ctrl_inst|en_tx~q ),
+	.sload(gnd),
+	.ena(\spi_8bit_driver_inst|spi_tx_inst|cnt[9]~15_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_tx_inst|cnt [6]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[6] .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[6] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N14
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|cnt[9]~14 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|cnt[9]~14_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [6] & ((\spi_8bit_driver_inst|spi_tx_inst|cnt [4]) # (\spi_8bit_driver_inst|spi_tx_inst|cnt [5])))
+
+	.dataa(gnd),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [4]),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|cnt [6]),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|cnt [5]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|cnt[9]~14_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[9]~14 .lut_mask = 16'hF0C0;
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[9]~14 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X25_Y20_N22
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|cnt[7]~26 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|cnt[7]~26_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [7] & (!\spi_8bit_driver_inst|spi_tx_inst|cnt[6]~25 )) # (!\spi_8bit_driver_inst|spi_tx_inst|cnt [7] & ((\spi_8bit_driver_inst|spi_tx_inst|cnt[6]~25 ) # (GND)))
+// \spi_8bit_driver_inst|spi_tx_inst|cnt[7]~27  = CARRY((!\spi_8bit_driver_inst|spi_tx_inst|cnt[6]~25 ) # (!\spi_8bit_driver_inst|spi_tx_inst|cnt [7]))
+
+	.dataa(gnd),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [7]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\spi_8bit_driver_inst|spi_tx_inst|cnt[6]~25 ),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|cnt[7]~26_combout ),
+	.cout(\spi_8bit_driver_inst|spi_tx_inst|cnt[7]~27 ));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[7]~26 .lut_mask = 16'h3C3F;
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[7]~26 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X25_Y20_N23
+dffeas \spi_8bit_driver_inst|spi_tx_inst|cnt[7] (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_tx_inst|cnt[7]~26_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\flash_ctrl_inst|en_tx~q ),
+	.sload(gnd),
+	.ena(\spi_8bit_driver_inst|spi_tx_inst|cnt[9]~15_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_tx_inst|cnt [7]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[7] .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[7] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X25_Y20_N24
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|cnt[8]~28 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|cnt[8]~28_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [8] & (\spi_8bit_driver_inst|spi_tx_inst|cnt[7]~27  $ (GND))) # (!\spi_8bit_driver_inst|spi_tx_inst|cnt [8] & (!\spi_8bit_driver_inst|spi_tx_inst|cnt[7]~27  & 
+// VCC))
+// \spi_8bit_driver_inst|spi_tx_inst|cnt[8]~29  = CARRY((\spi_8bit_driver_inst|spi_tx_inst|cnt [8] & !\spi_8bit_driver_inst|spi_tx_inst|cnt[7]~27 ))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [8]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\spi_8bit_driver_inst|spi_tx_inst|cnt[7]~27 ),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|cnt[8]~28_combout ),
+	.cout(\spi_8bit_driver_inst|spi_tx_inst|cnt[8]~29 ));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[8]~28 .lut_mask = 16'hA50A;
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[8]~28 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X25_Y20_N25
+dffeas \spi_8bit_driver_inst|spi_tx_inst|cnt[8] (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_tx_inst|cnt[8]~28_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\flash_ctrl_inst|en_tx~q ),
+	.sload(gnd),
+	.ena(\spi_8bit_driver_inst|spi_tx_inst|cnt[9]~15_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_tx_inst|cnt [8]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[8] .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[8] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X25_Y20_N26
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|cnt[9]~30 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|cnt[9]~30_combout  = \spi_8bit_driver_inst|spi_tx_inst|cnt[8]~29  $ (\spi_8bit_driver_inst|spi_tx_inst|cnt [9])
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|cnt [9]),
+	.cin(\spi_8bit_driver_inst|spi_tx_inst|cnt[8]~29 ),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|cnt[9]~30_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[9]~30 .lut_mask = 16'h0FF0;
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[9]~30 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X25_Y20_N27
+dffeas \spi_8bit_driver_inst|spi_tx_inst|cnt[9] (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_tx_inst|cnt[9]~30_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\flash_ctrl_inst|en_tx~q ),
+	.sload(gnd),
+	.ena(\spi_8bit_driver_inst|spi_tx_inst|cnt[9]~15_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_tx_inst|cnt [9]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[9] .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[9] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X25_Y20_N2
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|Equal1~5 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|Equal1~5_combout  = (!\spi_8bit_driver_inst|spi_tx_inst|cnt [9] & (!\spi_8bit_driver_inst|spi_tx_inst|cnt [7] & !\spi_8bit_driver_inst|spi_tx_inst|cnt [8]))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [9]),
+	.datab(gnd),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|cnt [7]),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|cnt [8]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|Equal1~5_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal1~5 .lut_mask = 16'h0005;
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal1~5 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N24
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|cnt[9]~15 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|cnt[9]~15_combout  = (\flash_ctrl_inst|en_tx~q ) # ((!\spi_8bit_driver_inst|spi_tx_inst|cnt[9]~14_combout  & \spi_8bit_driver_inst|spi_tx_inst|Equal1~5_combout ))
+
+	.dataa(\flash_ctrl_inst|en_tx~q ),
+	.datab(gnd),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|cnt[9]~14_combout ),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|Equal1~5_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|cnt[9]~15_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[9]~15 .lut_mask = 16'hAFAA;
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[9]~15 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X25_Y20_N9
+dffeas \spi_8bit_driver_inst|spi_tx_inst|cnt[0] (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_tx_inst|cnt[0]~10_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\flash_ctrl_inst|en_tx~q ),
+	.sload(gnd),
+	.ena(\spi_8bit_driver_inst|spi_tx_inst|cnt[9]~15_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_tx_inst|cnt [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[0] .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X25_Y20_N10
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|cnt[1]~12 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|cnt[1]~12_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [1] & (!\spi_8bit_driver_inst|spi_tx_inst|cnt[0]~11 )) # (!\spi_8bit_driver_inst|spi_tx_inst|cnt [1] & ((\spi_8bit_driver_inst|spi_tx_inst|cnt[0]~11 ) # (GND)))
+// \spi_8bit_driver_inst|spi_tx_inst|cnt[1]~13  = CARRY((!\spi_8bit_driver_inst|spi_tx_inst|cnt[0]~11 ) # (!\spi_8bit_driver_inst|spi_tx_inst|cnt [1]))
+
+	.dataa(gnd),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [1]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\spi_8bit_driver_inst|spi_tx_inst|cnt[0]~11 ),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|cnt[1]~12_combout ),
+	.cout(\spi_8bit_driver_inst|spi_tx_inst|cnt[1]~13 ));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[1]~12 .lut_mask = 16'h3C3F;
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[1]~12 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X25_Y20_N11
+dffeas \spi_8bit_driver_inst|spi_tx_inst|cnt[1] (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_tx_inst|cnt[1]~12_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\flash_ctrl_inst|en_tx~q ),
+	.sload(gnd),
+	.ena(\spi_8bit_driver_inst|spi_tx_inst|cnt[9]~15_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_tx_inst|cnt [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[1] .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[1] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X25_Y20_N12
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|cnt[2]~16 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|cnt[2]~16_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [2] & (\spi_8bit_driver_inst|spi_tx_inst|cnt[1]~13  $ (GND))) # (!\spi_8bit_driver_inst|spi_tx_inst|cnt [2] & (!\spi_8bit_driver_inst|spi_tx_inst|cnt[1]~13  & 
+// VCC))
+// \spi_8bit_driver_inst|spi_tx_inst|cnt[2]~17  = CARRY((\spi_8bit_driver_inst|spi_tx_inst|cnt [2] & !\spi_8bit_driver_inst|spi_tx_inst|cnt[1]~13 ))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [2]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\spi_8bit_driver_inst|spi_tx_inst|cnt[1]~13 ),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|cnt[2]~16_combout ),
+	.cout(\spi_8bit_driver_inst|spi_tx_inst|cnt[2]~17 ));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[2]~16 .lut_mask = 16'hA50A;
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[2]~16 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X25_Y20_N13
+dffeas \spi_8bit_driver_inst|spi_tx_inst|cnt[2] (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_tx_inst|cnt[2]~16_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\flash_ctrl_inst|en_tx~q ),
+	.sload(gnd),
+	.ena(\spi_8bit_driver_inst|spi_tx_inst|cnt[9]~15_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_tx_inst|cnt [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[2] .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[2] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X25_Y20_N14
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|cnt[3]~18 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|cnt[3]~18_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [3] & (!\spi_8bit_driver_inst|spi_tx_inst|cnt[2]~17 )) # (!\spi_8bit_driver_inst|spi_tx_inst|cnt [3] & ((\spi_8bit_driver_inst|spi_tx_inst|cnt[2]~17 ) # (GND)))
+// \spi_8bit_driver_inst|spi_tx_inst|cnt[3]~19  = CARRY((!\spi_8bit_driver_inst|spi_tx_inst|cnt[2]~17 ) # (!\spi_8bit_driver_inst|spi_tx_inst|cnt [3]))
+
+	.dataa(gnd),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [3]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\spi_8bit_driver_inst|spi_tx_inst|cnt[2]~17 ),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|cnt[3]~18_combout ),
+	.cout(\spi_8bit_driver_inst|spi_tx_inst|cnt[3]~19 ));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[3]~18 .lut_mask = 16'h3C3F;
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[3]~18 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X25_Y20_N15
+dffeas \spi_8bit_driver_inst|spi_tx_inst|cnt[3] (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_tx_inst|cnt[3]~18_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\flash_ctrl_inst|en_tx~q ),
+	.sload(gnd),
+	.ena(\spi_8bit_driver_inst|spi_tx_inst|cnt[9]~15_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_tx_inst|cnt [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[3] .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[3] .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X25_Y20_N17
+dffeas \spi_8bit_driver_inst|spi_tx_inst|cnt[4] (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_tx_inst|cnt[4]~20_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\flash_ctrl_inst|en_tx~q ),
+	.sload(gnd),
+	.ena(\spi_8bit_driver_inst|spi_tx_inst|cnt[9]~15_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_tx_inst|cnt [4]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[4] .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_tx_inst|cnt[4] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X25_Y20_N4
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|Equal2~0 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|Equal2~0_combout  = (!\spi_8bit_driver_inst|spi_tx_inst|cnt [4] & (!\spi_8bit_driver_inst|spi_tx_inst|cnt [5] & (\spi_8bit_driver_inst|spi_tx_inst|cnt [0] & \spi_8bit_driver_inst|spi_tx_inst|Equal1~5_combout )))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [4]),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [5]),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|cnt [0]),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|Equal1~5_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|Equal2~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal2~0 .lut_mask = 16'h1000;
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal2~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X25_Y20_N28
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|WideNor0~36 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|WideNor0~36_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [3] & \spi_8bit_driver_inst|spi_tx_inst|cnt [1])
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|cnt [3]),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|cnt [1]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~36_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~36 .lut_mask = 16'hF000;
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~36 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N18
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|Equal17~0 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|Equal17~0_combout  = (\spi_8bit_driver_inst|spi_tx_inst|Equal2~0_combout  & (\spi_8bit_driver_inst|spi_tx_inst|cnt [6] & (\spi_8bit_driver_inst|spi_tx_inst|WideNor0~36_combout  & \spi_8bit_driver_inst|spi_tx_inst|cnt 
+// [2])))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|Equal2~0_combout ),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [6]),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~36_combout ),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|cnt [2]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|Equal17~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal17~0 .lut_mask = 16'h8000;
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal17~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X23_Y20_N19
+dffeas \spi_8bit_driver_inst|spi_tx_inst|tx_done (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_tx_inst|Equal17~0_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_tx_inst|tx_done~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|tx_done .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_tx_inst|tx_done .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y21_N0
+cycloneive_lcell_comb \flash_ctrl_inst|state~0 (
+// Equation(s):
+// \flash_ctrl_inst|state~0_combout  = (!\spi_8bit_driver_inst|spi_tx_inst|tx_done~q ) # (!\flash_ctrl_inst|state~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\flash_ctrl_inst|state~q ),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|tx_done~q ),
+	.cin(gnd),
+	.combout(\flash_ctrl_inst|state~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \flash_ctrl_inst|state~0 .lut_mask = 16'h0FFF;
+defparam \flash_ctrl_inst|state~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X22_Y21_N1
+dffeas \flash_ctrl_inst|state (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\flash_ctrl_inst|state~0_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\flash_ctrl_inst|state~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \flash_ctrl_inst|state .is_wysiwyg = "true";
+defparam \flash_ctrl_inst|state .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y21_N6
+cycloneive_lcell_comb \flash_ctrl_inst|en_rx~0 (
+// Equation(s):
+// \flash_ctrl_inst|en_rx~0_combout  = (\flash_ctrl_inst|en_rx~q ) # ((\flash_ctrl_inst|state~q  & \spi_8bit_driver_inst|spi_tx_inst|tx_done~q ))
+
+	.dataa(gnd),
+	.datab(\flash_ctrl_inst|state~q ),
+	.datac(\flash_ctrl_inst|en_rx~q ),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|tx_done~q ),
+	.cin(gnd),
+	.combout(\flash_ctrl_inst|en_rx~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \flash_ctrl_inst|en_rx~0 .lut_mask = 16'hFCF0;
+defparam \flash_ctrl_inst|en_rx~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X22_Y21_N7
+dffeas \flash_ctrl_inst|en_rx (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\flash_ctrl_inst|en_rx~0_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\flash_ctrl_inst|en_rx~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \flash_ctrl_inst|en_rx .is_wysiwyg = "true";
+defparam \flash_ctrl_inst|en_rx .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y21_N28
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|Selector0~5 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|Selector0~5_combout  = (!\spi_8bit_driver_inst|spi_rx_inst|cnt [4] & !\spi_8bit_driver_inst|spi_rx_inst|cnt [5])
+
+	.dataa(gnd),
+	.datab(\spi_8bit_driver_inst|spi_rx_inst|cnt [4]),
+	.datac(gnd),
+	.datad(\spi_8bit_driver_inst|spi_rx_inst|cnt [5]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|Selector0~5_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~5 .lut_mask = 16'h0033;
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~5 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y21_N20
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|cnt[6]~23 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|cnt[6]~23_combout  = (\spi_8bit_driver_inst|spi_rx_inst|cnt [6] & (\spi_8bit_driver_inst|spi_rx_inst|cnt[5]~22  $ (GND))) # (!\spi_8bit_driver_inst|spi_rx_inst|cnt [6] & (!\spi_8bit_driver_inst|spi_rx_inst|cnt[5]~22  & 
+// VCC))
+// \spi_8bit_driver_inst|spi_rx_inst|cnt[6]~24  = CARRY((\spi_8bit_driver_inst|spi_rx_inst|cnt [6] & !\spi_8bit_driver_inst|spi_rx_inst|cnt[5]~22 ))
+
+	.dataa(gnd),
+	.datab(\spi_8bit_driver_inst|spi_rx_inst|cnt [6]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\spi_8bit_driver_inst|spi_rx_inst|cnt[5]~22 ),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|cnt[6]~23_combout ),
+	.cout(\spi_8bit_driver_inst|spi_rx_inst|cnt[6]~24 ));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[6]~23 .lut_mask = 16'hC30C;
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[6]~23 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y21_N22
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|cnt[7]~25 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|cnt[7]~25_combout  = (\spi_8bit_driver_inst|spi_rx_inst|cnt [7] & (!\spi_8bit_driver_inst|spi_rx_inst|cnt[6]~24 )) # (!\spi_8bit_driver_inst|spi_rx_inst|cnt [7] & ((\spi_8bit_driver_inst|spi_rx_inst|cnt[6]~24 ) # (GND)))
+// \spi_8bit_driver_inst|spi_rx_inst|cnt[7]~26  = CARRY((!\spi_8bit_driver_inst|spi_rx_inst|cnt[6]~24 ) # (!\spi_8bit_driver_inst|spi_rx_inst|cnt [7]))
+
+	.dataa(\spi_8bit_driver_inst|spi_rx_inst|cnt [7]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\spi_8bit_driver_inst|spi_rx_inst|cnt[6]~24 ),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|cnt[7]~25_combout ),
+	.cout(\spi_8bit_driver_inst|spi_rx_inst|cnt[7]~26 ));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[7]~25 .lut_mask = 16'h5A5F;
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[7]~25 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y21_N23
+dffeas \spi_8bit_driver_inst|spi_rx_inst|cnt[7] (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_rx_inst|cnt[7]~25_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\flash_ctrl_inst|en_rx~q ),
+	.sload(gnd),
+	.ena(\spi_8bit_driver_inst|spi_rx_inst|cnt[9]~16_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_rx_inst|cnt [7]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[7] .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[7] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y21_N24
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|cnt[8]~27 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|cnt[8]~27_combout  = (\spi_8bit_driver_inst|spi_rx_inst|cnt [8] & (\spi_8bit_driver_inst|spi_rx_inst|cnt[7]~26  $ (GND))) # (!\spi_8bit_driver_inst|spi_rx_inst|cnt [8] & (!\spi_8bit_driver_inst|spi_rx_inst|cnt[7]~26  & 
+// VCC))
+// \spi_8bit_driver_inst|spi_rx_inst|cnt[8]~28  = CARRY((\spi_8bit_driver_inst|spi_rx_inst|cnt [8] & !\spi_8bit_driver_inst|spi_rx_inst|cnt[7]~26 ))
+
+	.dataa(gnd),
+	.datab(\spi_8bit_driver_inst|spi_rx_inst|cnt [8]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\spi_8bit_driver_inst|spi_rx_inst|cnt[7]~26 ),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|cnt[8]~27_combout ),
+	.cout(\spi_8bit_driver_inst|spi_rx_inst|cnt[8]~28 ));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[8]~27 .lut_mask = 16'hC30C;
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[8]~27 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y21_N25
+dffeas \spi_8bit_driver_inst|spi_rx_inst|cnt[8] (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_rx_inst|cnt[8]~27_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\flash_ctrl_inst|en_rx~q ),
+	.sload(gnd),
+	.ena(\spi_8bit_driver_inst|spi_rx_inst|cnt[9]~16_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_rx_inst|cnt [8]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[8] .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[8] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y21_N26
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|cnt[9]~29 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|cnt[9]~29_combout  = \spi_8bit_driver_inst|spi_rx_inst|cnt [9] $ (\spi_8bit_driver_inst|spi_rx_inst|cnt[8]~28 )
+
+	.dataa(\spi_8bit_driver_inst|spi_rx_inst|cnt [9]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(\spi_8bit_driver_inst|spi_rx_inst|cnt[8]~28 ),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|cnt[9]~29_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[9]~29 .lut_mask = 16'h5A5A;
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[9]~29 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y21_N27
+dffeas \spi_8bit_driver_inst|spi_rx_inst|cnt[9] (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_rx_inst|cnt[9]~29_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\flash_ctrl_inst|en_rx~q ),
+	.sload(gnd),
+	.ena(\spi_8bit_driver_inst|spi_rx_inst|cnt[9]~16_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_rx_inst|cnt [9]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[9] .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[9] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y21_N0
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|Selector0~15 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|Selector0~15_combout  = (!\spi_8bit_driver_inst|spi_rx_inst|cnt [7] & (!\spi_8bit_driver_inst|spi_rx_inst|cnt [9] & !\spi_8bit_driver_inst|spi_rx_inst|cnt [8]))
+
+	.dataa(\spi_8bit_driver_inst|spi_rx_inst|cnt [7]),
+	.datab(gnd),
+	.datac(\spi_8bit_driver_inst|spi_rx_inst|cnt [9]),
+	.datad(\spi_8bit_driver_inst|spi_rx_inst|cnt [8]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|Selector0~15_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~15 .lut_mask = 16'h0005;
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~15 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y21_N2
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|cnt[9]~16 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|cnt[9]~16_combout  = (\flash_ctrl_inst|en_rx~q ) # ((\spi_8bit_driver_inst|spi_rx_inst|Selector0~15_combout  & ((\spi_8bit_driver_inst|spi_rx_inst|Selector0~5_combout ) # (!\spi_8bit_driver_inst|spi_rx_inst|cnt [6]))))
+
+	.dataa(\spi_8bit_driver_inst|spi_rx_inst|cnt [6]),
+	.datab(\spi_8bit_driver_inst|spi_rx_inst|Selector0~5_combout ),
+	.datac(\flash_ctrl_inst|en_rx~q ),
+	.datad(\spi_8bit_driver_inst|spi_rx_inst|Selector0~15_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|cnt[9]~16_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[9]~16 .lut_mask = 16'hFDF0;
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[9]~16 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X23_Y21_N9
+dffeas \spi_8bit_driver_inst|spi_rx_inst|cnt[0] (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_rx_inst|cnt[0]~10_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\flash_ctrl_inst|en_rx~q ),
+	.sload(gnd),
+	.ena(\spi_8bit_driver_inst|spi_rx_inst|cnt[9]~16_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_rx_inst|cnt [0]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[0] .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[0] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y21_N10
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|cnt[1]~12 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|cnt[1]~12_combout  = (\spi_8bit_driver_inst|spi_rx_inst|cnt [1] & (!\spi_8bit_driver_inst|spi_rx_inst|cnt[0]~11 )) # (!\spi_8bit_driver_inst|spi_rx_inst|cnt [1] & ((\spi_8bit_driver_inst|spi_rx_inst|cnt[0]~11 ) # (GND)))
+// \spi_8bit_driver_inst|spi_rx_inst|cnt[1]~13  = CARRY((!\spi_8bit_driver_inst|spi_rx_inst|cnt[0]~11 ) # (!\spi_8bit_driver_inst|spi_rx_inst|cnt [1]))
+
+	.dataa(\spi_8bit_driver_inst|spi_rx_inst|cnt [1]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\spi_8bit_driver_inst|spi_rx_inst|cnt[0]~11 ),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|cnt[1]~12_combout ),
+	.cout(\spi_8bit_driver_inst|spi_rx_inst|cnt[1]~13 ));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[1]~12 .lut_mask = 16'h5A5F;
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[1]~12 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y21_N11
+dffeas \spi_8bit_driver_inst|spi_rx_inst|cnt[1] (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_rx_inst|cnt[1]~12_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\flash_ctrl_inst|en_rx~q ),
+	.sload(gnd),
+	.ena(\spi_8bit_driver_inst|spi_rx_inst|cnt[9]~16_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_rx_inst|cnt [1]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[1] .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[1] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y21_N12
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|cnt[2]~14 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|cnt[2]~14_combout  = (\spi_8bit_driver_inst|spi_rx_inst|cnt [2] & (\spi_8bit_driver_inst|spi_rx_inst|cnt[1]~13  $ (GND))) # (!\spi_8bit_driver_inst|spi_rx_inst|cnt [2] & (!\spi_8bit_driver_inst|spi_rx_inst|cnt[1]~13  & 
+// VCC))
+// \spi_8bit_driver_inst|spi_rx_inst|cnt[2]~15  = CARRY((\spi_8bit_driver_inst|spi_rx_inst|cnt [2] & !\spi_8bit_driver_inst|spi_rx_inst|cnt[1]~13 ))
+
+	.dataa(\spi_8bit_driver_inst|spi_rx_inst|cnt [2]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\spi_8bit_driver_inst|spi_rx_inst|cnt[1]~13 ),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|cnt[2]~14_combout ),
+	.cout(\spi_8bit_driver_inst|spi_rx_inst|cnt[2]~15 ));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[2]~14 .lut_mask = 16'hA50A;
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[2]~14 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y21_N13
+dffeas \spi_8bit_driver_inst|spi_rx_inst|cnt[2] (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_rx_inst|cnt[2]~14_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\flash_ctrl_inst|en_rx~q ),
+	.sload(gnd),
+	.ena(\spi_8bit_driver_inst|spi_rx_inst|cnt[9]~16_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_rx_inst|cnt [2]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[2] .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[2] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y21_N14
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|cnt[3]~17 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|cnt[3]~17_combout  = (\spi_8bit_driver_inst|spi_rx_inst|cnt [3] & (!\spi_8bit_driver_inst|spi_rx_inst|cnt[2]~15 )) # (!\spi_8bit_driver_inst|spi_rx_inst|cnt [3] & ((\spi_8bit_driver_inst|spi_rx_inst|cnt[2]~15 ) # (GND)))
+// \spi_8bit_driver_inst|spi_rx_inst|cnt[3]~18  = CARRY((!\spi_8bit_driver_inst|spi_rx_inst|cnt[2]~15 ) # (!\spi_8bit_driver_inst|spi_rx_inst|cnt [3]))
+
+	.dataa(gnd),
+	.datab(\spi_8bit_driver_inst|spi_rx_inst|cnt [3]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\spi_8bit_driver_inst|spi_rx_inst|cnt[2]~15 ),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|cnt[3]~17_combout ),
+	.cout(\spi_8bit_driver_inst|spi_rx_inst|cnt[3]~18 ));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[3]~17 .lut_mask = 16'h3C3F;
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[3]~17 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y21_N15
+dffeas \spi_8bit_driver_inst|spi_rx_inst|cnt[3] (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_rx_inst|cnt[3]~17_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\flash_ctrl_inst|en_rx~q ),
+	.sload(gnd),
+	.ena(\spi_8bit_driver_inst|spi_rx_inst|cnt[9]~16_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_rx_inst|cnt [3]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[3] .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[3] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y21_N16
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|cnt[4]~19 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|cnt[4]~19_combout  = (\spi_8bit_driver_inst|spi_rx_inst|cnt [4] & (\spi_8bit_driver_inst|spi_rx_inst|cnt[3]~18  $ (GND))) # (!\spi_8bit_driver_inst|spi_rx_inst|cnt [4] & (!\spi_8bit_driver_inst|spi_rx_inst|cnt[3]~18  & 
+// VCC))
+// \spi_8bit_driver_inst|spi_rx_inst|cnt[4]~20  = CARRY((\spi_8bit_driver_inst|spi_rx_inst|cnt [4] & !\spi_8bit_driver_inst|spi_rx_inst|cnt[3]~18 ))
+
+	.dataa(gnd),
+	.datab(\spi_8bit_driver_inst|spi_rx_inst|cnt [4]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\spi_8bit_driver_inst|spi_rx_inst|cnt[3]~18 ),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|cnt[4]~19_combout ),
+	.cout(\spi_8bit_driver_inst|spi_rx_inst|cnt[4]~20 ));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[4]~19 .lut_mask = 16'hC30C;
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[4]~19 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y21_N17
+dffeas \spi_8bit_driver_inst|spi_rx_inst|cnt[4] (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_rx_inst|cnt[4]~19_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\flash_ctrl_inst|en_rx~q ),
+	.sload(gnd),
+	.ena(\spi_8bit_driver_inst|spi_rx_inst|cnt[9]~16_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_rx_inst|cnt [4]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[4] .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[4] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y21_N18
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|cnt[5]~21 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|cnt[5]~21_combout  = (\spi_8bit_driver_inst|spi_rx_inst|cnt [5] & (!\spi_8bit_driver_inst|spi_rx_inst|cnt[4]~20 )) # (!\spi_8bit_driver_inst|spi_rx_inst|cnt [5] & ((\spi_8bit_driver_inst|spi_rx_inst|cnt[4]~20 ) # (GND)))
+// \spi_8bit_driver_inst|spi_rx_inst|cnt[5]~22  = CARRY((!\spi_8bit_driver_inst|spi_rx_inst|cnt[4]~20 ) # (!\spi_8bit_driver_inst|spi_rx_inst|cnt [5]))
+
+	.dataa(gnd),
+	.datab(\spi_8bit_driver_inst|spi_rx_inst|cnt [5]),
+	.datac(gnd),
+	.datad(vcc),
+	.cin(\spi_8bit_driver_inst|spi_rx_inst|cnt[4]~20 ),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|cnt[5]~21_combout ),
+	.cout(\spi_8bit_driver_inst|spi_rx_inst|cnt[5]~22 ));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[5]~21 .lut_mask = 16'h3C3F;
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[5]~21 .sum_lutc_input = "cin";
+// synopsys translate_on
+
+// Location: FF_X23_Y21_N19
+dffeas \spi_8bit_driver_inst|spi_rx_inst|cnt[5] (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_rx_inst|cnt[5]~21_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\flash_ctrl_inst|en_rx~q ),
+	.sload(gnd),
+	.ena(\spi_8bit_driver_inst|spi_rx_inst|cnt[9]~16_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_rx_inst|cnt [5]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[5] .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[5] .power_up = "low";
+// synopsys translate_on
+
+// Location: FF_X23_Y21_N21
+dffeas \spi_8bit_driver_inst|spi_rx_inst|cnt[6] (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_rx_inst|cnt[6]~23_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(\flash_ctrl_inst|en_rx~q ),
+	.sload(gnd),
+	.ena(\spi_8bit_driver_inst|spi_rx_inst|cnt[9]~16_combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_rx_inst|cnt [6]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[6] .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_rx_inst|cnt[6] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y21_N12
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|Selector0~14 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|Selector0~14_combout  = (!\spi_8bit_driver_inst|spi_rx_inst|cnt [5] & ((\spi_8bit_driver_inst|spi_rx_inst|cnt [1] & (!\spi_8bit_driver_inst|spi_rx_inst|cnt [6] & !\spi_8bit_driver_inst|spi_rx_inst|cnt [3])) # 
+// (!\spi_8bit_driver_inst|spi_rx_inst|cnt [1] & ((\spi_8bit_driver_inst|spi_rx_inst|cnt [3])))))
+
+	.dataa(\spi_8bit_driver_inst|spi_rx_inst|cnt [6]),
+	.datab(\spi_8bit_driver_inst|spi_rx_inst|cnt [1]),
+	.datac(\spi_8bit_driver_inst|spi_rx_inst|cnt [3]),
+	.datad(\spi_8bit_driver_inst|spi_rx_inst|cnt [5]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|Selector0~14_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~14 .lut_mask = 16'h0034;
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~14 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y21_N6
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|Selector0~11 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|Selector0~11_combout  = (\spi_8bit_driver_inst|spi_rx_inst|cnt [0]) # ((\spi_8bit_driver_inst|spi_rx_inst|cnt [2] & (!\spi_8bit_driver_inst|spi_rx_inst|cnt [6] & !\spi_8bit_driver_inst|spi_rx_inst|cnt [4])))
+
+	.dataa(\spi_8bit_driver_inst|spi_rx_inst|cnt [2]),
+	.datab(\spi_8bit_driver_inst|spi_rx_inst|cnt [6]),
+	.datac(\spi_8bit_driver_inst|spi_rx_inst|cnt [0]),
+	.datad(\spi_8bit_driver_inst|spi_rx_inst|cnt [4]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|Selector0~11_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~11 .lut_mask = 16'hF0F2;
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~11 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y21_N4
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|Selector0~12 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|Selector0~12_combout  = (\spi_8bit_driver_inst|spi_rx_inst|cnt [3]) # ((\spi_8bit_driver_inst|spi_rx_inst|cnt [2] & ((\spi_8bit_driver_inst|spi_rx_inst|cnt [4]) # (!\spi_8bit_driver_inst|spi_rx_inst|cnt [1]))) # 
+// (!\spi_8bit_driver_inst|spi_rx_inst|cnt [2] & ((\spi_8bit_driver_inst|spi_rx_inst|cnt [1]) # (!\spi_8bit_driver_inst|spi_rx_inst|cnt [4]))))
+
+	.dataa(\spi_8bit_driver_inst|spi_rx_inst|cnt [2]),
+	.datab(\spi_8bit_driver_inst|spi_rx_inst|cnt [4]),
+	.datac(\spi_8bit_driver_inst|spi_rx_inst|cnt [3]),
+	.datad(\spi_8bit_driver_inst|spi_rx_inst|cnt [1]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|Selector0~12_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~12 .lut_mask = 16'hFDFB;
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~12 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y21_N30
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|Selector0~13 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|Selector0~13_combout  = (\spi_8bit_driver_inst|spi_rx_inst|Selector0~11_combout ) # ((\spi_8bit_driver_inst|spi_rx_inst|cnt [6] & ((\spi_8bit_driver_inst|spi_rx_inst|Selector0~12_combout ) # 
+// (\spi_8bit_driver_inst|spi_rx_inst|cnt [5]))))
+
+	.dataa(\spi_8bit_driver_inst|spi_rx_inst|Selector0~11_combout ),
+	.datab(\spi_8bit_driver_inst|spi_rx_inst|cnt [6]),
+	.datac(\spi_8bit_driver_inst|spi_rx_inst|Selector0~12_combout ),
+	.datad(\spi_8bit_driver_inst|spi_rx_inst|cnt [5]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|Selector0~13_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~13 .lut_mask = 16'hEEEA;
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~13 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y21_N26
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|Selector0~8 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|Selector0~8_combout  = (!\spi_8bit_driver_inst|spi_rx_inst|cnt [2] & \spi_8bit_driver_inst|spi_rx_inst|cnt [4])
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\spi_8bit_driver_inst|spi_rx_inst|cnt [2]),
+	.datad(\spi_8bit_driver_inst|spi_rx_inst|cnt [4]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|Selector0~8_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~8 .lut_mask = 16'h0F00;
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~8 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y21_N24
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|Selector0~9 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|Selector0~9_combout  = (\spi_8bit_driver_inst|spi_rx_inst|cnt [1]) # ((\spi_8bit_driver_inst|spi_rx_inst|cnt [6] & !\spi_8bit_driver_inst|spi_rx_inst|cnt [3]))
+
+	.dataa(\spi_8bit_driver_inst|spi_rx_inst|cnt [6]),
+	.datab(\spi_8bit_driver_inst|spi_rx_inst|cnt [1]),
+	.datac(\spi_8bit_driver_inst|spi_rx_inst|cnt [3]),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|Selector0~9_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~9 .lut_mask = 16'hCECE;
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~9 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y21_N18
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|Selector0~10 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|Selector0~10_combout  = (\spi_8bit_driver_inst|spi_rx_inst|Selector0~8_combout  & (((\spi_8bit_driver_inst|spi_rx_inst|cnt [3]) # (!\spi_8bit_driver_inst|spi_rx_inst|Selector0~9_combout )))) # 
+// (!\spi_8bit_driver_inst|spi_rx_inst|Selector0~8_combout  & (\spi_8bit_driver_inst|spi_rx_inst|cnt [5] & ((\spi_8bit_driver_inst|spi_rx_inst|Selector0~9_combout ) # (!\spi_8bit_driver_inst|spi_rx_inst|cnt [3]))))
+
+	.dataa(\spi_8bit_driver_inst|spi_rx_inst|Selector0~8_combout ),
+	.datab(\spi_8bit_driver_inst|spi_rx_inst|cnt [5]),
+	.datac(\spi_8bit_driver_inst|spi_rx_inst|cnt [3]),
+	.datad(\spi_8bit_driver_inst|spi_rx_inst|Selector0~9_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|Selector0~10_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~10 .lut_mask = 16'hE4AE;
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~10 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y21_N10
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|Selector0~16 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|Selector0~16_combout  = (\spi_8bit_driver_inst|spi_rx_inst|Selector0~14_combout ) # (((\spi_8bit_driver_inst|spi_rx_inst|Selector0~13_combout ) # (\spi_8bit_driver_inst|spi_rx_inst|Selector0~10_combout )) # 
+// (!\spi_8bit_driver_inst|spi_rx_inst|Selector0~15_combout ))
+
+	.dataa(\spi_8bit_driver_inst|spi_rx_inst|Selector0~14_combout ),
+	.datab(\spi_8bit_driver_inst|spi_rx_inst|Selector0~15_combout ),
+	.datac(\spi_8bit_driver_inst|spi_rx_inst|Selector0~13_combout ),
+	.datad(\spi_8bit_driver_inst|spi_rx_inst|Selector0~10_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|Selector0~16_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~16 .lut_mask = 16'hFFFB;
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~16 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y21_N28
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|Selector0~7 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|Selector0~7_combout  = (!\spi_8bit_driver_inst|spi_rx_inst|cnt [8] & (!\spi_8bit_driver_inst|spi_rx_inst|cnt [7] & (\spi_8bit_driver_inst|spi_rx_inst|cnt [0] & !\spi_8bit_driver_inst|spi_rx_inst|cnt [9])))
+
+	.dataa(\spi_8bit_driver_inst|spi_rx_inst|cnt [8]),
+	.datab(\spi_8bit_driver_inst|spi_rx_inst|cnt [7]),
+	.datac(\spi_8bit_driver_inst|spi_rx_inst|cnt [0]),
+	.datad(\spi_8bit_driver_inst|spi_rx_inst|cnt [9]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|Selector0~7_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~7 .lut_mask = 16'h0010;
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~7 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y21_N20
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|Selector0~18 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|Selector0~18_combout  = (\spi_8bit_driver_inst|spi_rx_inst|cnt [1] & (!\spi_8bit_driver_inst|spi_rx_inst|cnt [4] & (\spi_8bit_driver_inst|spi_rx_inst|cnt [3] $ (\spi_8bit_driver_inst|spi_rx_inst|cnt [5])))) # 
+// (!\spi_8bit_driver_inst|spi_rx_inst|cnt [1] & (!\spi_8bit_driver_inst|spi_rx_inst|cnt [5] & (\spi_8bit_driver_inst|spi_rx_inst|cnt [4] $ (!\spi_8bit_driver_inst|spi_rx_inst|cnt [3]))))
+
+	.dataa(\spi_8bit_driver_inst|spi_rx_inst|cnt [4]),
+	.datab(\spi_8bit_driver_inst|spi_rx_inst|cnt [1]),
+	.datac(\spi_8bit_driver_inst|spi_rx_inst|cnt [3]),
+	.datad(\spi_8bit_driver_inst|spi_rx_inst|cnt [5]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|Selector0~18_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~18 .lut_mask = 16'h0461;
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~18 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y21_N16
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|Selector0~4 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|Selector0~4_combout  = (\spi_8bit_driver_inst|spi_rx_inst|cnt [1] & (((!\spi_8bit_driver_inst|spi_rx_inst|cnt [3] & \spi_8bit_driver_inst|spi_rx_inst|cnt [5])))) # (!\spi_8bit_driver_inst|spi_rx_inst|cnt [1] & 
+// (\spi_8bit_driver_inst|spi_rx_inst|cnt [3] & (\spi_8bit_driver_inst|spi_rx_inst|cnt [4] $ (\spi_8bit_driver_inst|spi_rx_inst|cnt [5]))))
+
+	.dataa(\spi_8bit_driver_inst|spi_rx_inst|cnt [4]),
+	.datab(\spi_8bit_driver_inst|spi_rx_inst|cnt [1]),
+	.datac(\spi_8bit_driver_inst|spi_rx_inst|cnt [3]),
+	.datad(\spi_8bit_driver_inst|spi_rx_inst|cnt [5]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|Selector0~4_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~4 .lut_mask = 16'h1C20;
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~4 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y21_N2
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|Selector0~6 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|Selector0~6_combout  = (\spi_8bit_driver_inst|spi_rx_inst|cnt [2] & (!\spi_8bit_driver_inst|spi_rx_inst|cnt [6] & (\spi_8bit_driver_inst|spi_rx_inst|Selector0~18_combout  $ 
+// (\spi_8bit_driver_inst|spi_rx_inst|Selector0~4_combout )))) # (!\spi_8bit_driver_inst|spi_rx_inst|cnt [2] & (\spi_8bit_driver_inst|spi_rx_inst|Selector0~18_combout  & (\spi_8bit_driver_inst|spi_rx_inst|cnt [6] $ 
+// (\spi_8bit_driver_inst|spi_rx_inst|Selector0~4_combout ))))
+
+	.dataa(\spi_8bit_driver_inst|spi_rx_inst|cnt [6]),
+	.datab(\spi_8bit_driver_inst|spi_rx_inst|Selector0~18_combout ),
+	.datac(\spi_8bit_driver_inst|spi_rx_inst|cnt [2]),
+	.datad(\spi_8bit_driver_inst|spi_rx_inst|Selector0~4_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|Selector0~6_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~6 .lut_mask = 16'h1448;
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~6 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y21_N8
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_rx_inst|Selector0~17 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_rx_inst|Selector0~17_combout  = (\spi_8bit_driver_inst|spi_rx_inst|Selector0~16_combout  & ((\spi_8bit_driver_inst|spi_rx_inst|spi_sclk~q ) # ((\spi_8bit_driver_inst|spi_rx_inst|Selector0~7_combout  & 
+// \spi_8bit_driver_inst|spi_rx_inst|Selector0~6_combout )))) # (!\spi_8bit_driver_inst|spi_rx_inst|Selector0~16_combout  & (\spi_8bit_driver_inst|spi_rx_inst|Selector0~7_combout  & ((\spi_8bit_driver_inst|spi_rx_inst|Selector0~6_combout ))))
+
+	.dataa(\spi_8bit_driver_inst|spi_rx_inst|Selector0~16_combout ),
+	.datab(\spi_8bit_driver_inst|spi_rx_inst|Selector0~7_combout ),
+	.datac(\spi_8bit_driver_inst|spi_rx_inst|spi_sclk~q ),
+	.datad(\spi_8bit_driver_inst|spi_rx_inst|Selector0~6_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_rx_inst|Selector0~17_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~17 .lut_mask = 16'hECA0;
+defparam \spi_8bit_driver_inst|spi_rx_inst|Selector0~17 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X22_Y21_N9
+dffeas \spi_8bit_driver_inst|spi_rx_inst|spi_sclk (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_rx_inst|Selector0~17_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_rx_inst|spi_sclk~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_rx_inst|spi_sclk .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_rx_inst|spi_sclk .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X25_Y20_N6
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|WideNor0~27 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|WideNor0~27_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [2] & ((\spi_8bit_driver_inst|spi_tx_inst|cnt [5]) # ((\spi_8bit_driver_inst|spi_tx_inst|cnt [4]) # (!\spi_8bit_driver_inst|spi_tx_inst|cnt [6])))) # 
+// (!\spi_8bit_driver_inst|spi_tx_inst|cnt [2] & (((\spi_8bit_driver_inst|spi_tx_inst|cnt [6]) # (!\spi_8bit_driver_inst|spi_tx_inst|cnt [4])) # (!\spi_8bit_driver_inst|spi_tx_inst|cnt [5])))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [2]),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [5]),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|cnt [6]),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|cnt [4]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~27_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~27 .lut_mask = 16'hFBDF;
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~27 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N30
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|WideNor0~23 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|WideNor0~23_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [3]) # (((\spi_8bit_driver_inst|spi_tx_inst|cnt [0]) # (\spi_8bit_driver_inst|spi_tx_inst|WideNor0~27_combout )) # (!\spi_8bit_driver_inst|spi_tx_inst|cnt 
+// [1]))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [3]),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [1]),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|cnt [0]),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~27_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~23_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~23 .lut_mask = 16'hFFFB;
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~23 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N12
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|WideNor0~11 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|WideNor0~11_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [4] & (((!\spi_8bit_driver_inst|spi_tx_inst|cnt [5]) # (!\spi_8bit_driver_inst|spi_tx_inst|cnt [3])) # (!\spi_8bit_driver_inst|spi_tx_inst|cnt [2]))) # 
+// (!\spi_8bit_driver_inst|spi_tx_inst|cnt [4] & ((\spi_8bit_driver_inst|spi_tx_inst|cnt [2]) # (\spi_8bit_driver_inst|spi_tx_inst|cnt [3] $ (\spi_8bit_driver_inst|spi_tx_inst|cnt [5]))))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [4]),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [2]),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|cnt [3]),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|cnt [5]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~11_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~11 .lut_mask = 16'h6FFE;
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~11 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N10
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|WideNor0~7 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|WideNor0~7_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [6]) # ((\spi_8bit_driver_inst|spi_tx_inst|cnt [1]) # ((\spi_8bit_driver_inst|spi_tx_inst|cnt [0]) # (\spi_8bit_driver_inst|spi_tx_inst|WideNor0~11_combout )))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [6]),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [1]),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|cnt [0]),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~11_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~7_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~7 .lut_mask = 16'hFFFE;
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~7 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N0
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|WideNor0~43 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|WideNor0~43_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [9]) # ((\spi_8bit_driver_inst|spi_tx_inst|cnt [8]) # ((\spi_8bit_driver_inst|spi_tx_inst|WideNor0~23_combout  & 
+// \spi_8bit_driver_inst|spi_tx_inst|WideNor0~7_combout )))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [9]),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [8]),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~23_combout ),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~7_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~43_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~43 .lut_mask = 16'hFEEE;
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~43 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N30
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|Equal1~7 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|Equal1~7_combout  = (!\spi_8bit_driver_inst|spi_tx_inst|cnt [5] & (!\spi_8bit_driver_inst|spi_tx_inst|cnt [6] & (\spi_8bit_driver_inst|spi_tx_inst|Equal1~5_combout  & !\spi_8bit_driver_inst|spi_tx_inst|cnt [0])))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [5]),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [6]),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|Equal1~5_combout ),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|cnt [0]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|Equal1~7_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal1~7 .lut_mask = 16'h0010;
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal1~7 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N26
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|Equal7~0 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|Equal7~0_combout  = (\spi_8bit_driver_inst|spi_tx_inst|WideNor0~36_combout  & (\spi_8bit_driver_inst|spi_tx_inst|cnt [4] & (\spi_8bit_driver_inst|spi_tx_inst|Equal1~7_combout  & \spi_8bit_driver_inst|spi_tx_inst|cnt 
+// [2])))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~36_combout ),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [4]),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|Equal1~7_combout ),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|cnt [2]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|Equal7~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal7~0 .lut_mask = 16'h8000;
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal7~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N8
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|Equal1~4 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|Equal1~4_combout  = (!\spi_8bit_driver_inst|spi_tx_inst|cnt [1] & !\spi_8bit_driver_inst|spi_tx_inst|cnt [3])
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|cnt [1]),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|cnt [3]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|Equal1~4_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal1~4 .lut_mask = 16'h000F;
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal1~4 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N22
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|Equal2~1 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|Equal2~1_combout  = (!\spi_8bit_driver_inst|spi_tx_inst|cnt [6] & (\spi_8bit_driver_inst|spi_tx_inst|Equal1~4_combout  & (\spi_8bit_driver_inst|spi_tx_inst|cnt [2] & \spi_8bit_driver_inst|spi_tx_inst|Equal2~0_combout )))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [6]),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|Equal1~4_combout ),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|cnt [2]),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|Equal2~0_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|Equal2~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal2~1 .lut_mask = 16'h4000;
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal2~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X25_Y20_N30
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|WideNor0~37 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|WideNor0~37_combout  = (!\spi_8bit_driver_inst|spi_tx_inst|cnt [2] & \spi_8bit_driver_inst|spi_tx_inst|cnt [6])
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [2]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|cnt [6]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~37_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~37 .lut_mask = 16'h5500;
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~37 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N2
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|Selector0~19 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|Selector0~19_combout  = (((!\spi_8bit_driver_inst|spi_tx_inst|WideNor0~36_combout  & !\spi_8bit_driver_inst|spi_tx_inst|Equal1~4_combout )) # (!\spi_8bit_driver_inst|spi_tx_inst|Equal2~0_combout )) # 
+// (!\spi_8bit_driver_inst|spi_tx_inst|WideNor0~37_combout )
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~37_combout ),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~36_combout ),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|Equal1~4_combout ),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|Equal2~0_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|Selector0~19_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|Selector0~19 .lut_mask = 16'h57FF;
+defparam \spi_8bit_driver_inst|spi_tx_inst|Selector0~19 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N16
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|Selector0~6 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|Selector0~6_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [4]) # ((\spi_8bit_driver_inst|spi_tx_inst|cnt [3] & ((\spi_8bit_driver_inst|spi_tx_inst|cnt [1]) # (!\spi_8bit_driver_inst|spi_tx_inst|cnt [2]))) # 
+// (!\spi_8bit_driver_inst|spi_tx_inst|cnt [3] & ((\spi_8bit_driver_inst|spi_tx_inst|cnt [2]) # (!\spi_8bit_driver_inst|spi_tx_inst|cnt [1]))))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [3]),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [1]),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|cnt [2]),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|cnt [4]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|Selector0~6_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|Selector0~6 .lut_mask = 16'hFFDB;
+defparam \spi_8bit_driver_inst|spi_tx_inst|Selector0~6 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N6
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|Selector0~3 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|Selector0~3_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [9]) # ((\spi_8bit_driver_inst|spi_tx_inst|cnt [8]) # ((\spi_8bit_driver_inst|spi_tx_inst|cnt [6]) # (\spi_8bit_driver_inst|spi_tx_inst|Selector0~6_combout )))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [9]),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [8]),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|cnt [6]),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|Selector0~6_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|Selector0~3_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|Selector0~3 .lut_mask = 16'hFFFE;
+defparam \spi_8bit_driver_inst|spi_tx_inst|Selector0~3 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N4
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|Selector0~23 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|Selector0~23_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [7]) # (((\spi_8bit_driver_inst|spi_tx_inst|Selector0~3_combout ) # (!\spi_8bit_driver_inst|spi_tx_inst|cnt [0])) # (!\spi_8bit_driver_inst|spi_tx_inst|cnt 
+// [5]))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [7]),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [5]),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|cnt [0]),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|Selector0~3_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|Selector0~23_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|Selector0~23 .lut_mask = 16'hFFBF;
+defparam \spi_8bit_driver_inst|spi_tx_inst|Selector0~23 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X25_Y20_N0
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|Equal8~0 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|Equal8~0_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [1] & !\spi_8bit_driver_inst|spi_tx_inst|cnt [6])
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [1]),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|cnt [6]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|Equal8~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal8~0 .lut_mask = 16'h00AA;
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal8~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N18
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|Equal8~1 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|Equal8~1_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [5] & (!\spi_8bit_driver_inst|spi_tx_inst|cnt [3] & (\spi_8bit_driver_inst|spi_tx_inst|Equal8~0_combout  & \spi_8bit_driver_inst|spi_tx_inst|Equal1~5_combout )))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [5]),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [3]),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|Equal8~0_combout ),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|Equal1~5_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|Equal8~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal8~1 .lut_mask = 16'h2000;
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal8~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N28
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|Equal12~0 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|Equal12~0_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [4] & (\spi_8bit_driver_inst|spi_tx_inst|cnt [2] & (\spi_8bit_driver_inst|spi_tx_inst|cnt [0] & \spi_8bit_driver_inst|spi_tx_inst|Equal8~1_combout )))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [4]),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [2]),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|cnt [0]),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|Equal8~1_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|Equal12~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal12~0 .lut_mask = 16'h8000;
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal12~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N26
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|Selector0~20 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|Selector0~20_combout  = (!\spi_8bit_driver_inst|spi_tx_inst|Equal2~1_combout  & (\spi_8bit_driver_inst|spi_tx_inst|Selector0~19_combout  & (\spi_8bit_driver_inst|spi_tx_inst|Selector0~23_combout  & 
+// !\spi_8bit_driver_inst|spi_tx_inst|Equal12~0_combout )))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|Equal2~1_combout ),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|Selector0~19_combout ),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|Selector0~23_combout ),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|Equal12~0_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|Selector0~20_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|Selector0~20 .lut_mask = 16'h0040;
+defparam \spi_8bit_driver_inst|spi_tx_inst|Selector0~20 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N22
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|WideNor0~44 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|WideNor0~44_combout  = (!\spi_8bit_driver_inst|spi_tx_inst|Equal7~0_combout  & (\spi_8bit_driver_inst|spi_tx_inst|Selector0~20_combout  & ((\spi_8bit_driver_inst|spi_tx_inst|cnt [7]) # 
+// (\spi_8bit_driver_inst|spi_tx_inst|WideNor0~43_combout ))))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [7]),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~43_combout ),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|Equal7~0_combout ),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|Selector0~20_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~44_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~44 .lut_mask = 16'h0E00;
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~44 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N12
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|WideNor0~40 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|WideNor0~40_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [4] & (\spi_8bit_driver_inst|spi_tx_inst|Equal1~4_combout  & (\spi_8bit_driver_inst|spi_tx_inst|cnt [6] $ (\spi_8bit_driver_inst|spi_tx_inst|cnt [2]))))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [4]),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [6]),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|Equal1~4_combout ),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|cnt [2]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~40_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~40 .lut_mask = 16'h2080;
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~40 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N24
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|WideNor0~39 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|WideNor0~39_combout  = (!\spi_8bit_driver_inst|spi_tx_inst|cnt [5] & (\spi_8bit_driver_inst|spi_tx_inst|Equal1~5_combout  & !\spi_8bit_driver_inst|spi_tx_inst|cnt [0]))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [5]),
+	.datab(gnd),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|Equal1~5_combout ),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|cnt [0]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~39_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~39 .lut_mask = 16'h0050;
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~39 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N20
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|Equal6~1 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|Equal6~1_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [0] & (\spi_8bit_driver_inst|spi_tx_inst|cnt [3] & (!\spi_8bit_driver_inst|spi_tx_inst|cnt [1] & \spi_8bit_driver_inst|spi_tx_inst|cnt [4])))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [0]),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [3]),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|cnt [1]),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|cnt [4]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|Equal6~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal6~1 .lut_mask = 16'h0800;
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal6~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N4
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|Equal6~0 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|Equal6~0_combout  = (!\spi_8bit_driver_inst|spi_tx_inst|cnt [5] & (\spi_8bit_driver_inst|spi_tx_inst|Equal1~5_combout  & !\spi_8bit_driver_inst|spi_tx_inst|cnt [6]))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [5]),
+	.datab(gnd),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|Equal1~5_combout ),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|cnt [6]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|Equal6~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal6~0 .lut_mask = 16'h0050;
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal6~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N10
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|Equal4~0 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|Equal4~0_combout  = (!\spi_8bit_driver_inst|spi_tx_inst|cnt [6] & (\spi_8bit_driver_inst|spi_tx_inst|cnt [2] & (\spi_8bit_driver_inst|spi_tx_inst|WideNor0~36_combout  & \spi_8bit_driver_inst|spi_tx_inst|Equal2~0_combout 
+// )))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [6]),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [2]),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~36_combout ),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|Equal2~0_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|Equal4~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal4~0 .lut_mask = 16'h4000;
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal4~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N8
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|WideNor0~38 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|WideNor0~38_combout  = (!\spi_8bit_driver_inst|spi_tx_inst|Equal4~0_combout  & (((\spi_8bit_driver_inst|spi_tx_inst|cnt [2]) # (!\spi_8bit_driver_inst|spi_tx_inst|Equal6~0_combout )) # 
+// (!\spi_8bit_driver_inst|spi_tx_inst|Equal6~1_combout )))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|Equal6~1_combout ),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [2]),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|Equal6~0_combout ),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|Equal4~0_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~38_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~38 .lut_mask = 16'h00DF;
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~38 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X24_Y20_N0
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|Equal1~6 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|Equal1~6_combout  = (!\spi_8bit_driver_inst|spi_tx_inst|cnt [2] & !\spi_8bit_driver_inst|spi_tx_inst|cnt [4])
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|cnt [2]),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|cnt [4]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|Equal1~6_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal1~6 .lut_mask = 16'h000F;
+defparam \spi_8bit_driver_inst|spi_tx_inst|Equal1~6 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N20
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|WideNor0~42 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|WideNor0~42_combout  = (\spi_8bit_driver_inst|spi_tx_inst|cnt [1] & (!\spi_8bit_driver_inst|spi_tx_inst|cnt [6] & (\spi_8bit_driver_inst|spi_tx_inst|Equal1~6_combout  & \spi_8bit_driver_inst|spi_tx_inst|cnt [3])))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|cnt [1]),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|cnt [6]),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|Equal1~6_combout ),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|cnt [3]),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~42_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~42 .lut_mask = 16'h2000;
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~42 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N2
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|WideNor0~41 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|WideNor0~41_combout  = ((\spi_8bit_driver_inst|spi_tx_inst|WideNor0~39_combout  & ((\spi_8bit_driver_inst|spi_tx_inst|WideNor0~40_combout ) # (\spi_8bit_driver_inst|spi_tx_inst|WideNor0~42_combout )))) # 
+// (!\spi_8bit_driver_inst|spi_tx_inst|WideNor0~38_combout )
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~40_combout ),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~39_combout ),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~38_combout ),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~42_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~41_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~41 .lut_mask = 16'hCF8F;
+defparam \spi_8bit_driver_inst|spi_tx_inst|WideNor0~41 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N6
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|Selector0~21 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|Selector0~21_combout  = (!\spi_8bit_driver_inst|spi_tx_inst|Selector0~20_combout ) # (!\spi_8bit_driver_inst|spi_tx_inst|WideNor0~38_combout )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~38_combout ),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|Selector0~20_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|Selector0~21_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|Selector0~21 .lut_mask = 16'h0FFF;
+defparam \spi_8bit_driver_inst|spi_tx_inst|Selector0~21 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N28
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|Selector0~22 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|Selector0~22_combout  = (\spi_8bit_driver_inst|spi_tx_inst|Selector0~21_combout ) # ((\spi_8bit_driver_inst|spi_tx_inst|WideNor0~44_combout  & (!\spi_8bit_driver_inst|spi_tx_inst|WideNor0~41_combout  & 
+// \spi_8bit_driver_inst|spi_tx_inst|spi_sclk~q )))
+
+	.dataa(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~44_combout ),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~41_combout ),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|spi_sclk~q ),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|Selector0~21_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|Selector0~22_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|Selector0~22 .lut_mask = 16'hFF20;
+defparam \spi_8bit_driver_inst|spi_tx_inst|Selector0~22 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X23_Y20_N29
+dffeas \spi_8bit_driver_inst|spi_tx_inst|spi_sclk (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_tx_inst|Selector0~22_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_tx_inst|spi_sclk~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|spi_sclk .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_tx_inst|spi_sclk .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y20_N0
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_sclk (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_sclk~combout  = (\spi_8bit_driver_inst|spi_rx_inst|spi_sclk~q ) # (\spi_8bit_driver_inst|spi_tx_inst|spi_sclk~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\spi_8bit_driver_inst|spi_rx_inst|spi_sclk~q ),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|spi_sclk~q ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_sclk~combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_sclk .lut_mask = 16'hFFF0;
+defparam \spi_8bit_driver_inst|spi_sclk .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y21_N22
+cycloneive_lcell_comb \flash_ctrl_inst|spi_cs_n~feeder (
+// Equation(s):
+// \flash_ctrl_inst|spi_cs_n~feeder_combout  = VCC
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\flash_ctrl_inst|spi_cs_n~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \flash_ctrl_inst|spi_cs_n~feeder .lut_mask = 16'hFFFF;
+defparam \flash_ctrl_inst|spi_cs_n~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X22_Y21_N23
+dffeas \flash_ctrl_inst|spi_cs_n (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\flash_ctrl_inst|spi_cs_n~feeder_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(!\flash_ctrl_inst|state~q ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\flash_ctrl_inst|spi_cs_n~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \flash_ctrl_inst|spi_cs_n .is_wysiwyg = "true";
+defparam \flash_ctrl_inst|spi_cs_n .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X22_Y20_N14
+cycloneive_lcell_comb \flash_ctrl_inst|tx_data[7]~feeder (
+// Equation(s):
+// \flash_ctrl_inst|tx_data[7]~feeder_combout  = VCC
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.cin(gnd),
+	.combout(\flash_ctrl_inst|tx_data[7]~feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \flash_ctrl_inst|tx_data[7]~feeder .lut_mask = 16'hFFFF;
+defparam \flash_ctrl_inst|tx_data[7]~feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X22_Y20_N15
+dffeas \flash_ctrl_inst|tx_data[7] (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\flash_ctrl_inst|tx_data[7]~feeder_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(!\flash_ctrl_inst|state~q ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\flash_ctrl_inst|tx_data [7]),
+	.prn(vcc));
+// synopsys translate_off
+defparam \flash_ctrl_inst|tx_data[7] .is_wysiwyg = "true";
+defparam \flash_ctrl_inst|tx_data[7] .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y20_N14
+cycloneive_lcell_comb \spi_8bit_driver_inst|spi_tx_inst|Selector1~0 (
+// Equation(s):
+// \spi_8bit_driver_inst|spi_tx_inst|Selector1~0_combout  = (\spi_8bit_driver_inst|spi_tx_inst|WideNor0~44_combout  & (((!\spi_8bit_driver_inst|spi_tx_inst|WideNor0~41_combout  & \spi_8bit_driver_inst|spi_tx_inst|spi_mosi~q )))) # 
+// (!\spi_8bit_driver_inst|spi_tx_inst|WideNor0~44_combout  & (\flash_ctrl_inst|tx_data [7]))
+
+	.dataa(\flash_ctrl_inst|tx_data [7]),
+	.datab(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~41_combout ),
+	.datac(\spi_8bit_driver_inst|spi_tx_inst|spi_mosi~q ),
+	.datad(\spi_8bit_driver_inst|spi_tx_inst|WideNor0~44_combout ),
+	.cin(gnd),
+	.combout(\spi_8bit_driver_inst|spi_tx_inst|Selector1~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|Selector1~0 .lut_mask = 16'h30AA;
+defparam \spi_8bit_driver_inst|spi_tx_inst|Selector1~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X23_Y20_N15
+dffeas \spi_8bit_driver_inst|spi_tx_inst|spi_mosi (
+	.clk(\sys_clk~inputclkctrl_outclk ),
+	.d(\spi_8bit_driver_inst|spi_tx_inst|Selector1~0_combout ),
+	.asdata(vcc),
+	.clrn(\sys_rst_n~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\spi_8bit_driver_inst|spi_tx_inst|spi_mosi~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \spi_8bit_driver_inst|spi_tx_inst|spi_mosi .is_wysiwyg = "true";
+defparam \spi_8bit_driver_inst|spi_tx_inst|spi_mosi .power_up = "low";
+// synopsys translate_on
+
+// Location: IOIBUF_X32_Y0_N1
+cycloneive_io_ibuf \se_flag~input (
+	.i(se_flag),
+	.ibar(gnd),
+	.o(\se_flag~input_o ));
+// synopsys translate_off
+defparam \se_flag~input .bus_hold = "false";
+defparam \se_flag~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y10_N22
+cycloneive_io_ibuf \be_flag~input (
+	.i(be_flag),
+	.ibar(gnd),
+	.o(\be_flag~input_o ));
+// synopsys translate_off
+defparam \be_flag~input .bus_hold = "false";
+defparam \be_flag~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y10_N1
+cycloneive_io_ibuf \pp_flag~input (
+	.i(pp_flag),
+	.ibar(gnd),
+	.o(\pp_flag~input_o ));
+// synopsys translate_off
+defparam \pp_flag~input .bus_hold = "false";
+defparam \pp_flag~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X7_Y0_N15
+cycloneive_io_ibuf \read_flag~input (
+	.i(read_flag),
+	.ibar(gnd),
+	.o(\read_flag~input_o ));
+// synopsys translate_off
+defparam \read_flag~input .bus_hold = "false";
+defparam \read_flag~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X11_Y24_N15
+cycloneive_io_ibuf \addr[0]~input (
+	.i(addr[0]),
+	.ibar(gnd),
+	.o(\addr[0]~input_o ));
+// synopsys translate_off
+defparam \addr[0]~input .bus_hold = "false";
+defparam \addr[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X28_Y0_N15
+cycloneive_io_ibuf \addr[1]~input (
+	.i(addr[1]),
+	.ibar(gnd),
+	.o(\addr[1]~input_o ));
+// synopsys translate_off
+defparam \addr[1]~input .bus_hold = "false";
+defparam \addr[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X30_Y0_N1
+cycloneive_io_ibuf \addr[2]~input (
+	.i(addr[2]),
+	.ibar(gnd),
+	.o(\addr[2]~input_o ));
+// synopsys translate_off
+defparam \addr[2]~input .bus_hold = "false";
+defparam \addr[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X30_Y0_N8
+cycloneive_io_ibuf \addr[3]~input (
+	.i(addr[3]),
+	.ibar(gnd),
+	.o(\addr[3]~input_o ));
+// synopsys translate_off
+defparam \addr[3]~input .bus_hold = "false";
+defparam \addr[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X1_Y0_N22
+cycloneive_io_ibuf \addr[4]~input (
+	.i(addr[4]),
+	.ibar(gnd),
+	.o(\addr[4]~input_o ));
+// synopsys translate_off
+defparam \addr[4]~input .bus_hold = "false";
+defparam \addr[4]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X21_Y0_N8
+cycloneive_io_ibuf \addr[5]~input (
+	.i(addr[5]),
+	.ibar(gnd),
+	.o(\addr[5]~input_o ));
+// synopsys translate_off
+defparam \addr[5]~input .bus_hold = "false";
+defparam \addr[5]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X25_Y0_N8
+cycloneive_io_ibuf \addr[6]~input (
+	.i(addr[6]),
+	.ibar(gnd),
+	.o(\addr[6]~input_o ));
+// synopsys translate_off
+defparam \addr[6]~input .bus_hold = "false";
+defparam \addr[6]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X9_Y0_N8
+cycloneive_io_ibuf \addr[7]~input (
+	.i(addr[7]),
+	.ibar(gnd),
+	.o(\addr[7]~input_o ));
+// synopsys translate_off
+defparam \addr[7]~input .bus_hold = "false";
+defparam \addr[7]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X13_Y0_N1
+cycloneive_io_ibuf \addr[8]~input (
+	.i(addr[8]),
+	.ibar(gnd),
+	.o(\addr[8]~input_o ));
+// synopsys translate_off
+defparam \addr[8]~input .bus_hold = "false";
+defparam \addr[8]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y11_N8
+cycloneive_io_ibuf \addr[9]~input (
+	.i(addr[9]),
+	.ibar(gnd),
+	.o(\addr[9]~input_o ));
+// synopsys translate_off
+defparam \addr[9]~input .bus_hold = "false";
+defparam \addr[9]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X28_Y24_N1
+cycloneive_io_ibuf \addr[10]~input (
+	.i(addr[10]),
+	.ibar(gnd),
+	.o(\addr[10]~input_o ));
+// synopsys translate_off
+defparam \addr[10]~input .bus_hold = "false";
+defparam \addr[10]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X5_Y24_N8
+cycloneive_io_ibuf \addr[11]~input (
+	.i(addr[11]),
+	.ibar(gnd),
+	.o(\addr[11]~input_o ));
+// synopsys translate_off
+defparam \addr[11]~input .bus_hold = "false";
+defparam \addr[11]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X25_Y0_N22
+cycloneive_io_ibuf \addr[12]~input (
+	.i(addr[12]),
+	.ibar(gnd),
+	.o(\addr[12]~input_o ));
+// synopsys translate_off
+defparam \addr[12]~input .bus_hold = "false";
+defparam \addr[12]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X28_Y24_N8
+cycloneive_io_ibuf \addr[13]~input (
+	.i(addr[13]),
+	.ibar(gnd),
+	.o(\addr[13]~input_o ));
+// synopsys translate_off
+defparam \addr[13]~input .bus_hold = "false";
+defparam \addr[13]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X9_Y24_N22
+cycloneive_io_ibuf \addr[14]~input (
+	.i(addr[14]),
+	.ibar(gnd),
+	.o(\addr[14]~input_o ));
+// synopsys translate_off
+defparam \addr[14]~input .bus_hold = "false";
+defparam \addr[14]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y6_N15
+cycloneive_io_ibuf \addr[15]~input (
+	.i(addr[15]),
+	.ibar(gnd),
+	.o(\addr[15]~input_o ));
+// synopsys translate_off
+defparam \addr[15]~input .bus_hold = "false";
+defparam \addr[15]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X1_Y24_N1
+cycloneive_io_ibuf \addr[16]~input (
+	.i(addr[16]),
+	.ibar(gnd),
+	.o(\addr[16]~input_o ));
+// synopsys translate_off
+defparam \addr[16]~input .bus_hold = "false";
+defparam \addr[16]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X16_Y24_N8
+cycloneive_io_ibuf \addr[17]~input (
+	.i(addr[17]),
+	.ibar(gnd),
+	.o(\addr[17]~input_o ));
+// synopsys translate_off
+defparam \addr[17]~input .bus_hold = "false";
+defparam \addr[17]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y18_N22
+cycloneive_io_ibuf \addr[18]~input (
+	.i(addr[18]),
+	.ibar(gnd),
+	.o(\addr[18]~input_o ));
+// synopsys translate_off
+defparam \addr[18]~input .bus_hold = "false";
+defparam \addr[18]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y18_N15
+cycloneive_io_ibuf \addr[19]~input (
+	.i(addr[19]),
+	.ibar(gnd),
+	.o(\addr[19]~input_o ));
+// synopsys translate_off
+defparam \addr[19]~input .bus_hold = "false";
+defparam \addr[19]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y19_N1
+cycloneive_io_ibuf \addr[20]~input (
+	.i(addr[20]),
+	.ibar(gnd),
+	.o(\addr[20]~input_o ));
+// synopsys translate_off
+defparam \addr[20]~input .bus_hold = "false";
+defparam \addr[20]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X32_Y0_N8
+cycloneive_io_ibuf \addr[21]~input (
+	.i(addr[21]),
+	.ibar(gnd),
+	.o(\addr[21]~input_o ));
+// synopsys translate_off
+defparam \addr[21]~input .bus_hold = "false";
+defparam \addr[21]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y12_N8
+cycloneive_io_ibuf \addr[22]~input (
+	.i(addr[22]),
+	.ibar(gnd),
+	.o(\addr[22]~input_o ));
+// synopsys translate_off
+defparam \addr[22]~input .bus_hold = "false";
+defparam \addr[22]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y12_N1
+cycloneive_io_ibuf \addr[23]~input (
+	.i(addr[23]),
+	.ibar(gnd),
+	.o(\addr[23]~input_o ));
+// synopsys translate_off
+defparam \addr[23]~input .bus_hold = "false";
+defparam \addr[23]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X32_Y24_N22
+cycloneive_io_ibuf \len[0]~input (
+	.i(len[0]),
+	.ibar(gnd),
+	.o(\len[0]~input_o ));
+// synopsys translate_off
+defparam \len[0]~input .bus_hold = "false";
+defparam \len[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X11_Y24_N8
+cycloneive_io_ibuf \len[1]~input (
+	.i(len[1]),
+	.ibar(gnd),
+	.o(\len[1]~input_o ));
+// synopsys translate_off
+defparam \len[1]~input .bus_hold = "false";
+defparam \len[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X18_Y0_N22
+cycloneive_io_ibuf \len[2]~input (
+	.i(len[2]),
+	.ibar(gnd),
+	.o(\len[2]~input_o ));
+// synopsys translate_off
+defparam \len[2]~input .bus_hold = "false";
+defparam \len[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X23_Y24_N1
+cycloneive_io_ibuf \len[3]~input (
+	.i(len[3]),
+	.ibar(gnd),
+	.o(\len[3]~input_o ));
+// synopsys translate_off
+defparam \len[3]~input .bus_hold = "false";
+defparam \len[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X9_Y24_N15
+cycloneive_io_ibuf \len[4]~input (
+	.i(len[4]),
+	.ibar(gnd),
+	.o(\len[4]~input_o ));
+// synopsys translate_off
+defparam \len[4]~input .bus_hold = "false";
+defparam \len[4]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X1_Y0_N1
+cycloneive_io_ibuf \len[5]~input (
+	.i(len[5]),
+	.ibar(gnd),
+	.o(\len[5]~input_o ));
+// synopsys translate_off
+defparam \len[5]~input .bus_hold = "false";
+defparam \len[5]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X30_Y0_N22
+cycloneive_io_ibuf \len[6]~input (
+	.i(len[6]),
+	.ibar(gnd),
+	.o(\len[6]~input_o ));
+// synopsys translate_off
+defparam \len[6]~input .bus_hold = "false";
+defparam \len[6]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y6_N22
+cycloneive_io_ibuf \len[7]~input (
+	.i(len[7]),
+	.ibar(gnd),
+	.o(\len[7]~input_o ));
+// synopsys translate_off
+defparam \len[7]~input .bus_hold = "false";
+defparam \len[7]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X9_Y0_N22
+cycloneive_io_ibuf \spi_miso~input (
+	.i(spi_miso),
+	.ibar(gnd),
+	.o(\spi_miso~input_o ));
+// synopsys translate_off
+defparam \spi_miso~input .bus_hold = "false";
+defparam \spi_miso~input .simulate_z_as = "z";
+// synopsys translate_on
+
+assign busy = \busy~output_o ;
+
+assign spi_sclk = \spi_sclk~output_o ;
+
+assign spi_cs_n = \spi_cs_n~output_o ;
+
+assign spi_mosi = \spi_mosi~output_o ;
+
+endmodule
+
+module hard_block (
+
+	devpor,
+	devclrn,
+	devoe);
+
+// Design Ports Information
+// ~ALTERA_ASDO_DATA1~	=>  Location: PIN_C1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_FLASH_nCE_nCSO~	=>  Location: PIN_D2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DCLK~	=>  Location: PIN_H1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DATA0~	=>  Location: PIN_H2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_nCEO~	=>  Location: PIN_F16,	 I/O Standard: 2.5 V,	 Current Strength: 8mA
+
+input 	devpor;
+input 	devclrn;
+input 	devoe;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+wire \~ALTERA_ASDO_DATA1~~padout ;
+wire \~ALTERA_FLASH_nCE_nCSO~~padout ;
+wire \~ALTERA_DATA0~~padout ;
+wire \~ALTERA_ASDO_DATA1~~ibuf_o ;
+wire \~ALTERA_FLASH_nCE_nCSO~~ibuf_o ;
+wire \~ALTERA_DATA0~~ibuf_o ;
+
+
+endmodule

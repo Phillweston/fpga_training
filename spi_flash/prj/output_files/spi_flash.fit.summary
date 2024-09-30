@@ -1,16 +1,16 @@
-Fitter Status : Successful - Fri Sep 27 17:47:20 2024
+Fitter Status : Successful - Mon Sep 30 01:27:38 2024
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : spi_flash
-Top-level Entity Name : spi_flash_se
+Top-level Entity Name : spi_flash_rdid
 Family : Cyclone IV E
 Device : EP4CE10F17C8
 Timing Models : Final
-Total logic elements : 101 / 10,320 ( < 1 % )
-    Total combinational functions : 101 / 10,320 ( < 1 % )
-    Dedicated logic registers : 14 / 10,320 ( < 1 % )
-Total registers : 14
-Total pins : 7 / 180 ( 4 % )
+Total logic elements : 880 / 10,320 ( 9 % )
+    Total combinational functions : 667 / 10,320 ( 6 % )
+    Dedicated logic registers : 565 / 10,320 ( 5 % )
+Total registers : 565
+Total pins : 31 / 180 ( 17 % )
 Total virtual pins : 0
-Total memory bits : 0 / 423,936 ( 0 % )
+Total memory bits : 16,384 / 423,936 ( 4 % )
 Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
 Total PLLs : 0 / 2 ( 0 % )
