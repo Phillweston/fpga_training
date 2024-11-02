@@ -63,7 +63,8 @@
 `define TRES1  30000        // notS high to Stand-By power mode w-o ID Read
 `define TRES2  30000        // notS high to Stand-By power mode with ID Read
 `define TW     15000000    // write status register cycle time (15ms)
-`define TPP    5000000     // page program cycle time (5ms)
+//`define TPP    5000000     // page program cycle time (5ms)
+`define TPP    100     // page program cycle time (5ms)
 `define TSE    3      // sector erase cycle time (3s)
 `define TBE   40     // bulk erase cycle time (40s)
 //`define Tbase  1000000000  // time base for Bulk and Sector ERASE, delay function limited to signed 32bits values

@@ -17,7 +17,8 @@ module flash_ctrl (
     output reg en_tx,
 
     output busy,
-    output reg spi_cs_n
+    output reg spi_cs_n,
+    output reg [7:0] rd_data
 );
     reg [23:0] id;
     reg [7:0] cnt;
@@ -30,6 +31,8 @@ module flash_ctrl (
     parameter PP = 8'h02;
     parameter ID = 24'h202015;
     parameter T = 8'd10;
+    parameter ADDR = 24'h0;
+    parameter READ = 8'h03;
     parameter WR_DATA = 8'h55;
 
     always @(posedge sys_clk or negedge sys_rst_n) begin
@@ -41,8 +44,10 @@ module flash_ctrl (
             spi_cs_n <= 1'b1;
             id <= 24'h0;
             cnt <= 8'd0;
+            rd_data <= 8'h0;
         end else begin
             case (state)
+                /******** Read Device ID ********/
                 8'd0: begin
                     spi_cs_n <= 1'b0;
                     en_tx <= 1'b1;
@@ -88,12 +93,14 @@ module flash_ctrl (
                         state <= 8'd4;
                     end
                 end
+                /******** Check ID Correctness********/
                 8'd5: begin
                     if (id == ID)
                         state <= 8'd6;          // ID is correct
                     else
                         state <= 8'd255;        // ID is incorrect
                 end
+                /******** Check WIP ********/
                 8'd6: begin
                     if (cnt < T - 1'd1)         // CS_N set as low (min=100ns)
                         cnt <= cnt + 8'd1;
@@ -114,6 +121,7 @@ module flash_ctrl (
                         state <= 8'd7;
                     end
                 end
+                /******** Wait for WIP ********/
                 8'd8: begin
                     en_rx <= 1'b0;
                     if (rx_done) begin          // received the first bit of the RDSR data
@@ -127,12 +135,16 @@ module flash_ctrl (
                         state <= 8'd8;
                     end
                 end
+                /******** Flash is Idle ********/
                 8'd9: begin
                     if (pp_flag)                // IDLE: PP
                         state <= 8'd10;
+                    /*else if (read_flag)      // read after write
+                        state <= 8'd28;*/
                     else
                         state <= 8'd9;
                 end
+                /******** Sector / Block Erase ********/
                 8'd10: begin
                     if (cnt < T - 1'd1)         // CS_N set as low (min=100ns)
                         cnt <= cnt + 8'd1;
@@ -184,6 +196,7 @@ module flash_ctrl (
                         state <= 8'd15;
                     end
                 end
+                /******** Check WIP ********/
                 8'd15: begin
                     en_tx <= 1'b0;
                     if (tx_done) begin          // sent the RDSR command, ready to receive the status register data
@@ -206,9 +219,186 @@ module flash_ctrl (
                         state <= 8'd16;
                     end
                 end
+                /******** TODO: Page Programming ********/
                 8'd17: begin
-                    state <= 8'd17;
+                    if (cnt < T - 1'd1)         // CS_N set as low (min=100ns)
+                        cnt <= cnt + 8'd1;
+                    else begin
+                        cnt <= 8'd0;
+                        spi_cs_n <= 1'b0;
+                        en_tx <= 1'b1;
+                        tx_data <= WREN;        // Preparing to send the WREN command
+                        state <= 8'd18;
+                    end
                 end
+                8'd18: begin
+                    en_tx <= 1'b0;
+                    if (tx_done) begin          // sent the WREN command
+                        spi_cs_n <= 1'b1;
+                        state <= 8'd19;
+                    end else begin
+                        state <= 8'd18;
+                    end
+                end
+                8'd19: begin
+                    if (cnt < T - 1'd1)         // CS_N set as low (min=100ns)
+                        cnt <= cnt + 8'd1;
+                    else begin
+                        cnt <= 8'd0;
+                        spi_cs_n <= 1'b0;
+                        en_tx <= 1'b1;
+                        tx_data <= PP;        // Preparing to send the PP command
+                        state <= 8'd20;
+                    end
+                end
+                8'd20: begin
+                    en_tx <= 1'b0;
+                    if (tx_done) begin          // sent the PP command
+                        en_tx <= 1'b1;
+                        tx_data <= addr[23:16];        // Preparing to send the address
+                        state <= 8'd21;
+                    end else begin
+                        state <= 8'd18;
+                    end
+                end
+                8'd21: begin
+                    en_tx <= 1'b0;
+                    if (tx_done) begin          // sent the PP command
+                        en_tx <= 1'b1;
+                        tx_data <= addr[15:8];        // Preparing to send the 3-byte address
+                        state <= 8'd22;
+                    end else begin
+                        state <= 8'd21;
+                    end
+                end
+                8'd22: begin
+                    en_tx <= 1'b0;
+                    if (tx_done) begin          // sent the PP command
+                        en_tx <= 1'b1;
+                        tx_data <= addr[7:0];        // Preparing to send the 3-byte address
+                        state <= 8'd23;
+                    end else begin
+                        state <= 8'd22;
+                    end
+                end
+                8'd23: begin
+                    en_tx <= 1'b0;
+                    if (tx_done) begin          // sent the PP command
+                        en_tx <= 1'b1;
+                        tx_data <= WR_DATA;        // Preparing to send the flash data
+                        state <= 8'd24;
+                    end else begin
+                        state <= 8'd23;
+                    end
+                end
+                8'd24: begin
+                    en_tx <= 1'b0;
+                    if (tx_done) begin
+                        spi_cs_n <= 1'b1;
+                        state <= 8'd25;      // IDLE
+                    end else begin
+                        state <= 8'd24;
+                    end
+                end
+                8'd25: begin
+                    if (cnt < T - 1'd1)         // CS_N set as low (min=100ns)
+                        cnt <= cnt + 8'd1;
+                    else begin
+                        cnt <= 8'd0;
+                        spi_cs_n <= 1'b0;
+                        en_tx <= 1'b1;
+                        tx_data <= RDSR;        // Preparing to send the RDSR command
+                        state <= 8'd20;
+                    end
+                end
+                8'd26: begin
+                    en_tx <= 1'b0;
+                    if (tx_done) begin          // sent the RDSR command, ready to receive the status register data
+                        en_rx <= 1'b1;
+                        state <= 8'd27;
+                    end else begin
+                        state <= 8'd26;
+                    end
+                end
+                8'd27: begin
+                    en_rx <= 1'b0;
+                    if (rx_done) begin          // received the first bit of the RDSR data
+                        if (rx_data[0] == 1'b0) begin
+                            spi_cs_n <= 1'b1;
+                            state <= 8'd28;      // IDLE
+                        end else begin
+                            state <= 8'd27;
+                        end
+                    end else begin
+                        state <= 8'd27;
+                    end
+                end
+                8'd28: begin
+                    if (cnt < T - 1'd1)         // CS_N set as low (min=100ns)
+                        cnt <= cnt + 8'd1;
+                    else begin
+                        cnt <= 8'd0;
+                        spi_cs_n <= 1'b0;
+                        en_tx <= 1'b1;
+                        tx_data <= READ;        // Preparing to send the READ command
+                        state <= 8'd29;
+                    end
+                end
+
+                /////////////////////////////
+                8'd29: begin
+                    en_tx <= 1'b0;
+                    if (tx_done) begin          // sent the READ command
+                        en_tx <= 1'b1;
+                        tx_data <= addr[23:16];        // Preparing to send the address
+                        state <= 8'd30;
+                    end else begin
+                        state <= 8'd29;
+                    end
+                end
+                8'd30: begin
+                    en_tx <= 1'b0;
+                    if (tx_done) begin          // sent the READ command
+                        en_tx <= 1'b1;
+                        tx_data <= addr[15:8];        // Preparing to send the 3-byte address
+                        state <= 8'd31;
+                    end else begin
+                        state <= 8'd30;
+                    end
+                end
+                8'd31: begin
+                    en_tx <= 1'b0;
+                    if (tx_done) begin          // sent the PP command
+                        en_tx <= 1'b1;
+                        tx_data <= addr[7:0];        // Preparing to send the 3-byte address
+                        state <= 8'd32;
+                    end else begin
+                        state <= 8'd31;
+                    end
+                end
+                8'd32: begin
+                    en_rx <= 1'b0;
+                    if (tx_done) begin          // sent the PP command
+                        en_rx <= 1'b1;
+                        state <= 8'd33;
+                    end else begin
+                        state <= 8'd32;
+                    end
+                end
+                8'd33: begin
+                    en_rx <= 1'b0;
+                    if (rx_done) begin          // received the first bit of the READ data
+                        rd_data <= rx_data;
+                        spi_cs_n <= 1'b1;
+                        state <= 8'd33;      // Keep the current state
+                    end else begin
+                        state <= 8'd33;
+                    end
+                end
+
+                /******** TODO: Check WIP ********/
+                /******** TODO: Read Data ********/
+                /******** TODO: Check WIP ********/
                 default: begin
                     state <= 8'd0;
                 end

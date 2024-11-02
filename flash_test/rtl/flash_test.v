@@ -20,6 +20,7 @@ module flash_test (
     wire en_rx;         // SPI_RX
     wire rx_done;
     wire [7:0] rx_data;
+    wire [7:0] rd_data;
 
     flash_ctrl flash_ctrl_inst (
         .sys_clk (sys_clk),
@@ -40,7 +41,8 @@ module flash_test (
         .en_tx (en_tx),
 
         .busy (busy),
-        .spi_cs_n (spi_cs_n)
+        .spi_cs_n (spi_cs_n),
+        .rd_data (rd_data)
     );
 
     spi_8bit_driver spi_8bit_driver_inst (

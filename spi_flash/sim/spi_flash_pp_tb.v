@@ -8,17 +8,17 @@ module spi_flash_pp_tb;
     wire spi_sck;
     wire spi_mosi;
     wire spi_miso;
-    wire [7:0] data_out;
+    reg [7:0] data_in;
     wire check_wip;
 
     spi_flash_pp spi_flash_pp_inst (
         .sys_clk (sys_clk),
         .sys_rst_n (sys_rst_n),
         .spi_miso (spi_miso),
+        .data_in (data_in),      // send the 8-bit data to flash
         .spi_mosi (spi_mosi),
         .spi_cs_n (spi_cs_n),
         .spi_sck (spi_sck),
-        .data_out (data_out),      // receive the 8-bit data from RDSR
         .check_wip (check_wip)            // check the WIP bit
     );
 
@@ -42,6 +42,7 @@ module spi_flash_pp_tb;
     initial begin
         // Initialize signals
         sys_rst_n = 0;
+        data_in = 8'h00;
         // Apply reset
         #200.1;
         sys_rst_n = 1;

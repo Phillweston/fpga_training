@@ -10,64 +10,65 @@ z2
 cModel Technology
 Z0 dD:/git-repository/fpga_training/flash_test/prj/simulation/questa
 T_opt
-!s110 1727698162
-V:FfdnZdAH3846=EJz>^kX2
+!s110 1728210954
+VUS;ZN4=DS47gNeT`mRg9P2
 04 13 4 work flash_test_tb fast 0
-=1-00d861e3bc76-66fa94f2-125-3758
+=1-00d861e3bc76-67026809-381-cbb8
 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
 Z1 tCvgOpt 0
 n@_opt
 OL;O;2020.4;71
+R0
 vacdc_check
-Z2 !s110 1727698160
+Z2 !s110 1728212548
 !i10b 1
 !s100 SOQLo=D3jSPcNn?Z]EnSM2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IRPK<Aj:]9@dAD;@bU^`C11
+IIQFaG]O2PbOK?4GhmB47D1
 R0
 w1086255684
-8D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/acdc_check.v
-FD:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/acdc_check.v
-!i122 10
+8D:/git-repository/fpga_training/flash_test/m25p16-vg-v12/acdc_check.v
+FD:/git-repository/fpga_training/flash_test/m25p16-vg-v12/acdc_check.v
+!i122 23
 L0 20 348
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 Z5 OL;L;2020.4;71
 r1
 !s85 0
 31
-Z6 !s108 1727698160.000000
-!s107 D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/parameter.v|D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/acdc_check.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12|D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/acdc_check.v|
+Z6 !s108 1728212548.000000
+!s107 D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/parameter.v|D:/git-repository/fpga_training/flash_test/m25p16-vg-v12/acdc_check.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/flash_test/m25p16-vg-v12/acdc_check.v|
 !i113 0
 Z7 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 Z8 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
 vflash_ctrl
-Z9 !s110 1727698159
+R2
 !i10b 1
-!s100 bV9RiNGD9MYjmlAfBBamL1
+!s100 G9EaOiaYA[Oz9I]_;oI1Y1
 R3
-IMSfMnh5D:Ge;L38>337fD2
+IHe6m3F8JANK056jzhgB2>3
 R0
-w1727695516
+w1728210647
 8D:/git-repository/fpga_training/flash_test/rtl/flash_ctrl.v
 FD:/git-repository/fpga_training/flash_test/rtl/flash_ctrl.v
-!i122 4
-L0 1 220
+!i122 22
+L0 1 348
 R4
 R5
 r1
 !s85 0
 31
-Z10 !s108 1727698159.000000
+R6
 !s107 D:/git-repository/fpga_training/flash_test/rtl/flash_ctrl.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/rtl|D:/git-repository/fpga_training/flash_test/rtl/flash_ctrl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/flash_test/rtl/flash_ctrl.v|
 !i113 0
 R7
-Z11 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/flash_test/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/flash_test/rtl -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
 vflash_test
-R9
+R2
 !i10b 1
 !s100 gWMT7Khc`8lbKilFgD0bY3
 R3
@@ -76,31 +77,31 @@ R0
 w1727694702
 8D:/git-repository/fpga_training/flash_test/rtl/flash_test.v
 FD:/git-repository/fpga_training/flash_test/rtl/flash_test.v
-!i122 3
+!i122 21
 L0 1 60
 R4
 R5
 r1
 !s85 0
 31
-R10
+R6
 !s107 D:/git-repository/fpga_training/flash_test/rtl/flash_test.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/rtl|D:/git-repository/fpga_training/flash_test/rtl/flash_test.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/flash_test/rtl/flash_test.v|
 !i113 0
 R7
-R11
+R9
 R1
 vflash_test_tb
 R2
 !i10b 1
-!s100 ;nz<:=Xh1jJkFkU28_22J2
+!s100 4mcLV;mY2:EBXJl03SFXH1
 R3
-I1M]IbY0oU2ILiVUgo]7BF2
+IJD[BOT0Dz`;c>T_KHe_6o3
 R0
-w1727698103
-8D:/git-repository/fpga_training/flash_test/prj/../sim/flash_test_tb.v
-FD:/git-repository/fpga_training/flash_test/prj/../sim/flash_test_tb.v
-!i122 11
+w1727698261
+8D:/git-repository/fpga_training/flash_test/sim/flash_test_tb.v
+FD:/git-repository/fpga_training/flash_test/sim/flash_test_tb.v
+!i122 20
 L0 3 62
 R4
 R5
@@ -108,8 +109,8 @@ r1
 !s85 0
 31
 R6
-!s107 D:/git-repository/fpga_training/flash_test/prj/../sim/flash_test_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/prj/../sim|D:/git-repository/fpga_training/flash_test/prj/../sim/flash_test_tb.v|
+!s107 D:/git-repository/fpga_training/flash_test/sim/flash_test_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/prj/../sim|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/flash_test/sim/flash_test_tb.v|
 !i113 0
 R7
 !s92 -vlog01compat -work work +incdir+D:/git-repository/fpga_training/flash_test/prj/../sim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
@@ -117,14 +118,14 @@ R1
 vinternal_logic
 R2
 !i10b 1
-!s100 eXHFIj4<7agibJh>58D>J1
+!s100 f9DQ2f7`^PZPXESj6d=jX2
 R3
-I=eNDOn]iV:EW@kA2i9jfk2
+IceFF`22DQTR>FhGTD[oYz2
 R0
 w1086255746
-8D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/internal_logic.v
-FD:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/internal_logic.v
-!i122 9
+8D:/git-repository/fpga_training/flash_test/m25p16-vg-v12/internal_logic.v
+FD:/git-repository/fpga_training/flash_test/m25p16-vg-v12/internal_logic.v
+!i122 19
 L0 20 1576
 R4
 R5
@@ -132,86 +133,86 @@ r1
 !s85 0
 31
 R6
-!s107 D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/parameter.v|D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/internal_logic.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12|D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/internal_logic.v|
+!s107 D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/parameter.v|D:/git-repository/fpga_training/flash_test/m25p16-vg-v12/internal_logic.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/flash_test/m25p16-vg-v12/internal_logic.v|
 !i113 0
 R7
 R8
 R1
 vm25p16
-R2
+Z10 !s110 1728212547
 !i10b 1
 !s100 obO<nlOQYJPZ3DP1>8Q560
 R3
-IoMPhmVcU7^9;O^PKE<]9H3
+IVZF7i9@aSWVNz72>`dWnD1
 R0
 w1086255776
-8D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/M25p16.v
-FD:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/M25p16.v
-!i122 8
+8D:/git-repository/fpga_training/flash_test/m25p16-vg-v12/M25p16.v
+FD:/git-repository/fpga_training/flash_test/m25p16-vg-v12/M25p16.v
+!i122 18
 L0 20 39
 R4
 R5
 r1
 !s85 0
 31
-R6
-!s107 D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/parameter.v|D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/M25p16.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12|D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/M25p16.v|
+Z11 !s108 1728212547.000000
+!s107 D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/parameter.v|D:/git-repository/fpga_training/flash_test/m25p16-vg-v12/M25p16.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/flash_test/m25p16-vg-v12/M25p16.v|
 !i113 0
 R7
 R8
 R1
 vm25p16_driver
-R2
+R10
 !i10b 1
 !s100 `OUECmG^zV]PI@MmIQ;RL3
 R3
-I7Lm6QZXh0jRe0HV[0U2GI1
+IS:^SNe<UV8:QMNf5eH?N23
 R0
 w1727251731
-8D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/m25p16_driver.v
-FD:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/m25p16_driver.v
-!i122 7
+8D:/git-repository/fpga_training/flash_test/m25p16-vg-v12/m25p16_driver.v
+FD:/git-repository/fpga_training/flash_test/m25p16-vg-v12/m25p16_driver.v
+!i122 17
 L0 20 1460
 R4
 R5
 r1
 !s85 0
 31
-R6
-!s107 D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/parameter.v|D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/m25p16_driver.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12|D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/m25p16_driver.v|
+R11
+!s107 D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/parameter.v|D:/git-repository/fpga_training/flash_test/m25p16-vg-v12/m25p16_driver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/flash_test/m25p16-vg-v12/m25p16_driver.v|
 !i113 0
 R7
 R8
 R1
 vmemory_access
-R2
+R10
 !i10b 1
 !s100 5i>KUSEgi^CiDGLl?aPT?3
 R3
-IOCFUQkgl<`bZe:@VRkzkg3
+IJ@hdI>k52T0>okkKX?8f^1
 R0
 w1086255824
-8D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/memory_access.v
-FD:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/memory_access.v
-!i122 6
+8D:/git-repository/fpga_training/flash_test/m25p16-vg-v12/memory_access.v
+FD:/git-repository/fpga_training/flash_test/m25p16-vg-v12/memory_access.v
+!i122 16
 L0 20 189
 R4
 R5
 r1
 !s85 0
 31
-R10
-!s107 D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/parameter.v|D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/memory_access.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12|D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/memory_access.v|
+R11
+!s107 D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/parameter.v|D:/git-repository/fpga_training/flash_test/m25p16-vg-v12/memory_access.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/flash_test/m25p16-vg-v12/memory_access.v|
 !i113 0
 R7
 R8
 R1
 vspi_8bit_driver
-R9
+R10
 !i10b 1
 !s100 07DgGnDi9]8:Q>[PKEkdR0
 R3
@@ -220,22 +221,22 @@ R0
 w1727687518
 8D:/git-repository/fpga_training/flash_test/rtl/spi_8bit_driver.v
 FD:/git-repository/fpga_training/flash_test/rtl/spi_8bit_driver.v
-!i122 2
+!i122 15
 L0 1 39
 R4
 R5
 r1
 !s85 0
 31
-R10
+R11
 !s107 D:/git-repository/fpga_training/flash_test/rtl/spi_8bit_driver.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/rtl|D:/git-repository/fpga_training/flash_test/rtl/spi_8bit_driver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/flash_test/rtl/spi_8bit_driver.v|
 !i113 0
 R7
-R11
+R9
 R1
 vspi_rx
-R9
+R10
 !i10b 1
 !s100 1an9;S8F;2`L8gfNg9@X]3
 R3
@@ -244,22 +245,22 @@ R0
 w1727694555
 8D:/git-repository/fpga_training/flash_test/rtl/spi_rx.v
 FD:/git-repository/fpga_training/flash_test/rtl/spi_rx.v
-!i122 1
+!i122 14
 L0 1 124
 R4
 R5
 r1
 !s85 0
 31
-R10
+R11
 !s107 D:/git-repository/fpga_training/flash_test/rtl/spi_rx.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/rtl|D:/git-repository/fpga_training/flash_test/rtl/spi_rx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/flash_test/rtl/spi_rx.v|
 !i113 0
 R7
-R11
+R9
 R1
 vspi_tx
-R9
+R10
 !i10b 1
 !s100 ;;lBb5[dVk132JcSTkeCo3
 R3
@@ -268,40 +269,40 @@ R0
 w1727694235
 8D:/git-repository/fpga_training/flash_test/rtl/spi_tx.v
 FD:/git-repository/fpga_training/flash_test/rtl/spi_tx.v
-!i122 0
+!i122 13
 L0 1 120
 R4
 R5
 r1
 !s85 0
 31
-!s108 1727698158.000000
+Z12 !s108 1728212546.000000
 !s107 D:/git-repository/fpga_training/flash_test/rtl/spi_tx.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/rtl|D:/git-repository/fpga_training/flash_test/rtl/spi_tx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/rtl|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/flash_test/rtl/spi_tx.v|
 !i113 0
 R7
-R11
+R9
 R1
 vtestbench
-R9
+!s110 1728212546
 !i10b 1
 !s100 ;G>HEWGjGSA3R7F_SjFlN2
 R3
-I^6BNLi>ZIn@hX:Ah9WjRh3
+ILNzm@R20M`fHh0BoHL>m;3
 R0
 w1086256946
-8D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/testbench.v
-FD:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/testbench.v
-!i122 5
+8D:/git-repository/fpga_training/flash_test/m25p16-vg-v12/testbench.v
+FD:/git-repository/fpga_training/flash_test/m25p16-vg-v12/testbench.v
+!i122 12
 L0 19 15
 R4
 R5
 r1
 !s85 0
 31
-R10
-!s107 D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/testbench.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12|D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12/testbench.v|
+R12
+!s107 D:/git-repository/fpga_training/flash_test/m25p16-vg-v12/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/git-repository/fpga_training/flash_test/prj/../m25p16-vg-v12|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|D:/git-repository/fpga_training/flash_test/m25p16-vg-v12/testbench.v|
 !i113 0
 R7
 R8

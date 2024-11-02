@@ -52,9 +52,9 @@ module flash_test_tb;
         se_flag = 0;
         be_flag = 0;
         pp_flag = 1;            // Program Page
-        read_flag = 0;
+        read_flag = 1;
         addr = 24'h000000;
-        len = 8'd1;
+        len = 8'd0;
 
         // Reset the system
         #200.1 sys_rst_n = 1;

@@ -171,7 +171,7 @@ module spi_flash_rdsr (
                     spi_sck <= 1'b1;
                     data[0] <= spi_miso;
                 end
-                10'd1 + 32 * `HALF: begin
+                10'd1 + 32 * `HALF: begin       // pull cs_n high
                     spi_sck <= 1'b0;
                     spi_cs_n = 1'b1;
                 end
