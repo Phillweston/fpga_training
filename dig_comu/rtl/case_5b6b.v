@@ -1,66 +1,65 @@
-module  case_5b6b
-(
-
-								//ÏµÍ³Ïà¹Ø
-								input						clk,	//±àÂëÆ÷Ê±ÖÓ
-								input						rst_n,	//ÏµÍ³¸´Î»
-								//±àÂëÊı¾İÊäÈë
-								input						valid_din,	//µ±==1±íÊ¾din[7:5]ÓĞĞ§
-								input[4:0]					din,	//±»±àÂëÊı¾İ
-								//±àÂëÊä³ö
-								output reg[9:4]				dout,	///±àÂëÊı¾İ
-								
-								output	reg					flag_dout,	//µ±flag_dout==1±íÊ¾doutÓĞĞ§		
-								//±àÂë¼«ĞÔ	
-								rd	/*Rd
-								0:±íÊ¾rd-
-								1:±íÊ¾rd+*/
-
+module case_5b6b (
+    // ç³»ç»Ÿç›¸å…³
+    input           clk,            // ç¼–ç å™¨æ—¶é’Ÿ
+    input           rst_n,          // ç³»ç»Ÿå¤ä½
+    // ç¼–ç æ•°æ®è¾“å…¥
+    input           valid_din,      // å½“==1è¡¨ç¤ºdin[4:0]æœ‰æ•ˆ
+    input   [4:0]   din,            // è¢«ç¼–ç æ•°æ®
+    // ç¼–ç è¾“å‡º
+    output  reg [9:4] dout,         // ç¼–ç æ•°æ®
+    output  reg     flag_dout,      // å½“flag_dout==1è¡¨ç¤ºdoutæœ‰æ•ˆ
+    // ç¼–ç ææ€§
+    input           rd              /* Rd
+                                        0: è¡¨ç¤ºrd-
+                                        1: è¡¨ç¤ºrd+ */
 );
 
-always 			@(posedge 			clk    or  negedge rst_n)
-				if(~rst_n)
-					dout  <=  6'd0;	
-				else if(valid_din)
-						case(din[4:0])
-								0     		:if(~rd)dout<=6'b010111;else dout<=6'b011000;
-								1     		:if(~rd)dout<=6'b011101;else dout<=6'b100010;
-								2     		:if(~rd)dout<=6'b101101;else dout<=6'b010010;
-								3     		:dout<=6'b110001;
-								4     		:if(~rd)dout<=6'b110101;else dout<=6'b001010;
-								5     		:dout<=6'b101001;
-								6     		:dout<=6'b011001;
-								7     		:if(~rd)dout<=6'b111000;else dout<=6'b000111;
-								8     		:if(~rd)dout<=6'b111001;else dout<=6'b000110;
-								9     		:dout<=6'b100101;
-								10    		:dout<=6'b010101;
-								11    		:dout<=6'b110100;
-								12    		:dout<=6'b001101;
-								13    		:dout<=6'b101100;
-								14    		:dout<=6'b011100;
-								15    		:if(~rd)dout<=6'b010111;else dout<=6'b101000;
-								16    		:if(~rd)dout<=6'b011011;else dout<=6'b100100;
-								17    		:dout<=6'b100011;
-								18    		:dout<=6'b010011;
-								19    		:dout<=6'b110010;
-								20    		:dout<=6'b001011;
-								21    		:dout<=6'b101010;
-								22    		:dout<=6'b011010;
-								23    		:if(~rd)dout<=6'b111010;else dout<=6'b000101;
-								24    		:if(~rd)dout<=6'b110011;else dout<=6'b001100;
-								25    		:dout<=6'b100110;
-								26    		:dout<=6'b010110;
-								27    		:if(~rd)dout<=6'b110110;else dout<=6'b001001;
-								28    		:dout<=6'b001110;
-								29    		:if(~rd)dout<=6'b101110;else dout<=6'b010001;
-								30    		:if(~rd)dout<=6'b011110;else dout<=6'b100001;
-								31    		:if(~rd)dout<=6'b101011;else dout<=6'b010100;
-								default		:dout<=dout;
-						endcase
-						
-always 			@(posedge 			clk    or  negedge rst_n)
-               if(~rst_n)						
-                              flag_dout <= 1'b0;
-               else 
-                              flag_dout <= valid_din; 
-endmodule 
+	always @(posedge clk or negedge rst_n) begin
+		if (~rst_n)
+			dout <= 6'd0;
+		else if (valid_din)
+			case (din[4:0])
+				5'd0  : if (~rd) dout <= 6'b010111; else dout <= 6'b011000;
+				5'd1  : if (~rd) dout <= 6'b011101; else dout <= 6'b100010;
+				5'd2  : if (~rd) dout <= 6'b101101; else dout <= 6'b010010;
+				5'd3  : dout <= 6'b110001;
+				5'd4  : if (~rd) dout <= 6'b110101; else dout <= 6'b001010;
+				5'd5  : dout <= 6'b101001;
+				5'd6  : dout <= 6'b011001;
+				5'd7  : if (~rd) dout <= 6'b111000; else dout <= 6'b000111;
+				5'd8  : if (~rd) dout <= 6'b111001; else dout <= 6'b000110;
+				5'd9  : dout <= 6'b100101;
+				5'd10 : dout <= 6'b010101;
+				5'd11 : dout <= 6'b110100;
+				5'd12 : dout <= 6'b001101;
+				5'd13 : dout <= 6'b101100;
+				5'd14 : dout <= 6'b011100;
+				5'd15 : if (~rd) dout <= 6'b010111; else dout <= 6'b101000;
+				5'd16 : if (~rd) dout <= 6'b011011; else dout <= 6'b100100;
+				5'd17 : dout <= 6'b100011;
+				5'd18 : dout <= 6'b010011;
+				5'd19 : dout <= 6'b110010;
+				5'd20 : dout <= 6'b001011;
+				5'd21 : dout <= 6'b101010;
+				5'd22 : dout <= 6'b011010;
+				5'd23 : if (~rd) dout <= 6'b111010; else dout <= 6'b000101;
+				5'd24 : if (~rd) dout <= 6'b110011; else dout <= 6'b001100;
+				5'd25 : dout <= 6'b100110;
+				5'd26 : dout <= 6'b010110;
+				5'd27 : if (~rd) dout <= 6'b110110; else dout <= 6'b001001;
+				5'd28 : dout <= 6'b001110;
+				5'd29 : if (~rd) dout <= 6'b101110; else dout <= 6'b010001;
+				5'd30 : if (~rd) dout <= 6'b011110; else dout <= 6'b100001;
+				5'd31 : if (~rd) dout <= 6'b101011; else dout <= 6'b010100;
+				default: dout <= dout;
+			endcase
+	end
+
+	always @(posedge clk or negedge rst_n) begin
+		if (~rst_n)
+			flag_dout <= 1'b0;
+		else
+			flag_dout <= valid_din;
+	end
+
+endmodule

@@ -1,0 +1,242 @@
+# Reading D:/altera/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do my_risc_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/rtl {C:/Users/86150/Desktop/risc_exam/rtl/ui.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ui
+# 
+# Top level modules:
+# 	ui
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/rtl {C:/Users/86150/Desktop/risc_exam/rtl/risc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module risc
+# 
+# Top level modules:
+# 	risc
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/rtl {C:/Users/86150/Desktop/risc_exam/rtl/pc_gen.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pc_gen
+# 
+# Top level modules:
+# 	pc_gen
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/rtl {C:/Users/86150/Desktop/risc_exam/rtl/ir_regester.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ir_regester
+# 
+# Top level modules:
+# 	ir_regester
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/rtl {C:/Users/86150/Desktop/risc_exam/rtl/bus_ctl.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bus_ctl
+# 
+# Top level modules:
+# 	bus_ctl
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/rtl {C:/Users/86150/Desktop/risc_exam/rtl/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/rtl {C:/Users/86150/Desktop/risc_exam/rtl/acc.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module acc
+# 
+# Top level modules:
+# 	acc
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/prj/prj02/../../rtl {C:/Users/86150/Desktop/risc_exam/prj/prj02/../../rtl/risc_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module risc_tb
+# 
+# Top level modules:
+# 	risc_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  risc_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps risc_tb 
+# Loading work.risc_tb
+# Loading work.risc
+# Loading work.bus_ctl
+# Loading work.pc_gen
+# Loading work.ir_regester
+# Loading work.alu
+# Loading work.acc
+# Loading work.ui
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit 
+# Simulation stop requested.
+# Simulation Breakpoint: Simulation stop requested.
+# MACRO ./my_risc_run_msim_rtl_verilog.do PAUSED at line 23
+add wave -position insertpoint  \
+sim:/risc_tb/risc_ins/acc_ins/out_acc
+restart
+run -all
+# Break key hit 
+# Simulation stop requested.
+add wave -position insertpoint  \
+sim:/risc_tb/risc_ins/ui_ins/ld_pc
+add wave -position insertpoint  \
+sim:/risc_tb/risc_ins/ui_ins/en_inc_fetch \
+sim:/risc_tb/risc_ins/ui_ins/en_inc_exit \
+sim:/risc_tb/risc_ins/ui_ins/en_inc \
+sim:/risc_tb/risc_ins/ui_ins/en_alu
+restart
+run -all
+# Break key hit 
+# Simulation stop requested.
+add wave -position insertpoint  \
+sim:/risc_tb/risc_ins/ui_ins/cnt
+restart
+run -all
+# Break key hit 
+# Simulation stop requested.
+add wave -position insertpoint  \
+sim:/risc_tb/risc_ins/ui_ins/ir
+restart
+run -all
+# Break key hit 
+# Simulation stop requested.
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/rtl -O0 C:/Users/86150/Desktop/risc_exam/rtl/acc.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module acc
+# 
+# Top level modules:
+# 	acc
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/rtl -O0 C:/Users/86150/Desktop/risc_exam/rtl/alu.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/rtl -O0 C:/Users/86150/Desktop/risc_exam/rtl/bus_ctl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bus_ctl
+# 
+# Top level modules:
+# 	bus_ctl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/rtl -O0 C:/Users/86150/Desktop/risc_exam/rtl/ir_regester.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ir_regester
+# 
+# Top level modules:
+# 	ir_regester
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/rtl -O0 C:/Users/86150/Desktop/risc_exam/rtl/pc_gen.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pc_gen
+# 
+# Top level modules:
+# 	pc_gen
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/rtl -O0 C:/Users/86150/Desktop/risc_exam/rtl/risc.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module risc
+# 
+# Top level modules:
+# 	risc
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/prj/prj02/../../rtl -O0 C:/Users/86150/Desktop/risc_exam/rtl/risc_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module risc_tb
+# 
+# Top level modules:
+# 	risc_tb
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/rtl -O0 C:/Users/86150/Desktop/risc_exam/rtl/ui.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ui
+# 
+# Top level modules:
+# 	ui
+vsim -voptargs=+acc work.risc_tb
+# vsim -voptargs=+acc work.risc_tb 
+# Loading work.risc_tb
+# Loading work.risc
+# Loading work.bus_ctl
+# Loading work.pc_gen
+# Loading work.ir_regester
+# Loading work.alu
+# Loading work.acc
+# Loading work.ui
+# WARNING: No extended dataflow license exists
+add wave -position insertpoint sim:/risc_tb/*
+run -all
+# Break key hit 
+# Simulation stop requested.
+add wave -position insertpoint  \
+sim:/risc_tb/risc_ins/acc_ins/out_acc
+restart
+run -all
+# Break key hit 
+# Simulation stop requested.
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/rtl -O0 C:/Users/86150/Desktop/risc_exam/rtl/acc.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module acc
+# 
+# Top level modules:
+# 	acc
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/rtl -O0 C:/Users/86150/Desktop/risc_exam/rtl/alu.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/rtl -O0 C:/Users/86150/Desktop/risc_exam/rtl/bus_ctl.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bus_ctl
+# 
+# Top level modules:
+# 	bus_ctl
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/rtl -O0 C:/Users/86150/Desktop/risc_exam/rtl/ir_regester.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ir_regester
+# 
+# Top level modules:
+# 	ir_regester
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/rtl -O0 C:/Users/86150/Desktop/risc_exam/rtl/pc_gen.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pc_gen
+# 
+# Top level modules:
+# 	pc_gen
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/rtl -O0 C:/Users/86150/Desktop/risc_exam/rtl/risc.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module risc
+# 
+# Top level modules:
+# 	risc
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/prj/prj02/../../rtl -O0 C:/Users/86150/Desktop/risc_exam/rtl/risc_tb.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module risc_tb
+# 
+# Top level modules:
+# 	risc_tb
+vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/rtl -O0 C:/Users/86150/Desktop/risc_exam/rtl/ui.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ui
+# 
+# Top level modules:
+# 	ui
+restart
+# Loading work.risc_tb
+# Loading work.risc
+# Loading work.bus_ctl
+# Loading work.pc_gen
+# Loading work.ir_regester
+# Loading work.alu
+# Loading work.acc
+# Loading work.ui
+run -all
+# Break key hit 
+# Simulation stop requested.

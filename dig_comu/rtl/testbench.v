@@ -19,50 +19,48 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+module testbench;
+    // ç³»ç»Ÿç›¸å…³
+    reg clk;        // ç¼–ç å™¨æ—¶é’Ÿ
+    reg rst_n;      // ç³»ç»Ÿå¤ä½
 
-module testbench(
-
-    );
-    //ÏµÍ³Ïà¹Ø
-    reg                        clk;    //±àÂëÆ÷Ê±ÖÓ
-    reg                        rst_n;    //ÏµÍ³¸´Î»
     initial begin
-                clk  =0;
-               rst_n  =0;
-               #53   rst_n  =1;     
-    
+        clk = 0;
+        rst_n = 0;
+        #53 rst_n = 1;
     end
-always  #2     clk=~clk;     
-    //±àÂëÊı¾İÊäÈë
-    reg                        valid_din;    //µ±==1±íÊ¾din[7:5]ÓĞĞ§
-    reg[7:0]                   din;    //±»±àÂëÊı¾İ
-    always  @(posedge           clk  or negedge  rst_n)
-            if(~rst_n)begin
-                   valid_din   <=   1'b0;
-                   din         <=  8'd0;end
-           else   begin
-                    valid_din   <=   1'b1;
-                    din         <=  {$random}%256; 
-           end 
 
+    always #2 clk = ~clk;
 
-    //±àÂëÊä³ö
-    wire [9:0]                dout;    //±àÂëÊı¾İ
-    wire                      flag_dout ;   //µ±flag_dout==1±íÊ¾doutÓĞĞ§     
-    
- code_8b10b code_8b10b_ins
-    (
-                    //ÏµÍ³Ïà¹Ø
-                   .clk(clk),    //±àÂëÆ÷Ê±ÖÓ
-                   .rst_n(rst_n),    //ÏµÍ³¸´Î»
-    
-                    //±àÂëÊı¾İÊäÈë
-                    .valid_din(valid_din),    //µ±==1±íÊ¾din[7:5]ÓĞĞ§
-                    .din(din),    //±»±àÂëÊı¾İ
-    
-    
-                    //±àÂëÊä³ö
-                    .dout(dout),    //±àÂëÊı¾İ
-                    .flag_dout(flag_dout)    //µ±flag_dout==1±íÊ¾doutÓĞĞ§    
+    // ç¼–ç æ•°æ®è¾“å…¥
+    reg valid_din;  // å½“==1è¡¨ç¤ºdin[7:5]æœ‰æ•ˆ
+    reg [7:0] din;  // è¢«ç¼–ç æ•°æ®
+
+    always @(posedge clk or negedge rst_n) begin
+        if (~rst_n) begin
+            valid_din <= 1'b0;
+            din <= 8'd0;
+        end else begin
+            valid_din <= 1'b1;
+            din <= {$random} % 256;
+        end
+    end
+
+    // ç¼–ç è¾“å‡º
+    wire [9:0] dout;        // ç¼–ç æ•°æ®
+    wire flag_dout;         // å½“flag_dout==1è¡¨ç¤ºdoutæœ‰æ•ˆ
+
+    code_8b10b code_8b10b_ins (
+        // ç³»ç»Ÿç›¸å…³
+        .clk(clk),          // ç¼–ç å™¨æ—¶é’Ÿ
+        .rst_n(rst_n),      // ç³»ç»Ÿå¤ä½
+
+        // ç¼–ç æ•°æ®è¾“å…¥
+        .valid_din(valid_din),  // å½“==1è¡¨ç¤ºdin[7:5]æœ‰æ•ˆ
+        .din(din),              // è¢«ç¼–ç æ•°æ®
+
+        // ç¼–ç è¾“å‡º
+        .dout(dout),            // ç¼–ç æ•°æ®
+        .flag_dout(flag_dout)   // å½“flag_dout==1è¡¨ç¤ºdoutæœ‰æ•ˆ
     );
 endmodule

@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\86150\Desktop\risc_exam\prj\prj02\simulation\modelsim
+vacc
+In[eQczUci9O`2Y>KF?EXm3
+Vl9Z5neT`c1HZbQK]Iz3lY3
+Z1 dC:\Users\86150\Desktop\risc_exam\prj\prj02\simulation\modelsim
+w1731894920
+8C:/Users/86150/Desktop/risc_exam/rtl/acc.v
+FC:/Users/86150/Desktop/risc_exam/rtl/acc.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/rtl -O0
+!i10b 1
+!s100 5MCiUGWgIn>TBFZY`UW>I1
+!s85 0
+!s108 1731902354.271000
+!s107 C:/Users/86150/Desktop/risc_exam/rtl/acc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/risc_exam/rtl|-O0|C:/Users/86150/Desktop/risc_exam/rtl/acc.v|
+!s101 -O0
+valu
+I>PfnHaE@Y^68dYU]Kz8[o1
+Va9BSd5X6b<6ZE6]QbaGgn2
+R1
+w1731901365
+8C:/Users/86150/Desktop/risc_exam/rtl/alu.v
+FC:/Users/86150/Desktop/risc_exam/rtl/alu.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 >JV_ZA8bf_VBNd2Q]^O]00
+!s85 0
+!s108 1731902354.428000
+!s107 C:/Users/86150/Desktop/risc_exam/rtl/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/risc_exam/rtl|-O0|C:/Users/86150/Desktop/risc_exam/rtl/alu.v|
+!s101 -O0
+vbus_ctl
+IKeUa=TBYnG]N1HIbkgPRT0
+V>7bfa94foLO?o<?]V89@c3
+R1
+w1731896005
+8C:/Users/86150/Desktop/risc_exam/rtl/bus_ctl.v
+FC:/Users/86150/Desktop/risc_exam/rtl/bus_ctl.v
+L0 6
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 l2^TI^Amed@gcYS@lomO33
+!s85 0
+!s108 1731902354.585000
+!s107 C:/Users/86150/Desktop/risc_exam/rtl/bus_ctl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/risc_exam/rtl|-O0|C:/Users/86150/Desktop/risc_exam/rtl/bus_ctl.v|
+!s101 -O0
+vir_regester
+IaY:Wl0LTZR]e<[D^63XTH3
+V1QHPiizCLLYbD5Q]Vi[zm1
+R1
+w1731895746
+8C:/Users/86150/Desktop/risc_exam/rtl/ir_regester.v
+FC:/Users/86150/Desktop/risc_exam/rtl/ir_regester.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 f9?fOUn[_oLblRT_eS0Ic0
+!s85 0
+!s108 1731902354.781000
+!s107 C:/Users/86150/Desktop/risc_exam/rtl/ir_regester.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/risc_exam/rtl|-O0|C:/Users/86150/Desktop/risc_exam/rtl/ir_regester.v|
+!s101 -O0
+vpc_gen
+IP7fjDDm9=mXU@l?D1G<TJ0
+Vn^BnX4aThiVh:P>aJaHA?3
+R1
+w1731894961
+8C:/Users/86150/Desktop/risc_exam/rtl/pc_gen.v
+FC:/Users/86150/Desktop/risc_exam/rtl/pc_gen.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 0`=Wb1JNM7kSn8;Y9PmdO2
+!s85 0
+!s108 1731902354.959000
+!s107 C:/Users/86150/Desktop/risc_exam/rtl/pc_gen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/risc_exam/rtl|-O0|C:/Users/86150/Desktop/risc_exam/rtl/pc_gen.v|
+!s101 -O0
+vrisc
+I[ROo6`T7>2QW^0RaMLoiN3
+VPX03c]<^HFP@c<P7QN_O;2
+R1
+w1731896027
+8C:/Users/86150/Desktop/risc_exam/rtl/risc.v
+FC:/Users/86150/Desktop/risc_exam/rtl/risc.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 CN:n:O5MDYSAd_KC=9mg91
+!s85 0
+!s108 1731902355.188000
+!s107 C:/Users/86150/Desktop/risc_exam/rtl/risc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/risc_exam/rtl|-O0|C:/Users/86150/Desktop/risc_exam/rtl/risc.v|
+!s101 -O0
+vrisc_tb
+ID>iGn5lm@C^0iITS]VL]g1
+V5;ZSaE=7:OHijNBGHzgDZ1
+R1
+w1731902346
+8C:/Users/86150/Desktop/risc_exam/rtl/risc_tb.v
+FC:/Users/86150/Desktop/risc_exam/rtl/risc_tb.v
+L0 22
+R2
+r1
+31
+R3
+!i10b 1
+!s100 A=QR^[4Gcf`Jb<O`=az4h3
+!s85 0
+!s108 1731902355.339000
+!s107 C:/Users/86150/Desktop/risc_exam/rtl/risc_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/risc_exam/prj/prj02/../../rtl|-O0|C:/Users/86150/Desktop/risc_exam/rtl/risc_tb.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/86150/Desktop/risc_exam/prj/prj02/../../rtl -O0
+vui
+!i10b 1
+!s100 YADAf@K53demIDIJ3mG>71
+I`a<L]M2U=ieYQA05CWBPY0
+VJSXa=7g6@UMf47lJ0g8`[3
+R1
+w1731901411
+8C:/Users/86150/Desktop/risc_exam/rtl/ui.v
+FC:/Users/86150/Desktop/risc_exam/rtl/ui.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1731902355.467000
+!s107 C:/Users/86150/Desktop/risc_exam/rtl/ui.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/risc_exam/rtl|-O0|C:/Users/86150/Desktop/risc_exam/rtl/ui.v|
+!s101 -O0
+R3
+R4
