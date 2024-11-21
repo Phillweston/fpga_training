@@ -1,0 +1,24 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\altera\modelsim_ase\win32aloem
+vm_seq_gen_test
+!i10b 1
+Z1 !s100 >@KYN<^kI637S=JjFlg_[1
+Z2 IEK65F7GJ7_=4SMCC4W?a:1
+Z3 VRzP6]<6>N<hTCZcANOe:I3
+Z4 dC:\Users\86150\Desktop\dsss_exam\rtl\sim
+Z5 w1732071219
+Z6 8C:/Users/86150/Desktop/dsss_exam/rtl/m_seq_gen_test.v
+Z7 FC:/Users/86150/Desktop/dsss_exam/rtl/m_seq_gen_test.v
+L0 2
+Z8 OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1732071238.874000
+!s107 C:/Users/86150/Desktop/dsss_exam/rtl/m_seq_gen_test.v|
+!s90 -reportprogress|300|-work|my_work|C:/Users/86150/Desktop/dsss_exam/rtl/m_seq_gen_test.v|
+!s101 -O0
+Z9 o-work my_work -O0
