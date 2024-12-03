@@ -62,13 +62,13 @@ module img_filter_tb;
 			7: addr_mem <= ((row + 2) * 600) + col + 1;		//p21
 			8: addr_mem <= ((row + 2) * 600) + col + 2;		//p22
 			default: addr_mem <= addr_mem;
-		endcase				
+		endcase
 	always @(posedge clk or negedge rst_n)
 		if (~rst_n)	
 			p00 <= 0;
 		else if (cnt == 1)
 			p00 <= mem[addr_mem];
-								
+
 	always @(posedge clk or negedge rst_n)
 		if (~rst_n)	
 			p01 <= 0;

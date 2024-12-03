@@ -33,15 +33,15 @@ module img_filter
 	*/
 	/*
 	wire [11:0] sub;
-	assign sub = ({4'd0,p00[7:0]}<<0) + ({4'd0,p01[7:0]}<<1) + ({4'd0,p02[7:0]}<<0) +
-				 ({4'd0,p10[7:0]}<<1) + ({4'd0,p11[7:0]}<<2) + ({4'd0,p12[7:0]}<<1) +
-				 ({4'd0,p20[7:0]}<<0) + ({4'd0,p21[7:0]}<<1) + ({4'd0,p22[7:0]}<<0);   
+	assign sub = ({4'd0, p00[7:0]} << 0) + ({4'd0, p01[7:0]} << 1) + ({4'd0, p02[7:0]} << 0) +
+				 ({4'd0, p10[7:0]} << 1) + ({4'd0, p11[7:0]} << 2) + ({4'd0, p12[7:0]} << 1) +
+				 ({4'd0, p20[7:0]} << 0) + ({4'd0, p21[7:0]} << 1) + ({4'd0, p22[7:0]} << 0);   
 	assign oval = sub[11:4];
 	*/
 
 	//第1次遍历/////////////
-	wire [7:0] max00,max01,max02,max03,max04,max05,max06,max07;
-	wire [7:0] min00,min01,min02,min03,min04,min05,min06,min07;
+	wire [7:0] max00, max01, max02, max03, max04, max05, max06, max07;
+	wire [7:0] min00, min01, min02, min03, min04, min05, min06, min07;
 
 	switch switch00
 	(
@@ -117,8 +117,8 @@ module img_filter
 	);
 
 	//第2次遍历/////////////
-	wire [7:0] max10,max11,max12,max13,max14,max15,max16;
-	wire [7:0] min10,min11,min12,min13,min14,min15,min16;
+	wire [7:0] max10, max11, max12, max13, max14, max15, max16;
+	wire [7:0] min10, min11, min12, min13, min14, min15, min16;
 
 	switch switch10
 	(
@@ -185,8 +185,8 @@ module img_filter
 	);
 
 	//第3次遍历/////////////
-	wire [7:0] max20,max21,max22,max23,max24,max25;
-	wire [7:0] min20,min21,min22,min23,min24,min25;
+	wire [7:0] max20, max21, max22, max23, max24, max25;
+	wire [7:0] min20, min21, min22, min23, min24, min25;
 	switch switch20
 	(
 		//被比较交换的数输入
@@ -244,8 +244,8 @@ module img_filter
 	);	
 
 	//第4次遍历/////////////
-	wire [7:0] max30,max31,max32,max33,max34;
-	wire [7:0] min30,min31,min32,min33,min34;
+	wire [7:0] max30, max31, max32, max33, max34;
+	wire [7:0] min30, min31, min32, min33, min34;
 
 	switch switch30
 	(
@@ -294,8 +294,8 @@ module img_filter
 	);
 
 	//第5次遍历/////////////
-	wire [7:0] max40,max41,max42,max43;
-	wire [7:0] min40,min41,min42,min43;	
+	wire [7:0] max40, max41, max42, max43;
+	wire [7:0] min40, min41, min42, min43;	
 	switch switch40
 	(
 		//被比较交换的数输入

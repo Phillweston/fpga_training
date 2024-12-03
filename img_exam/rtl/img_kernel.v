@@ -14,16 +14,16 @@ module img_kernel
 	output reg[31:0]		result	//视频图像运算结果
 );
 //第1级流水 加载并移位/////////////////////////////////////////
-	reg	[31:0] buf_data_i0;							
+	reg	[31:0] buf_data_i0;
 	always @(posedge clk or	negedge rst_n)
-		if(~rst_n)
-				buf_data_i0  <=  32'd0;
-		else 	if(load0)
-				buf_data_i0[31:0] <=  bus_data_i[31:0];
-		else 	if(en_pipe)
-				buf_data_i0       <=  buf_data_i0<<8;
+		if (~rst_n)
+			buf_data_i0 <= 32'd0;
+		else if (load0)
+			buf_data_i0[31:0] <= bus_data_i[31:0];
+		else if (en_pipe)
+			buf_data_i0 <= buf_data_i0 << 8;
 
-	reg	[31:0] buf_data_i1;							
+	reg	[31:0] buf_data_i1;
 	always @(posedge clk or	negedge rst_n)
 		if (~rst_n)
 			buf_data_i1 <= 32'd0;
@@ -32,7 +32,7 @@ module img_kernel
 		else if(en_pipe)
 			buf_data_i1 <= buf_data_i1 << 8;
 
-	reg	[31:0] buf_data_i2;							
+	reg	[31:0] buf_data_i2;
 	always @(posedge clk or	negedge rst_n)
 		if (~rst_n)
 			buf_data_i2 <= 32'd0;
@@ -53,6 +53,7 @@ module img_kernel
 	assign p20 = mix2[07:00];
 	assign p21 = mix2[15:08];
 	assign p22 = mix2[23:16];
+
 	always @(posedge clk or	negedge rst_n)
 		if (~rst_n)
 			mix0 <= 24'd0;
@@ -96,4 +97,4 @@ module img_kernel
 		else if (en_pipe)
 			result <= {oval[7:0], result[31:08]};
 
-endmodule 
+endmodule
