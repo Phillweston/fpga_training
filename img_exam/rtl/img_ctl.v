@@ -1,7 +1,6 @@
 module img_ctl #(
 	parameter COL_MAX = 600,
 			  ROW_MAX = 400
-
 )
 (
 	//系统相关
@@ -17,7 +16,7 @@ module img_ctl #(
 	//控制相关
 	output						load0,		//load0==1表示加载第1个数据
 	output						load1,		//load1==1表示加载第2个数据
-	output						load2		//load2==1表示加载第3个数据
+	output						load2,		//load2==1表示加载第3个数据
 	output						en_pipe,	//流水线控制，当en_pipe==1每个运行步骤输出结果
 	output						inc_src,	//inc_src==1源存储器偏移地址加1
 	output						inc_dec,	//inc_dec==1目标存储器偏移地址加1
@@ -38,12 +37,12 @@ module img_ctl #(
 	reg	[7:0] col;
 	reg	[8:0] row;
 	always @(posedge clk or negedge rst_n)
-		if(~rst_n)begin
-			cnt     <=   2'd0;
-			col     <=   8'd0;
-			row     <=   9'd0;
-			state   <=	IDLE;end
-		else case(state)
+		if (~rst_n) begin
+			cnt <= 2'd0;
+			col <= 8'd0;
+			row <= 9'd0;
+			state <= IDLE;
+		end else case (state)
 			IDLE:
 				if (start)
 					state <= READ4_0;
@@ -51,14 +50,14 @@ module img_ctl #(
 				if (bus_ack_i)
 					state <= READ4_1;
 			READ4_1:
-				if(bus_ack_i)
+				if (bus_ack_i)
 					state <= READ4_2;
 			READ4_2:
-				if(bus_ack_i)
+				if (bus_ack_i)
 					state <= en_run;
 			en_run: begin
 				/////////相关计数器计数///////////////////////////
-				if (cnt==2'd3) begin
+				if (cnt == 2'd3) begin
 					if (col == (`COL_MAX / 4))
 						col <= 8'd0;
 					else 
@@ -162,7 +161,7 @@ module img_ctl #(
 
 	always @(posedge clk or negedge rst_n)
 		if (~rst_n)
-			load2<=  1'b0;
+			load2 <= 1'b0;
 		else if (state == READ4_2) 
 			if (bus_ack_i)
 				load2 <= 1'b0;	
@@ -199,4 +198,4 @@ module img_ctl #(
 			inc_dec <= 1'b0;
 								
 	assign done = (state == WRITE) & bus_ack_i & (col == 0) & (row == (ROW_MAX - 3));
-endmodule 
+endmodule

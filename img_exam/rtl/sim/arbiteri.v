@@ -34,9 +34,9 @@ module arbiteri
 		endcase
 
 	always @(posedge clk or negedge rst_n)
-		if(~rst_n)	
+		if (~rst_n)	
 			gnt <= 2'b00;
-		else case(state)
+		else case (state)
 			SLOT0:
 				case (req[1:0])
 					2'b00: gnt <= 2'b00;
