@@ -11,7 +11,7 @@ module img_kernel
 	input					load2,	//当load12==1的时候默认从bus_data_i[31:0]加载第3个32位的数据
 	input					en_pipe,	//流水线控制信号，当en_pipe==1流水线的每一个处理步骤输出处理结果
 	//输出运算结果
-	output reg[31:0]		result	//视频图像运算结果
+	output reg [31:0]		result	//视频图像运算结果
 );
 //第1级流水 加载并移位/////////////////////////////////////////
 	reg	[31:0] buf_data_i0;
@@ -27,9 +27,9 @@ module img_kernel
 	always @(posedge clk or	negedge rst_n)
 		if (~rst_n)
 			buf_data_i1 <= 32'd0;
-		else if(load1)
+		else if (load1)
 			buf_data_i1[31:0] <= bus_data_i[31:0];
-		else if(en_pipe)
+		else if (en_pipe)
 			buf_data_i1 <= buf_data_i1 << 8;
 
 	reg	[31:0] buf_data_i2;

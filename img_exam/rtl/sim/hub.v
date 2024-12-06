@@ -75,4 +75,4 @@ module hub
 	assign bus_data_i_p = bus_data;
 
 	assign req = {(~bus_cs_n_o_p), (~bus_cs_n_o_s)};
-endmodule 
+endmodule

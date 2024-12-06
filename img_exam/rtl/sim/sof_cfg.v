@@ -1,8 +1,8 @@
 module sof_cfg
 (
 	//系统相关
-	input					clk,	//系统时钟
-	input					rst_n,	//系统复位
+	input					clk,		//系统时钟
+	input					rst_n,		//系统复位
 	//系统总线相关
 	output	reg				bus_cs_n_o,	//系统总线片选，低电平有效
 	output	reg				bus_we_o,	/*	系统总线写使能
@@ -14,8 +14,7 @@ module sof_cfg
 	output reg [31:0]		bus_data_o,	//系统总线数据信号
 	input [31:0]			bus_data_i,	
 	//中断信号
-	input					irq	//视频图像处理中断信号
-
+	input					irq			//视频图像处理中断信号
 );
 	localparam IBASE_SEC_CFG = 3'd0,
 			   IBASE_DEC_CFG = 3'd1,
@@ -41,7 +40,7 @@ module sof_cfg
 					state <= STATUS_RD;
 			STATUS_RD:
 				if (bus_ack_i & bus_data_i[0])
-					state  <=   START_CFG;
+					state <= START_CFG;
 			default:
 				state <= IBASE_SEC_CFG;
 		endcase
@@ -52,7 +51,7 @@ module sof_cfg
 			bus_we_o <= 1'b0;
 			bus_addr_o <= 32'd0;
 			bus_data_o <= 32'd0;
-		end else case(state)
+		end else case (state)
 			IBASE_SEC_CFG: begin
 				if (bus_ack_i)
 					bus_cs_n_o <= 1'b1;

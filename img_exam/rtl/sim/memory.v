@@ -54,7 +54,7 @@ module memory  #(
 			row <= 0;
 		end else if ((~bus_cs_n_i) & bus_we_i & bus_ack_o)//写成功的条件
 			if (col == ((COL_MAX / 4) - 1)) begin
-				if(row == (ROW_MAX - 3))
+				if (row == (ROW_MAX - 3))
 					row <= 0;
 				else
 					row <= row + 1'b1;
