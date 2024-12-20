@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\86150\Desktop\mem_out_exanm\prj\prj2\simulation\modelsim
+vmt48lc32m16a2
+IFdemN[9MB:LzVh64NzdiS2
+VQ>Xl;D4_^=S@W7lzl[W4[1
+Z1 dC:\Users\86150\Desktop\mem_out_exanm\prj\prj2\simulation\modelsim
+w1733883319
+8C:/Users/86150/Desktop/mem_out_exanm/prj/prj2/../../rtl/sim/mt48lc32m16a2.v
+FC:/Users/86150/Desktop/mem_out_exanm/prj/prj2/../../rtl/sim/mt48lc32m16a2.v
+L0 42
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 n]6CFAhS7J7AeFkfR@JA61
+!s85 0
+!s108 1733888983.751000
+!s107 C:/Users/86150/Desktop/mem_out_exanm/prj/prj2/../../rtl/sim/mt48lc32m16a2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/mem_out_exanm/prj/prj2/../../rtl/sim|C:/Users/86150/Desktop/mem_out_exanm/prj/prj2/../../rtl/sim/mt48lc32m16a2.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work +incdir+C:/Users/86150/Desktop/mem_out_exanm/prj/prj2/../../rtl/sim -O0
+vsdr_ctl
+IeL`I2e[>6n8g6Q5R55bCW0
+V:YGlzGb3KkUMil@2F<KWP0
+R1
+w1733886865
+8C:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_ctl.v
+FC:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_ctl.v
+L0 1
+R2
+r1
+31
+R3
+Z5 !s92 -vlog01compat -work work +incdir+C:/Users/86150/Desktop/mem_out_exanm/rtl -O0
+!i10b 1
+!s100 n>STYgE4HgaolHlLfVnoz1
+!s85 0
+!s108 1733888983.122000
+!s107 C:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_ctl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/mem_out_exanm/rtl|C:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_ctl.v|
+!s101 -O0
+vsdr_init
+IjOTIAj]^lBWbcPLi>WzAW3
+VA8;zDOX]CInU[kg?QodFJ3
+R1
+w1733888922
+8C:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_init.v
+FC:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_init.v
+L0 2
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 Z5i1:G;^MX6OBEa75_S^F1
+!s85 0
+!s108 1733888983.632000
+!s107 C:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_param.v|C:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_init.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/mem_out_exanm/rtl|C:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_init.v|
+!s101 -O0
+vsdr_read
+IkhA[z0TTL1M6_acG94a`l0
+VhS?1L`:>1>_OAn9j8PE_U0
+R1
+w1733888961
+8C:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_read.v
+FC:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_read.v
+L0 2
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 llRl2XD3S5Q=8GkBoKdiT0
+!s85 0
+!s108 1733888983.503000
+!s107 C:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_param.v|C:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_read.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/mem_out_exanm/rtl|C:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_read.v|
+!s101 -O0
+vsdr_ref
+I8GMBPYRa@iiKL9oYi20:J0
+VcTLa3a^7Nh54kg[_RP=CC2
+R1
+w1733886920
+8C:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_ref.v
+FC:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_ref.v
+L0 2
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 QQbV`a_Qnd>8mmP6:ioz10
+!s85 0
+!s108 1733888983.366000
+!s107 C:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_param.v|C:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_ref.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/mem_out_exanm/rtl|C:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_ref.v|
+!s101 -O0
+vsdr_sdram
+ID5c@e0a?>a[DF>JOD0Ioe2
+VI5AK<Zi30c;1[jizSUIX91
+R1
+w1733887067
+8C:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_sdram.v
+FC:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_sdram.v
+L0 1
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 6ei>ChWQW[2LfVKK?YSdH2
+!s85 0
+!s108 1733888982.938000
+!s107 C:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_sdram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/mem_out_exanm/rtl|C:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_sdram.v|
+!s101 -O0
+vsdr_write
+IIF5;6jT?]AgW=j6F92ORK2
+VJdXhLNn527P^SZQk8lWE>3
+R1
+w1733888946
+8C:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_write.v
+FC:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_write.v
+L0 2
+R2
+r1
+31
+R3
+R5
+!i10b 1
+!s100 WoIie>41@Sola767C>:E=0
+!s85 0
+!s108 1733888983.241000
+!s107 C:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_param.v|C:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_write.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/mem_out_exanm/rtl|C:/Users/86150/Desktop/mem_out_exanm/rtl/sdr_write.v|
+!s101 -O0
+vtesebench
+!i10b 1
+!s100 NfRg^63]Zkd1QFCg2AOGk2
+IA5MZoFYWg`z>>3?^EaMbk3
+V]]BST2BLf`aNI]lBiAgD40
+R1
+w1733887317
+8C:/Users/86150/Desktop/mem_out_exanm/prj/prj2/../../rtl/sim/tesebench.v
+FC:/Users/86150/Desktop/mem_out_exanm/prj/prj2/../../rtl/sim/tesebench.v
+L0 2
+R2
+r1
+!s85 0
+31
+!s108 1733888984.074000
+!s107 C:/Users/86150/Desktop/mem_out_exanm/prj/prj2/../../rtl/sim/tesebench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/mem_out_exanm/prj/prj2/../../rtl/sim|C:/Users/86150/Desktop/mem_out_exanm/prj/prj2/../../rtl/sim/tesebench.v|
+!s101 -O0
+R3
+R4

@@ -1,0 +1,35 @@
+
+State Machine - |demo|state
+Name state.WRITE_DATA state.A_GEN state.READ_DATA 
+state.WRITE_DATA 0 0 0 
+state.READ_DATA 1 0 1 
+state.A_GEN 1 1 0 
+
+State Machine - |demo|sdr_sdram:sdr_sdram_ins|sdr_read:sdr_read_ins|state
+Name state.IDLE state.READ_COL_OFF_ROW state.ON_ROW 
+state.IDLE 0 0 0 
+state.ON_ROW 1 0 1 
+state.READ_COL_OFF_ROW 1 1 0 
+
+State Machine - |demo|sdr_sdram:sdr_sdram_ins|sdr_write:sdr_write_ins|state
+Name state.IDLE state.WRITE_COL_OFF_ROW state.ON_ROW 
+state.IDLE 0 0 0 
+state.ON_ROW 1 0 1 
+state.WRITE_COL_OFF_ROW 1 1 0 
+
+State Machine - |demo|sdr_sdram:sdr_sdram_ins|sdr_init:sdr_init_ins|state
+Name state.LMR_RF0 state.PR_RF1 state.PR_RF0 state.PR_SNT state.CHECK_MYSELF state.IDLE 
+state.IDLE 0 0 0 0 0 0 
+state.CHECK_MYSELF 0 0 0 0 1 1 
+state.PR_SNT 0 0 0 1 0 1 
+state.PR_RF0 0 0 1 0 0 1 
+state.PR_RF1 0 1 0 0 0 1 
+state.LMR_RF0 1 0 0 0 0 1 
+
+State Machine - |demo|sdr_sdram:sdr_sdram_ins|sdr_ctl:sdr_ctl_ins|state
+Name state.WRITE_S state.RF_S state.IDLE state.INIT_S state.READ_S 
+state.INIT_S 0 0 0 0 0 
+state.IDLE 0 0 1 1 0 
+state.RF_S 0 1 0 1 0 
+state.WRITE_S 1 0 0 1 0 
+state.READ_S 0 0 0 1 1 

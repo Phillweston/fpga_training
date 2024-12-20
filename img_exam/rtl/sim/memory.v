@@ -80,10 +80,10 @@ module memory  #(
 		if ((~bus_cs_n_i) & bus_we_i & bus_ack_o)//写成功的条件
 			case (col)
 				0:
-					$fwrite(fid,"%d %d %d ", bus_data_i[15:08], bus_data_i[23:16], bus_data_i[31:24]);//流水线启动
+					$fwrite(fid, "%d %d %d ", bus_data_i[15:08], bus_data_i[23:16], bus_data_i[31:24]);//流水线启动
 				(col == ((COL_MAX / 4) - 1)):
-					$fwrite(fid,"%d %d %d\n", bus_data_i[07:00], bus_data_i[15:08], bus_data_i[23:16]);//流水线导出
+					$fwrite(fid, "%d %d %d\n", bus_data_i[07:00], bus_data_i[15:08], bus_data_i[23:16]);//流水线导出
 				default:
-					$fwrite(fid,"%d %d %d %d ", bus_data_i[07:00], bus_data_i[15:08], bus_data_i[23:16], bus_data_i[31:24]);//流水线稳定
+					$fwrite(fid, "%d %d %d %d ", bus_data_i[07:00], bus_data_i[15:08], bus_data_i[23:16], bus_data_i[31:24]);//流水线稳定
 			endcase
 endmodule

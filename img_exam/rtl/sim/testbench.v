@@ -78,9 +78,9 @@ module testbench;
 						2’b11:表示sof_cfg和img_process同时请求总线
 						2’b00:没有任何总线请求*/
 		.gnt (gnt)	/*gnt[1:0]
-						2’b01：当前时刻允许sof_cfg电路模块请求总线
-						2’b10：当前时刻允许img_process电路模块请求总线
-						2’b00: 当前时刻不允许请求总线
+						2’b01:当前时刻允许sof_cfg电路模块请求总线
+						2’b10:当前时刻允许img_process电路模块请求总线
+						2’b00:当前时刻不允许请求总线
 						2’b11:这种不允许存在*/
 	);
 
@@ -99,8 +99,7 @@ module testbench;
 		.bus_addr_o_s (bus_addr_o_s),	//系统总线空间地址，默认32位地址空间
 		.bus_ack_i_s (bus_ack_i_s),		//从机应答，bus_ack_i==1表示从机响应
 		.bus_data_o_s (bus_data_o_s),	//系统总线数据信号
-		.bus_data_i_s (bus_data_i_s),	
-
+		.bus_data_i_s (bus_data_i_s),
 
 		//存储器系统总线相关
 		.bus_cs_n_i_m (bus_cs_n_i_m),	//系统总线片选，低电平有效
