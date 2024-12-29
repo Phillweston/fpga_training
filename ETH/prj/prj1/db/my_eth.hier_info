@@ -1,0 +1,24 @@
+|crc_gen
+clk => crc[0]~reg0.CLK
+clk => crc[1]~reg0.CLK
+clk => crc[2]~reg0.CLK
+clk => crc[3]~reg0.CLK
+clk => crc[4]~reg0.CLK
+rst_n => crc[0]~reg0.PRESET
+rst_n => crc[1]~reg0.ACLR
+rst_n => crc[2]~reg0.ACLR
+rst_n => crc[3]~reg0.PRESET
+rst_n => crc[4]~reg0.ACLR
+en => crc.OUTPUTSELECT
+en => crc.OUTPUTSELECT
+en => crc.OUTPUTSELECT
+en => crc.OUTPUTSELECT
+en => crc.OUTPUTSELECT
+data => crc_nex[0].IN1
+crc[0] << crc[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+crc[1] << crc[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+crc[2] << crc[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+crc[3] << crc[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+crc[4] << crc[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

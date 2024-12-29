@@ -1,0 +1,42 @@
+# Reading D:/altera/modelsim_ase/tcl/vsim/pref.tcl 
+# ERROR: No extended dataflow license exists
+# do my_eth_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/ETH/rtl/rtl0 {C:/Users/86150/Desktop/ETH/rtl/rtl0/crc_gen.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module crc_gen
+# 
+# Top level modules:
+# 	crc_gen
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/86150/Desktop/ETH/prj/prj1/../../rtl/rtl0 {C:/Users/86150/Desktop/ETH/prj/prj1/../../rtl/rtl0/crc_gen_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module crc_gen_tb
+# 
+# Top level modules:
+# 	crc_gen_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  crc_gen_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps crc_gen_tb 
+# Loading work.crc_gen_tb
+# Loading work.crc_gen
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit 
+# Simulation stop requested.
+# Simulation Breakpoint: Simulation stop requested.
+# MACRO ./my_eth_run_msim_rtl_verilog.do PAUSED at line 17

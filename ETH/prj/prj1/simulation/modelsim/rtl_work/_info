@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\86150\Desktop\ETH\prj\prj1\simulation\modelsim
+vcrc_gen
+Ieokm_k2L]`A9_hihaM^PB1
+V_BQb4Ui0BUgjz3HHgf6k^1
+Z1 dC:\Users\86150\Desktop\ETH\prj\prj1\simulation\modelsim
+w1734405279
+8C:/Users/86150/Desktop/ETH/rtl/rtl0/crc_gen.v
+FC:/Users/86150/Desktop/ETH/rtl/rtl0/crc_gen.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 87Ojf[kP4`G^JZcI>0H2D2
+!s85 0
+!s108 1734405367.872000
+!s107 C:/Users/86150/Desktop/ETH/rtl/rtl0/crc_gen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/ETH/rtl/rtl0|C:/Users/86150/Desktop/ETH/rtl/rtl0/crc_gen.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/86150/Desktop/ETH/rtl/rtl0 -O0
+vcrc_gen_tb
+!i10b 1
+!s100 Oz6MNoE@9`n_SfHaQQTM50
+I=Wbn_[fARj2UnloR?l^gF2
+VP4c4=O]2`L]APgFoDe[[:1
+R1
+w1734405305
+8C:/Users/86150/Desktop/ETH/prj/prj1/../../rtl/rtl0/crc_gen_tb.v
+FC:/Users/86150/Desktop/ETH/prj/prj1/../../rtl/rtl0/crc_gen_tb.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1734405368.011000
+!s107 C:/Users/86150/Desktop/ETH/prj/prj1/../../rtl/rtl0/crc_gen_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/86150/Desktop/ETH/prj/prj1/../../rtl/rtl0|C:/Users/86150/Desktop/ETH/prj/prj1/../../rtl/rtl0/crc_gen_tb.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+C:/Users/86150/Desktop/ETH/prj/prj1/../../rtl/rtl0 -O0
